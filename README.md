@@ -55,14 +55,13 @@ a model, checks for them:
 
 ## Setup
 
-Requires Python 3.12 and [Ollama](https://ollama.com).
+Requires [uv](https://docs.astral.sh/uv/) and [Ollama](https://ollama.com).
 
 ```bash
-git clone https://github.com/nihardamera/FinScoutAI.git
-cd FinScoutAI
-python3.12 -m venv .venv
-.venv/bin/pip install -r requirements.txt
-.venv/bin/playwright install chromium
+git clone https://github.com/nihardamera/RegRadar.git
+cd RegRadar
+uv sync --extra v1
+uv run playwright install chromium
 
 ollama pull llama3:8b
 ollama pull nomic-embed-text
@@ -76,8 +75,8 @@ and the Ollama address.
 ## Run
 
 ```bash
-.venv/bin/streamlit run app.py                     # web UI with the archive
-.venv/bin/python cli.py "<circular URL or PDF path>" --out report.md
+uv run streamlit run app.py                        # web UI with the archive
+uv run python cli.py "<circular URL or PDF path>" --out report.md
 ```
 
 Without a CSS selector the reader keeps the page's main text and drops menus
@@ -85,7 +84,7 @@ and footers. On RBI notification pages `table.tablebg` selects just the
 circular. On an Apple M4 laptop a run takes two to four minutes.
 
 ```bash
-.venv/bin/python -m pytest      # the reading and checking code; no model needed
+uv run pytest                  # the reading and checking code; no model needed
 ```
 
 ## Limitations

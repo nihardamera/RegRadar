@@ -1,0 +1,73 @@
+[project]
+name = "regradar"
+version = "2.0.0.dev0"
+description = "Cited retrieval over RBI circulars, and impact assessments a compliance team can check."
+readme = "README.md"
+requires-python = ">=3.12"
+authors = [{ name = "Nihar Damera" }]
+# The v2 pipeline's dependencies are added milestone by milestone.
+dependencies = []
+
+[project.optional-dependencies]
+# FinScoutAI v1 (app.py, cli.py, rag_agents.py, utils.py), frozen at the
+# finscout-v1 tag. The same pins as v1's requirements.txt, tested together on
+# Python 3.12. Removed in M4, when the checks move into regradar/.
+# For the v1 app, also run: playwright install chromium
+v1 = [
+    "crewai[litellm]==1.15.23",
+    "litellm==1.104.0",
+    "langchain-core==1.6.6",
+    "langchain-ollama==1.1.0",
+    "langchain-chroma==1.0.0",
+    "langchain-text-splitters==1.1.3",
+    "chromadb==1.1.1",
+    "pydantic==2.12.5",
+    "streamlit==1.65.0",
+    "playwright==1.63.0",
+    "pymupdf==1.28.2",
+    "beautifulsoup4==4.15.0",
+    "lxml==6.1.3",
+]
+
+[dependency-groups]
+dev = [
+    "pytest==9.2.0",
+    "ruff==0.17.3",
+    "mypy==2.4.1",
+    "pre-commit==4.7.0",
+]
+
+[build-system]
+requires = ["uv_build>=0.13,<0.14"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = "regradar"
+module-root = ""
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+# Import from the checkout rather than through the editable install's .pth
+# file, which Python skips on macOS when the file is hidden.
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+# v1 stays byte-identical to the finscout-v1 tag until it is ported (M4).
+extend-exclude = [
+    "app.py",
+    "cli.py",
+    "database.py",
+    "rag_agents.py",
+    "utils.py",
+    "tests/test_checks.py",
+]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "SIM", "RUF"]
+
+[tool.mypy]
+python_version = "3.12"
+packages = ["regradar"]
+strict = true
