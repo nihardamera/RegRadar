@@ -41,6 +41,7 @@ CACHE = DATA / "cache" / "http"
 WORK = DATA / "corpus"
 # Committed: the record of what is in the corpus and where each file came from.
 MANIFEST = Path("corpus") / "manifest.jsonl"
+DOCS = Path("corpus") / "docs"
 
 NOTIFICATION_PAGES = "rbi.org.in/Scripts/NotificationUser.aspx"
 NOTIFICATION_PDFS = "rbidocs.rbi.org.in/rdocs/notification/PDFs/"
@@ -220,6 +221,7 @@ def cmd_parse(args: argparse.Namespace) -> int:
     pdfs = {row["id"]: row for row in read_jsonl(WORK / "pdfs.jsonl")}
     rows: list[dict[str, Any]] = []
     texts: dict[str, str] = {}
+    documents: dict[str, dict[str, Any]] = {}
     for page in read_jsonl(WORK / "selected.jsonl"):
         html_text = (WORK / "html" / f"{page['id']}.txt").read_text(encoding="utf-8")
         found = pdfs.get(page["id"], {})
@@ -237,12 +239,16 @@ def cmd_parse(args: argparse.Namespace) -> int:
         text = text_of(row, html_text, parsed)
         if text:
             texts[row["doc_id"]] = text
-            document = {"doc_id": row["doc_id"], "title": row["title"], "text": text}
             if parsed is not None and row["text_source"] == "pdf":
-                document["pages"] = [{"number": p.number, "text": p.text} for p in parsed.pages]
-            out = WORK / "docs" / f"{row['doc_id']}.json"
-            out.parent.mkdir(parents=True, exist_ok=True)
-            out.write_text(json.dumps(document, ensure_ascii=False), encoding="utf-8")
+                pages = [{"number": p.number, "text": p.text} for p in parsed.pages]
+            else:
+                pages = [{"number": 1, "text": text}]  # HTML has no pages
+            documents[row["doc_id"]] = {
+                "doc_id": row["doc_id"],
+                "title": row["title"],
+                "source": row["text_source"],
+                "pages": pages,
+            }
 
     ok = [row for row in rows if row["status"] == "ok"]
     copies = near_duplicates([(row["doc_id"], texts[row["doc_id"]]) for row in ok])
@@ -256,6 +262,15 @@ def cmd_parse(args: argparse.Namespace) -> int:
         row["in_corpus"] = row["doc_id"] in keep
     MANIFEST.parent.mkdir(parents=True, exist_ok=True)
     write_jsonl(MANIFEST, rows)
+    # The parsed text of each document in the corpus is committed, so chunk IDs
+    # and the golden set's answers do not depend on refetching from the archive.
+    DOCS.mkdir(parents=True, exist_ok=True)
+    for stale in DOCS.glob("*.json"):
+        if stale.stem not in keep:
+            stale.unlink()
+    for identifier in sorted(keep):
+        text = json.dumps(documents[identifier], ensure_ascii=False, indent=1)
+        (DOCS / f"{identifier}.json").write_text(text + "\n", encoding="utf-8")
     counts = Counter(row["status"] for row in rows)
     print(f"{len(rows)} documents: {dict(counts)}; {len(in_corpus)} in the corpus -> {MANIFEST}")
     return 0
