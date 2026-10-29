@@ -126,3 +126,57 @@ def test_near_copies_keep_the_first_listed() -> None:
         ),
     ]
     assert near_duplicates(texts) == {"rbi-n2": "rbi-n3"}
+
+
+def test_the_audit_is_computed_from_the_manifest_and_names_every_left_out_document() -> None:
+    from regradar.corpus.audit import render, summary
+
+    base = {"title": "T", "kind": "circular", "department": "DPSS", "text_source": "pdf"}
+    rows = [
+        base
+        | {
+            "doc_id": "rbi-n3",
+            "status": "ok",
+            "in_corpus": True,
+            "date": "2025-09-25",
+            "circular_number": "RBI/2025-26/79",
+            "pages": 9,
+            "tables": 2,
+            "html_in_pdf_recall": 0.99,
+            "low_recall_pages": [],
+        },
+        base
+        | {
+            "doc_id": "rbi-n2",
+            "status": "ok",
+            "in_corpus": True,
+            "date": "2024-07-30",
+            "pages": 4,
+            "tables": 0,
+            "html_in_pdf_recall": 0.62,
+            "low_recall_pages": [3],
+        },
+        base
+        | {
+            "doc_id": "rbi-n1",
+            "status": "near_duplicate",
+            "duplicate_of": "rbi-n3",
+            "in_corpus": False,
+            "text_source": "pdf",
+        },
+        base
+        | {
+            "doc_id": "rbi-n0",
+            "status": "scanned",
+            "in_corpus": False,
+            "text_source": None,
+            "scanned_pages": [1, 2],
+        },
+    ]
+    s = summary(rows)
+    assert s["in_corpus"] == 2 and s["with_circular_number"] == 1
+    assert s["html_below_floor"] == ["rbi-n2"] and s["low_recall_pages"] == {"rbi-n2": [3]}
+    assert s["scanned_pages"] == {"rbi-n0": [1, 2]}
+    assert s["date_range"] == ["2024-07-30", "2025-09-25"]
+    text = render(rows)
+    assert "near_duplicate of `rbi-n3`" in text and "`rbi-n0` T: scanned" in text

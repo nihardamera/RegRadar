@@ -4,6 +4,7 @@
     uv run python -m regradar.corpus.build select
     uv run python -m regradar.corpus.build pdfs
     uv run python -m regradar.corpus.build parse
+    uv run python -m regradar.corpus.build audit
 
 Every step reads and writes under data/ (gitignored, outside iCloud) and can
 be rerun: downloads are cached, so a rerun only fetches what is missing.
@@ -20,6 +21,7 @@ from collections.abc import Iterable, Iterator
 from pathlib import Path
 from typing import Any
 
+from regradar.corpus.audit import render
 from regradar.corpus.document import describe, near_duplicates, text_of
 from regradar.corpus.pdf import UnreadablePdf, parse_pdf
 from regradar.corpus.rbi_html import NotACircularPage, parse_notification_page
@@ -259,6 +261,14 @@ def cmd_parse(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_audit(_args: argparse.Namespace) -> int:
+    rows = list(read_jsonl(MANIFEST))
+    out = MANIFEST.parent / "AUDIT.md"
+    out.write_text(render(rows), encoding="utf-8")
+    print(f"audit of {len(rows)} documents -> {out}")
+    return 0
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(
         description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
@@ -280,6 +290,8 @@ def main(argv: list[str] | None = None) -> int:
     parse_step = steps.add_parser("parse", help="parse, check and write the manifest")
     parse_step.add_argument("--target", type=int, default=300)
     parse_step.set_defaults(run=cmd_parse)
+    audit = steps.add_parser("audit", help="write corpus/AUDIT.md from the manifest")
+    audit.set_defaults(run=cmd_audit)
     args = parser.parse_args(argv)
     result: int = args.run(args)
     return result
