@@ -1,4 +1,19 @@
-# FinScout AI
+# RegRadar
+
+> **Being rebuilt.** RegRadar v2 adds cited, evaluated retrieval over RBI
+> circulars. Until it lands, everything below describes v1, which is the code
+> in this branch today. Progress is in [`WORKLOG.md`](WORKLOG.md).
+
+## History: started as FinScoutAI
+
+This repository was FinScoutAI until October 2026. The v1 code is tagged
+[`finscout-v1`](https://github.com/nihardamera/RegRadar/tree/finscout-v1):
+four CrewAI agents on a local Llama 3 8B, with code checks that overrule the
+model's own verifier. v2 keeps the domain, the read-before-anything check and
+those code checks, and replaces the agents and the six-file knowledge base
+with retrieval that is measured against a hand-written question set.
+
+## FinScoutAI v1
 
 Give it a regulatory circular, as a web page or a PDF, and it writes an impact
 assessment and an action plan for FlexiPay India, a fictional Indian fintech.
