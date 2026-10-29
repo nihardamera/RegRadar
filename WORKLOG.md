@@ -26,6 +26,10 @@ resumes from here: read the plan, then the latest entry below.
 - Like Commit-Suggestor: the venv and data live in `.venv.nosync` /
   `data.nosync` behind symlinks, because iCloud syncs ~/Desktop.
 - No global git identity is set on this Mac, so it is set per repo.
+- `astral-sh/setup-uv` publishes no floating major tag: `@v10` fails to
+  resolve, so CI pins `@v10.3.3`. Commit-Suggestor's `ci.yml` has the same
+  `@v10` pin and will fail the same way when its branch is pushed.
+- CI is green on `v2` (both jobs; 30 passed).
 - Docker and Ollama are not installed. v1 cannot run end to end without
   Ollama, but no milestone needs it to: M4 compares against the committed
   `examples/sample_report.md`.
