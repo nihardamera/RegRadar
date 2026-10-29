@@ -1,0 +1,15 @@
+{
+ "doc_id": "rbi-n12345",
+ "title": "Restriction on Storage of Actual Card Data [i.e. Card-on-File (CoF)]",
+ "source": "pdf",
+ "pages": [
+  {
+   "number": 1,
+   "text": "RBI/2022-23/77 \nCO.DPSS.POLC.No.S-567/02-14-003/2022-23                                                  June 24, 2022 \n \n \nAll Payment System Providers and Payment System Participants \n \n \nMadam / Dear Sir,\nRestriction on Storage of Actual Card Data [i.e. Card-on-File (CoF)]\nReference is invited to Reserve Bank of India (RBI) circulars DPSS.CO.PD.No.1810/02.14.008/\n2019-20 dated March 17, 2020 and CO.DPSS.POLC.No.S33/02-14-008/2020-2021 dated March\n31, 2021 on “Guidelines on Regulation of Payment Aggregators and Payment Gateways”, and\nCO.DPSS.POLC.No.S-516/02-14-003/2021-22 dated September 07, 2021 on “Tokenisation –\nCard Transactions: Permitting Card-on-File Tokenisation (CoFT) Services”.\n2. \nIn terms of these circulars, with effect from January 1, 2022, no entity in the card\ntransaction / payment chain, other than the card issuers and / or card networks, shall store the\nCoF data, and any such data stored previously shall be purged. Subsequently, to allow more time\nto the industry stakeholders for devising alternate mechanism(s) to handle any use case or post-\ntransaction activity, this timeline was extended to June 30, 2022, vide circular\nCO.DPSS.POLC.No.S-1211/02-14-003/2021-22 dated December 23, 2021 on “Restriction on\nstorage of actual card data [i.e. Card-on-File (CoF)]”.\n3. \nOn a review of the issues involved and after detailed discussions with all stakeholders, it\nis observed that considerable progress has been made in terms of token creation. Transaction\nprocessing based on these tokens has also commenced, though it is yet to gain traction across\nall categories of merchants. Further, an alternate system in respect of transactions where\ncardholders decide to enter the card details manually at the time of undertaking the transaction\n(commonly referred to as “guest checkout transactions”) has not been implemented by the\nindustry stakeholders, so far.\nभुगतान और िनपटान ᮧणाली िवभाग, कᱶᮤीय कायार्लय, 14वीमंिजल, कᱶᮤीयकायार्लयभवन,शहीदभगतᳲसंहमागर्, फोटर्, मुम्बई - 400001\nफोनTel: (91-22) 2264 4995;  फैक् सFax: (91-22) 22691557;   ई-मेलe-mail :   cgmdpssco@rbi.org.in\nDepartment of Payment and Settlement Systems, Central Office, 14th Floor, Central Office Building, Shahid Bhagat Singh Road, Fort, Mumbai -\n400001\nᳲहंदी आसान है, इसका ᮧयोग बढ़ाइए"
+  },
+  {
+   "number": 2,
+   "text": "4. \nGiven the above, it has been decided to extend the timeline for storing of CoF data by\nthree months, i.e., till September 30, 2022, after which such data shall be purged.\n5. \nThis directive is issued under Section 10 (2) read with Section 18 of Payment and\nSettlement Systems Act, 2007 (Act 51 of 2007).\nYours faithfully,\n(P. Vasudevan) \nChief General Manager"
+  }
+ ]
+}

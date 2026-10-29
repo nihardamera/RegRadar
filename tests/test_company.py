@@ -42,3 +42,19 @@ def test_every_policy_has_numbered_sections_to_cite() -> None:
     for policy in load_policies():
         assert re.search(r"^## 1\. ", policy.body, re.MULTILINE), policy.doc_id
         assert re.search(r"^1\.1 ", policy.body, re.MULTILINE), policy.doc_id
+
+
+def test_every_circular_the_gap_key_cites_is_in_the_corpus() -> None:
+    """A rebuild that drops a cited circular would leave a gap without its rule."""
+    import json
+    from pathlib import Path
+
+    root = Path(__file__).resolve().parent.parent
+    key = (root / "company" / "GAP_KEY.md").read_text(encoding="utf-8")
+    manifest = [json.loads(line) for line in (root / "corpus" / "manifest.jsonl").open()]
+    in_corpus = {row["doc_id"] for row in manifest if row["in_corpus"]}
+    cited = set(re.findall(r"`(rbi-(?:n|md)\d+)`", key))
+    assert len(cited) >= 12
+    assert cited <= in_corpus, sorted(cited - in_corpus)
+    for doc in cited:
+        assert (root / "corpus" / "docs" / f"{doc}.json").exists(), doc

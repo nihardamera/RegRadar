@@ -8,9 +8,10 @@ A row is **verified** only after the rule was found in the circular's text in
 the corpus; the quote is copied from that text. Doc IDs are corpus IDs
 (`rbi-n<notification Id>`). Paragraph numbers are the circular's own.
 
-Two kinds of row are deliberately *not* gaps. **Not applicable**: the rule
+Three kinds of row are deliberately *not* gaps. **Not applicable**: the rule
 exists, but not for this entity. **Superseded**: an older rule would flag it,
-the current one does not. A pipeline that flags those is wrong.
+the current one does not. **Permissive**: the text says "may", not "shall".
+A pipeline that flags those is wrong.
 
 ## Gaps
 
@@ -26,6 +27,8 @@ the current one does not. A pipeline that flags those is wrong.
 | G8 | FC-13 §3.2 | No KFS for loans of ₹10,000 or less | KFS instructions apply to "all retail and MSME term loan products extended by all regulated entities" | `rbi-n12663` Key Facts Statement (KFS) for Loans & Advances, ¶2 | verified |
 | G9 | FP-00 §3.4, FP-12 §6.1 | Net worth ₹16 crore at the end of the third financial year since authorisation (March 2023) | "minimum net-worth of ₹25 crore by the end of third financial year of grant of authorisation" | `rbi-n12896` Master Direction on Regulation of Payment Aggregator (PA), ¶6(a) | verified |
 | G10 | FP-12 §4.1 | Interest on 15% of the average escrow balance | "No interest shall be payable on the balances maintained in the escrow account(s) except on the core portion amount", computed as ¶17 sets out | `rbi-n12896` Master Direction on Regulation of Payment Aggregator (PA), ¶16 Table 1, ¶17 | verified |
+| G11 | FC-17 §3.1 | Recovery calls and visits from 8 am to 9 pm | The NBFC and its agents must not resort to harassment, including "calling the borrower before 8:00 a.m. and after 7:00 p.m. for recovery of overdue loans" | `rbi-md362` RBI (NBFCs – Responsible Business Conduct) Directions, 2025, ¶100 | verified |
+| G12 | FP-02 §2.3 | V-CIP recordings stored by a vendor in Singapore | "The NBFC shall store the entire data and recordings of V-CIP in a system / system located in India" (V-CIP is used for FlexiCredit borrowers, FP-02 §2.2) | `rbi-md361` RBI (NBFCs – Know Your Customer) Directions, 2025, V-CIP Records and Data Management (i) | verified |
 
 ## Deliberately not gaps
 
@@ -33,15 +36,13 @@ the current one does not. A pipeline that flags those is wrong.
 | --- | --- | --- | --- | --- | --- |
 | N1 | FP-05 §1.2, FP-18 §2.3 | IT Strategy Committee meets once a year | The quarterly ITSC rule is in the IT Governance MD, which applies to NBFCs in the Top, Upper and Middle Layers, not to FlexiCredit (Base Layer). FlexiPay, as a non-bank PSO, falls under `rbi-n12715` ¶7, which makes the Board responsible for oversight of information security risks and allows "primary oversight" to "be delegated to a sub-committee of the Board", with no meeting frequency | `rbi-n12562` Master Direction on IT Governance, Risk, Controls and Assurance Practices, ¶2 and ¶6 | not applicable, verified |
 | N2 | FP-12 §2.1 | Merchants settled T+3 | The 2025 Master Direction leaves merchant settlement to "the agreement between the PA and the merchant", which "must transparently mention the settlement timelines" (FlexiPay's agreement does, FP-03 §5.1). Earlier PA guidelines fixed Ts+1 | `rbi-n12896` Master Direction on Regulation of Payment Aggregator (PA), ¶16 Table 1, Timelines | superseded, verified |
+| N3 | FP-20 §3.1 | No risk-based step-up; the same two factors for every transaction | §8 is permissive: issuers "may … identify transactions for evaluation against behavioural / contextual parameters" and "additional checks beyond the minimum two-factor authentication may be resorted to". Two factors on every transaction (FP-20 §2.1) is the requirement | `rbi-n12898` RBI (Authentication mechanisms for digital payment transactions) Directions, 2025, ¶8 | permissive, verified |
 
-## Planted, still to verify against the corpus
+## Planted but dropped
 
-These stay out of any evaluation until the rule is found in a corpus document.
+Kept here so the policies are not mistaken for a further gap source.
 
-| ID | Policy | What the policy says | The rule it is meant to break |
+| ID | Policy | What the policy says | Why it was dropped |
 | --- | --- | --- | --- |
-| P1 | FC-17 §3.1 | Recovery calls and visits from 8 am to 9 pm | Recovery agents may contact borrowers only between 8:00 a.m. and 7:00 p.m. |
-| P2 | FP-01 §2.3, §4.2; FP-11 §3.1 | FlexiWallet can be loaded from the PayLater credit line | Non-bank PPIs may not be loaded from credit lines |
-| P3 | FP-02 §2.3 | V-CIP recordings stored by a vendor in Singapore | V-CIP infrastructure and data must be in India, with the RE |
-| P4 | FP-20 §3.1 | No risk-based checks; the same two factors for every transaction | The 2025 authentication Directions' risk-based approach (`rbi-n12898` ¶8) |
-| P5 | FC-13 §4.2 | No cooling-off period for PayLater lines | Whether §10 of the Digital Lending Directions covers credit lines |
+| D1 | FP-01 §2.3, §4.2; FP-11 §3.1 | FlexiWallet can be loaded from the PayLater credit line | The rule against loading non-bank PPIs from credit lines is not in any corpus document (it was not issued as a notification) |
+| D2 | FC-13 §4.2 | No cooling-off period for PayLater lines | The Digital Lending Directions' cooling-off (`rbi-n12848` §10) is for "a digital loan"; whether it covers a revolving line is not clear from the text |
