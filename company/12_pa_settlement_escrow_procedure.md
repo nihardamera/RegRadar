@@ -36,9 +36,9 @@ pays, whether or not FlexiPay or the merchant is responsible for delivery.
 Finance Operations the same day.
 
 ## 4. Interest
-4.1 Under the agreement with the bank, FlexiPay may keep up to 15% of the
-escrow balance as a fixed deposit with Coastal Commercial Bank, and receives
-the interest on it.
+4.1 Under its agreement with Coastal Commercial Bank, FlexiPay receives
+interest on 15% of the average escrow balance each month, credited to
+FlexiPay's own account.
 
 ## 5. Audit
 5.1 A chartered accountant certifies every quarter that the escrow account
@@ -47,4 +47,4 @@ bank.
 
 ## 6. Net worth
 6.1 Finance tracks FlexiPay's net worth every quarter and reports it to the
-Board. Net worth at the end of FY 2025-26 was ₹16 crore (FP-00 3.4).
+Board. Net worth on 31 March 2026 was ₹16 crore (FP-00 3.4).

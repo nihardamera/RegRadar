@@ -26,7 +26,7 @@ not accept public deposits.
 ## 2. Authorisations and roles
 2.1 FlexiPay is authorised by the RBI under the Payment and Settlement Systems
 Act, 2007 as an online Payment Aggregator (PA-O). Final authorisation was
-granted in March 2024.
+granted in March 2023.
 
 2.2 FlexiPay issues semi-closed system prepaid payment instruments (PPIs):
 FlexiWallet Small and FlexiWallet Full-KYC.
@@ -44,10 +44,11 @@ offered.
 3.2 Monthly UPI volume of 38 million transactions. FlexiPay Checkout processes
 ₹2,150 crore a month for merchants.
 
-3.3 FlexiCredit's loan book is ₹410 crore across 1.9 lakh borrowers.
+3.3 FlexiCredit's loan book is ₹510 crore across 2.3 lakh borrowers. Its total
+assets were ₹560 crore in the audited balance sheet of 31 March 2026.
 
-3.4 FlexiPay's net worth was ₹16 crore at the end of FY 2025-26, its third full
-financial year as an authorised PA.
+3.4 FlexiPay's net worth was ₹16 crore on 31 March 2026, the end of the third
+full financial year since it was authorised as a PA.
 
 ## 4. People and functions
 4.1 Chief Executive Officer; Chief Compliance Officer (CCO); Chief Risk
