@@ -3927,6 +3927,15 @@ wheels = [
 ]
 
 [[package]]
+name = "pypdf"
+version = "6.20.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/e2/c1/da25a099164cf4b210d63b957c902ad687139f4b8c12c20aec7953a4a266/pypdf-6.20.1.tar.gz", hash = "sha256:28f5a9d2fdc2749264612d94e6a58de54c11d730d9f0cabf8ad34117c4942b45", size = 7075352, upload-time = "2026-10-12T16:14:24.784Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/71/f8/4cbd09988b4b158260b7e0df38bf16f19e998bf0e257a18661a8da04280e/pypdf-6.20.1-py3-none-any.whl", hash = "sha256:aa5a55ddcffdc5e5ab291d5decb23f6383f4e56f8e3263dc39af41fff03885ad", size = 402665, upload-time = "2026-10-12T16:14:22.556Z" },
+]
+
+[[package]]
 name = "pypdfium2"
 version = "5.14.0"
 source = { registry = "https://pypi.org/simple" }
@@ -4203,6 +4212,14 @@ wheels = [
 name = "regradar"
 version = "2.0.0.dev0"
 source = { editable = "." }
+dependencies = [
+    { name = "beautifulsoup4" },
+    { name = "httpx" },
+    { name = "lxml" },
+    { name = "pydantic" },
+    { name = "pymupdf" },
+    { name = "pypdf" },
+]
 
 [package.optional-dependencies]
 v1 = [
@@ -4231,18 +4248,24 @@ dev = [
 
 [package.metadata]
 requires-dist = [
+    { name = "beautifulsoup4", specifier = "==4.15.0" },
     { name = "beautifulsoup4", marker = "extra == 'v1'", specifier = "==4.15.0" },
     { name = "chromadb", marker = "extra == 'v1'", specifier = "==1.1.1" },
     { name = "crewai", extras = ["litellm"], marker = "extra == 'v1'", specifier = "==1.15.23" },
+    { name = "httpx", specifier = "==0.28.1" },
     { name = "langchain-chroma", marker = "extra == 'v1'", specifier = "==1.0.0" },
     { name = "langchain-core", marker = "extra == 'v1'", specifier = "==1.6.6" },
     { name = "langchain-ollama", marker = "extra == 'v1'", specifier = "==1.1.0" },
     { name = "langchain-text-splitters", marker = "extra == 'v1'", specifier = "==1.1.3" },
     { name = "litellm", marker = "extra == 'v1'", specifier = "==1.104.0" },
+    { name = "lxml", specifier = "==6.1.3" },
     { name = "lxml", marker = "extra == 'v1'", specifier = "==6.1.3" },
     { name = "playwright", marker = "extra == 'v1'", specifier = "==1.63.0" },
+    { name = "pydantic", specifier = "==2.12.5" },
     { name = "pydantic", marker = "extra == 'v1'", specifier = "==2.12.5" },
+    { name = "pymupdf", specifier = "==1.28.2" },
     { name = "pymupdf", marker = "extra == 'v1'", specifier = "==1.28.2" },
+    { name = "pypdf", specifier = "==6.20.1" },
     { name = "streamlit", marker = "extra == 'v1'", specifier = "==1.65.0" },
 ]
 provides-extras = ["v1"]

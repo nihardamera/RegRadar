@@ -5,8 +5,19 @@ description = "Cited retrieval over RBI circulars, and impact assessments a comp
 readme = "README.md"
 requires-python = ">=3.12"
 authors = [{ name = "Nihar Damera" }]
-# The v2 pipeline's dependencies are added milestone by milestone.
-dependencies = []
+# The v2 pipeline's dependencies are added milestone by milestone. Where v1
+# uses the same package, the pin matches the v1 extra so both install together.
+dependencies = [
+    "beautifulsoup4==4.15.0",
+    "httpx==0.28.1",
+    "lxml==6.1.3",
+    "pydantic==2.12.5",
+    # AGPL-3.0 (or a commercial licence). Fine for this public repo; a
+    # customer deployment needs the licence or a swap to pypdfium2.
+    "pymupdf==1.28.2",
+    # A second, independent PDF text extractor, to catch text PyMuPDF drops.
+    "pypdf==6.20.1",
+]
 
 [project.optional-dependencies]
 # FinScoutAI v1 (app.py, cli.py, rag_agents.py, utils.py), frozen at the
@@ -71,3 +82,8 @@ select = ["E", "F", "W", "I", "UP", "B", "SIM", "RUF"]
 python_version = "3.12"
 packages = ["regradar"]
 strict = true
+
+# PyMuPDF ships no type information.
+[[tool.mypy.overrides]]
+module = ["pymupdf", "fitz"]
+ignore_missing_imports = true
