@@ -13,6 +13,8 @@ from dataclasses import dataclass
 from bs4 import BeautifulSoup, Tag
 
 _BLOCKED_MARKERS = ("Unauthorised Access", "You are not authorized to view this page")
+# The archive's own crawler was sometimes served RBI's CAPTCHA, and kept it.
+_CAPTCHA_MARKERS = ("testing whether you are a human visitor", "What code is in the image?")
 _PARAGRAPH_TAGS = ["p", "li", "tr", "h1", "h2", "h3", "h4", "div"]
 
 
@@ -44,6 +46,8 @@ def parse_notification_page(html: bytes) -> NotificationPage:
     head = soup.title.get_text(strip=True) if soup.title else ""
     if any(marker in head or marker in soup.get_text()[:2000] for marker in _BLOCKED_MARKERS):
         raise NotACircularPage("the capture is RBI's 'Unauthorised Access' block page")
+    if any(marker in soup.get_text()[:3000] for marker in _CAPTCHA_MARKERS):
+        raise NotACircularPage("the capture is RBI's CAPTCHA page, not the circular")
     table = soup.select_one("table.tablebg")
     if table is None:
         raise NotACircularPage("no table.tablebg: not a notification page")

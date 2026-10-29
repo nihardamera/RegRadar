@@ -171,6 +171,15 @@ class TestTheNotificationPage:
         with pytest.raises(NotACircularPage, match="block page"):
             parse_notification_page(BLOCK_PAGE)
 
+    def test_a_captured_captcha_is_refused_with_that_reason(self) -> None:
+        captcha = (
+            b"<html><body>Please enable JavaScript to view the page content."
+            b"<p>This question is for testing whether you are a human visitor and to prevent"
+            b" automated spam submission.</p><p>What code is in the image?</p></body></html>"
+        )
+        with pytest.raises(NotACircularPage, match="CAPTCHA"):
+            parse_notification_page(captcha)
+
     def test_a_page_of_another_kind_is_refused(self) -> None:
         with pytest.raises(NotACircularPage, match="not a notification page"):
             parse_notification_page(b"<html><body><p>Home</p></body></html>")
