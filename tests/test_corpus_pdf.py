@@ -145,7 +145,7 @@ class TestRepeatedTableText:
         assert table_markdown(rows).count("Minimum") == 2
 
 
-def test_repeated_text_lowers_precision_against_the_second_reader() -> None:
+def test_repeated_text_lowers_multiset_recall() -> None:
     from regradar.corpus.pdf import word_recall
 
     page = "Incidents shall be reported to RBI within 6 hours of detection."
@@ -194,3 +194,49 @@ def test_a_box_of_prose_comes_out_as_lines_not_a_table() -> None:
         "7. The Board of Directors (Board) of the PSO shall be responsible for ensuring",
         "oversight over information security risks, including cyber risk.",
     ]
+
+
+def test_of_two_columns_holding_the_same_text_one_copy_is_kept() -> None:
+    """Page 9 of the penal-charges circular: PyMuPDF put each paragraph in two
+    columns. Judging both against the original table blanked both."""
+    text = (
+        "HFCs shall convey in writing to the borrower in the vernacular language as understood"
+        " by the borrower by means of sanction letter or otherwise, the amount of loan"
+        " sanctioned along with the terms and conditions including annualised rate of interest"
+    )
+    rows: list[list[object]] = [["75.2", text, text], ["76.2", text + " again", text + " again"]]
+    markdown = table_markdown(rows)
+    assert markdown.count("convey in writing") == 2  # once per row, not zero
+
+
+def test_recall_ignores_text_the_reference_holds_twice_but_not_a_drop() -> None:
+    """12620 page 3 holds its text in two overlapping layers: pypdf reads
+    'past due' six times where the page shows it three."""
+    from regradar.corpus.pdf import distinct_recall
+
+    page = "Card-issuers shall report a credit card account as past due when payment is late."
+    assert distinct_recall(page, page + " " + page) == 1.0
+    assert distinct_recall("late. is payment when due past as account", page) < 1.0
+    dropped = "Card-issuers shall report a credit card account."
+    assert distinct_recall(dropped, page) < 0.6
+
+
+def test_a_word_the_second_reader_split_is_not_counted_as_dropped() -> None:
+    from regradar.corpus.pdf import distinct_recall
+
+    ours = "Penal charges shall not be capitalised."
+    assert distinct_recall(ours, "Penal cha rges shall not be capitalised.") == 1.0
+    assert (
+        distinct_recall(ours, "Penal charges shall not be capitalised. Annex: list of circulars")
+        < 0.8
+    )
+
+
+def test_repeats_are_judged_on_shared_words_only() -> None:
+    from regradar.corpus.pdf import repeat_free_share
+
+    reference = "Incidents shall be reported to RBI within 6 hours of detection."
+    assert repeat_free_share(reference + " " + reference, reference) == 0.5
+    assert (
+        repeat_free_share(reference, "Incidents sha ll be reported to RBI within 6 hours.") == 1.0
+    )

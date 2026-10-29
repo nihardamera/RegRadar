@@ -52,7 +52,7 @@ UNRELATED = re.compile(
     r"interest equalisation|rupee drawing|vostro|"
     r"income tax|goods and services tax|pension|small savings|"
     r"y2k|year 2000|forex|\bATMs?\b|deposits?\b|agency banks?|government business|"
-    r"capital market|irrevocable payment|bank finance to",
+    r"capital market|irrevocable payment|bank finance to|bank branches",
     re.IGNORECASE,
 )
 

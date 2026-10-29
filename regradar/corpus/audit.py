@@ -65,7 +65,7 @@ def summary(rows: Sequence[dict[str, Any]]) -> dict[str, Any]:
             row["doc_id"]: row["scanned_pages"] for row in rows if row.get("scanned_pages")
         },
         "devanagari_heavy": [
-            row["doc_id"] for row in corpus if row.get("devanagari_share", 0) > 0.05
+            row["doc_id"] for row in corpus if row.get("devanagari_share", 0) > 0.3
         ],
         "garbled": [row["doc_id"] for row in corpus if row.get("garbled_share", 0) > 0.001],
     }
@@ -113,7 +113,7 @@ def render(rows: Sequence[dict[str, Any]]) -> str:
         "",
         f"1. **Per page, against a second reader.** pypdf reads each page's text layer"
         f" with different code. Pages where PyMuPDF's output keeps less than"
-        f" {PAGE_RECALL_FLOOR:.0%} of pypdf's words: {len(s['low_recall_pages'])}"
+        f" {PAGE_RECALL_FLOOR:.0%} of pypdf's distinct words: {len(s['low_recall_pages'])}"
         f" document(s).",
     ]
     lines += [f"   - {title(doc)}: pages {pages}" for doc, pages in s["low_recall_pages"].items()]
@@ -151,8 +151,10 @@ def render(rows: Sequence[dict[str, Any]]) -> str:
         "",
         "## Other flags",
         "",
-        f"- Mostly Devanagari (over 5% of characters): {s['devanagari_heavy'] or 'none'}."
-        " The Hindi letterhead on every page is a small share and extracts with odd glyphs.",
+        f"- Mostly Devanagari (over 30% of characters): {s['devanagari_heavy'] or 'none'}."
+        " Every circular has a Hindi letterhead and footer, which extract with wrong glyphs"
+        " (not private-use characters, so the check below misses them); they are boilerplate"
+        " and are stripped before chunking.",
         f"- Broken font encodings (private-use characters): {s['garbled'] or 'none'}.",
         "",
         "## Left out",
