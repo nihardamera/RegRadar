@@ -12,14 +12,18 @@ be rerun: downloads are cached, so a rerun only fetches what is missing.
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import sys
-from collections import defaultdict
+from collections import Counter, defaultdict
 from collections.abc import Iterable, Iterator
 from pathlib import Path
 from typing import Any
 
+from regradar.corpus.document import describe, near_duplicates, text_of
+from regradar.corpus.pdf import UnreadablePdf, parse_pdf
 from regradar.corpus.rbi_html import NotACircularPage, parse_notification_page
+from regradar.corpus.select import select
 from regradar.corpus.wayback import (
     Capture,
     captures_for,
@@ -33,6 +37,8 @@ DATA = Path("data")
 CDX_DIR = DATA / "cdx"
 CACHE = DATA / "cache" / "http"
 WORK = DATA / "corpus"
+# Committed: the record of what is in the corpus and where each file came from.
+MANIFEST = Path("corpus") / "manifest.jsonl"
 
 NOTIFICATION_PAGES = "rbi.org.in/Scripts/NotificationUser.aspx"
 NOTIFICATION_PDFS = "rbidocs.rbi.org.in/rdocs/notification/PDFs/"
@@ -135,9 +141,121 @@ def cmd_pages(args: argparse.Namespace) -> int:
                     f"  {done}/{len(wanted)} read, {ok} usable, {client.requests_made} requests",
                     flush=True,
                 )
-        written = write_jsonl(WORK / "pages.jsonl", rows)
+        # Merge with earlier runs over other Id ranges; this run's rows win.
+        path = WORK / "pages.jsonl"
+        merged = {row["id"]: row for row in read_jsonl(path)} if path.exists() else {}
+        merged.update({row["id"]: row for row in rows})
+        written = write_jsonl(path, (merged[key] for key in sorted(merged)))
     ok = sum(r["ok"] for r in rows)
     print(f"{written} Ids, {ok} usable pages -> {WORK / 'pages.jsonl'}")
+    return 0
+
+
+def cmd_select(args: argparse.Namespace) -> int:
+    pages = list(read_jsonl(WORK / "pages.jsonl"))
+    chosen = select(pages, args.limit)
+    write_jsonl(WORK / "selected.jsonl", chosen)
+    usable = sum(1 for p in pages if p.get("ok"))
+    print(f"{len(chosen)} of {usable} usable pages selected -> {WORK / 'selected.jsonl'}")
+    return 0
+
+
+def _pdf_key(url: str) -> str:
+    """rbidocs paths vary in case (`Notification/PDFs` and `notification/PDFs`)."""
+    return url.split("://", 1)[-1].lower()
+
+
+def fetch_pdf(
+    client: PoliteClient, url: str, index: dict[str, Capture]
+) -> tuple[bytes | None, str | None, str]:
+    """(bytes, capture URL, problem) for the first capture that really is a PDF."""
+    candidates = [index[_pdf_key(url)]] if _pdf_key(url) in index else []
+    listed = False
+    problem = "no capture of the PDF in the archive"
+    while True:
+        while candidates:
+            capture = candidates.pop(0)
+            try:
+                reply = client.get(capture.raw_url)
+            except FetchError as error:
+                problem = str(error)
+                continue
+            if b"%PDF-" in reply.body[:1024]:
+                return reply.body, capture.raw_url, ""
+            problem = f"capture {capture.timestamp} is not a PDF"
+        if listed:
+            return None, None, problem
+        listed = True
+        candidates = [c for c in captures_for(client, url) if c.mimetype == "application/pdf"][:3]
+
+
+def cmd_pdfs(args: argparse.Namespace) -> int:
+    selected = list(read_jsonl(WORK / "selected.jsonl"))
+    with PoliteClient(CACHE, min_interval=args.interval) as client:
+        index_rows = load_index(
+            client, "notification_pdfs_2024on.txt", NOTIFICATION_PDFS, 2024, "application/pdf"
+        )
+        index = {_pdf_key(c.original): c for c in index_rows}
+        rows = []
+        for done, page in enumerate(selected, 1):
+            body, capture_url, problem = fetch_pdf(client, page["pdf_url"], index)
+            row = {"id": page["id"], "pdf_url": page["pdf_url"], "ok": body is not None}
+            if body is not None:
+                row |= {"pdf_capture_url": capture_url, "sha256": hashlib.sha256(body).hexdigest()}
+            else:
+                row["problem"] = problem
+            rows.append(row)
+            if done % 25 == 0:
+                ok = sum(r["ok"] for r in rows)
+                print(f"  {done}/{len(selected)} PDFs, {ok} read", flush=True)
+    write_jsonl(WORK / "pdfs.jsonl", rows)
+    print(f"{sum(r['ok'] for r in rows)} of {len(rows)} PDFs read -> {WORK / 'pdfs.jsonl'}")
+    return 0
+
+
+def cmd_parse(args: argparse.Namespace) -> int:
+    client = PoliteClient(CACHE)  # reads the cache only; never fetches here
+    pdfs = {row["id"]: row for row in read_jsonl(WORK / "pdfs.jsonl")}
+    rows: list[dict[str, Any]] = []
+    texts: dict[str, str] = {}
+    for page in read_jsonl(WORK / "selected.jsonl"):
+        html_text = (WORK / "html" / f"{page['id']}.txt").read_text(encoding="utf-8")
+        found = pdfs.get(page["id"], {})
+        parsed, problem = None, found.get("problem")
+        cached = client.cached(found["pdf_capture_url"]) if found.get("ok") else None
+        if cached is not None:
+            try:
+                parsed = parse_pdf(cached.body)
+            except UnreadablePdf as error:
+                problem = str(error)
+        row = describe(page, html_text, parsed, problem)
+        if found.get("ok"):
+            row |= {"pdf_capture_url": found["pdf_capture_url"], "pdf_sha256": found["sha256"]}
+        rows.append(row)
+        text = text_of(row, html_text, parsed)
+        if text:
+            texts[row["doc_id"]] = text
+            document = {"doc_id": row["doc_id"], "title": row["title"], "text": text}
+            if parsed is not None and row["text_source"] == "pdf":
+                document["pages"] = [{"number": p.number, "text": p.text} for p in parsed.pages]
+            out = WORK / "docs" / f"{row['doc_id']}.json"
+            out.parent.mkdir(parents=True, exist_ok=True)
+            out.write_text(json.dumps(document, ensure_ascii=False), encoding="utf-8")
+
+    ok = [row for row in rows if row["status"] == "ok"]
+    copies = near_duplicates([(row["doc_id"], texts[row["doc_id"]]) for row in ok])
+    for row in rows:
+        if row["doc_id"] in copies:
+            row["status"] = "near_duplicate"
+            row["duplicate_of"] = copies[row["doc_id"]]
+    in_corpus = [row for row in rows if row["status"] == "ok"][: args.target]
+    keep = {row["doc_id"] for row in in_corpus}
+    for row in rows:
+        row["in_corpus"] = row["doc_id"] in keep
+    MANIFEST.parent.mkdir(parents=True, exist_ok=True)
+    write_jsonl(MANIFEST, rows)
+    counts = Counter(row["status"] for row in rows)
+    print(f"{len(rows)} documents: {dict(counts)}; {len(in_corpus)} in the corpus -> {MANIFEST}")
     return 0
 
 
@@ -153,6 +271,15 @@ def main(argv: list[str] | None = None) -> int:
     pages.add_argument("--max-id", type=int, default=13999)
     pages.add_argument("--interval", type=float, default=2.0, help="seconds between requests")
     pages.set_defaults(run=cmd_pages)
+    chooser = steps.add_parser("select", help="choose the circulars FlexiPay would need")
+    chooser.add_argument("--limit", type=int, default=380, help="more than the target, for losses")
+    chooser.set_defaults(run=cmd_select)
+    pdf_step = steps.add_parser("pdfs", help="fetch the selected circulars' PDFs")
+    pdf_step.add_argument("--interval", type=float, default=2.0)
+    pdf_step.set_defaults(run=cmd_pdfs)
+    parse_step = steps.add_parser("parse", help="parse, check and write the manifest")
+    parse_step.add_argument("--target", type=int, default=300)
+    parse_step.set_defaults(run=cmd_parse)
     args = parser.parse_args(argv)
     result: int = args.run(args)
     return result

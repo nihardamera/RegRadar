@@ -78,6 +78,10 @@ extend-exclude = [
 [tool.ruff.lint]
 select = ["E", "F", "W", "I", "UP", "B", "SIM", "RUF"]
 
+[tool.ruff.lint.per-file-ignores]
+# Test data quotes RBI titles, which use en dashes.
+"tests/*" = ["RUF001"]
+
 [tool.mypy]
 python_version = "3.12"
 packages = ["regradar"]

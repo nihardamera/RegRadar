@@ -75,10 +75,10 @@ class TestTheHeader:
     @pytest.mark.parametrize(
         ("title", "kind"),
         [
-            ("Master Direction – Know Your Customer (KYC) Direction, 2016", "master_direction"),  # noqa: RUF001
+            ("Master Direction – Know Your Customer (KYC) Direction, 2016", "master_direction"),
             ("Draft Reserve Bank of India (Digital Lending) Directions, 2025", "draft"),
             ("Reserve Bank of India (Authentication ...) Directions, 2025", "directions"),
-            ("Master Circular – Customer Service in Banks", "master_circular"),  # noqa: RUF001
+            ("Master Circular – Customer Service in Banks", "master_circular"),
             ("Levy of Penal Charges on Loan Accounts", "circular"),
         ],
     )
