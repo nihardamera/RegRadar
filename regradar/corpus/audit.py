@@ -12,7 +12,7 @@ from collections.abc import Sequence
 from typing import Any
 
 from regradar.corpus.document import HTML_RECALL_FLOOR
-from regradar.corpus.pdf import PAGE_RECALL_FLOOR
+from regradar.corpus.pdf import PAGE_PRECISION_FLOOR, PAGE_RECALL_FLOOR
 
 
 def _share(count: int, total: int) -> str:
@@ -55,6 +55,11 @@ def summary(rows: Sequence[dict[str, Any]]) -> dict[str, Any]:
         ],
         "low_recall_pages": {
             row["doc_id"]: row["low_recall_pages"] for row in corpus if row.get("low_recall_pages")
+        },
+        "repeated_text_pages": {
+            row["doc_id"]: row["repeated_text_pages"]
+            for row in corpus
+            if row.get("repeated_text_pages")
         },
         "scanned_pages": {
             row["doc_id"]: row["scanned_pages"] for row in rows if row.get("scanned_pages")
@@ -112,6 +117,14 @@ def render(rows: Sequence[dict[str, Any]]) -> str:
         f" document(s).",
     ]
     lines += [f"   - {title(doc)}: pages {pages}" for doc, pages in s["low_recall_pages"].items()]
+    lines += [
+        f"   The same comparison the other way finds repeated text: pages where under"
+        f" {PAGE_PRECISION_FLOOR:.0%} of PyMuPDF's words are in pypdf's (a table cell read"
+        f" twice, for example): {len(s['repeated_text_pages'])} document(s).",
+    ]
+    lines += [
+        f"   - {title(doc)}: pages {pages}" for doc, pages in s["repeated_text_pages"].items()
+    ]
     lines += [
         f"2. **Per document, against the web page.** {s['html_compared']} documents also"
         " have the circular as HTML. Share of the HTML's words found in the PDF text:"

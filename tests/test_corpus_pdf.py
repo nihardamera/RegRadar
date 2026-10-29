@@ -111,3 +111,75 @@ class TestTheCrossCheck:
 def test_table_cells_with_pipes_and_ragged_rows_stay_one_table() -> None:
     markdown = table_markdown([["A", "B|C"], ["1"], [None, None]])
     assert markdown.splitlines() == ["| A | B\\|C |", "| --- | --- |", "| 1 |  |"]
+
+
+class TestRepeatedTableText:
+    """The shape PyMuPDF produced on the RBI's cyber-resilience Master Direction:
+    a merged cell's whole paragraph in one cell, then the same text line by
+    line in the next column."""
+
+    LINES = (
+        "(a) The PSO shall put in place a Board approved incident response mechanism, which",
+        "shall include provisions to promptly notify its senior management, relevant employees",
+        "(d) Unusual incidents shall be reported to RBI within 6 hours of detection.",
+    )
+
+    def test_the_merged_copy_goes_and_the_line_by_line_text_stays(self) -> None:
+        rows: list[list[object]] = [
+            ["22. Incident Response", "", ""],
+            [" ".join(self.LINES), self.LINES[0], ""],
+            ["", self.LINES[1], ""],
+            ["", self.LINES[2], ""],
+        ]
+        markdown = table_markdown(rows)
+        assert markdown.count("within 6 hours of detection") == 1
+        assert markdown.count("promptly notify") == 1
+        assert "22. Incident Response" in markdown
+
+    def test_short_labels_that_repeat_are_kept(self) -> None:
+        rows: list[list[object]] = [
+            ["Instrument", "KYC"],
+            ["Small PPI", "Minimum"],
+            ["Gift PPI", "Minimum"],
+        ]
+        assert table_markdown(rows).count("Minimum") == 2
+
+
+def test_repeated_text_lowers_precision_against_the_second_reader() -> None:
+    from regradar.corpus.pdf import word_recall
+
+    page = "Incidents shall be reported to RBI within 6 hours of detection."
+    assert word_recall(page, page + " " + page) == 0.5  # pypdf has each word once
+
+
+def test_near_identical_rows_in_one_column_are_not_copies() -> None:
+    """The list of repealed circulars in the authentication Directions: titles
+    that differ by a word or two, one per row. Dropping them loses text."""
+    title = "Security Issues and Risk mitigation measures related to Card Not Present"
+    rows: list[list[object]] = [
+        ["No.", "Circular", "Subject"],
+        ["1", "DPSS.CO.No.1503/2010-2011", title + " transactions"],
+        ["2", "DPSS.PD.CO. No.223/2011-2012", title + " (CNP) transactions"],
+        ["3", "DPSS.PD.CO. No.371/2014-2015", title + " (CNP) transactions"],
+    ]
+    markdown = table_markdown(rows)
+    assert markdown.count("Security Issues and Risk mitigation") == 3
+
+
+def test_a_copy_that_steps_across_columns_is_found() -> None:
+    """Page 11 of the same Master Direction: the merged paragraph continues
+    down column 1, then column 2."""
+    a = "(a) The PSO shall ensure periodic repeated training and awareness programmes on"
+    a2 = "security issues for its employees and vendors managing its information assets."
+    b = "(b) A system of periodic evaluation of cyber security awareness amongst employees"
+    b2 = "shall be operationalised, and those below a benchmark score may be restricted."
+    rows: list[list[object]] = [
+        ["25. Employee Awareness / Training", "", ""],
+        [" ".join([a, a2, b, b2]), a, ""],
+        ["", a2, ""],
+        ["", "", b],
+        ["", "", b2],
+    ]
+    markdown = table_markdown(rows)
+    assert markdown.count("periodic repeated training") == 1
+    assert markdown.count("benchmark score") == 1

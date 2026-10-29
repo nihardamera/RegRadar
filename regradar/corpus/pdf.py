@@ -22,13 +22,18 @@ from pypdf import PdfReader
 # A page with less text than this and an image over most of it is a scan.
 SCANNED_MAX_CHARS = 40
 SCANNED_MIN_IMAGE_SHARE = 0.5
-# Word recall against pypdf below this flags the page.
+# Word recall against pypdf below this flags the page (text dropped)...
 PAGE_RECALL_FLOOR = 0.95
+# ...and word precision below this flags it too (text repeated, as when the
+# table finder splits a merged cell and its text comes out twice).
+PAGE_PRECISION_FLOOR = 0.95
+# A table cell this well covered by the table's other cells is a copy.
+_REDUNDANT_CELL = 0.9
 
 _WORD = re.compile(r"\w+", re.UNICODE)
-_DEVANAGARI = re.compile(r"[ऀ-ॿ]")
+_DEVANAGARI = re.compile(r"[\u0900-\u097F]")
 # Private-use code points and U+FFFD are what broken font encodings turn into.
-_GARBLED = re.compile(r"[-�]")
+_GARBLED = re.compile(r"[\uE000-\uF8FF\uFFFD]")
 
 
 class UnreadablePdf(ValueError):
@@ -43,6 +48,7 @@ class PageText:
     scanned: bool
     image_share: float
     reference_recall: float  # share of pypdf's words found in `text`; 1.0 when pypdf finds none
+    reference_precision: float = 1.0  # share of `text`'s words that pypdf also finds
 
 
 @dataclass
@@ -64,6 +70,10 @@ class ParsedPdf:
     @property
     def low_recall_pages(self) -> list[int]:
         return [p.number for p in self.pages if p.reference_recall < PAGE_RECALL_FLOOR]
+
+    @property
+    def repeated_text_pages(self) -> list[int]:
+        return [p.number for p in self.pages if p.reference_precision < PAGE_PRECISION_FLOOR]
 
     @property
     def table_count(self) -> int:
@@ -101,11 +111,53 @@ def _cell(value: object) -> str:
     return re.sub(r"\s+", " ", str(value)).strip().replace("|", "\\|") if value is not None else ""
 
 
+def _copies_a_run(rows: list[list[str]], r: int, c: int) -> bool:
+    """Whether cell (r, c) holds the same text as the other columns of the rows
+    from r down, read row by row, until they hold as many words as it does.
+
+    The copy can step across columns (a paragraph continues down column 1,
+    then column 2), so every column but c is read. Column c itself is not,
+    so near-identical cells stacked in one column never count as copies.
+    """
+    text = rows[r][c]
+    size = sum(words(text).values())
+    run: list[str] = []
+    for row in rows[r:]:
+        run.extend(value for c2, value in enumerate(row) if c2 != c and value)
+        if sum(words(" ".join(run)).values()) >= size:
+            break
+    joined = " ".join(run)
+    return (
+        word_recall(joined, text) >= _REDUNDANT_CELL
+        and word_recall(text, joined) >= _REDUNDANT_CELL
+    )
+
+
+def drop_repeated_cells(rows: list[list[str]]) -> list[list[str]]:
+    """Blank cells that repeat a run of cells in another column.
+
+    PyMuPDF sometimes returns a merged cell's whole paragraph in one cell and
+    the same text again line by line down the next column. Only that shape
+    counts as a copy: a cell matching, both ways, a run of cells in another
+    column that starts on its row. Similar rows in the same column (the
+    near-identical titles in a list of repealed circulars) are never compared.
+    Cells under 8 words are left alone.
+    """
+    blank: set[tuple[int, int]] = set()
+    for r, row in enumerate(rows):
+        for c, value in enumerate(row):
+            if sum(words(value).values()) >= 8 and _copies_a_run(rows, r, c):
+                blank.add((r, c))
+    return [
+        [value if (r, c) not in blank else "" for c, value in enumerate(row)]
+        for r, row in enumerate(rows)
+    ]
+
+
 def table_markdown(rows: list[list[object]]) -> str:
     """A table as Markdown, the first row as its header."""
-    cleaned = [
-        [_cell(value) for value in row] for row in rows if any(v not in (None, "") for v in row)
-    ]
+    cleaned = drop_repeated_cells([[_cell(value) for value in row] for row in rows])
+    cleaned = [row for row in cleaned if any(row)]
     if not cleaned:
         return ""
     width = max(len(row) for row in cleaned)
@@ -198,6 +250,9 @@ def parse_pdf(data: bytes) -> ParsedPdf:
                     scanned=letters < SCANNED_MAX_CHARS and share >= SCANNED_MIN_IMAGE_SHARE,
                     image_share=round(share, 3),
                     reference_recall=round(word_recall(text, reference), 4),
+                    reference_precision=round(word_recall(reference, text), 4)
+                    if reference.strip()
+                    else 1.0,
                 )
             )
     return parsed

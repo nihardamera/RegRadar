@@ -82,6 +82,7 @@ def describe(
                 "tables": parsed.table_count,
                 "scanned_pages": parsed.scanned_pages,
                 "low_recall_pages": parsed.low_recall_pages,
+                "repeated_text_pages": parsed.repeated_text_pages,
                 "min_page_recall": min((p.reference_recall for p in parsed.pages), default=1.0),
                 "devanagari_share": round(parsed.devanagari_share, 4),
                 "garbled_share": round(parsed.garbled_share, 4),
