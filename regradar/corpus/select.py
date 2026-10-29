@@ -25,7 +25,8 @@ INCLUDE = re.compile(
     r"penal charges|fair practices?|interest rate|recovery|"
     r"fraud|cyber|information technology|\bIT\b|outsourcing|"
     r"customer service|customer protection|grievance|ombudsman|complaint|"
-    r"account aggregator|data|authentication|key facts? statement|compensation",
+    r"account aggregator|data|authentication|key facts? statement|compensation|"
+    r"UAPA|sanctions? list|pragya prasun|accessib",
     re.IGNORECASE,
 )
 

@@ -217,3 +217,31 @@ class TestTheNotificationPage:
     def test_a_page_of_another_kind_is_refused(self) -> None:
         with pytest.raises(NotACircularPage, match="not a notification page"):
             parse_notification_page(b"<html><body><p>Home</p></body></html>")
+
+
+LISTING = """<html><body><table class="tablebg">
+<tr><td>Nov 28, 2025</td></tr>
+<tr><td>Reserve Bank of India (Non-Banking Financial Companies – Know Your Customer)
+Directions, 2025</td>
+<td><a href="https://rbidocs.rbi.org.in/rdocs/notification/PDFs/361MD1E2F8EA063454AD5AFA1D02A1BA5ACA7.PDF">
+<img alt=""/></a> 812 kb</td></tr>
+<tr><td>Reserve Bank of India (Universal Banks – Licensing) Guidelines, 2025</td>
+<td><a href="https://rbidocs.rbi.org.in/rdocs/notification/PDFs/143MD.pdf"><img alt=""/></a>
+300 kb</td></tr>
+<tr><td><a href="https://rbidocs.rbi.org.in/rdocs/content/pdfs/Utkarsh30122022.pdf">Vision</a></td></tr>
+</table></body></html>""".encode()
+
+
+def test_the_master_direction_listing_gives_number_title_date_and_pdf() -> None:
+    from regradar.corpus.document import doc_id
+    from regradar.corpus.rbi_html import parse_master_direction_listing
+
+    entries = parse_master_direction_listing(LISTING)
+    assert [e.number for e in entries] == [361, 143]
+    assert entries[0].title == (
+        "Reserve Bank of India (Non-Banking Financial Companies – Know Your Customer)"
+        " Directions, 2025"
+    )
+    assert entries[0].issued == "Nov 28, 2025"
+    assert entries[1].pdf_url.endswith("143MD.pdf")
+    assert doc_id(f"md{entries[0].number}") == "rbi-md361" and doc_id(12898) == "rbi-n12898"

@@ -24,8 +24,9 @@ DUPLICATE_JACCARD = 0.8
 _HEADER_CHARS = 3000
 
 
-def doc_id(notification: int) -> str:
-    return f"rbi-n{notification}"
+def doc_id(page: int | str) -> str:
+    """`rbi-n12898` for notification 12898; `rbi-md361` for Master Direction `md361`."""
+    return f"rbi-n{page}" if isinstance(page, int) else f"rbi-{page}"
 
 
 def describe(

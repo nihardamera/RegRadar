@@ -41,6 +41,49 @@ def _text_with_breaks(element: Tag) -> str:
     return "\n".join(line for line in lines if line)
 
 
+@dataclass(frozen=True)
+class MasterDirectionEntry:
+    number: int  # the leading number of the PDF's file name: 361MD....PDF -> 361
+    title: str
+    issued: str | None  # the date row above the entry, as RBI writes it ("Nov 28, 2025")
+    pdf_url: str
+
+
+_MD_FILE = re.compile(r"/(\d+)MD[^/]*\.pdf$", re.IGNORECASE)
+_LISTED_DATE = re.compile(r"^[A-Z][a-z]{2} \d{1,2}, \d{4}$")
+
+
+def parse_master_direction_listing(html: bytes) -> list[MasterDirectionEntry]:
+    """Every Master Direction on the listing page (`BS_ViewMasterDirections.aspx`).
+
+    Each entry is a table row of title and PDF size, with the PDF behind an
+    icon link; a row holding only a date ("Nov 28, 2025") heads each group.
+    """
+    soup = BeautifulSoup(html, "lxml")
+    entries: list[MasterDirectionEntry] = []
+    issued: str | None = None
+    for row in soup.find_all("tr"):
+        cells = [
+            re.sub(r"\s+", " ", cell.get_text(" ", strip=True))
+            for cell in row.find_all("td", recursive=False)
+        ]
+        text = " ".join(cell for cell in cells if cell)
+        if _LISTED_DATE.match(text):
+            issued = text
+            continue
+        link = next(
+            (a for a in row.find_all("a", href=True) if _MD_FILE.search(str(a["href"]))), None
+        )
+        if link is None:
+            continue
+        href = str(link["href"])
+        match = _MD_FILE.search(href)
+        assert match is not None
+        title = re.sub(r"\s*\(?\d+\s*kb\)?\s*$", "", text, flags=re.IGNORECASE).strip()
+        entries.append(MasterDirectionEntry(int(match.group(1)), title, issued, href))
+    return entries
+
+
 def parse_notification_page(html: bytes) -> NotificationPage:
     soup = BeautifulSoup(html, "lxml")
     head = soup.title.get_text(strip=True) if soup.title else ""

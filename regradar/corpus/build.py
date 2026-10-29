@@ -1,6 +1,7 @@
 """Build the corpus from the Internet Archive's captures of rbi.org.in.
 
     uv run python -m regradar.corpus.build pages --min-id 12500
+    uv run python -m regradar.corpus.build masters
     uv run python -m regradar.corpus.build select
     uv run python -m regradar.corpus.build pdfs
     uv run python -m regradar.corpus.build parse
@@ -24,13 +25,18 @@ from typing import Any
 from regradar.corpus.audit import render
 from regradar.corpus.document import describe, near_duplicates, text_of
 from regradar.corpus.pdf import UnreadablePdf, parse_pdf
-from regradar.corpus.rbi_html import NotACircularPage, parse_notification_page
-from regradar.corpus.select import select
+from regradar.corpus.rbi_html import (
+    NotACircularPage,
+    parse_master_direction_listing,
+    parse_notification_page,
+)
+from regradar.corpus.select import relevant, select
 from regradar.corpus.wayback import (
     Capture,
     captures_for,
     cdx_query_url,
     notification_id,
+    page_id,
     parse_cdx,
 )
 from regradar.fetch import FetchError, PoliteClient
@@ -45,6 +51,10 @@ DOCS = Path("corpus") / "docs"
 
 NOTIFICATION_PAGES = "rbi.org.in/Scripts/NotificationUser.aspx"
 NOTIFICATION_PDFS = "rbidocs.rbi.org.in/rdocs/notification/PDFs/"
+MASTER_DIRECTION_PAGES = "rbi.org.in/Scripts/BS_ViewMasterDirections.aspx"
+# The listing that names every Master Direction in force after the November
+# 2025 consolidation (the other `did` pages list subsets of it).
+MASTER_DIRECTION_LISTING = 401
 
 
 def write_jsonl(path: Path, rows: Iterable[dict[str, Any]]) -> int:
@@ -154,12 +164,51 @@ def cmd_pages(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_masters(_args: argparse.Namespace) -> int:
+    """List the Master Directions, as page rows like the notifications'."""
+    with PoliteClient(CACHE) as client:
+        index = load_index(client, "master_direction_pages.txt", MASTER_DIRECTION_PAGES, 2025, None)
+        listings = [
+            c
+            for c in index
+            if page_id(c.original, "BS_ViewMasterDirections.aspx", "did")
+            == MASTER_DIRECTION_LISTING
+        ]
+        capture = max(listings, key=lambda c: c.length)
+        entries = parse_master_direction_listing(client.get(capture.raw_url).body)
+    rows = [
+        {
+            "id": f"md{entry.number}",
+            "page_url": "https://www.rbi.org.in/Scripts/BS_ViewMasterDirections.aspx"
+            f"?did={MASTER_DIRECTION_LISTING}",
+            "capture_url": capture.raw_url,
+            "title": entry.title,
+            "listed": entry.issued,
+            "pdf_url": entry.pdf_url,
+            "body_chars": 0,
+            "ok": True,
+        }
+        for entry in entries
+    ]
+    write_jsonl(WORK / "masters.jsonl", rows)
+    print(f"{len(rows)} Master Directions listed -> {WORK / 'masters.jsonl'}")
+    return 0
+
+
 def cmd_select(args: argparse.Namespace) -> int:
+    """Every relevant Master Direction, then the newest relevant notifications."""
     pages = list(read_jsonl(WORK / "pages.jsonl"))
-    chosen = select(pages, args.limit)
+    masters_path = WORK / "masters.jsonl"
+    masters = list(read_jsonl(masters_path)) if masters_path.exists() else []
+    chosen_masters = [m for m in masters if relevant(m["title"])]
+    chosen = chosen_masters + select(pages, args.limit - len(chosen_masters))
     write_jsonl(WORK / "selected.jsonl", chosen)
     usable = sum(1 for p in pages if p.get("ok"))
-    print(f"{len(chosen)} of {usable} usable pages selected -> {WORK / 'selected.jsonl'}")
+    print(
+        f"{len(chosen_masters)} of {len(masters)} Master Directions and"
+        f" {len(chosen) - len(chosen_masters)} of {usable} notifications selected"
+        f" -> {WORK / 'selected.jsonl'}"
+    )
     return 0
 
 
@@ -223,7 +272,8 @@ def cmd_parse(args: argparse.Namespace) -> int:
     texts: dict[str, str] = {}
     documents: dict[str, dict[str, Any]] = {}
     for page in read_jsonl(WORK / "selected.jsonl"):
-        html_text = (WORK / "html" / f"{page['id']}.txt").read_text(encoding="utf-8")
+        html_path = WORK / "html" / f"{page['id']}.txt"
+        html_text = html_path.read_text(encoding="utf-8") if html_path.exists() else ""
         found = pdfs.get(page["id"], {})
         parsed, problem = None, found.get("problem")
         cached = client.cached(found["pdf_capture_url"]) if found.get("ok") else None
@@ -296,6 +346,8 @@ def main(argv: list[str] | None = None) -> int:
     pages.add_argument("--max-id", type=int, default=13999)
     pages.add_argument("--interval", type=float, default=2.0, help="seconds between requests")
     pages.set_defaults(run=cmd_pages)
+    masters = steps.add_parser("masters", help="list the Master Directions")
+    masters.set_defaults(run=cmd_masters)
     chooser = steps.add_parser("select", help="choose the circulars FlexiPay would need")
     chooser.add_argument("--limit", type=int, default=380, help="more than the target, for losses")
     chooser.set_defaults(run=cmd_select)
