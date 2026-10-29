@@ -17,7 +17,8 @@ from __future__ import annotations
 import re
 from datetime import date, datetime
 
-_CIRCULAR_NO = re.compile(r"\bRBI/\s?(\d{4})\s?-\s?(\d{2,4})\s?/\s?(\d+)\b")
+# `RBI/2025-26/79`, and since 2024 often `RBI/DPSS/2024-25/123`.
+_CIRCULAR_NO = re.compile(r"\bRBI/\s?(?:([A-Z]{2,6})\s?/\s?)?(\d{4})\s?-\s?(\d{2,4})\s?/\s?(\d+)\b")
 _MONTHS = "January|February|March|April|May|June|July|August|September|October|November|December"
 _DATE = re.compile(rf"\b({_MONTHS})\s+(\d{{1,2}}),?\s+(\d{{4}})\b")
 _FISCAL_YEAR = re.compile(r"\d{4}\s?-\s?\d{2,4}\s*$")
@@ -45,12 +46,12 @@ DEPARTMENTS = {
 
 
 def circular_number(text: str) -> str | None:
-    """`RBI/2025-26/79`, normalised (no spaces), or None."""
+    """`RBI/2025-26/79` or `RBI/DPSS/2024-25/123`, without spaces, or None."""
     match = _CIRCULAR_NO.search(text)
     if not match:
         return None
-    start, end, serial = match.groups()
-    return f"RBI/{start}-{end}/{serial}"
+    dept, start, end, serial = match.groups()
+    return f"RBI/{dept + '/' if dept else ''}{start}-{end}/{serial}"
 
 
 def first_date(text: str) -> date | None:
@@ -72,21 +73,23 @@ def reference_number(text: str) -> str | None:
     """The department reference on the line after the circular number.
 
     It ends in a financial year (`.../2025-26`) or names a FED circular
-    (`A.P. (DIR Series) Circular No. 12`).
+    (`A.P. (DIR Series) Circular No. 12`). In PDFs the date is often on the
+    same line, right-aligned, so a date is cut off first.
     """
     lines = _lines(text)
-    for i, line in enumerate(lines[:12]):
+    for i, line in enumerate(lines[:20]):
         if not _CIRCULAR_NO.search(line):
             continue
         rest = _CIRCULAR_NO.sub("", line).strip()
         for candidate in [rest, *lines[i + 1 : i + 3]]:
+            candidate = _DATE.sub("", candidate).strip(" ,")
             if _FISCAL_YEAR.search(candidate) or "DIR Series" in candidate:
                 return candidate
     return None
 
 
 def department(reference: str | None) -> str | None:
-    """The issuing department, from the codes in the reference number."""
+    """The issuing department, from the codes in a reference or circular number."""
     if not reference:
         return None
     if "DIR Series" in reference:

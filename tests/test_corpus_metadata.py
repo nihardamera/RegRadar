@@ -45,7 +45,41 @@ All Category - I Authorised Dealer Banks
 Madam / Sir,"""
 
 
+# As PyMuPDF reads the PDF of the same Direction: the Hindi letterhead first,
+# and the date on the reference's line.
+DIRECTION_PDF = """भारतीय रिज़र्व बैंक
+__________________ RESERVE BANK OF INDIA ______________________
+www.rbi.org.in
+RBI/2025-26/79
+CO.DPSS.POLC.No. S 668/02-14-015/2025-2026                        September 25, 2025
+Reserve Bank of India (Authentication mechanisms for
+digital payment transactions) Directions, 2025"""
+
+# Since 2024 the department often appears in the circular number too.
+MASTER_DIRECTION_PDF = """RESERVE BANK OF INDIA
+www.rbi.org.in
+RBI/DOS/2024-25/120
+DOS.CO.FMG.SEC.No.7/23.04.001/2024-25                                      July 15, 2024
+The Chairman / Managing Director / Chief Executive Officer
+All Non-Banking Financial Companies (including Housing Finance Companies)
+Madam / Dear Sir,"""
+
+
 class TestTheHeader:
+    def test_the_pdf_layout_with_the_date_on_the_reference_line(self) -> None:
+        assert circular_number(DIRECTION_PDF) == "RBI/2025-26/79"
+        assert reference_number(DIRECTION_PDF) == "CO.DPSS.POLC.No. S 668/02-14-015/2025-2026"
+        assert first_date(DIRECTION_PDF) == date(2025, 9, 25)
+
+    def test_a_circular_number_that_names_the_department(self) -> None:
+        assert circular_number(MASTER_DIRECTION_PDF) == "RBI/DOS/2024-25/120"
+        assert reference_number(MASTER_DIRECTION_PDF) == "DOS.CO.FMG.SEC.No.7/23.04.001/2024-25"
+        assert department("RBI/DPSS/2024-25/123") == "DPSS"
+        assert addressees(MASTER_DIRECTION_PDF) == [
+            "The Chairman / Managing Director / Chief Executive Officer",
+            "All Non-Banking Financial Companies (including Housing Finance Companies)",
+        ]
+
     def test_the_circular_number(self) -> None:
         assert circular_number(DIRECTION) == "RBI/2025-26/79"
         assert circular_number("RBI/ 2025-26 /79 dated") == "RBI/2025-26/79"

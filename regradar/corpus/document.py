@@ -52,15 +52,16 @@ def describe(
 
     header = (html_text if has_html else pdf_text)[:_HEADER_CHARS]
     reference = metadata.reference_number(header)
+    number = metadata.circular_number(header)
     published = metadata.first_date(header)
     row: dict[str, Any] = {
         "doc_id": doc_id(page["id"]),
         "notification_id": page["id"],
         "title": page["title"],
         "kind": metadata.document_kind(page["title"]),
-        "circular_number": metadata.circular_number(header),
+        "circular_number": number,
         "reference": reference,
-        "department": metadata.department(reference),
+        "department": metadata.department(reference) or metadata.department(number),
         "date": published.isoformat() if published else None,
         "addressees": metadata.addressees(header),
         "regulator": "RBI",
