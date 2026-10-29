@@ -160,6 +160,10 @@ def table_markdown(rows: list[list[object]]) -> str:
     cleaned = [row for row in cleaned if any(row)]
     if not cleaned:
         return ""
+    if all(sum(1 for value in row if value) <= 1 for row in cleaned):
+        # A bordered box of prose (some Master Directions are laid out this
+        # way), not a table: one line per row reads and retrieves better.
+        return "\n".join(next(value for value in row if value) for row in cleaned)
     width = max(len(row) for row in cleaned)
     cleaned = [row + [""] * (width - len(row)) for row in cleaned]
     lines = ["| " + " | ".join(cleaned[0]) + " |", "|" + " --- |" * width]

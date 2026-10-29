@@ -183,3 +183,14 @@ def test_a_copy_that_steps_across_columns_is_found() -> None:
     markdown = table_markdown(rows)
     assert markdown.count("periodic repeated training") == 1
     assert markdown.count("benchmark score") == 1
+
+
+def test_a_box_of_prose_comes_out_as_lines_not_a_table() -> None:
+    rows: list[list[object]] = [
+        ["7. The Board of Directors (Board) of the PSO shall be responsible for ensuring", "", ""],
+        ["", "oversight over information security risks, including cyber risk.", ""],
+    ]
+    assert table_markdown(rows).splitlines() == [
+        "7. The Board of Directors (Board) of the PSO shall be responsible for ensuring",
+        "oversight over information security risks, including cyber risk.",
+    ]
