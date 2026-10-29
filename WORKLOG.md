@@ -92,3 +92,39 @@ that does not apply to a Base Layer NBFC; a settlement rule the 2025 PA MD
 replaced), 5 still to verify. Checking against the text changed the
 profile: authorisation moved to March 2023, and FlexiCredit's assets set to
 ₹560 crore so the ₹500 crore threshold of the NBFC fraud Directions applies.
+
+## 2026-10-30 (Fri), night: M1 corpus built (gate pending)
+
+**Done**
+- Corpus: **290 documents** (262 notifications, 28 consolidated Master
+  Directions), 2,945 pages, 841 tables, 5.5M characters; text from PDF for
+  275, HTML for 15. Committed: `corpus/manifest.jsonl`, `corpus/docs/`,
+  `corpus/AUDIT.md`, `corpus/CARD.md`. 290 is short of "~300": only ~13% of
+  2023-26 titles are relevant once per-entity copies are dropped, and 142
+  notifications from 2021-23 exist only as CAPTCHA captures. Ids were
+  extended back to 11500 (2019), which also brings in the 2020 PA
+  guidelines that the 2025 MD replaced.
+- More parser findings, each a test: two columns with the same paragraph
+  were both blanked (cells now judged one at a time); a table drawn over a
+  whole page returned only some of its text (blocks are now dropped only
+  when the table holds their words); some PDFs hold a page's text twice in
+  overlapping layers, so recall now counts distinct words (word pairs were
+  tried and rejected: the readers order tables differently); pypdf splits
+  words, so fragments are matched against our text with spaces removed.
+  Dropped-text flags: 27 documents → 6, all listed in the audit.
+- Gap key: 12 verified gaps, 3 deliberate non-gaps (not applicable,
+  superseded, permissive "may"), 2 dropped. v1's sample report, on the
+  same authentication Directions, states a FlexiPay control ("additional
+  verification steps for transactions exceeding ₹50,000 per month") that
+  is in none of v1's knowledge-base files: an unsupported claim to show in
+  the M4 v1-vs-v2 comparison.
+- gitleaks caught a click-tracking `auth=` token RBI pasted into a public
+  circular; allowed by fingerprint in `.gitleaksignore` with the reason.
+
+**Next**
+1. M1 explain-back gate (Nihar): tables and scanned pages; how we know
+   parsing did not silently drop text.
+2. Nihar: install OrbStack before M2; pick the dense embedding model with
+   me (fastembed candidates, checked against current docs).
+3. M2: strip the Hindi letterhead/footer, then fixed / recursive /
+   section-aware chunking with stable chunk IDs; Qdrant hybrid + rerank.
