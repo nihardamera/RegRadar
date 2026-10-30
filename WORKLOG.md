@@ -128,3 +128,13 @@ profile: authorisation moved to March 2023, and FlexiCredit's assets set to
    me (fastembed candidates, checked against current docs).
 3. M2: strip the Hindi letterhead/footer, then fixed / recursive /
    section-aware chunking with stable chunk IDs; Qdrant hybrid + rerank.
+
+**M1 gate (Nihar, unaided): passed.** Corrections given: comparing
+PyMuPDF raw text with our output tests post-processing, not extraction
+(independence needs another engine, or RBI's HTML); text-layer checks all
+agree on a wrong text layer (the Hindi glyphs), so a real-word ratio
+belongs with the drop checks; table cell counts match even when a merged
+cell is copied; row sentences must be templated, not generated. Nihar's
+ideas not yet built, folded into the start of M2: a per-page check that
+every number and date pypdf finds is in our text; paragraph-numbering and
+annex-reference anchors; a per-page ledger in the manifest.
