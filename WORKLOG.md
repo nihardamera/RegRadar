@@ -166,3 +166,32 @@ peaked at 7.2 GB and nomic was killed for memory on this 16 GB Mac.
 fastembed extra, which wants <0.9, is not used: vectors are computed here),
 qdrant-client 1.19.1, Qdrant server v1.19.2 in `docker-compose.yml`
 (localhost only, telemetry off).
+
+## 2026-10-30 (Fri), night: M2 retrieval built
+
+**Done**
+- Parse checks from the M1 gate: every number pypdf reads must be in our
+  text (found a real drop: two side-by-side worked examples, the second
+  blanked as a "copy"; a copy must now repeat the numbers too), and every
+  page yields text or is listed (one blank page in the corpus).
+- `regradar/chunking.py`: cleaning (letterhead, footers, page numbers,
+  indexes, running headers: 5,473 lines) and three strategies with
+  character offsets. On the corpus: fixed 4,899 chunks (median 220
+  words), recursive 5,518 (189), section 4,657 (186, short sections packed
+  within a chapter or annex). Numbering anchors: found in 286 of 290
+  documents; 24 have forward gaps (table-row paragraphs, a PDF with its
+  numbers in a separate column, amendments quoting other paragraphs).
+  `eval/chunk_stats.json`.
+- **Gold answers will be character ranges**, not chunk IDs, so one golden
+  set scores every chunking strategy (a chunk is relevant when it overlaps
+  the answer's range).
+- `regradar/index.py`: Qdrant v1.19.2, one collection per strategy, granite
+  + bge dense and BM25 sparse (IDF in Qdrant), hybrid by RRF in Qdrant,
+  cross-encoder rerank of the top 50, filters on regulator, date range,
+  circular number, kind and document. All three collections built
+  (12-26 min each, dense vectors cached in `data.nosync/vectors`).
+- Sanity check on real queries (not an evaluation): the right document and
+  paragraph for the cyber-incident, penal-charges, DLG-cap and net-worth
+  questions. **"RBI/2025-26/79"**: granite returned paragraph 79 of another
+  Direction; BM25 found the circular first; hybrid second. Reranking with
+  MiniLM-L12 over 50 candidates costs about 3 s a query on CPU.
