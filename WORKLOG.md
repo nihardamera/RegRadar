@@ -208,3 +208,18 @@ qdrant-client 1.19.1, Qdrant server v1.19.2 in `docker-compose.yml`
    Nihar can write the 150 questions; then the ablation (3 chunkings x
    granite / bge / BM25 / hybrid x rerank off / top 20 / top 50) with CIs.
    Query rewriting / HyDE / decomposition stay off until the eval exists.
+
+**M2 gate (Nihar, unaided; 31 Oct): passed.** Checked against the index:
+for "RBI/2025-26/79" the right chunk is BM25 rank 1 and *outside* dense's
+top 50; the wrong one (md353 para 79) is dense 1 and BM25 3, so it wins
+the fusion. Qdrant's RRF uses k = 2 by default (zero-based ranks; settable
+since 1.16), not the paper's 60, and neither k rescues this query (0.75 vs
+0.50 at k = 2). Per-prefetch RRF weights exist since 1.17. Corrections:
+BM25's IDF already discounts corpus-wide words, so its real failure is
+vocabulary mismatch; the MS MARCO rerankers are trained on web queries, so
+domain shift could make reranking hurt; hit-at-a-threshold misses answers
+split across chunks, so M3 reports span recall (share of the gold range
+covered by the top k together) and tokens retrieved per query.
+Ideas to test in M3, behind flags: an identifier route (a query matching
+RBI/YYYY-YY/N applies the circular_number filter) and BM25-weighted RRF.
+The golden set needs identifier-lookup questions for that.
