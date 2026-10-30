@@ -111,7 +111,7 @@ class TestSections:
         assert tops == ["1", "2", "3", "1"]  # the body's 1-3, then the annex's 1
 
     def test_sections_follow_the_numbering_and_keep_their_path(self) -> None:
-        chunks = section_chunks(document())
+        chunks = section_chunks(document(), pack_words=0)
 
         def section_of(phrase: str) -> str | None:
             return next(c.section for c in chunks if phrase in c.text)
@@ -129,13 +129,32 @@ class TestSections:
         chunks = section_chunks(document())
         assert not any(c.text.strip() == "3. Incident reporting" for c in chunks)
 
+    def test_a_number_alone_on_its_line_starts_a_section(self) -> None:
+        """The layout of the November 2025 Master Directions."""
+        text = "9.\nThe NBFC shall report.\n10.\nWhere an NBFC contributes more than five percent."
+        assert [h.label for h in headings(text)] == ["9", "10"]
+
+    def test_short_sections_are_packed_within_their_scope_only(self) -> None:
+        chunks = section_chunks(document(), pack_words=220)
+        body = [c for c in chunks if c.section and not c.section.startswith("Annex")]
+        assert any(" … " in (c.section or "") for c in body)  # sections 1 and 2 packed
+        assert all(c.words <= 350 for c in chunks)
+        annex = next(c for c in chunks if "Format of the report" in c.text)
+        assert annex.section == "Annex 1 > 1" and "Applicability" not in annex.text
+
 
 class TestNumberingAnchors:
     def test_continuous_numbering_has_no_problems_and_an_annex_restarts(self) -> None:
         report = numbering_report(document())
         assert report.top_numbers == 4 and report.problems == []
 
+    def test_a_word_that_starts_with_schedule_is_not_a_schedule(self) -> None:
+        text = (
+            "Scheduled Commercial Banks shall report.\nSchedule II\n1. Format\nThe format follows."
+        )
+        assert [(h.kind, h.label) for h in headings(text)][:1] == [("annex", "Schedule II")]
+
     def test_a_gap_is_reported(self) -> None:
         text = "1. Introduction\n" + "Text here. " * 30 + "\n3. Reporting\n" + "More text. " * 30
         report = numbering_report(clean("d", "t", [(1, text)]))
-        assert report.problems == ["body: 1 then 3"]
+        assert report.problems == ["body: 1 then 3"] and report.gaps == report.problems

@@ -17,11 +17,13 @@ gap is either text lost in parsing or numbering the chunker misread.
 
 from __future__ import annotations
 
+import json
 import re
 from collections import Counter
-from collections.abc import Iterator, Sequence
+from collections.abc import Callable, Iterator, Sequence
 from dataclasses import dataclass, field
 from itertools import pairwise
+from pathlib import Path
 
 CHUNK_WORDS = 220  # target size, all strategies, so the ablation compares like with like
 FIXED_OVERLAP = 40
@@ -49,10 +51,12 @@ _TOC_LINE = re.compile(r"\.{5,}\s*\d{1,4}\s*$")
 # Section starts, at the beginning of a line.
 _CHAPTER = re.compile(r"^(chapter|part)\s+([IVXLC]+|\d+)\b", re.IGNORECASE)
 _ANNEX = re.compile(
-    r"^(annex(?:ure)?|appendix|schedule)\s*[-\u2013:]?\s*([IVXLC]+|\d+|[A-Z])?\b", re.I
+    r"^(annex(?:ure)?|appendix|schedule)\b\s*[-\u2013:]?\s*([IVXLC]+|\d+|[A-Z])?\b", re.I
 )
-_TOP = re.compile(r"^(\d{1,3})\.\s+\S")  # 1. Introduction
-_DOTTED = re.compile(r"^(\d{1,3}(?:\.\d{1,3}){1,3})\.?\s+\S")  # 2.1 / 2.1.3
+# "1. Introduction", or "10." alone on its line with the text on the next
+# (the layout of the November 2025 Master Directions).
+_TOP = re.compile(r"^(\d{1,3})\.(?:\s+\S|$)")
+_DOTTED = re.compile(r"^(\d{1,3}(?:\.\d{1,3}){1,3})\.?(?:\s+\S|$)")  # 2.1 / 2.1.3
 _SUB = re.compile(r"^(\(?[a-z]{1,4}\)|\(?[ivx]{1,5}\)|[a-z]\.|[ivx]{1,5}\.)\s+\S")
 
 
@@ -280,6 +284,13 @@ class NumberingReport:
     top_numbers: int
     problems: list[str]
 
+    @property
+    def gaps(self) -> list[str]:
+        """Forward jumps (7 then 9): the sign of lost text. Restarts and
+        repeats are mostly numbered lists inside a paragraph, or amendments
+        quoting other paragraphs."""
+        return [p for p in self.problems if "restarts" not in p]
+
 
 def numbering_report(doc: CleanDocument) -> NumberingReport:
     """Gaps and reversals in the top-level paragraph numbers, per scope (the
@@ -303,8 +314,18 @@ def numbering_report(doc: CleanDocument) -> NumberingReport:
 
 
 def section_chunks(
-    doc: CleanDocument, max_words: int = SECTION_MAX_WORDS, min_words: int = SECTION_MIN_WORDS
+    doc: CleanDocument,
+    max_words: int = SECTION_MAX_WORDS,
+    min_words: int = SECTION_MIN_WORDS,
+    pack_words: int = CHUNK_WORDS,
 ) -> list[Chunk]:
+    """Chunks cut only where the circular's numbering starts a paragraph.
+
+    Consecutive short sections in the same chapter or annex are packed up to
+    `pack_words`, so section chunks are about the size of the other
+    strategies' and the ablation compares where cuts fall, not chunk size.
+    A section over `max_words` is split at its sub-items.
+    """
     marks = [h for h in headings(doc.text) if h.kind in ("chapter", "annex", "top", "dotted")]
     bounds = [0, *(h.offset for h in marks if h.offset > 0), len(doc.text)]
     paths: list[str | None] = [None]
@@ -339,8 +360,18 @@ def section_chunks(
     if carry:
         merged.append((carry[0], len(doc.text), carry[1]))
 
-    chunks: list[Chunk] = []
+    packed: list[tuple[int, int, str | None]] = []
     for start, end, path in merged:
+        if packed and pack_words:
+            first, _last, first_path = packed[-1]
+            same_scope = _scope(first_path) == _scope(path)
+            if same_scope and len(doc.text[first:end].split()) <= pack_words:
+                packed[-1] = (first, end, _span_label(first_path, path))
+                continue
+        packed.append((start, end, path))
+
+    chunks: list[Chunk] = []
+    for start, end, path in packed:
         if not doc.text[start:end].strip():
             continue
         if len(doc.text[start:end].split()) <= max_words:
@@ -350,6 +381,26 @@ def section_chunks(
         for a, b in pieces:
             chunks.append(_make(doc, "section", len(chunks), a, b, path))
     return chunks
+
+
+def _scope(path: str | None) -> str | None:
+    """The chapter or annex part of a heading path ("Annex 1 > 3" -> "Annex 1")."""
+    if not path or " > " not in path:
+        return None if not path or path[0].isdigit() else path
+    return path.split(" > ")[0]
+
+
+def _span_label(first: str | None, last: str | None) -> str | None:
+    """ "Chapter II > 5 … 7" for a chunk packing sections 5 to 7."""
+    if not first or first == last:
+        return first or last
+    if not last:
+        return first
+    head, _, tail = last.rpartition(" > ")
+    start = first.rpartition(" > ")[0]
+    if head and head == start and " … " not in tail:
+        return f"{first.split(' … ')[0]} … {tail}"
+    return f"{first.split(' … ')[0]} … {last}"
 
 
 def _split_by_subitems(text: str, start: int, end: int, size: int) -> Iterator[tuple[int, int]]:
@@ -374,8 +425,58 @@ def _split_by_subitems(text: str, start: int, end: int, size: int) -> Iterator[t
         yield from _split_range(text, current[0], current[1], size)
 
 
-STRATEGIES = {
+STRATEGIES: dict[str, Callable[[CleanDocument], list[Chunk]]] = {
     "fixed": fixed_chunks,
     "recursive": recursive_chunks,
     "section": section_chunks,
 }
+
+
+CORPUS_DOCS = Path(__file__).resolve().parent.parent / "corpus" / "docs"
+
+
+def load_corpus(folder: Path = CORPUS_DOCS) -> list[CleanDocument]:
+    """Every committed corpus document, cleaned."""
+    documents = []
+    for path in sorted(folder.glob("*.json")):
+        raw = json.loads(path.read_text(encoding="utf-8"))
+        pages = [(page["number"], page["text"]) for page in raw["pages"]]
+        documents.append(clean(raw["doc_id"], raw["title"], pages))
+    return documents
+
+
+def stats(documents: Sequence[CleanDocument]) -> dict[str, object]:
+    """Chunk counts and sizes per strategy, and the numbering report."""
+    out: dict[str, object] = {
+        "documents": len(documents),
+        "characters": sum(len(d.text) for d in documents),
+        "boilerplate_lines_dropped": sum(d.dropped_lines for d in documents),
+    }
+    for name, chunker in STRATEGIES.items():
+        sizes = sorted(c.words for d in documents for c in chunker(d))
+        out[name] = {
+            "chunks": len(sizes),
+            "words_p05": sizes[len(sizes) // 20],
+            "words_median": sizes[len(sizes) // 2],
+            "words_p95": sizes[len(sizes) * 19 // 20],
+            "words_max": sizes[-1],
+        }
+    reports = [numbering_report(d) for d in documents]
+    out["numbering"] = {
+        "documents_with_top_level_numbers": sum(1 for r in reports if r.top_numbers),
+        "documents_with_problems": sum(1 for r in reports if r.problems),
+        "documents_with_gaps": sum(1 for r in reports if r.gaps),
+        "gaps": {r.doc_id: r.gaps for r in reports if r.gaps},
+        "problems": {r.doc_id: r.problems for r in reports if r.problems},
+    }
+    return out
+
+
+if __name__ == "__main__":
+    result = stats(load_corpus())
+    target = CORPUS_DOCS.parent.parent / "eval" / "chunk_stats.json"
+    target.write_text(json.dumps(result, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+    print(json.dumps({k: v for k, v in result.items() if k != "numbering"}, indent=1))
+    numbering = result["numbering"]
+    assert isinstance(numbering, dict)
+    print({k: v for k, v in numbering.items() if k != "problems"})

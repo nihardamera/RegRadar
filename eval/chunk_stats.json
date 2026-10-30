@@ -1,0 +1,312 @@
+{
+ "documents": 290,
+ "characters": 5270078,
+ "boilerplate_lines_dropped": 5473,
+ "fixed": {
+  "chunks": 4899,
+  "words_p05": 193,
+  "words_median": 220,
+  "words_p95": 220,
+  "words_max": 220
+ },
+ "recursive": {
+  "chunks": 5518,
+  "words_p05": 36,
+  "words_median": 189,
+  "words_p95": 219,
+  "words_max": 220
+ },
+ "section": {
+  "chunks": 4657,
+  "words_p05": 42,
+  "words_median": 186,
+  "words_p95": 342,
+  "words_max": 350
+ },
+ "numbering": {
+  "documents_with_top_level_numbers": 286,
+  "documents_with_problems": 40,
+  "documents_with_gaps": 24,
+  "gaps": {
+   "rbi-md370": [
+    "body: 60 then 63"
+   ],
+   "rbi-n11565": [
+    "body: 2 then 4"
+   ],
+   "rbi-n11566": [
+    "body: 2 then 23",
+    "Annex I: 16 then 22",
+    "Annex I: 32 then 34"
+   ],
+   "rbi-n12030": [
+    "Annex: 56 then 68",
+    "Annex IV: 3 then 5"
+   ],
+   "rbi-n12046": [
+    "body: 2 then 4"
+   ],
+   "rbi-n12159": [
+    "Annex: 1 then 6"
+   ],
+   "rbi-n12195": [
+    "body: 11 then 15"
+   ],
+   "rbi-n12296": [
+    "body: 2 then 4"
+   ],
+   "rbi-n12486": [
+    "body: 5 then 22"
+   ],
+   "rbi-n12550": [
+    "Annex XXVI: 8 then 10",
+    "Annex XXVI: 6 then 16",
+    "Schedule: 4 then 85",
+    "Schedule: 4 then 86",
+    "Schedule: 3 then 92",
+    "Schedule: 115 then 117",
+    "Appendix III: 1 then 3",
+    "Annex VII: 1 then 3",
+    "Annex XIII: 2 then 6"
+   ],
+   "rbi-n12562": [
+    "body: 2 then 32"
+   ],
+   "rbi-n12605": [
+    "body: 2 then 5",
+    "body: 5 then 85"
+   ],
+   "rbi-n12704": [
+    "Annex: 3 then 7",
+    "Annex: 2 then 4",
+    "Annex: 5 then 7"
+   ],
+   "rbi-n12715": [
+    "body: 7 then 10",
+    "body: 15 then 17"
+   ],
+   "rbi-n12719": [
+    "Annex: 11 then 13"
+   ],
+   "rbi-n12739": [
+    "Annex: 2 then 6"
+   ],
+   "rbi-n12764": [
+    "body: 3 then 17",
+    "body: 17 then 22"
+   ],
+   "rbi-n12859": [
+    "body: 10 then 12"
+   ],
+   "rbi-n12878": [
+    "body: 2 then 4"
+   ],
+   "rbi-n12896": [
+    "body: 6 then 12",
+    "body: 12 then 15",
+    "body: 15 then 18"
+   ],
+   "rbi-n13274": [
+    "body: 15 then 17"
+   ],
+   "rbi-n13276": [
+    "body: 15 then 17"
+   ],
+   "rbi-n13293": [
+    "body: 3 then 25"
+   ],
+   "rbi-n13493": [
+    "body: 4 then 99"
+   ]
+  },
+  "problems": {
+   "rbi-md349": [
+    "body: 4 then 4 (restarts or goes back)"
+   ],
+   "rbi-md359": [
+    "Annex I: 21 then 2 (restarts or goes back)"
+   ],
+   "rbi-md361": [
+    "Schedule: 15 then 1 (restarts or goes back)",
+    "Annex II: 11 then 1 (restarts or goes back)"
+   ],
+   "rbi-md370": [
+    "body: 60 then 63"
+   ],
+   "rbi-n11512": [
+    "body: 3 then 1 (restarts or goes back)"
+   ],
+   "rbi-n11565": [
+    "body: 2 then 4"
+   ],
+   "rbi-n11566": [
+    "body: 2 then 1 (restarts or goes back)",
+    "body: 3 then 1 (restarts or goes back)",
+    "body: 2 then 23",
+    "body: 23 then 4 (restarts or goes back)",
+    "Annex I: 18 then 16 (restarts or goes back)",
+    "Annex I: 16 then 22",
+    "Annex I: 32 then 34",
+    "Schedule: 15 then 1 (restarts or goes back)",
+    "Schedule: 2 then 1 (restarts or goes back)"
+   ],
+   "rbi-n11602": [
+    "body: 2 then 1 (restarts or goes back)"
+   ],
+   "rbi-n11822": [
+    "Annex 3: 2 then 1 (restarts or goes back)",
+    "Annex 3: 2 then 1 (restarts or goes back)",
+    "Annex 3: 1 then 1 (restarts or goes back)"
+   ],
+   "rbi-n12009": [
+    "Appendix 1: 6 then 2 (restarts or goes back)",
+    "Appendix 1: 6 then 2 (restarts or goes back)"
+   ],
+   "rbi-n12030": [
+    "Annex: 56 then 68",
+    "Annex IV: 3 then 3 (restarts or goes back)",
+    "Annex IV: 5 then 1 (restarts or goes back)",
+    "Annex IV: 3 then 5",
+    "Annex IV: 6 then 4 (restarts or goes back)",
+    "Annex IX: 9 then 2 (restarts or goes back)",
+    "Annex XVI: 10 then 1 (restarts or goes back)"
+   ],
+   "rbi-n12035": [
+    "body: 2 then 0 (restarts or goes back)",
+    "body: 5 then 3 (restarts or goes back)"
+   ],
+   "rbi-n12046": [
+    "body: 2 then 4",
+    "body: 5 then 1 (restarts or goes back)"
+   ],
+   "rbi-n12079": [
+    "Annex II: 7 then 2 (restarts or goes back)",
+    "Annex II: 4 then 2 (restarts or goes back)"
+   ],
+   "rbi-n12156": [
+    "body: 2 then 1 (restarts or goes back)"
+   ],
+   "rbi-n12159": [
+    "Annex: 1 then 6"
+   ],
+   "rbi-n12195": [
+    "body: 11 then 15",
+    "body: 15 then 12 (restarts or goes back)"
+   ],
+   "rbi-n12256": [
+    "body: 3 then 1 (restarts or goes back)"
+   ],
+   "rbi-n12292": [
+    "Annex: 3 then 1 (restarts or goes back)"
+   ],
+   "rbi-n12296": [
+    "body: 2 then 4"
+   ],
+   "rbi-n12486": [
+    "body: 5 then 22",
+    "body: 22 then 1 (restarts or goes back)"
+   ],
+   "rbi-n12550": [
+    "Annex XXVI: 8 then 10",
+    "Annex XXVI: 15 then 1 (restarts or goes back)",
+    "Annex XXVI: 6 then 16",
+    "Schedule: 84 then 1 (restarts or goes back)",
+    "Schedule: 4 then 85",
+    "Schedule: 85 then 1 (restarts or goes back)",
+    "Schedule: 2 then 1 (restarts or goes back)",
+    "Schedule: 4 then 86",
+    "Schedule: 91 then 1 (restarts or goes back)",
+    "Schedule: 3 then 92",
+    "Schedule: 115 then 117",
+    "Appendix III: 2 then 1 (restarts or goes back)",
+    "Appendix III: 1 then 3",
+    "Annex VI: 8 then 1 (restarts or goes back)",
+    "Annex VII: 3 then 1 (restarts or goes back)",
+    "Annex VII: 2 then 1 (restarts or goes back)",
+    "Annex VII: 3 then 3 (restarts or goes back)",
+    "Annex VII: 3 then 2 (restarts or goes back)",
+    "Annex VII: 2 then 1 (restarts or goes back)",
+    "Annex VII: 1 then 3",
+    "Annex XIII: 2 then 6",
+    "Annex XIII: 6 then 3 (restarts or goes back)",
+    "Annex XXVI: 13 then 1 (restarts or goes back)"
+   ],
+   "rbi-n12562": [
+    "body: 2 then 32",
+    "body: 32 then 1 (restarts or goes back)"
+   ],
+   "rbi-n12584": [
+    "Annex: 12 then 2 (restarts or goes back)",
+    "Appendix 1: 5 then 2 (restarts or goes back)",
+    "Appendix 1: 6 then 2 (restarts or goes back)"
+   ],
+   "rbi-n12586": [
+    "body: 4 then 1 (restarts or goes back)"
+   ],
+   "rbi-n12605": [
+    "body: 2 then 5",
+    "body: 5 then 85",
+    "body: 85 then 3 (restarts or goes back)"
+   ],
+   "rbi-n12704": [
+    "Annex: 3 then 7",
+    "Annex: 9 then 2 (restarts or goes back)",
+    "Annex: 2 then 4",
+    "Annex: 5 then 7"
+   ],
+   "rbi-n12715": [
+    "body: 7 then 10",
+    "body: 15 then 17",
+    "body: 25 then 25 (restarts or goes back)"
+   ],
+   "rbi-n12719": [
+    "Annex: 11 then 13"
+   ],
+   "rbi-n12739": [
+    "Annex: 2 then 6"
+   ],
+   "rbi-n12764": [
+    "body: 3 then 17",
+    "body: 17 then 22",
+    "Annex I: 8 then 1 (restarts or goes back)",
+    "Appendix 3: 16 then 15 (restarts or goes back)"
+   ],
+   "rbi-n12848": [
+    "body: 9 then 1 (restarts or goes back)"
+   ],
+   "rbi-n12859": [
+    "body: 11 then 10 (restarts or goes back)",
+    "body: 10 then 12"
+   ],
+   "rbi-n12878": [
+    "body: 2 then 4"
+   ],
+   "rbi-n12896": [
+    "body: 6 then 12",
+    "body: 12 then 15",
+    "body: 15 then 18",
+    "body: 18 then 1 (restarts or goes back)",
+    "Annexure 2: 2 then 1 (restarts or goes back)",
+    "Annexure 2: 3 then 1 (restarts or goes back)",
+    "Annexure 2: 1 then 1 (restarts or goes back)"
+   ],
+   "rbi-n13214": [
+    "body: 4 then 1 (restarts or goes back)"
+   ],
+   "rbi-n13274": [
+    "body: 15 then 17"
+   ],
+   "rbi-n13276": [
+    "body: 15 then 17"
+   ],
+   "rbi-n13293": [
+    "body: 3 then 25",
+    "body: 25 then 4 (restarts or goes back)"
+   ],
+   "rbi-n13493": [
+    "body: 4 then 99",
+    "body: 99 then 5 (restarts or goes back)"
+   ]
+  }
+ }
+}
