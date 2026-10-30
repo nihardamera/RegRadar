@@ -138,3 +138,8 @@ cell is copied; row sentences must be templated, not generated. Nihar's
 ideas not yet built, folded into the start of M2: a per-page check that
 every number and date pypdf finds is in our text; paragraph-numbering and
 annex-reference anchors; a per-page ledger in the manifest.
+
+**Environment (30 Oct, evening)**: OrbStack 2.2.5 installed for M2's Qdrant
+(official arm64 DMG; signature checked: Developer ID "Orbital Labs, LLC"
+HUAQ24HBR6, notarized). Docker 29.8.2, Compose v5.5.0; `docker` is on PATH
+via `~/.zprofile`. Homebrew is not installed on this Mac.
