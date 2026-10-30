@@ -249,3 +249,14 @@ The golden set needs identifier-lookup questions for that.
 2. Me, meanwhile: the evaluation runner (span recall, hit@k, MRR, nDCG@10
    with bootstrap CIs; tokens retrieved per query), tested on a handful of
    throwaway questions that never enter the golden set.
+- `regradar/evaluate.py`: hit@k, span recall@k (the union of the top k
+  chunks, so an answer split across two chunks counts), MRR, part-based
+  nDCG@10 (a second chunk of an already-found part earns nothing, so finer
+  chunking cannot inflate it), words@k; 95% percentile-bootstrap CIs over
+  questions (10,000 resamples, fixed seed) and paired-difference CIs.
+  Retrieval is cached by question text and configuration
+  (`data.nosync/eval_cache`), for reruns and the CI gate. The ablation is
+  3 chunkings x {granite, bge, BM25, hybrid} + hybrid reranked at 20 and 50.
+- Smoke-tested end to end on 6 practice questions written in the scratchpad
+  (never in the golden set; results deleted). With n = 5 the intervals span
+  40-100 points, which is why the real comparison waits for 150.
