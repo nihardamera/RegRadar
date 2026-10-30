@@ -198,9 +198,13 @@ def _copies_a_run(rows: list[list[str]], r: int, c: int) -> bool:
         if sum(words(" ".join(run)).values()) >= size:
             break
     joined = " ".join(run)
+    # A real copy repeats the numbers too. Two worked examples side by side
+    # ("Illustration VII ... April 01, 2029" and "VIII ... April 01, 2028")
+    # share most words and differ exactly in their numbers.
     return (
         word_recall(joined, text) >= _REDUNDANT_CELL
         and word_recall(text, joined) >= _REDUNDANT_CELL
+        and not missing_numbers(joined, text)
     )
 
 

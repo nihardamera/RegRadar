@@ -261,3 +261,16 @@ class TestNumbers:
     def test_an_empty_page_that_is_not_a_scan_is_accounted_for(self) -> None:
         parsed = parse_pdf(pdf_bytes([("Page one text", (72, 72))], []))
         assert parsed.empty_pages == [2] and parsed.scanned_pages == []
+
+
+def test_side_by_side_examples_that_differ_in_their_numbers_are_both_kept() -> None:
+    """Page 38 of the NBFC stressed-assets Directions: two illustrations in one
+    row, worded alike, differing in the dates and amounts that matter."""
+    vii = (
+        "Illustration VII: Funded Outstanding – ₹ 1000 crore Original DCCO – January 01, 2026"
+        " Extended DCCO – April 01, 2029 Asset Classification - NPA Quantum of Specific"
+        " Provisions to be maintained – ₹ 150 crore"
+    )
+    viii = vii.replace("VII", "VIII").replace("2029", "2028").replace("₹ 150", "₹ 28.125")
+    markdown = table_markdown([["Illustrations", ""], [vii, viii]])
+    assert "April 01, 2028" in markdown and "April 01, 2029" in markdown
