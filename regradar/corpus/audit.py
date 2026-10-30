@@ -61,6 +61,14 @@ def summary(rows: Sequence[dict[str, Any]]) -> dict[str, Any]:
             for row in corpus
             if row.get("repeated_text_pages")
         },
+        "number_loss_pages": {
+            row["doc_id"]: row["number_loss_pages"]
+            for row in corpus
+            if row.get("number_loss_pages")
+        },
+        "empty_pages": {
+            row["doc_id"]: row["empty_pages"] for row in corpus if row.get("empty_pages")
+        },
         "scanned_pages": {
             row["doc_id"]: row["scanned_pages"] for row in rows if row.get("scanned_pages")
         },
@@ -109,7 +117,7 @@ def render(rows: Sequence[dict[str, Any]]) -> str:
         "",
         "## Was any text dropped?",
         "",
-        "Three checks, each independent of the others:",
+        "Four checks, each independent of the others:",
         "",
         f"1. **Per page, against a second reader.** pypdf reads each page's text layer"
         f" with different code. Pages where PyMuPDF's output keeps less than"
@@ -124,6 +132,17 @@ def render(rows: Sequence[dict[str, Any]]) -> str:
     ]
     lines += [
         f"   - {title(doc)}: pages {pages}" for doc, pages in s["repeated_text_pages"].items()
+    ]
+    lines += [
+        "   **Numbers**, which carry the obligations (hours, days, per cent, crore): pages"
+        " where a number or date pypdf reads is not in our text:"
+        f" {sum(len(v) for v in s['number_loss_pages'].values())} page(s) in"
+        f" {len(s['number_loss_pages'])} document(s).",
+    ]
+    lines += [
+        f"   - {title(doc)}: "
+        + "; ".join(f"p{page}: {', '.join(nums[:6])}" for page, nums in pages.items())
+        for doc, pages in s["number_loss_pages"].items()
     ]
     lines += [
         f"2. **Per document, against the web page.** {s['html_compared']} documents also"
@@ -143,6 +162,12 @@ def render(rows: Sequence[dict[str, Any]]) -> str:
         f" {len(s['scanned_pages'])}.",
     ]
     lines += [f"   - {title(doc)}: pages {pages}" for doc, pages in s["scanned_pages"].items()]
+    lines += [
+        f"4. **Every page accounted for.** {s['pages']} PDF pages; each yields text or is"
+        " listed above as scanned. Pages with no text that are not scans either (blank,"
+        f" or text drawn as shapes): {sum(len(v) for v in s['empty_pages'].values())}.",
+    ]
+    lines += [f"   - {title(doc)}: pages {pages}" for doc, pages in s["empty_pages"].items()]
     lines += [
         "",
         "Neither text reader can see words that exist only as pixels; check 3 is what",

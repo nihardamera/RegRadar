@@ -55,6 +55,7 @@ class PageText:
     image_share: float
     reference_recall: float  # share of pypdf's distinct words found in `text`
     reference_precision: float = 1.0  # share of `text`'s words that pypdf also finds
+    missing_numbers: list[str] = field(default_factory=list)  # numbers pypdf has, `text` lacks
 
 
 @dataclass
@@ -82,6 +83,16 @@ class ParsedPdf:
         return [p.number for p in self.pages if p.reference_precision < PAGE_PRECISION_FLOOR]
 
     @property
+    def empty_pages(self) -> list[int]:
+        """Pages with no text that are not scans either (blank, or text drawn as
+        vector shapes). With scanned_pages, every page is accounted for."""
+        return [p.number for p in self.pages if not p.text.strip() and not p.scanned]
+
+    @property
+    def number_loss_pages(self) -> dict[int, list[str]]:
+        return {p.number: p.missing_numbers for p in self.pages if p.missing_numbers}
+
+    @property
     def table_count(self) -> int:
         return sum(page.tables for page in self.pages)
 
@@ -97,6 +108,29 @@ class ParsedPdf:
     @property
     def garbled_share(self) -> float:
         return self.share(_GARBLED)
+
+
+_NUMBER = re.compile(r"\d+(?:[.,/:-]\d+)*")
+
+
+def missing_numbers(found: str, reference: str) -> list[str]:
+    """Numbers and dates in `reference` that `found` does not contain.
+
+    In a circular the numbers are the obligation (6 hours, 21 days, 5 per
+    cent, ₹25 crore), so a lost number is the clearest sign of a real drop.
+    Compared as digit strings ("2,00,000" and "200000" match); a number pypdf
+    split ("2025 -26") counts as found when it is part of one `found` has.
+    """
+
+    def digits(text: str) -> list[str]:
+        return [re.sub(r"\D", "", token) for token in _NUMBER.findall(text)]
+
+    have = set(digits(found))
+    lost: list[str] = []
+    for number in dict.fromkeys(digits(reference)):
+        if number not in have and not any(number in other for other in have):
+            lost.append(number)
+    return lost
 
 
 def words(text: str) -> Counter[str]:
@@ -306,6 +340,7 @@ def parse_pdf(data: bytes) -> ParsedPdf:
                     reference_precision=round(repeat_free_share(text, reference), 4)
                     if reference.strip()
                     else 1.0,
+                    missing_numbers=missing_numbers(text, reference)[:20],
                 )
             )
     return parsed

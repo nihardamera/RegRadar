@@ -240,3 +240,24 @@ def test_repeats_are_judged_on_shared_words_only() -> None:
     assert (
         repeat_free_share(reference, "Incidents sha ll be reported to RBI within 6 hours.") == 1.0
     )
+
+
+class TestNumbers:
+    """Numbers carry the obligation, so losing one is the loudest failure."""
+
+    def test_a_lost_number_is_named(self) -> None:
+        from regradar.corpus.pdf import missing_numbers
+
+        reference = "Report within 6 hours. DLG shall not exceed 5 per cent. Net worth ₹25 crore."
+        assert missing_numbers(
+            "Report within 6 hours. DLG shall not exceed 5 per cent.", reference
+        ) == ["25"]
+
+    def test_formatting_and_splits_do_not_count_as_loss(self) -> None:
+        from regradar.corpus.pdf import missing_numbers
+
+        assert missing_numbers("limit ₹2,00,000 for 2025-26", "limit 200000 for 2025 -26") == []
+
+    def test_an_empty_page_that_is_not_a_scan_is_accounted_for(self) -> None:
+        parsed = parse_pdf(pdf_bytes([("Page one text", (72, 72))], []))
+        assert parsed.empty_pages == [2] and parsed.scanned_pages == []
