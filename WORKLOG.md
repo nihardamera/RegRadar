@@ -223,3 +223,29 @@ covered by the top k together) and tokens retrieved per query.
 Ideas to test in M3, behind flags: an identifier route (a query matching
 RBI/YYYY-YY/N applies the circular_number filter) and BM25-weighted RRF.
 The golden set needs identifier-lookup questions for that.
+
+## 2026-10-31 (Sat): M3 golden-set tool ready
+
+**Done**
+- `regradar/golden.py` (`sample`, `find`, `add`, `check`) and
+  `eval/golden/CARD.md`. Gold answers are **parts** (all needed), each with
+  **alternative spans** (any one will do), because the same rule is often
+  restated: the penal-charges sentence is in the 2023 circular, the 2025
+  NBFC Directions, the HFC Master Direction and the Scale Based Regulation
+  MD. `add` finds the same words in other documents (exact text, not the
+  retriever) and asks whether each counts. A quote that occurs several
+  times in one document is listed with page and section to choose from
+  (the penal-charges circular repeats it six times, once per kind of lender).
+- `find` is keyword search, not RegRadar's retriever, so the set does not
+  lean toward what the system finds. Split fixed by a hash of the ID (about
+  a third dev). A test fails if any committed quote stops matching its range.
+- Targets: 50 single-hop, 25 multi-hop, 30 number/date, 15 identifier
+  (from the M2 gate), 30 unanswerable.
+
+**Next**
+1. Nihar: write the 150 questions (`uv run python -m regradar.golden add`;
+   about 3-5 minutes each, so 8-12 hours in sittings). Read the card's
+   writing guidance first. Commit as you go; `check` shows progress.
+2. Me, meanwhile: the evaluation runner (span recall, hit@k, MRR, nDCG@10
+   with bootstrap CIs; tokens retrieved per query), tested on a handful of
+   throwaway questions that never enter the golden set.

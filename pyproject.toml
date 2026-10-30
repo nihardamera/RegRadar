@@ -87,6 +87,8 @@ extend-exclude = [
 
 [tool.ruff.lint]
 select = ["E", "F", "W", "I", "UP", "B", "SIM", "RUF"]
+# Word lists read better as one split string than as a 50-item list.
+ignore = ["SIM905"]
 
 [tool.ruff.lint.per-file-ignores]
 # Test data quotes RBI titles, which use en dashes.
