@@ -195,3 +195,16 @@ qdrant-client 1.19.1, Qdrant server v1.19.2 in `docker-compose.yml`
   questions. **"RBI/2025-26/79"**: granite returned paragraph 79 of another
   Direction; BM25 found the circular first; hybrid second. Reranking with
   MiniLM-L12 over 50 candidates costs about 3 s a query on CPU.
+- `eval/retrieval_latency.json` (Apple M4, 8 queries x 3, k = 10): BM25
+  2.1 ms, dense 8-9 ms, hybrid 8.8 ms p50 (one Qdrant call for both arms
+  and the fusion). Reranking the top 50 on CPU: MiniLM-L6 1.6 s,
+  MiniLM-L12 5.1 s, bge-reranker-base 7.1 s p50. Reranking costs 180-800x
+  retrieval and scales with the candidate count, so M3 measures what it
+  buys at 20 and 50 candidates.
+
+**Next**
+1. M2 explain-back gate (Nihar).
+2. M3: the question-writing tool (gold answers as character ranges), so
+   Nihar can write the 150 questions; then the ablation (3 chunkings x
+   granite / bge / BM25 / hybrid x rerank off / top 20 / top 50) with CIs.
+   Query rewriting / HyDE / decomposition stay off until the eval exists.
