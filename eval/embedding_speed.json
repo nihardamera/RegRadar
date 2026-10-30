@@ -1,0 +1,69 @@
+{
+  "machine": "arm64 27.0.1",
+  "processor": "Apple M4",
+  "passage_words": 220,
+  "batch_size": 8,
+  "corpus_passages": 3913,
+  "results": [
+    {
+      "model": "BAAI/bge-small-en-v1.5",
+      "dim": 384,
+      "max_tokens": 512,
+      "load_s": 0.1,
+      "passages": 512,
+      "passages_per_s": 17.4,
+      "corpus_minutes": 3.8,
+      "query_ms_median": 3.3,
+      "query_ms_p95": 3.9,
+      "peak_rss_mb": 620,
+      "tokens_median": 297.0,
+      "share_over_limit": 0.025,
+      "share_of_tokens_cut": 0.0413
+    },
+    {
+      "model": "ibm-granite/granite-embedding-small-english-r2",
+      "dim": 384,
+      "max_tokens": 8192,
+      "load_s": 0.3,
+      "passages": 512,
+      "passages_per_s": 19.6,
+      "corpus_minutes": 3.3,
+      "query_ms_median": 3.0,
+      "query_ms_p95": 3.4,
+      "peak_rss_mb": 3746,
+      "tokens_median": 295.0,
+      "share_over_limit": 0.0,
+      "share_of_tokens_cut": 0.0
+    },
+    {
+      "model": "nomic-ai/nomic-embed-text-v1.5",
+      "dim": 768,
+      "max_tokens": 8192,
+      "load_s": 0.3,
+      "passages": 512,
+      "passages_per_s": 5.1,
+      "corpus_minutes": 12.7,
+      "query_ms_median": 10.2,
+      "query_ms_p95": 10.5,
+      "peak_rss_mb": 6972,
+      "tokens_median": 297.0,
+      "share_over_limit": 0.0,
+      "share_of_tokens_cut": 0.0
+    },
+    {
+      "model": "snowflake/snowflake-arctic-embed-m-long",
+      "dim": 768,
+      "max_tokens": 512,
+      "load_s": 53.8,
+      "passages": 512,
+      "passages_per_s": 9.0,
+      "corpus_minutes": 7.2,
+      "query_ms_median": 8.1,
+      "query_ms_p95": 8.6,
+      "peak_rss_mb": 2049,
+      "tokens_median": 297.0,
+      "share_over_limit": 0.025,
+      "share_of_tokens_cut": 0.0413
+    }
+  ]
+}

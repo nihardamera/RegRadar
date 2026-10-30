@@ -143,3 +143,26 @@ annex-reference anchors; a per-page ledger in the manifest.
 (official arm64 DMG; signature checked: Developer ID "Orbital Labs, LLC"
 HUAQ24HBR6, notarized). Docker 29.8.2, Compose v5.5.0; `docker` is on PATH
 via `~/.zprofile`. Homebrew is not installed on this Mac.
+
+## 2026-10-30 (Fri), late: M2 started; dense model chosen
+
+**Dense model (Nihar's choice, 30 Oct):** `ibm-granite/granite-embedding-small-english-r2`
+(Apache-2.0, 384-d, 8k tokens) as the primary; `BAAI/bge-small-en-v1.5`
+(MIT, 384-d, 512 tokens) as a second dense row in the M3 ablation. Chosen
+on what can be measured before the golden set exists (`eval/embedding_speed.json`,
+`scripts/bench_embeddings.py`; Apple M4, 220-word passages, batch 8):
+
+| Model | passages/s | corpus | query p50 | peak RSS | tokens cut |
+| --- | --- | --- | --- | --- | --- |
+| granite-small-r2 | 19.6 | 3.3 min | 3.0 ms | 3.7 GB | 0% |
+| bge-small-en-v1.5 | 17.4 | 3.8 min | 3.3 ms | 0.6 GB | 4.1% (2.5% of chunks, mostly tables) |
+| nomic-embed-v1.5 | 5.1 | 12.7 min | 10.2 ms | 7.0 GB | 0% |
+| arctic-embed-m-long | 9.0 | 7.2 min | 8.1 ms | 2.0 GB | 4.1% (fastembed caps it at 512) |
+
+Quality is not compared here; it is measured in M3. At batch 32, granite
+peaked at 7.2 GB and nomic was killed for memory on this 16 GB Mac.
+
+**Versions**: fastembed 0.9.0 (granite needs 0.9; qdrant-client's
+fastembed extra, which wants <0.9, is not used: vectors are computed here),
+qdrant-client 1.19.1, Qdrant server v1.19.2 in `docker-compose.yml`
+(localhost only, telemetry off).

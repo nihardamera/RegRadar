@@ -27,13 +27,20 @@ from pathlib import Path
 from typing import Any
 
 ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT))
+from regradar.chunking import CHUNK_WORDS  # noqa: E402
+
 CANDIDATES = [
     "BAAI/bge-small-en-v1.5",
     "ibm-granite/granite-embedding-small-english-r2",
     "nomic-ai/nomic-embed-text-v1.5",
     "snowflake/snowflake-arctic-embed-m-long",
 ]
-PASSAGE_WORDS = 300  # about the size of one RBI paragraph group
+# The chunker's target size, so truncation figures describe real chunks.
+PASSAGE_WORDS = CHUNK_WORDS
+# Batch 32 took a long-context model to 7 GB and the next one out of memory on
+# a 16 GB Mac; 8 is what this machine can run alongside Qdrant.
+BATCH_SIZE = 8
 QUERIES = [
     "Within how many hours must a payment system operator report a cyber incident to RBI?",
     "Can penal charges on a loan be capitalised?",
@@ -90,7 +97,7 @@ def measure(model_name: str, count: int) -> dict[str, Any]:
 
     list(model.embed(texts[:8]))  # warm-up
     started = time.perf_counter()
-    vectors = list(model.embed(texts, batch_size=32))
+    vectors = list(model.embed(texts, batch_size=BATCH_SIZE))
     embed_s = time.perf_counter() - started
 
     latencies = []
@@ -134,16 +141,23 @@ def main() -> int:
             [sys.executable, __file__, "--model", name, "--passages", str(args.passages)],
             capture_output=True,
             text=True,
-            check=True,
         )
-        results.append(json.loads(run.stdout.strip().splitlines()[-1]))
-        print(json.dumps(results[-1]), file=sys.stderr)
+        if run.returncode == 0:
+            results.append(json.loads(run.stdout.strip().splitlines()[-1]))
+        else:
+            # A model killed for memory is a result too: it cannot run here.
+            reason = f"exit {run.returncode}" + (
+                " (killed: out of memory?)" if run.returncode == -9 else ""
+            )
+            results.append({"model": name, "failed": reason, "stderr": run.stderr[-500:]})
+        print(json.dumps(results[-1])[:300], file=sys.stderr)
     out = {
         "machine": f"{platform.machine()} {platform.mac_ver()[0] or platform.platform()}",
         "processor": subprocess.run(
             ["sysctl", "-n", "machdep.cpu.brand_string"], capture_output=True, text=True
         ).stdout.strip(),
         "passage_words": PASSAGE_WORDS,
+        "batch_size": BATCH_SIZE,
         "corpus_passages": corpus_windows(),
         "results": results,
     }
