@@ -18,7 +18,7 @@ jobs:
           python-version: "3.12"
       # The 30 v1 tests import the v1 modules, which need the v1 stack. The
       # tests monkeypatch the page fetch, so no Playwright browser is needed.
-      - run: uv sync --locked --extra v1
+      - run: uv sync --locked --extra v1 --extra llm
       - run: uv run ruff check .
       - run: uv run ruff format --check .
       - run: uv run mypy
