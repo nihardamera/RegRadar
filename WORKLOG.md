@@ -287,3 +287,25 @@ resume line changes from "hand-built".
   and q141 keeps it as a hard case.
 - Cleaner fix for `Tel.No.` footers deferred: it moves offsets, so it goes with
   the next planned re-index.
+
+## 2026-10-31 (Sat), afternoon: retrieval measured; answers built, not yet run
+
+**Done**
+- Ablation (`eval/results/ABLATION.md`): hybrid beats dense-only on both splits
+  (test hit@10 +5.7 [+1.4, +11.4], MRR +10.5 [+2.1, +19.1]); the reranker helped
+  on dev and not on test, at 1.6-5 s a query, so the default is section /
+  hybrid / no reranker. That choice used test, and ABLATION.md says so.
+- CI gate (`regradar/gate.py`): hit@10 and MRR on 30 fixed dev questions from
+  committed retrieval; baseline 90.0 / 75.6. Green in CI.
+- `regradar/answer.py` (citation enforcement, retry once, then reject),
+  `regradar/llm.py` (cached, dry run by default, $5 ledger, no default model),
+  `regradar/evaluate_answers.py` (answered / not found / rejected, citation
+  precision and recall, correct declines). All tested with fakes; no API call
+  made. Dry-run price for all 150 questions: Haiku 5.5 at most $0.68, Sonnet 5.5
+  at most $13.51 (ceilings: a retry for every question, full output budget).
+
+**Next (waiting on Nihar)**
+1. Choose the answer model and approve the first paid call.
+2. Then: answers on dev and test; 100 answers for Nihar to label (judge
+   calibration, Cohen's kappa); the judge; citation precision in the gate.
+3. Review a sample of the golden set (`regradar.golden review --sample 30`).

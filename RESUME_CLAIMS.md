@@ -10,11 +10,12 @@ committed file that proves it. Rates are reported with 95% bootstrap CIs.
 | 290 public RBI documents (262 notifications 2019-2026, 28 consolidated Master Directions) ingested with metadata, RBI and archive URLs, PDF SHA-256 | `corpus/manifest.jsonl`, `corpus/CARD.md`; `tests/test_company.py` checks the cited ones | measured (M1). Say "290", not "~300" |
 | Parse audit with three independent checks for lost text; 8 pages in 6 documents below 95% distinct-word recall against a second PDF reader | `corpus/AUDIT.md` (generated from the manifest) | measured (M1) |
 | 21 synthetic policy documents, each labelled synthetic; 12 planted gaps verified against the circulars' text, plus 3 deliberate non-gaps | `company/`, `company/GAP_KEY.md`; `tests/test_company.py` | M1, verified |
-| Hybrid BM25 + dense in Qdrant with a cross-encoder reranker; ablation table with CIs | — | pending (M2/M3) |
+| Hybrid BM25 + dense retrieval in Qdrant; 18-configuration ablation (3 chunkings x 4 retrievers + reranking) with bootstrap CIs and paired differences | `eval/results/ABLATION.md`, `retrieval_{dev,test}.json` | measured (M3) |
+| Cross-encoder reranking tested and left off: helped on dev, not on test, at 1.6-5 s a query | `eval/results/ABLATION.md`, `eval/retrieval_latency.json` | measured; say "tested", not "uses" |
 | 150-question golden set (50 single-hop, 25 multi-hop, 30 number/date, 15 identifier, 30 unanswerable), answers as text ranges with restated-rule alternatives | `eval/golden/questions.jsonl`, `eval/golden/CARD.md`; `tests/test_golden.py` | v1 complete. **Drafted by Claude Code, not hand-written**: say "drafted with Claude Code and reviewed by me" only once `check` shows the review done |
-| recall@10 dense-only … → hybrid + rerank … [CI] | — | pending (M3) |
+| recall@10 (hit@10) dense-only 87.1% → hybrid 92.9% on held-out test, paired +5.7 pts [+1.4, +11.4]; MRR +10.5 [+2.1, +19.1] (n = 70) | `eval/results/ABLATION.md`, `paired_differences.txt` | measured (M3). The default's choice used test (ABLATION.md) |
 | Citation-enforced answers; judge calibrated to my labels, Cohen's κ = … | — | pending (M3) |
-| CI gate on recall@10 and citation precision | — | pending (M3) |
+| CI gate: hit@10 and MRR on a fixed 30-question subset from committed retrieval results | `regradar/gate.py`, `eval/ci/`, `.github/workflows/ci.yml` | built; citation precision joins when answers exist |
 | Impact pipeline, v1 vs v2 on the same circular | — | pending (M4) |
 | DSPy MIPROv2 / GEPA: +… pts on held-out data for $… | — | pending (M5) |
 | Live demo | — | pending (M6) |
