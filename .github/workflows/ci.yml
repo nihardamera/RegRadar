@@ -23,6 +23,8 @@ jobs:
       - run: uv run ruff format --check .
       - run: uv run mypy
       - run: uv run pytest -q
+      # Retrieval quality on the committed 30-question subset (no Qdrant needed).
+      - run: uv run python -m regradar.gate check
 
   secrets:
     runs-on: ubuntu-latest
