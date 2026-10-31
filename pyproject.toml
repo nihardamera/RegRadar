@@ -28,6 +28,11 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
+# Claude, for answers and the judge (regradar.llm). SDK 2.x sends API version
+# 2026-10-21, on which sampling parameters (temperature) are not accepted.
+llm = [
+    "anthropic==2.3.0",
+]
 # FinScoutAI v1 (app.py, cli.py, rag_agents.py, utils.py), frozen at the
 # finscout-v1 tag. The same pins as v1's requirements.txt, tested together on
 # Python 3.12. Removed in M4, when the checks move into regradar/.
