@@ -260,3 +260,30 @@ The golden set needs identifier-lookup questions for that.
 - Smoke-tested end to end on 6 practice questions written in the scratchpad
   (never in the golden set; results deleted). With n = 5 the intervals span
   40-100 points, which is why the real comparison waits for 150.
+
+## 2026-10-31 (Sat), later: golden set v1 drafted
+
+**Decision (Nihar, 31 Oct):** Claude Code drafts the golden set instead of
+Nihar writing it. Conditions agreed in the chat: every record says it was
+drafted by Claude Code; Nihar reviews (`uv run python -m regradar.golden
+review`, about a minute a question; even 30 is worth it) and the review is
+recorded per question; the 100 judge-calibration labels stay Nihar's, since
+calibrating a judge against Claude's own labels would measure nothing; the
+resume line changes from "hand-built".
+
+**Done**: 150 questions from a stratified random sample of documents
+(`eval/golden/CARD.md` has the method). Lessons that changed the tooling:
+- Exact-text restatements of short phrases matched unrelated rules (a fraud
+  reporting deadline for an ombudsman question), so they are added
+  automatically only for quotes of 12+ words.
+- The 2025-26 consolidated Directions restate older rules in new words, which
+  exact matching misses; a word-overlap scan found 80 candidates and 44 were
+  accepted by hand (rejected: other entity types, named instruments, same
+  words in a different rule).
+- The E-mandate Framework, 2026 consolidates and repeals the earlier
+  e-mandate circulars; present-tense questions take it as the current law.
+- Strike-through amendments extract as both old and new words ("REs shall
+  may, at its option, provide the option a choice"): a parser limitation,
+  and q141 keeps it as a hard case.
+- Cleaner fix for `Tel.No.` footers deferred: it moves offsets, so it goes with
+  the next planned re-index.

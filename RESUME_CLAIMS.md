@@ -11,7 +11,7 @@ committed file that proves it. Rates are reported with 95% bootstrap CIs.
 | Parse audit with three independent checks for lost text; 8 pages in 6 documents below 95% distinct-word recall against a second PDF reader | `corpus/AUDIT.md` (generated from the manifest) | measured (M1) |
 | 21 synthetic policy documents, each labelled synthetic; 12 planted gaps verified against the circulars' text, plus 3 deliberate non-gaps | `company/`, `company/GAP_KEY.md`; `tests/test_company.py` | M1, verified |
 | Hybrid BM25 + dense in Qdrant with a cross-encoder reranker; ablation table with CIs | — | pending (M2/M3) |
-| 150-question hand-written golden set, ≥ 20 unanswerable | — | pending (M3) |
+| 150-question golden set (50 single-hop, 25 multi-hop, 30 number/date, 15 identifier, 30 unanswerable), answers as text ranges with restated-rule alternatives | `eval/golden/questions.jsonl`, `eval/golden/CARD.md`; `tests/test_golden.py` | v1 complete. **Drafted by Claude Code, not hand-written**: say "drafted with Claude Code and reviewed by me" only once `check` shows the review done |
 | recall@10 dense-only … → hybrid + rerank … [CI] | — | pending (M3) |
 | Citation-enforced answers; judge calibrated to my labels, Cohen's κ = … | — | pending (M3) |
 | CI gate on recall@10 and citation precision | — | pending (M3) |

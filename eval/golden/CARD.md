@@ -5,12 +5,51 @@ each with a reference answer and the exact text that answers it, in
 [`questions.jsonl`](questions.jsonl). It measures retrieval (does the system
 find the text?) and answers (does it say what the text says, and cite it?).
 
-**Who writes it.** Nihar Damera, by hand. No question, answer or span comes from
-a model RegRadar evaluates, or from RegRadar's retriever: answers are located
-with plain keyword search (`find`), so the set does not lean toward what the
-system already finds.
+**Who wrote it.** Drafted by Claude Code (claude-opus-5-5), at Nihar Damera's
+request, on 31 Oct 2026; every record says so in `author`. Human review is
+recorded per question (`reviewed_by`, `reviewed`); `check` reports how many have
+been reviewed. Until a question is reviewed, treat it as a careful draft.
+No question, answer or span came from RegRadar's retriever: answers were
+located with plain keyword search, and retrieval was not run until the set was
+complete.
 
-**Status.** Being written. Target: 150 questions.
+**Status.** v1: 150 questions, complete; human review pending.
+
+## How v1 was drafted
+
+1. **Documents by stratified random sample** (department x period, seed
+   20261031), not chosen by familiarity; random sections of each were read and
+   questions written from them. Near-identical UAPA sanctions-list updates were
+   capped.
+2. **Every quote verified** against the cleaned text (`locate`), and every
+   question written as an analyst would ask it (31% of question words appear in
+   the gold quotes).
+3. **Restatements**: exact-text matches in other documents were added only for
+   quotes of 12+ words (short phrases recur in unrelated rules); a word-overlap
+   scan then found 80 reworded candidates, of which 44 were accepted by hand.
+   Rejected: a different kind of entity (an NBFC question is not answered by
+   the CIC version), a question that names one instrument or period, and same
+   words in a different rule.
+4. **Current law.** Where a 2025-26 consolidated Direction restates an older
+   rule, it is an alternative span; a question that names an older instrument
+   accepts only that instrument.
+5. **Unanswerable questions** were each checked with several keyword searches
+   that must match nothing; the searches are listed in the question's notes.
+   Mix: rules of other regulators (SEBI, IRDAI, PFRDA), enforcement actions,
+   future decisions, tax, and near-domain details the corpus is silent on.
+
+## Known issues
+
+- **Model-written questions.** A Claude model wrote the set. If the answer model
+  is also a Claude model, the shared style may make questions easier for it;
+  the answer model is chosen with that in mind, and results say which was used.
+- **Withdrawn instruments.** Some gold spans are in circulars RBI withdrew in the
+  November 2025 consolidation (marked "Withdrawn" in their text); where the
+  current Direction restates the rule it is an alternative.
+- **Strike-through.** q141's circular marks an amendment with strike-through;
+  extracted text keeps both the deleted and inserted words ("shall may").
+- A few footers survive cleaning (`Tel.No.` without a space); fixing the
+  cleaner moves offsets, so it waits for a planned re-index.
 
 ## Make-up
 
@@ -38,6 +77,8 @@ system already finds.
   at only for the final numbers.
 
 ## Writing guidance
+
+These were the rules for writing; they apply to any question added later.
 
 1. **Ask as a compliance analyst at a payments company or NBFC would**, in
    your own words. Questions copied from a circular's wording favour keyword
@@ -79,4 +120,4 @@ results state which version they used.
 
 | Version | Date | Questions | Change |
 | --- | --- | --- | --- |
-| v1 (draft) | — | 0 | being written |
+| v1 | 2026-10-31 | 150 | complete: 50 single-hop, 25 multi-hop, 30 number/date, 15 identifier, 30 unanswerable; 60 dev, 90 test; drafted by Claude Code, review pending |

@@ -75,8 +75,12 @@ class Question(BaseModel):
     gold: list[Part] = Field(default_factory=list)  # all parts needed
     split: Literal["dev", "test"]
     notes: str = ""
+    # Who drafted it. Questions drafted by a model say so; a human review is
+    # recorded separately, so the card can state exactly what was checked.
     author: str = "Nihar Damera"
     written: date
+    reviewed_by: str = ""
+    reviewed: date | None = None
 
     @field_validator("question", "answer")
     @classmethod
@@ -230,6 +234,8 @@ def overlap(question: str, quotes: Sequence[str]) -> float:
 @dataclass
 class Report:
     problems: list[str]
+    authors: Counter[str]
+    reviewed: int
     by_type: Counter[str]
     by_split: Counter[str]
     documents: int
@@ -256,6 +262,8 @@ def check(questions: Sequence[Question], docs: dict[str, CleanDocument]) -> Repo
     overlaps = [overlap(q.question, [s.quote for s in q.spans]) for q in answerable]
     return Report(
         problems=problems,
+        authors=Counter(q.author for q in questions),
+        reviewed=sum(1 for q in questions if q.reviewed_by),
         by_type=Counter(q.type for q in questions),
         by_split=Counter(q.split for q in questions),
         documents=len({s.doc_id for q in questions for s in q.spans}),
@@ -414,6 +422,40 @@ def cmd_add(_args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_review(args: argparse.Namespace) -> int:
+    """Show each unreviewed question with its gold text; approve, or note a fix."""
+    questions = load()
+    docs = corpus()
+    pending = [q for q in questions if not q.reviewed_by]
+    if args.sample:
+        pending = random.Random(args.seed).sample(pending, min(args.sample, len(pending)))
+    print(
+        f"{len(pending)} question(s) to review. a = approve, f = needs a fix, s = skip, q = quit."
+    )
+    by_id = {q.id: q for q in questions}
+    for q in pending:
+        print(f"\n{q.id} [{q.type}, {q.split}]  {q.question}\n   answer: {q.answer}")
+        for n, part in enumerate(q.gold, 1):
+            span = part.spans[0]
+            more = f" (+{len(part.spans) - 1} restatement(s))" if len(part.spans) > 1 else ""
+            print(f"   part {n}: {span.doc_id} [{where(docs[span.doc_id], span)}]{more}")
+            print("     " + _context(docs[span.doc_id], span, width=120))
+        if q.notes:
+            print(f"   notes: {q.notes}")
+        choice = _ask("   > ", ["a", "f", "s", "q"])
+        if choice == "q":
+            break
+        if choice == "s":
+            continue
+        update: dict[str, object] = {"reviewed_by": args.reviewer, "reviewed": date.today()}
+        if choice == "f":
+            fix = _ask("   what is wrong? ")
+            update = {"notes": f"{q.notes} | FIX ({args.reviewer}): {fix}".strip(" |")}
+        by_id[q.id] = q.model_copy(update=update)
+        save(list(by_id.values()))
+    return 0
+
+
 def cmd_check(_args: argparse.Namespace) -> int:
     questions = load()
     report = check(questions, corpus())
@@ -427,6 +469,7 @@ def cmd_check(_args: argparse.Namespace) -> int:
         f"Question words found in their gold quotes: {report.mean_overlap:.0%} on average"
         " (lower means more paraphrased; a set written in the circulars' words favours BM25)."
     )
+    print(f"Drafted by: {dict(report.authors)}; reviewed by a person: {report.reviewed}")
     for problem in report.problems:
         print(f"PROBLEM {problem}")
     return 1 if report.problems else 0
@@ -448,6 +491,11 @@ def main(argv: list[str] | None = None) -> int:
     find.set_defaults(run=cmd_find)
     steps.add_parser("add", help="write one question").set_defaults(run=cmd_add)
     steps.add_parser("check", help="validate the set and show progress").set_defaults(run=cmd_check)
+    review = steps.add_parser("review", help="approve or flag questions, with their gold text")
+    review.add_argument("--reviewer", default="Nihar Damera")
+    review.add_argument("--sample", type=int, help="review a random sample of this many")
+    review.add_argument("--seed", type=int, default=1)
+    review.set_defaults(run=cmd_review)
     args = parser.parse_args(argv)
     try:
         result: int = args.run(args)
