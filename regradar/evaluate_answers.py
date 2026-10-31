@@ -44,9 +44,16 @@ class Scored:
     citation_precision: float | None  # None when nothing was cited
     citation_recall: float | None  # None for unanswerable questions
     problems: list[str]
+    claims: list[dict[str, Any]]  # what the model said, for labelling and the judge
+    context: dict[str, str]  # chunk ID -> text, for every chunk the model was given
 
 
-def score(question: Question, result: Answer, retrieved: Sequence[Retrieved]) -> Scored:
+def score(
+    question: Question,
+    result: Answer,
+    retrieved: Sequence[Retrieved],
+    context: Sequence[ContextChunk] = (),
+) -> Scored:
     by_id = {r.chunk_id: r for r in retrieved}
     cited = [by_id[c] for c in result.cited if c in by_id]
     precision = (
@@ -68,6 +75,8 @@ def score(question: Question, result: Answer, retrieved: Sequence[Retrieved]) ->
         precision,
         recall,
         result.problems,
+        [claim.model_dump() for claim in result.claims],
+        {c.chunk_id: c.text for c in context},
     )
 
 
@@ -134,7 +143,7 @@ def run(
             # Priced as if one retry were needed for every question: a ceiling.
             estimate += 2 * dry.estimate_usd
             continue
-        rows.append(score(question, result, retrieved))
+        rows.append(score(question, result, retrieved, [c for _, c in pairs]))
     return rows, estimate
 
 
