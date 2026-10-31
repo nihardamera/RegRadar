@@ -146,3 +146,20 @@ def test_an_unknown_mode_is_refused(retriever: Retriever) -> None:
 def test_point_ids_are_stable_so_reindexing_replaces() -> None:
     assert point_id("rbi-n1:section:0001") == point_id("rbi-n1:section:0001")
     assert point_id("rbi-n1:section:0001") != point_id("rbi-n1:section:0002")
+
+
+def test_rrf_matches_qdrants_formula_and_breaks_ties_by_chunk_id() -> None:
+    """The M2 gate's case: the wrong chunk is first in dense and third in BM25;
+    the right one is first in BM25 only. Scores 1/2 + 1/4 against 1/2."""
+    from regradar.index import Hit, rrf
+
+    def hit(cid: str) -> Hit:
+        return Hit(cid, cid.split(":")[0], 0, 1, 0.0, {})
+
+    dense = [hit("wrong:1"), hit("other:1")]
+    sparse = [hit("right:1"), hit("filler:1"), hit("wrong:1")]
+    fused = rrf([dense, sparse])
+    assert [h.chunk_id for h in fused[:2]] == ["wrong:1", "right:1"]
+    assert fused[0].score == pytest.approx(0.75) and fused[1].score == pytest.approx(0.5)
+    tied = rrf([[hit("b:1")], [hit("a:1")]])
+    assert [h.chunk_id for h in tied] == ["a:1", "b:1"]

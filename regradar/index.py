@@ -257,6 +257,32 @@ class Hit:
     payload: dict[str, Any]
 
 
+RRF_K = 2  # Qdrant's default
+
+
+def rrf(rankings: Sequence[Sequence[Hit]], k: int = RRF_K) -> list[Hit]:
+    """Reciprocal rank fusion: sum of 1 / (k + rank), ranks from 0, as Qdrant
+    computes it; ties go to the smaller chunk ID, so the order never varies."""
+    scores: dict[str, float] = {}
+    first: dict[str, Hit] = {}
+    for ranking in rankings:
+        for rank, hit in enumerate(ranking):
+            scores[hit.chunk_id] = scores.get(hit.chunk_id, 0.0) + 1.0 / (k + rank)
+            first.setdefault(hit.chunk_id, hit)
+    order = sorted(scores, key=lambda cid: (-scores[cid], cid))
+    return [
+        Hit(
+            first[c].chunk_id,
+            first[c].doc_id,
+            first[c].start,
+            first[c].end,
+            scores[c],
+            first[c].payload,
+        )
+        for c in order
+    ]
+
+
 class QueryEncoders:
     """The fastembed models that turn a query into vectors. Loaded once."""
 
@@ -328,36 +354,26 @@ class Retriever:
         flt = filters.to_qdrant() if filters else None
         limit = candidates if rerank else k
         if mode == "hybrid":
-            response = self.client.query_points(
-                self.name,
-                prefetch=[
-                    models.Prefetch(
-                        query=self._query_dense("granite", query),
-                        using="granite",
-                        limit=candidates,
-                        filter=flt,
-                    ),
-                    models.Prefetch(
-                        query=self._query_sparse(query), using="bm25", limit=candidates, filter=flt
-                    ),
-                ],
-                query=models.FusionQuery(fusion=models.Fusion.RRF),
-                limit=limit,
-                with_payload=True,
-            )
+            # Fused here rather than in Qdrant: each arm on its own returns the
+            # same results every time, but Qdrant's server-side RRF broke ties
+            # differently between calls (9 of 40 queries changed their top 5 on
+            # an immediate repeat). Same formula as Qdrant's (k = 2, ranks from
+            # 0), with ties broken by chunk ID.
+            dense = self._arm(self._query_dense("granite", query), "granite", flt, candidates)
+            sparse = self._arm(self._query_sparse(query), "bm25", flt, candidates)
+            hits = rrf([dense, sparse])[:limit]
         else:
             vector: Any = (
                 self._query_sparse(query) if mode == "bm25" else self._query_dense(mode, query)
             )
-            response = self.client.query_points(
-                self.name,
-                query=vector,
-                using=mode,
-                query_filter=flt,
-                limit=limit,
-                with_payload=True,
-            )
-        hits = [
+            hits = self._arm(vector, mode, flt, limit)
+        return self._rerank(query, hits)[:k] if rerank else hits[:k]
+
+    def _arm(self, vector: Any, using: str, flt: models.Filter | None, limit: int) -> list[Hit]:
+        response = self.client.query_points(
+            self.name, query=vector, using=using, query_filter=flt, limit=limit, with_payload=True
+        )
+        return [
             Hit(
                 chunk_id=p.payload["chunk_id"],
                 doc_id=p.payload["doc_id"],
@@ -369,7 +385,6 @@ class Retriever:
             for p in response.points
             if p.payload
         ]
-        return self._rerank(query, hits)[:k] if rerank else hits[:k]
 
     def _rerank(self, query: str, hits: list[Hit]) -> list[Hit]:
         if not hits:
