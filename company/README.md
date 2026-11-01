@@ -8,8 +8,8 @@
 **What it is.** 21 policy, product and procedure documents (`FP-00` to
 `FP-20`) for a payments company that is an online payment aggregator, a PPI
 issuer and a UPI TPAP, and the lending service provider for its own NBFC
-subsidiary. It extends v1's six-file knowledge base (`knowledge_base/`, kept
-for v1), and keeps v1's facts where they were consistent.
+subsidiary. It extends v1's six-file knowledge base (`knowledge_base/` at the
+`finscout-v1` tag), and keeps v1's facts where they were consistent.
 
 **Why it exists.** The impact pipeline (M4) matches a circular's
 obligations against a company's policies and reports the gaps. To measure

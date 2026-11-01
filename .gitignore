@@ -33,3 +33,6 @@ data
 .ruff_cache/
 .mypy_cache/
 .pytest_cache/
+
+# The demo's embedded Qdrant index, rebuilt from cached vectors (regradar.demo build-index)
+demo_index/

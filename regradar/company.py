@@ -47,3 +47,63 @@ def load_policies(folder: Path = COMPANY_DIR) -> list[PolicyDocument]:
             raise ValueError(f"{path.name}: missing {', '.join(missing)}")
         documents.append(PolicyDocument(fields["doc_id"], fields["title"], path, fields, body))
     return documents
+
+
+@dataclass(frozen=True)
+class PolicySection:
+    """One numbered paragraph of a policy, the unit a finding cites ("FC-13 §4.1")."""
+
+    doc_id: str
+    section: str  # "4.1"; a heading's number ("5") for text under a heading with no paragraphs
+    heading: str
+    text: str
+    title: str
+    owner: str
+    entity: str
+
+    @property
+    def ref(self) -> str:
+        return f"{self.doc_id} §{self.section}"
+
+
+_HEADING = re.compile(r"^## (\d+)\.\s*(.+)$")
+_PARAGRAPH = re.compile(r"^(\d+\.\d+[a-z]?)\s+(.*)$")
+
+
+def policy_sections(documents: list[PolicyDocument] | None = None) -> list[PolicySection]:
+    """Every numbered paragraph of every policy, with the policy's owner and entity."""
+    out: list[PolicySection] = []
+    for doc in documents if documents is not None else load_policies():
+        # (section number, heading, lines); text under a heading before any
+        # numbered paragraph is filed under the heading's own number.
+        blocks: list[tuple[str, str, list[str]]] = []
+        heading_no = heading = ""
+        for line in doc.body.splitlines():
+            if line.startswith(">") or line.startswith("# "):
+                continue
+            if m := _HEADING.match(line):
+                heading_no, heading = m.group(1), m.group(2).strip()
+                blocks.append((heading_no, heading, []))
+            elif (
+                heading_no
+                and (m := _PARAGRAPH.match(line))
+                and m.group(1).startswith(f"{heading_no}.")
+            ):
+                blocks.append((m.group(1), heading, [m.group(2)]))
+            elif line.strip() and blocks:
+                blocks[-1][2].append(line.strip())
+        for number, title, lines in blocks:
+            text = " ".join(" ".join(lines).split())
+            if text:
+                out.append(
+                    PolicySection(
+                        doc.doc_id,
+                        number,
+                        title,
+                        text,
+                        doc.title,
+                        doc.fields["owner"],
+                        doc.fields["entity"],
+                    )
+                )
+    return out

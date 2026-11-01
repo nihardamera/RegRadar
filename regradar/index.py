@@ -286,10 +286,10 @@ def rrf(rankings: Sequence[Sequence[Hit]], k: int = RRF_K) -> list[Hit]:
 class QueryEncoders:
     """The fastembed models that turn a query into vectors. Loaded once."""
 
-    def __init__(self) -> None:
+    def __init__(self, dense_models: Sequence[str] = tuple(DENSE_MODELS)) -> None:
         from fastembed import SparseTextEmbedding, TextEmbedding
 
-        self._dense = {model: TextEmbedding(path) for model, path in DENSE_MODELS.items()}
+        self._dense = {model: TextEmbedding(DENSE_MODELS[model]) for model in dense_models}
         self._sparse = SparseTextEmbedding(SPARSE_MODEL)
 
     def dense(self, model: str, query: str) -> list[float]:

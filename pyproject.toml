@@ -5,10 +5,10 @@ description = "Cited retrieval over RBI circulars, and impact assessments a comp
 readme = "README.md"
 requires-python = ">=3.12"
 authors = [{ name = "Nihar Damera" }]
-# The v2 pipeline's dependencies are added milestone by milestone. Where v1
-# uses the same package, the pin matches the v1 extra so both install together.
 dependencies = [
     "beautifulsoup4==4.15.0",
+    # The HTTP API (regradar.api), served by uvicorn.
+    "fastapi==0.162.0",
     # Local ONNX embeddings, sparse BM25 and cross-encoder reranking on CPU.
     # 0.9 for granite-embedding-small-english-r2; the vectors are computed
     # here, so qdrant-client's own fastembed extra (which wants <0.9) is unused.
@@ -25,6 +25,7 @@ dependencies = [
     "pypdf==6.20.1",
     # Matches the server image in docker-compose.yml (qdrant/qdrant:v1.19.2).
     "qdrant-client==1.19.1",
+    "uvicorn==0.54.0",
 ]
 
 [project.optional-dependencies]
@@ -33,26 +34,11 @@ dependencies = [
 llm = [
     "anthropic==2.3.0",
 ]
-# FinScoutAI v1 (app.py, cli.py, rag_agents.py, utils.py), frozen at the
-# finscout-v1 tag. The same pins as v1's requirements.txt, tested together on
-# Python 3.12. Removed in M4, when the checks move into regradar/.
-# For the v1 app, also run: playwright install chromium
-v1 = [
-    "crewai[litellm]==1.15.23",
-    "litellm==1.104.0",
-    "langchain-core==1.6.6",
-    "langchain-ollama==1.1.0",
-    "langchain-chroma==1.0.0",
-    "langchain-text-splitters==1.1.3",
-    "chromadb==1.1.1",
-    "pydantic==2.12.5",
-    "streamlit==1.65.0",
-    "playwright==1.63.0",
-    "pymupdf==1.28.2",
-    "beautifulsoup4==4.15.0",
-    "lxml==6.1.3",
-    # Already required by fastembed; pinned here because regradar imports it.
-    "numpy==2.5.4",
+dspy = [
+    "dspy==3.4.1",
+]
+demo = [
+    "gradio==6.31.0",
 ]
 
 [dependency-groups]
@@ -80,15 +66,6 @@ pythonpath = ["."]
 [tool.ruff]
 line-length = 100
 target-version = "py312"
-# v1 stays byte-identical to the finscout-v1 tag until it is ported (M4).
-extend-exclude = [
-    "app.py",
-    "cli.py",
-    "database.py",
-    "rag_agents.py",
-    "utils.py",
-    "tests/test_checks.py",
-]
 
 [tool.ruff.lint]
 select = ["E", "F", "W", "I", "UP", "B", "SIM", "RUF"]
@@ -108,3 +85,12 @@ strict = true
 [[tool.mypy.overrides]]
 module = ["pymupdf", "fitz"]
 ignore_missing_imports = true
+
+# Nor does DSPy; its Signature and Module are subclassed in regradar.optimize.
+[[tool.mypy.overrides]]
+module = ["dspy", "dspy.*"]
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = ["regradar.optimize"]
+disallow_subclassing_any = false

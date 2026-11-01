@@ -16,6 +16,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import threading
 import time
 from dataclasses import dataclass
 from pathlib import Path
@@ -116,8 +117,12 @@ class Claude:
         self.cache_dir = cache_dir
         self.ledger = Ledger(cache_dir / "ledger.jsonl")
         self._client = client
+        # One client may be called from several threads: the budget check
+        # reserves each call's worst case until its real cost is on the ledger.
+        self._lock = threading.Lock()
+        self._reserved = 0.0
 
-    def _key(self, system: str, user: str) -> str:
+    def _key(self, system: str, user: str | list[dict[str, str]]) -> str:
         raw = json.dumps([self.model, self.effort, self.schema, system, user], sort_keys=True)
         return hashlib.sha256(raw.encode("utf-8")).hexdigest()
 
@@ -130,41 +135,60 @@ class Claude:
         return self.cost(estimate_tokens(system + user), self.max_tokens)
 
     def __call__(self, system: str, user: str) -> str:
-        key = self._key(system, user)
+        return self.chat(system, [{"role": "user", "content": user}])
+
+    def chat(self, system: str, messages: list[dict[str, str]]) -> str:
+        """A conversation (few-shot demonstrations arrive as earlier turns).
+
+        A single user turn is keyed by its text alone, as before multi-turn
+        calls existed, so earlier cached replies still match.
+        """
+        single = len(messages) == 1 and messages[0]["role"] == "user"
+        user_text = "\n\n".join(m["content"] for m in messages)
+        key = self._key(system, messages[0]["content"] if single else messages)
         cached = self.cache_dir / key[:2] / f"{key}.json"
         if cached.exists():
             text: str = json.loads(cached.read_text(encoding="utf-8"))["text"]
             return text
-        estimate = self.estimate(system, user)
+        estimate = self.estimate(system, user_text)
         if not self.spend:
             raise DryRun(estimate)
-        spent = self.ledger.spent()
-        if spent + estimate > self.budget_usd:
-            raise BudgetExceeded(
-                f"${spent:.4f} spent; this call could cost ${estimate:.4f}, "
-                f"over the ${self.budget_usd:.2f} budget"
+        with self._lock:
+            spent = self.ledger.spent() + self._reserved
+            if spent + estimate > self.budget_usd:
+                raise BudgetExceeded(
+                    f"${spent:.4f} spent or reserved; this call could cost ${estimate:.4f}, "
+                    f"over the ${self.budget_usd:.2f} budget"
+                )
+            self._reserved += estimate
+        try:
+            response = self._send(system, messages)
+        except BaseException:
+            with self._lock:
+                self._reserved -= estimate
+            raise
+        usd = self.cost(response.usage.input_tokens, response.usage.output_tokens)
+        with self._lock:
+            self._reserved -= estimate
+            self.ledger.add(
+                {
+                    "time": time.strftime("%Y-%m-%dT%H:%M:%S"),
+                    "model": self.model,
+                    "purpose": self.purpose,
+                    "input_tokens": response.usage.input_tokens,
+                    "output_tokens": response.usage.output_tokens,
+                    "usd": round(usd, 6),
+                    "key": key,
+                }
             )
-        response = self._send(system, user)
         if response.stop_reason == "refusal":
             raise RuntimeError(f"the model declined: {response.stop_details}")
         text = next(block.text for block in response.content if block.type == "text")
-        usd = self.cost(response.usage.input_tokens, response.usage.output_tokens)
-        self.ledger.add(
-            {
-                "time": time.strftime("%Y-%m-%dT%H:%M:%S"),
-                "model": self.model,
-                "purpose": self.purpose,
-                "input_tokens": response.usage.input_tokens,
-                "output_tokens": response.usage.output_tokens,
-                "usd": round(usd, 6),
-                "key": key,
-            }
-        )
         cached.parent.mkdir(parents=True, exist_ok=True)
         cached.write_text(json.dumps({"model": self.model, "text": text}), encoding="utf-8")
         return text
 
-    def _send(self, system: str, user: str) -> Any:
+    def _send(self, system: str, messages: list[dict[str, str]]) -> Any:
         if self._client is None:
             import anthropic
 
@@ -176,6 +200,6 @@ class Claude:
             model=self.model,
             max_tokens=self.max_tokens,
             system=system,
-            messages=[{"role": "user", "content": user}],
+            messages=messages,
             output_config=output_config,
         )
