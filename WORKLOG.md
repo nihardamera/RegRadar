@@ -447,3 +447,10 @@ request (13 decisions, each tied to its evidence). Resume line added to
 RESUME_CLAIMS.md, keeping DSPy as a judgment (benchmarked, not adopted). Static demo
 links now open in a new tab (GitHub refuses to load inside the Space's frame).
 Remaining, optional: Nihar's review of a golden-set sample; explain-back prep.
+
+**Golden-set review (2026-11-02):** Nihar reviewed a random 30 (`review --sample 30
+--seed 1`): 28 approved, 2 flagged. Both resolved without change and recorded in
+`notes`: q098 is unanswerable by design; q127 asks only about low-risk customers.
+Card, README, ABLATION.md and RESUME_CLAIMS.md updated ("a random 30 reviewed", never
+"reviewed" for the whole set). iCloud had created " 2" copies of most repo files (the
+repo sits in iCloud-synced Desktop); removed after checking each matches a git version.

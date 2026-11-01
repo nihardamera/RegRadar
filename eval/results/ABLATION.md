@@ -1,6 +1,6 @@
 # Retrieval ablation (golden set v1)
 
-Golden set v1 (`eval/golden/`, drafted by Claude Code; human review pending).
+Golden set v1 (`eval/golden/`, drafted by Claude Code; a random sample of 30 reviewed by Nihar Damera (28 approved; 2 flagged, both resolved without change)).
 Answerable questions only: **dev n = 50, test n = 70**. 95% percentile-bootstrap
 intervals (10,000 resamples). A retrieved chunk counts when it overlaps a gold
 span; **hit@10** = every part of the answer touched in the top 10 (recall@10 at
