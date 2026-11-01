@@ -1,0 +1,2165 @@
+{
+ "config": "section/hybrid",
+ "questions": {
+  "q001": [
+   {
+    "chunk_id": "rbi-n12561:section:0006",
+    "doc_id": "rbi-n12561",
+    "start": 6369,
+    "end": 7697,
+    "words": 210
+   },
+   {
+    "chunk_id": "rbi-n12561:section:0004",
+    "doc_id": "rbi-n12561",
+    "start": 3925,
+    "end": 5268,
+    "words": 209
+   },
+   {
+    "chunk_id": "rbi-n12561:section:0005",
+    "doc_id": "rbi-n12561",
+    "start": 5268,
+    "end": 6369,
+    "words": 182
+   },
+   {
+    "chunk_id": "rbi-n12561:section:0003",
+    "doc_id": "rbi-n12561",
+    "start": 2827,
+    "end": 3925,
+    "words": 171
+   },
+   {
+    "chunk_id": "rbi-n12561:section:0001",
+    "doc_id": "rbi-n12561",
+    "start": 1344,
+    "end": 2412,
+    "words": 161
+   },
+   {
+    "chunk_id": "rbi-n12561:section:0009",
+    "doc_id": "rbi-n12561",
+    "start": 10358,
+    "end": 11582,
+    "words": 201
+   },
+   {
+    "chunk_id": "rbi-n12561:section:0010",
+    "doc_id": "rbi-n12561",
+    "start": 11582,
+    "end": 11896,
+    "words": 49
+   },
+   {
+    "chunk_id": "rbi-n12561:section:0000",
+    "doc_id": "rbi-n12561",
+    "start": 0,
+    "end": 1344,
+    "words": 187
+   },
+   {
+    "chunk_id": "rbi-n12561:section:0008",
+    "doc_id": "rbi-n12561",
+    "start": 8947,
+    "end": 10358,
+    "words": 220
+   },
+   {
+    "chunk_id": "rbi-n12896:section:0000",
+    "doc_id": "rbi-n12896",
+    "start": 0,
+    "end": 1103,
+    "words": 152
+   }
+  ],
+  "q003": [
+   {
+    "chunk_id": "rbi-n12561:section:0003",
+    "doc_id": "rbi-n12561",
+    "start": 2827,
+    "end": 3925,
+    "words": 171
+   },
+   {
+    "chunk_id": "rbi-n12561:section:0009",
+    "doc_id": "rbi-n12561",
+    "start": 10358,
+    "end": 11582,
+    "words": 201
+   },
+   {
+    "chunk_id": "rbi-n12561:section:0001",
+    "doc_id": "rbi-n12561",
+    "start": 1344,
+    "end": 2412,
+    "words": 161
+   },
+   {
+    "chunk_id": "rbi-n12561:section:0005",
+    "doc_id": "rbi-n12561",
+    "start": 5268,
+    "end": 6369,
+    "words": 182
+   },
+   {
+    "chunk_id": "rbi-n12561:section:0007",
+    "doc_id": "rbi-n12561",
+    "start": 7697,
+    "end": 8947,
+    "words": 187
+   },
+   {
+    "chunk_id": "rbi-n12561:section:0010",
+    "doc_id": "rbi-n12561",
+    "start": 11582,
+    "end": 11896,
+    "words": 49
+   },
+   {
+    "chunk_id": "rbi-n12561:section:0006",
+    "doc_id": "rbi-n12561",
+    "start": 6369,
+    "end": 7697,
+    "words": 210
+   },
+   {
+    "chunk_id": "rbi-n12896:section:0008",
+    "doc_id": "rbi-n12896",
+    "start": 5330,
+    "end": 6869,
+    "words": 229
+   },
+   {
+    "chunk_id": "rbi-n12561:section:0004",
+    "doc_id": "rbi-n12561",
+    "start": 3925,
+    "end": 5268,
+    "words": 209
+   },
+   {
+    "chunk_id": "rbi-n12156:section:0021",
+    "doc_id": "rbi-n12156",
+    "start": 22779,
+    "end": 23932,
+    "words": 181
+   }
+  ],
+  "q008": [
+   {
+    "chunk_id": "rbi-md363:section:0015",
+    "doc_id": "rbi-md363",
+    "start": 17556,
+    "end": 18510,
+    "words": 140
+   },
+   {
+    "chunk_id": "rbi-md363:section:0001",
+    "doc_id": "rbi-md363",
+    "start": 587,
+    "end": 1711,
+    "words": 168
+   },
+   {
+    "chunk_id": "rbi-md363:section:0021",
+    "doc_id": "rbi-md363",
+    "start": 26273,
+    "end": 27527,
+    "words": 188
+   },
+   {
+    "chunk_id": "rbi-md379:section:0001",
+    "doc_id": "rbi-md379",
+    "start": 538,
+    "end": 1850,
+    "words": 196
+   },
+   {
+    "chunk_id": "rbi-md363:section:0032",
+    "doc_id": "rbi-md363",
+    "start": 39840,
+    "end": 41089,
+    "words": 194
+   },
+   {
+    "chunk_id": "rbi-md371:section:0013",
+    "doc_id": "rbi-md371",
+    "start": 15778,
+    "end": 16997,
+    "words": 179
+   },
+   {
+    "chunk_id": "rbi-md363:section:0039",
+    "doc_id": "rbi-md363",
+    "start": 48458,
+    "end": 49029,
+    "words": 90
+   },
+   {
+    "chunk_id": "rbi-n12550:section:0452",
+    "doc_id": "rbi-n12550",
+    "start": 500029,
+    "end": 501099,
+    "words": 161
+   },
+   {
+    "chunk_id": "rbi-md363:section:0011",
+    "doc_id": "rbi-md363",
+    "start": 14028,
+    "end": 14957,
+    "words": 134
+   },
+   {
+    "chunk_id": "rbi-md363:section:0044",
+    "doc_id": "rbi-md363",
+    "start": 55192,
+    "end": 56476,
+    "words": 193
+   }
+  ],
+  "q015": [
+   {
+    "chunk_id": "rbi-n12290:section:0003",
+    "doc_id": "rbi-n12290",
+    "start": 3867,
+    "end": 4442,
+    "words": 92
+   },
+   {
+    "chunk_id": "rbi-n12290:section:0006",
+    "doc_id": "rbi-n12290",
+    "start": 7435,
+    "end": 9678,
+    "words": 336
+   },
+   {
+    "chunk_id": "rbi-n12290:section:0004",
+    "doc_id": "rbi-n12290",
+    "start": 4442,
+    "end": 6647,
+    "words": 324
+   },
+   {
+    "chunk_id": "rbi-n12550:section:0468",
+    "doc_id": "rbi-n12550",
+    "start": 519377,
+    "end": 520830,
+    "words": 218
+   },
+   {
+    "chunk_id": "rbi-n12179:section:0014",
+    "doc_id": "rbi-n12179",
+    "start": 16109,
+    "end": 18088,
+    "words": 321
+   },
+   {
+    "chunk_id": "rbi-n12290:section:0002",
+    "doc_id": "rbi-n12290",
+    "start": 2417,
+    "end": 3867,
+    "words": 217
+   },
+   {
+    "chunk_id": "rbi-n12290:section:0008",
+    "doc_id": "rbi-n12290",
+    "start": 10902,
+    "end": 12082,
+    "words": 172
+   },
+   {
+    "chunk_id": "rbi-md361:section:0019",
+    "doc_id": "rbi-md361",
+    "start": 28920,
+    "end": 29955,
+    "words": 158
+   },
+   {
+    "chunk_id": "rbi-n12550:section:0079",
+    "doc_id": "rbi-n12550",
+    "start": 82277,
+    "end": 83400,
+    "words": 179
+   },
+   {
+    "chunk_id": "rbi-md363:section:0021",
+    "doc_id": "rbi-md363",
+    "start": 26273,
+    "end": 27527,
+    "words": 188
+   }
+  ],
+  "q018": [
+   {
+    "chunk_id": "rbi-n12215:section:0002",
+    "doc_id": "rbi-n12215",
+    "start": 1566,
+    "end": 4038,
+    "words": 347
+   },
+   {
+    "chunk_id": "rbi-n11947:section:0000",
+    "doc_id": "rbi-n11947",
+    "start": 0,
+    "end": 1115,
+    "words": 163
+   },
+   {
+    "chunk_id": "rbi-n12215:section:0000",
+    "doc_id": "rbi-n12215",
+    "start": 0,
+    "end": 1340,
+    "words": 188
+   },
+   {
+    "chunk_id": "rbi-n12215:section:0001",
+    "doc_id": "rbi-n12215",
+    "start": 1340,
+    "end": 1566,
+    "words": 37
+   },
+   {
+    "chunk_id": "rbi-n12752:section:0000",
+    "doc_id": "rbi-n12752",
+    "start": 0,
+    "end": 1349,
+    "words": 198
+   },
+   {
+    "chunk_id": "rbi-n11947:section:0002",
+    "doc_id": "rbi-n11947",
+    "start": 2021,
+    "end": 3975,
+    "words": 305
+   },
+   {
+    "chunk_id": "rbi-n12531:section:0000",
+    "doc_id": "rbi-n12531",
+    "start": 0,
+    "end": 1059,
+    "words": 143
+   },
+   {
+    "chunk_id": "rbi-n11947:section:0001",
+    "doc_id": "rbi-n11947",
+    "start": 1115,
+    "end": 2021,
+    "words": 144
+   },
+   {
+    "chunk_id": "rbi-n11766:section:0001",
+    "doc_id": "rbi-n11766",
+    "start": 599,
+    "end": 2307,
+    "words": 306
+   },
+   {
+    "chunk_id": "rbi-n12741:section:0001",
+    "doc_id": "rbi-n12741",
+    "start": 653,
+    "end": 1552,
+    "words": 134
+   }
+  ],
+  "q020": [
+   {
+    "chunk_id": "rbi-md361:section:0023",
+    "doc_id": "rbi-md361",
+    "start": 33071,
+    "end": 33727,
+    "words": 103
+   },
+   {
+    "chunk_id": "rbi-n12030:section:0359",
+    "doc_id": "rbi-n12030",
+    "start": 389993,
+    "end": 391387,
+    "words": 219
+   },
+   {
+    "chunk_id": "rbi-n12893:section:0001",
+    "doc_id": "rbi-n12893",
+    "start": 1313,
+    "end": 3076,
+    "words": 266
+   },
+   {
+    "chunk_id": "rbi-n12865:section:0002",
+    "doc_id": "rbi-n12865",
+    "start": 1947,
+    "end": 4211,
+    "words": 334
+   },
+   {
+    "chunk_id": "rbi-n12865:section:0003",
+    "doc_id": "rbi-n12865",
+    "start": 4213,
+    "end": 5478,
+    "words": 195
+   },
+   {
+    "chunk_id": "rbi-n11566:section:0020",
+    "doc_id": "rbi-n11566",
+    "start": 33248,
+    "end": 33703,
+    "words": 70
+   },
+   {
+    "chunk_id": "rbi-md348:section:0008",
+    "doc_id": "rbi-md348",
+    "start": 9234,
+    "end": 10837,
+    "words": 256
+   },
+   {
+    "chunk_id": "rbi-n12030:section:0168",
+    "doc_id": "rbi-n12030",
+    "start": 185872,
+    "end": 186963,
+    "words": 166
+   },
+   {
+    "chunk_id": "rbi-n12030:section:0335",
+    "doc_id": "rbi-n12030",
+    "start": 365242,
+    "end": 366287,
+    "words": 173
+   },
+   {
+    "chunk_id": "rbi-n12300:section:0013",
+    "doc_id": "rbi-n12300",
+    "start": 10655,
+    "end": 12831,
+    "words": 347
+   }
+  ],
+  "q028": [
+   {
+    "chunk_id": "rbi-n12050:section:0002",
+    "doc_id": "rbi-n12050",
+    "start": 2035,
+    "end": 2851,
+    "words": 123
+   },
+   {
+    "chunk_id": "rbi-n12896:section:0014",
+    "doc_id": "rbi-n12896",
+    "start": 15110,
+    "end": 16981,
+    "words": 298
+   },
+   {
+    "chunk_id": "rbi-n11822:section:0010",
+    "doc_id": "rbi-n11822",
+    "start": 12659,
+    "end": 13844,
+    "words": 212
+   },
+   {
+    "chunk_id": "rbi-n12896:section:0011",
+    "doc_id": "rbi-n12896",
+    "start": 10451,
+    "end": 12229,
+    "words": 287
+   },
+   {
+    "chunk_id": "rbi-n12561:section:0003",
+    "doc_id": "rbi-n12561",
+    "start": 2827,
+    "end": 3925,
+    "words": 171
+   },
+   {
+    "chunk_id": "rbi-n12896:section:0017",
+    "doc_id": "rbi-n12896",
+    "start": 20902,
+    "end": 21853,
+    "words": 152
+   },
+   {
+    "chunk_id": "rbi-n11822:section:0008",
+    "doc_id": "rbi-n11822",
+    "start": 10116,
+    "end": 11478,
+    "words": 203
+   },
+   {
+    "chunk_id": "rbi-n11822:section:0003",
+    "doc_id": "rbi-n11822",
+    "start": 3391,
+    "end": 4669,
+    "words": 204
+   },
+   {
+    "chunk_id": "rbi-n12896:section:0018",
+    "doc_id": "rbi-n12896",
+    "start": 21853,
+    "end": 23118,
+    "words": 206
+   },
+   {
+    "chunk_id": "rbi-n12896:section:0012",
+    "doc_id": "rbi-n12896",
+    "start": 12229,
+    "end": 13555,
+    "words": 192
+   }
+  ],
+  "q038": [
+   {
+    "chunk_id": "rbi-n12000:section:0000",
+    "doc_id": "rbi-n12000",
+    "start": 0,
+    "end": 1155,
+    "words": 163
+   },
+   {
+    "chunk_id": "rbi-n12000:section:0001",
+    "doc_id": "rbi-n12000",
+    "start": 1155,
+    "end": 2402,
+    "words": 202
+   },
+   {
+    "chunk_id": "rbi-n12156:section:0012",
+    "doc_id": "rbi-n12156",
+    "start": 13776,
+    "end": 15080,
+    "words": 207
+   },
+   {
+    "chunk_id": "rbi-n12001:section:0000",
+    "doc_id": "rbi-n12001",
+    "start": 0,
+    "end": 1487,
+    "words": 220
+   },
+   {
+    "chunk_id": "rbi-n12715:section:0004",
+    "doc_id": "rbi-n12715",
+    "start": 4652,
+    "end": 5657,
+    "words": 157
+   },
+   {
+    "chunk_id": "rbi-n12050:section:0007",
+    "doc_id": "rbi-n12050",
+    "start": 7794,
+    "end": 9019,
+    "words": 208
+   },
+   {
+    "chunk_id": "rbi-n11987:section:0000",
+    "doc_id": "rbi-n11987",
+    "start": 0,
+    "end": 1357,
+    "words": 206
+   },
+   {
+    "chunk_id": "rbi-n11785:section:0005",
+    "doc_id": "rbi-n11785",
+    "start": 5624,
+    "end": 6829,
+    "words": 203
+   },
+   {
+    "chunk_id": "rbi-n11785:section:0000",
+    "doc_id": "rbi-n11785",
+    "start": 0,
+    "end": 1166,
+    "words": 162
+   },
+   {
+    "chunk_id": "rbi-n11910:section:0000",
+    "doc_id": "rbi-n11910",
+    "start": 0,
+    "end": 1350,
+    "words": 189
+   }
+  ],
+  "q044": [
+   {
+    "chunk_id": "rbi-n11986:section:0007",
+    "doc_id": "rbi-n11986",
+    "start": 9277,
+    "end": 9631,
+    "words": 58
+   },
+   {
+    "chunk_id": "rbi-n11986:section:0005",
+    "doc_id": "rbi-n11986",
+    "start": 6578,
+    "end": 7953,
+    "words": 218
+   },
+   {
+    "chunk_id": "rbi-n11986:section:0004",
+    "doc_id": "rbi-n11986",
+    "start": 5440,
+    "end": 6578,
+    "words": 194
+   },
+   {
+    "chunk_id": "rbi-n11986:section:0006",
+    "doc_id": "rbi-n11986",
+    "start": 7953,
+    "end": 9277,
+    "words": 207
+   },
+   {
+    "chunk_id": "rbi-n11986:section:0000",
+    "doc_id": "rbi-n11986",
+    "start": 0,
+    "end": 1472,
+    "words": 218
+   },
+   {
+    "chunk_id": "rbi-n11986:section:0001",
+    "doc_id": "rbi-n11986",
+    "start": 1472,
+    "end": 2773,
+    "words": 187
+   },
+   {
+    "chunk_id": "rbi-n11986:section:0002",
+    "doc_id": "rbi-n11986",
+    "start": 2773,
+    "end": 4119,
+    "words": 203
+   },
+   {
+    "chunk_id": "rbi-n11986:section:0003",
+    "doc_id": "rbi-n11986",
+    "start": 4119,
+    "end": 5440,
+    "words": 211
+   },
+   {
+    "chunk_id": "rbi-n12136:section:0010",
+    "doc_id": "rbi-n12136",
+    "start": 13715,
+    "end": 14411,
+    "words": 117
+   },
+   {
+    "chunk_id": "rbi-n11822:section:0003",
+    "doc_id": "rbi-n11822",
+    "start": 3391,
+    "end": 4669,
+    "words": 204
+   }
+  ],
+  "q051": [
+   {
+    "chunk_id": "rbi-md347:section:0045",
+    "doc_id": "rbi-md347",
+    "start": 52516,
+    "end": 53296,
+    "words": 118
+   },
+   {
+    "chunk_id": "rbi-n12256:section:0002",
+    "doc_id": "rbi-n12256",
+    "start": 2647,
+    "end": 3869,
+    "words": 184
+   },
+   {
+    "chunk_id": "rbi-n12256:section:0016",
+    "doc_id": "rbi-n12256",
+    "start": 19309,
+    "end": 19607,
+    "words": 45
+   },
+   {
+    "chunk_id": "rbi-n12256:section:0015",
+    "doc_id": "rbi-n12256",
+    "start": 17225,
+    "end": 19309,
+    "words": 317
+   },
+   {
+    "chunk_id": "rbi-n12256:section:0003",
+    "doc_id": "rbi-n12256",
+    "start": 3869,
+    "end": 5227,
+    "words": 205
+   },
+   {
+    "chunk_id": "rbi-md347:section:0049",
+    "doc_id": "rbi-md347",
+    "start": 56910,
+    "end": 58216,
+    "words": 207
+   },
+   {
+    "chunk_id": "rbi-n12256:section:0013",
+    "doc_id": "rbi-n12256",
+    "start": 15294,
+    "end": 16557,
+    "words": 194
+   },
+   {
+    "chunk_id": "rbi-md347:section:0048",
+    "doc_id": "rbi-md347",
+    "start": 55766,
+    "end": 56910,
+    "words": 174
+   },
+   {
+    "chunk_id": "rbi-n12256:section:0012",
+    "doc_id": "rbi-n12256",
+    "start": 14079,
+    "end": 15294,
+    "words": 190
+   },
+   {
+    "chunk_id": "rbi-md347:section:0046",
+    "doc_id": "rbi-md347",
+    "start": 53296,
+    "end": 55343,
+    "words": 317
+   }
+  ],
+  "q052": [
+   {
+    "chunk_id": "rbi-n12256:section:0003",
+    "doc_id": "rbi-n12256",
+    "start": 3869,
+    "end": 5227,
+    "words": 205
+   },
+   {
+    "chunk_id": "rbi-md347:section:0048",
+    "doc_id": "rbi-md347",
+    "start": 55766,
+    "end": 56910,
+    "words": 174
+   },
+   {
+    "chunk_id": "rbi-md347:section:0045",
+    "doc_id": "rbi-md347",
+    "start": 52516,
+    "end": 53296,
+    "words": 118
+   },
+   {
+    "chunk_id": "rbi-n12256:section:0016",
+    "doc_id": "rbi-n12256",
+    "start": 19309,
+    "end": 19607,
+    "words": 45
+   },
+   {
+    "chunk_id": "rbi-md347:section:0049",
+    "doc_id": "rbi-md347",
+    "start": 56910,
+    "end": 58216,
+    "words": 207
+   },
+   {
+    "chunk_id": "rbi-n12256:section:0012",
+    "doc_id": "rbi-n12256",
+    "start": 14079,
+    "end": 15294,
+    "words": 190
+   },
+   {
+    "chunk_id": "rbi-n12256:section:0015",
+    "doc_id": "rbi-n12256",
+    "start": 17225,
+    "end": 19309,
+    "words": 317
+   },
+   {
+    "chunk_id": "rbi-n12256:section:0002",
+    "doc_id": "rbi-n12256",
+    "start": 2647,
+    "end": 3869,
+    "words": 184
+   },
+   {
+    "chunk_id": "rbi-n12256:section:0004",
+    "doc_id": "rbi-n12256",
+    "start": 5227,
+    "end": 6509,
+    "words": 214
+   },
+   {
+    "chunk_id": "rbi-md347:section:0046",
+    "doc_id": "rbi-md347",
+    "start": 53296,
+    "end": 55343,
+    "words": 317
+   }
+  ],
+  "q053": [
+   {
+    "chunk_id": "rbi-md347:section:0049",
+    "doc_id": "rbi-md347",
+    "start": 56910,
+    "end": 58216,
+    "words": 207
+   },
+   {
+    "chunk_id": "rbi-md347:section:0045",
+    "doc_id": "rbi-md347",
+    "start": 52516,
+    "end": 53296,
+    "words": 118
+   },
+   {
+    "chunk_id": "rbi-n12256:section:0015",
+    "doc_id": "rbi-n12256",
+    "start": 17225,
+    "end": 19309,
+    "words": 317
+   },
+   {
+    "chunk_id": "rbi-n12256:section:0016",
+    "doc_id": "rbi-n12256",
+    "start": 19309,
+    "end": 19607,
+    "words": 45
+   },
+   {
+    "chunk_id": "rbi-n12256:section:0002",
+    "doc_id": "rbi-n12256",
+    "start": 2647,
+    "end": 3869,
+    "words": 184
+   },
+   {
+    "chunk_id": "rbi-n12256:section:0003",
+    "doc_id": "rbi-n12256",
+    "start": 3869,
+    "end": 5227,
+    "words": 205
+   },
+   {
+    "chunk_id": "rbi-n12256:section:0018",
+    "doc_id": "rbi-n12256",
+    "start": 20829,
+    "end": 21984,
+    "words": 319
+   },
+   {
+    "chunk_id": "rbi-md347:section:0048",
+    "doc_id": "rbi-md347",
+    "start": 55766,
+    "end": 56910,
+    "words": 174
+   },
+   {
+    "chunk_id": "rbi-n12256:section:0004",
+    "doc_id": "rbi-n12256",
+    "start": 5227,
+    "end": 6509,
+    "words": 214
+   },
+   {
+    "chunk_id": "rbi-n12256:section:0012",
+    "doc_id": "rbi-n12256",
+    "start": 14079,
+    "end": 15294,
+    "words": 190
+   }
+  ],
+  "q056": [
+   {
+    "chunk_id": "rbi-n12094:section:0000",
+    "doc_id": "rbi-n12094",
+    "start": 0,
+    "end": 1104,
+    "words": 154
+   },
+   {
+    "chunk_id": "rbi-n12156:section:0005",
+    "doc_id": "rbi-n12156",
+    "start": 7047,
+    "end": 7332,
+    "words": 48
+   },
+   {
+    "chunk_id": "rbi-n12094:section:0002",
+    "doc_id": "rbi-n12094",
+    "start": 1964,
+    "end": 2824,
+    "words": 141
+   },
+   {
+    "chunk_id": "rbi-n12156:section:0023",
+    "doc_id": "rbi-n12156",
+    "start": 25035,
+    "end": 26697,
+    "words": 285
+   },
+   {
+    "chunk_id": "rbi-n12156:section:0004",
+    "doc_id": "rbi-n12156",
+    "start": 4866,
+    "end": 7047,
+    "words": 340
+   },
+   {
+    "chunk_id": "rbi-n12156:section:0026",
+    "doc_id": "rbi-n12156",
+    "start": 28811,
+    "end": 30571,
+    "words": 291
+   },
+   {
+    "chunk_id": "rbi-n12094:section:0001",
+    "doc_id": "rbi-n12094",
+    "start": 1104,
+    "end": 1964,
+    "words": 138
+   },
+   {
+    "chunk_id": "rbi-n12156:section:0024",
+    "doc_id": "rbi-n12156",
+    "start": 26697,
+    "end": 28489,
+    "words": 311
+   },
+   {
+    "chunk_id": "rbi-n12156:section:0066",
+    "doc_id": "rbi-n12156",
+    "start": 82041,
+    "end": 82982,
+    "words": 145
+   },
+   {
+    "chunk_id": "rbi-n12156:section:0020",
+    "doc_id": "rbi-n12156",
+    "start": 22487,
+    "end": 22779,
+    "words": 46
+   }
+  ],
+  "q058": [
+   {
+    "chunk_id": "rbi-n12514:section:0005",
+    "doc_id": "rbi-n12514",
+    "start": 4784,
+    "end": 5929,
+    "words": 200
+   },
+   {
+    "chunk_id": "rbi-n12514:section:0006",
+    "doc_id": "rbi-n12514",
+    "start": 5929,
+    "end": 7128,
+    "words": 186
+   },
+   {
+    "chunk_id": "rbi-md347:section:0006",
+    "doc_id": "rbi-md347",
+    "start": 6187,
+    "end": 8208,
+    "words": 316
+   },
+   {
+    "chunk_id": "rbi-n12514:section:0008",
+    "doc_id": "rbi-n12514",
+    "start": 8000,
+    "end": 9385,
+    "words": 208
+   },
+   {
+    "chunk_id": "rbi-n12848:section:0003",
+    "doc_id": "rbi-n12848",
+    "start": 2868,
+    "end": 4769,
+    "words": 291
+   },
+   {
+    "chunk_id": "rbi-n12514:section:0000",
+    "doc_id": "rbi-n12514",
+    "start": 0,
+    "end": 698,
+    "words": 97
+   },
+   {
+    "chunk_id": "rbi-n12514:section:0003",
+    "doc_id": "rbi-n12514",
+    "start": 2505,
+    "end": 3736,
+    "words": 186
+   },
+   {
+    "chunk_id": "rbi-n12382:section:0014",
+    "doc_id": "rbi-n12382",
+    "start": 16301,
+    "end": 17581,
+    "words": 203
+   },
+   {
+    "chunk_id": "rbi-n12514:section:0001",
+    "doc_id": "rbi-n12514",
+    "start": 698,
+    "end": 2108,
+    "words": 225
+   },
+   {
+    "chunk_id": "rbi-n12514:section:0004",
+    "doc_id": "rbi-n12514",
+    "start": 3736,
+    "end": 4784,
+    "words": 181
+   }
+  ],
+  "q061": [
+   {
+    "chunk_id": "rbi-n12898:section:0000",
+    "doc_id": "rbi-n12898",
+    "start": 0,
+    "end": 1591,
+    "words": 218
+   },
+   {
+    "chunk_id": "rbi-n12898:section:0001",
+    "doc_id": "rbi-n12898",
+    "start": 1591,
+    "end": 2242,
+    "words": 88
+   },
+   {
+    "chunk_id": "rbi-n12898:section:0003",
+    "doc_id": "rbi-n12898",
+    "start": 3895,
+    "end": 5019,
+    "words": 172
+   },
+   {
+    "chunk_id": "rbi-n12898:section:0006",
+    "doc_id": "rbi-n12898",
+    "start": 7229,
+    "end": 8636,
+    "words": 204
+   },
+   {
+    "chunk_id": "rbi-n13374:section:0000",
+    "doc_id": "rbi-n13374",
+    "start": 0,
+    "end": 1591,
+    "words": 213
+   },
+   {
+    "chunk_id": "rbi-n12032:section:0014",
+    "doc_id": "rbi-n12032",
+    "start": 17344,
+    "end": 18582,
+    "words": 176
+   },
+   {
+    "chunk_id": "rbi-n12898:section:0005",
+    "doc_id": "rbi-n12898",
+    "start": 6196,
+    "end": 7229,
+    "words": 152
+   },
+   {
+    "chunk_id": "rbi-n12898:section:0004",
+    "doc_id": "rbi-n12898",
+    "start": 5019,
+    "end": 6196,
+    "words": 163
+   },
+   {
+    "chunk_id": "rbi-n12715:section:0028",
+    "doc_id": "rbi-n12715",
+    "start": 27891,
+    "end": 29870,
+    "words": 309
+   },
+   {
+    "chunk_id": "rbi-n12032:section:0029",
+    "doc_id": "rbi-n12032",
+    "start": 33939,
+    "end": 35359,
+    "words": 201
+   }
+  ],
+  "q062": [
+   {
+    "chunk_id": "rbi-n12400:section:0000",
+    "doc_id": "rbi-n12400",
+    "start": 0,
+    "end": 1036,
+    "words": 153
+   },
+   {
+    "chunk_id": "rbi-n12550:section:0221",
+    "doc_id": "rbi-n12550",
+    "start": 240811,
+    "end": 242609,
+    "words": 316
+   },
+   {
+    "chunk_id": "rbi-md339:section:0015",
+    "doc_id": "rbi-md339",
+    "start": 19125,
+    "end": 20939,
+    "words": 316
+   },
+   {
+    "chunk_id": "rbi-n12400:section:0003",
+    "doc_id": "rbi-n12400",
+    "start": 2514,
+    "end": 4359,
+    "words": 314
+   },
+   {
+    "chunk_id": "rbi-n12179:section:0025",
+    "doc_id": "rbi-n12179",
+    "start": 29739,
+    "end": 30302,
+    "words": 151
+   },
+   {
+    "chunk_id": "rbi-n12550:section:0007",
+    "doc_id": "rbi-n12550",
+    "start": 6943,
+    "end": 8130,
+    "words": 199
+   },
+   {
+    "chunk_id": "rbi-n12179:section:0007",
+    "doc_id": "rbi-n12179",
+    "start": 6903,
+    "end": 7116,
+    "words": 36
+   },
+   {
+    "chunk_id": "rbi-n12179:section:0017",
+    "doc_id": "rbi-n12179",
+    "start": 21725,
+    "end": 22109,
+    "words": 61
+   },
+   {
+    "chunk_id": "rbi-n12179:section:0002",
+    "doc_id": "rbi-n12179",
+    "start": 1861,
+    "end": 2907,
+    "words": 167
+   },
+   {
+    "chunk_id": "rbi-md339:section:0013",
+    "doc_id": "rbi-md339",
+    "start": 17192,
+    "end": 18145,
+    "words": 154
+   }
+  ],
+  "q063": [
+   {
+    "chunk_id": "rbi-n12896:section:0010",
+    "doc_id": "rbi-n12896",
+    "start": 8529,
+    "end": 10451,
+    "words": 295
+   },
+   {
+    "chunk_id": "rbi-n11822:section:0004",
+    "doc_id": "rbi-n11822",
+    "start": 4669,
+    "end": 5988,
+    "words": 220
+   },
+   {
+    "chunk_id": "rbi-n12896:section:0017",
+    "doc_id": "rbi-n12896",
+    "start": 20902,
+    "end": 21853,
+    "words": 152
+   },
+   {
+    "chunk_id": "rbi-n12050:section:0003",
+    "doc_id": "rbi-n12050",
+    "start": 2851,
+    "end": 3946,
+    "words": 175
+   },
+   {
+    "chunk_id": "rbi-n11822:section:0025",
+    "doc_id": "rbi-n11822",
+    "start": 31104,
+    "end": 32594,
+    "words": 248
+   },
+   {
+    "chunk_id": "rbi-n12156:section:0008",
+    "doc_id": "rbi-n12156",
+    "start": 8838,
+    "end": 10072,
+    "words": 197
+   },
+   {
+    "chunk_id": "rbi-n12896:section:0018",
+    "doc_id": "rbi-n12896",
+    "start": 21853,
+    "end": 23118,
+    "words": 206
+   },
+   {
+    "chunk_id": "rbi-n12896:section:0020",
+    "doc_id": "rbi-n12896",
+    "start": 25199,
+    "end": 26468,
+    "words": 204
+   },
+   {
+    "chunk_id": "rbi-n11822:section:0006",
+    "doc_id": "rbi-n11822",
+    "start": 7305,
+    "end": 8635,
+    "words": 200
+   },
+   {
+    "chunk_id": "rbi-n11822:section:0005",
+    "doc_id": "rbi-n11822",
+    "start": 5988,
+    "end": 7305,
+    "words": 201
+   }
+  ],
+  "q068": [
+   {
+    "chunk_id": "rbi-n12486:section:0002",
+    "doc_id": "rbi-n12486",
+    "start": 2698,
+    "end": 4019,
+    "words": 221
+   },
+   {
+    "chunk_id": "rbi-md363:section:0001",
+    "doc_id": "rbi-md363",
+    "start": 587,
+    "end": 1711,
+    "words": 168
+   },
+   {
+    "chunk_id": "rbi-n12486:section:0028",
+    "doc_id": "rbi-n12486",
+    "start": 35328,
+    "end": 36443,
+    "words": 167
+   },
+   {
+    "chunk_id": "rbi-md379:section:0001",
+    "doc_id": "rbi-md379",
+    "start": 538,
+    "end": 1850,
+    "words": 196
+   },
+   {
+    "chunk_id": "rbi-n12486:section:0019",
+    "doc_id": "rbi-n12486",
+    "start": 23402,
+    "end": 24647,
+    "words": 190
+   },
+   {
+    "chunk_id": "rbi-n12550:section:0461",
+    "doc_id": "rbi-n12550",
+    "start": 510034,
+    "end": 511594,
+    "words": 215
+   },
+   {
+    "chunk_id": "rbi-n12486:section:0001",
+    "doc_id": "rbi-n12486",
+    "start": 1565,
+    "end": 2698,
+    "words": 174
+   },
+   {
+    "chunk_id": "rbi-n12486:section:0016",
+    "doc_id": "rbi-n12486",
+    "start": 20146,
+    "end": 21025,
+    "words": 139
+   },
+   {
+    "chunk_id": "rbi-n12030:section:0324",
+    "doc_id": "rbi-n12030",
+    "start": 353545,
+    "end": 354892,
+    "words": 213
+   },
+   {
+    "chunk_id": "rbi-n12486:section:0025",
+    "doc_id": "rbi-n12486",
+    "start": 31118,
+    "end": 33298,
+    "words": 332
+   }
+  ],
+  "q069": [
+   {
+    "chunk_id": "rbi-n12213:section:0000",
+    "doc_id": "rbi-n12213",
+    "start": 0,
+    "end": 922,
+    "words": 120
+   },
+   {
+    "chunk_id": "rbi-n12083:section:0000",
+    "doc_id": "rbi-n12083",
+    "start": 0,
+    "end": 1373,
+    "words": 197
+   },
+   {
+    "chunk_id": "rbi-md361:section:0059",
+    "doc_id": "rbi-md361",
+    "start": 76715,
+    "end": 76963,
+    "words": 44
+   },
+   {
+    "chunk_id": "rbi-n11566:section:0036",
+    "doc_id": "rbi-n11566",
+    "start": 53684,
+    "end": 55812,
+    "words": 345
+   },
+   {
+    "chunk_id": "rbi-md361:section:0055",
+    "doc_id": "rbi-md361",
+    "start": 70157,
+    "end": 72267,
+    "words": 345
+   },
+   {
+    "chunk_id": "rbi-n11775:section:0000",
+    "doc_id": "rbi-n11775",
+    "start": 0,
+    "end": 948,
+    "words": 116
+   },
+   {
+    "chunk_id": "rbi-n12156:section:0066",
+    "doc_id": "rbi-n12156",
+    "start": 82041,
+    "end": 82982,
+    "words": 145
+   },
+   {
+    "chunk_id": "rbi-n12865:section:0000",
+    "doc_id": "rbi-n12865",
+    "start": 0,
+    "end": 1234,
+    "words": 181
+   },
+   {
+    "chunk_id": "rbi-n12008:section:0001",
+    "doc_id": "rbi-n12008",
+    "start": 650,
+    "end": 1621,
+    "words": 170
+   },
+   {
+    "chunk_id": "rbi-md361:section:0081",
+    "doc_id": "rbi-md361",
+    "start": 101604,
+    "end": 102892,
+    "words": 214
+   }
+  ],
+  "q076": [
+   {
+    "chunk_id": "rbi-md344:section:0011",
+    "doc_id": "rbi-md344",
+    "start": 11417,
+    "end": 12398,
+    "words": 162
+   },
+   {
+    "chunk_id": "rbi-n12550:section:0171",
+    "doc_id": "rbi-n12550",
+    "start": 183671,
+    "end": 184651,
+    "words": 154
+   },
+   {
+    "chunk_id": "rbi-n12030:section:0146",
+    "doc_id": "rbi-n12030",
+    "start": 163180,
+    "end": 164158,
+    "words": 158
+   },
+   {
+    "chunk_id": "rbi-n12179:section:0016",
+    "doc_id": "rbi-n12179",
+    "start": 20157,
+    "end": 21725,
+    "words": 254
+   },
+   {
+    "chunk_id": "rbi-n12290:section:0003",
+    "doc_id": "rbi-n12290",
+    "start": 3867,
+    "end": 4442,
+    "words": 92
+   },
+   {
+    "chunk_id": "rbi-n12290:section:0007",
+    "doc_id": "rbi-n12290",
+    "start": 9678,
+    "end": 10902,
+    "words": 198
+   },
+   {
+    "chunk_id": "rbi-n12586:section:0018",
+    "doc_id": "rbi-n12586",
+    "start": 23360,
+    "end": 24526,
+    "words": 183
+   },
+   {
+    "chunk_id": "rbi-n12550:section:0202",
+    "doc_id": "rbi-n12550",
+    "start": 221010,
+    "end": 221652,
+    "words": 102
+   },
+   {
+    "chunk_id": "rbi-n12079:section:0005",
+    "doc_id": "rbi-n12079",
+    "start": 6317,
+    "end": 7642,
+    "words": 209
+   },
+   {
+    "chunk_id": "rbi-md378:section:0063",
+    "doc_id": "rbi-md378",
+    "start": 77168,
+    "end": 78632,
+    "words": 345
+   }
+  ],
+  "q079": [
+   {
+    "chunk_id": "rbi-n12292:section:0000",
+    "doc_id": "rbi-n12292",
+    "start": 0,
+    "end": 1584,
+    "words": 208
+   },
+   {
+    "chunk_id": "rbi-n13263:section:0001",
+    "doc_id": "rbi-n13263",
+    "start": 1068,
+    "end": 2732,
+    "words": 304
+   },
+   {
+    "chunk_id": "rbi-n12550:section:0402",
+    "doc_id": "rbi-n12550",
+    "start": 454501,
+    "end": 455681,
+    "words": 170
+   },
+   {
+    "chunk_id": "rbi-n13493:section:0002",
+    "doc_id": "rbi-n13493",
+    "start": 3592,
+    "end": 4418,
+    "words": 127
+   },
+   {
+    "chunk_id": "rbi-n12292:section:0001",
+    "doc_id": "rbi-n12292",
+    "start": 1584,
+    "end": 2324,
+    "words": 110
+   },
+   {
+    "chunk_id": "rbi-n13255:section:0001",
+    "doc_id": "rbi-n13255",
+    "start": 850,
+    "end": 1910,
+    "words": 168
+   },
+   {
+    "chunk_id": "rbi-n13539:section:0002",
+    "doc_id": "rbi-n13539",
+    "start": 1707,
+    "end": 3641,
+    "words": 303
+   },
+   {
+    "chunk_id": "rbi-n12292:section:0007",
+    "doc_id": "rbi-n12292",
+    "start": 8549,
+    "end": 9660,
+    "words": 240
+   },
+   {
+    "chunk_id": "rbi-md359:section:0012",
+    "doc_id": "rbi-md359",
+    "start": 13056,
+    "end": 14223,
+    "words": 176
+   },
+   {
+    "chunk_id": "rbi-n13407:section:0009",
+    "doc_id": "rbi-n13407",
+    "start": 10102,
+    "end": 10888,
+    "words": 131
+   }
+  ],
+  "q110": [
+   {
+    "chunk_id": "rbi-n12752:section:0000",
+    "doc_id": "rbi-n12752",
+    "start": 0,
+    "end": 1349,
+    "words": 198
+   },
+   {
+    "chunk_id": "rbi-n12156:section:0074",
+    "doc_id": "rbi-n12156",
+    "start": 92116,
+    "end": 92184,
+    "words": 16
+   },
+   {
+    "chunk_id": "rbi-n12532:section:0000",
+    "doc_id": "rbi-n12532",
+    "start": 0,
+    "end": 1360,
+    "words": 197
+   },
+   {
+    "chunk_id": "rbi-n11822:section:0029",
+    "doc_id": "rbi-n11822",
+    "start": 36302,
+    "end": 36628,
+    "words": 62
+   },
+   {
+    "chunk_id": "rbi-n12156:section:0027",
+    "doc_id": "rbi-n12156",
+    "start": 30571,
+    "end": 32019,
+    "words": 251
+   },
+   {
+    "chunk_id": "rbi-n12030:section:0045",
+    "doc_id": "rbi-n12030",
+    "start": 48088,
+    "end": 49174,
+    "words": 166
+   },
+   {
+    "chunk_id": "rbi-n12156:section:0054",
+    "doc_id": "rbi-n12156",
+    "start": 67386,
+    "end": 68436,
+    "words": 182
+   },
+   {
+    "chunk_id": "rbi-n12756:section:0001",
+    "doc_id": "rbi-n12756",
+    "start": 1318,
+    "end": 2657,
+    "words": 226
+   },
+   {
+    "chunk_id": "rbi-n12156:section:0034",
+    "doc_id": "rbi-n12156",
+    "start": 39669,
+    "end": 40817,
+    "words": 194
+   },
+   {
+    "chunk_id": "rbi-md359:section:0026",
+    "doc_id": "rbi-md359",
+    "start": 24252,
+    "end": 25615,
+    "words": 253
+   }
+  ],
+  "q112": [
+   {
+    "chunk_id": "rbi-n12535:section:0002",
+    "doc_id": "rbi-n12535",
+    "start": 2548,
+    "end": 3832,
+    "words": 212
+   },
+   {
+    "chunk_id": "rbi-n12550:section:0092",
+    "doc_id": "rbi-n12550",
+    "start": 95094,
+    "end": 96162,
+    "words": 164
+   },
+   {
+    "chunk_id": "rbi-n12030:section:0172",
+    "doc_id": "rbi-n12030",
+    "start": 190171,
+    "end": 191227,
+    "words": 169
+   },
+   {
+    "chunk_id": "rbi-n12535:section:0001",
+    "doc_id": "rbi-n12535",
+    "start": 1325,
+    "end": 2548,
+    "words": 205
+   },
+   {
+    "chunk_id": "rbi-md362:section:0031",
+    "doc_id": "rbi-md362",
+    "start": 32388,
+    "end": 33487,
+    "words": 182
+   },
+   {
+    "chunk_id": "rbi-n12030:section:0173",
+    "doc_id": "rbi-n12030",
+    "start": 191227,
+    "end": 192432,
+    "words": 195
+   },
+   {
+    "chunk_id": "rbi-n12535:section:0000",
+    "doc_id": "rbi-n12535",
+    "start": 0,
+    "end": 1325,
+    "words": 193
+   },
+   {
+    "chunk_id": "rbi-n12550:section:0093",
+    "doc_id": "rbi-n12550",
+    "start": 96162,
+    "end": 97431,
+    "words": 195
+   },
+   {
+    "chunk_id": "rbi-md362:section:0032",
+    "doc_id": "rbi-md362",
+    "start": 33487,
+    "end": 34655,
+    "words": 191
+   },
+   {
+    "chunk_id": "rbi-n12030:section:0169",
+    "doc_id": "rbi-n12030",
+    "start": 186963,
+    "end": 188060,
+    "words": 175
+   }
+  ],
+  "q116": [
+   {
+    "chunk_id": "rbi-n12573:section:0001",
+    "doc_id": "rbi-n12573",
+    "start": 1381,
+    "end": 2601,
+    "words": 197
+   },
+   {
+    "chunk_id": "rbi-n12159:section:0003",
+    "doc_id": "rbi-n12159",
+    "start": 4734,
+    "end": 5358,
+    "words": 102
+   },
+   {
+    "chunk_id": "rbi-n12159:section:0002",
+    "doc_id": "rbi-n12159",
+    "start": 3488,
+    "end": 4734,
+    "words": 206
+   },
+   {
+    "chunk_id": "rbi-n12573:section:0000",
+    "doc_id": "rbi-n12573",
+    "start": 0,
+    "end": 1381,
+    "words": 184
+   },
+   {
+    "chunk_id": "rbi-n12159:section:0000",
+    "doc_id": "rbi-n12159",
+    "start": 0,
+    "end": 1537,
+    "words": 201
+   },
+   {
+    "chunk_id": "rbi-n12159:section:0001",
+    "doc_id": "rbi-n12159",
+    "start": 1539,
+    "end": 3486,
+    "words": 316
+   },
+   {
+    "chunk_id": "rbi-n12152:section:0000",
+    "doc_id": "rbi-n12152",
+    "start": 0,
+    "end": 1385,
+    "words": 199
+   },
+   {
+    "chunk_id": "rbi-n12211:section:0000",
+    "doc_id": "rbi-n12211",
+    "start": 0,
+    "end": 1572,
+    "words": 209
+   },
+   {
+    "chunk_id": "rbi-n12050:section:0000",
+    "doc_id": "rbi-n12050",
+    "start": 0,
+    "end": 1516,
+    "words": 215
+   },
+   {
+    "chunk_id": "rbi-n11668:section:0001",
+    "doc_id": "rbi-n11668",
+    "start": 977,
+    "end": 2391,
+    "words": 211
+   }
+  ],
+  "q140": [
+   {
+    "chunk_id": "rbi-n12722:section:0001",
+    "doc_id": "rbi-n12722",
+    "start": 1640,
+    "end": 2321,
+    "words": 104
+   },
+   {
+    "chunk_id": "rbi-n13374:section:0002",
+    "doc_id": "rbi-n13374",
+    "start": 2817,
+    "end": 3980,
+    "words": 178
+   },
+   {
+    "chunk_id": "rbi-n12722:section:0000",
+    "doc_id": "rbi-n12722",
+    "start": 0,
+    "end": 1640,
+    "words": 214
+   },
+   {
+    "chunk_id": "rbi-n11668:section:0006",
+    "doc_id": "rbi-n11668",
+    "start": 5319,
+    "end": 6667,
+    "words": 206
+   },
+   {
+    "chunk_id": "rbi-n11668:section:0005",
+    "doc_id": "rbi-n11668",
+    "start": 3967,
+    "end": 5319,
+    "words": 198
+   },
+   {
+    "chunk_id": "rbi-n13374:section:0003",
+    "doc_id": "rbi-n13374",
+    "start": 3980,
+    "end": 5438,
+    "words": 216
+   },
+   {
+    "chunk_id": "rbi-n11668:section:0007",
+    "doc_id": "rbi-n11668",
+    "start": 6667,
+    "end": 7920,
+    "words": 191
+   },
+   {
+    "chunk_id": "rbi-n11668:section:0001",
+    "doc_id": "rbi-n11668",
+    "start": 977,
+    "end": 2391,
+    "words": 211
+   },
+   {
+    "chunk_id": "rbi-n13374:section:0001",
+    "doc_id": "rbi-n13374",
+    "start": 1591,
+    "end": 2817,
+    "words": 195
+   },
+   {
+    "chunk_id": "rbi-n13374:section:0000",
+    "doc_id": "rbi-n13374",
+    "start": 0,
+    "end": 1591,
+    "words": 213
+   }
+  ],
+  "q143": [
+   {
+    "chunk_id": "rbi-md355:section:0017",
+    "doc_id": "rbi-md355",
+    "start": 26792,
+    "end": 28574,
+    "words": 286
+   },
+   {
+    "chunk_id": "rbi-n11719:section:0020",
+    "doc_id": "rbi-n11719",
+    "start": 26590,
+    "end": 27696,
+    "words": 162
+   },
+   {
+    "chunk_id": "rbi-n12030:section:0008",
+    "doc_id": "rbi-n12030",
+    "start": 6336,
+    "end": 7376,
+    "words": 205
+   },
+   {
+    "chunk_id": "rbi-n12550:section:0507",
+    "doc_id": "rbi-n12550",
+    "start": 559097,
+    "end": 560309,
+    "words": 183
+   },
+   {
+    "chunk_id": "rbi-n11719:section:0021",
+    "doc_id": "rbi-n11719",
+    "start": 27696,
+    "end": 28949,
+    "words": 212
+   },
+   {
+    "chunk_id": "rbi-n11719:section:0005",
+    "doc_id": "rbi-n11719",
+    "start": 6026,
+    "end": 6682,
+    "words": 114
+   },
+   {
+    "chunk_id": "rbi-md359:section:0066",
+    "doc_id": "rbi-md359",
+    "start": 71584,
+    "end": 73247,
+    "words": 253
+   },
+   {
+    "chunk_id": "rbi-n11719:section:0009",
+    "doc_id": "rbi-n11719",
+    "start": 8884,
+    "end": 11212,
+    "words": 343
+   },
+   {
+    "chunk_id": "rbi-n11719:section:0022",
+    "doc_id": "rbi-n11719",
+    "start": 28951,
+    "end": 30805,
+    "words": 350
+   },
+   {
+    "chunk_id": "rbi-n12550:section:0159",
+    "doc_id": "rbi-n12550",
+    "start": 170264,
+    "end": 171547,
+    "words": 289
+   }
+  ],
+  "q144": [
+   {
+    "chunk_id": "rbi-n12256:section:0011",
+    "doc_id": "rbi-n12256",
+    "start": 13585,
+    "end": 14079,
+    "words": 75
+   },
+   {
+    "chunk_id": "rbi-md371:section:0007",
+    "doc_id": "rbi-md371",
+    "start": 7961,
+    "end": 8897,
+    "words": 138
+   },
+   {
+    "chunk_id": "rbi-n12256:section:0012",
+    "doc_id": "rbi-n12256",
+    "start": 14079,
+    "end": 15294,
+    "words": 190
+   },
+   {
+    "chunk_id": "rbi-md371:section:0008",
+    "doc_id": "rbi-md371",
+    "start": 8897,
+    "end": 10378,
+    "words": 227
+   },
+   {
+    "chunk_id": "rbi-md371:section:0018",
+    "doc_id": "rbi-md371",
+    "start": 22331,
+    "end": 23773,
+    "words": 204
+   },
+   {
+    "chunk_id": "rbi-md356:section:0012",
+    "doc_id": "rbi-md356",
+    "start": 10712,
+    "end": 12072,
+    "words": 213
+   },
+   {
+    "chunk_id": "rbi-md371:section:0011",
+    "doc_id": "rbi-md371",
+    "start": 13120,
+    "end": 14404,
+    "words": 198
+   },
+   {
+    "chunk_id": "rbi-md356:section:0014",
+    "doc_id": "rbi-md356",
+    "start": 13287,
+    "end": 13637,
+    "words": 53
+   },
+   {
+    "chunk_id": "rbi-md371:section:0010",
+    "doc_id": "rbi-md371",
+    "start": 11742,
+    "end": 13120,
+    "words": 211
+   },
+   {
+    "chunk_id": "rbi-n12550:section:0211",
+    "doc_id": "rbi-n12550",
+    "start": 230316,
+    "end": 231347,
+    "words": 155
+   }
+  ],
+  "q146": [
+   {
+    "chunk_id": "rbi-n12382:section:0005",
+    "doc_id": "rbi-n12382",
+    "start": 5291,
+    "end": 6565,
+    "words": 207
+   },
+   {
+    "chunk_id": "rbi-md347:section:0016",
+    "doc_id": "rbi-md347",
+    "start": 22248,
+    "end": 23966,
+    "words": 282
+   },
+   {
+    "chunk_id": "rbi-n12848:section:0009",
+    "doc_id": "rbi-n12848",
+    "start": 12038,
+    "end": 14048,
+    "words": 338
+   },
+   {
+    "chunk_id": "rbi-md347:section:0006",
+    "doc_id": "rbi-md347",
+    "start": 6187,
+    "end": 8208,
+    "words": 316
+   },
+   {
+    "chunk_id": "rbi-n12382:section:0016",
+    "doc_id": "rbi-n12382",
+    "start": 19374,
+    "end": 20078,
+    "words": 108
+   },
+   {
+    "chunk_id": "rbi-n12382:section:0011",
+    "doc_id": "rbi-n12382",
+    "start": 12324,
+    "end": 13647,
+    "words": 202
+   },
+   {
+    "chunk_id": "rbi-n12382:section:0004",
+    "doc_id": "rbi-n12382",
+    "start": 4365,
+    "end": 5291,
+    "words": 136
+   },
+   {
+    "chunk_id": "rbi-n11920:section:0002",
+    "doc_id": "rbi-n11920",
+    "start": 2361,
+    "end": 3577,
+    "words": 199
+   },
+   {
+    "chunk_id": "rbi-md370:section:0016",
+    "doc_id": "rbi-md370",
+    "start": 17324,
+    "end": 19149,
+    "words": 281
+   },
+   {
+    "chunk_id": "rbi-n12382:section:0009",
+    "doc_id": "rbi-n12382",
+    "start": 10086,
+    "end": 11112,
+    "words": 156
+   }
+  ],
+  "q149": [
+   {
+    "chunk_id": "rbi-n11785:section:0004",
+    "doc_id": "rbi-n11785",
+    "start": 4508,
+    "end": 5624,
+    "words": 169
+   },
+   {
+    "chunk_id": "rbi-n11785:section:0007",
+    "doc_id": "rbi-n11785",
+    "start": 8196,
+    "end": 10262,
+    "words": 319
+   },
+   {
+    "chunk_id": "rbi-n11785:section:0005",
+    "doc_id": "rbi-n11785",
+    "start": 5624,
+    "end": 6829,
+    "words": 203
+   },
+   {
+    "chunk_id": "rbi-n11785:section:0012",
+    "doc_id": "rbi-n11785",
+    "start": 17364,
+    "end": 17945,
+    "words": 98
+   },
+   {
+    "chunk_id": "rbi-n11785:section:0000",
+    "doc_id": "rbi-n11785",
+    "start": 0,
+    "end": 1166,
+    "words": 162
+   },
+   {
+    "chunk_id": "rbi-n11785:section:0009",
+    "doc_id": "rbi-n11785",
+    "start": 12375,
+    "end": 12918,
+    "words": 96
+   },
+   {
+    "chunk_id": "rbi-n11785:section:0002",
+    "doc_id": "rbi-n11785",
+    "start": 1599,
+    "end": 3562,
+    "words": 321
+   },
+   {
+    "chunk_id": "rbi-n12773:section:0001",
+    "doc_id": "rbi-n12773",
+    "start": 1326,
+    "end": 2589,
+    "words": 195
+   },
+   {
+    "chunk_id": "rbi-n12773:section:0000",
+    "doc_id": "rbi-n12773",
+    "start": 0,
+    "end": 1326,
+    "words": 191
+   },
+   {
+    "chunk_id": "rbi-n11785:section:0008",
+    "doc_id": "rbi-n11785",
+    "start": 10262,
+    "end": 12375,
+    "words": 340
+   }
+  ],
+  "q150": [
+   {
+    "chunk_id": "rbi-n12030:section:0041",
+    "doc_id": "rbi-n12030",
+    "start": 42674,
+    "end": 44204,
+    "words": 329
+   },
+   {
+    "chunk_id": "rbi-n12567:section:0001",
+    "doc_id": "rbi-n12567",
+    "start": 862,
+    "end": 2032,
+    "words": 184
+   },
+   {
+    "chunk_id": "rbi-n12567:section:0002",
+    "doc_id": "rbi-n12567",
+    "start": 2032,
+    "end": 4123,
+    "words": 344
+   },
+   {
+    "chunk_id": "rbi-n12030:section:0049",
+    "doc_id": "rbi-n12030",
+    "start": 52748,
+    "end": 54168,
+    "words": 214
+   },
+   {
+    "chunk_id": "rbi-n12567:section:0000",
+    "doc_id": "rbi-n12567",
+    "start": 0,
+    "end": 862,
+    "words": 120
+   },
+   {
+    "chunk_id": "rbi-n12030:section:0045",
+    "doc_id": "rbi-n12030",
+    "start": 48088,
+    "end": 49174,
+    "words": 166
+   },
+   {
+    "chunk_id": "rbi-n12030:section:0044",
+    "doc_id": "rbi-n12030",
+    "start": 46683,
+    "end": 48088,
+    "words": 219
+   },
+   {
+    "chunk_id": "rbi-n12550:section:0131",
+    "doc_id": "rbi-n12550",
+    "start": 140035,
+    "end": 141754,
+    "words": 338
+   },
+   {
+    "chunk_id": "rbi-n12848:section:0007",
+    "doc_id": "rbi-n12848",
+    "start": 9230,
+    "end": 10009,
+    "words": 120
+   },
+   {
+    "chunk_id": "rbi-n12030:section:0036",
+    "doc_id": "rbi-n12030",
+    "start": 36514,
+    "end": 37815,
+    "words": 249
+   }
+  ]
+ }
+}

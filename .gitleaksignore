@@ -1,0 +1,7 @@
+# Each entry was reviewed by hand. Keep this list short.
+#
+# A Trend Micro email-security click-tracking link that RBI pasted into a
+# public UAPA sanctions-list circular (rbi-n12524, page 2). The "auth=" value
+# is the mail gateway's link signature, published by RBI, not a credential of
+# this project. Reviewed 2026-10-30.
+corpus/docs/rbi-n12524.json:generic-api-key:12

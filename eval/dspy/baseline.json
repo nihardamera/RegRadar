@@ -1,0 +1,40 @@
+{
+  "answer": {
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "You answer questions about Reserve Bank of India circulars for a compliance team.\nUse only the numbered context chunks you are given. Do not use outside knowledge.\nEach claim is one sentence that answers part of the question, and cites the chunk IDs that\nsupport it, copied exactly from the context. Copy numbers, amounts, dates and time limits\nexactly as the chunk states them. If the context does not answer the question, set\nnot_found to true and give no claims. If feedback lists problems with a previous attempt,\nfix them.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Context:",
+          "description": "numbered chunks: [chunk id] title, then text"
+        },
+        {
+          "prefix": "Feedback:",
+          "description": "problems with a previous attempt, or 'none'"
+        },
+        {
+          "prefix": "Not Found:",
+          "description": "${not_found}"
+        },
+        {
+          "prefix": "Claims:",
+          "description": "${claims}"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.12",
+      "dspy": "3.4.1",
+      "cloudpickle": "3.1"
+    }
+  }
+}

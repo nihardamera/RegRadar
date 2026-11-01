@@ -1,0 +1,236 @@
+"""Human labels for calibrating the judge: is each answer faithful, and correct?
+
+    uv run python -m regradar.label sample     # fix the 100 answers and their split (once)
+    uv run python -m regradar.label extra      # add the hard cases (once, before any judge)
+    uv run python -m regradar.label            # label, resuming where you stopped
+
+For each sampled answer you see the question, every claim with the full text
+of the chunks it cites, and the golden set's reference answer. No judge output
+is shown (the judge is calibrated against these labels, so it must not
+anchor them). Two labels, both yes / no:
+
+    faithful   every claim is supported by the text it cites
+    correct    the answer answers the question (compare with the reference)
+
+The 100 answers are a fixed random sample of the answered questions; about 40
+are dev (for tuning the judge's prompt) and 60 held out (scored once, at the
+end). Both are fixed before any judge runs.
+
+Citation enforcement leaves few wrong answers, so there are also hard cases
+(`regradar/plant.py`), split 40 / 60 the same way. The real failures (answers
+the code rejected, an answer to an unanswerable question) are shuffled into
+the labelling queue. The planted errors are not labelled: the script records
+what it changed, and `regradar.judge` scores whether the judge catches them.
+"""
+
+from __future__ import annotations
+
+import argparse
+import hashlib
+import json
+import random
+import sys
+from datetime import datetime
+from pathlib import Path
+from typing import Any
+
+from regradar.golden import load
+from regradar.plant import planted_cases
+
+ROOT = Path(__file__).resolve().parent.parent
+HUMAN = ROOT / "eval" / "human"
+SAMPLE = HUMAN / "judge_sample.jsonl"
+LABELS = HUMAN / "judge_labels.jsonl"
+EXTRA = HUMAN / "judge_extra.jsonl"
+RESULTS = ROOT / "eval" / "results"
+SAMPLE_SIZE = 100
+DEV_SHARE = 0.4
+SEED = 20261101
+
+
+def answered_records(results_dir: Path = RESULTS) -> list[dict[str, Any]]:
+    """Every answered question, with what the model said and the chunks it cited."""
+    records = []
+    for path in sorted(results_dir.glob("answers_*_claude-*.json")):
+        data = json.loads(path.read_text(encoding="utf-8"))
+        for row in data["questions"]:
+            if row["status"] == "answered" and "claims" in row:
+                records.append({"model": data["model"], "retrieval": data["retrieval"], **row})
+    return records
+
+
+def failed_records(results_dir: Path = RESULTS) -> list[dict[str, Any]]:
+    """Answers the checks rejected, and answers to questions the corpus cannot answer."""
+    records = []
+    for path in sorted(results_dir.glob("answers_*_claude-*.json")):
+        data = json.loads(path.read_text(encoding="utf-8"))
+        for row in data["questions"]:
+            if not row.get("claims"):
+                continue
+            if row["status"] == "rejected":
+                source = "rejected"
+            elif row["status"] == "answered" and not row["answerable"]:
+                source = "unanswerable"
+            else:
+                continue
+            records.append(
+                {"model": data["model"], "retrieval": data["retrieval"], **row, "source": source}
+            )
+    return records
+
+
+def case_id(record: dict[str, Any]) -> str:
+    """A sampled answer is known by its question; a hard case has its own ID."""
+    return str(record.get("case_id", record["question_id"]))
+
+
+def extra_cases(
+    answered: list[dict[str, Any]],
+    failed: list[dict[str, Any]],
+    sampled: set[str],
+    seed: int = SEED,
+) -> list[dict[str, Any]]:
+    """The hard cases, with a 40 / 60 judge split fixed at the same time."""
+    failed = [{**r, "case_id": f"{r['question_id']}~{r['source']}"} for r in failed]
+    cases = sorted(failed + planted_cases(answered, sampled, seed), key=case_id)
+    rng = random.Random(seed + 1)
+    dev = set(rng.sample(range(len(cases)), round(DEV_SHARE * len(cases))))
+    return [{**r, "judge_split": "dev" if i in dev else "heldout"} for i, r in enumerate(cases)]
+
+
+def queue(records: list[dict[str, Any]], done: set[str]) -> list[dict[str, Any]]:
+    """Unlabelled cases in a fixed shuffled order, so hard cases are spread through."""
+    todo = [r for r in records if case_id(r) not in done]
+    return sorted(todo, key=lambda r: hashlib.sha256(f"order:{case_id(r)}".encode()).hexdigest())
+
+
+def label_key(label: dict[str, Any]) -> str:
+    return str(label.get("case_id", label["question_id"]))
+
+
+def draw(
+    records: list[dict[str, Any]], size: int = SAMPLE_SIZE, seed: int = SEED
+) -> list[dict[str, Any]]:
+    """A fixed random sample, with a judge split fixed at the same time."""
+    rng = random.Random(seed)
+    # Sorted first, so the draw does not depend on the order files were read in.
+    pool = sorted(records, key=lambda r: (r["question_id"], r.get("retrieval", "")))
+    chosen = sorted(rng.sample(pool, min(size, len(pool))), key=lambda r: r["question_id"])
+    dev = set(rng.sample(range(len(chosen)), round(DEV_SHARE * len(chosen))))
+    return [{**r, "judge_split": "dev" if i in dev else "heldout"} for i, r in enumerate(chosen)]
+
+
+def _read(path: Path) -> list[dict[str, Any]]:
+    if not path.exists():
+        return []
+    return [json.loads(line) for line in path.read_text(encoding="utf-8").splitlines() if line]
+
+
+def _ask(prompt: str, allowed: tuple[str, ...]) -> str:
+    while True:
+        answer = input(prompt).strip().lower()
+        if answer in allowed:
+            return answer
+        print(f"  one of: {', '.join(allowed)}")
+
+
+def cmd_sample(_args: argparse.Namespace) -> int:
+    if SAMPLE.exists():
+        print(f"{SAMPLE} exists; the sample is fixed and is not redrawn")
+        return 1
+    chosen = draw(answered_records())
+    HUMAN.mkdir(parents=True, exist_ok=True)
+    SAMPLE.write_text("".join(json.dumps(r) + "\n" for r in chosen), encoding="utf-8")
+    dev = sum(r["judge_split"] == "dev" for r in chosen)
+    print(f"{len(chosen)} answers sampled ({dev} dev, {len(chosen) - dev} held out) -> {SAMPLE}")
+    return 0
+
+
+def cmd_extra(_args: argparse.Namespace) -> int:
+    if EXTRA.exists():
+        print(f"{EXTRA} exists; the hard cases are fixed and are not redrawn")
+        return 1
+    if list((ROOT / "eval" / "judge").glob("calibration_*.json")):
+        print("a judge has already run; hard cases added now would not be blind to it")
+        return 1
+    sampled = {r["question_id"] for r in _read(SAMPLE)}
+    cases = extra_cases(answered_records(), failed_records(), sampled)
+    EXTRA.write_text("".join(json.dumps(r) + "\n" for r in cases), encoding="utf-8")
+    kinds: dict[str, int] = {}
+    for r in cases:
+        kind = r["planted"]["kind"] if "planted" in r else r["source"]
+        kinds[kind] = kinds.get(kind, 0) + 1
+    dev = sum(r["judge_split"] == "dev" for r in cases)
+    print(f"{len(cases)} hard cases ({dev} dev, {len(cases) - dev} held out): {kinds} -> {EXTRA}")
+    return 0
+
+
+def to_label(sample: list[dict[str, Any]], extra: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """The sample and the real failures; planted errors are scored by script, not labelled."""
+    return sample + [r for r in extra if r["source"] != "planted"]
+
+
+def cmd_label(_args: argparse.Namespace) -> int:
+    records = to_label(_read(SAMPLE), _read(EXTRA))
+    if not records:
+        print("no sample yet: run `python -m regradar.label sample` first")
+        return 1
+    done = {label_key(lab) for lab in _read(LABELS)}
+    questions = {q.id: q for q in load()}
+    todo = queue(records, done)
+    print(f"{len(done)} labelled, {len(todo)} to go. Answer y / n; q quits (your labels are kept).")
+    for n, record in enumerate(todo, 1):
+        q = questions[record["question_id"]]
+        print(f"\n[{len(done) + n}/{len(records)}] {q.id}: {q.question}")
+        for i, claim in enumerate(record["claims"], 1):
+            print(f"\n  Claim {i}: {claim['text']}")
+            for cid in claim["citations"]:
+                chunk = record["context"].get(cid, "(chunk text not recorded)")
+                # In full: the judge sees the whole chunk, so the labeller must too.
+                print(f"    cites {cid}:\n      {' '.join(chunk.split())}")
+        print(f"\n  Reference answer: {q.answer}")
+        faithful = _ask(
+            "  Faithful (every claim supported by what it cites)? y/n/q ", ("y", "n", "q")
+        )
+        if faithful == "q":
+            break
+        correct = _ask(
+            "  Correct (answers the question, per the reference)? y/n/q ", ("y", "n", "q")
+        )
+        if correct == "q":
+            break
+        note = input("  Note (optional): ").strip()
+        label = {
+            "case_id": case_id(record),
+            "question_id": q.id,
+            "faithful": faithful == "y",
+            "correct": correct == "y",
+            "note": note,
+            "labeller": "Nihar Damera",
+            "time": datetime.now().isoformat(timespec="seconds"),
+        }
+        HUMAN.mkdir(parents=True, exist_ok=True)
+        with LABELS.open("a", encoding="utf-8") as handle:
+            handle.write(json.dumps(label) + "\n")
+    print(f"\n{len(_read(LABELS))} of {len(records)} labelled -> {LABELS}")
+    return 0
+
+
+def main(argv: list[str] | None = None) -> int:
+    parser = argparse.ArgumentParser(
+        description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
+    )
+    steps = parser.add_subparsers(dest="step")
+    steps.add_parser("sample").set_defaults(run=cmd_sample)
+    steps.add_parser("extra").set_defaults(run=cmd_extra)
+    args = parser.parse_args(argv)
+    try:
+        result: int = (args.run if args.step else cmd_label)(args)
+    except (EOFError, KeyboardInterrupt):
+        print("\nstopped; labels so far are saved")
+        return 1
+    return result
+
+
+if __name__ == "__main__":
+    sys.exit(main())

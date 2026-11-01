@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RegRadar</title>
+<meta name="description" content="Cited answers and impact reports over RBI circulars, with the evaluation behind them.">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.6/purify.min.js"></script>
+<style>
+:root {
+  --bg: #fbfbfa; --panel: #ffffff; --ink: #1d1f23; --muted: #5d636e; --line: #e3e5e8;
+  --accent: #2f5bd3; --ok: #1f7a4d; --warn: #9a5b00; --bad: #b3261e; --chip: #eef1f6;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #141518; --panel: #1c1e22; --ink: #e8e9ec; --muted: #a2a8b3; --line: #2e3138;
+    --accent: #8aa8ff; --ok: #5fc493; --warn: #e3a64a; --bad: #ff8a80; --chip: #262a31;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #141518; --panel: #1c1e22; --ink: #e8e9ec; --muted: #a2a8b3; --line: #2e3138;
+  --accent: #8aa8ff; --ok: #5fc493; --warn: #e3a64a; --bad: #ff8a80; --chip: #262a31;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink);
+  font: 15px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif; }
+header, main { max-width: 1100px; margin: 0 auto; padding: 0 16px; }
+header { padding-top: 28px; }
+h1 { margin: 0 0 4px; font-size: 26px; letter-spacing: -0.01em; }
+.lede { margin: 0 0 16px; color: var(--muted); max-width: 70ch; }
+.lede a, .md a, .src a { color: var(--accent); }
+nav { display: flex; gap: 4px; border-bottom: 1px solid var(--line); margin-bottom: 16px; overflow-x: auto; }
+nav button { background: none; border: 0; border-bottom: 2px solid transparent; color: var(--muted);
+  padding: 8px 12px; font: inherit; cursor: pointer; white-space: nowrap; }
+nav button[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--accent); font-weight: 600; }
+.view[hidden] { display: none; }
+.cols { display: grid; grid-template-columns: minmax(260px, 360px) 1fr; gap: 16px; }
+.cols > * { min-width: 0; }
+@media (max-width: 760px) { .cols { grid-template-columns: minmax(0, 1fr); } }
+.panel { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; }
+.filters { display: flex; flex-wrap: wrap; gap: 8px; padding: 10px; border-bottom: 1px solid var(--line); }
+.filters input, .filters select, select.pick { font: inherit; color: var(--ink); background: var(--bg);
+  border: 1px solid var(--line); border-radius: 6px; padding: 6px 8px; }
+.filters input { flex: 1 1 100%; }
+.list { max-height: 70vh; overflow-y: auto; margin: 0; padding: 0; list-style: none; }
+.list li button { all: unset; display: block; width: 100%; box-sizing: border-box; padding: 9px 12px;
+  border-bottom: 1px solid var(--line); cursor: pointer; }
+.list li button:hover, .list li button[aria-current="true"] { background: var(--chip); }
+.list .q { display: block; font-size: 14px; }
+.list .meta { display: block; font-size: 12px; color: var(--muted); }
+.detail { padding: 16px 18px; }
+.detail h2 { font-size: 18px; margin: 0 0 8px; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
+.chip { background: var(--chip); border-radius: 999px; padding: 2px 9px; font-size: 12px; color: var(--muted); }
+.status-answered { color: var(--ok); } .status-not_found { color: var(--warn); } .status-rejected { color: var(--bad); }
+.claims { padding-left: 18px; } .claims li { margin-bottom: 10px; }
+.src { display: block; font-size: 13px; color: var(--muted); }
+.ref { border-left: 3px solid var(--line); padding: 4px 12px; color: var(--muted); margin-top: 14px; }
+.md { padding: 16px 18px; overflow-x: auto; }
+.md table { border-collapse: collapse; font-size: 13.5px; margin: 10px 0; }
+.md th, .md td { border: 1px solid var(--line); padding: 5px 8px; text-align: left; vertical-align: top; }
+.md th { background: var(--chip); }
+.md code { background: var(--chip); padding: 1px 4px; border-radius: 4px; font-size: 13px; }
+.toolbar { display: flex; gap: 10px; align-items: center; margin-bottom: 10px; flex-wrap: wrap; }
+.note { font-size: 13px; color: var(--muted); }
+footer { max-width: 1100px; margin: 24px auto; padding: 0 16px; font-size: 13px; color: var(--muted); }
+</style>
+</head>
+<body>
+<header>
+  <h1>RegRadar</h1>
+  <p class="lede">Cited answers and impact reports over 290 Reserve Bank of India circulars and
+    Master Directions, with the evaluation behind every number. This page shows committed
+    results; it makes no model calls.
+    <a href="https://github.com/nihardamera/RegRadar">Code, evaluation and how to run it live</a>.</p>
+  <nav role="tablist">
+    <button role="tab" aria-selected="true" data-view="answers">Example answers</button>
+    <button role="tab" aria-selected="false" data-view="impact">Impact reports</button>
+    <button role="tab" aria-selected="false" data-view="evaluation">Evaluation</button>
+  </nav>
+</header>
+<main>
+  <section class="view" id="answers">
+    <div class="cols">
+      <div class="panel">
+        <div class="filters">
+          <input id="q-filter" type="search" placeholder="Filter questions" aria-label="Filter questions">
+          <select id="q-type" aria-label="Question type"><option value="">All types</option></select>
+          <select id="q-status" aria-label="Outcome">
+            <option value="">All outcomes</option><option value="answered">Answered</option>
+            <option value="not_found">Not found</option><option value="rejected">Withheld</option>
+          </select>
+        </div>
+        <ul class="list" id="q-list"></ul>
+      </div>
+      <div class="panel detail" id="q-detail"><p class="note">Pick a question.</p></div>
+    </div>
+  </section>
+  <section class="view" id="impact" hidden>
+    <div class="toolbar">
+      <select class="pick" id="r-pick" aria-label="Report"></select>
+      <span class="note">The company, FlexiPay India, is <strong>synthetic</strong>, with planted gaps.</span>
+    </div>
+    <div class="panel md" id="r-body"></div>
+  </section>
+  <section class="view" id="evaluation" hidden>
+    <div class="toolbar"><select class="pick" id="e-pick" aria-label="Write-up"></select></div>
+    <div class="panel md" id="e-body"></div>
+  </section>
+</main>
+<footer>RBI content is the Reserve Bank of India's, reproduced with acknowledgement of the source.
+  Answers by Claude Haiku 5.5 in the evaluation; the golden set was drafted with Claude Code.
+  A research project, not legal advice.</footer>
+<script>
+const $ = (id) => document.getElementById(id);
+const md = (text) => DOMPurify.sanitize(marked.parse(text));
+const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"}[c]));
+const label = {answered: "Answered", not_found: "Not found", rejected: "Withheld"};
+let answers = [];
+
+function selectView(name) {
+  const button = document.querySelector(`nav button[data-view="${name}"]`);
+  if (!button) return;
+  document.querySelectorAll("nav button").forEach((x) => x.setAttribute("aria-selected", x === button));
+  document.querySelectorAll(".view").forEach((v) => (v.hidden = v.id !== name));
+}
+document.querySelectorAll("nav button").forEach((b) => b.addEventListener("click", () => {
+  selectView(b.dataset.view);
+  history.replaceState(null, "", "#" + b.dataset.view);
+}));
+selectView(location.hash.slice(1) || "answers");
+
+function showQuestion(a) {
+  document.querySelectorAll("#q-list button").forEach((b) => b.setAttribute("aria-current", b.dataset.id === a.id));
+  let body;
+  if (a.status === "answered") {
+    body = "<ol class='claims'>" + a.claims.map((c) => "<li>" + esc(c.text) + "<span class='src'>" +
+      c.sources.map((s) => s.url ? `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a>` : esc(s.title)).join("; ") +
+      "</span></li>").join("") + "</ol>";
+  } else if (a.status === "not_found") {
+    body = "<p><strong>Not found in the corpus.</strong> The model declined to answer from the retrieved text.</p>";
+  } else {
+    body = "<p><strong>Withheld.</strong> The answer's citations failed the code checks twice:</p><ul>" +
+      a.problems.map((p) => "<li>" + esc(p) + "</li>").join("") + "</ul>";
+  }
+  $("q-detail").innerHTML = `<h2>${esc(a.question)}</h2>
+    <div class="chips"><span class="chip status-${a.status}">${label[a.status]}</span>
+    <span class="chip">${esc(a.type.replaceAll("_", " "))}</span><span class="chip">${a.split}</span>
+    <span class="chip">${a.answerable ? "answerable" : "not in corpus"}</span><span class="chip">${a.id}</span></div>
+    ${body}<div class="ref"><strong>Golden reference:</strong> ${esc(a.reference)}</div>`;
+}
+
+function renderList() {
+  const text = $("q-filter").value.toLowerCase(), type = $("q-type").value, status = $("q-status").value;
+  const shown = answers.filter((a) => (!type || a.type === type) && (!status || a.status === status) &&
+    (!text || a.question.toLowerCase().includes(text)));
+  $("q-list").innerHTML = shown.map((a) => `<li><button data-id="${a.id}"><span class="q">${esc(a.question)}</span>
+    <span class="meta"><span class="status-${a.status}">${label[a.status]}</span> · ${esc(a.type.replaceAll("_", " "))} · ${a.split}</span></button></li>`).join("")
+    || "<li class='note' style='padding:12px'>No questions match.</li>";
+  $("q-list").querySelectorAll("button").forEach((b) => b.addEventListener("click", () =>
+    showQuestion(answers.find((a) => a.id === b.dataset.id))));
+}
+
+async function loadInto(select, items, target) {
+  select.innerHTML = items.map((r, i) => `<option value="${i}">${esc(r.title)}</option>`).join("");
+  const show = async () => {
+    target.textContent = "Loading…";
+    const response = await fetch(items[select.value].file);
+    target.innerHTML = md(await response.text());
+  };
+  select.addEventListener("change", show);
+  if (items.length) await show();
+}
+
+(async () => {
+  answers = await (await fetch("data/answers.json")).json();
+  [...new Set(answers.map((a) => a.type))].sort().forEach((t) =>
+    $("q-type").insertAdjacentHTML("beforeend", `<option value="${t}">${esc(t.replaceAll("_", " "))}</option>`));
+  ["q-filter", "q-type", "q-status"].forEach((id) => $(id).addEventListener("input", renderList));
+  renderList();
+  if (answers.length) showQuestion(answers[0]);
+  const index = await (await fetch("data/index.json")).json();
+  await loadInto($("r-pick"), index.reports, $("r-body"));
+  await loadInto($("e-pick"), index.writeups, $("e-body"));
+})();
+</script>
+</body>
+</html>

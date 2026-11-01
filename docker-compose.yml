@@ -1,0 +1,18 @@
+# Qdrant for local development and the retrieval evals.
+#   docker compose up -d qdrant      # dashboard: http://localhost:6333/dashboard
+services:
+  qdrant:
+    # Pinned to the version qdrant-client is pinned to in pyproject.toml.
+    image: qdrant/qdrant:v1.19.2
+    ports:
+      - "127.0.0.1:6333:6333"  # HTTP, localhost only
+      - "127.0.0.1:6334:6334"  # gRPC
+    environment:
+      # No usage reports leave the machine: this holds a compliance corpus.
+      QDRANT__TELEMETRY_DISABLED: "true"
+    volumes:
+      - qdrant_storage:/qdrant/storage
+    restart: unless-stopped
+
+volumes:
+  qdrant_storage:

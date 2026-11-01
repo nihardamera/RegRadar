@@ -1,0 +1,234 @@
+{
+ "model": "claude-haiku-5-5",
+ "effort": "low",
+ "split": "dev",
+ "all": {
+  "faithful": {
+   "n": 25,
+   "agreement": 0.88,
+   "kappa": 0.359,
+   "human_yes": 0.96,
+   "judge_yes": 0.84
+  },
+  "correct": {
+   "n": 25,
+   "agreement": 0.92,
+   "kappa": 0.783,
+   "human_yes": 0.8,
+   "judge_yes": 0.72
+  }
+ },
+ "natural": {
+  "faithful": {
+   "n": 22,
+   "agreement": 0.864,
+   "kappa": 0.0,
+   "human_yes": 1.0,
+   "judge_yes": 0.864
+  },
+  "correct": {
+   "n": 22,
+   "agreement": 0.955,
+   "kappa": 0.831,
+   "human_yes": 0.864,
+   "judge_yes": 0.818
+  }
+ },
+ "failures": {
+  "faithful": {
+   "n": 3,
+   "agreement": 1.0,
+   "kappa": 1.0,
+   "human_yes": 0.667,
+   "judge_yes": 0.667
+  },
+  "correct": {
+   "n": 3,
+   "agreement": 0.667,
+   "kappa": -0.0,
+   "human_yes": 0.333,
+   "judge_yes": 0.0
+  }
+ },
+ "planted": {
+  "n": 12,
+  "caught": 6,
+  "catch_rate": 0.5,
+  "by_kind": {
+   "condition": "0/3",
+   "negation": "0/1",
+   "number": "3/3",
+   "wrong_chunk": "3/5"
+  },
+  "missed": [
+   "q021~negation",
+   "q040~condition",
+   "q043~condition",
+   "q061~condition",
+   "q115~wrong_chunk",
+   "q135~wrong_chunk"
+  ]
+ },
+ "disagreements": [
+  {
+   "case_id": "q091~unanswerable",
+   "source": "unanswerable",
+   "human": {
+    "faithful": true,
+    "correct": true
+   },
+   "judge": {
+    "faithful": true,
+    "correct": false,
+    "reason": "The reference answer says the corpus has no rules on this, while the claims give general authentication and card-security rules as partial context, so the answer is not the same as the reference's 'not found' response.",
+    "claims": [
+     {
+      "claim": 1,
+      "supported": true,
+      "why": "Cited definition lists fingerprint and biometrics (device native or Aadhaar based) as factors of authentication under 'something the user is'; the claim accurately notes no specific issuance rules for biometric cards appear in that text."
+     },
+     {
+      "claim": 2,
+      "supported": true,
+      "why": "Cited text says REs should implement, except where explicitly permitted/relaxed, multi-factor authentication for electronic payments and fund transfers; claim matches including the exception."
+     },
+     {
+      "claim": 3,
+      "supported": true,
+      "why": "Cited text says at least one authentication methodology should be generally dynamic or non-replicable and lists biometric/PKI/hardware tokens as examples."
+     },
+     {
+      "claim": 4,
+      "supported": true,
+      "why": "Cited Chapter V text applies to REs offering/intending to issue physical or virtual credit, debit or prepaid cards and requires PCI standards including PCI-PTS for protection of cardholder data at POI devices."
+     }
+    ]
+   }
+  },
+  {
+   "case_id": "q020",
+   "source": "natural",
+   "human": {
+    "faithful": true,
+    "correct": true
+   },
+   "judge": {
+    "faithful": false,
+    "correct": true,
+    "reason": "The claims together state that rejection requires application of mind and recorded reasons, matching the reference's 'No' answer and its key conditions.",
+    "claims": [
+     {
+      "claim": 1,
+      "supported": false,
+      "why": "The cited chunk says the policy must not deny facilities including to PwDs, but it does not say a lender cannot reject without recording a reason in that sense; it actually allows rejection with recorded reasons and application of mind, so the answer 'cannot reject without recording a reason' is a reasonable reading only partly; the claim omits the application-of-mind requirement and misstates the rule as a flat bar on denial, which the cited text does not say."
+     },
+     {
+      "claim": 2,
+      "supported": true,
+      "why": "Chunk rbi-md361 states the NBFC shall not reject an onboarding or periodic updation application without application of mind and the officer shall duly record reasons for rejection."
+     }
+    ]
+   }
+  },
+  {
+   "case_id": "q054",
+   "source": "natural",
+   "human": {
+    "faithful": true,
+    "correct": true
+   },
+   "judge": {
+    "faithful": false,
+    "correct": true,
+    "reason": "The claims together state the original January 1, 2024 effective date, the three-month extension, and fresh loans from April 1, 2024, matching the reference answer.",
+    "claims": [
+     {
+      "claim": 1,
+      "supported": true,
+      "why": "Cited chunk states the instructions shall come into effect from January 1, 2024."
+     },
+     {
+      "claim": 2,
+      "supported": false,
+      "why": "Cited chunk supports the three-month extension and April 1, 2024 for fresh loans, but the claim omits the condition that existing loans must switch over by June 30, 2024 at the latest; 'REs must implement the instructions for all fresh loans from April 1, 2024' is consistent, so the claim itself does not misstate the fresh-loan date, and the omitted existing-loan limit is not a limiting exception to the fresh-loan rule."
+     },
+     {
+      "claim": 3,
+      "supported": true,
+      "why": "Cited chunk 45.3.8 states the instructions apply to all fresh loans availed from April 01, 2024 onwards for NBFCs."
+     }
+    ]
+   }
+  },
+  {
+   "case_id": "q062",
+   "source": "natural",
+   "human": {
+    "faithful": true,
+    "correct": true
+   },
+   "judge": {
+    "faithful": false,
+    "correct": true,
+    "reason": "The claims state that group assets are consolidated against the \u20b91000 crore Middle Layer threshold and that NBFCs below it individually move up when the consolidated total exceeds it, matching the reference answer.",
+    "claims": [
+     {
+      "claim": 1,
+      "supported": true,
+      "why": "The cited circular text says NBFCs in a common Group or common promoters are not viewed standalone and total assets of all NBFCs in a Group are consolidated to determine Middle Layer threshold."
+     },
+     {
+      "claim": 2,
+      "supported": false,
+      "why": "The cited text gives the threshold as \u20b91000 crore, but it does not say the threshold applies to consolidated assets in that exact sense for every NBFC; the consolidation principle is supported, so the threshold and consolidation are stated, though the claim's added framing that it is 'the asset size threshold' is supported. Re-evaluated: the cited text does state \u20b91000 crore threshold applied to consolidated group assets, so this is supported."
+     },
+     {
+      "claim": 3,
+      "supported": true,
+      "why": "The example states NBFC-ICC and NBFC-MFI, Base Layer standalone, become Middle Layer once consolidated assets of \u20b91320 crore exceed \u20b91000 crore."
+     },
+     {
+      "claim": 4,
+      "supported": true,
+      "why": "Example 2 states that with NBFC-ICC at \u20b910 crore, consolidated \u20b91030 crore exceeds \u20b91000 crore so both NBFC-ICC and NBFC-MFI stay in Middle Layer."
+     }
+    ]
+   }
+  },
+  {
+   "case_id": "q091",
+   "source": "natural",
+   "human": {
+    "faithful": true,
+    "correct": true
+   },
+   "judge": {
+    "faithful": true,
+    "correct": false,
+    "reason": "The reference answer says the corpus has no rules on this, while the claims give general authentication and card-security rules as partial context, so the answer is not the same as the reference's 'not found' response.",
+    "claims": [
+     {
+      "claim": 1,
+      "supported": true,
+      "why": "Cited definition lists fingerprint and biometrics (device native or Aadhaar based) as factors of authentication under 'something the user is'; the claim accurately notes no specific issuance rules for biometric cards appear in that text."
+     },
+     {
+      "claim": 2,
+      "supported": true,
+      "why": "Cited text says REs should implement, except where explicitly permitted/relaxed, multi-factor authentication for electronic payments and fund transfers; claim matches including the exception."
+     },
+     {
+      "claim": 3,
+      "supported": true,
+      "why": "Cited text says at least one authentication methodology should be generally dynamic or non-replicable and lists biometric/PKI/hardware tokens as examples."
+     },
+     {
+      "claim": 4,
+      "supported": true,
+      "why": "Cited Chapter V text applies to REs offering/intending to issue physical or virtual credit, debit or prepaid cards and requires PCI standards including PCI-PTS for protection of cardholder data at POI devices."
+     }
+    ]
+   }
+  }
+ ]
+}

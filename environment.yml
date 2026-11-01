@@ -1,9 +1,0 @@
-# Conda alternative to a venv. Package versions live in requirements.txt only.
-name: finscout
-channels:
-  - conda-forge
-dependencies:
-  - python=3.12
-  - pip
-  - pip:
-      - -r requirements.txt

@@ -1,0 +1,3022 @@
+{
+ "doc_id": "rbi-n12715",
+ "title": "Master Directions on Cyber Resilience and Digital Payment Security Controls for non-bank Payment System Operators",
+ "model": "claude-haiku-5-5",
+ "verdict": "action needed",
+ "problems": [],
+ "counts": {
+  "obligations": 121,
+  "actions": 39,
+  "partial": 34,
+  "not_applicable": 10,
+  "not_covered": 63,
+  "gap": 5,
+  "met": 9,
+  "review": 14
+ },
+ "obligations": [
+  {
+   "text": "The regulated entities shall endeavour to migrate to the latest security standards.",
+   "applies_to": "non-bank Payment System Operators",
+   "deadline": null,
+   "paragraph": "2",
+   "quote": "However, they shall endeavour to migrate to latest security standards.",
+   "id": "rbi-n12715:section:0001#1",
+   "chunk_id": "rbi-n12715:section:0001"
+  },
+  {
+   "text": "A small PPI Issuer that moves into the medium category must comply with these Directions within two years from the time of new categorisation.",
+   "applies_to": "Small PPI Issuers that move into the medium category (non-bank PSOs)",
+   "deadline": "Within two years from the time of new categorisation",
+   "paragraph": "",
+   "quote": "it will need to comply with these Directions within a period of two (or one) years from the time of new categorisation",
+   "id": "rbi-n12715:section:0004#1",
+   "chunk_id": "rbi-n12715:section:0004"
+  },
+  {
+   "text": "A medium PPI Issuer that moves into the large category must comply with these Directions within one year from the time of new categorisation.",
+   "applies_to": "Medium PPI Issuers that move into the large category (non-bank PSOs)",
+   "deadline": "Within one year from the time of new categorisation",
+   "paragraph": "",
+   "quote": "it will need to comply with these Directions within a period of two (or one) years from the time of new categorisation",
+   "id": "rbi-n12715:section:0004#2",
+   "chunk_id": "rbi-n12715:section:0004"
+  },
+  {
+   "text": "PSOs shall ensure adherence to these Directions by unregulated entities linked to their digital payments ecosystem (such as payment gateways, third party service providers, vendors), subject to mutual agreement.",
+   "applies_to": "authorised non-bank PSOs",
+   "deadline": null,
+   "paragraph": "5",
+   "quote": "PSOs shall ensure adherence to these Directions by such unregulated entities as well, subject to mutual agreement.",
+   "id": "rbi-n12715:section:0006#1",
+   "chunk_id": "rbi-n12715:section:0006"
+  },
+  {
+   "text": "An organisational policy on managing cyber and technology risks arising from linkages with unregulated entities in the digital payments ecosystem must be approved by the Board and put in place.",
+   "applies_to": "PSOs",
+   "deadline": null,
+   "paragraph": "5",
+   "quote": "An organisational policy in this respect, approved by the Board, shall be put in place.",
+   "id": "rbi-n12715:section:0006#2",
+   "chunk_id": "rbi-n12715:section:0006"
+  },
+  {
+   "text": "The Board shall entrust responsibility and accountability for implementing the IS policy and cyber resilience framework, and for continuously assessing the overall IS posture of the PSO, to a senior level executive with expertise in information security including cyber security.",
+   "applies_to": "Board of the PSO",
+   "deadline": null,
+   "paragraph": "10",
+   "quote": "The Board shall entrust the responsibility and accountability for implementing the IS policy and the cyber resilience framework as well as for continuously assessing the overall IS posture of PSO",
+   "id": "rbi-n12715:section:0008#1",
+   "chunk_id": "rbi-n12715:section:0008"
+  },
+  {
+   "text": "The PSO shall define appropriate Key Risk Indicators (KRIs) to identify potential risk events and Key Performance Indicators (KPIs) to assess the effectiveness of security controls.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "11",
+   "quote": "The PSO shall define appropriate Key Risk Indicators (KRIs) to identify potential risk events and Key Performance Indicators (KPIs) to assess the effectiveness of security controls.",
+   "id": "rbi-n12715:section:0008#2",
+   "chunk_id": "rbi-n12715:section:0008"
+  },
+  {
+   "text": "The KRIs and KPIs shall be continuously monitored by the sub-committee of the Board referred to in paragraph 7.",
+   "applies_to": "Sub-committee of the Board referred to in paragraph 7",
+   "deadline": null,
+   "paragraph": "11",
+   "quote": "These KRIs and KPIs shall be continuously monitored by the sub-committee of the Board referred to in paragraph 7.",
+   "id": "rbi-n12715:section:0008#3",
+   "chunk_id": "rbi-n12715:section:0008"
+  },
+  {
+   "text": "IT assessment reports (such as system audit, VA/PT reports) shall be placed before the sub-committee responsible for IT oversight in the meeting due immediately after such report is available.",
+   "applies_to": "PSO",
+   "deadline": "In the meeting due immediately after the report is available",
+   "paragraph": "12",
+   "quote": "IT assessment reports (such as system audit, VA / PT reports, etc.) shall be placed before the sub-committee responsible for IT oversight in the meeting due immediately after such report is available.",
+   "id": "rbi-n12715:section:0008#4",
+   "chunk_id": "rbi-n12715:section:0008"
+  },
+  {
+   "text": "The PSO shall undertake a cyber risk assessment exercise relating to launch of new product/services/technologies or undertaking major changes to infrastructure or processes of existing product/services.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "13",
+   "quote": "The PSO shall, undertake a cyber risk assessment exercise relating to launch of new product / services / technologies or undertaking major changes to infrastructure or processes",
+   "id": "rbi-n12715:section:0008#5",
+   "chunk_id": "rbi-n12715:section:0008"
+  },
+  {
+   "text": "Action points emanating from the cyber risk assessment shall be implemented under the oversight of the CISO or equivalent executive.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "13",
+   "quote": "Action points emanating from such assessment shall be implemented under the oversight of the CISO or equivalent executive.",
+   "id": "rbi-n12715:section:0008#6",
+   "chunk_id": "rbi-n12715:section:0008"
+  },
+  {
+   "text": "Asset information shall necessarily include an identifier, network address, asset location, asset owner name and End of Life Support (EoLS).",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "14(c)",
+   "quote": "Asset information shall necessarily include an identifier, network address, asset location, asset owner name and End of Life Support (EoLS).",
+   "id": "rbi-n12715:section:0009#1",
+   "chunk_id": "rbi-n12715:section:0009"
+  },
+  {
+   "text": "All assets (hardware or software) approaching EoLS shall be assessed to evaluate risks associated with the continued use of the unsupported asset.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "14(c)",
+   "quote": "All assets (hardware or software) approaching EoLS shall be assessed to evaluate risks associated with the continued use of the unsupported asset.",
+   "id": "rbi-n12715:section:0009#2",
+   "chunk_id": "rbi-n12715:section:0009"
+  },
+  {
+   "text": "Policies, procedures and controls that address access privileges as well as administration of access rights must be established.",
+   "applies_to": "non-bank Payment System Operators",
+   "deadline": null,
+   "paragraph": "15(a)",
+   "quote": "Policies, procedures and controls that address access privileges as well as administration of access rights must be established.",
+   "id": "rbi-n12715:section:0010#1",
+   "chunk_id": "rbi-n12715:section:0010"
+  },
+  {
+   "text": "All individuals having access to the IT environment of the PSO shall be assigned a digital identity, which shall be maintained and monitored till termination.",
+   "applies_to": "Payment System Operators (PSOs)",
+   "deadline": null,
+   "paragraph": "15(b)",
+   "quote": "All individuals having access to the IT environment of the PSO shall be assigned a digital identity, which shall be maintained and monitored till termination.",
+   "id": "rbi-n12715:section:0011#1",
+   "chunk_id": "rbi-n12715:section:0011"
+  },
+  {
+   "text": "Default authentication settings in systems, software and services shall be deactivated and changed before they are rolled out to the live environment.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "15(c)",
+   "quote": "Default authentication settings in systems / software / services shall be deactivated",
+   "id": "rbi-n12715:section:0012#1",
+   "chunk_id": "rbi-n12715:section:0012"
+  },
+  {
+   "text": "Access to systems and different environments (development, test, production, etc.) shall be based on need-to-have, need-to-know and the principle of least privilege.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "15(d)",
+   "quote": "shall be based on need-to-have, need-to-know and based on the principle of least",
+   "id": "rbi-n12715:section:0012#2",
+   "chunk_id": "rbi-n12715:section:0012"
+  },
+  {
+   "text": "Necessary security controls, including a centralised mechanism to whitelist / blacklist, shall be put in place to ensure secure use of removable media and portable devices.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "15(f)",
+   "quote": "shall be put in place to ensure secure use of removable media and portable devices",
+   "id": "rbi-n12715:section:0012#3",
+   "chunk_id": "rbi-n12715:section:0012"
+  },
+  {
+   "text": "In case of remote / work from home situations, adequate precautions, including multi-factor authentication, shall be in place.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "15(g)",
+   "quote": "In case of remote / work from home situations, adequate precautions, including multi-",
+   "id": "rbi-n12715:section:0012#4",
+   "chunk_id": "rbi-n12715:section:0012"
+  },
+  {
+   "text": "The PSO shall define and implement procedures that limit, lock and terminate system and remote sessions after a pre-defined period of inactivity.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "15(h)",
+   "quote": "The PSO shall define and implement procedures that limit, lock and terminate system",
+   "id": "rbi-n12715:section:0012#5",
+   "chunk_id": "rbi-n12715:section:0012"
+  },
+  {
+   "text": "The PSO shall have physical and environmental safeguards, with periodic testing, to protect access to its information assets from natural disasters and other threats.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "15(i)",
+   "quote": "PSO shall have physical and environmental safeguards, with periodic testing, to",
+   "id": "rbi-n12715:section:0012#6",
+   "chunk_id": "rbi-n12715:section:0012"
+  },
+  {
+   "text": "The PSO shall put in place measures to protect its network and systems from external threats.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "16",
+   "quote": "The PSO shall put in place the following measures to protect its network and systems",
+   "id": "rbi-n12715:section:0012#7",
+   "chunk_id": "rbi-n12715:section:0012"
+  },
+  {
+   "text": "Network devices shall be configured and checked periodically for security rules.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "16(a)",
+   "quote": "Network devices shall be configured and checked periodically for security rules;",
+   "id": "rbi-n12715:section:0012#8",
+   "chunk_id": "rbi-n12715:section:0012"
+  },
+  {
+   "text": "A Security Operations Centre (SOC) shall ensure proactive and centralised monitoring of comprehensive network and system logs collected and management of them.",
+   "applies_to": "Security Operations Centre (SOC)",
+   "deadline": null,
+   "paragraph": "16(b)",
+   "quote": "A Security Operations Centre (SOC) shall ensure proactive and centralised",
+   "id": "rbi-n12715:section:0012#9",
+   "chunk_id": "rbi-n12715:section:0012"
+  },
+  {
+   "text": "Multi-layered boundary defences shall be incorporated into IS systems to efficiently monitor the network traffic and filter the flow of data in and out of the organisation.",
+   "applies_to": "PSOs (IS systems)",
+   "deadline": null,
+   "paragraph": "15(e)",
+   "quote": "Multi-layered boundary defences shall be incorporated into IS systems to efficiently monitor the network traffic and filter the flow of data in and out of the organisation.",
+   "id": "rbi-n12715:section:0014#1",
+   "chunk_id": "rbi-n12715:section:0014"
+  },
+  {
+   "text": "There shall be adequate measures to detect and remedy unusual activities / events.",
+   "applies_to": "PSOs",
+   "deadline": null,
+   "paragraph": "15(e)",
+   "quote": "There shall be adequate measures to detect and remedy unusual activities / events;",
+   "id": "rbi-n12715:section:0014#2",
+   "chunk_id": "rbi-n12715:section:0014"
+  },
+  {
+   "text": "Network segmentation shall be made based on role, location and environment (production, testing, development, etc.) to segregate systems and data of varying criticality.",
+   "applies_to": "PSOs",
+   "deadline": null,
+   "paragraph": "15(f)",
+   "quote": "Network segmentation shall be made based on role, location and environment (production, testing, development, etc.) to segregate systems and data of varying criticality;",
+   "id": "rbi-n12715:section:0014#3",
+   "chunk_id": "rbi-n12715:section:0014"
+  },
+  {
+   "text": "Whitelisting solutions shall be in place to ensure that only permitted applications and services with validated needs are running.",
+   "applies_to": "PSOs",
+   "deadline": null,
+   "paragraph": "15(f)",
+   "quote": "Whitelisting solutions shall be in place to ensure that only permitted applications and services with validated needs are running.",
+   "id": "rbi-n12715:section:0014#4",
+   "chunk_id": "rbi-n12715:section:0014"
+  },
+  {
+   "text": "Whitelisting of ports shall also be ensured with constant monitoring.",
+   "applies_to": "PSOs",
+   "deadline": null,
+   "paragraph": "15(f)",
+   "quote": "Whitelisting of ports may also be ensured with constant monitoring;",
+   "id": "rbi-n12715:section:0014#5",
+   "chunk_id": "rbi-n12715:section:0014"
+  },
+  {
+   "text": "PSOs shall allow devices (such as laptop, desktop, mobile, etc.) to be connected to its network only after ensuring that they meet the prescribed security measures / requirements.",
+   "applies_to": "PSOs",
+   "deadline": null,
+   "paragraph": "15(g)",
+   "quote": "PSOs shall allow devices (such as laptop, desktop, mobile, etc.) to be connected to its network only after ensuring that they meet the prescribed security measures / requirements.",
+   "id": "rbi-n12715:section:0014#6",
+   "chunk_id": "rbi-n12715:section:0014"
+  },
+  {
+   "text": "The PSO shall follow a 'secure by design' approach such as Secure-Software Development Life Cycle (S-SDLC) for design and development of products / services.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "17(a)",
+   "quote": "The PSO shall follow a \u2018secure by design\u2019 approach such as Secure-Software Development Life Cycle (S-SDLC) for design and development of products / services",
+   "id": "rbi-n12715:section:0015#1",
+   "chunk_id": "rbi-n12715:section:0015"
+  },
+  {
+   "text": "The PSO shall ensure that no security weaknesses are introduced during the build process.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "17(a)",
+   "quote": "ensure that no security weaknesses are introduced during the build process.",
+   "id": "rbi-n12715:section:0015#2",
+   "chunk_id": "rbi-n12715:section:0015"
+  },
+  {
+   "text": "The PSO shall implement a multi-tier application architecture that ensures segregation of the database layer from other layers while developing digital payment products and services.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "17(b)",
+   "quote": "The PSO shall implement a multi-tier application architecture, that ensures segregation of database layer from other layers, while developing digital payment products and services.",
+   "id": "rbi-n12715:section:0015#3",
+   "chunk_id": "rbi-n12715:section:0015"
+  },
+  {
+   "text": "The ASLC guidelines shall apply to procured products / services as well.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "17(c)",
+   "quote": "The ASLC guidelines shall apply to procured products / services as well.",
+   "id": "rbi-n12715:section:0015#4",
+   "chunk_id": "rbi-n12715:section:0015"
+  },
+  {
+   "text": "The PSO shall obtain the source code of all critical applications procured from third-party vendors.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "17(c)",
+   "quote": "Further, the PSO shall obtain the source code of all critical applications procured from third-party vendors.",
+   "id": "rbi-n12715:section:0015#5",
+   "chunk_id": "rbi-n12715:section:0015"
+  },
+  {
+   "text": "Where obtaining source code is not possible, there shall be an escrow arrangement for the source code to ensure continuity of services.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "17(c)",
+   "quote": "In case obtaining source code is not possible, there shall be an escrow arrangement for the source code to ensure continuity of services.",
+   "id": "rbi-n12715:section:0015#6",
+   "chunk_id": "rbi-n12715:section:0015"
+  },
+  {
+   "text": "The PSO shall ensure that all its applications are subjected to rigorous security testing, such as source code review, VA, PT, etc., through qualified professionals at adequate frequency (at least annually) in authenticated mode.",
+   "applies_to": "PSO",
+   "deadline": "at least on annual basis",
+   "paragraph": "18(a)",
+   "quote": "The PSO shall ensure that all its applications are subjected to rigorous security testing, such as source code review, VA, PT, etc., through qualified professionals",
+   "id": "rbi-n12715:section:0016#1",
+   "chunk_id": "rbi-n12715:section:0016"
+  },
+  {
+   "text": "If the source code is not owned by the PSO, the PSO shall obtain a certificate from the application developer stating that the application is free of vulnerabilities, malwares and any covert channels in the code.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "18(b)",
+   "quote": "If the source code is not owned by the PSO, it shall obtain a certificate from the application developer stating that the application is free of vulnerabilities",
+   "id": "rbi-n12715:section:0016#2",
+   "chunk_id": "rbi-n12715:section:0016"
+  },
+  {
+   "text": "A fresh certificate from the application developer shall be obtained for any changes to source code where the PSO does not own the source code.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "18(b)",
+   "quote": "Fresh certificate shall be obtained for any changes to source code.",
+   "id": "rbi-n12715:section:0016#3",
+   "chunk_id": "rbi-n12715:section:0016"
+  },
+  {
+   "text": "Deficiencies reported in security testing shall be resolved in a time bound manner.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "18(c)",
+   "quote": "Deficiencies reported in the security testing shall be resolved in a time bound manner.",
+   "id": "rbi-n12715:section:0016#4",
+   "chunk_id": "rbi-n12715:section:0016"
+  },
+  {
+   "text": "Any recurring observation from security testing shall necessarily be reported to the Board sub-committee responsible for IT oversight, along with detailed analysis for recurrence and resolution.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "18(c)",
+   "quote": "Any recurring observation shall necessarily be reported to the Board sub-committee responsible for IT oversight along with detailed analysis for recurrence and resolution.",
+   "id": "rbi-n12715:section:0016#5",
+   "chunk_id": "rbi-n12715:section:0016"
+  },
+  {
+   "text": "Any deployment or redeployment of new or existing services supporting critical functions, applications and infrastructure components must be done only after conducting security audits, including VA / PT, and addressing the resultant observations.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "18(d)",
+   "quote": "Any deployment or redeployment of new or existing services supporting critical functions, applications and infrastructure components must be done only after",
+   "id": "rbi-n12715:section:0016#6",
+   "chunk_id": "rbi-n12715:section:0016"
+  },
+  {
+   "text": "The PSO shall put in place necessary security controls for preventing infiltration into its network from vendor environments.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "19(a)",
+   "quote": "The PSO shall put in place necessary security controls for preventing infiltration into its network from vendor environments.",
+   "id": "rbi-n12715:section:0017#1",
+   "chunk_id": "rbi-n12715:section:0017"
+  },
+  {
+   "text": "The PSO shall adhere to the relevant legal and regulatory requirements relating to geographical location of infrastructure and processing, storage and usage of data, and shall ensure compliance by their vendors.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "19(b)",
+   "quote": "The PSO shall adhere to the relevant legal and regulatory requirements relating to geographical location of infrastructure and processing, storage and usage of data and also ensure compliance by their vendors.",
+   "id": "rbi-n12715:section:0017#2",
+   "chunk_id": "rbi-n12715:section:0017"
+  },
+  {
+   "text": "In case of vendors involved in critical processes and activities, the PSO shall obtain certified assurance from an independent auditor on the vendor's cyber resilience capabilities.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "19(c)",
+   "quote": "In case of vendors involved in critical processes and activities7, the PSO shall obtain certified assurance from an independent auditor on the vendor\u2019s cyber resilience capabilities.",
+   "id": "rbi-n12715:section:0017#3",
+   "chunk_id": "rbi-n12715:section:0017"
+  },
+  {
+   "text": "The PSO shall put in place a comprehensive data leak prevention policy for confidentiality, integrity, availability and protection of business and customer information (both in transit and at rest) in respect of data available with it or at vendor managed facilities, commensurate with the criticality and sensitivity of the information held / transmitted.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "20(a)",
+   "quote": "The PSO shall put in place a comprehensive data leak prevention policy for confidentiality, integrity, availability and protection of business and customer information",
+   "id": "rbi-n12715:section:0018#1",
+   "chunk_id": "rbi-n12715:section:0018"
+  },
+  {
+   "text": "The PSO shall employ suitable mechanism to ensure traceability and visibility of data assets.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "20(b)",
+   "quote": "The PSO shall employ suitable mechanism to ensure traceability and visibility of data assets.",
+   "id": "rbi-n12715:section:0018#2",
+   "chunk_id": "rbi-n12715:section:0018"
+  },
+  {
+   "text": "The PSO shall develop and implement an Information Security Management System (ISMS) based on applicable standards.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "20(c)",
+   "quote": "The PSO shall develop and implement an Information Security Management System (ISMS) based on applicable standards.",
+   "id": "rbi-n12715:section:0018#3",
+   "chunk_id": "rbi-n12715:section:0018"
+  },
+  {
+   "text": "Data in transit and rest shall be secured through either data or channel encryption or both.",
+   "applies_to": "Application and database security controls (PSO)",
+   "deadline": null,
+   "paragraph": "20(d)",
+   "quote": "Data in transit and rest shall be secured through either data or channel encryption or both.",
+   "id": "rbi-n12715:section:0018#4",
+   "chunk_id": "rbi-n12715:section:0018"
+  },
+  {
+   "text": "The PSO storing card (debit / credit / prepaid) data shall adhere to PCI-DSS guidelines and obtain PCI-DSS certification.",
+   "applies_to": "PSO storing card (debit / credit / prepaid) data",
+   "deadline": null,
+   "paragraph": "20(e)",
+   "quote": "The PSO storing card (debit / credit / prepaid) data shall adhere to PCI-DSS guidelines and obtain PCI-DSS certification.",
+   "id": "rbi-n12715:section:0018#5",
+   "chunk_id": "rbi-n12715:section:0018"
+  },
+  {
+   "text": "The PSO shall have necessary systems and procedures in place to periodically (at least on a half-yearly basis) test the backed-up data to ensure recovery without loss of transactions or audit-trails.",
+   "applies_to": "PSO",
+   "deadline": "at least half-yearly",
+   "paragraph": "20(f)",
+   "quote": "The PSO shall have necessary systems and procedures in place to periodically (at least on a half-yearly basis) test the backed-up data to ensure recovery without loss of transactions",
+   "id": "rbi-n12715:section:0018#6",
+   "chunk_id": "rbi-n12715:section:0018"
+  },
+  {
+   "text": "The PSO shall put in place a documented policy and process to identify and implement patches to technology and software assets released by OEMs / others.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "21(a)",
+   "quote": "The PSO shall put in place a documented policy and process to identify and implement patches to technology and software assets released by OEMs / others.",
+   "id": "rbi-n12715:section:0019#1",
+   "chunk_id": "rbi-n12715:section:0019"
+  },
+  {
+   "text": "Security patches shall be applied to the relevant systems and applications within an appropriate time frame from their release.",
+   "applies_to": "PSO",
+   "deadline": "within an appropriate time frame from their release",
+   "paragraph": "21(b)",
+   "quote": "Security patches shall be applied to the relevant systems and applications within an appropriate time frame from their release.",
+   "id": "rbi-n12715:section:0019#2",
+   "chunk_id": "rbi-n12715:section:0019"
+  },
+  {
+   "text": "For critical patches released to tackle well-known / reported attacks, the PSO shall have a mechanism to apply them immediately.",
+   "applies_to": "PSO",
+   "deadline": "immediately",
+   "paragraph": "21(b)",
+   "quote": "In case of critical patches released to tackle well-known / reported attacks, the PSO shall have a mechanism to apply them immediately.",
+   "id": "rbi-n12715:section:0019#3",
+   "chunk_id": "rbi-n12715:section:0019"
+  },
+  {
+   "text": "Any change to system, technology, application, source code, etc., shall be managed using robust change management processes and after ensuring that overall integrity of the IT set-up is not compromised.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "21(c)",
+   "quote": "Any change to system, technology, application, source code, etc., shall be managed using robust change management processes and after ensuring that overall integrity of the IT set-up is not compromised.",
+   "id": "rbi-n12715:section:0019#4",
+   "chunk_id": "rbi-n12715:section:0019"
+  },
+  {
+   "text": "Patches and changes shall be implemented in production environment only after testing and validating them in other environments (e.g. development, testing, etc.).",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "21(d)",
+   "quote": "Patches and changes shall be implemented in production environment after testing and validating the same in other environments (e.g. development, testing, etc.).",
+   "id": "rbi-n12715:section:0019#5",
+   "chunk_id": "rbi-n12715:section:0019"
+  },
+  {
+   "text": "The PSO shall put in place a Board approved incident response mechanism, which shall include provisions to promptly notify its senior management, relevant employees and regulatory, supervisory and relevant public authorities, of cyber incidents.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "22(a)",
+   "quote": "The PSO shall put in place a Board approved incident response mechanism, which shall include provisions to promptly notify its senior management, relevant employees",
+   "id": "rbi-n12715:section:0020#1",
+   "chunk_id": "rbi-n12715:section:0020"
+  },
+  {
+   "text": "Response strategies shall incorporate readiness to meet various incident scenarios based on situational awareness and potential impact, consistent communication and co-ordination with stakeholders.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "22(b)",
+   "quote": "Response strategies shall incorporate readiness to meet various incident scenarios based on situational awareness and potential impact, consistent communication",
+   "id": "rbi-n12715:section:0020#2",
+   "chunk_id": "rbi-n12715:section:0020"
+  },
+  {
+   "text": "Post-incident analysis, including forensic analysis (wherever necessary), shall be conducted to determine the impact and root cause of incidents.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "22(c)",
+   "quote": "Post-incident analysis, including forensic analysis (wherever necessary), shall be conducted to determine the impact and root cause of incidents.",
+   "id": "rbi-n12715:section:0020#3",
+   "chunk_id": "rbi-n12715:section:0020"
+  },
+  {
+   "text": "Adequate measures shall be taken to avoid recurrence of similar incidents.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "22(c)",
+   "quote": "Adequate measures shall be taken to avoid recurrence of similar incidents.",
+   "id": "rbi-n12715:section:0020#4",
+   "chunk_id": "rbi-n12715:section:0020"
+  },
+  {
+   "text": "Unusual incidents such as cyber-attacks, outage of critical system or infrastructure, internal fraud, and settlement delay shall be reported to RBI in the Incident Reporting Format (Annex 1) within 6 hours of detection.",
+   "applies_to": "PSO",
+   "deadline": "within 6 hours of detection",
+   "paragraph": "22(d)",
+   "quote": "Unusual incidents like cyber-attacks, outage of critical system / infrastructure, internal fraud, settlement delay, etc., shall be reported to RBI in the Incident Reporting Format",
+   "id": "rbi-n12715:section:0020#5",
+   "chunk_id": "rbi-n12715:section:0020"
+  },
+  {
+   "text": "Any cyber security incident shall also be reported to CERT-In.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "22(d)",
+   "quote": "Any cyber security incident shall also be reported to CERT-In.",
+   "id": "rbi-n12715:section:0020#6",
+   "chunk_id": "rbi-n12715:section:0020"
+  },
+  {
+   "text": "The PSO shall develop a BCP based on different cyber threat scenarios, including extreme but plausible events to which it may be exposed.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "23(a)",
+   "quote": "The PSO shall develop a BCP based on different cyber threat scenarios, including extreme but plausible events to which it may be exposed.",
+   "id": "rbi-n12715:section:0021#1",
+   "chunk_id": "rbi-n12715:section:0021"
+  },
+  {
+   "text": "The PSO shall review the BCP at least once a year.",
+   "applies_to": "PSO",
+   "deadline": "at least once a year",
+   "paragraph": "23(a)",
+   "quote": "It shall be reviewed at least once a year and include a comprehensive cyber incident response, resumption and recovery plan",
+   "id": "rbi-n12715:section:0021#2",
+   "chunk_id": "rbi-n12715:section:0021"
+  },
+  {
+   "text": "The BCP shall include a comprehensive cyber incident response, resumption and recovery plan to manage cyber security events or incidents.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "23(a)",
+   "quote": "include a comprehensive cyber incident response, resumption and recovery plan, to manage cyber security events or incidents.",
+   "id": "rbi-n12715:section:0021#3",
+   "chunk_id": "rbi-n12715:section:0021"
+  },
+  {
+   "text": "The BCP shall be designed to enable rapid recovery from any adverse event and facilitate safe resumption of critical operations aligned with RTO and RPO while ensuring the security of processes and data.",
+   "applies_to": "BCP of the PSO",
+   "deadline": null,
+   "paragraph": "23(b)",
+   "quote": "The BCP shall be designed to enable rapid recovery from any adverse event and facilitate safe resumption of critical operations aligned with Recovery Time Objective",
+   "id": "rbi-n12715:section:0021#4",
+   "chunk_id": "rbi-n12715:section:0021"
+  },
+  {
+   "text": "The PSO shall strive to achieve near-zero RPO.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "23(c)",
+   "quote": "The PSO shall strive to achieve near-zero RPO.",
+   "id": "rbi-n12715:section:0021#5",
+   "chunk_id": "rbi-n12715:section:0021"
+  },
+  {
+   "text": "The PSO shall set up a Disaster Recovery facility in a different seismic zone than the Primary Data Centre.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "23(d)",
+   "quote": "The PSO shall set up a Disaster Recovery (DR) facility in a different seismic zone than the Primary Data Centre (PDC).",
+   "id": "rbi-n12715:section:0021#6",
+   "chunk_id": "rbi-n12715:section:0021"
+  },
+  {
+   "text": "The PSO shall have a defined methodology for reconciliation of data so as to ensure there is no data loss while resuming operations from the DR.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "23(d)",
+   "quote": "There shall be a defined methodology for reconciliation of data so as to ensure that there is no data loss while resuming operations from the DR.",
+   "id": "rbi-n12715:section:0021#7",
+   "chunk_id": "rbi-n12715:section:0021"
+  },
+  {
+   "text": "The PSO shall conduct DR drills on a half-yearly or more frequent basis.",
+   "applies_to": "PSO",
+   "deadline": "half-yearly",
+   "paragraph": "23(e)",
+   "quote": "DR drills shall be conducted on a half-yearly or more frequent basis.",
+   "id": "rbi-n12715:section:0021#8",
+   "chunk_id": "rbi-n12715:section:0021"
+  },
+  {
+   "text": "Any divergence from the RTO and RPO observed in DR drills shall be analysed and the deficiency rectified on urgent basis.",
+   "applies_to": "PSO",
+   "deadline": "urgent basis",
+   "paragraph": "23(e)",
+   "quote": "Any divergence from the RTO and RPO shall be analysed and the deficiency be rectified on urgent basis.",
+   "id": "rbi-n12715:section:0021#9",
+   "chunk_id": "rbi-n12715:section:0021"
+  },
+  {
+   "text": "The PSO shall put in place measures to establish the identity of communicating applications (authentication and authorisation) to safeguard applications against risks from insecure APIs.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "24(a)(i)",
+   "quote": "the PSO shall put in place, inter-alia, the following measures: (i) Authentication and Authorisation \u2013 Establish identity of the communicating applications;",
+   "id": "rbi-n12715:section:0022#1",
+   "chunk_id": "rbi-n12715:section:0022"
+  },
+  {
+   "text": "The PSO shall put in place measures to ensure that the message content of API communications is not tampered with (confidentiality).",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "24(a)(ii)",
+   "quote": "(ii) Confidentiality \u2013 Ensure that the message content is not tampered with;",
+   "id": "rbi-n12715:section:0022#2",
+   "chunk_id": "rbi-n12715:section:0022"
+  },
+  {
+   "text": "The PSO shall put in place measures to ensure that resources are reliably transferred through APIs (integrity).",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "24(a)(iii)",
+   "quote": "(iii) Integrity \u2013 Resources are reliably transferred; and",
+   "id": "rbi-n12715:section:0022#3",
+   "chunk_id": "rbi-n12715:section:0022"
+  },
+  {
+   "text": "The PSO shall put in place measures to ensure APIs are available when needed, and that anomalous activities are identified and mitigative action is taken.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "24(a)(iv)",
+   "quote": "(iv) Availability and Threat Protection \u2013 APIs are available when needed; anomalous8 activities identified and mitigative action taken.",
+   "id": "rbi-n12715:section:0022#4",
+   "chunk_id": "rbi-n12715:section:0022"
+  },
+  {
+   "text": "The PSO shall adhere to relevant standards and globally recognised frameworks on API security.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "24(b)",
+   "quote": "The PSO shall adhere to relevant standards and globally recognised frameworks on API security.",
+   "id": "rbi-n12715:section:0022#5",
+   "chunk_id": "rbi-n12715:section:0022"
+  },
+  {
+   "text": "The PSO shall ensure periodic repeated training and awareness programs on information security issues for its employees and vendors managing its information assets.",
+   "applies_to": "PSO; employees and vendors managing its information assets",
+   "deadline": null,
+   "paragraph": "25(a)",
+   "quote": "The PSO shall ensure periodic repeated training / awareness programs on information security issues for its employees and vendors managing its information assets.",
+   "id": "rbi-n12715:section:0022#6",
+   "chunk_id": "rbi-n12715:section:0022"
+  },
+  {
+   "text": "A system of periodic evaluation of cyber security awareness amongst employees shall be operationalised by the PSO.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "25(b)",
+   "quote": "A system of periodic evaluation of cyber security awareness amongst employees shall be operationalised.",
+   "id": "rbi-n12715:section:0022#7",
+   "chunk_id": "rbi-n12715:section:0022"
+  },
+  {
+   "text": "Board members and key senior management personnel shall be provided training and sensitised on information security and cyber risks.",
+   "applies_to": "PSO; board members and key senior management personnel",
+   "deadline": null,
+   "paragraph": "25(c)",
+   "quote": "Board members and key senior management personnel shall be provided training and sensitised on information security and cyber risks.",
+   "id": "rbi-n12715:section:0022#8",
+   "chunk_id": "rbi-n12715:section:0022"
+  },
+  {
+   "text": "The PSO subscribing to cloud services shall put in place a cloud operation policy, as part of the board approved Information Security Policy, highlighting activities that can be located in cloud servers, clearly identified roles and responsibilities for the CSP, data localisation, and protection and recoverability requirements.",
+   "applies_to": "The PSO subscribing to cloud services",
+   "deadline": null,
+   "paragraph": "26(a)",
+   "quote": "The PSO subscribing to cloud services shall put in place a cloud operation policy (as a part of board approved Information Security Policy), highlighting, inter-alia, activities that can be located in cloud servers",
+   "id": "rbi-n12715:section:0023#1",
+   "chunk_id": "rbi-n12715:section:0023"
+  },
+  {
+   "text": "The PSO shall ensure that data pertaining to the PSO is clearly segregated and that stringent access control measures are implemented.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "26(b)",
+   "quote": "It shall be ensured that data pertaining to the PSO is clearly segregated and stringent access control measures are implemented.",
+   "id": "rbi-n12715:section:0023#2",
+   "chunk_id": "rbi-n12715:section:0023"
+  },
+  {
+   "text": "Multi-tenancy environments shall be protected against data integrity and confidentiality risks, and against co-mingling of data.",
+   "applies_to": "PSO using multi-tenancy environments",
+   "deadline": null,
+   "paragraph": "26(b)",
+   "quote": "Multi-tenancy environments shall be protected against data integrity and confidentiality risks, and against co-mingling of data.",
+   "id": "rbi-n12715:section:0023#3",
+   "chunk_id": "rbi-n12715:section:0023"
+  },
+  {
+   "text": "The PSO shall ensure that the CSP is subjected to periodic, at least annual, independent information and cyber security audits.",
+   "applies_to": "PSO",
+   "deadline": "at least annually",
+   "paragraph": "26(c)",
+   "quote": "The PSO shall ensure that the CSP is subjected to periodic (at least annually) independent information and cyber security audits.",
+   "id": "rbi-n12715:section:0023#4",
+   "chunk_id": "rbi-n12715:section:0023"
+  },
+  {
+   "text": "Audit reports and the CSP's overall performance and cyber resilience capabilities shall be reviewed annually by the Board sub-committee responsible for IT oversight.",
+   "applies_to": "Board sub-committee responsible for IT oversight",
+   "deadline": "annually",
+   "paragraph": "26(c)",
+   "quote": "Such audit reports and the CSPs overall performance, its cyber resilience capabilities shall be reviewed annually by the Board sub-committee responsible for IT oversight.",
+   "id": "rbi-n12715:section:0023#5",
+   "chunk_id": "rbi-n12715:section:0023"
+  },
+  {
+   "text": "The PSO shall ensure secure configuration of its entire IT infrastructure.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "27(b)",
+   "quote": "The PSO shall ensure secure configuration of its entire IT infrastructure. It shall also equip its servers with adequate security measures so that unauthorised / spoofed transactions are not done and the authentication process is robust, secure and centralised.",
+   "id": "rbi-n12715:section:0024#1",
+   "chunk_id": "rbi-n12715:section:0024"
+  },
+  {
+   "text": "The PSO shall equip its servers with adequate security measures so that unauthorised or spoofed transactions are not done and the authentication process is robust, secure and centralised.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "27(b)",
+   "quote": "It shall also equip its servers with adequate security measures so that unauthorised / spoofed transactions are not done and the authentication process is robust, secure and centralised.",
+   "id": "rbi-n12715:section:0024#2",
+   "chunk_id": "rbi-n12715:section:0024"
+  },
+  {
+   "text": "The PSO shall put in place a real-time / near real-time fraud monitoring solution to identify suspicious transactional behaviour and generate alerts.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "27(c)",
+   "quote": "The PSO shall put in place a real-time / near real-time fraud monitoring solution to identify suspicious transactional behaviour and generate alerts.",
+   "id": "rbi-n12715:section:0024#3",
+   "chunk_id": "rbi-n12715:section:0024"
+  },
+  {
+   "text": "The PSO shall have a manned facility functioning on a 24x7x365 basis for facilitating swift resolution of unauthorised / fraudulent transactions reported by customers and for providing prompt response to Law Enforcement Agencies (LEAs).",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "27(d)",
+   "quote": "The PSO shall have a manned facility to function on 24x7x365 basis for facilitating swift resolution of unauthorised / fraudulent transactions reported by customers and also to provide prompt response to Law Enforcement Agencies (LEAs).",
+   "id": "rbi-n12715:section:0024#4",
+   "chunk_id": "rbi-n12715:section:0024"
+  },
+  {
+   "text": "The PSO shall put in place a mechanism to capture, analyse, store and archive audit logs in a systematic manner, with log messages providing information to uniquely identify the user that initiated an action, the action and its parameters.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "27(e)",
+   "quote": "The PSO shall put in place a mechanism to capture, analyse, store and archive audit logs in a systematic manner. Log messages shall provide relevant information to uniquely identify the user that initiated an action, the action and parameters of that particular action.",
+   "id": "rbi-n12715:section:0024#5",
+   "chunk_id": "rbi-n12715:section:0024"
+  },
+  {
+   "text": "The PSO shall provide access to log data on a controlled basis.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "27(e)",
+   "quote": "Access to log data shall be provided on a controlled basis.",
+   "id": "rbi-n12715:section:0024#6",
+   "chunk_id": "rbi-n12715:section:0024"
+  },
+  {
+   "text": "The PSO shall preserve audit logs for a period of at least five years.",
+   "applies_to": "PSO",
+   "deadline": "at least five years",
+   "paragraph": "27(e)",
+   "quote": "Audit logs shall be preserved for a period of at least five years.",
+   "id": "rbi-n12715:section:0024#7",
+   "chunk_id": "rbi-n12715:section:0024"
+  },
+  {
+   "text": "The PSO shall ensure that the payment architecture it operates is robust, scalable and commensurate with transaction volumes, and this shall be reviewed by the sub-committee of the Board.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "27(f)",
+   "quote": "The PSO shall ensure that the payment architecture operated by them is robust, scalable and commensurate with the transaction volumes; this shall be reviewed by the sub-committee of the Board.",
+   "id": "rbi-n12715:section:0024#8",
+   "chunk_id": "rbi-n12715:section:0024"
+  },
+  {
+   "text": "The PSO shall employ secure mail and messaging systems to ensure that inbound and outbound traffic through mail, messages or any other media are secure.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "27(g)",
+   "quote": "The PSO shall employ secure mail and messaging systems to ensure that inbound and outbound traffic through mail, messages or any other media are secure.",
+   "id": "rbi-n12715:section:0024#9",
+   "chunk_id": "rbi-n12715:section:0024"
+  },
+  {
+   "text": "The PSO shall subscribe to anti-phishing / anti-rogue app services for identifying and taking down phishing websites / rogue applications.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "27(h)",
+   "quote": "The PSO shall subscribe to anti-phishing / anti-rogue app services for identifying and taking down phishing websites / rogue applications.",
+   "id": "rbi-n12715:section:0024#10",
+   "chunk_id": "rbi-n12715:section:0024"
+  },
+  {
+   "text": "The PSO shall, on an ongoing basis, either directly or through its participants and service providers, create public awareness on precautionary measures to safeguard against frauds and cyber threats while using digital payment products.",
+   "applies_to": "PSO",
+   "deadline": "on an ongoing basis",
+   "paragraph": "27(i)",
+   "quote": "The PSO shall, on an ongoing basis, either directly or through its participants and service providers, create public awareness on precautionary measures to safeguard against frauds and cyber threats while using digital payment products.",
+   "id": "rbi-n12715:section:0025#1",
+   "chunk_id": "rbi-n12715:section:0025"
+  },
+  {
+   "text": "The PSO shall facilitate its members / participants to have mechanisms for online alerts based on parameters such as failed transactions, transaction velocity, new account parameters, time zone, geo-location, IP address origin, behavioural biometrics, and other listed risk indicators.",
+   "applies_to": "PSO (Payment System Operator), and its members / participants",
+   "deadline": null,
+   "paragraph": "28",
+   "quote": "The PSO shall facilitate its members / participants have mechanisms for online alerts based on various parameters such as failed transactions, transaction velocity",
+   "id": "rbi-n12715:section:0026#1",
+   "chunk_id": "rbi-n12715:section:0026"
+  },
+  {
+   "text": "While sending SMS, e-mail or any other notification to customers, the PSO or payment system participant shall ensure that bank account number, card number and other confidential information are redacted or masked to the extent possible.",
+   "applies_to": "PSO and payment system participants sending notifications to customers",
+   "deadline": null,
+   "paragraph": "29(a)",
+   "quote": "Bank account number / card number / other confidential information are redacted / masked to the extent possible.",
+   "id": "rbi-n12715:section:0026#2",
+   "chunk_id": "rbi-n12715:section:0026"
+  },
+  {
+   "text": "Online payment transaction notifications shall mention the merchant name (not the payment gateway or aggregator) and the amount; for fund transfers, the name of the beneficiary and the debit amount shall be mentioned.",
+   "applies_to": "PSO and payment system participants sending notifications to customers",
+   "deadline": null,
+   "paragraph": "29(b)",
+   "quote": "Online payment transactions shall mention merchant name (not the payment gateway / aggregator) and amount; for fund transfers, name of the beneficiary and debit amount.",
+   "id": "rbi-n12715:section:0026#3",
+   "chunk_id": "rbi-n12715:section:0026"
+  },
+  {
+   "text": "The PSO shall ensure that the beneficiary name in notifications is taken from the system of the entity maintaining the beneficiary account.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "29(b)",
+   "quote": "The PSO shall ensure that the name is taken from the system of the entity maintaining the beneficiary account.",
+   "id": "rbi-n12715:section:0026#4",
+   "chunk_id": "rbi-n12715:section:0026"
+  },
+  {
+   "text": "Where OTP is a factor of authentication, the PSO shall ensure that the OTP is mentioned at the end of the notification message and that the message also refers to the specific transaction.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "29(c)",
+   "quote": "the PSO shall ensure that the OTP is mentioned at the end of the notification message and the message shall also refer the specific transaction.",
+   "id": "rbi-n12715:section:0026#5",
+   "chunk_id": "rbi-n12715:section:0026"
+  },
+  {
+   "text": "The PSO shall provide a facility on its mobile application / website that enables customers, with necessary authentication, to identify or mark a fraudulent transaction for seamless and immediate notification to the issuer of the payment instrument.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "30",
+   "quote": "The PSO shall provide a facility on its mobile application / website that would enable customers, with necessary authentication, to identify / mark a fraudulent transaction",
+   "id": "rbi-n12715:section:0027#1",
+   "chunk_id": "rbi-n12715:section:0027"
+  },
+  {
+   "text": "The PSO shall ensure facilitation of the fraudulent transaction marking mechanism by the system participants.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "30",
+   "quote": "It shall also ensure facilitation of such mechanism by the system participants.",
+   "id": "rbi-n12715:section:0027#2",
+   "chunk_id": "rbi-n12715:section:0027"
+  },
+  {
+   "text": "The PSO providing, facilitating or processing mobile payment services transactions shall comply with the following security practices and risk mitigation measures.",
+   "applies_to": "PSO providing / facilitating / processing mobile payment services transactions",
+   "deadline": null,
+   "paragraph": "31",
+   "quote": "shall comply with the following security practices and risk mitigation measures and shall also ensure that the participants in its payment system comply with these instructions",
+   "id": "rbi-n12715:section:0028#1",
+   "chunk_id": "rbi-n12715:section:0028"
+  },
+  {
+   "text": "The PSO shall ensure that the participants in its payment system comply with the instructions in this section.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "31",
+   "quote": "shall also ensure that the participants in its payment system comply with these instructions",
+   "id": "rbi-n12715:section:0028#2",
+   "chunk_id": "rbi-n12715:section:0028"
+  },
+  {
+   "text": "The PSO shall put in place a mechanism to ensure that the mobile application is free from any anomalies or exceptions for which the application was not programmed.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "31(a)",
+   "quote": "PSO shall put in place a mechanism to ensure that the mobile application is free from any anomalies or exceptions for which the application was not programmed.",
+   "id": "rbi-n12715:section:0028#3",
+   "chunk_id": "rbi-n12715:section:0028"
+  },
+  {
+   "text": "The PSO shall ensure that an authenticated session, together with its encryption protocol, remains intact throughout an interaction with the customer.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "31(b)",
+   "quote": "The PSO shall ensure that an authenticated session, together with its encryption protocol, remains intact throughout an interaction with the customer.",
+   "id": "rbi-n12715:section:0028#4",
+   "chunk_id": "rbi-n12715:section:0028"
+  },
+  {
+   "text": "In case of interference or if the customer closes the application, the PSO shall terminate the session and resolve or reverse out the affected transactions.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "31(b)",
+   "quote": "In case of any interference or if the customer closes the application, the session shall be terminated, and the affected transactions resolved or reversed out.",
+   "id": "rbi-n12715:section:0028#5",
+   "chunk_id": "rbi-n12715:section:0028"
+  },
+  {
+   "text": "The PSO shall ensure device binding and finger printing of mobile applications with the device and SIM.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "31(c)",
+   "quote": "The PSO shall ensure device binding9 / finger printing of mobile applications with the device and SIM.",
+   "id": "rbi-n12715:section:0028#6",
+   "chunk_id": "rbi-n12715:section:0028"
+  },
+  {
+   "text": "Where the mobile application remains unused beyond a policy determined specified period, the PSO shall ensure device binding is performed again.",
+   "applies_to": "PSO",
+   "deadline": "policy determined specified period",
+   "paragraph": "31(c)",
+   "quote": "In case the mobile application remains unused beyond a policy determined specified period, the PSO shall ensure device binding is performed again.",
+   "id": "rbi-n12715:section:0028#7",
+   "chunk_id": "rbi-n12715:section:0028"
+  },
+  {
+   "text": "The PSO shall ensure that an online session on the mobile application is automatically terminated after a fixed period of inactivity and customers are prompted to re-login.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "31(d)",
+   "quote": "The PSO shall ensure that an online session on mobile application is automatically terminated after a fixed period of inactivity and customers are prompted to re-login.",
+   "id": "rbi-n12715:section:0028#8",
+   "chunk_id": "rbi-n12715:section:0028"
+  },
+  {
+   "text": "The PSO shall, where applicable, set the maximum number of failed log-in or authentication attempts after which access to the mobile application is blocked.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "31(e)",
+   "quote": "The PSO shall, where applicable, set down the maximum number of failed log-in or authentication attempts after which access to the mobile application is blocked.",
+   "id": "rbi-n12715:section:0028#9",
+   "chunk_id": "rbi-n12715:section:0028"
+  },
+  {
+   "text": "The PSO shall have a secure procedure to re-activate access to blocked product or service.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "31(e)",
+   "quote": "There shall be a secure procedure to re-activate the access to blocked product / service.",
+   "id": "rbi-n12715:section:0028#10",
+   "chunk_id": "rbi-n12715:section:0028"
+  },
+  {
+   "text": "The PSO shall notify the customer immediately of failed log-in or authentication attempts.",
+   "applies_to": "PSO",
+   "deadline": "immediately",
+   "paragraph": "31(e)",
+   "quote": "The customer shall be notified for failed log-in or authentication attempts, immediately.",
+   "id": "rbi-n12715:section:0028#11",
+   "chunk_id": "rbi-n12715:section:0028"
+  },
+  {
+   "text": "The PSO shall put in place a control mechanism to identify any presence of remote access applications (to the extent possible) and prohibit access to the mobile payment application while the remote access is live.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "31(f)",
+   "quote": "The PSO shall put in place a control mechanism, to identify any presence of remote access applications (to the extent possible) and prohibit access to the mobile payment application while the remote access is live.",
+   "id": "rbi-n12715:section:0028#12",
+   "chunk_id": "rbi-n12715:section:0028"
+  },
+  {
+   "text": "Whenever the registered mobile number or email ID linked to the payment instrument changes, there shall be a cooling period of minimum 12 hours before any payment transaction through online modes or channels is allowed.",
+   "applies_to": "PSO",
+   "deadline": "minimum 12 hours cooling period after change",
+   "paragraph": "31(g)",
+   "quote": "Whenever there is a change in registered mobile number or email ID linked to the payment instrument there shall be a cooling period of minimum 12 hours before allowing any payment transaction through online modes / channels.",
+   "id": "rbi-n12715:section:0028#13",
+   "chunk_id": "rbi-n12715:section:0028"
+  },
+  {
+   "text": "The PSO shall ensure that terminals installed at merchants for capturing card details for payments or otherwise are validated against the PCI-P2PE program.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "32",
+   "quote": "The PSO shall ensure that terminals installed at merchants for capturing card details for payments or otherwise are validated against the PCI-P2PE program",
+   "id": "rbi-n12715:section:0029#1",
+   "chunk_id": "rbi-n12715:section:0029"
+  },
+  {
+   "text": "PoS terminals with PIN entry installed at the merchants for capturing card payments (including the double swipe terminals) shall be approved by the PCI-PTS program.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "32",
+   "quote": "PoS terminals with PIN entry installed at the merchants for capturing card payments (including the double swipe terminals) shall be approved by the PCI-PTS program.",
+   "id": "rbi-n12715:section:0029#2",
+   "chunk_id": "rbi-n12715:section:0029"
+  },
+  {
+   "text": "The card networks shall institute an alert mechanism on a 24x7x365 basis, to be triggered to the card issuer in case of any suspicious incident.",
+   "applies_to": "card networks",
+   "deadline": null,
+   "paragraph": "33",
+   "quote": "The card networks shall institute an alert mechanism on a 24x7x365 basis, to be triggered to the card issuer in case of any suspicious incident.",
+   "id": "rbi-n12715:section:0029#3",
+   "chunk_id": "rbi-n12715:section:0029"
+  },
+  {
+   "text": "Card networks shall ensure that card details of the customers are stored in an encrypted form at any of their server locations.",
+   "applies_to": "card networks",
+   "deadline": null,
+   "paragraph": "33",
+   "quote": "Card networks shall ensure that card details of the customers are stored in an encrypted form at any of their server locations.",
+   "id": "rbi-n12715:section:0029#4",
+   "chunk_id": "rbi-n12715:section:0029"
+  },
+  {
+   "text": "Card networks shall ensure that processing of the card details in readable format is performed in a secure manner.",
+   "applies_to": "card networks",
+   "deadline": null,
+   "paragraph": "33",
+   "quote": "They shall also ensure that processing of the card details in readable format is performed in a secure manner.",
+   "id": "rbi-n12715:section:0029#5",
+   "chunk_id": "rbi-n12715:section:0029"
+  },
+  {
+   "text": "PPI issuers, both banks and non-banks, shall put in place a suitable cooling period for funds transfer and cash withdrawal after funds are electronically loaded on to the PPI.",
+   "applies_to": "PPI issuers \u2013 banks and non-banks",
+   "deadline": null,
+   "paragraph": "35",
+   "quote": "The PPI issuers \u2013 banks and non-banks \u2013 shall put in place suitable cooling period for funds transfer and cash withdrawal after such funds are electronically loaded on to the PPI.",
+   "id": "rbi-n12715:section:0030#1",
+   "chunk_id": "rbi-n12715:section:0030"
+  }
+ ],
+ "ratings": [
+  {
+   "obligation": "rbi-n12715:section:0001#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-20 \u00a75.1",
+    "FP-05 \u00a74.3"
+   ],
+   "policy_quote": "This standard is reviewed every two years.",
+   "finding": "The policies set a two-yearly review of the authentication standard and 15- or 30-day fixing deadlines for vulnerabilities, but none commits FlexiPay to migrating to the latest security standards.",
+   "severity": "low",
+   "action": "Add a commitment in FP-05 or FP-20 to endeavour to migrate systems to the latest security standards, with a named owner and review point."
+  },
+  {
+   "obligation": "rbi-n12715:section:0004#1",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The profile gives no PPI issuer category for FlexiPay and shows no move from small to medium, so this transition rule is not triggered on the facts provided.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0004#2",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The profile gives no PPI issuer category for FlexiPay and shows no move from medium to large, so this transition rule is not triggered on the facts provided.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0006#1",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph shown requires FlexiPay to ensure that unregulated entities in its digital payments ecosystem (payment gateways, third-party providers, vendors) adhere to these Directions, although FP-07 (IT Outsourcing and Vendor Risk Policy) is indexed and may address this.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0006#2",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a71.1"
+   ],
+   "policy_quote": "The Board approves this policy. The CISO reports to the CEO and presents the information security posture to the IT Strategy Committee.",
+   "finding": "FP-05 shows a Board-approved information security policy, but no shown paragraph addresses cyber and technology risks arising from linkages with unregulated entities in the digital payments ecosystem.",
+   "severity": "medium",
+   "action": "Extend the Board-approved IT Outsourcing and Vendor Risk Policy (FP-07) to expressly cover cyber and technology risks from linkages with unregulated payment gateways, third-party providers and vendors."
+  },
+  {
+   "obligation": "rbi-n12715:section:0008#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a71.1"
+   ],
+   "policy_quote": "The Board approves this policy. The CISO reports to the CEO and presents the information security posture to the IT Strategy Committee.",
+   "finding": "The policy has the CISO, a senior information security executive, presenting posture to the IT Strategy Committee, but it does not show the Board entrusting the CISO with responsibility and accountability for implementing the IS policy and cyber resilience framework and continuously assessing IS posture.",
+   "severity": "low",
+   "action": "Add an explicit Board resolution entrusting the CISO with responsibility and accountability for implementing the IS policy and cyber resilience framework and for continuous assessment of IS posture."
+  },
+  {
+   "obligation": "rbi-n12715:section:0008#2",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown defines Key Risk Indicators or Key Performance Indicators for security controls.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0008#3",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shows KRIs and KPIs being continuously monitored by a Board sub-committee.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0008#4",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FP-05 \u00a71.2",
+    "FP-18 \u00a72.2"
+   ],
+   "policy_quote": "The IT Strategy Committee meets once a year.",
+   "finding": "The policy requires IT assessment reports such as audit and VA/PT reports to be placed before the IT oversight sub-committee at its next meeting, but the IT Strategy Committee meets only once a year, so reports may wait up to a year.",
+   "severity": "high",
+   "action": "Require IT assessment reports to be tabled at the next IT oversight committee meeting after they become available, and increase that committee's meeting frequency or add ad hoc meetings for this purpose."
+  },
+  {
+   "obligation": "rbi-n12715:section:0008#5",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown requires a cyber risk assessment before launching new products, services or technologies or making major infrastructure or process changes.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0008#6",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown requires action points from cyber risk assessments to be implemented under CISO oversight.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0009#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a72.1"
+   ],
+   "policy_quote": "Every information asset has a named owner and a classification (public, internal, confidential, restricted).",
+   "finding": "The policy requires only a named owner and a classification for each asset, while the rule also requires an identifier, network address, asset location and End of Life Support (EoLS) date, and none of these are recorded.",
+   "severity": "medium",
+   "action": "Extend the asset inventory in FP-05 to record each asset's identifier, network address, location and End of Life Support date alongside the owner."
+  },
+  {
+   "obligation": "rbi-n12715:section:0009#2",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph requires assets approaching End of Life Support to be assessed for the risks of continued use.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0010#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a73.1",
+    "FP-05 \u00a73.2"
+   ],
+   "policy_quote": "Production systems are reached only through a bastion host with multi-factor authentication. Privileged access is granted for a fixed time and every session is logged.",
+   "finding": "The policy sets out access controls for production systems, including bastion host with MFA, time-limited privileged access, session logging and six-monthly access reviews, but it does not cover the administration of access rights for non-production systems or the approval and revocation process for access rights.",
+   "severity": "low",
+   "action": "Extend FP-05 \u00a73.2 to define how access rights are granted, approved, modified and revoked, and cover non-production systems as well as production."
+  },
+  {
+   "obligation": "rbi-n12715:section:0011#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a73.1",
+    "FP-05 \u00a73.2"
+   ],
+   "policy_quote": "Production systems are reached only through a bastion host with multi-factor authentication.",
+   "finding": "The policy controls access through a bastion host with MFA, logged privileged sessions and six-monthly access reviews, but it never requires every individual with IT environment access to be assigned a digital identity or states that identities are maintained and monitored until termination.",
+   "severity": "medium",
+   "action": "Add a clause requiring a unique digital identity for every individual with access to the IT environment, maintained and monitored until that individual's access is terminated."
+  },
+  {
+   "obligation": "rbi-n12715:section:0012#1",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shows that default authentication settings in systems, software and services are deactivated and changed before live rollout.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0012#2",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a73.1",
+    "FP-05 \u00a73.2"
+   ],
+   "policy_quote": "Privileged access is granted for a fixed time and every session is logged.",
+   "finding": "The policy sets time-limited, logged privileged access and six-monthly access reviews, but does not state need-to-have, need-to-know or least privilege as the basis for access to each environment.",
+   "severity": "medium",
+   "action": "Add a need-to-have, need-to-know and least-privilege rule that governs access to development, test and production environments."
+  },
+  {
+   "obligation": "rbi-n12715:section:0012#3",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph covers controls on removable media or portable devices, including a centralised whitelist or blacklist.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0012#4",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a73.1"
+   ],
+   "policy_quote": "Production systems are reached only through a bastion host with multi-factor authentication.",
+   "finding": "MFA is required for access to production systems through the bastion host, but the policy has no general precautions for remote or work-from-home access beyond that path.",
+   "severity": "medium",
+   "action": "Extend the policy to set out precautions, including MFA, for all remote and work-from-home access to systems and not only production access via the bastion host."
+  },
+  {
+   "obligation": "rbi-n12715:section:0012#5",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph sets procedures to limit, lock or terminate system and remote sessions after a pre-defined period of inactivity.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0012#6",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph covers physical and environmental safeguards for information assets or periodic testing of them.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0012#7",
+   "applies": true,
+   "status": "met",
+   "policy_refs": [
+    "FP-05 \u00a74.2"
+   ],
+   "policy_quote": "Vulnerability scans run monthly on internet-facing systems.",
+   "finding": "Monthly vulnerability scans of internet-facing systems and an annual external penetration test of the app and Checkout meet the requirement to protect the network and systems from external threats.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0012#8",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph requires network devices to be configured to security rules or checked periodically.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0012#9",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph establishes a Security Operations Centre or centralised monitoring of network and system logs.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0014#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a73.1",
+    "FP-05 \u00a75.1"
+   ],
+   "policy_quote": "Production systems are reached only through a bastion host with multi-factor authentication.",
+   "finding": "The policy uses a bastion host for production access and a SIEM for log monitoring, but it describes no multi-layered boundary defences that filter network traffic into and out of the organisation.",
+   "severity": "medium",
+   "action": "Add a documented multi-layered boundary defence (for example firewalls and traffic filtering at perimeter and internal layers) covering traffic in and out of FlexiPay and FlexiCredit systems."
+  },
+  {
+   "obligation": "rbi-n12715:section:0014#2",
+   "applies": true,
+   "status": "met",
+   "policy_refs": [
+    "FP-04 \u00a73.1",
+    "FP-04 \u00a73.3",
+    "FP-05 \u00a75.1"
+   ],
+   "policy_quote": "A rules engine screens every transaction in real time for velocity, amount, device and location anomalies.",
+   "finding": "The policy detects unusual activity through real-time transaction screening, 24-hour SIEM monitoring, and a wallet hold with customer confirmation for mule-account indicators, which covers both detection and remedy.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0014#3",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown requires network segmentation by role, location or environment (production, testing, development) to separate systems and data of varying criticality.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0014#4",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown requires whitelisting solutions to ensure only permitted applications and services with validated needs are running.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0014#5",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown requires port whitelisting or constant monitoring of ports.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0014#6",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown requires that devices such as laptops or desktops meet prescribed security requirements before connecting to the network; the mobile app's rooted-device check does not address network device connection.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0015#1",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown requires a secure-by-design approach such as S-SDLC for designing and developing FlexiPay products and services.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0015#2",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown ensures that no security weaknesses are introduced during the build process.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0015#3",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown requires a multi-tier architecture that segregates the database layer from other layers.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0015#4",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-07 \u00a73.1"
+   ],
+   "policy_quote": "Financial standing, security certifications (ISO 27001 or SOC 2), data location, sub-contractors, and the vendor's business continuity plan.",
+   "finding": "FP-07 \u00a73.1 checks vendor security certifications before contract, but it does not state that the secure application lifecycle guidelines apply to procured products and services.",
+   "severity": "medium",
+   "action": "Amend FP-07 \u00a73.1 so that procured products and services must also meet the application security life cycle guidelines before contract."
+  },
+  {
+   "obligation": "rbi-n12715:section:0015#5",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown requires FlexiPay to obtain source code of critical applications procured from third-party vendors.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0015#6",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown provides a source code escrow arrangement for critical vendor applications where source code cannot be obtained.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0016#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a74.2"
+   ],
+   "policy_quote": "Vulnerability scans run monthly on internet-facing systems. An external firm performs a penetration test of the FlexiPay app and Checkout once a year.",
+   "finding": "The policy sets monthly vulnerability scans and an annual external pen test of the FlexiPay app and Checkout, but it does not mention source code review, authenticated-mode testing, or annual security testing of all applications by qualified professionals.",
+   "severity": "medium",
+   "action": "Extend the policy to cover all applications with annual source code review, VA and PT in authenticated mode by qualified professionals."
+  },
+  {
+   "obligation": "rbi-n12715:section:0016#2",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph requires a developer certificate confirming that non-owned applications are free of vulnerabilities, malware and covert channels.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0016#3",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph requires a fresh developer certificate when source code of a non-owned application changes.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0016#4",
+   "applies": true,
+   "status": "met",
+   "policy_refs": [
+    "FP-05 \u00a74.3"
+   ],
+   "policy_quote": "Critical vulnerabilities are fixed within 15 days and high ones within 30 days.",
+   "finding": "The policy sets fixed time limits of 15 days for critical and 30 days for high vulnerabilities, which satisfies the requirement that deficiencies be resolved in a time-bound manner.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0016#5",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a71.1"
+   ],
+   "policy_quote": "The CISO reports to the CEO and presents the information security posture to the IT Strategy Committee.",
+   "finding": "The policy has the CISO present overall security posture to the IT Strategy Committee, but it does not require recurring security testing observations to be reported to the IT oversight sub-committee with recurrence analysis and resolution detail.",
+   "severity": "medium",
+   "action": "Require recurring security testing observations to be reported to the Board sub-committee for IT oversight with detailed recurrence and resolution analysis."
+  },
+  {
+   "obligation": "rbi-n12715:section:0016#6",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph requires security audits including VA and PT, with observations addressed, before deploying or redeploying services supporting critical functions.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0017#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a73.1",
+    "FP-07 \u00a74.1"
+   ],
+   "policy_quote": "Production systems are reached only through a bastion host with multi-factor authentication.",
+   "finding": "The policy controls access to production systems through a bastion host with MFA, but says nothing about controls preventing infiltration into FlexiPay's network from vendor environments, and FP-07 \u00a74.1 covers only audit, confidentiality and service levels.",
+   "severity": "medium",
+   "action": "Add network-level controls, such as segregated vendor access paths and monitoring of vendor connections, that prevent infiltration from vendor environments."
+  },
+  {
+   "obligation": "rbi-n12715:section:0017#2",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-07 \u00a73.1",
+    "FP-07 \u00a74.1"
+   ],
+   "policy_quote": "Financial standing, security certifications (ISO 27001 or SOC 2), data location, sub-contractors, and the vendor's business continuity plan.",
+   "finding": "The policy checks data location only during pre-contract due diligence and requires no ongoing compliance with geographical location laws for data or processing, nor any obligation that vendors comply with those laws.",
+   "severity": "medium",
+   "action": "Require every vendor contract to mandate compliance with applicable data localisation and processing-location rules, with vendors certifying compliance and FlexiPay monitoring it after onboarding."
+  },
+  {
+   "obligation": "rbi-n12715:section:0017#3",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-07 \u00a73.1",
+    "FP-07 \u00a75.1"
+   ],
+   "policy_quote": "Financial standing, security certifications (ISO 27001 or SOC 2), data location, sub-contractors, and the vendor's business continuity plan.",
+   "finding": "The policy requires security certifications at onboarding and questionnaire-based reviews of material vendors, but does not require certified assurance from an independent auditor on the cyber resilience of vendors in critical processes.",
+   "severity": "medium",
+   "action": "Require critical vendors to provide certified assurance on cyber resilience from an independent auditor before contract and at regular intervals thereafter."
+  },
+  {
+   "obligation": "rbi-n12715:section:0018#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a72.1",
+    "FP-08 \u00a73.1"
+   ],
+   "policy_quote": "Every information asset has a named owner and a classification (public, internal, confidential, restricted).",
+   "finding": "The policies classify assets and restrict customer data sharing to consent or legal requirement, but no data leak prevention policy covers data in transit and at rest or at vendor-managed facilities.",
+   "severity": "medium",
+   "action": "Adopt a data leak prevention policy covering data in transit, at rest and at vendor-managed facilities, scaled to information criticality and sensitivity."
+  },
+  {
+   "obligation": "rbi-n12715:section:0018#2",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a72.1"
+   ],
+   "policy_quote": "Every information asset has a named owner and a classification (public, internal, confidential, restricted).",
+   "finding": "Named owners and classifications give some visibility of data assets, but no mechanism for tracing data flows or movement is described.",
+   "severity": "low",
+   "action": "Document a mechanism to trace data assets and their flows across systems and vendors, such as an asset inventory with data lineage."
+  },
+  {
+   "obligation": "rbi-n12715:section:0018#3",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown develops or implements an Information Security Management System based on applicable standards.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0018#4",
+   "applies": true,
+   "status": "met",
+   "policy_refs": [
+    "FP-05 \u00a74.1"
+   ],
+   "policy_quote": "AES-256 encryption at rest; TLS 1.2 or higher in transit.",
+   "finding": "The policy requires AES-256 encryption at rest and TLS 1.2 or higher in transit, which secures data in transit and at rest.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0018#5",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The policies store payment credentials in India but do not mention PCI-DSS compliance or PCI-DSS certification for card data.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0018#6",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The policies mention disaster-recovery copies in AWS Hyderabad but no paragraph shown requires half-yearly testing of backed-up data for recovery without loss of transactions or audit trails.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0019#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a74.3"
+   ],
+   "policy_quote": "Critical vulnerabilities are fixed within 15 days and high ones within 30 days.",
+   "finding": "The policy sets fix timelines for critical and high vulnerabilities but has no documented process for identifying and implementing patches released by OEMs or other vendors.",
+   "severity": "medium",
+   "action": "Add a documented policy and process for identifying, assessing and implementing patches to technology and software assets released by OEMs and others."
+  },
+  {
+   "obligation": "rbi-n12715:section:0019#2",
+   "applies": true,
+   "status": "met",
+   "policy_refs": [
+    "FP-05 \u00a74.3"
+   ],
+   "policy_quote": "Critical vulnerabilities are fixed within 15 days and high ones within 30 days.",
+   "finding": "The policy requires security patches to be applied within defined timeframes of 15 days for critical and 30 days for high vulnerabilities, which meets the requirement of an appropriate time frame from release.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0019#3",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FP-05 \u00a74.3"
+   ],
+   "policy_quote": "Critical vulnerabilities are fixed within 15 days and high ones within 30 days.",
+   "finding": "The policy allows 15 days for critical fixes, whereas critical patches for well-known or reported attacks must be applied immediately, and no mechanism for immediate application is shown.",
+   "severity": "high",
+   "action": "Add a mechanism to apply critical patches for well-known or reported attacks immediately, separate from the 15-day critical fix window."
+  },
+  {
+   "obligation": "rbi-n12715:section:0019#4",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown deals with change management for system, application or source code changes or with preserving IT integrity.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0019#5",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown requires patches and changes to be tested and validated in non-production environments before production deployment.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0020#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-06 \u00a72.1",
+    "FP-06 \u00a73.2"
+   ],
+   "policy_quote": "For Severity 1 the CISO opens a bridge with the CTO, CRO and CCO within 30 minutes.",
+   "finding": "The procedure sets internal escalation for Severity 1 incidents and RBI notification within 24 hours, but no cited paragraph shows Board approval of the incident response mechanism or prompt notification of relevant employees and public authorities.",
+   "severity": "medium",
+   "action": "Have the Board approve the cyber incident response mechanism and add explicit prompt notification steps for relevant employees and other regulatory and public authorities."
+  },
+  {
+   "obligation": "rbi-n12715:section:0020#2",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-06 \u00a72.2"
+   ],
+   "policy_quote": "Contain, preserve evidence, eradicate, recover, then review.",
+   "finding": "The policy gives a containment and recovery sequence but does not address readiness for different incident scenarios based on situational awareness and impact, or consistent communication and co-ordination with stakeholders.",
+   "severity": "medium",
+   "action": "Add scenario-based response readiness tied to impact assessment and a stakeholder communication and co-ordination step to the response procedure."
+  },
+  {
+   "obligation": "rbi-n12715:section:0020#3",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-06 \u00a74.1"
+   ],
+   "policy_quote": "A root-cause analysis is written within 15 days of closure and goes to the IT Strategy Committee at its next meeting.",
+   "finding": "The policy requires a root-cause analysis within 15 days but does not require forensic analysis where necessary or an assessment of incident impact.",
+   "severity": "medium",
+   "action": "Require forensic analysis where necessary and a documented impact assessment as part of post-incident analysis."
+  },
+  {
+   "obligation": "rbi-n12715:section:0020#4",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-06 \u00a74.1"
+   ],
+   "policy_quote": "A root-cause analysis is written within 15 days of closure and goes to the IT Strategy Committee at its next meeting.",
+   "finding": "The policy sends the root-cause analysis to the IT Strategy Committee but does not require corrective measures to avoid recurrence or track their implementation.",
+   "severity": "medium",
+   "action": "Require documented corrective and preventive actions to avoid recurrence, with owners and tracking, arising from each root-cause analysis."
+  },
+  {
+   "obligation": "rbi-n12715:section:0020#5",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FP-06 \u00a73.2"
+   ],
+   "policy_quote": "The RBI is informed of a Severity 1 or Severity 2 incident within 24 hours of detection",
+   "finding": "The policy allows 24 hours from detection to inform the RBI of Severity 1 or 2 incidents, while the rule requires reporting of unusual incidents in Annex 1 format within 6 hours of detection.",
+   "severity": "high",
+   "action": "Change the RBI reporting deadline to 6 hours from detection, cover all unusual incident types listed, and use the Incident Reporting Format (Annex 1)."
+  },
+  {
+   "obligation": "rbi-n12715:section:0020#6",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown requires reporting of cyber security incidents to CERT-In.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0021#1",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No shown paragraph requires a BCP built on cyber threat scenarios, including extreme but plausible events; FP-19 (Business Continuity and DR Plan) is indexed but no paragraph from it was provided.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0021#2",
+   "applies": true,
+   "status": "met",
+   "policy_refs": [
+    "FP-18 \u00a75.1"
+   ],
+   "policy_quote": "A policy is reviewed at least once a year, and earlier when a regulation it implements changes.",
+   "finding": "FP-18 \u00a75.1 requires every policy, including the BCP, to be reviewed at least once a year.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0021#3",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-06 \u00a72.2"
+   ],
+   "policy_quote": "Contain, preserve evidence, eradicate, recover, then review.",
+   "finding": "FP-06 \u00a72.2 sets out a cyber incident response sequence of contain, preserve, eradicate, recover and review, but it does not cover a resumption plan or sit within a BCP framework.",
+   "severity": "medium",
+   "action": "Add a comprehensive cyber incident response, resumption and recovery plan to the BCP in FP-19, linking it to the FP-06 response steps."
+  },
+  {
+   "obligation": "rbi-n12715:section:0021#4",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No shown paragraph sets rapid recovery, safe resumption of critical operations, or RTO and RPO alignment for the BCP.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0021#5",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No shown paragraph states an aim of near-zero RPO.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0021#6",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No shown paragraph requires a DR facility in a different seismic zone from the Primary Data Centre.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0021#7",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No shown paragraph provides a data reconciliation methodology to ensure no data loss when resuming from DR.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0021#8",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No shown paragraph requires DR drills at least half-yearly.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0021#9",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No shown paragraph requires analysis and urgent rectification of RTO or RPO divergences found in DR drills.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0022#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a74.4"
+   ],
+   "policy_quote": "Mobile apps check for rooted or jail-broken devices, use certificate pinning and are obfuscated.",
+   "finding": "FP-05 \u00a74.4 covers app-side hardening such as root detection, certificate pinning and obfuscation, but says nothing about authenticating and authorising the communicating applications that call APIs.",
+   "severity": "medium",
+   "action": "Add a policy requirement that every API client application is authenticated and authorised (for example via mutual TLS or signed tokens with scoped access) before it can call any API."
+  },
+  {
+   "obligation": "rbi-n12715:section:0022#2",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a74.4"
+   ],
+   "policy_quote": "Mobile apps check for rooted or jail-broken devices, use certificate pinning and are obfuscated.",
+   "finding": "Certificate pinning in FP-05 \u00a74.4 helps protect app-to-server traffic, but the policy does not require message-level integrity or confidentiality controls for API payloads.",
+   "severity": "medium",
+   "action": "Require encryption and message-level integrity protection (such as signed and encrypted payloads) for all API communications, in addition to certificate pinning."
+  },
+  {
+   "obligation": "rbi-n12715:section:0022#3",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown deals with ensuring that resources are reliably transferred through APIs.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0022#4",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-19 \u00a76.1",
+    "FP-04 \u00a73.3"
+   ],
+   "policy_quote": "For an outage of a critical service longer than 30 minutes, customers see an in-app banner, and the sponsor bank and NPCI are informed.",
+   "finding": "FP-19 \u00a76.1 only covers outage communication, and FP-04 \u00a73.3 covers mule-account indicators on wallets, so neither ensures API availability or detects anomalous API activity.",
+   "severity": "medium",
+   "action": "Add API availability monitoring and anomaly detection on API traffic, with defined mitigation steps such as throttling or blocking of suspicious callers."
+  },
+  {
+   "obligation": "rbi-n12715:section:0022#5",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown commits FlexiPay to adhere to relevant standards or globally recognised frameworks on API security.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0022#6",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown provides periodic information security training for employees and vendors managing information assets.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0022#7",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown provides for periodic evaluation of employees' cyber security awareness.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0022#8",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown provides information security and cyber risk training for board members and key senior management.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0023#1",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown sets out a cloud operation policy within the Information Security Policy covering cloud-hosted activities, CSP roles, data localisation, or protection and recoverability requirements.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0023#2",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a73.1",
+    "FP-05 \u00a72.1"
+   ],
+   "policy_quote": "Production systems are reached only through a bastion host with multi-factor authentication. Privileged access is granted for a fixed time and every session is logged.",
+   "finding": "The policy has strong access controls (bastion host, MFA, time-bound privileged access, session logging) and restricts customer and payment data, but it does not require PSO data to be segregated from other data.",
+   "severity": "medium",
+   "action": "Add a requirement that PSO data is logically or physically segregated from other data in the systems and cloud environments, alongside the existing access controls."
+  },
+  {
+   "obligation": "rbi-n12715:section:0023#3",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph addresses protection of multi-tenant environments against data integrity, confidentiality, or co-mingling risks.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0023#4",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-07 \u00a74.1"
+   ],
+   "policy_quote": "Every contract gives FlexiPay and the RBI the right to audit and inspect the vendor, requires data to be kept confidential and returned on exit, and sets service levels.",
+   "finding": "The contracts give audit and inspection rights, but no paragraph requires an at-least-annual independent information and cyber security audit of the CSP.",
+   "severity": "medium",
+   "action": "Require in vendor contracts that the CSP undergoes independent information and cyber security audits at least annually and that the reports are provided to FlexiPay."
+  },
+  {
+   "obligation": "rbi-n12715:section:0023#5",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a71.1"
+   ],
+   "policy_quote": "The CISO reports to the CEO and presents the information security posture to the IT Strategy Committee.",
+   "finding": "The IT Strategy Committee receives a security posture presentation, but no paragraph requires an annual Board sub-committee review of CSP audit reports, performance, and cyber resilience.",
+   "severity": "medium",
+   "action": "Add a annual review by the IT Strategy Committee of CSP audit reports, performance, and cyber resilience capabilities."
+  },
+  {
+   "obligation": "rbi-n12715:section:0024#1",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown sets out secure configuration of the entire IT infrastructure; FP-05 \u00a74.1 covers encryption and FP-05 \u00a74.3 covers vulnerability fixing deadlines only.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0024#2",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FP-20 \u00a73.1"
+   ],
+   "policy_quote": "There is no risk-based step-up authentication: every transaction gets the same two factors whatever its risk.",
+   "finding": "The rule requires robust authentication and server security against spoofed transactions, but FP-20 applies the same two factors to every transaction with no risk-based step-up.",
+   "severity": "medium",
+   "action": "Add risk-based step-up authentication in FP-20 so that higher-risk transactions receive additional authentication factors, and document the server security measures that prevent spoofed transactions."
+  },
+  {
+   "obligation": "rbi-n12715:section:0024#3",
+   "applies": true,
+   "status": "met",
+   "policy_refs": [
+    "FP-04 \u00a73.1"
+   ],
+   "policy_quote": "A rules engine screens every transaction in real time for velocity, amount, device and location anomalies.",
+   "finding": "FP-04 requires real-time screening of every transaction with a rules engine that flags anomalies, which meets the real-time fraud monitoring requirement.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0024#4",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-04 \u00a73.2"
+   ],
+   "policy_quote": "Alerts are reviewed by fraud operations within 4 hours, 24 hours a day.",
+   "finding": "FP-04 provides round-the-clock review of fraud alerts, but no paragraph shows a 24x7x365 facility for resolving customer-reported unauthorised transactions or responding to Law Enforcement Agencies.",
+   "severity": "medium",
+   "action": "Extend the policy to require a manned 24x7x365 facility for customer-reported unauthorised transaction resolution and for prompt responses to Law Enforcement Agencies."
+  },
+  {
+   "obligation": "rbi-n12715:section:0024#5",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown covers capturing, analysing, storing or archiving audit logs with user and action identification.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0024#6",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown covers controlled access to log data.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0024#7",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown sets a retention period for audit logs, so the five-year minimum is not addressed.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0024#8",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a71.1"
+   ],
+   "policy_quote": "The CISO reports to the CEO and presents the information security posture to the IT Strategy Committee.",
+   "finding": "FP-05 gives the IT Strategy Committee oversight of security posture, but nothing requires the payment architecture to be robust, scalable and sized to transaction volumes, or reviewed by a Board sub-committee.",
+   "severity": "medium",
+   "action": "Add a requirement that the payment architecture's robustness and scalability against transaction volumes is reviewed by the Board sub-committee at set intervals."
+  },
+  {
+   "obligation": "rbi-n12715:section:0024#9",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown requires secure mail and messaging systems; FP-05 \u00a74.1 covers only encryption of data in transit.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0024#10",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown provides for anti-phishing or anti-rogue app subscriptions or takedown of phishing sites and rogue apps.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0025#1",
+   "applies": true,
+   "status": "met",
+   "policy_refs": [
+    "FP-04 \u00a75.1"
+   ],
+   "policy_quote": "In-app messages and SMS campaigns warn customers every month about common frauds (fake KYC calls, screen-sharing apps, QR codes for receiving money).",
+   "finding": "The policy requires monthly in-app and SMS customer awareness messages on common frauds, which meets the ongoing public awareness obligation for FlexiPay as a payment system operator.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0026#1",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "This obligation is addressed to a PSO and FlexiPay is a payment aggregator, PPI issuer and TPAP rather than a PSO, so it does not apply to FlexiPay.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0026#2",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown requires customer notifications to redact or mask account numbers, card numbers or other confidential information, and FP-08 \u00a72.2 covers only SMS access for device binding.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0026#3",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown sets the content of online payment notifications to show the merchant name and amount, or the beneficiary name and debit amount for fund transfers.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0026#4",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "This obligation is addressed to a PSO, and FlexiPay is not a PSO, so it does not apply to FlexiPay.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0026#5",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "This obligation is addressed to a PSO, and FlexiPay is not a PSO, so it does not apply to FlexiPay.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0027#1",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph provides customers with an app or website facility to mark a transaction as fraudulent for immediate notification to the issuer; FP-04 \u00a73.4 covers only FlexiPay's own sharing of confirmed fraud IDs with the sponsor bank and NPCI.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0027#2",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph requires FlexiPay to ensure that system participants can use a fraudulent-transaction marking mechanism; FP-04 \u00a73.4 addresses only next-working-day sharing of confirmed fraudulent UPI IDs and phone numbers.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0028#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-20 \u00a71.1",
+    "FP-05 \u00a74.4"
+   ],
+   "policy_quote": "The FlexiPay app is bound to the customer's SIM and device.",
+   "finding": "The policy covers device binding, SIM binding, and rooted-device checks, but shows no measures for the session, inactivity, failed-login, remote-access, or reversal controls that this section requires.",
+   "severity": "medium",
+   "action": "Add policy coverage for every measure in this section, including session encryption, inactivity timeout, failed-login blocking, remote-access control, and transaction reversal on interference."
+  },
+  {
+   "obligation": "rbi-n12715:section:0028#2",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph requires the PSO to ensure that participants in its payment system, such as merchants or the sponsor bank, comply with these instructions.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0028#3",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a74.4"
+   ],
+   "policy_quote": "Mobile apps check for rooted or jail-broken devices, use certificate pinning and are obfuscated.",
+   "finding": "The policy checks for rooted devices and applies obfuscation, but says nothing about a mechanism that ensures the app has no anomalies or behaviour it was not programmed to have.",
+   "severity": "medium",
+   "action": "Add a control such as code-integrity checks and pre-release testing that confirms the app has no unprogrammed behaviour."
+  },
+  {
+   "obligation": "rbi-n12715:section:0028#4",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a74.4"
+   ],
+   "policy_quote": "Mobile apps check for rooted or jail-broken devices, use certificate pinning and are obfuscated.",
+   "finding": "Certificate pinning supports encryption, but the policy does not require the authenticated session and its encryption to remain intact throughout the customer interaction.",
+   "severity": "medium",
+   "action": "Add a requirement that the authenticated session and its encryption protocol are validated and maintained for the whole customer interaction."
+  },
+  {
+   "obligation": "rbi-n12715:section:0028#5",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph requires the session to end when the customer closes the app or interference occurs, or requires affected transactions to be resolved or reversed.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0028#6",
+   "applies": true,
+   "status": "met",
+   "policy_refs": [
+    "FP-20 \u00a71.1"
+   ],
+   "policy_quote": "The FlexiPay app is bound to the customer's SIM and device.",
+   "finding": "The policy binds the app to both the device and the SIM, as the obligation requires.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0028#7",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The policy requires SMS verification only on a device change and does not require device binding to be repeated after the app has been unused for a specified period.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0028#8",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph requires automatic termination of online sessions after inactivity or a prompt to re-login.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0028#9",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph sets a maximum number of failed log-in or authentication attempts before the app is blocked.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0028#10",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph describes a secure procedure to re-activate access after a block.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0028#11",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph requires the customer to be notified immediately of failed log-in or authentication attempts.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0028#12",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph controls for remote access applications or blocks the payment app while remote access is live; the rooted-device check does not address this.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0028#13",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FP-20 \u00a71.1"
+   ],
+   "policy_quote": "A device change needs a fresh SMS verification and is followed by a 24-hour cooling period with a limit of \u20b95,000.",
+   "finding": "The 24-hour cooling period meets the 12-hour minimum, but it permits payments up to \u20b95,000 during the cooling period, which the rule prohibits, and it does not cover changes to the registered email ID.",
+   "severity": "high",
+   "action": "Remove the \u20b95,000 payment allowance during the cooling period and extend the cooling period to changes of the registered email ID as well as the mobile number."
+  },
+  {
+   "obligation": "rbi-n12715:section:0029#1",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The obligation applies to payment system operators installing merchant card-capture terminals, but FlexiPay is an online payment aggregator (PA-O) and the profile shows no physical merchant terminals.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0029#2",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The PIN-entry PoS terminal approval requirement does not apply because FlexiPay operates online payment gateway services and the profile shows no PoS terminals at merchants.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0029#3",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The 24x7x365 alert mechanism is an obligation of card networks, and FlexiPay is not a card network.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0029#4",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The encryption-at-rest obligation falls on card networks, and FlexiPay is not a card network; its own card-data handling is covered by FP-03 \u00a74.1, which states it does not store card numbers.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0029#5",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The obligation on secure processing of readable card details falls on card networks, and FlexiPay is not a card network.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12715:section:0030#1",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph sets a cooling period between electronic loading of a FlexiWallet and fund transfer or cash withdrawal; the loading and product paragraphs only restrict Small wallets from withdrawal and transfers and do not address a cooling period for Full-KYC wallets.",
+   "severity": "none",
+   "action": null
+  }
+ ],
+ "actions": [
+  {
+   "obligation": "rbi-n12715:section:0008#4",
+   "action": "Require IT assessment reports to be tabled at the next IT oversight committee meeting after they become available, and increase that committee's meeting frequency or add ad hoc meetings for this purpose.",
+   "owner": "Chief Information Security Officer",
+   "priority": "P1",
+   "deadline": "In the meeting due immediately after the report is available",
+   "policy_refs": [
+    "FP-05 \u00a71.2",
+    "FP-18 \u00a72.2"
+   ]
+  },
+  {
+   "obligation": "rbi-n12715:section:0019#3",
+   "action": "Add a mechanism to apply critical patches for well-known or reported attacks immediately, separate from the 15-day critical fix window.",
+   "owner": "Chief Information Security Officer",
+   "priority": "P1",
+   "deadline": "immediately",
+   "policy_refs": [
+    "FP-05 \u00a74.3"
+   ]
+  },
+  {
+   "obligation": "rbi-n12715:section:0020#5",
+   "action": "Change the RBI reporting deadline to 6 hours from detection, cover all unusual incident types listed, and use the Incident Reporting Format (Annex 1).",
+   "owner": "Chief Information Security Officer",
+   "priority": "P1",
+   "deadline": "within 6 hours of detection",
+   "policy_refs": [
+    "FP-06 \u00a73.2"
+   ]
+  },
+  {
+   "obligation": "rbi-n12715:section:0028#13",
+   "action": "Remove the \u20b95,000 payment allowance during the cooling period and extend the cooling period to changes of the registered email ID as well as the mobile number.",
+   "owner": "Chief Information Security Officer",
+   "priority": "P1",
+   "deadline": "minimum 12 hours cooling period after change",
+   "policy_refs": [
+    "FP-20 \u00a71.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12715:section:0006#2",
+   "action": "Extend the Board-approved IT Outsourcing and Vendor Risk Policy (FP-07) to expressly cover cyber and technology risks from linkages with unregulated payment gateways, third-party providers and vendors.",
+   "owner": "Chief Information Security Officer",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FP-05 \u00a71.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12715:section:0009#1",
+   "action": "Extend the asset inventory in FP-05 to record each asset's identifier, network address, location and End of Life Support date alongside the owner.",
+   "owner": "Chief Information Security Officer",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FP-05 \u00a72.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12715:section:0011#1",
+   "action": "Add a clause requiring a unique digital identity for every individual with access to the IT environment, maintained and monitored until that individual's access is terminated.",
+   "owner": "Chief Information Security Officer",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FP-05 \u00a73.1",
+    "FP-05 \u00a73.2"
+   ]
+  },
+  {
+   "obligation": "rbi-n12715:section:0012#2",
+   "action": "Add a need-to-have, need-to-know and least-privilege rule that governs access to development, test and production environments.",
+   "owner": "Chief Information Security Officer",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FP-05 \u00a73.1",
+    "FP-05 \u00a73.2"
+   ]
+  },
+  {
+   "obligation": "rbi-n12715:section:0012#4",
+   "action": "Extend the policy to set out precautions, including MFA, for all remote and work-from-home access to systems and not only production access via the bastion host.",
+   "owner": "Chief Information Security Officer",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FP-05 \u00a73.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12715:section:0014#1",
+   "action": "Add a documented multi-layered boundary defence (for example firewalls and traffic filtering at perimeter and internal layers) covering traffic in and out of FlexiPay and FlexiCredit systems.",
+   "owner": "Chief Information Security Officer",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FP-05 \u00a73.1",
+    "FP-05 \u00a75.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12715:section:0015#4",
+   "action": "Amend FP-07 \u00a73.1 so that procured products and services must also meet the application security life cycle guidelines before contract.",
+   "owner": "Chief Technology Officer",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FP-07 \u00a73.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12715:section:0016#1",
+   "action": "Extend the policy to cover all applications with annual source code review, VA and PT in authenticated mode by qualified professionals.",
+   "owner": "Chief Information Security Officer",
+   "priority": "P2",
+   "deadline": "at least on annual basis",
+   "policy_refs": [
+    "FP-05 \u00a74.2"
+   ]
+  },
+  {
+   "obligation": "rbi-n12715:section:0016#5",
+   "action": "Require recurring security testing observations to be reported to the Board sub-committee for IT oversight with detailed recurrence and resolution analysis.",
+   "owner": "Chief Information Security Officer",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FP-05 \u00a71.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12715:section:0017#1",
+   "action": "Add network-level controls, such as segregated vendor access paths and monitoring of vendor connections, that prevent infiltration from vendor environments.",
+   "owner": "Chief Information Security Officer",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FP-05 \u00a73.1",
+    "FP-07 \u00a74.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12715:section:0017#2",
+   "action": "Require every vendor contract to mandate compliance with applicable data localisation and processing-location rules, with vendors certifying compliance and FlexiPay monitoring it after onboarding.",
+   "owner": "Chief Technology Officer",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FP-07 \u00a73.1",
+    "FP-07 \u00a74.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12715:section:0017#3",
+   "action": "Require critical vendors to provide certified assurance on cyber resilience from an independent auditor before contract and at regular intervals thereafter.",
+   "owner": "Chief Technology Officer",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FP-07 \u00a73.1",
+    "FP-07 \u00a75.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12715:section:0018#1",
+   "action": "Adopt a data leak prevention policy covering data in transit, at rest and at vendor-managed facilities, scaled to information criticality and sensitivity.",
+   "owner": "Chief Information Security Officer",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FP-05 \u00a72.1",
+    "FP-08 \u00a73.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12715:section:0019#1",
+   "action": "Add a documented policy and process for identifying, assessing and implementing patches to technology and software assets released by OEMs and others.",
+   "owner": "Chief Information Security Officer",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FP-05 \u00a74.3"
+   ]
+  },
+  {
+   "obligation": "rbi-n12715:section:0020#1",
+   "action": "Have the Board approve the cyber incident response mechanism and add explicit prompt notification steps for relevant employees and other regulatory and public authorities.",
+   "owner": "Chief Information Security Officer",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FP-06 \u00a72.1",
+    "FP-06 \u00a73.2"
+   ]
+  },
+  {
+   "obligation": "rbi-n12715:section:0020#2",
+   "action": "Add scenario-based response readiness tied to impact assessment and a stakeholder communication and co-ordination step to the response procedure.",
+   "owner": "Chief Information Security Officer",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FP-06 \u00a72.2"
+   ]
+  },
+  {
+   "obligation": "rbi-n12715:section:0020#3",
+   "action": "Require forensic analysis where necessary and a documented impact assessment as part of post-incident analysis.",
+   "owner": "Chief Information Security Officer",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FP-06 \u00a74.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12715:section:0020#4",
+   "action": "Require documented corrective and preventive actions to avoid recurrence, with owners and tracking, arising from each root-cause analysis.",
+   "owner": "Chief Information Security Officer",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FP-06 \u00a74.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12715:section:0021#3",
+   "action": "Add a comprehensive cyber incident response, resumption and recovery plan to the BCP in FP-19, linking it to the FP-06 response steps.",
+   "owner": "Chief Information Security Officer",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FP-06 \u00a72.2"
+   ]
+  },
+  {
+   "obligation": "rbi-n12715:section:0022#1",
+   "action": "Add a policy requirement that every API client application is authenticated and authorised (for example via mutual TLS or signed tokens with scoped access) before it can call any API.",
+   "owner": "Chief Information Security Officer",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FP-05 \u00a74.4"
+   ]
+  },
+  {
+   "obligation": "rbi-n12715:section:0022#2",
+   "action": "Require encryption and message-level integrity protection (such as signed and encrypted payloads) for all API communications, in addition to certificate pinning.",
+   "owner": "Chief Information Security Officer",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FP-05 \u00a74.4"
+   ]
+  },
+  {
+   "obligation": "rbi-n12715:section:0022#4",
+   "action": "Add API availability monitoring and anomaly detection on API traffic, with defined mitigation steps such as throttling or blocking of suspicious callers.",
+   "owner": "Chief Technology Officer",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FP-19 \u00a76.1",
+    "FP-04 \u00a73.3"
+   ]
+  },
+  {
+   "obligation": "rbi-n12715:section:0023#2",
+   "action": "Add a requirement that PSO data is logically or physically segregated from other data in the systems and cloud environments, alongside the existing access controls.",
+   "owner": "Chief Information Security Officer",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FP-05 \u00a73.1",
+    "FP-05 \u00a72.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12715:section:0023#4",
+   "action": "Require in vendor contracts that the CSP undergoes independent information and cyber security audits at least annually and that the reports are provided to FlexiPay.",
+   "owner": "Chief Technology Officer",
+   "priority": "P2",
+   "deadline": "at least annually",
+   "policy_refs": [
+    "FP-07 \u00a74.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12715:section:0023#5",
+   "action": "Add a annual review by the IT Strategy Committee of CSP audit reports, performance, and cyber resilience capabilities.",
+   "owner": "Chief Information Security Officer",
+   "priority": "P2",
+   "deadline": "annually",
+   "policy_refs": [
+    "FP-05 \u00a71.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12715:section:0024#2",
+   "action": "Add risk-based step-up authentication in FP-20 so that higher-risk transactions receive additional authentication factors, and document the server security measures that prevent spoofed transactions.",
+   "owner": "Chief Information Security Officer",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FP-20 \u00a73.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12715:section:0024#4",
+   "action": "Extend the policy to require a manned 24x7x365 facility for customer-reported unauthorised transaction resolution and for prompt responses to Law Enforcement Agencies.",
+   "owner": "Chief Risk Officer",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FP-04 \u00a73.2"
+   ]
+  },
+  {
+   "obligation": "rbi-n12715:section:0024#8",
+   "action": "Add a requirement that the payment architecture's robustness and scalability against transaction volumes is reviewed by the Board sub-committee at set intervals.",
+   "owner": "Chief Information Security Officer",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FP-05 \u00a71.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12715:section:0028#1",
+   "action": "Add policy coverage for every measure in this section, including session encryption, inactivity timeout, failed-login blocking, remote-access control, and transaction reversal on interference.",
+   "owner": "Chief Information Security Officer",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FP-20 \u00a71.1",
+    "FP-05 \u00a74.4"
+   ]
+  },
+  {
+   "obligation": "rbi-n12715:section:0028#3",
+   "action": "Add a control such as code-integrity checks and pre-release testing that confirms the app has no unprogrammed behaviour.",
+   "owner": "Chief Information Security Officer",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FP-05 \u00a74.4"
+   ]
+  },
+  {
+   "obligation": "rbi-n12715:section:0028#4",
+   "action": "Add a requirement that the authenticated session and its encryption protocol are validated and maintained for the whole customer interaction.",
+   "owner": "Chief Information Security Officer",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FP-05 \u00a74.4"
+   ]
+  },
+  {
+   "obligation": "rbi-n12715:section:0001#1",
+   "action": "Add a commitment in FP-05 or FP-20 to endeavour to migrate systems to the latest security standards, with a named owner and review point.",
+   "owner": "Chief Information Security Officer",
+   "priority": "P3",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FP-20 \u00a75.1",
+    "FP-05 \u00a74.3"
+   ]
+  },
+  {
+   "obligation": "rbi-n12715:section:0008#1",
+   "action": "Add an explicit Board resolution entrusting the CISO with responsibility and accountability for implementing the IS policy and cyber resilience framework and for continuous assessment of IS posture.",
+   "owner": "Chief Information Security Officer",
+   "priority": "P3",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FP-05 \u00a71.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12715:section:0010#1",
+   "action": "Extend FP-05 \u00a73.2 to define how access rights are granted, approved, modified and revoked, and cover non-production systems as well as production.",
+   "owner": "Chief Information Security Officer",
+   "priority": "P3",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FP-05 \u00a73.1",
+    "FP-05 \u00a73.2"
+   ]
+  },
+  {
+   "obligation": "rbi-n12715:section:0018#2",
+   "action": "Document a mechanism to trace data assets and their flows across systems and vendors, such as an asset inventory with data lineage.",
+   "owner": "Chief Information Security Officer",
+   "priority": "P3",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FP-05 \u00a72.1"
+   ]
+  }
+ ],
+ "review": [
+  {
+   "kind": "dropped obligation",
+   "text": "The Board of the PSO shall be responsible for ensuring adequate oversight over information security risks, including cyber risk and cyber resilience.",
+   "applies_to": "Board of Directors of the PSO",
+   "deadline": null,
+   "paragraph": "7",
+   "quote": "The Board of Directors (Board) of the PSO shall be responsible for ensuring adequate oversight over information security risks, including cyber risk and cyber resilience.",
+   "id": "",
+   "chunk_id": "",
+   "problems": [
+    "the quote is not in the section"
+   ]
+  },
+  {
+   "kind": "dropped obligation",
+   "text": "Where primary oversight is delegated to a sub-committee of the Board, the sub-committee must be headed by a member with experience in information / cyber security and must meet at least once every quarter.",
+   "applies_to": "Sub-committee of the Board to which oversight is delegated",
+   "deadline": "at least once every quarter",
+   "paragraph": "7",
+   "quote": "headed by a member with experience in information / cyber security, which shall meet at least once every quarter.",
+   "id": "",
+   "chunk_id": "",
+   "problems": [
+    "the quote is not in the section"
+   ]
+  },
+  {
+   "kind": "dropped obligation",
+   "text": "The PSO shall formulate a Board approved Information Security (IS) policy to manage potential information security risks covering all applications and products concerning payment systems, as well as management of risks that have materialised.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "8",
+   "quote": "The PSO shall formulate a Board approved Information Security (IS) policy to manage potential information security risks covering all applications and products concerning payment systems",
+   "id": "",
+   "chunk_id": "",
+   "problems": [
+    "the quote is not in the section"
+   ]
+  },
+  {
+   "kind": "dropped obligation",
+   "text": "The Information Security policy must be reviewed annually.",
+   "applies_to": "PSO",
+   "deadline": "annually",
+   "paragraph": "8",
+   "quote": "The policy shall be reviewed annually. It shall cover at the minimum, (i) roles and responsibilities of Board",
+   "id": "",
+   "chunk_id": "",
+   "problems": [
+    "the quote is not in the section"
+   ]
+  },
+  {
+   "kind": "dropped obligation",
+   "text": "The Information Security policy must cover, at minimum, the roles and responsibilities of the Board / sub-committees of the Board, senior management and other key personnel.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "8(i)",
+   "quote": "It shall cover at the minimum, (i) roles and responsibilities of Board / sub-committees of the Board, senior management and other key personnel;",
+   "id": "",
+   "chunk_id": "",
+   "problems": [
+    "the quote is not in the section"
+   ]
+  },
+  {
+   "kind": "dropped obligation",
+   "text": "The Information Security policy must cover, at minimum, measures to identify, assess, manage and monitor cyber security risk, including various types of security controls for ensuring cyber resiliency.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "8(ii)",
+   "quote": "measures to identify, assess, manage and monitor cyber security risk which shall also include various types of security controls for ensuring cyber resiliency",
+   "id": "",
+   "chunk_id": "",
+   "problems": [
+    "the quote is not in the section"
+   ]
+  },
+  {
+   "kind": "dropped obligation",
+   "text": "The PSO must prepare a distinct Board approved Cyber Crisis Management Plan (CCMP) to detect, contain, respond and recover from cyber threats and cyber attacks.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "9",
+   "quote": "The PSO shall prepare a distinct Board approved Cyber Crisis Management Plan (CCMP) to detect, contain, respond and recover from cyber threats and cyber attacks.",
+   "id": "",
+   "chunk_id": "",
+   "problems": [
+    "the quote is not in the section"
+   ]
+  },
+  {
+   "kind": "dropped obligation",
+   "text": "The PSO shall maintain a record of all the key roles, information assets (applications, data, infrastructure, personnel, services, etc.), critical functions, processes and third-party service providers, and classify and document their levels of usage, criticality and business value.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "14(a)",
+   "quote": "The PSO shall maintain a record of all the key roles, information assets (applications, data, infrastructure, personnel, services, etc.), critical functions, processes and third-party service providers",
+   "id": "",
+   "chunk_id": "",
+   "problems": [
+    "the quote is not in the section"
+   ]
+  },
+  {
+   "kind": "dropped obligation",
+   "text": "A complete process flow diagram of network resources, inter-connections and dependencies, and data flows with other information assets, including any other third-party systems, shall be created and maintained.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "14(b)",
+   "quote": "A complete process flow diagram of network resources, inter-connections and dependencies, and data flows with other information assets, including any other third-party systems, shall be created and maintained.",
+   "id": "",
+   "chunk_id": "",
+   "problems": [
+    "the quote is not in the section"
+   ]
+  },
+  {
+   "kind": "dropped obligation",
+   "text": "The use of privileged accounts shall be with multi-factor authentication and tightly monitored, and appropriate controls, including a rotation policy, shall be implemented.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "15(e)",
+   "quote": "shall be with multi-factor authentication and tightly monitored",
+   "id": "",
+   "chunk_id": "",
+   "problems": [
+    "the quote is not in the section"
+   ]
+  },
+  {
+   "kind": "dropped obligation",
+   "text": "Automated mechanisms (e.g. Security Information and Event Management (SIEM) system) which correlate all network and system alerts and any other anomalous activity across its business units to detect multi-faceted attacks shall be established.",
+   "applies_to": "non-bank Payment System Operators",
+   "deadline": null,
+   "paragraph": "15(c)",
+   "quote": "(c) Automated mechanisms (eg. Security Information and Event Management (SIEM) system), which correlate all network and system alerts and any other anomalous activity across its business units to detect multi-faceted attacks, shall be established;",
+   "id": "",
+   "chunk_id": "",
+   "problems": [
+    "the quote is not in the section"
+   ]
+  },
+  {
+   "kind": "dropped obligation",
+   "text": "Anti-malware solutions shall be implemented so as to prevent, detect and contain malware attacks by scanning all incoming data to prevent malware from being installed and infecting a system.",
+   "applies_to": "non-bank Payment System Operators",
+   "deadline": null,
+   "paragraph": "15(d)",
+   "quote": "(d) Anti-malware solutions shall be implemented so as to prevent, detect and contain malware attacks by scanning all incoming data to prevent malware from being installed and infecting a system;",
+   "id": "",
+   "chunk_id": "",
+   "problems": [
+    "the quote is not in the section"
+   ]
+  },
+  {
+   "kind": "dropped obligation",
+   "text": "The PSO shall ensure that all payment transactions, including cash withdrawals, involving debit to the account conducted through electronic modes are permitted only by validation through multi-factor authentication, except where explicitly permitted / relaxed.",
+   "applies_to": "PSO",
+   "deadline": null,
+   "paragraph": "27(a)",
+   "quote": "The PSO shall ensure that all payment transactions, including cash withdrawals, involving debit to the account conducted through electronic modes (bank accounts / debit cards / credit cards / PPIs, etc.) are permitted only by validation through multi-factor authentication, except where explicitly permitted / relaxed.",
+   "id": "",
+   "chunk_id": "",
+   "problems": [
+    "the quote is not in the section"
+   ]
+  },
+  {
+   "kind": "dropped obligation",
+   "text": "Transaction limits at card, BIN and card issuer level shall mandatorily be set at the card network switch itself.",
+   "applies_to": "card networks",
+   "deadline": null,
+   "paragraph": "33",
+   "quote": "Such limits shall mandatorily be set at the card network switch itself.",
+   "id": "",
+   "chunk_id": "",
+   "problems": [
+    "the quote is not in the section"
+   ]
+  }
+ ]
+}

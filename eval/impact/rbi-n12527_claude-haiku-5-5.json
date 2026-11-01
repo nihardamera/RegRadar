@@ -1,0 +1,1927 @@
+{
+ "doc_id": "rbi-n12527",
+ "title": "Fair Lending Practice - Penal Charges in Loan Accounts",
+ "model": "claude-haiku-5-5",
+ "verdict": "action needed",
+ "problems": [],
+ "counts": {
+  "obligations": 92,
+  "actions": 14,
+  "not_covered": 34,
+  "partial": 9,
+  "gap": 5,
+  "met": 2,
+  "not_applicable": 19,
+  "review": 26
+ },
+ "obligations": [
+  {
+   "text": "Penalty for non-compliance of material terms and conditions of a loan contract, if charged, shall be treated as 'penal charges' and shall not be levied in the form of 'penal interest' added to the rate of interest charged on advances.",
+   "applies_to": "REs",
+   "deadline": null,
+   "paragraph": "3(i)",
+   "quote": "Penalty, if charged, for non-compliance of material terms and conditions of loan contract by the borrower shall be treated as 'penal charges' and shall not be levied in the form of 'penal interest' that is added to the rate of interest charged on the advances.",
+   "id": "rbi-n12527:section:0001#1",
+   "chunk_id": "rbi-n12527:section:0001"
+  },
+  {
+   "text": "REs shall not introduce any additional component to the rate of interest and shall ensure compliance with these guidelines in both letter and spirit.",
+   "applies_to": "REs",
+   "deadline": null,
+   "paragraph": "3(ii)",
+   "quote": "The REs shall not introduce any additional component to the rate of interest and ensure compliance to these guidelines in both letter and spirit.",
+   "id": "rbi-n12527:section:0001#2",
+   "chunk_id": "rbi-n12527:section:0001"
+  },
+  {
+   "text": "REs shall formulate a Board approved policy on penal charges or similar charges on loans, by whatever name called.",
+   "applies_to": "REs",
+   "deadline": null,
+   "paragraph": "3(iii)",
+   "quote": "The REs shall formulate a Board approved policy on penal charges or similar charges on loans, by whatever name called.",
+   "id": "rbi-n12527:section:0001#3",
+   "chunk_id": "rbi-n12527:section:0001"
+  },
+  {
+   "text": "The quantum and reason for penal charges shall be clearly disclosed by REs to customers in the loan agreement and most important terms & conditions / Key Fact Statement (KFS) as applicable, and displayed on the RE's website under Interest rates and Service Charges.",
+   "applies_to": "REs",
+   "deadline": null,
+   "paragraph": "3(vi)",
+   "quote": "The quantum and reason for penal charges shall be clearly disclosed by REs to the customers in the loan agreement and most important terms & conditions / Key Fact Statement (KFS) as applicable, in addition to being displayed on REs website under Interest rates and Service Charges.",
+   "id": "rbi-n12527:section:0001#4",
+   "chunk_id": "rbi-n12527:section:0001"
+  },
+  {
+   "text": "Whenever reminders for non-compliance of material terms and conditions of loan are sent to borrowers, the applicable penal charges shall be communicated.",
+   "applies_to": "REs",
+   "deadline": null,
+   "paragraph": "3(vii)",
+   "quote": "Whenever reminders for non-compliance of material terms and conditions of loan are sent to borrowers, the applicable penal charges shall be communicated.",
+   "id": "rbi-n12527:section:0001#5",
+   "chunk_id": "rbi-n12527:section:0001"
+  },
+  {
+   "text": "Any instance of levy of penal charges and the reason therefor shall be communicated to the borrower.",
+   "applies_to": "REs",
+   "deadline": null,
+   "paragraph": "3(vii)",
+   "quote": "Further, any instance of levy of penal charges and the reason therefor shall also be communicated.",
+   "id": "rbi-n12527:section:0001#6",
+   "chunk_id": "rbi-n12527:section:0001"
+  },
+  {
+   "text": "REs must ensure implementation of the fair lending penal charges instructions in respect of all fresh loans availed or renewed from the effective date (January 1, 2024).",
+   "applies_to": "REs",
+   "deadline": "From January 1, 2024",
+   "paragraph": "(viii)",
+   "quote": "REs may carry out appropriate revisions in their policy framework and ensure implementation of the instructions in respect of all the fresh loans availed/ renewed from the effective date.",
+   "id": "rbi-n12527:section:0002#1",
+   "chunk_id": "rbi-n12527:section:0002"
+  },
+  {
+   "text": "For existing loans, the switchover to the new penal charges regime must be ensured on the next review or renewal date, or six months from the effective date of the circular, whichever is earlier.",
+   "applies_to": "REs",
+   "deadline": "Next review or renewal date, or six months from the effective date of the circular, whichever is earlier",
+   "paragraph": "(viii)",
+   "quote": "In the case of existing loans, the switchover to new penal charges regime shall be ensured on next review or renewal date or six months from the effective date of this circular, whichever is earlier.",
+   "id": "rbi-n12527:section:0002#2",
+   "chunk_id": "rbi-n12527:section:0002"
+  },
+  {
+   "text": "The instructions shall be updated in the relevant Master Directions / Master Circulars of the applicable Regulated Entities (REs).",
+   "applies_to": "Regulated Entities (REs)",
+   "deadline": null,
+   "paragraph": "4",
+   "quote": "and shall be updated in the relevant Master Directions / Master Circulars of the applicable REs. The list of amendments to the Master Directions / Master Circulars has been provided in the Annex.",
+   "id": "rbi-n12527:section:0003#1",
+   "chunk_id": "rbi-n12527:section:0003"
+  },
+  {
+   "text": "Applicable NBFCs shall convey in writing to the borrower, in the vernacular language as understood by the borrower, the amount of loan sanctioned along with the terms and conditions including annualised rate of interest and method of application thereof.",
+   "applies_to": "Applicable NBFCs",
+   "deadline": null,
+   "paragraph": "29",
+   "quote": "Applicable NBFCs shall convey in writing to the borrower in the vernacular language as understood by the borrower by means of sanction letter or otherwise, the amount of loan sanctioned along with the terms and conditions including annualised rate of interest",
+   "id": "rbi-n12527:section:0005#1",
+   "chunk_id": "rbi-n12527:section:0005"
+  },
+  {
+   "text": "Applicable NBFCs shall keep the borrower's acceptance of the loan terms and conditions on their record.",
+   "applies_to": "Applicable NBFCs",
+   "deadline": null,
+   "paragraph": "29",
+   "quote": "and keep the acceptance of these terms and conditions by the borrower on its record.",
+   "id": "rbi-n12527:section:0005#2",
+   "chunk_id": "rbi-n12527:section:0005"
+  },
+  {
+   "text": "Applicable NBFCs shall mention the penalties charged for late repayment in bold in the loan agreement.",
+   "applies_to": "Applicable NBFCs",
+   "deadline": null,
+   "paragraph": "29",
+   "quote": "applicable NBFCs shall mention the penalties charged for late repayment in bold in the loan agreement.",
+   "id": "rbi-n12527:section:0005#3",
+   "chunk_id": "rbi-n12527:section:0005"
+  },
+  {
+   "text": "Applicable NBFCs shall mention the penal interest charged for late repayment in bold in the loan agreement.",
+   "applies_to": "applicable NBFCs",
+   "deadline": null,
+   "paragraph": "",
+   "quote": "applicable NBFCs shall mention the penal interest charged for late repayment in bold in the loan agreement",
+   "id": "rbi-n12527:section:0006#1",
+   "chunk_id": "rbi-n12527:section:0006"
+  },
+  {
+   "text": "Penalty charged for non-compliance of material terms and conditions of the loan contract by the borrower shall be treated as penal charges and shall not be levied in the form of penal interest added to the rate of interest charged on advances.",
+   "applies_to": "REs",
+   "deadline": null,
+   "paragraph": "",
+   "quote": "Penalty, if charged, for non-compliance of material terms and conditions of loan contract by the borrower shall be treated as \u2018penal charges\u2019 and shall not be levied in the form of \u2018penal interest\u2019",
+   "id": "rbi-n12527:section:0006#2",
+   "chunk_id": "rbi-n12527:section:0006"
+  },
+  {
+   "text": "No capitalisation of penal charges is permitted, meaning no further interest shall be computed on such charges.",
+   "applies_to": "REs",
+   "deadline": null,
+   "paragraph": "",
+   "quote": "There shall be no capitalisation of penal charges i.e., no further interest computed on such charges.",
+   "id": "rbi-n12527:section:0006#3",
+   "chunk_id": "rbi-n12527:section:0006"
+  },
+  {
+   "text": "REs shall not introduce any additional component to the rate of interest and must ensure compliance with these guidelines in both letter and spirit.",
+   "applies_to": "REs",
+   "deadline": null,
+   "paragraph": "",
+   "quote": "The REs shall not introduce any additional component to the rate of interest and ensure compliance to these guidelines in both letter and spirit.",
+   "id": "rbi-n12527:section:0006#4",
+   "chunk_id": "rbi-n12527:section:0006"
+  },
+  {
+   "text": "REs shall formulate a Board approved policy on penal charges or similar charges on loans, by whatever name called.",
+   "applies_to": "REs",
+   "deadline": null,
+   "paragraph": "",
+   "quote": "The REs shall formulate a Board approved policy on penal charges or similar charges on loans, by whatever name called.",
+   "id": "rbi-n12527:section:0006#5",
+   "chunk_id": "rbi-n12527:section:0006"
+  },
+  {
+   "text": "The quantum of penal charges shall be reasonable and commensurate with the non-compliance of material terms and conditions of the loan contract, without being discriminatory within a particular loan or product category.",
+   "applies_to": "REs",
+   "deadline": null,
+   "paragraph": "",
+   "quote": "The quantum of penal charges shall be reasonable and commensurate with the non-compliance of material terms and conditions of loan contract without being discriminatory within a particular loan / product category.",
+   "id": "rbi-n12527:section:0006#6",
+   "chunk_id": "rbi-n12527:section:0006"
+  },
+  {
+   "text": "Penal charges for loans sanctioned to individual borrowers for purposes other than business shall not be higher than the penal charges applicable to non-individual borrowers for similar non-compliance of material terms and conditions.",
+   "applies_to": "REs",
+   "deadline": null,
+   "paragraph": "",
+   "quote": "The penal charges in case of loans sanctioned to \u2018individual borrowers, for purposes other than business\u2019, shall not be higher than the penal charges applicable to non-individual borrowers for similar non-compliance of material terms and conditions.",
+   "id": "rbi-n12527:section:0006#7",
+   "chunk_id": "rbi-n12527:section:0006"
+  },
+  {
+   "text": "The quantum and reason for penal charges shall be clearly disclosed by REs to customers in the loan agreement and most important terms and conditions.",
+   "applies_to": "REs",
+   "deadline": null,
+   "paragraph": "",
+   "quote": "The quantum and reason for penal charges shall be clearly disclosed by REs to the customers in the loan agreement and most important terms & conditions",
+   "id": "rbi-n12527:section:0006#8",
+   "chunk_id": "rbi-n12527:section:0006"
+  },
+  {
+   "text": "Whenever reminders for non-compliance of material terms and conditions of a loan are sent to borrowers, the applicable penal charges shall be communicated.",
+   "applies_to": "Regulated Entities (REs)",
+   "deadline": null,
+   "paragraph": "",
+   "quote": "Whenever reminders for non-compliance of material terms and conditions of loan are sent to borrowers, the applicable penal charges shall be communicated.",
+   "id": "rbi-n12527:section:0007#1",
+   "chunk_id": "rbi-n12527:section:0007"
+  },
+  {
+   "text": "Any instance of levy of penal charges, and the reason for it, shall also be communicated to the borrower.",
+   "applies_to": "Regulated Entities (REs)",
+   "deadline": null,
+   "paragraph": "",
+   "quote": "any instance of levy of penal charges and the reason therefor shall also be communicated.",
+   "id": "rbi-n12527:section:0007#2",
+   "chunk_id": "rbi-n12527:section:0007"
+  },
+  {
+   "text": "Penal charges shall be disclosed in the Key Fact Statement (KFS), as applicable, in addition to being displayed on the RE's website under Interest rates and Service Charges.",
+   "applies_to": "Regulated Entities (REs)",
+   "deadline": null,
+   "paragraph": "",
+   "quote": "Key Fact Statement (KFS) as applicable, in addition to being displayed on REs website under Interest rates and Service Charges.",
+   "id": "rbi-n12527:section:0007#3",
+   "chunk_id": "rbi-n12527:section:0007"
+  },
+  {
+   "text": "The RE shall ensure implementation of the new penal charges instructions in respect of all fresh loans availed or renewed from the effective date.",
+   "applies_to": "Regulated Entities (REs)",
+   "deadline": "From January 1, 2024",
+   "paragraph": "",
+   "quote": "ensure implementation of the instructions in respect of all the fresh loans availed/ renewed from the effective date",
+   "id": "rbi-n12527:section:0007#4",
+   "chunk_id": "rbi-n12527:section:0007"
+  },
+  {
+   "text": "For existing loans, the switchover to the new penal charges regime shall be ensured on the next review or renewal date, or six months from the effective date, whichever is earlier.",
+   "applies_to": "Regulated Entities (REs)",
+   "deadline": "Next review or renewal date, or six months from January 1, 2024, whichever is earlier",
+   "paragraph": "",
+   "quote": "the switchover to new penal charges regime shall be ensured on next review or renewal date or six months from the effective date of these instructions, whichever is earlier.",
+   "id": "rbi-n12527:section:0007#5",
+   "chunk_id": "rbi-n12527:section:0007"
+  },
+  {
+   "text": "Applicable NBFCs shall convey in writing to the borrower, in the vernacular language as understood by the borrower, the amount of loan sanctioned along with the terms and conditions including annualised rate of interest and method of application thereof.",
+   "applies_to": "Applicable NBFCs",
+   "deadline": null,
+   "paragraph": "29",
+   "quote": "Applicable NBFCs shall convey in writing to the borrower in the vernacular language as understood by the borrower by means of sanction letter or otherwise, the amount of loan sanctioned",
+   "id": "rbi-n12527:section:0008#1",
+   "chunk_id": "rbi-n12527:section:0008"
+  },
+  {
+   "text": "Applicable NBFCs shall keep the borrower's acceptance of the loan terms and conditions on their record.",
+   "applies_to": "Applicable NBFCs",
+   "deadline": null,
+   "paragraph": "29",
+   "quote": "and keep the acceptance of these terms and conditions by the borrower on its record.",
+   "id": "rbi-n12527:section:0008#2",
+   "chunk_id": "rbi-n12527:section:0008"
+  },
+  {
+   "text": "Applicable NBFCs shall mention the penalties charged for late repayment in bold in the loan agreement.",
+   "applies_to": "Applicable NBFCs",
+   "deadline": null,
+   "paragraph": "29",
+   "quote": "applicable NBFCs shall mention the penalties charged for late repayment in bold in the loan agreement.",
+   "id": "rbi-n12527:section:0008#3",
+   "chunk_id": "rbi-n12527:section:0008"
+  },
+  {
+   "text": "Penalty charged for non-compliance of material terms and conditions of a loan contract by the borrower shall be treated as 'penal charges' and shall not be levied in the form of 'penal interest' added to the rate of interest on advances.",
+   "applies_to": "REs",
+   "deadline": null,
+   "paragraph": "",
+   "quote": "Penalty, if charged, for non-compliance of material terms and conditions of loan contract by the borrower shall be treated as \u2018penal charges\u2019 and shall not be levied in the form of \u2018penal interest\u2019",
+   "id": "rbi-n12527:section:0009#1",
+   "chunk_id": "rbi-n12527:section:0009"
+  },
+  {
+   "text": "There shall be no capitalisation of penal charges, i.e., no further interest shall be computed on such charges; normal compounding of interest in the loan account is not affected.",
+   "applies_to": "REs",
+   "deadline": null,
+   "paragraph": "",
+   "quote": "There shall be no capitalisation of penal charges i.e., no further interest computed on such charges. However, this will not affect the normal procedures for compounding of interest in the loan account.",
+   "id": "rbi-n12527:section:0009#2",
+   "chunk_id": "rbi-n12527:section:0009"
+  },
+  {
+   "text": "REs shall not introduce any additional component to the rate of interest and shall ensure compliance with these guidelines in both letter and spirit.",
+   "applies_to": "REs",
+   "deadline": null,
+   "paragraph": "",
+   "quote": "The REs shall not introduce any additional component to the rate of interest and ensure compliance to these guidelines in both letter and spirit.",
+   "id": "rbi-n12527:section:0009#3",
+   "chunk_id": "rbi-n12527:section:0009"
+  },
+  {
+   "text": "REs shall formulate a Board approved policy on penal charges or similar charges on loans, by whatever name called.",
+   "applies_to": "REs",
+   "deadline": null,
+   "paragraph": "",
+   "quote": "The REs shall formulate a Board approved policy on penal charges or similar charges on loans, by whatever name called.",
+   "id": "rbi-n12527:section:0009#4",
+   "chunk_id": "rbi-n12527:section:0009"
+  },
+  {
+   "text": "The quantum of penal charges shall be reasonable and commensurate with the non-compliance of material terms and conditions of the loan contract, without being discriminatory within a particular loan / product category.",
+   "applies_to": "REs",
+   "deadline": null,
+   "paragraph": "",
+   "quote": "The quantum of penal charges shall be reasonable and commensurate with the non-compliance of material terms and conditions of loan contract without being discriminatory within a particular loan / product category.",
+   "id": "rbi-n12527:section:0009#5",
+   "chunk_id": "rbi-n12527:section:0009"
+  },
+  {
+   "text": "Penal charges for loans sanctioned to individual borrowers for purposes other than business shall not be higher than penal charges applicable to non-individual borrowers for similar non-compliance of material terms and conditions.",
+   "applies_to": "REs (loans to individual borrowers for purposes other than business)",
+   "deadline": null,
+   "paragraph": "",
+   "quote": "The penal charges in case of loans sanctioned to \u2018individual borrowers, for purposes other than business\u2019, shall not be higher than the penal charges applicable to non-individual borrowers",
+   "id": "rbi-n12527:section:0009#6",
+   "chunk_id": "rbi-n12527:section:0009"
+  },
+  {
+   "text": "The quantum and reason for penal charges shall be clearly disclosed to customers in the loan agreement and in the most important terms & conditions / Key Fact Statement (KFS) as applicable, and displayed on the RE's website under Interest rates and Service Charges.",
+   "applies_to": "REs",
+   "deadline": null,
+   "paragraph": "",
+   "quote": "The quantum and reason for penal charges shall be clearly disclosed by REs to the customers in the loan agreement and most important terms & conditions / Key Fact Statement (KFS) as applicable",
+   "id": "rbi-n12527:section:0009#7",
+   "chunk_id": "rbi-n12527:section:0009"
+  },
+  {
+   "text": "Whenever reminders for non-compliance of material terms and conditions of a loan are sent to borrowers, the applicable penal charges shall be communicated.",
+   "applies_to": "REs",
+   "deadline": null,
+   "paragraph": "",
+   "quote": "Whenever reminders for non-compliance of material terms and conditions of loan are sent to borrowers, the applicable penal charges shall be communicated.",
+   "id": "rbi-n12527:section:0010#1",
+   "chunk_id": "rbi-n12527:section:0010"
+  },
+  {
+   "text": "Any instance of levy of penal charges, and the reason therefor, shall also be communicated to the borrower.",
+   "applies_to": "REs",
+   "deadline": null,
+   "paragraph": "",
+   "quote": "Further, any instance of levy of penal charges and the reason therefor shall also be communicated.",
+   "id": "rbi-n12527:section:0010#2",
+   "chunk_id": "rbi-n12527:section:0010"
+  },
+  {
+   "text": "The instructions on communication of penal charges shall be implemented in respect of all fresh loans availed or renewed from the effective date.",
+   "applies_to": "REs",
+   "deadline": "January 1, 2024",
+   "paragraph": "",
+   "quote": "ensure implementation of the instructions in respect of all the fresh loans availed/ renewed from the effective date.",
+   "id": "rbi-n12527:section:0010#3",
+   "chunk_id": "rbi-n12527:section:0010"
+  },
+  {
+   "text": "In the case of existing loans, the switchover to the new penal charges regime shall be ensured on the next review or renewal date or six months from the effective date, whichever is earlier.",
+   "applies_to": "REs",
+   "deadline": "Next review or renewal date or six months from January 1, 2024, whichever is earlier",
+   "paragraph": "",
+   "quote": "In the case of existing loans, the switchover to new penal charges regime shall be ensured on next review or renewal date or six months from the effective date of these instructions, whichever is earlier.",
+   "id": "rbi-n12527:section:0010#4",
+   "chunk_id": "rbi-n12527:section:0010"
+  },
+  {
+   "text": "HFCs shall transparently disclose to the borrower all information about fees/ charges payable for processing the loan application.",
+   "applies_to": "HFCs",
+   "deadline": null,
+   "paragraph": "74.2",
+   "quote": "HFCs shall transparently disclose to the borrower all information about fees/ charges payable for processing the loan application, the amount of fees refundable",
+   "id": "rbi-n12527:section:0011#1",
+   "chunk_id": "rbi-n12527:section:0011"
+  },
+  {
+   "text": "HFCs shall disclose to the borrower the amount of fees refundable if the loan amount is not sanctioned or disbursed.",
+   "applies_to": "HFCs",
+   "deadline": null,
+   "paragraph": "74.2",
+   "quote": "the amount of fees refundable if loan amount is not sanctioned/ disbursed, pre-payment options and charges, if any",
+   "id": "rbi-n12527:section:0011#2",
+   "chunk_id": "rbi-n12527:section:0011"
+  },
+  {
+   "text": "HFCs shall disclose to the borrower pre-payment options and charges, if any.",
+   "applies_to": "HFCs",
+   "deadline": null,
+   "paragraph": "74.2",
+   "quote": "pre-payment options and charges, if any, penal charges for delayed repayment, if any",
+   "id": "rbi-n12527:section:0011#3",
+   "chunk_id": "rbi-n12527:section:0011"
+  },
+  {
+   "text": "HFCs shall disclose to the borrower penal charges for delayed repayment, if any.",
+   "applies_to": "HFCs",
+   "deadline": null,
+   "paragraph": "74.2",
+   "quote": "penal charges for delayed repayment, if any, conversion charges for switching loan from fixed to floating rates",
+   "id": "rbi-n12527:section:0011#4",
+   "chunk_id": "rbi-n12527:section:0011"
+  },
+  {
+   "text": "HFCs shall disclose to the borrower conversion charges for switching a loan from fixed to floating rates or vice versa.",
+   "applies_to": "HFCs",
+   "deadline": null,
+   "paragraph": "74.2",
+   "quote": "conversion charges for switching loan from fixed to floating rates or vice-versa, existence of any interest reset clause",
+   "id": "rbi-n12527:section:0011#5",
+   "chunk_id": "rbi-n12527:section:0011"
+  },
+  {
+   "text": "HFCs shall disclose to the borrower the existence of any interest reset clause and any other matter which affects the interest of the borrower.",
+   "applies_to": "HFCs",
+   "deadline": null,
+   "paragraph": "74.2",
+   "quote": "existence of any interest reset clause and any other matter which affects the interest of the borrower.",
+   "id": "rbi-n12527:section:0011#6",
+   "chunk_id": "rbi-n12527:section:0011"
+  },
+  {
+   "text": "HFCs must disclose the 'all in cost' inclusive of all charges involved in processing/ sanctioning of the loan application in a transparent manner.",
+   "applies_to": "HFCs",
+   "deadline": null,
+   "paragraph": "74.2",
+   "quote": "HFCs must disclose \u2018all in cost\u2019 inclusive of all charges involved in processing/ sanctioning of loan application in a transparent manner.",
+   "id": "rbi-n12527:section:0011#7",
+   "chunk_id": "rbi-n12527:section:0011"
+  },
+  {
+   "text": "HFCs shall ensure that charges and fees for processing/sanctioning loan applications are non-discriminatory.",
+   "applies_to": "HFCs",
+   "deadline": null,
+   "paragraph": "74.2",
+   "quote": "It should also be ensured that such charges/ fees are non-discriminatory.",
+   "id": "rbi-n12527:section:0011#8",
+   "chunk_id": "rbi-n12527:section:0011"
+  },
+  {
+   "text": "HFCs shall convey in writing to the borrower, in the vernacular language or a language understood by the borrower, by sanction letter or otherwise, the sanctioned loan amount along with all terms and conditions including annualized rate of interest, method of application, EMI structure, prepayment charges and penal charges (if any).",
+   "applies_to": "HFCs",
+   "deadline": null,
+   "paragraph": "75.2",
+   "quote": "HFCs shall convey in writing to the borrower in the vernacular language or a language as understood by the borrower by means of sanction letter or otherwise, the amount of loan sanctioned",
+   "id": "rbi-n12527:section:0012#1",
+   "chunk_id": "rbi-n12527:section:0012"
+  },
+  {
+   "text": "HFCs shall keep the borrower's written acceptance of the loan terms and conditions on their record.",
+   "applies_to": "HFCs",
+   "deadline": null,
+   "paragraph": "75.2",
+   "quote": "and keep the written acceptance of these terms and conditions by the borrower on its record.",
+   "id": "rbi-n12527:section:0012#2",
+   "chunk_id": "rbi-n12527:section:0012"
+  },
+  {
+   "text": "HFCs shall give notice to the borrower, in the vernacular language or a language understood by the borrower, of any change in the terms and conditions including disbursement schedule, interest rates, penal charges (if any), service charges, prepayment charges and other applicable fees/charges.",
+   "applies_to": "HFCs",
+   "deadline": null,
+   "paragraph": "76.2",
+   "quote": "The HFCs shall give notice to the borrower in the vernacular language or a language as understood by the borrower of any change in the terms and conditions including disbursement schedule",
+   "id": "rbi-n12527:section:0012#3",
+   "chunk_id": "rbi-n12527:section:0012"
+  },
+  {
+   "text": "HFCs shall ensure that changes in interest rates and charges are effected only prospectively.",
+   "applies_to": "HFCs",
+   "deadline": null,
+   "paragraph": "76.2",
+   "quote": "HFCs should also ensure that changes in interest rates and charges are effected only prospectively. A suitable condition in this regard should be incorporated in the loan agreement.",
+   "id": "rbi-n12527:section:0012#4",
+   "chunk_id": "rbi-n12527:section:0012"
+  },
+  {
+   "text": "The Board of each HFC shall adopt an interest rate model taking into account relevant factors such as cost of funds, margin and risk premium, and determine the rate of interest to be charged for loans and advances.",
+   "applies_to": "HFC (Board of each HFC)",
+   "deadline": null,
+   "paragraph": "80.1",
+   "quote": "The Board of each HFC shall adopt an interest rate model taking into account relevant factors such as cost of funds, margin and risk premium and determine the rate of interest to be charged for loans and advances.",
+   "id": "rbi-n12527:section:0013#1",
+   "chunk_id": "rbi-n12527:section:0013"
+  },
+  {
+   "text": "The rate of interest and the approach for gradation of risk and rationale for charging different rates to different categories of borrowers shall be disclosed to the borrower or customer in the application form and communicated explicitly in the sanction letter.",
+   "applies_to": "HFC",
+   "deadline": null,
+   "paragraph": "80.1",
+   "quote": "The rate of interest and the approach for gradation of risk and rationale for charging different rate of interest to different categories of borrowers shall be disclosed to the borrower or customer in the application form",
+   "id": "rbi-n12527:section:0013#2",
+   "chunk_id": "rbi-n12527:section:0013"
+  },
+  {
+   "text": "The Board of the HFC shall have a clearly laid down policy for penal charges (if any).",
+   "applies_to": "HFC (Board of the HFC)",
+   "deadline": null,
+   "paragraph": "80.1",
+   "quote": "The Board of the HFC shall also have clearly laid down policy for penal charges (if any).",
+   "id": "rbi-n12527:section:0013#3",
+   "chunk_id": "rbi-n12527:section:0013"
+  },
+  {
+   "text": "The rate of interest and penal interest (if any) must be an annualised rate so that the borrower is aware of the exact rates that would be charged to the account.",
+   "applies_to": "HFC",
+   "deadline": null,
+   "paragraph": "80.3",
+   "quote": "The rate of interest and penal interest (if any) must be annualised rate so that the borrower is aware of the exact rates that would be charged to the account",
+   "id": "rbi-n12527:section:0013#4",
+   "chunk_id": "rbi-n12527:section:0013"
+  },
+  {
+   "text": "HFCs shall lay out appropriate internal principles and procedures in determining interest rates and processing and other charges (including penal charges, if any).",
+   "applies_to": "HFCs",
+   "deadline": null,
+   "paragraph": "81",
+   "quote": "HFCs shall lay out appropriate internal principles and procedures in determining interest rates and processing and other charges (including penal charges, if any).",
+   "id": "rbi-n12527:section:0013#5",
+   "chunk_id": "rbi-n12527:section:0013"
+  },
+  {
+   "text": "Penalty charged for non-compliance of material terms and conditions of a loan contract by the borrower shall be treated as 'penal charges' and shall not be levied in the form of 'penal interest' added to the rate of interest charged on advances.",
+   "applies_to": "REs (regulated entities, including HFCs)",
+   "deadline": null,
+   "paragraph": "",
+   "quote": "Penalty, if charged, for non-compliance of material terms and conditions of loan contract by the borrower shall be treated as \u2018penal charges\u2019 and shall not be levied in the form of \u2018penal interest\u2019 that is added to the rate of interest charged on the advances.",
+   "id": "rbi-n12527:section:0014#1",
+   "chunk_id": "rbi-n12527:section:0014"
+  },
+  {
+   "text": "There shall be no capitalisation of penal charges, i.e., no further interest shall be computed on such charges; this does not affect the normal procedures for compounding of interest in the loan account.",
+   "applies_to": "REs (regulated entities, including HFCs)",
+   "deadline": null,
+   "paragraph": "",
+   "quote": "There shall be no capitalisation of penal charges i.e., no further interest computed on such charges. However, this will not affect the normal procedures for compounding of interest in the loan account.",
+   "id": "rbi-n12527:section:0014#2",
+   "chunk_id": "rbi-n12527:section:0014"
+  },
+  {
+   "text": "REs shall not introduce any additional component to the rate of interest and shall ensure compliance with these guidelines in both letter and spirit.",
+   "applies_to": "REs (regulated entities, including HFCs)",
+   "deadline": null,
+   "paragraph": "",
+   "quote": "The REs shall not introduce any additional component to the rate of interest and ensure compliance to these guidelines in both letter and spirit.",
+   "id": "rbi-n12527:section:0014#3",
+   "chunk_id": "rbi-n12527:section:0014"
+  },
+  {
+   "text": "REs shall formulate a Board approved policy on penal charges or similar charges on loans, by whatever name called.",
+   "applies_to": "REs (regulated entities, including HFCs)",
+   "deadline": null,
+   "paragraph": "",
+   "quote": "The REs shall formulate a Board approved policy on penal charges or similar charges on loans, by whatever name called.",
+   "id": "rbi-n12527:section:0014#4",
+   "chunk_id": "rbi-n12527:section:0014"
+  },
+  {
+   "text": "The quantum of penal charges shall be reasonable and commensurate with the non-compliance of material terms and conditions of the loan contract.",
+   "applies_to": "REs (regulated entities, including HFCs)",
+   "deadline": null,
+   "paragraph": "",
+   "quote": "The quantum of penal charges shall be reasonable and commensurate with the non-compliance of material terms and conditions of loan contract",
+   "id": "rbi-n12527:section:0014#5",
+   "chunk_id": "rbi-n12527:section:0014"
+  },
+  {
+   "text": "REs shall not levy penal charges on individual borrowers for non-business purposes that are higher than the penal charges applicable to non-individual borrowers for similar non-compliance of material terms and conditions.",
+   "applies_to": "REs",
+   "deadline": null,
+   "paragraph": "",
+   "quote": "The penal charges in case of loans sanctioned to \u2018individual borrowers, for purposes other than business\u2019, shall not be higher than the penal charges applicable to non-individual borrowers for similar non-compliance of material terms and conditions.",
+   "id": "rbi-n12527:section:0015#1",
+   "chunk_id": "rbi-n12527:section:0015"
+  },
+  {
+   "text": "REs shall clearly disclose the quantum and reason for penal charges to customers in the loan agreement and in the most important terms & conditions / Key Fact Statement (KFS), as applicable, and display them on the RE's website under Interest rates and Service Charges.",
+   "applies_to": "REs",
+   "deadline": null,
+   "paragraph": "",
+   "quote": "The quantum and reason for penal charges shall be clearly disclosed by REs to the customers in the loan agreement and most important terms & conditions / Key Fact Statement (KFS) as applicable",
+   "id": "rbi-n12527:section:0015#2",
+   "chunk_id": "rbi-n12527:section:0015"
+  },
+  {
+   "text": "REs shall communicate the applicable penal charges whenever reminders for non-compliance of material terms and conditions of a loan are sent to borrowers.",
+   "applies_to": "REs",
+   "deadline": null,
+   "paragraph": "",
+   "quote": "Whenever reminders for non-compliance of material terms and conditions of loan are sent to borrowers, the applicable penal charges shall be communicated.",
+   "id": "rbi-n12527:section:0015#3",
+   "chunk_id": "rbi-n12527:section:0015"
+  },
+  {
+   "text": "REs shall communicate any instance of levy of penal charges and the reason therefor.",
+   "applies_to": "REs",
+   "deadline": null,
+   "paragraph": "",
+   "quote": "Further, any instance of levy of penal charges and the reason therefor shall also be communicated.",
+   "id": "rbi-n12527:section:0015#4",
+   "chunk_id": "rbi-n12527:section:0015"
+  },
+  {
+   "text": "REs shall ensure implementation of the new penal charges instructions for all fresh loans availed or renewed from the effective date.",
+   "applies_to": "REs",
+   "deadline": "from January 1, 2024",
+   "paragraph": "",
+   "quote": "ensure implementation of the instructions in respect of all the fresh loans availed/ renewed from the effective date",
+   "id": "rbi-n12527:section:0015#5",
+   "chunk_id": "rbi-n12527:section:0015"
+  },
+  {
+   "text": "REs shall ensure the switchover to the new penal charges regime for existing loans on the next review or renewal date, or six months from the effective date of these instructions, whichever is earlier.",
+   "applies_to": "REs",
+   "deadline": "next review or renewal date or six months from the effective date of these instructions, whichever is earlier",
+   "paragraph": "",
+   "quote": "In the case of existing loans, the switchover to new penal charges regime shall be ensured on next review or renewal date or six months from the effective date of these instructions, whichever is earlier.",
+   "id": "rbi-n12527:section:0015#6",
+   "chunk_id": "rbi-n12527:section:0015"
+  },
+  {
+   "text": "HFCs shall provide information on interest rates, common fees and charges (including penal charges, if any) through notices in their branches, through telephone or help-lines, and on the company's website, among other channels.",
+   "applies_to": "HFCs",
+   "deadline": null,
+   "paragraph": "82.3",
+   "quote": "HFCs shall provide information on interest rates, common fees and charges (including penal charges, if any) through putting up notices in their branches; through telephone or help-lines; on the company\u2019s website",
+   "id": "rbi-n12527:section:0015#7",
+   "chunk_id": "rbi-n12527:section:0015"
+  },
+  {
+   "text": "Penalty for non-compliance of material terms and conditions of a loan contract by the borrower shall be treated as 'penal charges' and shall not be levied in the form of 'penal interest' added to the rate of interest charged on advances.",
+   "applies_to": "REs",
+   "deadline": null,
+   "paragraph": "",
+   "quote": "Penalty, if charged, for non-compliance of material terms and conditions of loan contract by the borrower shall be treated as \u2018penal charges\u2019 and shall not be levied in the form of \u2018penal interest\u2019",
+   "id": "rbi-n12527:section:0016#1",
+   "chunk_id": "rbi-n12527:section:0016"
+  },
+  {
+   "text": "There shall be no capitalisation of penal charges, i.e., no further interest shall be computed on such charges.",
+   "applies_to": "REs",
+   "deadline": null,
+   "paragraph": "",
+   "quote": "There shall be no capitalisation of penal charges i.e., no further interest computed on such charges.",
+   "id": "rbi-n12527:section:0016#2",
+   "chunk_id": "rbi-n12527:section:0016"
+  },
+  {
+   "text": "REs shall not introduce any additional component to the rate of interest and must ensure compliance with these guidelines in both letter and spirit.",
+   "applies_to": "REs",
+   "deadline": null,
+   "paragraph": "",
+   "quote": "The REs shall not introduce any additional component to the rate of interest and ensure compliance to these guidelines in both letter and spirit.",
+   "id": "rbi-n12527:section:0016#3",
+   "chunk_id": "rbi-n12527:section:0016"
+  },
+  {
+   "text": "REs shall formulate a Board approved policy on penal charges or similar charges on loans, by whatever name called.",
+   "applies_to": "REs",
+   "deadline": null,
+   "paragraph": "",
+   "quote": "The REs shall formulate a Board approved policy on penal charges or similar charges on loans, by whatever name called.",
+   "id": "rbi-n12527:section:0017#1",
+   "chunk_id": "rbi-n12527:section:0017"
+  },
+  {
+   "text": "The quantum of penal charges shall be reasonable and commensurate with the non-compliance of material terms and conditions of loan contract, without being discriminatory within a particular loan / product category.",
+   "applies_to": "REs",
+   "deadline": null,
+   "paragraph": "",
+   "quote": "The quantum of penal charges shall be reasonable and commensurate with the non-compliance of material terms and conditions of loan contract without being discriminatory within a particular loan / product category.",
+   "id": "rbi-n12527:section:0017#2",
+   "chunk_id": "rbi-n12527:section:0017"
+  },
+  {
+   "text": "Penal charges for loans sanctioned to individual borrowers for purposes other than business shall not be higher than the penal charges applicable to non-individual borrowers for similar non-compliance of material terms and conditions.",
+   "applies_to": "REs in respect of loans sanctioned to individual borrowers for purposes other than business",
+   "deadline": null,
+   "paragraph": "",
+   "quote": "The penal charges in case of loans sanctioned to \u2018individual borrowers, for purposes other than business\u2019, shall not be higher than the penal charges applicable to non-individual borrowers for similar non-compliance of material terms and conditions.",
+   "id": "rbi-n12527:section:0017#3",
+   "chunk_id": "rbi-n12527:section:0017"
+  },
+  {
+   "text": "The quantum and reason for penal charges shall be clearly disclosed by REs to customers in the loan agreement and most important terms & conditions / Key Fact Statement (KFS) as applicable, and displayed on the RE's website under Interest rates and Service Charges.",
+   "applies_to": "REs",
+   "deadline": null,
+   "paragraph": "",
+   "quote": "The quantum and reason for penal charges shall be clearly disclosed by REs to the customers in the loan agreement and most important terms & conditions / Key Fact Statement (KFS) as applicable, in addition to being displayed on REs website under Interest rates and Service Charges.",
+   "id": "rbi-n12527:section:0017#4",
+   "chunk_id": "rbi-n12527:section:0017"
+  },
+  {
+   "text": "Whenever reminders for non-compliance of material terms and conditions of loan are sent to borrowers, the applicable penal charges shall be communicated.",
+   "applies_to": "REs",
+   "deadline": null,
+   "paragraph": "",
+   "quote": "Whenever reminders for non-compliance of material terms and conditions of loan are sent to borrowers, the applicable penal charges shall be communicated.",
+   "id": "rbi-n12527:section:0017#5",
+   "chunk_id": "rbi-n12527:section:0017"
+  },
+  {
+   "text": "Any instance of levy of penal charges and the reason therefor shall be communicated to the borrower.",
+   "applies_to": "REs",
+   "deadline": null,
+   "paragraph": "",
+   "quote": "Further, any instance of levy of penal charges and the reason therefor shall also be communicated.",
+   "id": "rbi-n12527:section:0017#6",
+   "chunk_id": "rbi-n12527:section:0017"
+  },
+  {
+   "text": "REs shall ensure implementation of the instructions in respect of all fresh loans availed or renewed from January 1, 2024.",
+   "applies_to": "REs",
+   "deadline": "January 1, 2024",
+   "paragraph": "",
+   "quote": "REs may carry out appropriate revisions in their policy framework and ensure implementation of the instructions in respect of all the fresh loans availed/ renewed from the effective date.",
+   "id": "rbi-n12527:section:0017#7",
+   "chunk_id": "rbi-n12527:section:0017"
+  },
+  {
+   "text": "For existing loans, REs shall switch over to the new penal charges regime on the next review or renewal date or within six months from the effective date, whichever is earlier.",
+   "applies_to": "REs in respect of existing loans",
+   "deadline": "next review or renewal date or six months from January 1, 2024, whichever is earlier",
+   "paragraph": "",
+   "quote": "In the case of existing loans, the switchover to new penal charges regime shall be ensured on next review or renewal date or six months from the effective date of these instructions, whichever is earlier.",
+   "id": "rbi-n12527:section:0017#8",
+   "chunk_id": "rbi-n12527:section:0017"
+  },
+  {
+   "text": "Penal charges for non-compliance of material loan terms must not be levied in the form of penal interest added to the rate of interest charged on advances.",
+   "applies_to": "REs",
+   "deadline": null,
+   "paragraph": "6",
+   "quote": "shall be treated as \u2018penal charges\u2019 and shall not be levied in the form of \u2018penal interest\u2019 that is added to the rate of interest charged on the advances",
+   "id": "rbi-n12527:section:0018#1",
+   "chunk_id": "rbi-n12527:section:0018"
+  },
+  {
+   "text": "No capitalisation of penal charges is permitted, i.e., no further interest may be computed on such charges; normal compounding of interest in the loan account is not affected.",
+   "applies_to": "REs",
+   "deadline": null,
+   "paragraph": "6",
+   "quote": "There shall be no capitalisation of penal charges i.e., no further interest computed on such charges.",
+   "id": "rbi-n12527:section:0018#2",
+   "chunk_id": "rbi-n12527:section:0018"
+  },
+  {
+   "text": "REs shall not introduce any additional component to the rate of interest and must ensure compliance with these guidelines in both letter and spirit.",
+   "applies_to": "REs",
+   "deadline": null,
+   "paragraph": "6",
+   "quote": "The REs shall not introduce any additional component to the rate of interest and ensure compliance to these guidelines in both letter and spirit.",
+   "id": "rbi-n12527:section:0018#3",
+   "chunk_id": "rbi-n12527:section:0018"
+  },
+  {
+   "text": "REs must formulate a Board approved policy on penal charges or similar charges on loans, by whatever name called.",
+   "applies_to": "REs",
+   "deadline": null,
+   "paragraph": "6",
+   "quote": "The REs shall formulate a Board approved policy on penal charges or similar charges on loans, by whatever name called.",
+   "id": "rbi-n12527:section:0018#4",
+   "chunk_id": "rbi-n12527:section:0018"
+  },
+  {
+   "text": "The quantum of penal charges must be reasonable and commensurate with the non-compliance of material terms and conditions, and must not be discriminatory within a particular loan/product category.",
+   "applies_to": "REs",
+   "deadline": null,
+   "paragraph": "6",
+   "quote": "The quantum of penal charges shall be reasonable and commensurate with the non-compliance of material terms and conditions of loan contract without being discriminatory within a particular loan / product category.",
+   "id": "rbi-n12527:section:0018#5",
+   "chunk_id": "rbi-n12527:section:0018"
+  },
+  {
+   "text": "Penal charges for individual borrowers for purposes other than business must not be higher than those applicable to non-individual borrowers for similar non-compliance.",
+   "applies_to": "REs (loans to individual borrowers, for purposes other than business)",
+   "deadline": null,
+   "paragraph": "6",
+   "quote": "The penal charges in case of loans sanctioned to \u2018individual borrowers, for purposes other than business\u2019, shall not be higher than the penal charges applicable to non-individual borrowers",
+   "id": "rbi-n12527:section:0018#6",
+   "chunk_id": "rbi-n12527:section:0018"
+  },
+  {
+   "text": "REs must clearly disclose the quantum and reason for penal charges to customers in the loan agreement and most important terms & conditions / Key Fact Statement (KFS) as applicable, and display them on the RE website under Interest rates and Service Charges.",
+   "applies_to": "REs",
+   "deadline": null,
+   "paragraph": "6",
+   "quote": "The quantum and reason for penal charges shall be clearly disclosed by REs to the customers in the loan agreement and most important terms & conditions / Key Fact Statement (KFS) as applicable",
+   "id": "rbi-n12527:section:0018#7",
+   "chunk_id": "rbi-n12527:section:0018"
+  },
+  {
+   "text": "REs must clearly disclose the quantum and reason for penal charges to customers in the loan agreement and in the most important terms & conditions / Key Fact Statement (KFS), as applicable.",
+   "applies_to": "REs",
+   "deadline": null,
+   "paragraph": "2.5",
+   "quote": "The quantum and reason for penal charges shall be clearly disclosed by REs to the customers in the loan agreement and most important terms & conditions / Key Fact Statement (KFS) as applicable",
+   "id": "rbi-n12527:section:0019#1",
+   "chunk_id": "rbi-n12527:section:0019"
+  },
+  {
+   "text": "REs must display the quantum and reason for penal charges on their website under Interest rates and Service Charges.",
+   "applies_to": "REs",
+   "deadline": null,
+   "paragraph": "2.5",
+   "quote": "in addition to being displayed on REs website under Interest rates and Service Charges",
+   "id": "rbi-n12527:section:0019#2",
+   "chunk_id": "rbi-n12527:section:0019"
+  },
+  {
+   "text": "Whenever REs send reminders to borrowers for non-compliance of material terms and conditions of a loan, the applicable penal charges must be communicated.",
+   "applies_to": "REs",
+   "deadline": null,
+   "paragraph": "2.5",
+   "quote": "Whenever reminders for non-compliance of material terms and conditions of loan are sent to borrowers, the applicable penal charges shall be communicated.",
+   "id": "rbi-n12527:section:0019#3",
+   "chunk_id": "rbi-n12527:section:0019"
+  },
+  {
+   "text": "Any instance of levy of penal charges, and the reason therefor, must be communicated to the borrower.",
+   "applies_to": "REs",
+   "deadline": null,
+   "paragraph": "2.5",
+   "quote": "Further, any instance of levy of penal charges and the reason therefor shall also be communicated.",
+   "id": "rbi-n12527:section:0019#4",
+   "chunk_id": "rbi-n12527:section:0019"
+  },
+  {
+   "text": "REs must ensure implementation of the new penal charges instructions in respect of all fresh loans availed or renewed from the effective date.",
+   "applies_to": "REs",
+   "deadline": "from January 1, 2024",
+   "paragraph": "",
+   "quote": "ensure implementation of the instructions in respect of all the fresh loans availed/ renewed from the effective date",
+   "id": "rbi-n12527:section:0019#5",
+   "chunk_id": "rbi-n12527:section:0019"
+  },
+  {
+   "text": "For existing loans, REs must ensure the switchover to the new penal charges regime on the next review or renewal date, or six months from the effective date of the instructions, whichever is earlier.",
+   "applies_to": "REs",
+   "deadline": "on next review or renewal date or six months from the effective date, whichever is earlier",
+   "paragraph": "",
+   "quote": "In the case of existing loans, the switchover to new penal charges regime shall be ensured on next review or renewal date or six months from the effective date of these instructions, whichever is earlier.",
+   "id": "rbi-n12527:section:0019#6",
+   "chunk_id": "rbi-n12527:section:0019"
+  }
+ ],
+ "ratings": [
+  {
+   "obligation": "rbi-n12527:section:0001#3",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shows a Board-approved policy on penal charges or similar charges; FC-14 \u00a77.1 only requires an annual Board review of compliance with the code.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12527:section:0001#5",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph requires the applicable penal charges to be communicated when reminders for non-compliance are sent to borrowers.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12527:section:0001#6",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph requires borrowers to be told each time a penal charge is levied and the reason for it.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12527:section:0002#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FC-14 \u00a73.1"
+   ],
+   "policy_quote": "If an EMI is not paid on its due date, **penal interest** of 2% a month is added to the loan's interest rate on the overdue amount until it is paid.",
+   "finding": "FC-14 \u00a73.1 sets a 2% monthly penal interest on overdue EMIs but does not reference the fair lending penal charges instructions or the 1 January 2024 effective date for fresh loans, and it adds penal interest to the loan's interest rate, which the instructions may not permit.",
+   "severity": "medium",
+   "action": "Align FC-14 \u00a73.1 with the fair lending penal charges instructions, confirm the regime applies to all fresh loans from 1 January 2024, and stop adding penal interest to the loan's interest rate."
+  },
+  {
+   "obligation": "rbi-n12527:section:0002#2",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph sets out a switchover of existing loans to the new penal charges regime on the next review or renewal date, or within six months of the circular's effective date.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12527:section:0003#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-18 \u00a73.3",
+    "FP-18 \u00a75.1"
+   ],
+   "policy_quote": "The CCO decides whether it applies, and assigns an owner and a deadline for any change.",
+   "finding": "FP-18 \u00a73.3 requires the CCO to review each new RBI circular and assign owners and deadlines for changes, and FP-18 \u00a75.1 requires policies to be reviewed when a regulation changes, but no paragraph explicitly requires the relevant Master Directions or internal policies to be updated once the circular is applied.",
+   "severity": "low",
+   "action": "Add a step to FP-18 \u00a73.3 requiring the compliance team to record when the affected Master Direction or internal policy has been updated to reflect each circular."
+  },
+  {
+   "obligation": "rbi-n12527:section:0005#1",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FC-14 \u00a71.1",
+    "FC-14 \u00a72.1"
+   ],
+   "policy_quote": "Loan application screens are in English and Hindi. Applicants are told within 2 working days whether the loan is sanctioned.",
+   "finding": "FC-14 covers English and Hindi screens and a sanction notice within 2 working days, but does not require written communication of the sanctioned amount, full terms, annualised interest rate and method of application in the borrower's vernacular language.",
+   "severity": "medium",
+   "action": "Add a step requiring written communication to each borrower, in the vernacular they understand, of the sanctioned amount, all terms and conditions, the annualised interest rate and how it is applied."
+  },
+  {
+   "obligation": "rbi-n12527:section:0005#2",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown requires FlexiCredit to record and keep the borrower's acceptance of the loan terms and conditions.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12527:section:0005#3",
+   "applies": true,
+   "status": "met",
+   "policy_refs": [
+    "FC-14 \u00a73.1"
+   ],
+   "policy_quote": "If an EMI is not paid on its due date, **penal interest** of 2% a month is added to the loan's interest rate on the overdue amount until it is paid.",
+   "finding": "FC-14 \u00a73.1 sets out the late-payment penal interest and formats the penal interest term in bold, which meets the bold requirement for late-repayment penalties in the loan agreement.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12527:section:0006#1",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The obligation applies to applicable NBFCs, and FlexiCredit is a Base Layer NBFC-ICC, so the bold-disclosure requirement is outside its scope.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12527:section:0006#5",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FC-14 \u00a77.1"
+   ],
+   "policy_quote": "The Board reviews compliance with this code every year.",
+   "finding": "The policy has an annual Board review of compliance with the Fair Practices Code, but no paragraph shows that the Board approves a policy on penal charges.",
+   "severity": "medium",
+   "action": "Add a requirement that the Board approves a dedicated policy on penal charges and similar charges on loans."
+  },
+  {
+   "obligation": "rbi-n12527:section:0006#7",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown sets penal charges for individual borrowers relative to non-individual borrowers, so the cap on individual non-business loans is not addressed.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12527:section:0007#2",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph requires borrowers to be told of each instance of penal charge levy and the reason for it.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12527:section:0007#3",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FC-13 \u00a73.1"
+   ],
+   "policy_quote": "It shows the annual percentage rate (APR), the recovery mechanism, the grievance officer and the cooling-off terms.",
+   "finding": "FC-13 \u00a73.1 lists what the Key Fact Statement shows but omits penal charges, and no paragraph requires penal charges to be displayed on the website under Interest rates and Service Charges.",
+   "severity": "medium",
+   "action": "Add penal charges to the Key Fact Statement and display them on the website under Interest rates and Service Charges."
+  },
+  {
+   "obligation": "rbi-n12527:section:0007#4",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown ties the penal charge regime to fresh loans availed or renewed from 1 January 2024.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12527:section:0007#5",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph sets a switchover of existing loans to the new penal charges regime at the next review or renewal date or within six months.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12527:section:0008#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FC-14 \u00a71.1",
+    "FC-14 \u00a72.1"
+   ],
+   "policy_quote": "Applicants are told within 2 working days whether the loan is sanctioned. A rejected applicant is told the main reasons in writing.",
+   "finding": "FC-14 requires applicants to be told of sanction within 2 working days and in English and Hindi screens, but does not require the sanctioned amount, full terms, annualised rate and method of application to be conveyed in writing in the borrower's language.",
+   "severity": "medium",
+   "action": "Amend FC-14 \u00a71.1 to require written communication of the sanctioned amount, full terms, annualised interest rate and its method of application, in the vernacular language understood by each borrower."
+  },
+  {
+   "obligation": "rbi-n12527:section:0008#2",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown requires FlexiCredit to record the borrower's acceptance of loan terms and conditions.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12527:section:0008#3",
+   "applies": true,
+   "status": "met",
+   "policy_refs": [
+    "FC-14 \u00a73.1"
+   ],
+   "policy_quote": "**penal interest** of 2% a month is added to the loan's interest rate on the overdue amount",
+   "finding": "The policy states the late-payment penalty (penal interest of 2% a month) with the penalty term shown in bold, which meets the bold-disclosure requirement.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12527:section:0009#2",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph in the policies states that penal charges are not capitalised, so the no-capitalisation rule is not addressed.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12527:section:0009#4",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FC-14 \u00a77.1"
+   ],
+   "policy_quote": "The Board reviews compliance with this code every year.",
+   "finding": "FC-14 \u00a77.1 provides for annual Board review of compliance with the code, but no paragraph says the Board approves a policy on penal charges.",
+   "severity": "medium",
+   "action": "Add a requirement that the Board approves a policy on penal and similar charges on loans, in addition to its annual review."
+  },
+  {
+   "obligation": "rbi-n12527:section:0009#6",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph sets penal charges for individual borrowers (non-business purposes) at or below those for non-individual borrowers, so this rule is not addressed.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12527:section:0009#7",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph requires the quantum and reason for penal charges to be disclosed in the loan agreement, the Key Fact Statement or on the website.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12527:section:0010#1",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph shows that the applicable penal charges are communicated to borrowers when reminders for non-compliance with material loan terms are sent; FC-14 \u00a73.1 states the 2% penalty but not that it is communicated in reminders.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12527:section:0010#2",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph requires that each instance of penal charge levy, and its reason, be communicated to the borrower.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12527:section:0010#3",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph implements communication of penal charges for fresh or renewed loans from the January 1, 2024 effective date.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12527:section:0010#4",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph sets out a switchover of existing loans to the new penal charges communication regime at the next review or renewal date or within six months.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12527:section:0011#1",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The obligation applies only to Housing Finance Companies, and FlexiCredit is an NBFC-ICC in the Base Layer, not an HFC.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12527:section:0011#2",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The obligation applies only to Housing Finance Companies, and FlexiCredit is an NBFC-ICC in the Base Layer, not an HFC.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12527:section:0011#3",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The obligation applies only to Housing Finance Companies, and FlexiCredit is an NBFC-ICC in the Base Layer, not an HFC.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12527:section:0011#4",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The obligation applies only to Housing Finance Companies, and FlexiCredit is an NBFC-ICC in the Base Layer, not an HFC.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12527:section:0011#5",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The obligation applies only to Housing Finance Companies, and FlexiCredit is an NBFC-ICC in the Base Layer, not an HFC.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12527:section:0011#6",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The obligation applies only to Housing Finance Companies, and FlexiCredit is an NBFC-ICC in the Base Layer, not an HFC.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12527:section:0011#7",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The obligation applies only to Housing Finance Companies, and FlexiCredit is an NBFC-ICC in the Base Layer, not an HFC.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12527:section:0011#8",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The obligation applies only to Housing Finance Companies, and FlexiCredit is an NBFC-ICC in the Base Layer, not an HFC.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12527:section:0012#1",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The obligation applies only to housing finance companies (HFCs), and FlexiCredit is a base-layer NBFC-ICC, not an HFC, so the rule does not apply.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12527:section:0012#2",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The obligation applies only to housing finance companies (HFCs), and FlexiCredit is a base-layer NBFC-ICC, not an HFC, so the rule does not apply.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12527:section:0012#3",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The obligation applies only to housing finance companies (HFCs), and FlexiCredit is a base-layer NBFC-ICC, not an HFC, so the rule does not apply.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12527:section:0012#4",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The obligation applies only to housing finance companies (HFCs), and FlexiCredit is a base-layer NBFC-ICC, not an HFC, so the rule does not apply.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12527:section:0013#1",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "This obligation applies only to Housing Finance Companies (HFCs), and FlexiCredit is an NBFC-ICC in the Base Layer, not an HFC, so no policy assessment is required.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12527:section:0013#2",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "This obligation applies only to HFCs, and FlexiCredit is an NBFC-ICC in the Base Layer, not an HFC, so no policy assessment is required.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12527:section:0013#3",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "This obligation applies only to HFCs, and FlexiCredit is an NBFC-ICC in the Base Layer, not an HFC, so no policy assessment is required.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12527:section:0013#4",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "This obligation applies only to HFCs, and FlexiCredit is an NBFC-ICC in the Base Layer, not an HFC, so no policy assessment is required.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12527:section:0013#5",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "This obligation applies only to HFCs, and FlexiCredit is an NBFC-ICC in the Base Layer, not an HFC, so no policy assessment is required.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12527:section:0014#4",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FC-14 \u00a77.1"
+   ],
+   "policy_quote": "The Board reviews compliance with this code every year.",
+   "finding": "The policy has an annual Board review of compliance with the Fair Practices Code but does not show a Board-approved policy on penal charges or similar charges.",
+   "severity": "medium",
+   "action": "Have the Board formally approve a penal charges policy covering all penal and similar loan charges, and reference it in FC-14."
+  },
+  {
+   "obligation": "rbi-n12527:section:0015#2",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FC-13 \u00a73.1"
+   ],
+   "policy_quote": "It shows the annual percentage rate (APR), the recovery mechanism, the grievance officer and the cooling-off terms.",
+   "finding": "The KFS under FC-13 \u00a73.1 does not require the quantum and reason for penal charges, and no paragraph requires disclosure of them in the loan agreement or on the website.",
+   "severity": "medium",
+   "action": "Add the quantum and reason for penal charges to the loan agreement, the KFS and the website's Interest rates and Service Charges section."
+  },
+  {
+   "obligation": "rbi-n12527:section:0015#3",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph requires FlexiCredit to communicate the applicable penal charges when it sends reminders for non-compliance of material loan terms.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12527:section:0015#4",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph requires FlexiCredit to communicate each levy of penal charges and the reason for it.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12527:section:0015#5",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shows that the new penal charges instructions are implemented for fresh loans from 1 January 2024; FC-14 \u00a73.1 describes the 2% penal interest without reference to the new regime.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12527:section:0015#6",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shows a switchover of existing loans to the new penal charges regime at the next review or renewal date, or within six months.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12527:section:0015#7",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "This obligation applies only to housing finance companies (HFCs), and FlexiCredit is an NBFC-ICC in the Base Layer.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12527:section:0016#2",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph states that penal charges will not be capitalised, so the policy is silent on the no-further-interest-on-penal-charges requirement.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12527:section:0017#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FC-14 \u00a77.1",
+    "FC-14 \u00a73.1"
+   ],
+   "policy_quote": "The Board reviews compliance with this code every year.",
+   "finding": "FC-14 is reviewed annually by the Board, but no paragraph shows a Board-approved policy on penal charges; FC-14 \u00a73.1 only sets a flat 2% a month penal interest.",
+   "severity": "medium",
+   "action": "Create a penal charges policy on loans, approved by the Board, and cover the penal charge rules in it."
+  },
+  {
+   "obligation": "rbi-n12527:section:0017#2",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FC-14 \u00a73.1"
+   ],
+   "policy_quote": "is added to the loan's interest rate on the overdue amount until it is paid.",
+   "finding": "FC-14 \u00a73.1 applies one flat 2% a month penal interest to any missed EMI, with no link to the nature or seriousness of the non-compliance, so it does not show that the quantum is commensurate with the non-compliance.",
+   "severity": "medium",
+   "action": "Tie penal charges to the seriousness of each non-compliance with material loan terms and set the quantum on that basis, applied without discrimination within a loan or product category."
+  },
+  {
+   "obligation": "rbi-n12527:section:0017#3",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph states how penal charges for individual borrowers for non-business purposes compare with those for non-individual borrowers.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12527:section:0017#4",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FC-13 \u00a73.1",
+    "FC-14 \u00a73.1"
+   ],
+   "policy_quote": "It shows the annual percentage rate (APR), the recovery mechanism, the grievance officer and the cooling-off terms.",
+   "finding": "FC-14 states the penal interest amount, but the KFS content in FC-13 \u00a73.1 omits penal charges and their reason, and no paragraph requires disclosure on the website under Interest rates and Service Charges.",
+   "severity": "medium",
+   "action": "Require the penal charge quantum and reason to appear in the loan agreement, the KFS, and the website's Interest rates and Service Charges section."
+  },
+  {
+   "obligation": "rbi-n12527:section:0017#5",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph requires that the applicable penal charges be stated in reminders for non-compliance sent to borrowers.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12527:section:0017#6",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph requires borrowers to be told when a penal charge is levied, or the reason for it.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12527:section:0017#7",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shows that the penal charges instructions are implemented for fresh loans availed or renewed from January 1, 2024.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12527:section:0017#8",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shows a switchover of existing loans to the new penal charges regime on the next review or renewal date or within six months.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12527:section:0018#2",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph states whether penal charges are capitalised or prohibits computing further interest on them.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12527:section:0018#4",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FC-14 \u00a77.1"
+   ],
+   "policy_quote": "The Board reviews compliance with this code every year.",
+   "finding": "FC-14 \u00a77.1 provides for annual Board review of the code, but no paragraph shows a Board-approved policy on penal charges.",
+   "severity": "medium",
+   "action": "Adopt a Board-approved policy on penal charges or similar charges on loans, by whatever name called, and reference it in FC-14."
+  },
+  {
+   "obligation": "rbi-n12527:section:0018#6",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph sets penal charges for individual borrowers for non-business purposes relative to non-individual borrowers.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12527:section:0019#1",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FC-13 \u00a73.1",
+    "FC-14 \u00a73.1"
+   ],
+   "policy_quote": "A Key Fact Statement (KFS), in the standard format, is shown before the loan agreement is signed.",
+   "finding": "FC-13 \u00a73.1 says the KFS shows APR, recovery mechanism, grievance officer and cooling-off terms but not penal charges, and FC-14 \u00a73.1 states the 2% monthly penal interest without requiring it to appear in the loan agreement or KFS.",
+   "severity": "medium",
+   "action": "Add the quantum and reason for penal charges to the loan agreement and the KFS, and state that the KFS one-screen summary for loans up to \u20b910,000 must also show them."
+  },
+  {
+   "obligation": "rbi-n12527:section:0019#2",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shows that the quantum and reason for penal charges are displayed on the website under Interest rates and Service Charges.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12527:section:0019#3",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph requires that penal charges be communicated when reminders are sent to borrowers for non-compliance with material terms.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12527:section:0019#4",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph requires that each levy of penal charges, and its reason, be communicated to the borrower.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12527:section:0019#5",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shows implementation of the new penal charges instructions for fresh or renewed loans from January 1, 2024; FC-14 \u00a73.1 sets a 2% monthly penal interest without reference to those instructions.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12527:section:0019#6",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph describes switching existing loans to the new penal charges regime on the next review or renewal date or within six months.",
+   "severity": "none",
+   "action": null
+  }
+ ],
+ "actions": [
+  {
+   "obligation": "rbi-n12527:section:0002#1",
+   "action": "Align FC-14 \u00a73.1 with the fair lending penal charges instructions, confirm the regime applies to all fresh loans from 1 January 2024, and stop adding penal interest to the loan's interest rate.",
+   "owner": "CEO, FlexiCredit",
+   "priority": "P2",
+   "deadline": "From January 1, 2024",
+   "policy_refs": [
+    "FC-14 \u00a73.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12527:section:0005#1",
+   "action": "Add a step requiring written communication to each borrower, in the vernacular they understand, of the sanctioned amount, all terms and conditions, the annualised interest rate and how it is applied.",
+   "owner": "CEO, FlexiCredit",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FC-14 \u00a71.1",
+    "FC-14 \u00a72.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12527:section:0006#5",
+   "action": "Add a requirement that the Board approves a dedicated policy on penal charges and similar charges on loans.",
+   "owner": "CEO, FlexiCredit",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FC-14 \u00a77.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12527:section:0007#3",
+   "action": "Add penal charges to the Key Fact Statement and display them on the website under Interest rates and Service Charges.",
+   "owner": "CEO, FlexiCredit",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FC-13 \u00a73.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12527:section:0008#1",
+   "action": "Amend FC-14 \u00a71.1 to require written communication of the sanctioned amount, full terms, annualised interest rate and its method of application, in the vernacular language understood by each borrower.",
+   "owner": "CEO, FlexiCredit",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FC-14 \u00a71.1",
+    "FC-14 \u00a72.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12527:section:0009#4",
+   "action": "Add a requirement that the Board approves a policy on penal and similar charges on loans, in addition to its annual review.",
+   "owner": "CEO, FlexiCredit",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FC-14 \u00a77.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12527:section:0014#4",
+   "action": "Have the Board formally approve a penal charges policy covering all penal and similar loan charges, and reference it in FC-14.",
+   "owner": "CEO, FlexiCredit",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FC-14 \u00a77.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12527:section:0015#2",
+   "action": "Add the quantum and reason for penal charges to the loan agreement, the KFS and the website's Interest rates and Service Charges section.",
+   "owner": "CEO, FlexiCredit",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FC-13 \u00a73.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12527:section:0017#1",
+   "action": "Create a penal charges policy on loans, approved by the Board, and cover the penal charge rules in it.",
+   "owner": "CEO, FlexiCredit",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FC-14 \u00a77.1",
+    "FC-14 \u00a73.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12527:section:0017#2",
+   "action": "Tie penal charges to the seriousness of each non-compliance with material loan terms and set the quantum on that basis, applied without discrimination within a loan or product category.",
+   "owner": "CEO, FlexiCredit",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FC-14 \u00a73.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12527:section:0017#4",
+   "action": "Require the penal charge quantum and reason to appear in the loan agreement, the KFS, and the website's Interest rates and Service Charges section.",
+   "owner": "CEO, FlexiCredit",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FC-13 \u00a73.1",
+    "FC-14 \u00a73.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12527:section:0018#4",
+   "action": "Adopt a Board-approved policy on penal charges or similar charges on loans, by whatever name called, and reference it in FC-14.",
+   "owner": "CEO, FlexiCredit",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FC-14 \u00a77.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12527:section:0019#1",
+   "action": "Add the quantum and reason for penal charges to the loan agreement and the KFS, and state that the KFS one-screen summary for loans up to \u20b910,000 must also show them.",
+   "owner": "CEO, FlexiCredit",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FC-13 \u00a73.1",
+    "FC-14 \u00a73.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12527:section:0003#1",
+   "action": "Add a step to FP-18 \u00a73.3 requiring the compliance team to record when the affected Master Direction or internal policy has been updated to reflect each circular.",
+   "owner": "Company Secretary",
+   "priority": "P3",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FP-18 \u00a73.3",
+    "FP-18 \u00a75.1"
+   ]
+  }
+ ],
+ "review": [
+  {
+   "kind": "dropped obligation",
+   "text": "There shall be no capitalisation of penal charges, i.e., no further interest shall be computed on such charges; this does not affect normal procedures for compounding of interest in the loan account.",
+   "applies_to": "REs",
+   "deadline": null,
+   "paragraph": "3(i)",
+   "quote": "There shall be no capitalisation of penal charges i.e., no further interest computed on such charges. However, this will not affect the normal procedures for compounding of interest in the loan account.",
+   "id": "",
+   "chunk_id": "",
+   "problems": [
+    "the quote is not in the section"
+   ]
+  },
+  {
+   "kind": "dropped obligation",
+   "text": "The quantum of penal charges shall be reasonable and commensurate with the non-compliance of material terms and conditions of loan contract without being discriminatory within a particular loan / product category.",
+   "applies_to": "REs",
+   "deadline": null,
+   "paragraph": "3(iv)",
+   "quote": "The quantum of penal charges shall be reasonable and commensurate with the non-compliance of material terms and conditions of loan contract without being discriminatory within a particular loan / product category.",
+   "id": "",
+   "chunk_id": "",
+   "problems": [
+    "the quote is not in the section"
+   ]
+  },
+  {
+   "kind": "dropped obligation",
+   "text": "Penal charges on loans sanctioned to individual borrowers for purposes other than business shall not be higher than the penal charges applicable to non-individual borrowers for similar non-compliance of material terms and conditions.",
+   "applies_to": "REs",
+   "deadline": null,
+   "paragraph": "3(v)",
+   "quote": "The penal charges in case of loans sanctioned to 'individual borrowers, for purposes other than business', shall not be higher than the penal charges applicable to non-individual borrowers for similar non-compliance of material terms and conditions.",
+   "id": "",
+   "chunk_id": "",
+   "problems": [
+    "the quote is not in the section"
+   ]
+  },
+  {
+   "kind": "unrated obligation",
+   "obligation": "rbi-n12527:section:0001#1",
+   "problems": [
+    "the quote is not in FC-14 \u00a73.1"
+   ]
+  },
+  {
+   "kind": "unrated obligation",
+   "obligation": "rbi-n12527:section:0001#2",
+   "problems": [
+    "the quote is not in FC-14 \u00a73.1"
+   ]
+  },
+  {
+   "kind": "unrated obligation",
+   "obligation": "rbi-n12527:section:0001#4",
+   "problems": [
+    "the quote is not in FC-14 \u00a73.1"
+   ]
+  },
+  {
+   "kind": "unrated obligation",
+   "obligation": "rbi-n12527:section:0006#2",
+   "problems": [
+    "the quote is not in FC-14 \u00a73.1"
+   ]
+  },
+  {
+   "kind": "unrated obligation",
+   "obligation": "rbi-n12527:section:0006#3",
+   "problems": [
+    "the quote is not in FC-14 \u00a73.1"
+   ]
+  },
+  {
+   "kind": "unrated obligation",
+   "obligation": "rbi-n12527:section:0006#4",
+   "problems": [
+    "the quote is not in FC-14 \u00a73.1"
+   ]
+  },
+  {
+   "kind": "unrated obligation",
+   "obligation": "rbi-n12527:section:0006#6",
+   "problems": [
+    "the quote is not in FC-14 \u00a73.1"
+   ]
+  },
+  {
+   "kind": "unrated obligation",
+   "obligation": "rbi-n12527:section:0006#8",
+   "problems": [
+    "the quote is not in FC-14 \u00a73.1"
+   ]
+  },
+  {
+   "kind": "unrated obligation",
+   "obligation": "rbi-n12527:section:0007#1",
+   "problems": [
+    "the quote is not in FC-14 \u00a73.1"
+   ]
+  },
+  {
+   "kind": "unrated obligation",
+   "obligation": "rbi-n12527:section:0009#1",
+   "problems": [
+    "the quote is not in FC-14 \u00a73.1"
+   ]
+  },
+  {
+   "kind": "unrated obligation",
+   "obligation": "rbi-n12527:section:0009#3",
+   "problems": [
+    "the quote is not in FC-14 \u00a73.1"
+   ]
+  },
+  {
+   "kind": "unrated obligation",
+   "obligation": "rbi-n12527:section:0009#5",
+   "problems": [
+    "the quote is not in FC-14 \u00a73.1"
+   ]
+  },
+  {
+   "kind": "unrated obligation",
+   "obligation": "rbi-n12527:section:0014#1",
+   "problems": [
+    "the quote is not in FC-14 \u00a73.1"
+   ]
+  },
+  {
+   "kind": "unrated obligation",
+   "obligation": "rbi-n12527:section:0014#2",
+   "problems": [
+    "the quote is not in FC-14 \u00a73.1"
+   ]
+  },
+  {
+   "kind": "unrated obligation",
+   "obligation": "rbi-n12527:section:0014#3",
+   "problems": [
+    "the quote is not in FC-14 \u00a73.1"
+   ]
+  },
+  {
+   "kind": "unrated obligation",
+   "obligation": "rbi-n12527:section:0014#5",
+   "problems": [
+    "the quote is not in FC-14 \u00a73.1"
+   ]
+  },
+  {
+   "kind": "unrated obligation",
+   "obligation": "rbi-n12527:section:0015#1",
+   "problems": [
+    "the quote is not in FC-14 \u00a73.1"
+   ]
+  },
+  {
+   "kind": "unrated obligation",
+   "obligation": "rbi-n12527:section:0016#1",
+   "problems": [
+    "the quote is not in FC-14 \u00a73.1"
+   ]
+  },
+  {
+   "kind": "unrated obligation",
+   "obligation": "rbi-n12527:section:0016#3",
+   "problems": [
+    "the quote is not in FC-14 \u00a73.1"
+   ]
+  },
+  {
+   "kind": "unrated obligation",
+   "obligation": "rbi-n12527:section:0018#1",
+   "problems": [
+    "the quote is not in FC-14 \u00a73.1"
+   ]
+  },
+  {
+   "kind": "unrated obligation",
+   "obligation": "rbi-n12527:section:0018#3",
+   "problems": [
+    "the quote is not in FC-14 \u00a73.1"
+   ]
+  },
+  {
+   "kind": "unrated obligation",
+   "obligation": "rbi-n12527:section:0018#5",
+   "problems": [
+    "the quote is not in FC-14 \u00a73.1"
+   ]
+  },
+  {
+   "kind": "unrated obligation",
+   "obligation": "rbi-n12527:section:0018#7",
+   "problems": [
+    "the quote is not in FC-14 \u00a73.1"
+   ]
+  }
+ ]
+}

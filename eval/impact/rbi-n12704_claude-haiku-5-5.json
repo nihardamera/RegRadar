@@ -1,0 +1,1603 @@
+{
+ "doc_id": "rbi-n12704",
+ "title": "Master Directions on Fraud Risk Management in Non-Banking Financial Companies (NBFCs) (including Housing Finance Companies)",
+ "model": "claude-haiku-5-5",
+ "verdict": "action needed",
+ "problems": [],
+ "counts": {
+  "obligations": 77,
+  "actions": 7,
+  "not_applicable": 50,
+  "met": 2,
+  "not_covered": 18,
+  "partial": 3,
+  "gap": 4,
+  "review": 2
+ },
+ "obligations": [
+  {
+   "text": "The Applicable NBFC shall have a Board approved Policy on fraud risk management delineating roles and responsibilities of Board / Board Committees and Senior Management.",
+   "applies_to": "Applicable NBFCs",
+   "deadline": null,
+   "paragraph": "2.1",
+   "quote": "There shall be a Board5 approved Policy6 on fraud risk management delineating roles and responsibilities of Board / Board Committees and Senior Management of the Applicable NBFC.",
+   "id": "rbi-n12704:section:0008#1",
+   "chunk_id": "rbi-n12704:section:0008"
+  },
+  {
+   "text": "The fraud risk management Policy shall incorporate measures for ensuring compliance with principles of natural justice in a time-bound manner, including at a minimum the measures listed in paragraphs 2.1.1 to 2.1.3.",
+   "applies_to": "Applicable NBFCs",
+   "deadline": null,
+   "paragraph": "2.1",
+   "quote": "The Policy shall also incorporate measures for ensuring compliance with principles of natural justice7 in a time-bound manner which at a minimum shall include:",
+   "id": "rbi-n12704:section:0008#2",
+   "chunk_id": "rbi-n12704:section:0008"
+  },
+  {
+   "text": "A detailed Show Cause Notice must be issued to the Persons, Entities and its Promoters / whole-time and Executive Directors against whom allegation of fraud is being examined, providing complete details of transactions / actions / events on which declaration and reporting of fraud is contemplated.",
+   "applies_to": "Applicable NBFCs",
+   "deadline": null,
+   "paragraph": "2.1.1",
+   "quote": "Issuance of a detailed Show Cause Notice (SCN) to the Persons8, Entities and its Promoters / whole-time and Executive Directors against whom allegation of fraud is being examined9.",
+   "id": "rbi-n12704:section:0008#3",
+   "chunk_id": "rbi-n12704:section:0008"
+  },
+  {
+   "text": "Persons/Entities on whom the Show Cause Notice was served shall be given a reasonable time of not less than 21 days to respond to the SCN.",
+   "applies_to": "Applicable NBFCs",
+   "deadline": null,
+   "paragraph": "2.1.2",
+   "quote": "A reasonable time of not less than 21 days shall be provided to the Persons / Entities on whom the SCN was served to respond to the said SCN.",
+   "id": "rbi-n12704:section:0008#4",
+   "chunk_id": "rbi-n12704:section:0008"
+  },
+  {
+   "text": "Applicable NBFCs shall have a well laid out system for issuing SCNs and examining the responses or submissions of Persons/Entities before declaring them fraudulent.",
+   "applies_to": "Applicable NBFCs",
+   "deadline": null,
+   "paragraph": "2.1.3",
+   "quote": "Applicable NBFCs shall have a well laid out system for issuance of SCN and examination of the responses / submissions made by the Persons/Entities prior to declaring such Persons / Entities as fraudulent.",
+   "id": "rbi-n12704:section:0008#5",
+   "chunk_id": "rbi-n12704:section:0008"
+  },
+  {
+   "text": "A reasoned Order shall be served on the Persons / Entities conveying the decision of the Applicable NBFC regarding declaration / classification of the account as fraud or otherwise.",
+   "applies_to": "Applicable NBFCs",
+   "deadline": null,
+   "paragraph": "2.1.4",
+   "quote": "A reasoned Order shall be served on the Persons / Entities conveying the decision of the Applicable NBFCs regarding declaration / classification of the account as fraud or otherwise.",
+   "id": "rbi-n12704:section:0009#1",
+   "chunk_id": "rbi-n12704:section:0009"
+  },
+  {
+   "text": "Such reasoned Order must contain the relevant facts / circumstances relied upon, the submission made against the SCN, and the reasons for classification as fraud or otherwise.",
+   "applies_to": "Applicable NBFCs",
+   "deadline": null,
+   "paragraph": "2.1.4",
+   "quote": "Such Order(s) must contain relevant facts / circumstances relied upon, submission made against the SCN and the reasons for classification as fraud or otherwise.",
+   "id": "rbi-n12704:section:0009#2",
+   "chunk_id": "rbi-n12704:section:0009"
+  },
+  {
+   "text": "The Fraud Risk Management Policy shall be reviewed by the Board at least once in three years, or more frequently as may be prescribed by the Board.",
+   "applies_to": "Board of the NBFC",
+   "deadline": "At least once in three years",
+   "paragraph": "2.2",
+   "quote": "The Fraud Risk Management Policy shall be reviewed by the Board at least once in three years, or more frequently, as may be prescribed by the Board.",
+   "id": "rbi-n12704:section:0010#1",
+   "chunk_id": "rbi-n12704:section:0010"
+  },
+  {
+   "text": "Applicable NBFCs shall constitute a Committee of the Board known as the Special Committee of the Board for Monitoring and Follow-up of cases of Frauds (SCBMF) with a minimum of three Board members, consisting of the Chief Executive Officer and two Independent Directors, headed by one of the Independent Directors.",
+   "applies_to": "Applicable NBFCs",
+   "deadline": null,
+   "paragraph": "2.3",
+   "quote": "Applicable NBFCs shall constitute a Committee of the Board to be known as \u2018Special Committee of the Board for Monitoring and Follow-up of cases of Frauds\u2019 (SCBMF) with a minimum of three members of the Board",
+   "id": "rbi-n12704:section:0010#2",
+   "chunk_id": "rbi-n12704:section:0010"
+  },
+  {
+   "text": "SCBMF shall oversee the effectiveness of the fraud risk management in the Applicable NBFC.",
+   "applies_to": "SCBMF of the Applicable NBFC",
+   "deadline": null,
+   "paragraph": "2.3.1",
+   "quote": "SCBMF shall oversee the effectiveness of the fraud risk management in the Applicable NBFC.",
+   "id": "rbi-n12704:section:0011#1",
+   "chunk_id": "rbi-n12704:section:0011"
+  },
+  {
+   "text": "SCBMF shall review and monitor cases of frauds, including root cause analysis, and suggest mitigating measures for strengthening the internal controls, risk management framework and minimising the incidence of frauds.",
+   "applies_to": "SCBMF of the Applicable NBFC",
+   "deadline": null,
+   "paragraph": "2.3.2",
+   "quote": "SCBMF shall review and monitor cases of frauds, including root cause analysis, and suggest mitigating measures for strengthening the internal controls, risk management framework and minimising the incidence of frauds.",
+   "id": "rbi-n12704:section:0011#2",
+   "chunk_id": "rbi-n12704:section:0011"
+  },
+  {
+   "text": "The coverage and periodicity of the SCBMF's fraud case reviews shall be decided by the Board of the Applicable NBFC.",
+   "applies_to": "Board of the Applicable NBFC",
+   "deadline": null,
+   "paragraph": "2.3.2",
+   "quote": "The coverage12 and periodicity of such reviews shall be decided by the Board of the Applicable NBFC.",
+   "id": "rbi-n12704:section:0011#3",
+   "chunk_id": "rbi-n12704:section:0011"
+  },
+  {
+   "text": "Senior Management shall be responsible for implementing the fraud risk management policy approved by the Board of the Applicable NBFC.",
+   "applies_to": "Senior Management of the Applicable NBFC",
+   "deadline": null,
+   "paragraph": "2.4",
+   "quote": "The Senior Management shall be responsible for implementation of the fraud risk management policy approved by the Board of the Applicable NBFC.",
+   "id": "rbi-n12704:section:0011#4",
+   "chunk_id": "rbi-n12704:section:0011"
+  },
+  {
+   "text": "Senior Management shall place a periodic review of incidents of fraud before the Board or Audit Committee of Board (ACB), as appropriate.",
+   "applies_to": "Senior Management of the Applicable NBFC",
+   "deadline": null,
+   "paragraph": "2.4",
+   "quote": "A periodic review of incidents of fraud shall also be placed before Board / Audit Committee of Board (ACB), as appropriate, by the Senior Management of the Applicable NBFC.",
+   "id": "rbi-n12704:section:0011#5",
+   "chunk_id": "rbi-n12704:section:0011"
+  },
+  {
+   "text": "Applicable NBFCs shall put in place a transparent mechanism to ensure that Whistle Blower complaints on possible fraud cases or suspicious activities in account(s) are examined and concluded appropriately under their Whistle Blower Policy.",
+   "applies_to": "Applicable NBFCs",
+   "deadline": null,
+   "paragraph": "2.5",
+   "quote": "Applicable NBFCs shall put in place a transparent mechanism to ensure that Whistle Blower complaints on possible fraud cases / suspicious activities in",
+   "id": "rbi-n12704:section:0011#6",
+   "chunk_id": "rbi-n12704:section:0011"
+  },
+  {
+   "text": "A sufficiently senior official shall be responsible for monitoring and reporting of frauds.",
+   "applies_to": "Applicable NBFCs",
+   "deadline": null,
+   "paragraph": "2.6",
+   "quote": "A sufficiently senior official shall be responsible for monitoring and reporting of frauds.",
+   "id": "rbi-n12704:section:0012#1",
+   "chunk_id": "rbi-n12704:section:0012"
+  },
+  {
+   "text": "Applicable NBFCs shall disclose the amount related to fraud reported in the company for the year in their Financial Statements \u2013 Notes to Accounts.",
+   "applies_to": "Applicable NBFCs",
+   "deadline": null,
+   "paragraph": "2.7",
+   "quote": "Applicable NBFCs shall disclose the amount related to fraud reported in the company for the year in their Financial Statements \u2013 Notes to Accounts.",
+   "id": "rbi-n12704:section:0012#2",
+   "chunk_id": "rbi-n12704:section:0012"
+  },
+  {
+   "text": "NBFCs in the Upper Layer and Middle Layer shall have a framework for Early Warning Signals under the overall Fraud Risk Management Policy approved by the Board.",
+   "applies_to": "NBFCs \u2013 UL & ML",
+   "deadline": null,
+   "paragraph": "3.1.1",
+   "quote": "NBFCs in the Upper Layer and Middle Layer (NBFCs \u2013 UL & ML) shall have a framework for Early Warning Signals (EWS) under the overall Fraud Risk Management Policy approved by the Board.",
+   "id": "rbi-n12704:section:0012#3",
+   "chunk_id": "rbi-n12704:section:0012"
+  },
+  {
+   "text": "The Senior Management shall be responsible for implementation of a robust Framework for EWS within the NBFCs \u2013 UL & ML.",
+   "applies_to": "Senior Management",
+   "deadline": null,
+   "paragraph": "3.1.2",
+   "quote": "The Senior Management shall be responsible for implementation of a robust Framework for EWS within the NBFCs \u2013 UL & ML.",
+   "id": "rbi-n12704:section:0012#4",
+   "chunk_id": "rbi-n12704:section:0012"
+  },
+  {
+   "text": "NBFCs \u2013 UL & ML shall identify appropriate early warning indicators for monitoring credit facilities / loan accounts and other financial transactions.",
+   "applies_to": "NBFCs \u2013 UL & ML",
+   "deadline": null,
+   "paragraph": "3.1.3",
+   "quote": "NBFCs \u2013 UL & ML shall identify appropriate early warning indicators for monitoring credit facilities / loan accounts and other financial transactions.",
+   "id": "rbi-n12704:section:0012#5",
+   "chunk_id": "rbi-n12704:section:0012"
+  },
+  {
+   "text": "The early warning indicators shall be reviewed periodically for their effectiveness.",
+   "applies_to": "NBFCs \u2013 UL & ML",
+   "deadline": null,
+   "paragraph": "3.1.3",
+   "quote": "These indicators shall be reviewed periodically for their effectiveness.",
+   "id": "rbi-n12704:section:0012#6",
+   "chunk_id": "rbi-n12704:section:0012"
+  },
+  {
+   "text": "The EWS framework shall be subject to suitable validation in accordance with the directions of the Board Level Committee so as to ensure its integrity, robustness and consistency of the outcomes.",
+   "applies_to": "NBFCs (EWS framework)",
+   "deadline": null,
+   "paragraph": "3.1.4",
+   "quote": "The EWS framework shall be subject to suitable validation in accordance with the directions of the Board Level Committee so as to ensure its integrity, robustness and consistency of the outcomes.",
+   "id": "rbi-n12704:section:0013#1",
+   "chunk_id": "rbi-n12704:section:0013"
+  },
+  {
+   "text": "The EWS Framework shall provide for a system of robust EWS which is integrated with Core Banking Solution (CBS) or other operational systems.",
+   "applies_to": "NBFCs (EWS Framework)",
+   "deadline": null,
+   "paragraph": "3.2(i)",
+   "quote": "The EWS Framework shall provide for, among others: (i) A system of robust EWS which is integrated with Core Banking Solution (CBS) or other operational systems",
+   "id": "rbi-n12704:section:0013#2",
+   "chunk_id": "rbi-n12704:section:0013"
+  },
+  {
+   "text": "The EWS Framework shall provide for initiation of remedial action on triggers/alerts from EWS System in a timely manner.",
+   "applies_to": "NBFCs (EWS Framework)",
+   "deadline": null,
+   "paragraph": "3.2(ii)",
+   "quote": "(ii) Initiation of remedial action on triggers 13 i.e. prevention, early detection, investigation, staff accountability, monitoring, recovery, analysis and reporting of frauds",
+   "id": "rbi-n12704:section:0013#3",
+   "chunk_id": "rbi-n12704:section:0013"
+  },
+  {
+   "text": "The EWS Framework shall provide for periodic review of credit sanction and monitoring processes, internal controls and systems.",
+   "applies_to": "NBFCs (EWS Framework)",
+   "deadline": null,
+   "paragraph": "3.2(iii)",
+   "quote": "and (iii) Periodic review of credit sanction and monitoring processes, internal controls and systems.",
+   "id": "rbi-n12704:section:0013#4",
+   "chunk_id": "rbi-n12704:section:0013"
+  },
+  {
+   "text": "Generation of an EWS alert or trigger shall necessitate examination of whether the account needs to be investigated from a potential fraud angle.",
+   "applies_to": "NBFCs (not named in this paragraph)",
+   "deadline": null,
+   "paragraph": "3.3.2",
+   "quote": "Generation of EWS alert(s) / trigger(s) shall necessitate examination whether the account needs to be investigated from potential fraud angle.",
+   "id": "rbi-n12704:section:0014#1",
+   "chunk_id": "rbi-n12704:section:0014"
+  },
+  {
+   "text": "NBFCs \u2013 UL & ML shall develop or strengthen their EWS system by identifying suitable indicators and parameterising them to monitor other financial / non-credit related transactions.",
+   "applies_to": "NBFCs \u2013 UL & ML",
+   "deadline": null,
+   "paragraph": "3.4.1",
+   "quote": "NBFCs \u2013 UL & ML shall develop / strengthen their EWS system by identifying suitable indicators and parameterising them in their EWS system for monitoring other financial / non-credit related transactions.",
+   "id": "rbi-n12704:section:0014#2",
+   "chunk_id": "rbi-n12704:section:0014"
+  },
+  {
+   "text": "NBFCs \u2013 UL & ML shall strive to continuously upgrade the EWS system to enhance its integrity and robustness, monitor other financial / non-credit related transactions efficiently and prevent fraudulent activities.",
+   "applies_to": "NBFCs \u2013 UL & ML",
+   "deadline": null,
+   "paragraph": "3.4.1",
+   "quote": "NBFCs \u2013 UL & ML shall strive to continuously upgrade the EWS system for enhancing its integrity and robustness, monitor other financial / non-credit related transactions efficiently and prevent fraudulent activities.",
+   "id": "rbi-n12704:section:0014#3",
+   "chunk_id": "rbi-n12704:section:0014"
+  },
+  {
+   "text": "The effectiveness of the EWS system shall be tested periodically.",
+   "applies_to": "NBFCs \u2013 UL & ML",
+   "deadline": null,
+   "paragraph": "3.4.1",
+   "quote": "Further, the effectiveness of EWS system shall be tested periodically.",
+   "id": "rbi-n12704:section:0014#4",
+   "chunk_id": "rbi-n12704:section:0014"
+  },
+  {
+   "text": "The design and specification of the EWS system shall be robust and resilient so that system integrity is maintained and customers' personal and financial data are secure.",
+   "applies_to": "NBFCs \u2013 UL & ML",
+   "deadline": null,
+   "paragraph": "3.4.2",
+   "quote": "The design and specification of EWS system shall be robust and resilient to ensure that integrity of the system is maintained, personal and financial data of customers are secure",
+   "id": "rbi-n12704:section:0014#5",
+   "chunk_id": "rbi-n12704:section:0014"
+  },
+  {
+   "text": "Transaction monitoring for prevention or detection of potential fraud shall be on a real-time basis.",
+   "applies_to": "NBFCs \u2013 UL & ML",
+   "deadline": null,
+   "paragraph": "3.4.2",
+   "quote": "transaction monitoring for prevention / detection of potential fraud is on real-time basis17.",
+   "id": "rbi-n12704:section:0014#6",
+   "chunk_id": "rbi-n12704:section:0014"
+  },
+  {
+   "text": "NBFCs \u2013 UL & ML shall remain vigilant in monitoring transactions and unusual activities, specifically in non-KYC compliant and money mule accounts, to contain unauthorised or fraudulent transactions and prevent misuse of banking / financial channels.",
+   "applies_to": "NBFCs \u2013 UL & ML",
+   "deadline": null,
+   "paragraph": "3.4.2",
+   "quote": "NBFCs \u2013 UL & ML shall remain vigilant in monitoring transactions / unusual activities, specifically in the non-KYC compliant and money mule accounts etc., so as to contain unauthorised / fraudulent transactions",
+   "id": "rbi-n12704:section:0014#7",
+   "chunk_id": "rbi-n12704:section:0014"
+  },
+  {
+   "text": "The dedicated MIS Unit or other analytics setup in NBFCs \u2013 UL & ML shall extensively monitor and analyse financial transactions, including those carried out through digital platforms / applications, to identify unusual patterns and activities.",
+   "applies_to": "NBFCs \u2013 UL & ML (dedicated MIS Unit or other Analytics Setup)",
+   "deadline": null,
+   "paragraph": "3.4.3",
+   "quote": "shall extensively monitor and analyse financial transactions, including transactions carried out through digital platforms / applications, in order to identify unusual patterns and activities",
+   "id": "rbi-n12704:section:0015#1",
+   "chunk_id": "rbi-n12704:section:0015"
+  },
+  {
+   "text": "NBFCs \u2013 UL & ML shall put in place or suitably upgrade their existing Early Warning Signal (EWS) system within six months from the date of issuance of these Directions.",
+   "applies_to": "NBFCs \u2013 UL & ML",
+   "deadline": "within six months from the date of issuance of these Directions",
+   "paragraph": "3.5",
+   "quote": "NBFCs \u2013 UL & ML shall put in place / suitably upgrade their existing EWS system within six months from the date of issuance of these Directions.",
+   "id": "rbi-n12704:section:0015#2",
+   "chunk_id": "rbi-n12704:section:0015"
+  },
+  {
+   "text": "Applicable NBFCs shall frame a policy on engagement of external auditors covering aspects such as due diligence, competency and track record of the auditors, among others.",
+   "applies_to": "Applicable NBFCs",
+   "deadline": null,
+   "paragraph": "4.1.1",
+   "quote": "Applicable NBFCs shall frame a policy on engagement of external auditors covering aspects such as due diligence, competency and track record of the auditors, among others.",
+   "id": "rbi-n12704:section:0016#1",
+   "chunk_id": "rbi-n12704:section:0016"
+  },
+  {
+   "text": "The contractual agreement with external auditors shall contain suitable clauses on timeline for completion of the audit and submission of the audit report to the Applicable NBFC within a specified time limit, as approved by the Board.",
+   "applies_to": "Applicable NBFCs engaging external auditors",
+   "deadline": "Time limit specified and approved by the Board",
+   "paragraph": "4.1.1",
+   "quote": "the contractual agreement with the auditors shall, inter alia, contain suitable clauses on timeline for completion of the audit and submission of audit report to the Applicable NBFC within a specified time limit, as approved by the Board.",
+   "id": "rbi-n12704:section:0016#2",
+   "chunk_id": "rbi-n12704:section:0016"
+  },
+  {
+   "text": "The loan agreement with the borrower shall contain clauses for conduct of audit at the behest of lender(s).",
+   "applies_to": "Applicable NBFCs",
+   "deadline": null,
+   "paragraph": "4.1.2",
+   "quote": "The loan agreement with the borrower shall contain clauses for conduct of such audit at the behest of lender(s).",
+   "id": "rbi-n12704:section:0017#1",
+   "chunk_id": "rbi-n12704:section:0017"
+  },
+  {
+   "text": "Where the audit report is inconclusive or delayed due to borrower non-cooperation, Applicable NBFCs shall conclude on the status of the account as fraud or otherwise based on material on their record and their own internal investigation or assessment.",
+   "applies_to": "Applicable NBFCs",
+   "deadline": null,
+   "paragraph": "4.1.2",
+   "quote": "Applicable NBFCs shall conclude on status of the account as a fraud or otherwise based on the material available on their record and their own internal investigation",
+   "id": "rbi-n12704:section:0017#2",
+   "chunk_id": "rbi-n12704:section:0017"
+  },
+  {
+   "text": "Before classifying or declaring an account as fraud, Applicable NBFCs shall ensure that principles of natural justice are strictly adhered to (per footnote 19 of paragraph 4.1.2).",
+   "applies_to": "Applicable NBFCs",
+   "deadline": null,
+   "paragraph": "4.1.2",
+   "quote": "Applicable NBFCs shall ensure that principles of natural justice are strictly adhered to before classifying / declaring an account as fraud",
+   "id": "rbi-n12704:section:0017#3",
+   "chunk_id": "rbi-n12704:section:0017"
+  },
+  {
+   "text": "Before classifying or declaring an account as fraud, Applicable NBFCs (sole lending, multiple banking arrangement or consortium lending) shall ensure that principles of natural justice are strictly adhered to.",
+   "applies_to": "Applicable NBFCs (sole lending, multiple banking arrangement or consortium lending)",
+   "deadline": null,
+   "paragraph": "4.1.3",
+   "quote": "Applicable NBFCs (sole lending, multiple banking arrangement or consortium lending) shall ensure that the principles of natural justice20 are strictly adhered",
+   "id": "rbi-n12704:section:0017#4",
+   "chunk_id": "rbi-n12704:section:0017"
+  },
+  {
+   "text": "When an account is identified as fraud, Applicable NBFCs concerned shall examine from a fraud angle the borrowal accounts of other group companies in which one or more promoter(s) or whole-time director(s) are common.",
+   "applies_to": "Applicable NBFCs concerned",
+   "deadline": null,
+   "paragraph": "4.1.4",
+   "quote": "the borrowal accounts of other group companies, in which one or more promoter(s) / whole-time director(s) are common, shall also be subjected to examination by Applicable NBFCs concerned from fraud angle",
+   "id": "rbi-n12704:section:0017#5",
+   "chunk_id": "rbi-n12704:section:0017"
+  },
+  {
+   "text": "Applicable NBFCs shall follow the process of classifying an account as fraud per their Board approved Policy, in tune with the process under Para 2.1, where LEAs have suo moto initiated investigation involving a borrower account.",
+   "applies_to": "Applicable NBFCs",
+   "deadline": null,
+   "paragraph": "4.1.5",
+   "quote": "In cases where Law Enforcement Agencies (LEAs) have suo moto initiated investigation involving a borrower account, Applicable NBFCs shall follow the process of classification of account as fraud",
+   "id": "rbi-n12704:section:0018#1",
+   "chunk_id": "rbi-n12704:section:0018"
+  },
+  {
+   "text": "Applicable NBFCs shall initiate and complete the examination of staff accountability in all fraud cases in a time-bound manner in accordance with their internal policy.",
+   "applies_to": "Applicable NBFCs",
+   "deadline": null,
+   "paragraph": "4.3.1",
+   "quote": "Applicable NBFCs shall initiate and complete the examination of staff accountability in all fraud cases in a time-bound manner in accordance with their internal policy.",
+   "id": "rbi-n12704:section:0018#2",
+   "chunk_id": "rbi-n12704:section:0018"
+  },
+  {
+   "text": "Applicable NBFCs in the public sector shall refer all fraud cases involving \u20b93 crore and above to the Advisory Board for Banking and Financial Frauds (ABBFF) constituted by the CVC, for examining the role of all levels of officials and whole-time directors (including ex-officials and ex-WTDs).",
+   "applies_to": "Applicable NBFCs in the public sector",
+   "deadline": null,
+   "paragraph": "4.3.2",
+   "quote": "Applicable NBFCs in the public sector shall also refer all fraud cases of amount involving \u20b93 crore and above for examining the role of",
+   "id": "rbi-n12704:section:0019#1",
+   "chunk_id": "rbi-n12704:section:0019"
+  },
+  {
+   "text": "In cases involving very senior executives of the Applicable NBFCs (MD & CEO / Executive Director / Executives of equivalent rank), the ACB shall initiate examination of their accountability and place it before the Board.",
+   "applies_to": "Applicable NBFCs; ACB (Audit Committee of the Board)",
+   "deadline": null,
+   "paragraph": "4.3.3",
+   "quote": "In cases involving very senior executives of the Applicable NBFCs (MD & CEO / Executive Director / Executives of equivalent rank)23, the ACB shall initiate examination of their accountability and place it before the Board.",
+   "id": "rbi-n12704:section:0020#1",
+   "chunk_id": "rbi-n12704:section:0020"
+  },
+  {
+   "text": "In case of Applicable NBFCs in the public sector, cases involving very senior executives shall also be referred to the ABBFF.",
+   "applies_to": "Applicable NBFCs in the public sector",
+   "deadline": null,
+   "paragraph": "4.3.3",
+   "quote": "However, in case of Applicable NBFCs in the public sector, such cases shall also be referred to the ABBFF.",
+   "id": "rbi-n12704:section:0020#2",
+   "chunk_id": "rbi-n12704:section:0020"
+  },
+  {
+   "text": "Persons/Entities classified and reported as fraud by Applicable NBFCs, and Entities and Persons associated with such Entities, shall be debarred from raising funds and/or seeking additional credit facilities from RBI-regulated financial entities for five years from the date of full repayment of the defrauded amount or the agreed settlement amount in case of compromise settlement.",
+   "applies_to": "Persons/Entities classified and reported as fraud by Applicable NBFCs and their associated Entities and Persons",
+   "deadline": "Five years from the date of full repayment of the defrauded amount / settlement amount",
+   "paragraph": "4.4.1",
+   "quote": "shall be debarred from raising of funds and / or seeking additional credit facilities from financial entities regulated by RBI, for a period of five years from the date of full repayment of the defrauded amount / settlement amount",
+   "id": "rbi-n12704:section:0020#3",
+   "chunk_id": "rbi-n12704:section:0020"
+  },
+  {
+   "text": "Lending Applicable NBFCs shall have sole discretion to entertain or decline credit requests from such Persons/Entities only after the mandatory cooling period in Para 4.4.1 has expired.",
+   "applies_to": "Lending Applicable NBFCs",
+   "deadline": "After expiry of the cooling period in Para 4.4.1",
+   "paragraph": "4.4.2",
+   "quote": "the lending Applicable NBFCs shall have the sole discretion to entertain or decline such requests for credit facilities after the expiry of the above mandatory cooling period",
+   "id": "rbi-n12704:section:0020#4",
+   "chunk_id": "rbi-n12704:section:0020"
+  },
+  {
+   "text": "Where an entity classified as fraud has subsequently undergone a resolution under IBC or the RBI resolution framework resulting in a change in management and control, the Applicable NBFC shall examine whether the entity shall continue to remain classified as fraud or whether the classification could be removed after implementation of the Resolution Plan.",
+   "applies_to": "Applicable NBFC",
+   "deadline": null,
+   "paragraph": "4.5.1",
+   "quote": "the Applicable NBFC shall examine whether the entity shall continue to remain classified as fraud or the classification as fraud could be removed after",
+   "id": "rbi-n12704:section:0021#1",
+   "chunk_id": "rbi-n12704:section:0021"
+  },
+  {
+   "text": "Penal measures detailed in Para 4.4 shall not be applied to entities / business enterprises after implementation of the resolution plan under IBC or the aforesaid prudential framework.",
+   "applies_to": "entities / business enterprises",
+   "deadline": null,
+   "paragraph": "4.5.2",
+   "quote": "The penal measures as detailed in Para 4.4 shall not be applicable to entities / business enterprises after implementation of the resolution plan under IBC or aforesaid prudential framework.",
+   "id": "rbi-n12704:section:0022#1",
+   "chunk_id": "rbi-n12704:section:0022"
+  },
+  {
+   "text": "Penal measures detailed in Para 4.4 shall continue to apply to the erstwhile promoter(s)/director(s)/persons who were in charge and responsible for the management of the affairs of the entity / business enterprise.",
+   "applies_to": "erstwhile promoter(s)/director(s)/persons who were in charge and responsible for the management of the affairs of the entity / business enterprise",
+   "deadline": null,
+   "paragraph": "4.5.3",
+   "quote": "The penal measures detailed in Para 4.4 shall continue to apply to the erstwhile promoter(s)/ director(s)/ persons who were in charge and responsible for the management of the affairs of the entity / business enterprise.",
+   "id": "rbi-n12704:section:0022#2",
+   "chunk_id": "rbi-n12704:section:0022"
+  },
+  {
+   "text": "Applicable NBFCs shall immediately report the incidents of fraud to appropriate LEAs, viz. State Police authorities, etc., subject to applicable laws.",
+   "applies_to": "Applicable NBFCs",
+   "deadline": "immediately",
+   "paragraph": "5.1",
+   "quote": "Applicable NBFCs shall immediately report the incidents of fraud to appropriate LEAs, viz. State Police authorities, etc., subject to applicable laws.",
+   "id": "rbi-n12704:section:0023#1",
+   "chunk_id": "rbi-n12704:section:0023"
+  },
+  {
+   "text": "Applicable NBFCs shall establish suitable nodal point(s) or designate officer(s) for reporting incidents of fraud to LEAs and for proper coordination to meet the requirements of the LEAs.",
+   "applies_to": "Applicable NBFCs",
+   "deadline": null,
+   "paragraph": "5.2",
+   "quote": "Applicable NBFCs shall establish suitable nodal point(s) / designate officer(s) for reporting incidents of fraud to LEAs and for proper coordination to meet the requirements of the LEAs.",
+   "id": "rbi-n12704:section:0023#2",
+   "chunk_id": "rbi-n12704:section:0023"
+  },
+  {
+   "text": "Applicable NBFCs must choose the most appropriate category from the listed categories when reporting incidents of fraud to RBI through Fraud Monitoring Returns (FMRs) on the online portal.",
+   "applies_to": "Applicable NBFCs",
+   "deadline": null,
+   "paragraph": "6.1",
+   "quote": "Applicable NBFCs shall choose the most appropriate category from any one of the following:",
+   "id": "rbi-n12704:section:0024#1",
+   "chunk_id": "rbi-n12704:section:0024"
+  },
+  {
+   "text": "Housing Finance Companies (HFCs) must report incidents of fraud to NHB in the manner and in the Returns / Formats prescribed by NHB, as the reporting requirements under Chapter VI do not apply to them.",
+   "applies_to": "Housing Finance Companies (HFCs)",
+   "deadline": null,
+   "paragraph": "",
+   "quote": "They shall report incidents of fraud to NHB in the manner and in Returns / Formats as prescribed by NHB.",
+   "id": "rbi-n12704:section:0024#2",
+   "chunk_id": "rbi-n12704:section:0024"
+  },
+  {
+   "text": "Applicable NBFCs shall furnish FMR in individual fraud cases to RBI, irrespective of the amount involved, immediately but not later than 14 days from the date of classification of an incident or account as fraud.",
+   "applies_to": "Applicable NBFCs",
+   "deadline": "Immediately but not later than 14 days from the date of classification of an incident / account as fraud",
+   "paragraph": "6.2.1",
+   "quote": "Applicable NBFCs shall furnish FMR27 in individual fraud cases, irrespective of the amount involved, immediately but not later than 14 days from the date of classification28 of an incident / account as fraud.",
+   "id": "rbi-n12704:section:0025#1",
+   "chunk_id": "rbi-n12704:section:0025"
+  },
+  {
+   "text": "Incidents of fraud at overseas branches of Indian NBFCs shall also be reported to the concerned overseas law enforcement agencies in accordance with the relevant laws or regulations of the host countries.",
+   "applies_to": "Indian NBFCs with overseas branches",
+   "deadline": null,
+   "paragraph": "6.2.2",
+   "quote": "Incidents of fraud at overseas branches of Indian NBFCs shall also be reported to the concerned overseas LEAs in accordance with the relevant laws / regulations of the host countries.",
+   "id": "rbi-n12704:section:0025#2",
+   "chunk_id": "rbi-n12704:section:0025"
+  },
+  {
+   "text": "Applicable NBFCs shall also report frauds perpetrated in their group entities to RBI separately, if such entities are not regulated or supervised by any financial sector regulatory or supervisory authority.",
+   "applies_to": "Applicable NBFCs",
+   "deadline": null,
+   "paragraph": "6.2.3",
+   "quote": "Applicable NBFCs shall also report frauds perpetrated in their group entities29 to RBI separately30, if such entities are not regulated / supervised by any financial sector regulatory / supervisory authority.",
+   "id": "rbi-n12704:section:0025#3",
+   "chunk_id": "rbi-n12704:section:0025"
+  },
+  {
+   "text": "In case of an overseas financial group entity of an Indian NBFC, the parent NBFC shall also report incidents of fraud to RBI.",
+   "applies_to": "Parent NBFC of an overseas financial group entity",
+   "deadline": null,
+   "paragraph": "6.2.3",
+   "quote": "However, in case of overseas financial group entity of Indian NBFC, the parent NBFC shall also report incidents of fraud to RBI.",
+   "id": "rbi-n12704:section:0025#4",
+   "chunk_id": "rbi-n12704:section:0025"
+  },
+  {
+   "text": "Group entities shall comply with the principles of natural justice before declaration of fraud.",
+   "applies_to": "Group entities of NBFCs",
+   "deadline": null,
+   "paragraph": "6.2.3",
+   "quote": "The group entities will have to comply with the principles of natural justice before declaration of fraud31.",
+   "id": "rbi-n12704:section:0025#5",
+   "chunk_id": "rbi-n12704:section:0025"
+  },
+  {
+   "text": "Applicable NBFCs shall adhere to the timeframe prescribed in these Master Directions for reporting of fraud cases to RBI.",
+   "applies_to": "Applicable NBFCs",
+   "deadline": null,
+   "paragraph": "6.2.4",
+   "quote": "Applicable NBFCs shall adhere to the timeframe prescribed in these Master Directions for reporting of fraud cases to RBI32.",
+   "id": "rbi-n12704:section:0026#1",
+   "chunk_id": "rbi-n12704:section:0026"
+  },
+  {
+   "text": "Applicable NBFCs must examine and fix staff accountability for delays in identification of fraud cases and in reporting to RBI.",
+   "applies_to": "Applicable NBFCs",
+   "deadline": null,
+   "paragraph": "6.2.4",
+   "quote": "examine and fix staff accountability for delays in identification of fraud cases and in reporting to RBI.",
+   "id": "rbi-n12704:section:0026#2",
+   "chunk_id": "rbi-n12704:section:0026"
+  },
+  {
+   "text": "While reporting frauds, Applicable NBFCs shall ensure that persons or entities who are not involved or associated with the fraud are not reported in the FMR.",
+   "applies_to": "Applicable NBFCs",
+   "deadline": null,
+   "paragraph": "6.2.5",
+   "quote": "While reporting frauds, Applicable NBFCs shall ensure that persons / entities who / which are not involved / associated with the fraud are not reported in the FMR.",
+   "id": "rbi-n12704:section:0026#3",
+   "chunk_id": "rbi-n12704:section:0026"
+  },
+  {
+   "text": "Withdrawal or removal of FMR or perpetrator names under exceptional circumstances shall be made with due justification and with the approval of an official at least in the rank of a director.",
+   "applies_to": "Applicable NBFCs",
+   "deadline": null,
+   "paragraph": "6.2.6",
+   "quote": "Such withdrawal / removal shall, however, be made with due justification and with the approval of an official at least in the rank of a director.",
+   "id": "rbi-n12704:section:0026#4",
+   "chunk_id": "rbi-n12704:section:0026"
+  },
+  {
+   "text": "Applicable NBFCs shall close fraud cases using the 'Closure Module' where the fraud cases pending with LEAs / Court are disposed of and the examination of staff accountability has been completed.",
+   "applies_to": "Applicable NBFCs",
+   "deadline": null,
+   "paragraph": "6.3.1",
+   "quote": "Applicable NBFCs shall close fraud cases using \u2018Closure Module\u2019 where the actions as stated below are complete: (i) The fraud cases pending with LEAs / Court are disposed of; and (ii) The examination of staff accountability has been completed.",
+   "id": "rbi-n12704:section:0027#1",
+   "chunk_id": "rbi-n12704:section:0027"
+  },
+  {
+   "text": "NBFCs may close reported fraud cases involving amount up to \u20b925 lakh for limited statistical/reporting purposes only where staff accountability examination and any disciplinary action are complete and the investigation is ongoing or no charge-sheet has been filed by LEA for more than three years from FIR registration, or the charge-sheet is filed but trial has not commenced or is pending for more than three years from FIR registration.",
+   "applies_to": "NBFCs",
+   "deadline": "More than three years from the date of registration of First Information Report (FIR)",
+   "paragraph": "6.3.2",
+   "quote": "NBFCs are allowed, for limited statistical / reporting purposes, to close those reported fraud cases involving amount upto \u20b925 lakh, where examination of staff accountability and disciplinary action, if any, has been taken and:",
+   "id": "rbi-n12704:section:0027#2",
+   "chunk_id": "rbi-n12704:section:0027"
+  },
+  {
+   "text": "Applicable NBFCs shall maintain details of all closure cases of reported frauds for examination by auditors.",
+   "applies_to": "Applicable NBFCs",
+   "deadline": null,
+   "paragraph": "6.3.3",
+   "quote": "In all closure cases of reported frauds, Applicable NBFCs shall maintain details of such cases for examination by auditors.",
+   "id": "rbi-n12704:section:0028#1",
+   "chunk_id": "rbi-n12704:section:0028"
+  },
+  {
+   "text": "Applicable NBFCs shall subject the title deeds and other related title documents in respect of all credit facilities of \u20b91 crore and above to periodic legal audit and re-verification, with scope and periodicity as per the Board approved policy.",
+   "applies_to": "Applicable NBFCs",
+   "deadline": "till the loan is fully repaid",
+   "paragraph": "7.1",
+   "quote": "Applicable NBFCs shall subject the title deeds and other related title documents in respect of all credit facilities of \u20b91 crore and above",
+   "id": "rbi-n12704:section:0028#2",
+   "chunk_id": "rbi-n12704:section:0028"
+  },
+  {
+   "text": "Applicable NBFCs shall complete the investigation from fraud angle before transferring the loan account or credit facility to other lenders or ARCs.",
+   "applies_to": "Applicable NBFCs",
+   "deadline": null,
+   "paragraph": "7.2",
+   "quote": "Applicable NBFCs shall complete the investigation from fraud angle before transferring the loan account / credit facility to other lenders / ARCs.",
+   "id": "rbi-n12704:section:0028#3",
+   "chunk_id": "rbi-n12704:section:0028"
+  },
+  {
+   "text": "Where Applicable NBFCs conclude that a fraud has been perpetrated in an account, they shall report it to RBI / NHB before selling the account to other lenders / ARCs.",
+   "applies_to": "Applicable NBFCs",
+   "deadline": null,
+   "paragraph": "7.2",
+   "quote": "In cases where Applicable NBFCs conclude that a fraud has been perpetrated in the account, they shall report it to RBI / NHB34 before selling the accounts to other lenders / ARCs35.",
+   "id": "rbi-n12704:section:0028#4",
+   "chunk_id": "rbi-n12704:section:0028"
+  },
+  {
+   "text": "During an audit, if the auditor finds transactions or documents indicating possible fraudulent transactions in an account, the auditor should immediately bring it to the notice of senior management and, if necessary, to the Audit Committee of the Board (ACB) of the Applicable NBFC.",
+   "applies_to": "auditors of Applicable NBFCs",
+   "deadline": null,
+   "paragraph": "7.3.1",
+   "quote": "the auditor should immediately bring it to the notice of the senior management and if necessary, to the Audit Committee of the Board (ACB) of the Applicable NBFCs for appropriate action",
+   "id": "rbi-n12704:section:0029#1",
+   "chunk_id": "rbi-n12704:section:0029"
+  },
+  {
+   "text": "Internal Audit in Applicable NBFCs shall cover controls and processes involved in prevention, detection, classification, monitoring, reporting, closure and withdrawal of fraud cases, and also weaknesses observed in the critical processes in the fraud risk management framework.",
+   "applies_to": "Internal Audit in Applicable NBFCs",
+   "deadline": null,
+   "paragraph": "7.3.2",
+   "quote": "Internal Audit in Applicable NBFCs shall cover controls and processes involved in prevention, detection, classification, monitoring, reporting, closure and withdrawal of fraud cases",
+   "id": "rbi-n12704:section:0029#2",
+   "chunk_id": "rbi-n12704:section:0029"
+  },
+  {
+   "text": "Applicable NBFCs shall report instances of theft, burglary, dacoity and robbery (including attempted cases) to the Fraud Monitoring Group (FMG), Department of Supervision, Central Office, Reserve Bank of India, immediately (not later than seven days) from their occurrence.",
+   "applies_to": "Applicable NBFCs",
+   "deadline": "immediately (not later than seven days) from their occurrence",
+   "paragraph": "8.1",
+   "quote": "Applicable NBFCs shall report38 instances of theft, burglary, dacoity and robbery (including attempted cases), to Fraud Monitoring Group (FMG)",
+   "id": "rbi-n12704:section:0030#1",
+   "chunk_id": "rbi-n12704:section:0030"
+  },
+  {
+   "text": "HFCs shall report to NHB.",
+   "applies_to": "HFCs",
+   "deadline": null,
+   "paragraph": "",
+   "quote": "34 HFCs shall report to NHB.",
+   "id": "rbi-n12704:section:0030#2",
+   "chunk_id": "rbi-n12704:section:0030"
+  },
+  {
+   "text": "Applicable NBFCs shall continue to report subsequent developments in accounts sold to ARCs to RBI / NHB, by obtaining requisite information periodically from the concerned ARCs.",
+   "applies_to": "Applicable NBFCs",
+   "deadline": null,
+   "paragraph": "",
+   "quote": "In cases where accounts are sold to ARCs, Applicable NBFCs shall continue to report subsequent developments in such accounts to RBI / NHB",
+   "id": "rbi-n12704:section:0030#3",
+   "chunk_id": "rbi-n12704:section:0030"
+  },
+  {
+   "text": "Applicable NBFCs shall submit a quarterly Return (RBR) on theft, burglary, dacoity and robbery to RBI using the online portal, covering all such cases during the quarter.",
+   "applies_to": "Applicable NBFCs",
+   "deadline": "Within 15 days from the end of the quarter to which the return relates",
+   "paragraph": "8.2",
+   "quote": "Applicable NBFCs shall also submit a quarterly Return (RBR) on theft, burglary, dacoity and robbery to RBI using online portal, covering all such cases during the quarter.",
+   "id": "rbi-n12704:section:0031#1",
+   "chunk_id": "rbi-n12704:section:0031"
+  },
+  {
+   "text": "HFCs must report incidents of theft, burglary, dacoity and robbery to NHB in the manner and in Returns / Formats as prescribed by NHB.",
+   "applies_to": "Housing Finance Companies (HFCs)",
+   "deadline": null,
+   "paragraph": "37",
+   "quote": "They shall report incidents of theft, burglary, dacoity and robbery to NHB in the manner and in Returns / Formats as prescribed by NHB.",
+   "id": "rbi-n12704:section:0032#1",
+   "chunk_id": "rbi-n12704:section:0032"
+  }
+ ],
+ "ratings": [
+  {
+   "obligation": "rbi-n12704:section:0008#1",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The obligation applies only to Applicable NBFCs, and FlexiCredit is a Base Layer NBFC-ICC that does not fall within that category, so no policy is needed.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0008#2",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The obligation applies only to Applicable NBFCs, and FlexiCredit is a Base Layer NBFC-ICC that does not fall within that category, so no policy is needed.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0008#3",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The obligation applies only to Applicable NBFCs, and FlexiCredit is a Base Layer NBFC-ICC that does not fall within that category, so no policy is needed.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0008#4",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The obligation applies only to Applicable NBFCs, and FlexiCredit is a Base Layer NBFC-ICC that does not fall within that category, so no policy is needed.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0008#5",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The obligation applies only to Applicable NBFCs, and FlexiCredit is a Base Layer NBFC-ICC that does not fall within that category, so no policy is needed.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0009#1",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The obligation applies to Applicable NBFCs, and the profile places FlexiCredit in the Base Layer as an NBFC-ICC, so it is not shown to fall within that category; the policy does not address reasoned orders, which would be a gap only if FlexiCredit were covered.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0009#2",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The obligation applies to Applicable NBFCs, and FlexiCredit is a Base Layer NBFC-ICC that is not shown to be within that category; the policy does not set out reasoned order contents, which would matter only if it were covered.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0010#1",
+   "applies": true,
+   "status": "met",
+   "policy_refs": [
+    "FP-04 \u00a76.1"
+   ],
+   "policy_quote": "The policy is approved by the Board and reviewed every year.",
+   "finding": "The policy requires Board approval and an annual review, which is more frequent than the three-year review the rule requires.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0010#2",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph establishes an SCBMF committee of at least three Board members, comprising the CEO and two Independent Directors, headed by an Independent Director. FP-18 \u00a72.2 lists only the Risk Management Committee.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0011#1",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The obligation applies only to Applicable NBFCs; FlexiCredit is a Base Layer NBFC-ICC and FlexiPay is a payments company, not an NBFC, so the SCBMF oversight duty does not apply on the facts given.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0011#2",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The obligation applies only to Applicable NBFCs; FlexiCredit is a Base Layer NBFC-ICC and FlexiPay is not an NBFC, so the SCBMF fraud case review duty does not apply on the facts given.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0011#3",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The obligation applies only to the Board of an Applicable NBFC; FlexiCredit is a Base Layer NBFC-ICC and FlexiPay is not an NBFC, so the rule does not apply on the facts given.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0011#4",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The obligation applies only to Senior Management of an Applicable NBFC; FlexiCredit is a Base Layer NBFC-ICC and FlexiPay is not an NBFC, so the rule does not apply on the facts given.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0011#5",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The obligation applies only to Senior Management of an Applicable NBFC; FlexiCredit is a Base Layer NBFC-ICC and FlexiPay is not an NBFC, so the periodic fraud incident review duty does not apply on the facts given.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0011#6",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The obligation applies only to Applicable NBFCs; FlexiCredit is a Base Layer NBFC-ICC and FlexiPay is not an NBFC, so the whistle blower mechanism duty does not apply on the facts given.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0012#1",
+   "applies": true,
+   "status": "met",
+   "policy_refs": [
+    "FC-16 \u00a72.1",
+    "FP-04 \u00a72.2"
+   ],
+   "policy_quote": "the CRO classifies the account as fraud within 7 days",
+   "finding": "The policy makes the CRO responsible for classifying frauds and has the fraud risk function report to the CRO, which meets the requirement for a sufficiently senior official responsible for fraud monitoring and reporting.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0012#2",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shows that the amount of fraud reported in the year is disclosed in the Notes to Accounts of the Financial Statements.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0012#3",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The EWS framework requirement applies only to NBFCs in the Upper and Middle Layers, and FlexiCredit is registered in the Base Layer.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0012#4",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The senior management responsibility for the EWS framework applies only to NBFCs in the Upper and Middle Layers, and FlexiCredit is in the Base Layer.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0012#5",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The requirement to identify early warning indicators applies only to NBFCs in the Upper and Middle Layers, and FlexiCredit is in the Base Layer.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0012#6",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The periodic review of early warning indicators applies only to NBFCs in the Upper and Middle Layers, and FlexiCredit is in the Base Layer.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0013#1",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph provides for validation of the EWS framework under the Board Level Committee's directions to ensure its integrity, robustness and consistency.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0013#2",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph provides for a robust EWS integrated with the Core Banking Solution or other operational systems.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0013#3",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph provides for timely remedial action on EWS triggers or alerts.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0013#4",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph provides for periodic review of credit sanction and monitoring processes, internal controls and systems.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0014#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FC-16 \u00a71.1"
+   ],
+   "policy_quote": "Loan accounts are watched for early warning signals: first-EMI default, identity documents linked to other defaulted loans, and many applications from one device.",
+   "finding": "FC-16 \u00a71.1 watches FlexiCredit loan accounts for early warning signals, but no paragraph requires examining each generated alert for a potential fraud angle.",
+   "severity": "medium",
+   "action": "Add a step to FC-16 requiring every early warning alert or trigger to be examined for whether the account needs a fraud investigation, with the outcome recorded."
+  },
+  {
+   "obligation": "rbi-n12704:section:0014#2",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "This EWS indicator requirement applies only to NBFCs in the Upper Layer and Middle Layer, and FlexiCredit is a Base Layer NBFC-ICC.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0014#3",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "This EWS upgrade requirement applies only to NBFCs in the Upper Layer and Middle Layer, and FlexiCredit is a Base Layer NBFC-ICC.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0014#4",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "This EWS periodic testing requirement applies only to NBFCs in the Upper Layer and Middle Layer, and FlexiCredit is a Base Layer NBFC-ICC.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0014#5",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "This EWS design requirement applies only to NBFCs in the Upper Layer and Middle Layer, and FlexiCredit is a Base Layer NBFC-ICC.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0014#6",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "This real-time transaction monitoring requirement applies only to NBFCs in the Upper Layer and Middle Layer, and FlexiCredit is a Base Layer NBFC-ICC.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0014#7",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "This vigilance requirement on mule and non-KYC accounts applies only to NBFCs in the Upper Layer and Middle Layer, and FlexiCredit is a Base Layer NBFC-ICC.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0015#1",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The obligation applies only to NBFCs in the Upper Layer and Middle Layer, but FlexiCredit is registered in the Base Layer, so the requirement for a dedicated MIS Unit or analytics setup does not apply.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0015#2",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The obligation applies only to NBFCs in the Upper Layer and Middle Layer, but FlexiCredit is registered in the Base Layer, so the six-month Early Warning Signal system requirement does not apply.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0016#1",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The obligation applies to Applicable NBFCs, which the circular ties to a layer above Base Layer; FlexiCredit is a Base Layer NBFC-ICC and FlexiPay is a payments company, so it does not apply.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0016#2",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The obligation applies to Applicable NBFCs engaging external auditors; FlexiCredit is a Base Layer NBFC-ICC and FlexiPay is not an NBFC, so it does not apply.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0017#1",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph requires the FlexiCredit borrower loan agreement to contain clauses for audit at the behest of lenders.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0017#2",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph says how to conclude the fraud status of an account when an audit is inconclusive or delayed by borrower non-cooperation.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0017#3",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FC-16 \u00a72.2"
+   ],
+   "policy_quote": "The borrower is told of the classification after it is made.",
+   "finding": "FC-16 tells the borrower of the fraud classification only after it is made, whereas natural justice requires the borrower to be heard before an account is classified or declared as fraud.",
+   "severity": "high",
+   "action": "Amend FC-16 so the borrower receives notice of the proposed fraud classification and a fair opportunity to respond before the CRO classifies the account."
+  },
+  {
+   "obligation": "rbi-n12704:section:0017#4",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FC-16 \u00a72.2"
+   ],
+   "policy_quote": "The borrower is told of the classification after it is made.",
+   "finding": "FC-16 notifies the borrower only after the fraud classification is made, which falls short of the strict natural justice required before classifying an account as fraud in sole lending.",
+   "severity": "high",
+   "action": "Amend FC-16 so that prior notice and an opportunity to be heard precede any fraud classification for sole lending accounts."
+  },
+  {
+   "obligation": "rbi-n12704:section:0017#5",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph requires examining from a fraud angle the borrowal accounts of other group companies that share common promoters or whole-time directors when a fraud is identified.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0018#1",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The obligation applies to Applicable NBFCs, which the provided text does not define; FlexiCredit is a Base Layer NBFC-ICC that does not accept deposits, so it is not shown to fall within that class.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0018#2",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The obligation applies to Applicable NBFCs, which the provided text does not define; FlexiCredit is a Base Layer NBFC-ICC that does not accept deposits, so it is not shown to fall within that class. Policy FC-16 \u00a75.1 would otherwise be assessed as falling short, since it sets no time limit for completing the staff accountability examination.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0019#1",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The obligation applies only to NBFCs in the public sector, and FlexiCredit is a privately held NBFC-ICC in the Base Layer, so it does not apply.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0020#1",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The circular applies only to Applicable NBFCs, and FlexiCredit is a Base Layer NBFC-ICC that is not shown to fall within that term, so the senior-executive accountability examination by the ACB does not apply.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0020#2",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The rule covers Applicable NBFCs in the public sector, and FlexiCredit is a privately owned Base Layer NBFC-ICC, so referral to the ABBFF does not apply.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0020#3",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The debarment rule applies to frauds reported by Applicable NBFCs, and FlexiCredit is a Base Layer NBFC-ICC not shown to be an Applicable NBFC, so the five-year debarment does not apply.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0020#4",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The rule governs lending Applicable NBFCs' discretion over credit requests from debarred persons, and FlexiCredit is a Base Layer NBFC-ICC not shown to be an Applicable NBFC, so it does not apply.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0021#1",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No cited paragraph requires FlexiCredit to re-examine, after an IBC or RBI resolution resulting in a change in management and control, whether a fraud-classified entity should stay classified as fraud or be declassified after the Resolution Plan is implemented.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0022#1",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph shown deals with withdrawing Para 4.4 penal measures for entities after a resolution plan under IBC or the prudential framework; FC-14 \u00a73.1 covers only late-payment penal interest on individual EMIs, which is a different matter.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0022#2",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph shown deals with continuing Para 4.4 penal measures against erstwhile promoters, directors or persons in charge of an entity after a resolution plan; the policy set is silent on this.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0023#1",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The obligation applies to Applicable NBFCs; FlexiCredit is a Base Layer NBFC-ICC that does not accept public deposits, so the rule is treated as not applying, though the circular's definition of Applicable NBFCs is not in the supplied text. FC-16 \u00a73.2 reports frauds above \u20b91 crore to police, which is not assessed against this rule.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0023#2",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The obligation applies to Applicable NBFCs; FlexiCredit is a Base Layer NBFC-ICC that does not accept public deposits, so the rule is treated as not applying, though the circular's definition of Applicable NBFCs is not in the supplied text. The nodal officers in FC-15 \u00a76.1 and FP-09 \u00a74.1 cover credit information and grievances, not LEA fraud reporting.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0024#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FC-16 \u00a73.1"
+   ],
+   "policy_quote": "Frauds are reported to the RBI within 21 days of detection.",
+   "finding": "FC-16 \u00a73.1 sets a timing rule for reporting frauds to the RBI but says nothing about choosing the most appropriate category when filing Fraud Monitoring Returns on the online portal.",
+   "severity": "medium",
+   "action": "Add a step to FC-16 requiring FlexiCredit staff to select the most appropriate fraud category from the listed categories when filing FMRs on the RBI portal."
+  },
+  {
+   "obligation": "rbi-n12704:section:0024#2",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "FlexiCredit is an NBFC-ICC in the Base Layer, not a Housing Finance Company, so the NHB reporting rule does not apply.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0025#1",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FC-16 \u00a73.1"
+   ],
+   "policy_quote": "Frauds are reported to the RBI within 21 days of detection.",
+   "finding": "The policy allows 21 days from detection to report frauds to RBI, while the rule requires the fraud monitoring report to be furnished immediately and not later than 14 days from classification as fraud.",
+   "severity": "high",
+   "action": "Change FC-16 \u00a73.1 to require the fraud monitoring report to RBI within 14 days of classifying an incident or account as fraud, regardless of amount."
+  },
+  {
+   "obligation": "rbi-n12704:section:0025#2",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "FlexiPay and FlexiCredit have no overseas branches, so reporting to overseas law enforcement does not apply.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0025#3",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The only group entity, FlexiPay, is authorised by RBI as a payment aggregator, so there is no unregulated group entity whose frauds would need separate reporting.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0025#4",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The group has no overseas financial group entity, so this parent reporting duty does not arise.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0025#5",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FC-16 \u00a72.1"
+   ],
+   "policy_quote": "When the Fraud Monitoring Team finds evidence that a borrower obtained a loan by fraud, the CRO classifies the account as fraud within 7 days.",
+   "finding": "The policy has the CRO classify an account as fraud within 7 days of evidence without any step giving the borrower a chance to respond, which falls short of the natural justice requirement before declaring fraud.",
+   "severity": "medium",
+   "action": "Add a step to FC-16 \u00a72.1 requiring notice to the borrower and an opportunity to respond before the CRO classifies the account as fraud."
+  },
+  {
+   "obligation": "rbi-n12704:section:0026#1",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The obligation applies only to Applicable NBFCs; FlexiCredit is a Base Layer NBFC-ICC and FlexiPay is a payments company, so the rule does not apply on the facts given.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0026#2",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The obligation applies only to Applicable NBFCs; FlexiCredit is a Base Layer NBFC-ICC and FlexiPay is a payments company, so the rule does not apply on the facts given.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0026#3",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The obligation applies only to Applicable NBFCs; FlexiCredit is a Base Layer NBFC-ICC and FlexiPay is a payments company, so the rule does not apply on the facts given.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0026#4",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The obligation applies only to Applicable NBFCs; FlexiCredit is a Base Layer NBFC-ICC and FlexiPay is a payments company, so the rule does not apply on the facts given.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0027#1",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph describes closing fraud cases through a 'Closure Module' once LEA or court proceedings are disposed of and staff accountability is complete, and the provided text does not define 'Applicable NBFCs' to confirm FlexiCredit's status under this rule.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0027#2",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The policy has no paragraph on the optional closure of reported fraud cases up to \u20b925 lakh for statistical purposes; this rule only permits such closure, so its absence is not a gap.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0028#1",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown requires FlexiCredit to maintain details of closed fraud cases for examination by auditors.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0028#2",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown provides for periodic legal audit and re-verification of title deeds for credit facilities of \u20b91 crore and above.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0028#3",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown requires a fraud-angle investigation to be completed before a loan account is transferred to other lenders or ARCs.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0028#4",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FC-16 \u00a73.1"
+   ],
+   "policy_quote": "Frauds are reported to the RBI within 21 days of detection.",
+   "finding": "The policy requires reporting to the RBI within 21 days of detection but does not require the report to precede any sale of the account to lenders or ARCs, so an account could be sold before reporting.",
+   "severity": "medium",
+   "action": "Add a rule that the RBI/NHB fraud report must be filed before any fraud account is sold to another lender or ARC."
+  },
+  {
+   "obligation": "rbi-n12704:section:0029#1",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The obligation applies to auditors of Applicable NBFCs, and FlexiCredit is a Base Layer NBFC-ICC that is not shown to be an Applicable NBFC, while FlexiPay is a payments company and not an NBFC.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0029#2",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The obligation covers Internal Audit in Applicable NBFCs, and FlexiCredit is a Base Layer NBFC-ICC that is not shown to be an Applicable NBFC, so the fraud-audit scope requirement does not apply to the group.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0030#1",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The rule requires FlexiCredit, as an applicable NBFC, to report theft, burglary, dacoity and robbery (including attempts) to the RBI FMG within seven days, but no policy paragraph addresses reporting these offences; FC-16 \u00a73.1 covers only fraud reporting to the RBI within 21 days.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0030#2",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The rule applies only to housing finance companies reporting to NHB, and FlexiCredit is a NBFC-ICC in the Base Layer, not an HFC.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0030#3",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The rule covers reporting on accounts sold to ARCs, but the company profile shows no sale of accounts to ARCs by FlexiCredit, so the activity is not carried on.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0031#1",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The obligation covers only Applicable NBFCs, and the profile does not show that FlexiCredit, a Base Layer NBFC-ICC, falls within that category, while FlexiPay is not an NBFC; no policy paragraph addresses theft, burglary, dacoity or robbery returns, so compliance should confirm the applicability scope before relying on this rating.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12704:section:0032#1",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The obligation applies only to Housing Finance Companies reporting theft, burglary, dacoity and robbery to NHB, and neither FlexiPay nor FlexiCredit is an HFC; FlexiCredit is an NBFC-ICC in the Base Layer.",
+   "severity": "none",
+   "action": null
+  }
+ ],
+ "actions": [
+  {
+   "obligation": "rbi-n12704:section:0017#3",
+   "action": "Amend FC-16 so the borrower receives notice of the proposed fraud classification and a fair opportunity to respond before the CRO classifies the account.",
+   "owner": "Chief Risk Officer",
+   "priority": "P1",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FC-16 \u00a72.2"
+   ]
+  },
+  {
+   "obligation": "rbi-n12704:section:0017#4",
+   "action": "Amend FC-16 so that prior notice and an opportunity to be heard precede any fraud classification for sole lending accounts.",
+   "owner": "Chief Risk Officer",
+   "priority": "P1",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FC-16 \u00a72.2"
+   ]
+  },
+  {
+   "obligation": "rbi-n12704:section:0025#1",
+   "action": "Change FC-16 \u00a73.1 to require the fraud monitoring report to RBI within 14 days of classifying an incident or account as fraud, regardless of amount.",
+   "owner": "Chief Risk Officer",
+   "priority": "P1",
+   "deadline": "Immediately but not later than 14 days from the date of classification of an incident / account as fraud",
+   "policy_refs": [
+    "FC-16 \u00a73.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12704:section:0014#1",
+   "action": "Add a step to FC-16 requiring every early warning alert or trigger to be examined for whether the account needs a fraud investigation, with the outcome recorded.",
+   "owner": "Chief Risk Officer",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FC-16 \u00a71.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12704:section:0024#1",
+   "action": "Add a step to FC-16 requiring FlexiCredit staff to select the most appropriate fraud category from the listed categories when filing FMRs on the RBI portal.",
+   "owner": "Chief Risk Officer",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FC-16 \u00a73.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12704:section:0025#5",
+   "action": "Add a step to FC-16 \u00a72.1 requiring notice to the borrower and an opportunity to respond before the CRO classifies the account as fraud.",
+   "owner": "Chief Risk Officer",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FC-16 \u00a72.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12704:section:0028#4",
+   "action": "Add a rule that the RBI/NHB fraud report must be filed before any fraud account is sold to another lender or ARC.",
+   "owner": "Chief Risk Officer",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FC-16 \u00a73.1"
+   ]
+  }
+ ],
+ "review": [
+  {
+   "kind": "dropped obligation",
+   "text": "Applicable NBFCs shall set up an appropriate organisational structure for institutionalisation of fraud risk management within their overall risk management functions / Department.",
+   "applies_to": "Applicable NBFCs",
+   "deadline": null,
+   "paragraph": "2.6",
+   "quote": "Applicable NBFCs shall set-up an appropriate organisational structure for institutionalisation of fraud risk management within their overall risk management functions / Department.",
+   "id": "",
+   "chunk_id": "",
+   "problems": [
+    "the quote is not in the section"
+   ]
+  },
+  {
+   "kind": "dropped obligation",
+   "text": "Government-NBFCs shall conduct examination of staff accountability as per the guidelines issued by the Central Vigilance Commission (CVC).",
+   "applies_to": "Government-NBFCs",
+   "deadline": null,
+   "paragraph": "4.3.2",
+   "quote": "Government-NBFCs shall conduct examination of staff accountability as per the guidelines issued by the Central Vigilance Commission (CVC).",
+   "id": "",
+   "chunk_id": "",
+   "problems": [
+    "the quote is not in the section"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,96 @@
+[project]
+name = "regradar"
+version = "2.0.0.dev0"
+description = "Cited retrieval over RBI circulars, and impact assessments a compliance team can check."
+readme = "README.md"
+requires-python = ">=3.12"
+authors = [{ name = "Nihar Damera" }]
+dependencies = [
+    "beautifulsoup4==4.15.0",
+    # The HTTP API (regradar.api), served by uvicorn.
+    "fastapi==0.162.0",
+    # Local ONNX embeddings, sparse BM25 and cross-encoder reranking on CPU.
+    # 0.9 for granite-embedding-small-english-r2; the vectors are computed
+    # here, so qdrant-client's own fastembed extra (which wants <0.9) is unused.
+    "fastembed==0.9.0",
+    "httpx==0.28.1",
+    "lxml==6.1.3",
+    # Already required by fastembed; pinned here because regradar imports it.
+    "numpy==2.5.4",
+    "pydantic==2.12.5",
+    # AGPL-3.0 (or a commercial licence). Fine for this public repo; a
+    # customer deployment needs the licence or a swap to pypdfium2.
+    "pymupdf==1.28.2",
+    # A second, independent PDF text extractor, to catch text PyMuPDF drops.
+    "pypdf==6.20.1",
+    # Matches the server image in docker-compose.yml (qdrant/qdrant:v1.19.2).
+    "qdrant-client==1.19.1",
+    "uvicorn==0.54.0",
+]
+
+[project.optional-dependencies]
+# Claude, for answers and the judge (regradar.llm). SDK 2.x sends API version
+# 2026-10-21, on which sampling parameters (temperature) are not accepted.
+llm = [
+    "anthropic==2.3.0",
+]
+dspy = [
+    "dspy[optuna]==3.4.1",
+]
+demo = [
+    "gradio==6.31.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest==9.2.0",
+    "ruff==0.17.3",
+    "mypy==2.4.1",
+    "pre-commit==4.7.0",
+]
+
+[build-system]
+requires = ["uv_build>=0.13,<0.14"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = "regradar"
+module-root = ""
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+# Import from the checkout rather than through the editable install's .pth
+# file, which Python skips on macOS when the file is hidden.
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "SIM", "RUF"]
+# Word lists read better as one split string than as a 50-item list.
+ignore = ["SIM905"]
+
+[tool.ruff.lint.per-file-ignores]
+# Test data quotes RBI titles, which use en dashes.
+"tests/*" = ["RUF001"]
+
+[tool.mypy]
+python_version = "3.12"
+packages = ["regradar"]
+strict = true
+
+# PyMuPDF ships no type information.
+[[tool.mypy.overrides]]
+module = ["pymupdf", "fitz"]
+ignore_missing_imports = true
+
+# Nor does DSPy; its Signature and Module are subclassed in regradar.optimize.
+[[tool.mypy.overrides]]
+module = ["dspy", "dspy.*"]
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = ["regradar.optimize"]
+disallow_subclassing_any = false

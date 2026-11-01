@@ -1,0 +1,2612 @@
+{
+ "doc_id": "rbi-n12848",
+ "title": "Reserve Bank of India (Digital Lending) Directions, 2025",
+ "model": "claude-haiku-5-5",
+ "verdict": "action needed",
+ "problems": [],
+ "counts": {
+  "obligations": 115,
+  "actions": 27,
+  "not_covered": 59,
+  "met": 15,
+  "partial": 19,
+  "not_applicable": 13,
+  "gap": 8,
+  "review": 3
+ },
+ "obligations": [
+  {
+   "text": "Para 6 of these Directions shall come into effect from November 1, 2025, and para 17 shall come into effect from June 15, 2025; the remaining provisions come into force immediately.",
+   "applies_to": "Regulated Entities (REs)",
+   "deadline": "November 1, 2025 (para 6); June 15, 2025 (para 17)",
+   "paragraph": "2(ii)",
+   "quote": "These Directions shall come into force immediately except for para 6, which shall come into effect from November 1, 2025, and para 17, which shall come into effect from June 15, 2025.",
+   "id": "rbi-n12848:section:0002#1",
+   "chunk_id": "rbi-n12848:section:0002"
+  },
+  {
+   "text": "These Directions shall be applicable to all digital lending activities of Commercial Banks, Primary (Urban) Co-operative Banks, State Co-operative Banks, Central Co-operative Banks, Non-Banking Financial Companies (including Housing Finance Companies), and All-India Financial Institutions.",
+   "applies_to": "Regulated Entities (REs)",
+   "deadline": null,
+   "paragraph": "3",
+   "quote": "These Directions shall be applicable to all digital lending activities of the following entities, hereinafter referred to as a Regulated Entity (RE)",
+   "id": "rbi-n12848:section:0002#2",
+   "chunk_id": "rbi-n12848:section:0002"
+  },
+  {
+   "text": "Digital lending by a RE involving a LSP shall be carried out under a contractual agreement between the RE and the LSP, which clearly defines the respective roles, rights, and obligations of each party.",
+   "applies_to": "Regulated Entity (RE); Lending Service Provider (LSP)",
+   "deadline": null,
+   "paragraph": "5(i)",
+   "quote": "Digital lending by a RE involving a LSP, shall be carried out under a contractual agreement between the RE and the LSP, which clearly defines the respective roles, rights, and obligations of each party thereto.",
+   "id": "rbi-n12848:section:0004#1",
+   "chunk_id": "rbi-n12848:section:0004"
+  },
+  {
+   "text": "RE shall conduct enhanced due diligence before entering into an agreement with a LSP for digital lending, taking into account the LSP's technical capabilities, robustness of data privacy policies and storage systems, fairness in conduct with borrowers, past records of conduct and ability to comply with all applicable regulations and statutes.",
+   "applies_to": "Regulated Entity (RE)",
+   "deadline": null,
+   "paragraph": "5(ii)",
+   "quote": "RE shall conduct enhanced due diligence before they enter into an agreement with a LSP for digital lending, taking into account LSP's technical capabilities, robustness of data privacy policies and storage systems",
+   "id": "rbi-n12848:section:0004#2",
+   "chunk_id": "rbi-n12848:section:0004"
+  },
+  {
+   "text": "RE shall carry out periodic review of the conduct of the LSP vis-\u00e0-vis the terms of the contractual agreement and shall take appropriate action in the event of any deviation therefrom.",
+   "applies_to": "Regulated Entity (RE)",
+   "deadline": null,
+   "paragraph": "5(iii)",
+   "quote": "RE shall carry out periodic review of the conduct of the LSP vis-\u00e0-vis the terms of the contractual agreement and shall take appropriate action in the event of any deviation therefrom.",
+   "id": "rbi-n12848:section:0004#3",
+   "chunk_id": "rbi-n12848:section:0004"
+  },
+  {
+   "text": "RE shall lay down, as part of its policy, suitable monitoring mechanisms for the loan portfolios originated with the support of LSPs.",
+   "applies_to": "Regulated Entity (RE)",
+   "deadline": null,
+   "paragraph": "5(iv)",
+   "quote": "RE shall lay down, as part of its policy, suitable monitoring mechanisms for the loan portfolios originated with the support of LSPs.",
+   "id": "rbi-n12848:section:0004#4",
+   "chunk_id": "rbi-n12848:section:0004"
+  },
+  {
+   "text": "RE shall impart necessary guidance to LSP acting as a recovery agent, to discharge their duties responsibly and ensure that LSP complies with the applicable instructions in this regard.",
+   "applies_to": "Regulated Entity (RE); LSP acting as recovery agent",
+   "deadline": null,
+   "paragraph": "5(v)",
+   "quote": "RE shall impart necessary guidance to LSP acting as a recovery agent, to discharge their duties responsibly and ensure that LSP complies with the applicable instructions",
+   "id": "rbi-n12848:section:0004#5",
+   "chunk_id": "rbi-n12848:section:0004"
+  },
+  {
+   "text": "Any outsourcing agreement entered into by the RE with an LSP shall in no manner dilute or absolve the RE of its obligations under any statutory or regulatory provision, and the RE shall remain fully responsible and liable for all acts and omissions of the LSP.",
+   "applies_to": "Regulated Entity (RE)",
+   "deadline": null,
+   "paragraph": "5(vii)",
+   "quote": "any outsourcing agreement entered into by the RE with an LSP shall in no manner dilute or absolve the RE of its obligations under any statutory or regulatory provision, and the RE shall remain fully responsible and liable for all acts and omissions of the LSP.",
+   "id": "rbi-n12848:section:0004#6",
+   "chunk_id": "rbi-n12848:section:0004"
+  },
+  {
+   "text": "Each RE shall ensure that the LSP provides a digital view of all loan offers matching the borrower's request on the DLA which meets the requirement of the borrower.",
+   "applies_to": "Regulated entities (RE) with agreements with a LSP for digital lending",
+   "deadline": null,
+   "paragraph": "6(i)",
+   "quote": "each RE shall ensure the following: i. LSP shall provide a digital view of all the loan offers matching the borrower's request on the DLA which meets the requirement of the borrower.",
+   "id": "rbi-n12848:section:0005#1",
+   "chunk_id": "rbi-n12848:section:0005"
+  },
+  {
+   "text": "The name of the unmatched lenders shall be disclosed in the digital view.",
+   "applies_to": "Regulated entities (RE) with agreements with a LSP for digital lending",
+   "deadline": null,
+   "paragraph": "6(i)",
+   "quote": "The name of the unmatched lenders shall also be disclosed in the digital view.",
+   "id": "rbi-n12848:section:0005#2",
+   "chunk_id": "rbi-n12848:section:0005"
+  },
+  {
+   "text": "The LSP shall follow a consistent approach for similarly placed borrowers and products when matching borrower requests with lenders.",
+   "applies_to": "LSP and regulated entities (RE) with agreements with a LSP",
+   "deadline": null,
+   "paragraph": "6(ii)",
+   "quote": "it shall follow a consistent approach for similarly placed borrowers and products. The mechanism adopted by the LSP and any subsequent changes to this mechanism shall be properly documented.",
+   "id": "rbi-n12848:section:0005#3",
+   "chunk_id": "rbi-n12848:section:0005"
+  },
+  {
+   "text": "The mechanism adopted by the LSP for matching borrowers with lenders and any subsequent changes to it shall be properly documented.",
+   "applies_to": "LSP",
+   "deadline": null,
+   "paragraph": "6(ii)",
+   "quote": "The mechanism adopted by the LSP and any subsequent changes to this mechanism shall be properly documented.",
+   "id": "rbi-n12848:section:0005#4",
+   "chunk_id": "rbi-n12848:section:0005"
+  },
+  {
+   "text": "The digital view of loan offers from matching lenders shall include the name(s) of the RE(s), amount and tenor of loan, APR, monthly repayment obligation and penal charges (if applicable), in a way that enables the borrower to make a fair comparison between offers.",
+   "applies_to": "LSP and regulated entities (RE) with agreements with a LSP",
+   "deadline": null,
+   "paragraph": "6(iii)",
+   "quote": "The digital view of loan offers from matching lenders shall include the name (s) of the RE (s) extending the loan offer, amount and tenor of loan, APR, monthly repayment obligation and penal charges (if applicable)",
+   "id": "rbi-n12848:section:0005#5",
+   "chunk_id": "rbi-n12848:section:0005"
+  },
+  {
+   "text": "A link to the KFS shall be provided in respect of each RE in the digital view.",
+   "applies_to": "LSP and regulated entities (RE) with agreements with a LSP",
+   "deadline": null,
+   "paragraph": "6(iii)",
+   "quote": "A link to the KFS shall also be provided in respect of each of the RE.",
+   "id": "rbi-n12848:section:0005#6",
+   "chunk_id": "rbi-n12848:section:0005"
+  },
+  {
+   "text": "The content displayed by the LSP shall be unbiased and objective.",
+   "applies_to": "LSP",
+   "deadline": null,
+   "paragraph": "6(iv)",
+   "quote": "The content displayed by the LSP shall be unbiased, objective and shall not directly/ indirectly promote or push a product of a particular RE",
+   "id": "rbi-n12848:section:0006#1",
+   "chunk_id": "rbi-n12848:section:0006"
+  },
+  {
+   "text": "The LSP shall not directly or indirectly promote or push a product of a particular RE, including through the use of dark patterns or deceptive patterns designed to mislead borrowers into choosing a particular loan offer.",
+   "applies_to": "LSP",
+   "deadline": null,
+   "paragraph": "6(iv)",
+   "quote": "shall not directly/ indirectly promote or push a product of a particular RE, including the use of dark patterns/deceptive patterns4 designed to mislead borrowers into choosing a particular loan offer",
+   "id": "rbi-n12848:section:0006#2",
+   "chunk_id": "rbi-n12848:section:0006"
+  },
+  {
+   "text": "RE must obtain the necessary information relating to the economic profile of the borrower, including at a minimum age, occupation and income details, before extending any loan, to assess creditworthiness.",
+   "applies_to": "RE",
+   "deadline": null,
+   "paragraph": "i",
+   "quote": "RE shall obtain the necessary information relating to economic profile of the borrower with a view to assessing the borrower\u2019s creditworthiness before extending any loan, including, at a minimum, age, occupation and income details.",
+   "id": "rbi-n12848:section:0007#1",
+   "chunk_id": "rbi-n12848:section:0007"
+  },
+  {
+   "text": "RE must keep the economic profile information obtained for assessing creditworthiness on record for audit purposes.",
+   "applies_to": "RE",
+   "deadline": null,
+   "paragraph": "i",
+   "quote": "The same shall be kept on record for audit purposes.",
+   "id": "rbi-n12848:section:0007#2",
+   "chunk_id": "rbi-n12848:section:0007"
+  },
+  {
+   "text": "RE must ensure there is no automatic increase in credit limit unless an explicit request is received, evaluated and kept on record from the borrower for such increase.",
+   "applies_to": "RE",
+   "deadline": null,
+   "paragraph": "ii",
+   "quote": "RE shall ensure that there is no automatic increase in credit limit unless an explicit request is received, evaluated and kept on record from the borrower for such increase.",
+   "id": "rbi-n12848:section:0007#3",
+   "chunk_id": "rbi-n12848:section:0007"
+  },
+  {
+   "text": "RE shall provide a Key Fact Statement (KFS) as per the instructions in circular DOR.STR.REC.13/13.03.00/2024-25, as amended from time to time.",
+   "applies_to": "RE",
+   "deadline": null,
+   "paragraph": "8(i)",
+   "quote": "RE shall provide a Key Fact Statement (KFS), as per instructions contained in circular no. DOR.STR.REC.13/13.03.00/2024-25",
+   "id": "rbi-n12848:section:0008#1",
+   "chunk_id": "rbi-n12848:section:0008"
+  },
+  {
+   "text": "RE shall be guided by circular DoR.MCS.REC.28/01.01.001/2023-24 on Fair Lending Practice - Penal Charges in Loan Accounts, as amended from time to time, in respect of penal charges.",
+   "applies_to": "RE",
+   "deadline": null,
+   "paragraph": "8(ii)",
+   "quote": "As regards penal charges, RE shall be guided by circular no. DoR.MCS.REC.28/01.01.001/2023-24 on \u2018Fair Lending Practice - Penal Charges in Loan Accounts\u2019",
+   "id": "rbi-n12848:section:0008#2",
+   "chunk_id": "rbi-n12848:section:0008"
+  },
+  {
+   "text": "RE shall ensure that digitally signed documents (on the RE letterhead), including KFS, summary of loan product, sanction letter, terms and conditions, account statements and privacy policies of RE/LSP, automatically flow to the borrower on the registered and verified email/SMS upon execution of the loan contract/transactions.",
+   "applies_to": "RE",
+   "deadline": null,
+   "paragraph": "8(iii)",
+   "quote": "RE shall ensure that digitally signed documents5 (on the letter head of the RE) viz., KFS, summary of loan product, sanction letter, terms and conditions, account statements",
+   "id": "rbi-n12848:section:0008#3",
+   "chunk_id": "rbi-n12848:section:0008"
+  },
+  {
+   "text": "RE shall maintain a website of its own in the public domain, kept up to date, with the specified details at a prominent single place for ease of accessibility.",
+   "applies_to": "RE",
+   "deadline": null,
+   "paragraph": "8(iv)",
+   "quote": "RE shall maintain a website of their own in public domain, which shall be kept up to date, inter-alia, with the following details at a prominent single place on the website",
+   "id": "rbi-n12848:section:0008#4",
+   "chunk_id": "rbi-n12848:section:0008"
+  },
+  {
+   "text": "RE's website shall include details of all its digital lending products and its DLAs.",
+   "applies_to": "RE",
+   "deadline": null,
+   "paragraph": "8(iv)(a)",
+   "quote": "Details of all of its digital lending products and its DLAs;",
+   "id": "rbi-n12848:section:0008#5",
+   "chunk_id": "rbi-n12848:section:0008"
+  },
+  {
+   "text": "RE's website shall include details of LSPs and the DLAs of the LSPs along with the activities for which they have been engaged.",
+   "applies_to": "RE",
+   "deadline": null,
+   "paragraph": "8(iv)(b)",
+   "quote": "Details of LSPs and the DLAs of the LSPs along with the details of the activities for which they have been engaged for;",
+   "id": "rbi-n12848:section:0008#6",
+   "chunk_id": "rbi-n12848:section:0008"
+  },
+  {
+   "text": "RE's website shall include particulars of RE's customer care and internal grievance redressal mechanism.",
+   "applies_to": "RE",
+   "deadline": null,
+   "paragraph": "8(iv)(c)",
+   "quote": "Particulars of RE\u2019s customer care and internal grievance redressal mechanism;",
+   "id": "rbi-n12848:section:0008#7",
+   "chunk_id": "rbi-n12848:section:0008"
+  },
+  {
+   "text": "RE's website shall include a link to RBI's Complaint Management System (CMS) and Sachet Portal.",
+   "applies_to": "RE",
+   "deadline": null,
+   "paragraph": "8(iv)(d)",
+   "quote": "Link to RBI\u2019s Complaint Management System (CMS) and Sachet Portal;",
+   "id": "rbi-n12848:section:0008#8",
+   "chunk_id": "rbi-n12848:section:0008"
+  },
+  {
+   "text": "RE's website shall include privacy policies and other details as required under extant guidelines of the Reserve Bank.",
+   "applies_to": "RE",
+   "deadline": null,
+   "paragraph": "8(iv)(e)",
+   "quote": "Privacy policies and other details as required under extant guidelines of the Reserve Bank.",
+   "id": "rbi-n12848:section:0008#9",
+   "chunk_id": "rbi-n12848:section:0008"
+  },
+  {
+   "text": "RE shall ensure that DLAs and LSPs have links to the RE's website.",
+   "applies_to": "RE",
+   "deadline": null,
+   "paragraph": "8(iv)",
+   "quote": "RE shall ensure that DLAs / LSPs have links to the above website of the RE.",
+   "id": "rbi-n12848:section:0008#10",
+   "chunk_id": "rbi-n12848:section:0008"
+  },
+  {
+   "text": "Before a recovery agent contacts a borrower for recovery, RE shall communicate the particulars of the recovery agent to the borrower through email/SMS, when the agent is assigned or changed in case of loan default.",
+   "applies_to": "RE",
+   "deadline": null,
+   "paragraph": "8(v)",
+   "quote": "the particulars of such recovery agent authorised to approach the borrower for recovery shall be communicated to the borrower through email/ SMS before the recovery agent contacts the borrower",
+   "id": "rbi-n12848:section:0008#11",
+   "chunk_id": "rbi-n12848:section:0008"
+  },
+  {
+   "text": "Disbursement of loan by the RE shall always be made into the bank account of the borrower, except for disbursals covered exclusively under statutory or regulatory mandate, flow of money between REs for co-lending transactions, and disbursals for specific end use provided the loan is disbursed directly into the bank account of the end-beneficiary.",
+   "applies_to": "RE",
+   "deadline": null,
+   "paragraph": "9(i)",
+   "quote": "Disbursement of loan by the RE shall always be made into the bank account of the borrower except for disbursals covered exclusively under statutory or regulatory mandate",
+   "id": "rbi-n12848:section:0009#1",
+   "chunk_id": "rbi-n12848:section:0009"
+  },
+  {
+   "text": "RE shall ensure that in no case is disbursal made to a third-party account, including the accounts of LSP, except as provided for in these Directions.",
+   "applies_to": "RE",
+   "deadline": null,
+   "paragraph": "9(i)",
+   "quote": "RE shall ensure that in no case, disbursal is made to a third-party account, including the accounts of LSP, except as provided for in these Directions.",
+   "id": "rbi-n12848:section:0009#2",
+   "chunk_id": "rbi-n12848:section:0009"
+  },
+  {
+   "text": "RE shall ensure that all loan servicing, repayment, etc. is executed by the borrower directly in the RE's bank account without any pass-through account or pool account of any third party, including the accounts of LSP.",
+   "applies_to": "RE",
+   "deadline": null,
+   "paragraph": "9(ii)",
+   "quote": "RE shall ensure that all loan servicing, repayment, etc. is executed by the borrower directly in the RE's bank account without any pass-through account/ pool account of any third party",
+   "id": "rbi-n12848:section:0009#3",
+   "chunk_id": "rbi-n12848:section:0009"
+  },
+  {
+   "text": "The flow of funds between the bank accounts of the borrower and the RE shall not be controlled either directly or indirectly by a third party, including the LSP.",
+   "applies_to": "third party, including the LSP",
+   "deadline": null,
+   "paragraph": "9(iii)",
+   "quote": "The flow of funds between the bank accounts of the borrower and the RE shall not be controlled either directly or indirectly by a third-party, including the LSP.",
+   "id": "rbi-n12848:section:0009#4",
+   "chunk_id": "rbi-n12848:section:0009"
+  },
+  {
+   "text": "RE shall ensure that any fees, charges, reimbursements, etc. payable to LSP are paid directly by the RE and are not charged to or collected from the borrowers separately by LSP.",
+   "applies_to": "RE",
+   "deadline": null,
+   "paragraph": "9(iv)",
+   "quote": "RE shall ensure that any fees, charges, reimbursements, etc. payable to LSP are paid directly by the RE and are not charged to or collected from the borrowers separately by LSP.",
+   "id": "rbi-n12848:section:0009#5",
+   "chunk_id": "rbi-n12848:section:0009"
+  },
+  {
+   "text": "Where salary advances are disbursed directly to the borrower's bank account and repaid by the corporate employer, the loan must be repaid by deduction from the borrower's salary, LSPs must have no control over the flow of funds, and repayment must be made directly from the employer's bank account to the RE.",
+   "applies_to": "RE; corporate employer; LSP",
+   "deadline": null,
+   "paragraph": "9 footnote 7",
+   "quote": "It must, however, be ensured that LSPs do not have any control over the flow of funds directly or indirectly in such transactions and that repayment is directly from the bank account of the employer to the RE.",
+   "id": "rbi-n12848:section:0009#6",
+   "chunk_id": "rbi-n12848:section:0009"
+  },
+  {
+   "text": "Any recovery of a delinquent loan by cash through the RE's physical interface must be duly reflected in full in the borrower's account on the same day.",
+   "applies_to": "RE",
+   "deadline": null,
+   "paragraph": "v",
+   "quote": "any recovery by cash shall be duly reflected in full in the borrower's account on the same day",
+   "id": "rbi-n12848:section:0010#1",
+   "chunk_id": "rbi-n12848:section:0010"
+  },
+  {
+   "text": "The RE must ensure that any fees, charges, etc. payable to LSPs for cash recovery of loans are paid directly by the RE and are not charged by the LSP to the borrower, either directly or indirectly from the recovery proceeds.",
+   "applies_to": "RE",
+   "deadline": null,
+   "paragraph": "v",
+   "quote": "RE shall ensure that any fees, charges, etc., payable to LSPs for such recovery are paid directly by the RE and are not charged by LSP to the borrower",
+   "id": "rbi-n12848:section:0010#2",
+   "chunk_id": "rbi-n12848:section:0010"
+  },
+  {
+   "text": "The cooling-off period shall be determined by the Board of the RE as laid down in its loan policy, subject to the period so determined not being less than one day.",
+   "applies_to": "Regulated Entity (RE)",
+   "deadline": null,
+   "paragraph": "10(i)",
+   "quote": "The cooling off period shall be determined by the Board of the RE as laid down in their loan policy, subject to the period so determined not being less than one day.",
+   "id": "rbi-n12848:section:0011#1",
+   "chunk_id": "rbi-n12848:section:0011"
+  },
+  {
+   "text": "For a borrower continuing with the loan after the cooling-off period, pre-payment shall continue to be allowed as per applicable RBI guidelines.",
+   "applies_to": "Regulated Entity (RE)",
+   "deadline": null,
+   "paragraph": "10(i)",
+   "quote": "For borrower continuing with the loan even after cooling-off period, pre-payment shall continue to be allowed as per applicable RBI guidelines8.",
+   "id": "rbi-n12848:section:0011#2",
+   "chunk_id": "rbi-n12848:section:0011"
+  },
+  {
+   "text": "Any one-time processing fee retained by the RE for a customer exiting during the cooling-off period shall be disclosed to the customer upfront in the KFS, if applicable.",
+   "applies_to": "Regulated Entity (RE)",
+   "deadline": null,
+   "paragraph": "10(ii)",
+   "quote": "This, if applicable, shall be disclosed to the customer upfront in KFS.",
+   "id": "rbi-n12848:section:0011#3",
+   "chunk_id": "rbi-n12848:section:0011"
+  },
+  {
+   "text": "The RE and the LSP which has an interface with the borrower shall designate nodal grievance redressal officers to deal with digital lending related complaints/issues raised by the borrower.",
+   "applies_to": "RE and LSP which has an interface with the borrower",
+   "deadline": null,
+   "paragraph": "11(i)",
+   "quote": "The RE, and the LSP which has an interface with the borrower, shall designate nodal grievance redressal officers to deal with digital lending related complaints/ issues raised by the borrower.",
+   "id": "rbi-n12848:section:0012#1",
+   "chunk_id": "rbi-n12848:section:0012"
+  },
+  {
+   "text": "Contact details of the nodal grievance redressal officers shall be prominently displayed on the websites of the RE, its LSP and on the DLA, as well as in the KFS provided to the borrower.",
+   "applies_to": "RE and its LSP",
+   "deadline": null,
+   "paragraph": "11(ii)",
+   "quote": "Contact details of the nodal grievance redressal officers shall be prominently displayed on the websites of the RE, its LSP and on the DLA, as well as in the KFS provided to the borrower.",
+   "id": "rbi-n12848:section:0012#2",
+   "chunk_id": "rbi-n12848:section:0012"
+  },
+  {
+   "text": "The facility of lodging complaint shall be made available on the DLA and on the website as stated above.",
+   "applies_to": "RE and LSP",
+   "deadline": null,
+   "paragraph": "11(iii)",
+   "quote": "The facility of lodging complaint shall also be made available on the DLA and on the website as stated above.",
+   "id": "rbi-n12848:section:0012#3",
+   "chunk_id": "rbi-n12848:section:0012"
+  },
+  {
+   "text": "Responsibility of grievance redressal shall continue to remain with the RE.",
+   "applies_to": "RE",
+   "deadline": null,
+   "paragraph": "11(iii)",
+   "quote": "It is reiterated that responsibility of grievance redressal shall continue to remain with the RE.",
+   "id": "rbi-n12848:section:0012#4",
+   "chunk_id": "rbi-n12848:section:0012"
+  },
+  {
+   "text": "The RE must ensure that the borrower's complaint is replied to within 30 days of receipt, failing which the borrower may escalate the complaint to the Reserve Bank-Integrated Ombudsman Scheme.",
+   "applies_to": "RE",
+   "deadline": "within 30 days of receipt of complaint by the RE",
+   "paragraph": "11(iv)",
+   "quote": "or the borrower has not received any reply within 30 days of receipt of complaint by the RE, the said borrower can lodge a complaint over the Complaint Management System",
+   "id": "rbi-n12848:section:0012#5",
+   "chunk_id": "rbi-n12848:section:0012"
+  },
+  {
+   "text": "The information about lodging complaints under the Reserve Bank-Integrated Ombudsman Scheme shall be suitably conveyed to the borrower.",
+   "applies_to": "RE",
+   "deadline": null,
+   "paragraph": "11(iv)",
+   "quote": "This information shall be suitably conveyed to the borrower.",
+   "id": "rbi-n12848:section:0012#6",
+   "chunk_id": "rbi-n12848:section:0012"
+  },
+  {
+   "text": "RE shall ensure that any collection of data by its DLA and the DLA of its LSP is need-based and made with prior and explicit consent of the borrower, having an audit trail.",
+   "applies_to": "Regulated Entity (RE), its DLA and the DLA of its LSP",
+   "deadline": null,
+   "paragraph": "i",
+   "quote": "RE shall ensure that any collection of data by their DLA and DLA of their LSP is need-based and with prior and explicit consent of the borrower having audit trail.",
+   "id": "rbi-n12848:section:0013#1",
+   "chunk_id": "rbi-n12848:section:0013"
+  },
+  {
+   "text": "RE shall ensure that the DLA of the RE or its LSP desists from accessing mobile phone resources such as file and media, contact list, call logs and telephony functions.",
+   "applies_to": "Regulated Entity (RE) and DLA of RE/LSP",
+   "deadline": null,
+   "paragraph": "i",
+   "quote": "RE shall also ensure that DLA of RE/LSP desist from accessing mobile phone resources like file and media, contact list, call logs, telephony functions, etc.",
+   "id": "rbi-n12848:section:0013#2",
+   "chunk_id": "rbi-n12848:section:0013"
+  },
+  {
+   "text": "A one-time access to camera, microphone, location or other necessary facility may be taken only for on-boarding/KYC requirements and only with the explicit consent of the borrower.",
+   "applies_to": "Regulated Entity (RE) and DLA of RE/LSP",
+   "deadline": null,
+   "paragraph": "i",
+   "quote": "A one-time access can be taken for camera, microphone, location or any other facility necessary for the purpose of on-boarding/ KYC requirements only, with the explicit consent of the borrower.",
+   "id": "rbi-n12848:section:0013#3",
+   "chunk_id": "rbi-n12848:section:0013"
+  },
+  {
+   "text": "The borrower shall be provided with an option to give or deny consent for use of specific data, restrict disclosure to third parties, data retention, revoke consent already granted to collect personal data, and if required, make the RE/LSP delete/forget the data.",
+   "applies_to": "Regulated Entity (RE) and LSP",
+   "deadline": null,
+   "paragraph": "ii",
+   "quote": "The borrower shall be provided with an option to give or deny consent for use of specific data, restrict disclosure to third parties, data retention, revoke consent already granted",
+   "id": "rbi-n12848:section:0013#4",
+   "chunk_id": "rbi-n12848:section:0013"
+  },
+  {
+   "text": "The purpose of obtaining the borrower's consent must be disclosed at each stage of interface with the borrowers.",
+   "applies_to": "Regulated Entity (RE)",
+   "deadline": null,
+   "paragraph": "iii",
+   "quote": "The purpose of obtaining borrowers\u2019 consent needs to be disclosed at each stage of interface with the borrowers.",
+   "id": "rbi-n12848:section:0013#5",
+   "chunk_id": "rbi-n12848:section:0013"
+  },
+  {
+   "text": "Explicit consent of the borrower shall be taken before sharing personal information with any third party, except where such sharing is required as per statutory or regulatory requirement.",
+   "applies_to": "Regulated Entity (RE)",
+   "deadline": null,
+   "paragraph": "iv",
+   "quote": "Explicit consent of the borrower shall be taken before sharing personal information with any third party, except for cases where such sharing is required as per statutory or regulatory requirement.",
+   "id": "rbi-n12848:section:0013#6",
+   "chunk_id": "rbi-n12848:section:0013"
+  },
+  {
+   "text": "RE shall ensure that LSPs engaged by them do not store personal information of borrowers except basic minimal data (such as name, address, contact details of the customer) that may be required to carry out their operations or services within the scope of the RE-LSP agreement.",
+   "applies_to": "RE; LSP engaged by RE",
+   "deadline": null,
+   "paragraph": "13(i)",
+   "quote": "RE shall ensure that LSP engaged by them do not store personal information of borrower except some basic minimal data (viz., name, address, contact details of the customer, etc.)",
+   "id": "rbi-n12848:section:0014#1",
+   "chunk_id": "rbi-n12848:section:0014"
+  },
+  {
+   "text": "Responsibility for data privacy and security of the customer's personal information on an ongoing basis shall rest with the RE.",
+   "applies_to": "RE",
+   "deadline": null,
+   "paragraph": "13(i)",
+   "quote": "Responsibility regarding data privacy and security of the customer's personal information on an ongoing basis shall be that of the RE.",
+   "id": "rbi-n12848:section:0014#2",
+   "chunk_id": "rbi-n12848:section:0014"
+  },
+  {
+   "text": "RE shall ensure that clear policy guidelines on storage of customer data (covering type of data stored, retention length, restrictions on use, data destruction protocol, and standards for handling security breaches) are put in place and disclosed prominently by the RE and its LSPs on their website and DLA at all times.",
+   "applies_to": "RE; LSP engaged by RE",
+   "deadline": "at all times",
+   "paragraph": "13(ii)",
+   "quote": "RE shall ensure that clear policy guidelines regarding the storage of customer data including the type of data that can be stored, the length of time for which data can be stored",
+   "id": "rbi-n12848:section:0014#3",
+   "chunk_id": "rbi-n12848:section:0014"
+  },
+  {
+   "text": "RE shall ensure that no biometric data is stored or collected by the RE and LSP, unless allowed under extant statutory guidelines.",
+   "applies_to": "RE; LSP engaged by RE",
+   "deadline": null,
+   "paragraph": "13(iii)",
+   "quote": "RE shall ensure that no biometric data is stored/ collected by the RE and LSP, unless allowed under extant statutory guidelines.",
+   "id": "rbi-n12848:section:0014#4",
+   "chunk_id": "rbi-n12848:section:0014"
+  },
+  {
+   "text": "RE shall ensure that all data is stored only in servers located within India, while complying with statutory obligations and regulatory instructions.",
+   "applies_to": "RE",
+   "deadline": null,
+   "paragraph": "13(iv)",
+   "quote": "RE shall ensure that all data is stored only in servers located within India, while ensuring compliance with statutory obligations/ regulatory instructions.",
+   "id": "rbi-n12848:section:0014#5",
+   "chunk_id": "rbi-n12848:section:0014"
+  },
+  {
+   "text": "Where data is processed outside India, it shall be deleted from servers outside India and brought back to India within 24 hours of processing.",
+   "applies_to": "RE",
+   "deadline": "within 24 hours of processing",
+   "paragraph": "13(iv)",
+   "quote": "in case the data is processed outside India, the same shall be deleted from servers outside India and brought back to India within 24 hours of processing.",
+   "id": "rbi-n12848:section:0014#6",
+   "chunk_id": "rbi-n12848:section:0014"
+  },
+  {
+   "text": "RE and LSPs engaged by RE shall have a comprehensive privacy policy compliant with applicable laws, associated regulations and RBI guidelines.",
+   "applies_to": "RE and LSPs engaged by RE",
+   "deadline": null,
+   "paragraph": "14(i)",
+   "quote": "RE and LSPs engaged by RE shall have a comprehensive privacy policy compliant with applicable laws, associated regulations and RBI guidelines",
+   "id": "rbi-n12848:section:0015#1",
+   "chunk_id": "rbi-n12848:section:0015"
+  },
+  {
+   "text": "The comprehensive privacy policy of the RE and of the LSP shall be made publicly available on the website of the RE and LSP, as the case may be.",
+   "applies_to": "RE and LSPs engaged by RE",
+   "deadline": null,
+   "paragraph": "14(i)",
+   "quote": "which shall be made available publicly on the website of RE and LSP, as the case may be",
+   "id": "rbi-n12848:section:0015#2",
+   "chunk_id": "rbi-n12848:section:0015"
+  },
+  {
+   "text": "Details of third parties (where applicable) allowed to collect personal information through the DLA shall be disclosed in the privacy policy.",
+   "applies_to": "RE and LSPs engaged by RE",
+   "deadline": null,
+   "paragraph": "14(ii)",
+   "quote": "Details of third parties (where applicable) allowed to collect personal information through the DLA shall also be disclosed in the privacy policy.",
+   "id": "rbi-n12848:section:0015#3",
+   "chunk_id": "rbi-n12848:section:0015"
+  },
+  {
+   "text": "RE shall ensure that it and the LSPs engaged by it comply with technology standards and cybersecurity requirements stipulated by RBI and other relevant agencies, or as specified from time to time, for undertaking digital lending.",
+   "applies_to": "RE",
+   "deadline": null,
+   "paragraph": "15(i)",
+   "quote": "RE shall ensure that they and the LSPs engaged by them comply with various technology standards/ requirements on cybersecurity stipulated by RBI and other relevant agencies",
+   "id": "rbi-n12848:section:0015#4",
+   "chunk_id": "rbi-n12848:section:0015"
+  },
+  {
+   "text": "RE shall ensure that any lending done through their DLAs and/or DLAs of LSPs is reported by them to CICs irrespective of its nature/tenor.",
+   "applies_to": "Regulated Entities (RE)",
+   "deadline": null,
+   "paragraph": "16(i)",
+   "quote": "RE shall ensure that any lending done through their DLAs and/ or DLAs of LSPs is reported by them to CICs irrespective of its nature/ tenor.",
+   "id": "rbi-n12848:section:0016#1",
+   "chunk_id": "rbi-n12848:section:0016"
+  },
+  {
+   "text": "Extension of structured digital lending products over a merchant platform involving short term, unsecured/secured credits or deferred payments must be reported to CICs by the RE.",
+   "applies_to": "Regulated Entities (RE)",
+   "deadline": null,
+   "paragraph": "16(ii)",
+   "quote": "Extension of structured digital lending products by RE and/or LSPs engaged by RE over a merchant platform involving short term, unsecured/ secured credits or deferred payments, need to be reported to CICs by the RE.",
+   "id": "rbi-n12848:section:0016#2",
+   "chunk_id": "rbi-n12848:section:0016"
+  },
+  {
+   "text": "RE shall ensure that LSPs associated with deferred payment credit products abide by the extant outsourcing guidelines issued by the Reserve Bank and be guided by these Directions.",
+   "applies_to": "Regulated Entities (RE); LSPs associated with deferred payment credit products",
+   "deadline": null,
+   "paragraph": "16(ii)",
+   "quote": "RE shall ensure that LSPs, if any, associated with such deferred payment credit products shall abide by the extant outsourcing guidelines issued by the Reserve Bank and be guided by these Directions.",
+   "id": "rbi-n12848:section:0016#3",
+   "chunk_id": "rbi-n12848:section:0016"
+  },
+  {
+   "text": "RE shall report all DLAs deployed or joined by them, whether their own or those of the LSPs, either exclusively or as a platform participant, on the CIMS portal of RBI in the format given in Annex-I.",
+   "applies_to": "RE",
+   "deadline": null,
+   "paragraph": "17(i)",
+   "quote": "RE shall report all DLAs deployed/ joined by them, whether their own or those of the LSPs, either exclusively or as a platform participant, on the Centralised Information Management System (CIMS) portal",
+   "id": "rbi-n12848:section:0017#1",
+   "chunk_id": "rbi-n12848:section:0017"
+  },
+  {
+   "text": "RE shall update the list of DLAs on the CIMS portal as and when additional DLAs are deployed or the engagement with an existing DLA ceases to exist.",
+   "applies_to": "RE",
+   "deadline": "As and when additional DLA(s) are deployed or engagement ceases",
+   "paragraph": "17(ii)",
+   "quote": "RE shall update the aforesaid list as and when additional DLA (s) are deployed or the engagement with the existing DLA (s) ceases to exist by filing the updated data in the CIMS portal.",
+   "id": "rbi-n12848:section:0017#2",
+   "chunk_id": "rbi-n12848:section:0017"
+  },
+  {
+   "text": "The Chief Compliance Officer of the RE or another official designated by the Board shall certify that the DLA data submitted on the CIMS portal is correct and that the DLAs comply with all extant regulatory instructions, including these Directions as updated from time to time.",
+   "applies_to": "Chief Compliance Officer of the RE or any other official designated by the Board of the RE",
+   "deadline": null,
+   "paragraph": "17(iii)",
+   "quote": "The Chief Compliance Officer of the RE or any other official designated by the Board of the RE for the purpose shall certify that the data on DLAs submitted by them on the CIMS portal is correct",
+   "id": "rbi-n12848:section:0017#3",
+   "chunk_id": "rbi-n12848:section:0017"
+  },
+  {
+   "text": "The Chief Compliance Officer or Board-designated official shall certify that DLAs have a link to the RE's website where borrowers can access loan product, lender, LSP, customer care, Sachet Portal link and privacy policy information.",
+   "applies_to": "Chief Compliance Officer/ other official designated by the Board of the RE",
+   "deadline": null,
+   "paragraph": "17(iv)(a)",
+   "quote": "DLAs have link to RE's website where further information about the loan products, the lender, the LSP, particulars of customer care, link to Sachet Portal, privacy policies, etc. can be accessed by the borrower.",
+   "id": "rbi-n12848:section:0017#4",
+   "chunk_id": "rbi-n12848:section:0017"
+  },
+  {
+   "text": "The Chief Compliance Officer or Board-designated official shall certify that, where a DLA is owned by an LSP, the LSP has appointed a suitable nodal grievance redressal officer for digital lending complaints, with details prominently available on the DLA.",
+   "applies_to": "Chief Compliance Officer/ other official designated by the Board of the RE",
+   "deadline": null,
+   "paragraph": "17(iv)(b)",
+   "quote": "DLAs (in case owned by LSP), have appointed a suitable nodal grievance redressal officer to deal with digital lending related complaints/ issues raised by the borrower, details of which are prominently available on the respective DLA.",
+   "id": "rbi-n12848:section:0017#5",
+   "chunk_id": "rbi-n12848:section:0017"
+  },
+  {
+   "text": "The Chief Compliance Officer or Board-designated official shall certify that data collection and storage by DLAs complies with paragraphs 12 and 13 of these Directions and other applicable statutory and regulatory requirements.",
+   "applies_to": "Chief Compliance Officer/ other official designated by the Board of the RE",
+   "deadline": null,
+   "paragraph": "17(iv)(c)",
+   "quote": "Data collection and storage by DLAs is in compliance with para 12 and 13 of these Directions and other statutory and regulatory requirements, as applicable from time to time.",
+   "id": "rbi-n12848:section:0017#6",
+   "chunk_id": "rbi-n12848:section:0017"
+  },
+  {
+   "text": "The Chief Compliance Officer or Board-designated official shall certify that the DLA particulars submitted by the RE are suitably disclosed on the RE's website as required under paragraph 8(iv).",
+   "applies_to": "Chief Compliance Officer/ other official designated by the Board of the RE",
+   "deadline": null,
+   "paragraph": "17(iv)(d)",
+   "quote": "The DLA's particulars submitted by the RE are also suitably disclosed on the RE's website as required under para 8(iv) of these Directions.",
+   "id": "rbi-n12848:section:0017#7",
+   "chunk_id": "rbi-n12848:section:0017"
+  },
+  {
+   "text": "RE shall ensure the correctness and timeliness of information regarding DLAs submitted on CIMS, as it will be published on RBI's website in an automated manner.",
+   "applies_to": "Regulated Entity (RE)",
+   "deadline": null,
+   "paragraph": "v",
+   "quote": "RE shall ensure the correctness and timeliness of information regarding DLAs, as the data, as submitted by the RE on CIMS, shall be published on the website of RBI",
+   "id": "rbi-n12848:section:0018#1",
+   "chunk_id": "rbi-n12848:section:0018"
+  },
+  {
+   "text": "RE shall directly address and deal with all issues and grievances of customers concerning DLAs.",
+   "applies_to": "Regulated Entity (RE)",
+   "deadline": null,
+   "paragraph": "v",
+   "quote": "All issues and grievances of customers concerning DLAs shall be addressed and dealt with by the RE directly.",
+   "id": "rbi-n12848:section:0018#2",
+   "chunk_id": "rbi-n12848:section:0018"
+  },
+  {
+   "text": "RE shall ensure that inclusion of any third party DLAs in the reporting is not construed by the DLAs or any associated entity as conferring any registration, authorization, or endorsement by the Reserve Bank.",
+   "applies_to": "Regulated Entity (RE)",
+   "deadline": null,
+   "paragraph": "vi",
+   "quote": "RE shall ensure that the inclusion of any third party DLAs deployed by them as part of above reporting, shall not be construed by the DLAs or any associated entity as conferring any form of registration",
+   "id": "rbi-n12848:section:0018#3",
+   "chunk_id": "rbi-n12848:section:0018"
+  },
+  {
+   "text": "RE shall ensure that inclusion of third party DLAs in the reporting is not misrepresented in any marketing, promotional, or other materials issued by or on behalf of the DLAs.",
+   "applies_to": "Regulated Entity (RE)",
+   "deadline": null,
+   "paragraph": "vi",
+   "quote": "RE shall also ensure that such inclusion is not misrepresented in any marketing, promotional, or other materials issued by or on behalf of the DLAs.",
+   "id": "rbi-n12848:section:0018#4",
+   "chunk_id": "rbi-n12848:section:0018"
+  },
+  {
+   "text": "RE shall ensure that reporting in respect of all DLAs on the CIMS portal is completed.",
+   "applies_to": "Regulated Entity (RE)",
+   "deadline": "June 15, 2025",
+   "paragraph": "vii",
+   "quote": "RE shall ensure that the reporting in respect of all DLAs on the CIMS portal is completed by June 15, 2025.",
+   "id": "rbi-n12848:section:0018#5",
+   "chunk_id": "rbi-n12848:section:0018"
+  },
+  {
+   "text": "A regulated entity may enter into default loss guarantee (DLG) arrangements only with a lending service provider (LSP) or with another regulated entity engaged as an LSP.",
+   "applies_to": "Regulated Entities (RE)",
+   "deadline": null,
+   "paragraph": "18(i)",
+   "quote": "RE may enter into DLG arrangements only with a LSP/ other RE engaged as a LSP.",
+   "id": "rbi-n12848:section:0019#1",
+   "chunk_id": "rbi-n12848:section:0019"
+  },
+  {
+   "text": "A lending service provider providing default loss guarantee (DLG) must be incorporated as a company under the Companies Act, 2013.",
+   "applies_to": "Lending service providers (LSP) providing DLG",
+   "deadline": null,
+   "paragraph": "18(i)",
+   "quote": "Further, the LSP providing DLG shall be incorporated as a company under the Companies Act, 2013.",
+   "id": "rbi-n12848:section:0019#2",
+   "chunk_id": "rbi-n12848:section:0019"
+  },
+  {
+   "text": "A RE, including a RE acting as DLG provider, shall put in place a Board approved policy before entering into any DLG arrangement.",
+   "applies_to": "RE, including a RE acting as DLG provider",
+   "deadline": null,
+   "paragraph": "19(i)",
+   "quote": "RE, including a RE acting as DLG provider, shall put in place a Board approved policy before entering into any DLG arrangement.",
+   "id": "rbi-n12848:section:0020#1",
+   "chunk_id": "rbi-n12848:section:0020"
+  },
+  {
+   "text": "The Board approved DLG policy shall include, at a minimum, the eligibility criteria for DLG provider, nature and extent of DLG cover, process of monitoring and reviewing the DLG arrangement, and the details of the fees, if any, payable to/ received by the DLG provider.",
+   "applies_to": "RE, including a RE acting as DLG provider",
+   "deadline": null,
+   "paragraph": "19(i)",
+   "quote": "Such policy shall include, at a minimum, the eligibility criteria for DLG provider, nature and extent of DLG cover, process of monitoring and reviewing the DLG arrangement",
+   "id": "rbi-n12848:section:0020#2",
+   "chunk_id": "rbi-n12848:section:0020"
+  },
+  {
+   "text": "RE shall ensure that any DLG arrangement does not act as a substitute for credit appraisal requirements, and robust credit underwriting standards shall be put in place irrespective of the DLG cover.",
+   "applies_to": "RE",
+   "deadline": null,
+   "paragraph": "19(ii)",
+   "quote": "RE shall ensure that any DLG arrangement does not act as a substitute for credit appraisal requirements and robust credit underwriting standards need to be put in place irrespective of the DLG cover.",
+   "id": "rbi-n12848:section:0020#3",
+   "chunk_id": "rbi-n12848:section:0020"
+  },
+  {
+   "text": "Every time a RE enters into or renews a DLG arrangement, it shall obtain adequate information to satisfy itself that the entity extending DLG would be able to honour it.",
+   "applies_to": "RE",
+   "deadline": null,
+   "paragraph": "19(iii)",
+   "quote": "Every time a RE enters into or renews a DLG arrangement, it shall obtain adequate information to satisfy itself that the entity extending DLG would be able to honour it.",
+   "id": "rbi-n12848:section:0020#4",
+   "chunk_id": "rbi-n12848:section:0020"
+  },
+  {
+   "text": "The information obtained shall, at a minimum, include a declaration from the DLG provider, certified by its statutory auditor, on the aggregate DLG amount outstanding, the number of REs and the respective number of portfolios against which DLG has been provided, and past default rates on similar portfolios.",
+   "applies_to": "RE",
+   "deadline": null,
+   "paragraph": "19(iii)",
+   "quote": "Such information shall, at a minimum, include a declaration from the DLG provider, certified by the statutory auditor of the DLG provider, on the aggregate DLG amount outstanding",
+   "id": "rbi-n12848:section:0020#5",
+   "chunk_id": "rbi-n12848:section:0020"
+  },
+  {
+   "text": "The due-diligence requirements in this paragraph are in addition to the general requirements applicable to RE-LSP arrangements under para 5 of the Directions, and shall be complied with alongside them.",
+   "applies_to": "RE",
+   "deadline": null,
+   "paragraph": "19(iv)",
+   "quote": "It is clarified that the due-diligence requirements specified herein are in addition to the general requirements applicable to RE-LSP arrangements as set out in para 5",
+   "id": "rbi-n12848:section:0020#6",
+   "chunk_id": "rbi-n12848:section:0020"
+  },
+  {
+   "text": "RE shall not enter into DLG arrangements for revolving credit facilities offered through digital lending channel and credit cards as defined under the Master Direction \u2013 Credit Card and Debit Card \u2013 Issuance and Conduct Directions, 2022 dated April 21, 2022.",
+   "applies_to": "RE",
+   "deadline": null,
+   "paragraph": "20(i)",
+   "quote": "RE shall not enter into DLG arrangements for revolving credit facilities offered through digital lending channel and credit cards",
+   "id": "rbi-n12848:section:0021#1",
+   "chunk_id": "rbi-n12848:section:0021"
+  },
+  {
+   "text": "RE shall not enter into DLG arrangements on loans covered by the credit guarantee schemes administered by trust funds as specified under para 2 of the Review of Prudential Norms \u2013 Risk Weights for Exposures guaranteed by Credit Guarantee Schemes (CGS) dated September 07, 2022, as amended from time to time.",
+   "applies_to": "RE",
+   "deadline": null,
+   "paragraph": "20(ii)",
+   "quote": "RE shall not enter into DLG arrangements on the loans which are covered by the credit guarantee schemes administered by trust funds",
+   "id": "rbi-n12848:section:0021#2",
+   "chunk_id": "rbi-n12848:section:0021"
+  },
+  {
+   "text": "NBFC \u2013 P2P shall not enter into DLG arrangements for the loans facilitated over its platform and shall be guided by para 6(1)(iv) of the Master Direction - Non-Banking Financial Company \u2013 Peer to Peer Lending Platform (Reserve Bank) Directions, 2017 dated October 04, 2017, as amended from time to time.",
+   "applies_to": "NBFC \u2013 P2P",
+   "deadline": null,
+   "paragraph": "20(iii)",
+   "quote": "NBFC \u2013 P2P shall not enter into DLG arrangements for the loans facilitated over its platform",
+   "id": "rbi-n12848:section:0021#3",
+   "chunk_id": "rbi-n12848:section:0021"
+  },
+  {
+   "text": "DLG arrangements shall be backed by an explicit and legally enforceable contract between the RE and the DLG provider.",
+   "applies_to": "RE and DLG provider",
+   "deadline": null,
+   "paragraph": "21(i)",
+   "quote": "DLG arrangements shall be backed by an explicit and legally enforceable contract between the RE and the DLG provider",
+   "id": "rbi-n12848:section:0021#4",
+   "chunk_id": "rbi-n12848:section:0021"
+  },
+  {
+   "text": "The contract between the RE and the DLG provider shall, among other things, contain the extent of DLG cover, the form in which DLG cover is to be maintained with the RE, the timeline for DLG invocation, and the disclosure requirements as under para 27 of these Directions.",
+   "applies_to": "RE and DLG provider",
+   "deadline": null,
+   "paragraph": "21(i)",
+   "quote": "Such contract, among other things, shall contain the following details",
+   "id": "rbi-n12848:section:0021#5",
+   "chunk_id": "rbi-n12848:section:0021"
+  },
+  {
+   "text": "RE shall accept DLG only in one or more of the following forms: cash deposited with the RE; a fixed deposit maintained with a Scheduled Commercial Bank with a lien marked in favour of the RE; or a bank guarantee in favour of the RE.",
+   "applies_to": "RE",
+   "deadline": null,
+   "paragraph": "22(i)",
+   "quote": "RE shall accept DLG only in one or more of the following forms: a. Cash deposited with the RE; b. Fixed Deposit maintained with a Scheduled Commercial Bank with a lien marked in favour of the RE;",
+   "id": "rbi-n12848:section:0022#1",
+   "chunk_id": "rbi-n12848:section:0022"
+  },
+  {
+   "text": "RE shall ensure that the total DLG cover on any outstanding portfolio which is specified upfront does not exceed five per cent of the total amount disbursed out of that loan portfolio at any given time.",
+   "applies_to": "RE",
+   "deadline": null,
+   "paragraph": "23(i)",
+   "quote": "RE shall ensure that the total amount of DLG cover on any outstanding portfolio which is specified upfront shall not exceed five per cent of the total amount disbursed out of that loan portfolio at any given time.",
+   "id": "rbi-n12848:section:0022#2",
+   "chunk_id": "rbi-n12848:section:0022"
+  },
+  {
+   "text": "In case of implicit guarantee arrangements, the DLG Provider shall not bear performance risk of more than the equivalent of five per cent of the underlying loan portfolio.",
+   "applies_to": "DLG Provider",
+   "deadline": null,
+   "paragraph": "23(i)",
+   "quote": "In case of implicit guarantee arrangements, the DLG Provider shall not bear performance risk of more than the equivalent amount of five per cent of the underlying loan portfolio.",
+   "id": "rbi-n12848:section:0022#3",
+   "chunk_id": "rbi-n12848:section:0022"
+  },
+  {
+   "text": "Recognition of individual loan assets as NPA and consequent provisioning is the responsibility of the RE per extant asset classification and provisioning norms, irrespective of any DLG cover at portfolio level.",
+   "applies_to": "RE",
+   "deadline": null,
+   "paragraph": "24(i)",
+   "quote": "Recognition of individual loan assets in the portfolio as Non-Performing Asset (NPA) and consequent provisioning shall be the responsibility of the RE as per the extant asset classification and provisioning norms",
+   "id": "rbi-n12848:section:0023#1",
+   "chunk_id": "rbi-n12848:section:0023"
+  },
+  {
+   "text": "The amount of DLG invoked shall not be set off against the underlying individual loans; the borrowers' liability in respect of the underlying loan remains unaffected.",
+   "applies_to": "RE",
+   "deadline": null,
+   "paragraph": "24(ii)",
+   "quote": "The amount of DLG invoked shall not be set off against the underlying individual loans, i.e. the liability of the borrowers in respect of the underlying loan shall remain unaffected.",
+   "id": "rbi-n12848:section:0023#2",
+   "chunk_id": "rbi-n12848:section:0023"
+  },
+  {
+   "text": "DLG amount once invoked by the RE shall not be reinstated, including through loan recovery.",
+   "applies_to": "RE",
+   "deadline": null,
+   "paragraph": "24(iv)",
+   "quote": "DLG amount once invoked by the RE shall not be reinstated, including through loan recovery.",
+   "id": "rbi-n12848:section:0023#3",
+   "chunk_id": "rbi-n12848:section:0023"
+  },
+  {
+   "text": "In case the DLG provider is an RE, it shall deduct the full outstanding amount of the DLG from its capital.",
+   "applies_to": "RE acting as DLG provider",
+   "deadline": null,
+   "paragraph": "25(ii)",
+   "quote": "In case, DLG provider is an RE, it shall deduct full amount of the DLG which is outstanding from its capital.",
+   "id": "rbi-n12848:section:0023#4",
+   "chunk_id": "rbi-n12848:section:0023"
+  },
+  {
+   "text": "RE shall invoke the DLG within a maximum overdue period of 120 days, unless the loan dues are made good by the borrower before that.",
+   "applies_to": "RE",
+   "deadline": "120 days overdue",
+   "paragraph": "26(i)",
+   "quote": "RE shall invoke DLG within a maximum overdue period of 120 days, unless the loan dues are made good by the borrower before that.",
+   "id": "rbi-n12848:section:0024#1",
+   "chunk_id": "rbi-n12848:section:0024"
+  },
+  {
+   "text": "The period for which the DLG agreement remains in force shall not be less than the longest tenor of the loan in the underlying loan portfolio.",
+   "applies_to": "RE",
+   "deadline": null,
+   "paragraph": "26(ii)",
+   "quote": "The period for which the DLG agreement remains in force shall not be less than the longest tenor of the loan in the underlying loan portfolio.",
+   "id": "rbi-n12848:section:0024#2",
+   "chunk_id": "rbi-n12848:section:0024"
+  },
+  {
+   "text": "RE shall put in place a mechanism to ensure that LSPs with whom they have a DLG arrangement publish on their website the total number of portfolios and the respective amount of each portfolio on which DLG has been offered.",
+   "applies_to": "RE",
+   "deadline": null,
+   "paragraph": "27(i)",
+   "quote": "RE shall put in place a mechanism to ensure that LSPs with whom they have a DLG arrangement shall publish on their website the total number of portfolios",
+   "id": "rbi-n12848:section:0025#1",
+   "chunk_id": "rbi-n12848:section:0025"
+  },
+  {
+   "text": "Disclosure under paragraph 27(i) shall be made on a monthly basis.",
+   "applies_to": "RE",
+   "deadline": "Monthly basis",
+   "paragraph": "27(ii)",
+   "quote": "Disclosure under para (i) above shall be made on a monthly basis, with the disclosure for any given month to be provided no later than seven (7) working days",
+   "id": "rbi-n12848:section:0025#2",
+   "chunk_id": "rbi-n12848:section:0025"
+  },
+  {
+   "text": "Disclosure for any given month under paragraph 27(i) shall be provided no later than seven (7) working days following the conclusion of that month.",
+   "applies_to": "RE",
+   "deadline": "No later than seven (7) working days following the conclusion of the month",
+   "paragraph": "27(ii)",
+   "quote": "with the disclosure for any given month to be provided no later than seven (7) working days following the conclusion of that month.",
+   "id": "rbi-n12848:section:0025#3",
+   "chunk_id": "rbi-n12848:section:0025"
+  },
+  {
+   "text": "Guarantees covered under the Guarantee schemes of CGTMSE, CRGFTLIH and individual schemes under NCGTC shall not be covered within the definition of DLG.",
+   "applies_to": "Guarantees covered under the following schemes/ entities (DLG definition)",
+   "deadline": null,
+   "paragraph": "28(i)",
+   "quote": "Guarantees covered under the following schemes/ entities shall not be covered within the definition of DLG",
+   "id": "rbi-n12848:section:0026#1",
+   "chunk_id": "rbi-n12848:section:0026"
+  },
+  {
+   "text": "Credit guarantees provided by BIS, IMF and Multilateral Development Banks referred to in para 5.5 of the RBI Master Circular on Basel III Capital Regulation dated April 01, 2025 shall not be covered within the definition of DLG.",
+   "applies_to": "Guarantees covered under the following schemes/ entities (DLG definition)",
+   "deadline": null,
+   "paragraph": "28(ii)",
+   "quote": "Credit guarantee provided by Bank for International Settlements (BIS), International Monetary Fund (IMF) as well as Multilateral Development Banks",
+   "id": "rbi-n12848:section:0026#2",
+   "chunk_id": "rbi-n12848:section:0026"
+  },
+  {
+   "text": "Card-issuers must ensure complete transparency in converting credit card transactions to EMIs by clearly indicating the principal, interest and upfront discount provided by the merchant/card-issuer (to make it no cost), prior to the conversion.",
+   "applies_to": "Card-issuers",
+   "deadline": null,
+   "paragraph": "29(i)",
+   "quote": "Card-issuers shall ensure complete transparency in the conversion of credit card transactions to Equated Monthly Instalments (EMIs) by clearly indicating the principal, interest and upfront discount",
+   "id": "rbi-n12848:section:0027#1",
+   "chunk_id": "rbi-n12848:section:0027"
+  },
+  {
+   "text": "Card-issuers must separately indicate the principal, interest and upfront discount for EMI conversions in the credit card bill/statement.",
+   "applies_to": "Card-issuers",
+   "deadline": null,
+   "paragraph": "29(i)",
+   "quote": "The same shall also be separately indicated in the credit card bill/statement.",
+   "id": "rbi-n12848:section:0027#2",
+   "chunk_id": "rbi-n12848:section:0027"
+  },
+  {
+   "text": "EMI conversions with an interest component must not be camouflaged as zero-interest or no-cost EMI.",
+   "applies_to": "Card-issuers",
+   "deadline": null,
+   "paragraph": "29(i)",
+   "quote": "EMI conversion with interest component shall not be camouflaged as zero-interest/no-cost EMI.",
+   "id": "rbi-n12848:section:0027#3",
+   "chunk_id": "rbi-n12848:section:0027"
+  },
+  {
+   "text": "Other loan products offered on Credit Cards that are not covered by the aforesaid para of the Master Direction shall be governed by the stipulations laid down in these Directions.",
+   "applies_to": "Regulated Entities offering other loan products on Credit Cards",
+   "deadline": null,
+   "paragraph": "29(i)",
+   "quote": "other loan products offered on Credit Cards which are not covered/ envisaged under the aforesaid para of the Master Direction shall be governed by the stipulations laid down under these Directions.",
+   "id": "rbi-n12848:section:0027#4",
+   "chunk_id": "rbi-n12848:section:0027"
+  },
+  {
+   "text": "Each DLA must be reported as a separate line item on the CIMS portal.",
+   "applies_to": "Regulated Entities (REs) submitting DLA data on the CIMS portal",
+   "deadline": null,
+   "paragraph": "",
+   "quote": "Each DLA to be reported as a separate line item. In case any DLA is available on multiple app stores, each entry is required to be reported",
+   "id": "rbi-n12848:section:0029#1",
+   "chunk_id": "rbi-n12848:section:0029"
+  },
+  {
+   "text": "Where a DLA is available on multiple app stores, each app store entry must be reported.",
+   "applies_to": "Regulated Entities (REs) submitting DLA data on the CIMS portal",
+   "deadline": null,
+   "paragraph": "",
+   "quote": "In case any DLA is available on multiple app stores, each entry is required to be reported",
+   "id": "rbi-n12848:section:0029#2",
+   "chunk_id": "rbi-n12848:section:0029"
+  },
+  {
+   "text": "Where the DLA is a website, the regulated entity must provide a link to that website; where the DLA is an app hosted on an app store, it must provide the link to the DLA on the app store.",
+   "applies_to": "Regulated Entities (implied; the section does not name the entity explicitly)",
+   "deadline": null,
+   "paragraph": "",
+   "quote": "In case DLA is a website, provide link to the website, or in case DLA is an app hosted on one of the app-stores, provide the link of the DLA on the app-store",
+   "id": "rbi-n12848:section:0030#1",
+   "chunk_id": "rbi-n12848:section:0030"
+  },
+  {
+   "text": "The DLG set portfolio shall remain frozen for the specific DLG arrangement, so no loan assets can be added to or removed from it except through loan repayment or write-off.",
+   "applies_to": "Regulated Entity (RE)",
+   "deadline": null,
+   "paragraph": "",
+   "quote": "This portfolio shall remain \"frozen\" for the purpose of the specific DLG arrangement - meaning that no loan assets can be added or removed from it, except through loan repayment/ write-off.",
+   "id": "rbi-n12848:section:0031#1",
+   "chunk_id": "rbi-n12848:section:0031"
+  },
+  {
+   "text": "The ceiling for DLG cover on the portfolio shall be fixed at 5% of the earmarked portfolio amount, and shall be activated proportionately as and when loans are disbursed.",
+   "applies_to": "Regulated Entity (RE)",
+   "deadline": null,
+   "paragraph": "",
+   "quote": "The ceiling for DLG cover on such portfolio shall be fixed at \u20b92 crore (5% of \u20b940 crore), which shall get activated proportionately as and when the loans are disbursed.",
+   "id": "rbi-n12848:section:0031#2",
+   "chunk_id": "rbi-n12848:section:0031"
+  },
+  {
+   "text": "The recovery amount of \u20b91 crore cannot be added to reinstate the DLG cover.",
+   "applies_to": "Regulated Entity (RE)",
+   "deadline": null,
+   "paragraph": "",
+   "quote": "However, the recovery amount of \u20b91 crore cannot be added to reinstate the DLG cover.",
+   "id": "rbi-n12848:section:0032#1",
+   "chunk_id": "rbi-n12848:section:0032"
+  }
+ ],
+ "ratings": [
+  {
+   "obligation": "rbi-n12848:section:0002#1",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph addresses the commencement dates of paragraph 6 (November 1, 2025) or paragraph 17 (June 15, 2025) of the Directions, and the policy set does not show compliance tracking against them.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0002#2",
+   "applies": true,
+   "status": "met",
+   "policy_refs": [
+    "FC-13 \u00a72.1"
+   ],
+   "policy_quote": "Loans are disbursed directly into the borrower's own bank account. Repayments are made by the borrower directly to FlexiCredit's account.",
+   "finding": "FlexiCredit is an NBFC-ICC Base Layer entity and its digital lending is governed by the FlexiCredit Digital Lending Policy (FC-13), which covers the digital lending activity these Directions apply to; the cited paragraph describes its disbursal and repayment flow rather than stating scope expressly.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0004#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FC-13 \u00a71.1"
+   ],
+   "policy_quote": "FlexiCredit is the lender. FlexiPay is its only Lending Service Provider (LSP), and the FlexiPay app is the Digital Lending App (DLA).",
+   "finding": "FC-13 \u00a71.1 names the parties and their roles as lender, LSP and DLA, but no paragraph shows a written contractual agreement setting out each party's rights and obligations.",
+   "severity": "medium",
+   "action": "Document a written FlexiCredit-FlexiPay agreement that defines each party's rights, obligations and responsibilities, and reference it in FC-13."
+  },
+  {
+   "obligation": "rbi-n12848:section:0004#2",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown requires enhanced due diligence on an LSP covering technical capability, data privacy, borrower fairness, conduct record or regulatory compliance before contracting.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0004#3",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown provides for periodic review of FlexiPay's conduct against the LSP agreement or for action on deviations.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0004#4",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown sets monitoring mechanisms for loan portfolios originated through FlexiPay as LSP; FC-13 \u00a76.1 covers only the default loss guarantee.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0004#5",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The company profile describes FlexiPay as LSP for loan origination through the app, with no indication that it acts as a recovery agent for FlexiCredit.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0004#6",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown states that outsourcing to FlexiPay leaves FlexiCredit fully responsible and liable for the LSP's acts and omissions.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0005#1",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown requires the LSP to give a digital view of all loan offers matching the borrower's request on the DLA that meets the borrower's requirement.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0005#2",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown requires disclosing the names of unmatched lenders in the digital view.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0005#3",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown requires a consistent matching approach for similarly placed borrowers and products.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0005#4",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown documents FlexiPay's lender-matching mechanism or requires documenting subsequent changes to it.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0005#5",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown specifies the content of the digital view (RE name, amount, tenor, APR, monthly repayment, penal charges) for fair comparison.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0005#6",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FC-13 \u00a73.1",
+    "FC-13 \u00a73.2"
+   ],
+   "policy_quote": "A Key Fact Statement (KFS), in the standard format, is shown before the loan agreement is signed.",
+   "finding": "The policy requires the KFS to be shown before signing but does not require a link to the KFS in the digital view, and it replaces the KFS with a one-screen summary for loans of \u20b910,000 or less.",
+   "severity": "medium",
+   "action": "Add a requirement that the digital view of each RE's offers includes a link to that RE's KFS, and apply it to loans of \u20b910,000 or less as well."
+  },
+  {
+   "obligation": "rbi-n12848:section:0006#1",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph requires the content displayed by FlexiPay as LSP to be unbiased and objective; the paragraphs cited elsewhere address recovery objectives, application screens, the KFS and merchant onboarding.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0006#2",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph prohibits FlexiPay as LSP from promoting or pushing a particular RE's product, or from using dark or deceptive patterns to steer borrowers; FC-13 \u00a73.2 only describes a simplified one-screen summary for small loans and does not address steering.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0007#1",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown requires obtaining age, occupation and income details of the borrower before a loan is extended to assess creditworthiness.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0007#2",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown requires keeping the economic profile information used for creditworthiness assessment on record for audit purposes.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0007#3",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FC-13 \u00a75.1"
+   ],
+   "policy_quote": "Limits can be raised automatically for customers with a good repayment record; the customer is told by SMS.",
+   "finding": "FC-13 \u00a75.1 permits automatic credit limit increases for customers with a good repayment record, whereas the rule prohibits any automatic increase without an explicit borrower request that is evaluated and kept on record.",
+   "severity": "high",
+   "action": "Remove automatic limit increases from FC-13 \u00a75.1 and allow increases only on an explicit borrower request that is evaluated and recorded, with the SMS notice retained."
+  },
+  {
+   "obligation": "rbi-n12848:section:0008#1",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FC-13 \u00a73.1",
+    "FC-13 \u00a73.2"
+   ],
+   "policy_quote": "A Key Fact Statement (KFS), in the standard format, is shown before the loan agreement is signed.",
+   "finding": "FC-13 \u00a73.1 shows a standard-format KFS before signing, but FC-13 \u00a73.2 replaces the KFS with a one-screen summary for loans of \u20b910,000 or less, so the KFS is not provided for all loans.",
+   "severity": "high",
+   "action": "Remove the \u20b910,000 exemption in FC-13 \u00a73.2 so that a full KFS in the standard format is provided for every loan, including small loans."
+  },
+  {
+   "obligation": "rbi-n12848:section:0008#3",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph requires digitally signed documents, including the KFS, sanction letter and terms, to flow automatically to the borrower's registered and verified email or SMS.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0008#4",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph requires FlexiCredit to maintain and keep up to date a public website with the specified details in one prominent place.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0008#5",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph requires the website to list all digital lending products and DLAs.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0008#6",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph requires the website to list the LSPs, their DLAs and the activities they are engaged for.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0008#7",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph requires the website to show customer care and internal grievance redressal particulars, although FP-09 exists in the index.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0008#8",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph requires a link on the website to the RBI Complaint Management System and Sachet Portal.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0008#9",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph requires the website to carry the privacy policies and other RBI-mandated details.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0008#10",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph requires the DLAs and LSPs to link to FlexiCredit's website.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0008#11",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown requires notifying borrowers of recovery agent particulars by email or SMS before contact; FC-14 \u00a75.1 only says recovery follows FC-17, whose text is not shown.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0009#1",
+   "applies": true,
+   "status": "met",
+   "policy_refs": [
+    "FC-13 \u00a72.1"
+   ],
+   "policy_quote": "Loans are disbursed directly into the borrower's own bank account.",
+   "finding": "FC-13 \u00a72.1 requires disbursal directly into the borrower's own bank account, which matches the rule.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0009#2",
+   "applies": true,
+   "status": "met",
+   "policy_refs": [
+    "FC-13 \u00a72.1"
+   ],
+   "policy_quote": "Loans are disbursed directly into the borrower's own bank account.",
+   "finding": "FC-13 \u00a72.1 limits disbursal to the borrower's own account and states no money passes through a FlexiPay pool account, so no third-party or LSP account receives disbursals.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0009#3",
+   "applies": true,
+   "status": "met",
+   "policy_refs": [
+    "FC-13 \u00a72.1"
+   ],
+   "policy_quote": "Repayments are made by the borrower directly to FlexiCredit's account. No money passes through a FlexiPay pool account.",
+   "finding": "FC-13 \u00a72.1 requires borrower repayments to go directly to FlexiCredit's account with no pass-through or pool account of FlexiPay or any other third party.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0009#4",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FC-13 \u00a72.1"
+   ],
+   "policy_quote": "No money passes through a FlexiPay pool account.",
+   "finding": "FC-13 \u00a72.1 excludes a FlexiPay pool account but does not state that third parties including the LSP do not directly or indirectly control the flow of funds between borrower and RE accounts.",
+   "severity": "medium",
+   "action": "Add a clause to FC-13 \u00a72.1 stating that no third party, including FlexiPay as LSP, may control either directly or indirectly the flow of funds between borrower and FlexiCredit accounts."
+  },
+  {
+   "obligation": "rbi-n12848:section:0009#5",
+   "applies": true,
+   "status": "met",
+   "policy_refs": [
+    "FC-13 \u00a72.2"
+   ],
+   "policy_quote": "FlexiPay is paid its fees by FlexiCredit, not by the borrower.",
+   "finding": "FC-13 \u00a72.2 provides that FlexiPay's fees are paid by FlexiCredit and not charged to borrowers, as the rule requires.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0009#6",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The company profile describes no salary advance product, so the salary-advance repayment rule does not apply to FlexiCredit's loans as described.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0010#1",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown requires that cash recoveries made through FlexiCredit's physical interface be reflected in full in the borrower's account on the same day; FC-14 \u00a75.1 only says recovery follows FC-17 and that borrowers are not harassed.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0010#2",
+   "applies": true,
+   "status": "met",
+   "policy_refs": [
+    "FC-13 \u00a72.2"
+   ],
+   "policy_quote": "FlexiPay is paid its fees by FlexiCredit, not by the borrower.",
+   "finding": "FC-13 \u00a72.2 requires FlexiPay's fees to be paid by FlexiCredit rather than the borrower, which matches the obligation that LSP fees for cash recovery are paid by the RE and not charged to the borrower.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0011#1",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FC-13 \u00a74.2",
+    "FC-13 \u00a74.1"
+   ],
+   "policy_quote": "PayLater lines have no cooling-off period.",
+   "finding": "FC-13 \u00a74.2 gives PayLater lines no cooling-off period at all, which falls below the one-day minimum the rule requires, while FC-13 \u00a74.1 sets a 3-day cooling-off only for FlexiCredit Instant loans and does not show Board determination in the loan policy.",
+   "severity": "high",
+   "action": "Set a Board-determined cooling-off period of at least one day for PayLater lines in the loan policy, or document that PayLater is not a loan product covered by this circular."
+  },
+  {
+   "obligation": "rbi-n12848:section:0011#2",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FC-13 \u00a74.1"
+   ],
+   "policy_quote": "A prepayment fee of 3% of the principal applies during the first 30 days.",
+   "finding": "FC-13 \u00a74.1 applies a 3% prepayment fee during the first 30 days, which covers borrowers after the 3-day cooling-off, and the policy does not state that this fee follows applicable RBI prepayment guidelines.",
+   "severity": "medium",
+   "action": "Confirm the 3% prepayment fee in FC-13 \u00a74.1 against applicable RBI prepayment guidelines and state in the policy that prepayment after the cooling-off period remains allowed as per those guidelines."
+  },
+  {
+   "obligation": "rbi-n12848:section:0011#3",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FC-13 \u00a73.1",
+    "FC-13 \u00a73.2"
+   ],
+   "policy_quote": "It shows the annual percentage rate (APR), the recovery mechanism, the grievance officer and the cooling-off terms.",
+   "finding": "FC-13 \u00a73.1 requires the KFS to show the cooling-off terms but does not require any retained one-time processing fee to be disclosed upfront, and FC-13 \u00a73.2 replaces the KFS with a one-screen summary for loans of \u20b910,000 or less that shows no fee or cooling-off terms.",
+   "severity": "medium",
+   "action": "Require the KFS, including the one-screen summary for loans of \u20b910,000 or less, to disclose upfront any one-time processing fee retained on exit during the cooling-off period, where applicable."
+  },
+  {
+   "obligation": "rbi-n12848:section:0012#1",
+   "applies": true,
+   "status": "met",
+   "policy_refs": [
+    "FC-13 \u00a78.1",
+    "FP-09 \u00a74.1"
+   ],
+   "policy_quote": "FlexiCredit's grievance officer handles lending complaints, as set out in FP-09.",
+   "finding": "The policy designates a FlexiCredit grievance officer for lending complaints and names the Principal Nodal Officer, which meets the requirement to designate nodal grievance officers for digital lending complaints.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0012#2",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-09 \u00a74.1"
+   ],
+   "policy_quote": "The name and contact details of the Principal Nodal Officer and the grievance officer for FlexiCredit are shown in the app and on the website.",
+   "finding": "The policy shows nodal officer contact details in the app and website but does not say they appear in the Key Facts Statement given to borrowers.",
+   "severity": "medium",
+   "action": "Add the nodal grievance officers' contact details to the Key Facts Statement, and make clear they are displayed prominently on the website, the app and the LSP site."
+  },
+  {
+   "obligation": "rbi-n12848:section:0012#3",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown says that borrowers can lodge a complaint through the DLA and the website.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0012#4",
+   "applies": true,
+   "status": "met",
+   "policy_refs": [
+    "FC-13 \u00a78.1"
+   ],
+   "policy_quote": "FlexiCredit's grievance officer handles lending complaints, as set out in FP-09.",
+   "finding": "FlexiCredit, as the RE, handles lending complaints through its own grievance officer, so responsibility stays with the RE.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0012#5",
+   "applies": true,
+   "status": "met",
+   "policy_refs": [
+    "FP-09 \u00a72.1",
+    "FP-09 \u00a72.2"
+   ],
+   "policy_quote": "Complaints are resolved within 30 days.",
+   "finding": "The policy sets a 30-day resolution deadline and tells customers they may escalate to the RBI Integrated Ombudsman if a complaint is not resolved within 30 days.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0012#6",
+   "applies": true,
+   "status": "met",
+   "policy_refs": [
+    "FP-09 \u00a72.2"
+   ],
+   "policy_quote": "If a complaint is rejected in full or in part, or not resolved within 30 days, the reply tells the customer they may complain to the RBI",
+   "finding": "The policy requires replies to tell customers how to complain under the Reserve Bank Integrated Ombudsman Scheme and provides the RBI portal link.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0013#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FC-13 \u00a77.1",
+    "FP-08 \u00a72.1"
+   ],
+   "policy_quote": "Data is collected with explicit consent and stored in India, as set out in FP-08.",
+   "finding": "The policy requires explicit consent at onboarding and per-purpose use, but it does not limit collection to what is need-based or require an audit trail of consent.",
+   "severity": "medium",
+   "action": "Add a need-based collection limit for the DLA and its LSP, and require an audit trail of each prior explicit consent."
+  },
+  {
+   "obligation": "rbi-n12848:section:0013#2",
+   "applies": true,
+   "status": "met",
+   "policy_refs": [
+    "FP-08 \u00a72.2"
+   ],
+   "policy_quote": "For lending it asks for one-time access to the camera and location during KYC, and does not access files, media, contact lists or call logs.",
+   "finding": "The policy states that the app does not access files, media, contact lists or call logs, which matches the requirement to stay away from these phone resources.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0013#3",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-08 \u00a72.2"
+   ],
+   "policy_quote": "For lending it asks for one-time access to the camera and location during KYC",
+   "finding": "The policy limits camera and location access to one-time use during KYC, but it does not state that this access requires the borrower's explicit consent.",
+   "severity": "low",
+   "action": "State in the policy that one-time camera and location access during KYC is taken only with the borrower's explicit consent."
+  },
+  {
+   "obligation": "rbi-n12848:section:0013#4",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-08 \u00a75.1"
+   ],
+   "policy_quote": "Customers can see, correct and ask for deletion of their data in the app or by email",
+   "finding": "The policy gives customers rights to see, correct and delete data, but it does not provide options to grant or deny consent for specific data, restrict third-party disclosure, control retention, or revoke consent.",
+   "severity": "medium",
+   "action": "Add controls that let borrowers consent to or deny specific data uses, restrict third-party disclosure and retention, and revoke consent."
+  },
+  {
+   "obligation": "rbi-n12848:section:0013#5",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-08 \u00a72.1"
+   ],
+   "policy_quote": "Consent is taken at onboarding, in plain language and per purpose.",
+   "finding": "The policy discloses the purpose of consent only at onboarding, while the requirement is to disclose it at each stage of interface with borrowers.",
+   "severity": "medium",
+   "action": "Require the purpose of consent to be shown at every point where borrower data is collected, not only at onboarding."
+  },
+  {
+   "obligation": "rbi-n12848:section:0013#6",
+   "applies": true,
+   "status": "met",
+   "policy_refs": [
+    "FP-08 \u00a73.1",
+    "FP-08 \u00a73.2"
+   ],
+   "policy_quote": "Customer data is shared with third parties only with explicit consent or where the law requires it.",
+   "finding": "The policy requires explicit consent before sharing customer data with third parties, except where law requires it, and FP-08 \u00a73.2 ties credit bureau sharing to legal requirements.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0014#1",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The policy set has no paragraph limiting what personal information LSPs such as FlexiPay may store to basic minimal data under the RE-LSP agreement.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0014#2",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The policies set out consent, purpose limits and customer rights but do not state that FlexiCredit as the RE keeps ongoing responsibility for privacy and security of customer data.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0014#3",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-08 \u00a71.1",
+    "FP-08 \u00a72.1",
+    "FP-06 \u00a73.4"
+   ],
+   "policy_quote": "All payment system data (customer details, payment credentials and transaction records) is stored only on servers in India",
+   "finding": "The policies cover storage location, purpose and breach notice to customers within 72 hours, but state no retention length, data destruction protocol or type-of-data statement, and show no prominent disclosure on the website and DLA.",
+   "severity": "medium",
+   "action": "Add retention periods, data destruction protocol and breach handling standards to the data storage policy and publish the full guidelines prominently on the FlexiPay and FlexiCredit websites and in the DLA at all times."
+  },
+  {
+   "obligation": "rbi-n12848:section:0014#4",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown states whether biometric data is collected or stored by FlexiCredit or its LSP, or restricts it to what statute allows.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0014#5",
+   "applies": true,
+   "status": "met",
+   "policy_refs": [
+    "FP-08 \u00a71.1"
+   ],
+   "policy_quote": "All payment system data (customer details, payment credentials and transaction records) is stored only on servers in India",
+   "finding": "The policy requires all payment system data to be stored only on servers in India (AWS Mumbai, with disaster recovery in Hyderabad), which matches the rule.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0014#6",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-08 \u00a71.1"
+   ],
+   "policy_quote": "All payment system data (customer details, payment credentials and transaction records) is stored only on servers in India",
+   "finding": "The policy bars storing data abroad but has no rule for data processed outside India, requiring its deletion from overseas servers and return to India within 24 hours.",
+   "severity": "low",
+   "action": "Add a clause prohibiting offshore processing or requiring any offshore-processed data to be deleted from overseas servers and brought back to India within 24 hours of processing."
+  },
+  {
+   "obligation": "rbi-n12848:section:0015#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-08 \u00a73.1",
+    "FC-13 \u00a77.1"
+   ],
+   "policy_quote": "Customer data is shared with third parties only with explicit consent or where the law requires it.",
+   "finding": "The policy has data-handling paragraphs on sharing, consent and storage, but no comprehensive privacy policy compliant with applicable laws and RBI guidelines is shown for FlexiCredit or for FlexiPay as LSP.",
+   "severity": "low",
+   "action": "Confirm that FP-08 is a comprehensive privacy policy covering FlexiCredit and FlexiPay as LSP, and align it expressly with applicable laws and RBI guidelines."
+  },
+  {
+   "obligation": "rbi-n12848:section:0015#2",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shows that the privacy policy of FlexiCredit or FlexiPay is made publicly available on their websites.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0015#3",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph requires disclosure in the privacy policy of third parties allowed to collect personal information through the FlexiPay DLA; FP-08 \u00a73.1 covers sharing only.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0015#4",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shows that FlexiCredit ensures it and its LSP comply with RBI technology and cybersecurity standards for digital lending; FP-05 \u00a72.1 covers only asset classification and ownership.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0016#1",
+   "applies": true,
+   "status": "met",
+   "policy_refs": [
+    "FC-15 \u00a72.1",
+    "FC-15 \u00a71.1"
+   ],
+   "policy_quote": "Credit information for all borrowers is submitted to the CICs once a month, within 7 days of the month end.",
+   "finding": "FC-15 requires FlexiCredit to report credit information for all borrowers to all four CICs monthly, with no carve-out by loan nature or tenor, which covers lending through the FlexiPay DLA.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0016#2",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The company profile describes no structured short-term or deferred-payment credit product extended over a merchant platform; FlexiPay Checkout is a payment service and FlexiCredit's loans are term loans.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0016#3",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The profile describes no deferred payment credit product; FlexiPay is LSP only for FlexiCredit's term loans, so this rule is not triggered.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0017#1",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown requires FlexiCredit to report its DLAs, including the FlexiPay app, on the RBI CIMS portal in the Annex-I format.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0017#2",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown requires the CIMS DLA list to be updated when a DLA is added or its engagement ends.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0017#3",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown provides for the CCO or a Board-designated official to certify the accuracy of DLA data and DLA compliance on CIMS.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0017#4",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown provides for certification that DLAs link to the RE website with loan, lender, LSP, customer care, Sachet and privacy policy information.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0017#5",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown provides for certification that the LSP owning the FlexiPay DLA has appointed a nodal grievance officer for digital lending complaints shown on the app.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0017#6",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown provides for the CCO or a Board-designated official to certify that DLA data collection and storage complies with paragraphs 12 and 13.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0017#7",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown provides for certification that DLA particulars are disclosed on the RE website as required under paragraph 8(iv).",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0018#1",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph addresses the correctness or timeliness of DLA information submitted on CIMS; FC-15 covers only credit information reporting to CICs.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0018#2",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-09 \u00a72.1"
+   ],
+   "policy_quote": "Complaints are resolved within 30 days. An unresolved complaint is escalated to the Principal Nodal Officer after 15 days.",
+   "finding": "FP-09 sets a 30-day resolution timeline and escalation for all complaints, but does not expressly state that customer issues and grievances concerning DLAs are addressed directly by the RE.",
+   "severity": "low",
+   "action": "Add an explicit statement to FP-09 that customer issues and grievances concerning DLAs are addressed directly by FlexiCredit and FlexiPay."
+  },
+  {
+   "obligation": "rbi-n12848:section:0018#3",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The profile shows only FlexiPay's own app as the DLA for FlexiCredit loans, with no third-party DLAs included in reporting.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0018#4",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The profile shows no third-party DLAs included in CIMS reporting, so the marketing non-misrepresentation rule does not arise.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0018#5",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph shows completion of CIMS reporting for all DLAs, and the June 15, 2025 deadline has already passed as of 31 March 2026.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0019#1",
+   "applies": true,
+   "status": "met",
+   "policy_refs": [
+    "FC-13 \u00a76.1",
+    "FC-13 \u00a71.1"
+   ],
+   "policy_quote": "FlexiPay provides FlexiCredit a default loss guarantee (DLG) of 8% of the amount disbursed in each quarterly portfolio, as a fixed deposit with a lien in FlexiCredit's favour.",
+   "finding": "The policy has FlexiCredit, a regulated NBFC, take DLG only from FlexiPay, which FC-13 \u00a71.1 names as its only Lending Service Provider, so the DLG arrangement is with a permitted LSP.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0019#2",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "FlexiPay provides DLG and is an LSP, but no policy paragraph states that it is incorporated as a company under the Companies Act, 2013; the profile only gives its name as a Private Limited company and its 2019 incorporation year.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0020#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FC-13 \u00a76.1"
+   ],
+   "policy_quote": "FlexiPay provides FlexiCredit a default loss guarantee (DLG) of 8% of the amount disbursed in each quarterly portfolio, as a fixed deposit with a lien in FlexiCredit's favour.",
+   "finding": "The Digital Lending Policy sets out the DLG terms, but no paragraph shows that a Board approved DLG policy exists before the arrangement was entered into.",
+   "severity": "medium",
+   "action": "Obtain and document Board approval of a DLG policy covering the arrangement, and confirm the approval predates the DLG."
+  },
+  {
+   "obligation": "rbi-n12848:section:0020#2",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FC-13 \u00a76.1"
+   ],
+   "policy_quote": "FlexiPay provides FlexiCredit a default loss guarantee (DLG) of 8% of the amount disbursed in each quarterly portfolio, as a fixed deposit with a lien in FlexiCredit's favour.",
+   "finding": "The policy states the nature and extent of the DLG cover (8% of disbursed amount per quarterly portfolio) but says nothing on eligibility criteria for the DLG provider, monitoring and review of the arrangement, or fees.",
+   "severity": "medium",
+   "action": "Add to the DLG policy the eligibility criteria for the DLG provider, the process for monitoring and reviewing the arrangement, and the fees payable or receivable."
+  },
+  {
+   "obligation": "rbi-n12848:section:0020#3",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown states that the DLG must not substitute for credit appraisal or that robust underwriting standards apply regardless of the DLG cover.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0020#4",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown requires FlexiCredit to obtain information satisfying itself that FlexiPay can honour the DLG, at entry and at each renewal.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0020#5",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown requires an auditor-certified declaration from FlexiPay on DLG outstanding, number of portfolios covered, and past default rates.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0020#6",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown addresses the general RE-LSP requirements under para 5 of the Directions, which the DLG due diligence must be complied with alongside, although FlexiPay is FlexiCredit's LSP.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0021#1",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FC-13 \u00a76.1",
+    "FP-01 \u00a74.2"
+   ],
+   "policy_quote": "FlexiPay provides FlexiCredit a default loss guarantee (DLG) of 8% of the amount disbursed in each quarterly portfolio",
+   "finding": "FC-13 \u00a76.1 gives an 8% DLG on each quarterly portfolio with no carve-out, while FP-01 \u00a74.2 shows PayLater, a revolving credit line offered through the digital lending app, is part of that lending, so the DLG may cover a prohibited revolving facility.",
+   "severity": "high",
+   "action": "Exclude revolving credit facilities such as FlexiCredit PayLater from the DLG cover in FC-13 \u00a76.1."
+  },
+  {
+   "obligation": "rbi-n12848:section:0021#2",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FC-13 \u00a76.1"
+   ],
+   "policy_quote": "FlexiPay provides FlexiCredit a default loss guarantee (DLG) of 8% of the amount disbursed in each quarterly portfolio",
+   "finding": "The DLG applies to each quarterly portfolio with no exclusion for loans covered by credit guarantee schemes, so CGS-backed loans could fall within a prohibited DLG arrangement.",
+   "severity": "high",
+   "action": "Add an express exclusion so that loans covered by credit guarantee schemes are outside the DLG cover in FC-13 \u00a76.1."
+  },
+  {
+   "obligation": "rbi-n12848:section:0021#3",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The obligation applies only to NBFC-P2P entities, and FlexiCredit is an NBFC-ICC while FlexiPay is a payments company, so it does not apply.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0021#4",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FC-13 \u00a76.1"
+   ],
+   "policy_quote": "FlexiPay provides FlexiCredit a default loss guarantee (DLG) of 8% of the amount disbursed in each quarterly portfolio",
+   "finding": "FC-13 \u00a76.1 sets out the DLG amount and a fixed deposit with lien as security, but does not require the arrangement to be backed by an explicit and legally enforceable contract.",
+   "severity": "medium",
+   "action": "Require a written, legally enforceable DLG contract between FlexiCredit and FlexiPay before any DLG arrangement takes effect."
+  },
+  {
+   "obligation": "rbi-n12848:section:0021#5",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FC-13 \u00a76.1"
+   ],
+   "policy_quote": "FlexiPay provides FlexiCredit a default loss guarantee (DLG) of 8% of the amount disbursed in each quarterly portfolio",
+   "finding": "FC-13 \u00a76.1 covers the extent of DLG cover (8%) and the form of maintenance (fixed deposit with lien), but says nothing on the timeline for DLG invocation or the para 27 disclosure requirements.",
+   "severity": "medium",
+   "action": "Add a DLG invocation timeline and the para 27 disclosure requirements to the DLG contract terms."
+  },
+  {
+   "obligation": "rbi-n12848:section:0022#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FC-13 \u00a76.1"
+   ],
+   "policy_quote": "as a fixed deposit with a lien in FlexiCredit's favour",
+   "finding": "The policy uses a fixed deposit with a lien in FlexiCredit's favour, which is a permitted form, but it does not state that the fixed deposit is maintained with a Scheduled Commercial Bank.",
+   "severity": "low",
+   "action": "Amend FC-13 \u00a76.1 to state that the fixed deposit securing the DLG is maintained with a Scheduled Commercial Bank."
+  },
+  {
+   "obligation": "rbi-n12848:section:0022#2",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FC-13 \u00a76.1"
+   ],
+   "policy_quote": "8% of the amount disbursed in each quarterly portfolio",
+   "finding": "The policy sets the DLG cover at 8% of the amount disbursed, which exceeds the 5% ceiling on total DLG cover over the disbursed portfolio.",
+   "severity": "high",
+   "action": "Reduce the DLG cover in FC-13 \u00a76.1 to no more than 5% of the total amount disbursed out of each loan portfolio."
+  },
+  {
+   "obligation": "rbi-n12848:section:0022#3",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The arrangement is an explicit DLG backed by a fixed deposit, not an implicit guarantee arrangement, so the implicit guarantee performance-risk limit does not apply.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0023#1",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph addresses NPA recognition or provisioning of individual loans independent of DLG cover; FC-13 \u00a76.1 only describes the 8% DLG itself.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0023#2",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph states that invoked DLG amounts are not set off against underlying loans or that borrower liability is unaffected; FC-13 \u00a76.1 is silent on this.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0023#3",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph prohibits reinstatement of invoked DLG amounts, including through loan recovery; FC-13 \u00a76.1 does not deal with invocation.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0023#4",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The obligation applies only where the DLG provider is an RE, and FlexiPay is a payments company (PA, PPI issuer, TPAP) rather than a bank or NBFC, so it is not shown to be an RE.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0024#1",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The policy sets up a 8% DLG from FlexiPay to FlexiCredit (FC-13 \u00a76.1) but says nothing about when FlexiCredit must invoke the guarantee for loans overdue beyond 120 days.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0024#2",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph states the duration of the DLG agreement, so nothing shows it stays in force for at least the longest loan tenor in the portfolio.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0025#1",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The policy set has no mechanism requiring LSPs under a DLG arrangement, such as FlexiPay, to publish on their website the number and amount of portfolios on which DLG is offered; FC-13 \u00a76.1 only states the 8% DLG terms.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0025#2",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph requires the monthly disclosure under paragraph 27(i) of the circular; FC-13 \u00a76.1 covers only the DLG amount and its form.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0025#3",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph sets a deadline of seven working days after month end for the paragraph 27(i) disclosure; the only seven-day timing in the policies is for credit information reporting in FC-15 \u00a72.1, which is a different obligation.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0026#1",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The policy describes FlexiPay's 8% default loss guarantee to FlexiCredit but does not exclude guarantees under the CGTMSE, CRGFTLIH or NCGTC schemes from the DLG definition.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0026#2",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The policy describes FlexiPay's 8% default loss guarantee to FlexiCredit but does not exclude credit guarantees from BIS, IMF or Multilateral Development Banks from the DLG definition.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0027#1",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The obligation applies only to card-issuers converting credit card transactions to EMIs, and neither FlexiPay nor FlexiCredit issues credit cards, so no policy is needed.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0027#2",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The obligation applies only to card-issuers presenting EMI conversions on credit card bills, and neither FlexiPay nor FlexiCredit issues credit cards.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0027#3",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The obligation applies only to card-issuers' EMI conversions on credit cards, and neither FlexiPay nor FlexiCredit issues credit cards.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0027#4",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The obligation applies only to regulated entities offering loan products on credit cards, and FlexiCredit's PayLater is a revolving credit line, not a credit card product, so it does not apply.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0029#1",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph addresses reporting each DLA as a separate line item on the CIMS portal, although FlexiCredit offers loans through the FlexiPay app as its DLA.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0029#2",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph addresses reporting each app store entry for a DLA available on multiple app stores, and the profile does not say which app stores the FlexiPay app is listed on.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0030#1",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FC-13 \u00a71.2",
+    "FC-13 \u00a71.1"
+   ],
+   "policy_quote": "The FlexiPay app and website name FlexiCredit as the lender on every loan screen and link to FlexiCredit's website.",
+   "finding": "FC-13 \u00a71.2 requires the FlexiPay app and website to link to FlexiCredit's website, but it does not provide a link to the DLA (the FlexiPay app) on the app store, which the obligation requires where the DLA is an app hosted on an app store.",
+   "severity": "medium",
+   "action": "Add a link to the FlexiPay app's listing on the app store on every FlexiCredit loan screen, alongside the existing link to FlexiCredit's website, and amend FC-13 \u00a71.2 to say so."
+  },
+  {
+   "obligation": "rbi-n12848:section:0031#1",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph states that the DLG set portfolio is frozen, so loan assets cannot be added or removed except through repayment or write-off.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12848:section:0031#2",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FC-13 \u00a76.1"
+   ],
+   "policy_quote": "FlexiPay provides FlexiCredit a default loss guarantee (DLG) of 8% of the amount disbursed in each quarterly portfolio",
+   "finding": "The policy sets DLG cover at 8% of the amount disbursed per quarterly portfolio, while the rule caps the ceiling at 5% of the earmarked portfolio amount, activated proportionately as loans are disbursed.",
+   "severity": "high",
+   "action": "Reduce the DLG ceiling to 5% of the earmarked portfolio amount and state that cover is activated proportionately as each loan is disbursed."
+  },
+  {
+   "obligation": "rbi-n12848:section:0032#1",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No shown paragraph deals with reinstating the DLG cover from recovered amounts; FC-13 \u00a76.1 only sets the 8% fixed-deposit guarantee and says nothing about adding recoveries to it.",
+   "severity": "none",
+   "action": null
+  }
+ ],
+ "actions": [
+  {
+   "obligation": "rbi-n12848:section:0007#3",
+   "action": "Remove automatic limit increases from FC-13 \u00a75.1 and allow increases only on an explicit borrower request that is evaluated and recorded, with the SMS notice retained.",
+   "owner": "CEO, FlexiCredit",
+   "priority": "P1",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FC-13 \u00a75.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12848:section:0008#1",
+   "action": "Remove the \u20b910,000 exemption in FC-13 \u00a73.2 so that a full KFS in the standard format is provided for every loan, including small loans.",
+   "owner": "CEO, FlexiCredit",
+   "priority": "P1",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FC-13 \u00a73.1",
+    "FC-13 \u00a73.2"
+   ]
+  },
+  {
+   "obligation": "rbi-n12848:section:0011#1",
+   "action": "Set a Board-determined cooling-off period of at least one day for PayLater lines in the loan policy, or document that PayLater is not a loan product covered by this circular.",
+   "owner": "CEO, FlexiCredit",
+   "priority": "P1",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FC-13 \u00a74.2",
+    "FC-13 \u00a74.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12848:section:0021#1",
+   "action": "Exclude revolving credit facilities such as FlexiCredit PayLater from the DLG cover in FC-13 \u00a76.1.",
+   "owner": "CEO, FlexiCredit",
+   "priority": "P1",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FC-13 \u00a76.1",
+    "FP-01 \u00a74.2"
+   ]
+  },
+  {
+   "obligation": "rbi-n12848:section:0021#2",
+   "action": "Add an express exclusion so that loans covered by credit guarantee schemes are outside the DLG cover in FC-13 \u00a76.1.",
+   "owner": "CEO, FlexiCredit",
+   "priority": "P1",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FC-13 \u00a76.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12848:section:0022#2",
+   "action": "Reduce the DLG cover in FC-13 \u00a76.1 to no more than 5% of the total amount disbursed out of each loan portfolio.",
+   "owner": "CEO, FlexiCredit",
+   "priority": "P1",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FC-13 \u00a76.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12848:section:0031#2",
+   "action": "Reduce the DLG ceiling to 5% of the earmarked portfolio amount and state that cover is activated proportionately as each loan is disbursed.",
+   "owner": "CEO, FlexiCredit",
+   "priority": "P1",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FC-13 \u00a76.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12848:section:0004#1",
+   "action": "Document a written FlexiCredit-FlexiPay agreement that defines each party's rights, obligations and responsibilities, and reference it in FC-13.",
+   "owner": "CEO, FlexiCredit",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FC-13 \u00a71.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12848:section:0005#6",
+   "action": "Add a requirement that the digital view of each RE's offers includes a link to that RE's KFS, and apply it to loans of \u20b910,000 or less as well.",
+   "owner": "CEO, FlexiCredit",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FC-13 \u00a73.1",
+    "FC-13 \u00a73.2"
+   ]
+  },
+  {
+   "obligation": "rbi-n12848:section:0009#4",
+   "action": "Add a clause to FC-13 \u00a72.1 stating that no third party, including FlexiPay as LSP, may control either directly or indirectly the flow of funds between borrower and FlexiCredit accounts.",
+   "owner": "CEO, FlexiCredit",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FC-13 \u00a72.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12848:section:0011#2",
+   "action": "Confirm the 3% prepayment fee in FC-13 \u00a74.1 against applicable RBI prepayment guidelines and state in the policy that prepayment after the cooling-off period remains allowed as per those guidelines.",
+   "owner": "CEO, FlexiCredit",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FC-13 \u00a74.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12848:section:0011#3",
+   "action": "Require the KFS, including the one-screen summary for loans of \u20b910,000 or less, to disclose upfront any one-time processing fee retained on exit during the cooling-off period, where applicable.",
+   "owner": "CEO, FlexiCredit",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FC-13 \u00a73.1",
+    "FC-13 \u00a73.2"
+   ]
+  },
+  {
+   "obligation": "rbi-n12848:section:0012#2",
+   "action": "Add the nodal grievance officers' contact details to the Key Facts Statement, and make clear they are displayed prominently on the website, the app and the LSP site.",
+   "owner": "Principal Nodal Officer",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FP-09 \u00a74.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12848:section:0013#1",
+   "action": "Add a need-based collection limit for the DLA and its LSP, and require an audit trail of each prior explicit consent.",
+   "owner": "CEO, FlexiCredit",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FC-13 \u00a77.1",
+    "FP-08 \u00a72.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12848:section:0013#4",
+   "action": "Add controls that let borrowers consent to or deny specific data uses, restrict third-party disclosure and retention, and revoke consent.",
+   "owner": "Data Protection Officer",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FP-08 \u00a75.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12848:section:0013#5",
+   "action": "Require the purpose of consent to be shown at every point where borrower data is collected, not only at onboarding.",
+   "owner": "Data Protection Officer",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FP-08 \u00a72.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12848:section:0014#3",
+   "action": "Add retention periods, data destruction protocol and breach handling standards to the data storage policy and publish the full guidelines prominently on the FlexiPay and FlexiCredit websites and in the DLA at all times.",
+   "owner": "Data Protection Officer",
+   "priority": "P2",
+   "deadline": "at all times",
+   "policy_refs": [
+    "FP-08 \u00a71.1",
+    "FP-08 \u00a72.1",
+    "FP-06 \u00a73.4"
+   ]
+  },
+  {
+   "obligation": "rbi-n12848:section:0020#1",
+   "action": "Obtain and document Board approval of a DLG policy covering the arrangement, and confirm the approval predates the DLG.",
+   "owner": "CEO, FlexiCredit",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FC-13 \u00a76.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12848:section:0020#2",
+   "action": "Add to the DLG policy the eligibility criteria for the DLG provider, the process for monitoring and reviewing the arrangement, and the fees payable or receivable.",
+   "owner": "CEO, FlexiCredit",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FC-13 \u00a76.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12848:section:0021#4",
+   "action": "Require a written, legally enforceable DLG contract between FlexiCredit and FlexiPay before any DLG arrangement takes effect.",
+   "owner": "CEO, FlexiCredit",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FC-13 \u00a76.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12848:section:0021#5",
+   "action": "Add a DLG invocation timeline and the para 27 disclosure requirements to the DLG contract terms.",
+   "owner": "CEO, FlexiCredit",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FC-13 \u00a76.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12848:section:0030#1",
+   "action": "Add a link to the FlexiPay app's listing on the app store on every FlexiCredit loan screen, alongside the existing link to FlexiCredit's website, and amend FC-13 \u00a71.2 to say so.",
+   "owner": "CEO, FlexiCredit",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FC-13 \u00a71.2",
+    "FC-13 \u00a71.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12848:section:0013#3",
+   "action": "State in the policy that one-time camera and location access during KYC is taken only with the borrower's explicit consent.",
+   "owner": "Data Protection Officer",
+   "priority": "P3",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FP-08 \u00a72.2"
+   ]
+  },
+  {
+   "obligation": "rbi-n12848:section:0014#6",
+   "action": "Add a clause prohibiting offshore processing or requiring any offshore-processed data to be deleted from overseas servers and brought back to India within 24 hours of processing.",
+   "owner": "Data Protection Officer",
+   "priority": "P3",
+   "deadline": "within 24 hours of processing",
+   "policy_refs": [
+    "FP-08 \u00a71.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12848:section:0015#1",
+   "action": "Confirm that FP-08 is a comprehensive privacy policy covering FlexiCredit and FlexiPay as LSP, and align it expressly with applicable laws and RBI guidelines.",
+   "owner": "Data Protection Officer",
+   "priority": "P3",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FP-08 \u00a73.1",
+    "FC-13 \u00a77.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12848:section:0018#2",
+   "action": "Add an explicit statement to FP-09 that customer issues and grievances concerning DLAs are addressed directly by FlexiCredit and FlexiPay.",
+   "owner": "Principal Nodal Officer",
+   "priority": "P3",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FP-09 \u00a72.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12848:section:0022#1",
+   "action": "Amend FC-13 \u00a76.1 to state that the fixed deposit securing the DLG is maintained with a Scheduled Commercial Bank.",
+   "owner": "CEO, FlexiCredit",
+   "priority": "P3",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FC-13 \u00a76.1"
+   ]
+  }
+ ],
+ "review": [
+  {
+   "kind": "dropped obligation",
+   "text": "RE shall continue to conform to the extant guidelines on outsourcing and shall ensure that the LSPs engaged by them and the DLAs (either of the RE or of the LSPs engaged by the RE) comply with these Directions.",
+   "applies_to": "Regulated Entity (RE); LSPs engaged by RE; DLAs",
+   "deadline": null,
+   "paragraph": "5(vi)",
+   "quote": "RE shall continue to conform to the extant guidelines on outsourcing and shall ensure that the LSPs engaged by them and the DLAs (either of the RE or of the LSPs engaged by the RE) comply with these Directions.",
+   "id": "",
+   "chunk_id": "",
+   "problems": [
+    "the quote is not in the section"
+   ]
+  },
+  {
+   "kind": "dropped obligation",
+   "text": "The borrower shall be given an explicit option to exit a digital loan by paying the principal and the proportionate APR without any penalty during an initial cooling-off period.",
+   "applies_to": "Regulated Entity (RE)",
+   "deadline": null,
+   "paragraph": "10(i)",
+   "quote": "The borrower shall be given an explicit option to exit a digital loan by paying the principal and the proportionate APR without any penalty during an initial \u201ccooling-off period\u201d.",
+   "id": "",
+   "chunk_id": "",
+   "problems": [
+    "the quote is not in the section"
+   ]
+  },
+  {
+   "kind": "unrated obligation",
+   "obligation": "rbi-n12848:section:0008#2",
+   "problems": [
+    "the quote is not in FC-14 \u00a73.1"
+   ]
+  }
+ ]
+}

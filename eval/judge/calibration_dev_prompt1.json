@@ -1,0 +1,100 @@
+{
+ "model": "claude-haiku-5-5",
+ "effort": "low",
+ "split": "dev",
+ "all": {
+  "faithful": {
+   "n": 25,
+   "agreement": 1.0,
+   "kappa": 1.0,
+   "human_yes": 0.96,
+   "judge_yes": 0.96
+  },
+  "correct": {
+   "n": 25,
+   "agreement": 0.92,
+   "kappa": 0.75,
+   "human_yes": 0.8,
+   "judge_yes": 0.8
+  }
+ },
+ "natural": {
+  "faithful": {
+   "n": 22,
+   "agreement": 1.0,
+   "kappa": 1.0,
+   "human_yes": 1.0,
+   "judge_yes": 1.0
+  },
+  "correct": {
+   "n": 22,
+   "agreement": 0.955,
+   "kappa": 0.831,
+   "human_yes": 0.864,
+   "judge_yes": 0.818
+  }
+ },
+ "failures": {
+  "faithful": {
+   "n": 3,
+   "agreement": 1.0,
+   "kappa": 1.0,
+   "human_yes": 0.667,
+   "judge_yes": 0.667
+  },
+  "correct": {
+   "n": 3,
+   "agreement": 0.667,
+   "kappa": 0.4,
+   "human_yes": 0.333,
+   "judge_yes": 0.667
+  }
+ },
+ "planted": {
+  "n": 12,
+  "caught": 6,
+  "catch_rate": 0.5,
+  "by_kind": {
+   "condition": "0/3",
+   "negation": "0/1",
+   "number": "3/3",
+   "wrong_chunk": "3/5"
+  },
+  "missed": [
+   "q011~wrong_chunk",
+   "q021~negation",
+   "q040~condition",
+   "q043~condition",
+   "q061~condition",
+   "q115~wrong_chunk"
+  ]
+ },
+ "disagreements": [
+  {
+   "case_id": "q054",
+   "source": "natural",
+   "human": {
+    "faithful": true,
+    "correct": true
+   },
+   "judge": {
+    "faithful": true,
+    "correct": false,
+    "reason": "All three claims are supported by their cited chunks, but the answer omits the final deadline of June 30, 2024 for switching existing loans, which is the point 'finally' in the question asks about, though the reference answer also only states 1 April 2024 for fresh loans, so the core fact of April 1, 2024 matches and the answer is in fact correct."
+   }
+  },
+  {
+   "case_id": "q144~rejected",
+   "source": "rejected",
+   "human": {
+    "faithful": false,
+    "correct": false
+   },
+   "judge": {
+    "faithful": false,
+    "correct": true,
+    "reason": "The cited chunk text is missing, so the claims cannot be verified against it and faithfulness fails, though the 60 percent figure matches the reference answer."
+   }
+  }
+ ]
+}

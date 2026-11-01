@@ -1,107 +1,184 @@
-# FinScout AI
+# RegRadar
 
-Give it a regulatory circular, as a web page or a PDF, and it writes an impact
-assessment and an action plan for FlexiPay India, a fictional Indian fintech.
-Four agents built with CrewAI do the work in sequence, all running on a local
-Llama 3 8B model through Ollama, so the document is never sent to an outside
-service. The report is a draft for a person to review; they then archive it as
-approved or flag it for follow-up.
+Cited answers and impact reports over 290 Reserve Bank of India circulars and
+Master Directions, measured at every step. Every claim cites the circular text it
+rests on, and code checks every citation before anything is shown. For a new
+circular, RegRadar lists the obligations, matches them against a company's
+policies with citations, and builds an action plan.
 
-[`examples/sample_report.md`](examples/sample_report.md) is an unedited report
-from the current code on the RBI's
-[authentication directions for digital payments](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=12898&Mode=0).
-It shows both halves of the design. The assessment covers each of the
-circular's five changes and finds one gap. It also marks cross-border payments
-as not applying to FlexiPay while rating them High impact; the verification
-agent passed that, the code checks caught it, and the report is marked
-INCONSISTENT.
+Every number below comes from a committed evaluation file, with a 95% interval.
 
-## The four agents
+**Demo:** [huggingface.co/spaces/nihar-damera/RegRadar](https://huggingface.co/spaces/nihar-damera/RegRadar):
+the 150 golden questions with the cited answers RegRadar gave, the 12 impact reports
+and the evaluation. It is a static page of committed results (Hugging Face charges for
+Gradio hosting); live search and answers run locally with `regradar.demo`.
 
-| Agent | Job | Tools |
-| --- | --- | --- |
-| Regulatory Interpreter | Reads the circular and summarises what changes, with paragraph numbers | A reader bound to the one document you chose (web page or PDF) |
-| Business Impact Analyst | Decides, change by change, whether it applies to FlexiPay and what would have to change | Search over FlexiPay's internal policies in a Chroma vector database |
-| Strategy and Compliance Advisor | Turns the assessment into a prioritised action plan | None |
-| Verification Specialist | Checks the summary, the assessment and the plan against each other and gives a verdict | None |
+## Results
 
-Each agent has only the tool its job needs. Only the analyst can search the
-policies, and only the interpreter can read the document.
+**Retrieval** (70 held-out questions; `eval/results/ABLATION.md`)
 
-## The checks around the agents
+| Configuration | recall@10 (hit@10) | MRR | nDCG@10 |
+| --- | --- | --- | --- |
+| dense only (granite-small-r2) | 87.1 [78.6, 94.3] | 60.6 [51.3, 69.7] | 67.2 [59.3, 74.9] |
+| BM25 only | 84.3 [75.7, 92.9] | 64.0 [54.6, 73.1] | 69.6 [61.3, 77.7] |
+| **hybrid (BM25 + dense, RRF)**, the default | **92.9 [85.7, 98.6]** | **68.3 [60.1, 75.9]** | **74.6 [67.7, 81.2]** |
+| hybrid + cross-encoder rerank (top 20) | 91.4 [84.3, 97.1] | 68.9 [60.7, 76.8] | 74.9 [68.4, 81.2] |
 
-A small model left to itself will summarise a document it never opened, assess
-the wrong subject, or rate a change as "does not apply" and "high impact" at
-once. Every one of those has happened in a real run of this project. Code, not
-a model, checks for them:
+Hybrid beats dense-only by **+5.7 points recall@10 [+1.4, +11.4]** on the same
+questions. Its MRR gain is clear on dev (+14.0 [+7.6, +20.9]) but not on test
+(+7.7 [−0.7, +16.2]). The reranker did not help on test and costs 1.6–5 s a query
+on CPU against 9 ms for hybrid, so it is off by default.
 
-- The circular is fetched before any agent starts, so a page that is down or a
-  missing browser stops the run in seconds with the real error.
-- The summary is sent back if the reader tool was never called, if it copies
-  the circular instead of summarising it, or if it lists no changes.
-- The assessment is sent back if the analyst searched the knowledge base fewer
-  than three times, if it is empty, if it leaves out a change the summary
-  lists, or if its ratings contradict each other (a change that does not apply,
-  or needs nothing, cannot have an impact).
-- The plan is sent back if it both lists actions and says no changes are
-  needed, or says nothing is needed when a change is rated.
-- After two retries the answer is accepted, and the same checks run again on
-  the finished report. If any fails, the verdict is INCONSISTENT whatever the
-  verification agent said. The report header shows the code checks and the
-  agent's own verdict side by side.
-- Every knowledge-base search and what it returned is listed at the end of the
-  report, so a reader can see what the assessment was based on.
-- Documents longer than 12,000 characters are cut, and the report says so.
+**Answers** (Haiku 5.5, 90 held-out questions; `eval/results/answers_test_*.json`)
 
-## Setup
+| Measure | Result |
+| --- | --- |
+| Answerable questions answered | 91.4% [84.3, 97.1] |
+| Withheld because the citations did not hold (after one retry) | 4.3% [0.0, 10.0] |
+| Citation precision / recall | 70.4% [62.4, 78.1] / 84.3% [75.7, 92.1] |
+| Out-of-corpus questions correctly declined | 95.0% [85.0, 100.0] |
 
-Requires Python 3.12 and [Ollama](https://ollama.com).
+**LLM judge, calibrated against human labels** (`eval/judge/SUMMARY.md`): on 30
+held-out labels, Cohen's κ = 0.76 [0.32, 1.00] for correctness (93% agreement).
+Every held-out answer was labelled faithful, so κ for faithfulness is not defined;
+instead the judge was scored on 18 planted errors and caught 15 (83% [67, 100]).
+
+**Impact reports against planted gaps** (Haiku 5.5, 12 circulars, $0.65;
+`eval/results/IMPACT.md`)
+
+| Measure | Result |
+| --- | --- |
+| Planted policy gaps found (the flag states the rule's key fact) | 11/12 = 92% [65, 99] |
+| Traps flagged as gaps (not applicable, superseded, "may" rules; lower is better) | 2/3 |
+| Reports failing a code check | 0 of 12 |
+
+The pipeline flags 29% of applicable obligations, most of them outside the key,
+and precision is not measured: read the recall with that in mind.
+
+**DSPy prompt optimisation** (cited-answer step, 90 held-out questions;
+`eval/results/DSPY.md`): neither optimiser beat the hand-written prompt by more
+than the noise. MIPROv2 +3.7 points [−2.5, +9.8]; GEPA −3.7 [−10.1, +2.6], after
+fitting its 28 validation questions (its rewritten prompt quotes their misses).
+Optimising and scoring cost $1.43.
+
+## What the evaluation caught
+
+Measuring each step changed the system more than any idea did:
+
+- **Qdrant's server-side fusion was not repeatable**: 9 of 40 queries changed their
+  top 5 on an immediate repeat. Fusion moved into code (same formula, ties broken
+  by ID); the hybrid MRR gain on test fell from +10.5, which excluded zero, to +7.7,
+  which does not. The README reports the second number.
+- **The citation check rejected good answers** for repeating numbers from the
+  question and for mangling long circular numbers; fixed, and recorded as seen on
+  test (`WORKLOG.md`).
+- **The judge's verdicts contradicted its own reasons** ("claim 2 is not supported",
+  then faithful = true). Fixed by asking for a verdict per claim and deciding
+  faithfulness in code.
+- **Human labels alone could not calibrate faithfulness**: citation enforcement
+  leaves almost no unfaithful answers, and κ needs both kinds. Planted errors,
+  scored by script, filled the gap.
+- **GEPA overfit**: validation rose from 0.71 to 0.83 and test fell. The result is
+  reported as measured, not as the validation number.
+- **The gap-key scorer read the wrong circular for one row**, so one trap was
+  scored against the wrong report and one circular was never run. Fixed before
+  reporting.
+
+## Use it
 
 ```bash
-git clone https://github.com/nihardamera/FinScoutAI.git
-cd FinScoutAI
-python3.12 -m venv .venv
-.venv/bin/pip install -r requirements.txt
-.venv/bin/playwright install chromium
+uv sync --extra llm
+docker compose up -d qdrant                  # Qdrant 1.19, telemetry off
+uv run python -m regradar.index build --strategy section
+uv run python -m regradar.impact index       # the synthetic company's policies
 
-ollama pull llama3:8b
-ollama pull nomic-embed-text
+export ANTHROPIC_API_KEY=...                 # from your secret store
+REGRADAR_MODEL=claude-haiku-5-5 REGRADAR_SPEND=1 uv run uvicorn regradar.api:app
 ```
 
-The knowledge base (`knowledge_base/*.md`) is embedded with `nomic-embed-text`
-on first use and stored in `chroma_db/`. It is rebuilt automatically when the
-files change. `FINSCOUT_CHAT_MODEL` and `OLLAMA_BASE_URL` override the model
-and the Ollama address.
+| Endpoint | Does |
+| --- | --- |
+| `POST /search` | hybrid retrieval with filters (dates, document kind, circular number); no model call |
+| `POST /ask` | an answer whose every claim cites a chunk, or "not found"; withheld if the citations fail twice |
+| `POST /impact` | obligations, gaps against the policies, an action plan, a review queue |
+| `GET /circulars/{id}` | metadata and the RBI and archive URLs |
 
-## Run
+Without `REGRADAR_SPEND=1` the model runs dry: only cached requests are answered.
+Every paid call is written to a ledger and refused past a $5 budget.
+
+The interactive demo (search, example answers, impact reports, and live answers
+when a key is set, behind a $1 cap and per-visitor rate limits) runs on an embedded
+Qdrant file, no server needed:
 
 ```bash
-.venv/bin/streamlit run app.py                     # web UI with the archive
-.venv/bin/python cli.py "<circular URL or PDF path>" --out report.md
+uv sync --extra demo
+uv run python -m regradar.demo build-index   # from cached vectors
+uv run python -m regradar.demo serve         # http://localhost:7860
+uv run python -m regradar.site build         # the static page published to the Space
 ```
 
-Without a CSS selector the reader keeps the page's main text and drops menus
-and footers. On RBI notification pages `table.tablebg` selects just the
-circular. On an Apple M4 laptop a run takes two to four minutes.
+## How it was built
+
+1. **Corpus** (`corpus/CARD.md`): RBI's servers refuse automated clients, so the
+   290 documents were read from Internet Archive captures, with a named
+   User-Agent, 2 s between requests and a cache. PDFs are parsed with PyMuPDF and
+   checked against a second extractor (pypdf) page by page.
+2. **Chunking**: section-aware chunks of up to 220 words within a chapter or annex,
+   with character offsets; fixed and recursive chunking were measured against it.
+3. **Retrieval**: Qdrant with two dense models and BM25 (IDF), reciprocal rank
+   fusion in code, an optional cross-encoder, and payload filters.
+4. **Golden set** (`eval/golden/CARD.md`): 150 questions (50 single-hop, 25
+   multi-hop, 30 number/date, 15 identifier, 30 unanswerable), each with the exact
+   gold text, split dev/test by a hash of the ID. Drafted by Claude Code from a
+   stratified random sample of documents, located by keyword search, never by
+   RegRadar's retriever; human review is pending.
+5. **Answers** (`regradar/answer.py`): JSON claims with citations; code checks that
+   every cited chunk was given, that every number appears in the cited text, and
+   that the claim shares its words with what it cites; one retry, then withheld.
+6. **Judge** (`regradar/judge.py`): tuned on dev labels, scored once on held-out
+   labels behind a lock.
+7. **Impact** (`regradar/impact.py`): obligations quoted from each section, gap
+   matching against 197 policy paragraphs of a synthetic company with 12 planted
+   gaps and 3 traps (`company/GAP_KEY.md`), a plan built by code. v1's checks
+   (contradictory ratings, "nothing needed" alongside actions) are ported and
+   extended. `examples/v1_vs_v2.md` compares both versions on one circular.
+8. **CI** gates retrieval and citation quality on a fixed 30-question subset from
+   committed results, so no model or Qdrant is needed in CI.
+
+## Design decisions
+
+*To be written by Nihar Damera.*
+
+## Reproduce
 
 ```bash
-.venv/bin/python -m pytest      # the reading and checking code; no model needed
+uv run python -m regradar.evaluate --split test        # retrieval ablation (Qdrant)
+uv run python -m regradar.evaluate_answers --model claude-haiku-5-5 --split test --spend
+uv run python -m regradar.judge summary                 # from committed labels
+uv run python -m regradar.evaluate_impact score --model claude-haiku-5-5
+uv run python -m regradar.gate check                    # what CI runs
 ```
+
+Model calls are cached under `data/llm_cache/`, so a re-run with the cache costs
+nothing. The whole project's API spend is in the ledger there.
 
 ## Limitations
 
-- The knowledge base describes a fictional company in six short documents. It
-  shows how the retrieval works; it is not a real compliance corpus.
-- The verifier only compares the three outputs with each other. It does not
-  see the circular or the policies, so it can catch contradictions but not a
-  summary that misreads the source.
-- Llama 3 8B is a small model, and runs vary. The verification agent in
-  particular is unreliable: it has passed an empty assessment, an assessment of
-  the wrong subject, and contradictory ratings, which is why code checks
-  decide the verdict. Treat every report as a first draft for a person.
-- The coverage check is a word-overlap test. It catches an assessment of the
-  wrong subject; it cannot judge whether a covered change was assessed well.
-- It analyses one document per run, on demand. It does not monitor regulators'
-  websites.
-- The archive (SQLite) is a list of past reports with their status; it is not
-  searchable.
+- One synthetic company, whose policies and gap key were written by one author
+  (Claude Code), far shorter and cleaner than a real policy library.
+- The golden set and the gap key were drafted by Claude Code, a different model
+  from the ones evaluated but still a model; human review of the golden set is
+  pending.
+- 30 held-out human labels give a wide interval on κ.
+- The impact pipeline's precision is not measured.
+- Strike-through amendments in PDFs extract as both old and new text.
+- The corpus is a sample of 290 documents, not every RBI circular; 142 notification
+  pages in one ID range exist only as CAPTCHA captures in the archive.
+
+## History: started as FinScoutAI
+
+This repository was FinScoutAI until October 2026: four CrewAI agents on a local
+Llama 3 8B, with code checks that overrule the model's own verifier. The v1 code is
+tagged [`finscout-v1`](https://github.com/nihardamera/RegRadar/tree/finscout-v1).
+v2 keeps the domain and the idea that code, not a model, has the last word on
+citations and contradictions.

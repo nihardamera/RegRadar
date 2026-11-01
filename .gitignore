@@ -22,3 +22,19 @@ temp/
 
 # macOS
 .DS_Store
+
+# iCloud syncs ~/Desktop and hides files inside synced folders, so the venv
+# and the downloaded corpus live in *.nosync folders behind symlinks.
+.venv
+data
+*.nosync/
+
+# Tool caches
+.ruff_cache/
+.mypy_cache/
+.pytest_cache/
+
+# The demo's embedded Qdrant index, rebuilt from cached vectors (regradar.demo build-index)
+demo_index/
+# The static demo page, rebuilt by regradar.site build
+site/

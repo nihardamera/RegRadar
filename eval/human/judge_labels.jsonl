@@ -1,0 +1,55 @@
+{"question_id": "q001", "faithful": true, "correct": true, "note": "It mentions about Category-I banks too which do the same not requiring to apply for authorization from RBI", "labeller": "Nihar Damera", "time": "2026-11-01T11:54:09"}
+{"question_id": "q002", "faithful": true, "correct": true, "note": "", "labeller": "Nihar Damera", "time": "2026-11-01T12:09:25"}
+{"question_id": "q003", "faithful": true, "correct": true, "note": "", "labeller": "Nihar Damera", "time": "2026-11-01T12:10:43"}
+{"question_id": "q004", "faithful": true, "correct": true, "note": "", "labeller": "Nihar Damera", "time": "2026-11-01T12:15:18"}
+{"question_id": "q005", "faithful": true, "correct": true, "note": "", "labeller": "Nihar Damera", "time": "2026-11-01T12:16:18"}
+{"question_id": "q007", "faithful": true, "correct": true, "note": "", "labeller": "Nihar Damera", "time": "2026-11-01T12:20:56"}
+{"question_id": "q009", "faithful": true, "correct": true, "note": "The Since December 2024 is very vague as it does say it was announced in April 2024", "labeller": "Nihar Damera", "time": "2026-11-01T13:22:52"}
+{"question_id": "q010", "faithful": true, "correct": true, "note": "It cites banks and non-banks, so I think there's no authorization required here for banks/non-backs", "labeller": "Nihar Damera", "time": "2026-11-01T13:26:06"}
+{"question_id": "q012", "faithful": true, "correct": true, "note": "", "labeller": "Nihar Damera", "time": "2026-11-01T13:27:07"}
+{"question_id": "q013", "faithful": true, "correct": true, "note": "", "labeller": "Nihar Damera", "time": "2026-11-01T13:56:09"}
+{"question_id": "q014", "faithful": true, "correct": true, "note": "", "labeller": "Nihar Damera", "time": "2026-11-01T15:49:22"}
+{"question_id": "q015", "faithful": true, "correct": true, "note": "", "labeller": "Nihar Damera", "time": "2026-11-01T15:57:08"}
+{"question_id": "q016", "faithful": true, "correct": true, "note": "", "labeller": "Nihar Damera", "time": "2026-11-01T15:57:48"}
+{"question_id": "q017", "faithful": true, "correct": true, "note": "", "labeller": "Nihar Damera", "time": "2026-11-01T16:03:24"}
+{"question_id": "q018", "faithful": true, "correct": true, "note": "", "labeller": "Nihar Damera", "time": "2026-11-01T16:04:08"}
+{"case_id": "q091~unanswerable", "question_id": "q091", "faithful": true, "correct": true, "note": "I mean technically the answer does say \"not found in corpus\" but the info found in the cites is actually vague and does not clear the answer", "labeller": "Nihar Damera", "time": "2026-11-01T17:34:17"}
+{"case_id": "q065", "question_id": "q065", "faithful": true, "correct": true, "note": "", "labeller": "Nihar Damera", "time": "2026-11-01T17:35:39"}
+{"case_id": "q121~rejected", "question_id": "q121", "faithful": true, "correct": false, "note": "The 2023 MD claims regarding one crore PPIs outstanding's proofs weren't found in the cites", "labeller": "Nihar Damera", "time": "2026-11-01T17:42:12"}
+{"case_id": "q064", "question_id": "q064", "faithful": true, "correct": false, "note": "The part of the answer where it says allowed card-on-file data until 30 June 2022 is unverified by the claims", "labeller": "Nihar Damera", "time": "2026-11-01T17:51:00"}
+{"case_id": "q030", "question_id": "q030", "faithful": true, "correct": true, "note": "", "labeller": "Nihar Damera", "time": "2026-11-01T17:54:20"}
+{"case_id": "q132", "question_id": "q132", "faithful": true, "correct": true, "note": "I'm not sure about Transfers from to and from though as it's transfers using pre-sanctioned credit", "labeller": "Nihar Damera", "time": "2026-11-01T17:57:03"}
+{"case_id": "q117", "question_id": "q117", "faithful": true, "correct": true, "note": "", "labeller": "Nihar Damera", "time": "2026-11-01T17:58:04"}
+{"case_id": "q063", "question_id": "q063", "faithful": true, "correct": false, "note": "The net-worth part of the answer is completely right but it's part where it says the funds go in a seperate escrow account cannot be verified from the cites", "labeller": "Nihar Damera", "time": "2026-11-01T18:03:08"}
+{"case_id": "q120", "question_id": "q120", "faithful": true, "correct": true, "note": "", "labeller": "Nihar Damera", "time": "2026-11-01T18:06:47"}
+{"case_id": "q138", "question_id": "q138", "faithful": true, "correct": false, "note": "It gets the part of auto-replenishment of FASTag and NCMC balances but it's wrong on the part where it says when they fall below a threshold the customer sets as it's unverified from the claims", "labeller": "Nihar Damera", "time": "2026-11-01T18:10:33"}
+{"case_id": "q131", "question_id": "q131", "faithful": true, "correct": false, "note": "It's right about the 1st half of the answer where it says about what's required to open the small PPI but it's wrong about how long can the holder keep using it without completing full KYC as it's unverified from the claims", "labeller": "Nihar Damera", "time": "2026-11-01T18:14:32"}
+{"case_id": "q074", "question_id": "q074", "faithful": true, "correct": true, "note": "", "labeller": "Nihar Damera", "time": "2026-11-01T18:15:44"}
+{"case_id": "q041", "question_id": "q041", "faithful": true, "correct": true, "note": "", "labeller": "Nihar Damera", "time": "2026-11-01T18:16:50"}
+{"case_id": "q043", "question_id": "q043", "faithful": true, "correct": true, "note": "Ref answer correct but covers only the headline requirement, not the full set of conditions in the cite.", "labeller": "Nihar Damera", "time": "2026-11-01T18:19:37"}
+{"case_id": "q149", "question_id": "q149", "faithful": true, "correct": false, "note": "Faithful claims point to Section 26 (failure to pay penalty is an offence; imprisonment/fine/both) and the compounding-default rule. Ref answer\u2019s section 8/30(3)/33 not in any cite", "labeller": "Nihar Damera", "time": "2026-11-01T18:21:27"}
+{"case_id": "q047", "question_id": "q047", "faithful": true, "correct": true, "note": "The duration is completely right, but there's more factors too but since the question mentioned only about how long, we are good to go", "labeller": "Nihar Damera", "time": "2026-11-01T18:23:07"}
+{"case_id": "q020", "question_id": "q020", "faithful": true, "correct": true, "note": "", "labeller": "Nihar Damera", "time": "2026-11-01T18:24:24"}
+{"case_id": "q036", "question_id": "q036", "faithful": true, "correct": true, "note": "", "labeller": "Nihar Damera", "time": "2026-11-01T18:25:06"}
+{"case_id": "q141", "question_id": "q141", "faithful": true, "correct": false, "note": "Core answer supported; the September 2025 date isn\u2019t in any cite", "labeller": "Nihar Damera", "time": "2026-11-01T18:30:19"}
+{"case_id": "q054", "question_id": "q054", "faithful": true, "correct": true, "note": "", "labeller": "Nihar Damera", "time": "2026-11-01T19:03:41"}
+{"case_id": "q075", "question_id": "q075", "faithful": true, "correct": true, "note": "", "labeller": "Nihar Damera", "time": "2026-11-01T19:07:50"}
+{"case_id": "q114", "question_id": "q114", "faithful": true, "correct": true, "note": "", "labeller": "Nihar Damera", "time": "2026-11-01T19:12:26"}
+{"case_id": "q139", "question_id": "q139", "faithful": true, "correct": true, "note": "", "labeller": "Nihar Damera", "time": "2026-11-01T19:49:51"}
+{"case_id": "q144~rejected", "question_id": "q144", "faithful": false, "correct": false, "note": "I don't see any cites and it's says \"chunk text not recorded\"", "labeller": "Nihar Damera", "time": "2026-11-01T20:17:16"}
+{"case_id": "q140", "question_id": "q140", "faithful": true, "correct": true, "note": "", "labeller": "Nihar Damera", "time": "2026-11-01T20:22:36"}
+{"case_id": "q032", "question_id": "q032", "faithful": true, "correct": true, "note": "", "labeller": "Nihar Damera", "time": "2026-11-01T20:24:47"}
+{"case_id": "q062", "question_id": "q062", "faithful": true, "correct": true, "note": "", "labeller": "Nihar Damera", "time": "2026-11-01T21:08:09"}
+{"case_id": "q055~rejected", "question_id": "q055", "faithful": true, "correct": false, "note": "Cooling-off (Board-set, min 1 day) supported. KFS validity of 3 working days is not in any cite for this item; retrieval missed the para 5 provision from rbi-n12663 that states it.", "labeller": "Nihar Damera", "time": "2026-11-01T21:19:05"}
+{"case_id": "q040", "question_id": "q040", "faithful": true, "correct": true, "note": "", "labeller": "Nihar Damera", "time": "2026-11-01T21:44:10"}
+{"case_id": "q027", "question_id": "q027", "faithful": true, "correct": true, "note": "", "labeller": "Nihar Damera", "time": "2026-11-01T21:45:54"}
+{"case_id": "q077", "question_id": "q077", "faithful": true, "correct": true, "note": "", "labeller": "Nihar Damera", "time": "2026-11-01T21:46:19"}
+{"case_id": "q068~rejected", "question_id": "q068", "faithful": true, "correct": true, "note": "", "labeller": "Nihar Damera", "time": "2026-11-01T21:46:44"}
+{"case_id": "q061", "question_id": "q061", "faithful": true, "correct": true, "note": "", "labeller": "Nihar Damera", "time": "2026-11-01T21:47:11"}
+{"case_id": "q130", "question_id": "q130", "faithful": true, "correct": true, "note": "", "labeller": "Nihar Damera", "time": "2026-11-01T21:47:30"}
+{"case_id": "q091", "question_id": "q091", "faithful": true, "correct": true, "note": "Unanswerable item; claims correctly stay general (fingerprint as an authentication factor, MFA, PCI standards) and don\u2019t invent biometric-card rules.", "labeller": "Nihar Damera", "time": "2026-11-01T21:50:41"}
+{"case_id": "q122", "question_id": "q122", "faithful": true, "correct": true, "note": "", "labeller": "Nihar Damera", "time": "2026-11-01T21:59:53"}
+{"case_id": "q057", "question_id": "q057", "faithful": true, "correct": false, "note": "IO review and Ombudsman after rejection supported (para 10, 10(g)). \u2018Not satisfied\u2019 and \u2018no reply within 30 days\u2019 triggers are not in any cite; the only 30 days is the IO decision-communication timeline.", "labeller": "Nihar Damera", "time": "2026-11-01T22:07:36"}
+{"case_id": "q078", "question_id": "q078", "faithful": true, "correct": true, "note": "", "labeller": "Nihar Damera", "time": "2026-11-01T22:11:44"}
+{"case_id": "q145", "question_id": "q145", "faithful": true, "correct": true, "note": "", "labeller": "Nihar Damera", "time": "2026-11-01T22:32:18"}
+{"case_id": "q058", "question_id": "q058", "faithful": true, "correct": true, "note": "", "labeller": "Nihar Damera", "time": "2026-11-01T22:32:48"}
