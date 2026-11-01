@@ -13,6 +13,8 @@ The metric needs no judge. It scores from the golden set: an unanswerable
 question scores 1 for declining; an answerable one scores the mean of
 citation recall (gold parts its citations cover) and citation precision
 (citations that hold a gold span), and 0 when it declines or is rejected.
+When retrieval missed the answer (no chunk holds gold text), declining scores
+1: the context does not answer the question.
 It also returns feedback in words (what was missed, which chunk had it,
 which check failed), which GEPA reflects on.
 
@@ -40,7 +42,7 @@ from regradar.answer import Claim, ContextChunk, Reply
 from regradar.answer import problems as citation_problems
 from regradar.evaluate import Retrieved, bootstrap_ci, overlaps, paired_difference_ci, part_found
 from regradar.golden import Question, load
-from regradar.llm import Claude, Ledger
+from regradar.llm import BudgetExceeded, Claude, Ledger
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "eval" / "dspy"
@@ -68,6 +70,9 @@ class ClaudeEngine:
 
     def __init__(self, claude: Claude) -> None:
         self.claude = claude
+        # Set when a call is refused for budget, so a run can tell that the
+        # optimiser scored refusals as failures, and stop instead of reporting.
+        self.exhausted = False
 
     def complete(self, request: Any) -> Any:
         from dspy.lm15 import Message, Response, TextPart, Usage
@@ -76,7 +81,11 @@ class ClaudeEngine:
         if system is not None and not isinstance(system, str):
             system = "".join(getattr(part, "text", "") for part in system)
         messages = [{"role": m.role, "content": m.text or ""} for m in request.messages]
-        text = self.claude.chat(system or "", messages)
+        try:
+            text = self.claude.chat(system or "", messages)
+        except BudgetExceeded:
+            self.exhausted = True
+            raise
         return Response(
             id=None,
             model=self.claude.model,
@@ -170,11 +179,18 @@ def score(question: Question, retrieved: list[Retrieved], pred: Any) -> tuple[fl
             "Wrong: none of the chunks answers this question (it is outside the corpus), "
             "but the answer made claims. It should have set not_found."
         )
+    if not holding:
+        # Retrieval missed the answer: from this context, declining is right.
+        if pred.status != "answered":
+            return 1.0, "Correct: none of the chunks holds the answer, and the answer declined."
+        return 0.0, (
+            "Wrong: none of the chunks holds the answer to this question, but the answer "
+            "made claims. It should have set not_found."
+        )
     if pred.status == "rejected":
         return 0.0, "Rejected by the citation checks: " + "; ".join(pred.problems)
     if pred.status == "not_found":
-        where = f" Chunk(s) {', '.join(holding)} contain it." if holding else ""
-        return 0.0, f"Wrong: said not found, but the context answers it.{where}"
+        return 0.0, f"Wrong: said not found, but chunk(s) {', '.join(holding)} answer it."
     cited_ids = list(dict.fromkeys(cid for c in pred.claims for cid in c["citations"]))
     cited = [by_id[c] for c in cited_ids if c in by_id]
     precision = sum(any(overlaps(c, s) for s in question.spans) for c in cited) / max(1, len(cited))
@@ -187,8 +203,7 @@ def score(question: Question, retrieved: list[Retrieved], pred: Any) -> tuple[fl
         notes.append(
             f'Missed {len(missed)} of {len(found)} parts of the answer, e.g. "{quote[:160]}".'
         )
-        if holding:
-            notes.append(f"Chunks holding answer text: {', '.join(holding)}.")
+        notes.append(f"Chunks holding answer text: {', '.join(holding)}.")
     stray = [c.chunk_id for c in cited if not any(overlaps(c, s) for s in question.spans)]
     if stray:
         notes.append(f"Cited chunk(s) without answer text: {', '.join(stray)}.")
@@ -269,83 +284,92 @@ def cmd_run(args: argparse.Namespace) -> int:
     cap = start + args.cap
     task = lm(TASK_MODEL, "dspy-task", args.spend, cap)
     reflect = lm(REFLECTION_MODEL, "dspy-reflect", args.spend, cap, effort="medium")
+    engines = [task.engine, reflect.engine] if hasattr(task, "engine") else []
     dspy.configure(lm=task, adapter=dspy.ChatAdapter())
     train, val, test = examples()
     OUT.mkdir(parents=True, exist_ok=True)
-
-    def spent_since(mark: float) -> float:
-        return round(ledger.spent() - mark, 4)
-
-    baseline = CitedAnswerer()
-    programs: dict[str, dspy.Module] = {"baseline": baseline}
-    costs: dict[str, float] = {}
-
-    mark = ledger.spent()
-    mipro = dspy.MIPROv2(
-        metric=numeric_metric,
-        prompt_model=reflect,
-        task_model=task,
-        auto="light",
-        max_bootstrapped_demos=2,
-        max_labeled_demos=0,
-        num_threads=6,
-        seed=20261102,
-    )
-    programs["mipro"] = mipro.compile(baseline.deepcopy(), trainset=train, valset=val)
-    costs["mipro"] = spent_since(mark)
-
-    mark = ledger.spent()
-    gepa = dspy.GEPA(
-        metric=metric,
-        reflection_lm=reflect,
-        max_metric_calls=args.gepa_calls,
-        num_threads=6,
-        track_stats=True,
-        seed=20261102,
-    )
-    programs["gepa"] = gepa.compile(baseline.deepcopy(), trainset=train, valset=val)
-    costs["gepa"] = spent_since(mark)
-
-    scores: dict[str, dict[str, list[float]]] = {}
-    for name, program in programs.items():
-        program.save(str(OUT / f"{name}.json"))
-        scores[name] = {"val": evaluate(program, val), "test": evaluate(program, test)}
-
+    results_path = ROOT / "eval" / "results" / "dspy_test.json"
     result: dict[str, Any] = {
         "task_model": TASK_MODEL,
         "reflection_model": REFLECTION_MODEL,
+        "cap_usd": args.cap,
         "n": {"train": len(train), "val": len(val), "test": len(test)},
-        "optimisation_cost_usd": costs,
-        "total_cost_usd": spent_since(start),
+        "optimisation_cost_usd": {},
+        "evaluation_cost_usd": {},
         "programs": {},
         "paired_test_differences": {},
+        "complete": False,
     }
-    for name, s in scores.items():
+    scores: dict[str, list[float]] = {}
+
+    def save() -> None:
+        result["total_cost_usd"] = round(ledger.spent() - start, 4)
+        results_path.write_text(json.dumps(result, indent=1) + "\n", encoding="utf-8")
+
+    def exhausted() -> bool:
+        return any(getattr(e, "exhausted", False) for e in engines)
+
+    def record(name: str, program: dspy.Module) -> None:
+        mark = ledger.spent()
+        program.save(str(OUT / f"{name}.json"))
+        val_scores, test_scores = evaluate(program, val), evaluate(program, test)
+        result["evaluation_cost_usd"][name] = round(ledger.spent() - mark, 4)
+        scores[name] = test_scores
         result["programs"][name] = {
-            "val": bootstrap_ci(s["val"]),
-            "test": bootstrap_ci(s["test"]),
-            "test_scores": s["test"],
+            "val": bootstrap_ci(val_scores),
+            "test": bootstrap_ci(test_scores),
+            "test_scores": test_scores,
         }
-    for name in ("mipro", "gepa"):
-        result["paired_test_differences"][f"{name} - baseline"] = paired_difference_ci(
-            scores["baseline"]["test"], scores[name]["test"]
-        )
-    (ROOT / "eval" / "results" / "dspy_test.json").write_text(
-        json.dumps(result, indent=1) + "\n", encoding="utf-8"
-    )
+        if name != "baseline":
+            result["paired_test_differences"][f"{name} - baseline"] = paired_difference_ci(
+                scores["baseline"], test_scores
+            )
+        save()
+        print(f"{name}: test {result['programs'][name]['test']}", file=sys.stderr)
+
+    baseline = CitedAnswerer()
+    record("baseline", baseline)
+    optimisers: list[tuple[str, Any]] = [
+        (
+            "mipro",
+            dspy.MIPROv2(
+                metric=numeric_metric,
+                prompt_model=reflect,
+                task_model=task,
+                auto="light",
+                max_bootstrapped_demos=2,
+                max_labeled_demos=0,
+                num_threads=6,
+                seed=20261102,
+            ),
+        ),
+        (
+            "gepa",
+            dspy.GEPA(
+                metric=metric,
+                reflection_lm=reflect,
+                max_metric_calls=args.gepa_calls,
+                num_threads=6,
+                track_stats=True,
+                seed=20261102,
+            ),
+        ),
+    ]
+    for name, optimiser in optimisers:
+        mark = ledger.spent()
+        compiled = optimiser.compile(baseline.deepcopy(), trainset=train, valset=val)
+        result["optimisation_cost_usd"][name] = round(ledger.spent() - mark, 4)
+        if exhausted():
+            result["stopped"] = f"the ${args.cap:.2f} cap was reached during {name}"
+            save()
+            print(result["stopped"], file=sys.stderr)
+            return 1
+        record(name, compiled)
+    result["complete"] = True
+    save()
     summary = {k: v["test"] for k, v in result["programs"].items()}
-    print(
-        json.dumps(
-            {
-                "test": summary,
-                **{
-                    k: result[k]
-                    for k in ("paired_test_differences", "optimisation_cost_usd", "total_cost_usd")
-                },
-            },
-            indent=1,
-        )
-    )
+    keys = ("paired_test_differences", "optimisation_cost_usd", "total_cost_usd")
+    print(json.dumps({"test": summary, **{k: result[k] for k in keys}}, indent=1))
     return 0
 
 
@@ -357,7 +381,7 @@ def main(argv: list[str] | None = None) -> int:
     steps.add_parser("retrieve").set_defaults(run=cmd_retrieve)
     run = steps.add_parser("run")
     run.add_argument("--cap", type=float, required=True, help="dollars this run may spend")
-    run.add_argument("--gepa-calls", type=int, default=300)
+    run.add_argument("--gepa-calls", type=int, default=200)
     run.add_argument("--spend", action="store_true")
     run.set_defaults(run=cmd_run)
     args = parser.parse_args(argv)

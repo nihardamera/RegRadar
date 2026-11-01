@@ -89,3 +89,10 @@ def test_the_engine_passes_system_and_turns_to_our_client() -> None:
     assert out.answer == "six hours"
     assert seen["messages"][-1]["role"] == "user" and "How soon?" in seen["messages"][-1]["content"]
     assert "question" in seen["system"]
+
+
+def test_when_retrieval_missed_the_answer_declining_is_right() -> None:
+    q, retrieved = _answerable()
+    missed = [r for r in retrieved if r.chunk_id == "c-other"]
+    assert score(q, missed, pred("not_found"))[0] == 1.0
+    assert score(q, missed, pred("answered", ["c-other"]))[0] == 0.0
