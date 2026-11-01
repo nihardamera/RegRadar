@@ -147,7 +147,98 @@ uv run python -m regradar.site build         # the static page published to the 
 
 ## Design decisions
 
-*To be written by Nihar Damera.*
+Each choice below was made against an alternative, and most were settled by a
+measurement rather than a preference.
+
+**1. Read the RBI site through the Internet Archive, not through a spoofed browser.**
+rbi.org.in blocks automated clients (HTTP 418, a JavaScript challenge). Posing as a
+browser would have worked and broken the site's stated wishes. Archive captures, with a
+named User-Agent, 2 s between requests and a cache, gave 290 documents, at the cost of
+142 notifications that exist only as CAPTCHA pages (`corpus/CARD.md`). Every document
+keeps its RBI URL and archive URL.
+
+**2. Gold answers are character ranges, not chunk IDs.** If the golden set named
+chunks, every change of chunking would invalidate it, and chunking could not be
+compared fairly. Each answer is a set of required parts, each with one or more exact
+text ranges (a rule restated in a later Direction counts too). A retrieved chunk
+"hits" when it overlaps a range, so fixed, recursive and section chunks are scored on
+the same questions. The cost: every quote had to be located in the cleaned text, and
+the cleaner cannot change offsets without re-locating them.
+
+**3. Hybrid retrieval by default; the reranker measured and left off.** Hybrid beat
+dense-only on test recall@10 by +5.7 points [+1.4, +11.4]. The cross-encoder helped on
+dev but not on test, and costs 1.6-7 s a query on CPU against 9 ms for hybrid
+(`eval/retrieval_latency.json`). A component that adds seconds and no measured gain
+does not ship, however standard it is.
+
+**4. Fusion in code, after Qdrant's own was found not to be repeatable.** The same
+query gave a different top 5 on 9 of 40 immediate repeats, because server-side RRF
+broke ties arbitrarily. Fusing in code with the same formula and ties broken by chunk
+ID made every query repeatable, and it moved a headline number: the test MRR gain over
+dense fell from +10.5 to +7.7, no longer clear of zero. The README reports the
+repeatable number.
+
+**5. Code, not the model, decides whether an answer stands.** Every claim must cite a
+chunk the model was given, every number must appear in the cited text, and each claim
+must share at least half its content words with what it cites. A failing answer is retried once with
+the problems listed, then withheld rather than shown with a warning: a compliance user
+reads past warnings. This is v1's idea (code checks overrule the verifier) made
+general. On test, 4.3% of answers were withheld and 95% of out-of-corpus questions
+declined.
+
+**6. Unanswerable questions are a fifth of the golden set.** A RAG system that always
+answers looks good on answerable questions alone. 30 of 150 questions have no answer in
+the corpus, each with the keyword searches that found nothing recorded, so declining
+is measured as a skill, not left to chance.
+
+**7. A judge is trusted only as far as it agrees with people.** The judge was tuned on
+dev labels and scored once on held-out labels behind a lock. Two findings changed it:
+its verdicts contradicted its own reasons (so it now rules per claim and code decides
+faithfulness), and citation enforcement left almost no unfaithful answers, so κ for
+faithfulness was undefined. Planted errors, scored by script, measure what κ could not.
+Correctness κ is 0.76 on 30 labels, and the interval says how little 30 labels prove.
+
+**8. The impact pipeline's plan is written by code.** The model extracts obligations
+(with quotes that code finds in the circular) and rates them against cited policy
+paragraphs (with quotes that code finds in the paragraph). The action plan, owners,
+priorities, due dates and the verdict are then computed, so "no action needed" cannot
+sit beside a list of actions, the contradiction v1's verifier let through. Whatever
+fails the checks twice goes to a review queue, not into the plan.
+
+**9. A synthetic company with planted gaps and traps, so the pipeline can be scored.**
+Real policy libraries are confidential and come with no answer key. FlexiPay's 21
+policies were written to break 12 rules on purpose, each verified against the
+circular's text, plus 3 traps that look like gaps but are not (not applicable,
+superseded, a "may" rule). The traps are as important as the gaps: the pipeline found
+11 of 12 gaps but took 2 of 3 traps, which is the honest picture of where it needs a
+reviewer.
+
+**10. DSPy was measured, and not adopted.** MIPROv2 and GEPA were run on the
+cited-answer step with a judge-free metric that returns feedback, optimising on dev and
+scoring once on 90 held-out questions. MIPROv2 was +3.7 points [−2.5, +9.8]; GEPA was
+−3.7 [−10.1, +2.6] after fitting its 28 validation questions (its rewritten prompt quotes
+their misses). Neither beats the hand-written prompt beyond noise, so the hand-written
+prompt stays. Re-running variants until one cleared zero on the same test set would
+have manufactured a gain; the result is reported as measured.
+
+**11. The cheapest capable model, with the spend designed in.** Haiku 5.5 does the
+answering, judging and impact work; Sonnet 5.5 only proposes and reflects for DSPy.
+Every call goes through one client that is dry-run by default, caches by prompt (Claude
+takes no temperature, so the cache is what makes a re-run reproducible), writes each
+paid call to a ledger, and refuses a call that could cross the budget. The whole
+project cost $2.25.
+
+**12. CI checks quality without a model or a database.** The gate recomputes recall,
+MRR and citation precision for a fixed 30-question subset from committed retrieval and
+answers, and re-runs the citation checks on stored claims. A change to retrieval or the
+checks must come with refreshed results, so a regression appears in the same pull
+request, and CI costs nothing.
+
+**13. A static demo over a hosted one.** Hugging Face now charges for Gradio hosting,
+and a public page that calls a model spends someone's key. The public demo shows the
+committed results (every golden question with its cited answer and sources, the impact
+reports, the evaluation); the interactive app with live answers, a spend cap and rate
+limits runs locally.
 
 ## Reproduce
 

@@ -21,3 +21,20 @@ committed file that proves it. Rates are reported with 95% bootstrap CIs.
 | FastAPI service: /search, /ask, /impact, /circulars, /health | `regradar/api.py`, `tests/test_api.py` | built, tested with fakes and smoke-tested live |
 | DSPy MIPROv2 and GEPA on held-out test (n = 90): MIPROv2 +3.7 pts [−2.5, +9.8], GEPA −3.7 [−10.1, +2.6]; neither significant; $1.43 in all | `eval/results/DSPY.md`, `eval/results/dspy_test.json` | measured (M5). Claim "measured DSPy honestly: no significant gain; GEPA overfit 28 validation questions", not a gain |
 | Public demo: the golden questions with cited answers, impact reports, evaluation | https://huggingface.co/spaces/nihar-damera/RegRadar; `regradar/site.py` | M6, live. A **static** page of committed results (no live model calls; HF charges for Gradio hosting). Say "demo", not "live demo". The interactive app (`regradar/demo.py`) runs locally |
+
+## The resume line
+
+Every figure is a row above.
+
+> **RegRadar: cited RAG over 290 RBI circulars.** Hybrid BM25 + dense retrieval in
+> Qdrant; on a 150-question golden set, recall@10 87.1% → 92.9% vs dense-only
+> (+5.7 pts [+1.4, +11.4], held-out); citation-enforced answers with an LLM judge
+> calibrated to my labels (κ ≈ 0.76); obligation-to-policy gap pipeline that found
+> 11/12 planted compliance gaps; benchmarked DSPy MIPROv2 and GEPA on held-out data
+> and kept the hand-written prompt (no significant gain; GEPA overfit); FastAPI
+> service; demo.
+
+Wording rules: "golden set", not "hand-built" (drafted with Claude Code; say "and
+reviewed by me" only after the review is recorded). "Demo", not "live demo" (static
+page). Do not quote 11/12 without being ready to give the trap result (2/3 taken)
+and that precision is not measured.
