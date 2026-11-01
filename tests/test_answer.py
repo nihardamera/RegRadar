@@ -117,3 +117,38 @@ def test_a_reply_that_is_not_json_is_retried_then_rejected() -> None:
 def test_a_fenced_reply_is_unwrapped() -> None:
     parsed = parse(f"Here you go:\n```json\n{GOOD}\n```")
     assert parsed.claims[0].citations == ["rbi-n12715:section:0042"]
+
+
+def test_a_number_the_question_gives_is_not_held_against_the_claim() -> None:
+    """The model restating "a 30-day loan" is not a claim the source must back."""
+    restated = reply(
+        (
+            "For a 30-day loan, cyber-attacks must be reported to RBI within 6 hours of detection.",
+            ["rbi-n12715:section:0042"],
+        )
+    )
+    result = answer(
+        "For a 30-day loan, how soon must a cyber attack be reported?", CHUNKS, Scripted(restated)
+    )
+    assert result.status == "answered"
+
+
+def test_an_identifier_matches_whatever_its_separators_became() -> None:
+    chunks = [
+        ContextChunk(
+            "c1", "Repeal list", "1. DPSS.CO.PD.No.447/02.14.003/2019- 20 dated August 21, 2019"
+        )
+    ]
+    cited = reply(("It repeals DPSS.CO.PD.No.447/02.14.003/2019-20 of August 21, 2019.", ["c1"]))
+    assert answer("Which circulars are repealed?", chunks, Scripted(cited)).status == "answered"
+
+
+def test_a_wrong_short_number_is_still_caught_when_the_question_has_others() -> None:
+    wrong = reply(
+        (
+            "For a 30-day loan, cyber-attacks must be reported within 24 hours of detection.",
+            ["rbi-n12715:section:0042"],
+        )
+    )
+    result = answer("For a 30-day loan, how soon?", CHUNKS, Scripted(wrong, wrong))
+    assert result.problems == ["claim 1 states numbers its citations do not: 24"]

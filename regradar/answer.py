@@ -118,7 +118,22 @@ def parse(reply: str) -> Reply:
     return Reply.model_validate(json.loads(text[start : end + 1]))
 
 
-def problems(reply: Reply, chunks: Sequence[ContextChunk]) -> list[str]:
+def _unsupported_numbers(claim: str, cited: str, question: str) -> list[str]:
+    """Numbers in the claim that neither its citations nor the question contain.
+
+    A number the question itself gives ("a 30-day loan", "the 2026 Directions")
+    is the model restating it, not a claim about the source. Long numbers are
+    identifiers (RBI/2025-26/75, DPSS.CO.PD.No.447/02.14.003/2019-20), which
+    tokenising mangles; they are matched against the cited text's digits with
+    every separator removed. Short numbers (6 hours, 5 per cent) must match a
+    number in the citations exactly: that is where a wrong limit shows.
+    """
+    allowed = _numbers(cited) | _numbers(question)
+    digits = re.sub(r"\D", "", cited + " " + question)
+    return sorted(n for n in _numbers(claim) - allowed if not (len(n) >= 5 and n in digits))
+
+
+def problems(reply: Reply, chunks: Sequence[ContextChunk], question: str = "") -> list[str]:
     """Why the reply's citations do not hold; empty when they do."""
     found: list[str] = []
     by_id = {c.chunk_id: c for c in chunks}
@@ -137,7 +152,7 @@ def problems(reply: Reply, chunks: Sequence[ContextChunk]) -> list[str]:
             found.append(f"claim {n} cites chunks it was not given: {', '.join(unknown)}")
             continue
         cited_text = " ".join(by_id[cid].text for cid in claim.citations)
-        missing = sorted(_numbers(claim.text) - _numbers(cited_text))
+        missing = _unsupported_numbers(claim.text, cited_text, question)
         if missing:
             found.append(f"claim {n} states numbers its citations do not: {', '.join(missing)}")
         words = _content(claim.text)
@@ -174,7 +189,7 @@ def answer(
             found = [f"reply is not the required JSON: {str(error).splitlines()[0]}"]
             reply = None
             continue
-        found = problems(reply, chunks)
+        found = problems(reply, chunks, question)
         if not found:
             status: Literal["answered", "not_found"] = (
                 "not_found" if reply.not_found else "answered"
