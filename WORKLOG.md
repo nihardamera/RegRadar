@@ -441,3 +441,9 @@ the live URL. The Gradio app (`regradar/demo.py`) is verified locally; its embed
 index matches the server's retrieval (identical gate scores; 29/30 identical top 10).
 Next: merge v2 into main; Nihar writes "Design decisions" and, optionally, reviews a
 golden-set sample.
+
+**Wrap-up (2026-11-02):** README "Design decisions" written by Claude Code at Nihar's
+request (13 decisions, each tied to its evidence). Resume line added to
+RESUME_CLAIMS.md, keeping DSPy as a judgment (benchmarked, not adopted). Static demo
+links now open in a new tab (GitHub refuses to load inside the Space's frame).
+Remaining, optional: Nihar's review of a golden-set sample; explain-back prep.
