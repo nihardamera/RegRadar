@@ -46,17 +46,23 @@ class KeyRow:
         return self.id.startswith("N")
 
 
-_ROW = re.compile(r"^\| ([GN]\d+) \| ([^|]+) \|.*?`(rbi-[a-z0-9]+)`")
+_ID = re.compile(r"^[GN]\d+$")
 _REF = re.compile(r"(F[PC]-\d+) §(\d+)")
+_DOC = re.compile(r"`(rbi-[a-z0-9]+)`")
+CIRCULAR_COLUMN = 4  # ID | Policy | ... | ... | Circular | Status, in both tables
 
 
 def gap_key(path: Path = GAP_KEY) -> list[KeyRow]:
+    """The key's G and N rows. The circular is read from its own column: other
+    columns can name other circulars (N1's explanation cites rbi-n12715)."""
     rows = []
     for line in path.read_text(encoding="utf-8").splitlines():
-        m = _ROW.match(line)
-        if m:
-            refs = tuple((doc, major) for doc, major in _REF.findall(m.group(2)))
-            rows.append(KeyRow(m.group(1), refs, m.group(3)))
+        cells = [c.strip() for c in line.strip().strip("|").split("|")]
+        if len(cells) > CIRCULAR_COLUMN and _ID.match(cells[0]):
+            doc = _DOC.search(cells[CIRCULAR_COLUMN])
+            if doc:
+                refs = tuple(_REF.findall(cells[1]))
+                rows.append(KeyRow(cells[0], refs, doc.group(1)))
     return rows
 
 
@@ -65,21 +71,49 @@ def _heading(ref: str) -> tuple[str, str] | None:
     return (m.group(1), m.group(2)) if m else None
 
 
+# The strict match: the flag must also state the planted rule's key fact. Each
+# pattern is taken from the "The rule" column of GAP_KEY.md (and, for traps,
+# from what the trap is about), fixed before scoring.
+KEY_FACT = {
+    "G1": r"\b6 hours|six hours",
+    "G2": r"penal interest|rate of interest|capitali",
+    "G3": r"cooling",
+    "G4": r"five per ?cent|\b5 ?%|\b5 per ?cent|\b8 ?%",
+    "G5": r"fortnight",
+    "G6": r"21 days|show cause|reasonable time",
+    "G7": r"automatic",
+    "G8": r"\bKFS\b|key facts",
+    "G9": r"25 crore",
+    "G10": r"core portion|interest",
+    "G11": r"7(:00)? ?p\.?m|7 pm|8(:00)? ?a\.?m",
+    "G12": r"\bIndia\b|Singapore|located",
+    "N1": r"IT Strategy Committee|ITSC|quarterly|meet",
+    "N2": r"T\+3|settle",
+    "N3": r"risk-based|step-up|behavioural|contextual",
+}
+
+
 def flags(report: dict[str, Any]) -> list[dict[str, Any]]:
     return [r for r in report["ratings"] if r["status"] in NEEDS_ACTION]
 
 
-def matches(rating: dict[str, Any], row: KeyRow) -> bool:
+def matches(rating: dict[str, Any], row: KeyRow, strict: bool = False) -> bool:
     cited = {_heading(ref) for ref in rating["policy_refs"]}
-    return any(ref in cited for ref in row.refs)
+    if not any(ref in cited for ref in row.refs):
+        return False
+    if not strict:
+        return True
+    said = f"{rating.get('finding', '')} {rating.get('action') or ''}"
+    return re.search(KEY_FACT[row.id], said, re.IGNORECASE) is not None
 
 
 def score(reports: dict[str, dict[str, Any]], rows: list[KeyRow]) -> dict[str, Any]:
-    per_row = {}
+    per_row, strict_row = {}, {}
     for row in rows:
         report = reports.get(row.doc_id)
-        hit = report is not None and any(matches(r, row) for r in flags(report))
-        per_row[row.id] = hit
+        candidates = flags(report) if report is not None else []
+        per_row[row.id] = any(matches(r, row) for r in candidates)
+        strict_row[row.id] = any(matches(r, row, strict=True) for r in candidates)
     gaps = [row for row in rows if not row.trap]
     traps = [row for row in rows if row.trap]
     unkeyed = []
@@ -91,9 +125,12 @@ def score(reports: dict[str, dict[str, Any]], rows: list[KeyRow]) -> dict[str, A
     found = [1.0 if per_row[row.id] else 0.0 for row in gaps]
     return {
         "gaps_found": f"{int(sum(found))}/{len(gaps)}",
+        "gaps_found_strict": f"{sum(strict_row[row.id] for row in gaps)}/{len(gaps)}",
         "gap_recall": bootstrap_ci(found),
         "traps_flagged": f"{sum(per_row[row.id] for row in traps)}/{len(traps)}",
+        "traps_flagged_strict": f"{sum(strict_row[row.id] for row in traps)}/{len(traps)}",
         "per_row": per_row,
+        "per_row_strict": strict_row,
         "flags": sum(len(flags(r)) for r in reports.values()),
         "unkeyed_flags": len(unkeyed),
         "check_problems": {d: r["problems"] for d, r in reports.items() if r["problems"]},
@@ -126,8 +163,82 @@ def cmd_run(args: argparse.Namespace) -> int:
     return cmd_score(args)
 
 
+def wilson(k: int, n: int, z: float = 1.96) -> tuple[float, float]:
+    """95% Wilson interval for k of n: unlike the bootstrap, it does not collapse
+    to [100, 100] when every one of a few items is found."""
+    p = k / n
+    centre = (p + z * z / (2 * n)) / (1 + z * z / n)
+    half = z * ((p * (1 - p) / n + z * z / (4 * n * n)) ** 0.5) / (1 + z * z / n)
+    return max(0.0, centre - half), min(1.0, centre + half)
+
+
+def write_up(result: dict[str, Any], model: str, cost: float | None) -> str:
+    """eval/results/IMPACT.md, generated from the scored result."""
+    n = len([k for k in result["per_row"] if k.startswith("G")])
+    k = sum(v for key, v in result["per_row"].items() if key.startswith("G"))
+    ks = sum(v for key, v in result["per_row_strict"].items() if key.startswith("G"))
+    low, high = wilson(k, n)
+    slow, shigh = wilson(ks, n)
+    applicable = sum(
+        c["obligations"] - c.get("not_applicable", 0) for c in result["counts"].values()
+    )
+    totals: dict[str, int] = {}
+    for c in result["counts"].values():
+        for key, value in c.items():
+            totals[key] = totals.get(key, 0) + value
+    lines = [
+        "# Impact pipeline against the gap key",
+        "",
+        f"Model `{model}`; {len(result['counts'])} circulars, every one named in "
+        "[`company/GAP_KEY.md`](../../company/GAP_KEY.md). Generated by "
+        "`python -m regradar.evaluate_impact score` from `eval/impact/*.json`."
+        + (f" API cost of the run: ${cost:.2f}." if cost is not None else ""),
+        "",
+        "| Measure | Result |",
+        "| --- | --- |",
+        f"| Planted gaps found, strict: the flag states the rule's key fact | "
+        f"**{result['gaps_found_strict']}** = {100 * ks / n:.0f}% "
+        f"[{100 * slow:.0f}, {100 * shigh:.0f}] (Wilson 95%) |",
+        f"| Planted gaps found, lenient: a flag cites the right policy section | "
+        f"{result['gaps_found']} = {100 * k / n:.0f}% [{100 * low:.0f}, {100 * high:.0f}] |",
+        f"| Traps flagged as gaps (N1-N3; lower is better), strict / lenient | "
+        f"**{result['traps_flagged_strict']}** / {result['traps_flagged']} |",
+        f"| Gap or partial flags in all (share of applicable obligations) | {result['flags']} "
+        f"({100 * result['flags'] / max(1, applicable):.0f}%) |",
+        f"| Flags matching no key row (need a person) | {result['unkeyed_flags']} |",
+        "| Obligations extracted / rated not applicable / not covered | "
+        f"{totals.get('obligations', 0)} / {totals.get('not_applicable', 0)} / "
+        f"{totals.get('not_covered', 0)} |",
+        f"| Items in the review queue | {totals.get('review', 0)} |",
+        f"| Reports failing a code check | {len(result['check_problems'])} |",
+        "",
+        "Per key row (Y = found or, for N rows, flagged):",
+        "",
+        "| Match | " + " | ".join(result["per_row"]) + " |",
+        "| --- | " + " | ".join("---" for _ in result["per_row"]) + " |",
+        "| strict | "
+        + " | ".join("Y" if v else "-" for v in result["per_row_strict"].values())
+        + " |",
+        "| lenient | " + " | ".join("Y" if v else "-" for v in result["per_row"].values()) + " |",
+        "",
+        "Matching: a gap or partial rating from the key's circular that cites the key's "
+        "policy in the same section (heading number); strict also requires the finding or "
+        "action to state the rule's key fact (`KEY_FACT` in `regradar/evaluate_impact.py`, "
+        "taken from the key's rule text). **Recall is not the whole story:** the "
+        "pipeline flags many obligations, and precision is not measured. The key lists "
+        "what was planted, not every shortfall, so unkeyed flags are neither right nor "
+        "wrong until a person reviews them; they are listed in `impact_<model>.json`.",
+    ]
+    return "\n".join(lines) + "\n"
+
+
 def cmd_score(args: argparse.Namespace) -> int:
+    from regradar.llm import Ledger
+
     result = score(_load(args.model), gap_key())
+    ledger = Ledger(ROOT / "data" / "llm_cache" / "ledger.jsonl")
+    cost = sum(float(e["usd"]) for e in ledger.entries() if e["purpose"].startswith("impact"))
+    (RESULTS / "IMPACT.md").write_text(write_up(result, args.model, cost or None), encoding="utf-8")
     RESULTS.mkdir(parents=True, exist_ok=True)
     out = RESULTS / f"impact_{args.model}.json"
     out.write_text(json.dumps({"model": args.model, **result}, indent=1) + "\n", encoding="utf-8")

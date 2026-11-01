@@ -1,0 +1,491 @@
+{
+ "doc_id": "rbi-n12514",
+ "title": "Guidelines on Default Loss Guarantee (DLG) in Digital Lending",
+ "model": "claude-haiku-5-5",
+ "verdict": "action needed",
+ "problems": [],
+ "counts": {
+  "obligations": 21,
+  "actions": 5,
+  "partial": 4,
+  "not_covered": 12,
+  "met": 3,
+  "gap": 1,
+  "not_applicable": 1,
+  "review": 0
+ },
+ "obligations": [
+  {
+   "text": "RE may enter into DLG arrangements only with a Lending Service Provider (LSP) or other RE with which it has entered into an outsourcing (LSP) arrangement.",
+   "applies_to": "RE",
+   "deadline": null,
+   "paragraph": "3",
+   "quote": "RE may enter into DLG arrangements only with a Lending Service Provider (LSP)3/ other RE with which it has entered into an outsourcing (LSP) arrangement.",
+   "id": "rbi-n12514:section:0004#1",
+   "chunk_id": "rbi-n12514:section:0004"
+  },
+  {
+   "text": "The LSP providing DLG must be incorporated as a company under the Companies Act, 2013.",
+   "applies_to": "LSP providing DLG",
+   "deadline": null,
+   "paragraph": "3",
+   "quote": "the LSP providing DLG must be incorporated as a company under the Companies Act, 2013.",
+   "id": "rbi-n12514:section:0004#2",
+   "chunk_id": "rbi-n12514:section:0004"
+  },
+  {
+   "text": "DLG arrangements must be backed by an explicit legally enforceable contract between the RE and the DLG provider.",
+   "applies_to": "RE",
+   "deadline": null,
+   "paragraph": "4",
+   "quote": "DLG arrangements must be backed by an explicit legally enforceable contract between the RE and the DLG provider.",
+   "id": "rbi-n12514:section:0004#3",
+   "chunk_id": "rbi-n12514:section:0004"
+  },
+  {
+   "text": "The DLG contract must contain the extent of DLG cover.",
+   "applies_to": "RE",
+   "deadline": null,
+   "paragraph": "4(a)",
+   "quote": "Such contract, among other things, must contain the following details:",
+   "id": "rbi-n12514:section:0004#4",
+   "chunk_id": "rbi-n12514:section:0004"
+  },
+  {
+   "text": "The DLG contract must contain the form in which DLG cover is to be maintained with the RE.",
+   "applies_to": "RE",
+   "deadline": null,
+   "paragraph": "4(b)",
+   "quote": "Such contract, among other things, must contain the following details:",
+   "id": "rbi-n12514:section:0004#5",
+   "chunk_id": "rbi-n12514:section:0004"
+  },
+  {
+   "text": "The DLG contract must contain the timeline for DLG invocation.",
+   "applies_to": "RE",
+   "deadline": null,
+   "paragraph": "4(c)",
+   "quote": "Such contract, among other things, must contain the following details:",
+   "id": "rbi-n12514:section:0004#6",
+   "chunk_id": "rbi-n12514:section:0004"
+  },
+  {
+   "text": "The DLG contract must contain the disclosure requirements as under Para 11 of these guidelines.",
+   "applies_to": "RE",
+   "deadline": null,
+   "paragraph": "4(d)",
+   "quote": "Such contract, among other things, must contain the following details:",
+   "id": "rbi-n12514:section:0004#7",
+   "chunk_id": "rbi-n12514:section:0004"
+  },
+  {
+   "text": "DLG shall not involve any actual transfer of the underlying loan exposure from the books of the RE to the books of the DLG Provider.",
+   "applies_to": "RE and DLG Provider",
+   "deadline": null,
+   "paragraph": "",
+   "quote": "DLG shall not involve any actual transfer of the underlying loan exposure from the books of the RE to the books of the DLG Provider.",
+   "id": "rbi-n12514:section:0004#8",
+   "chunk_id": "rbi-n12514:section:0004"
+  },
+  {
+   "text": "RE shall accept DLG only in one or more of the following forms: cash deposited with the RE, fixed deposits maintained with a Scheduled Commercial Bank with a lien marked in favour of the RE, or bank guarantee in favour of the RE.",
+   "applies_to": "RE",
+   "deadline": null,
+   "paragraph": "5",
+   "quote": "RE shall accept DLG only in one or more of the following forms: a. Cash deposited with the RE b. Fixed Deposits maintained with a Scheduled Commercial Bank with a lien marked in favour of the RE",
+   "id": "rbi-n12514:section:0005#1",
+   "chunk_id": "rbi-n12514:section:0005"
+  },
+  {
+   "text": "RE shall ensure that total amount of DLG cover on any outstanding portfolio which is specified upfront shall not exceed five per cent of the amount of that loan portfolio.",
+   "applies_to": "RE",
+   "deadline": null,
+   "paragraph": "6",
+   "quote": "RE shall ensure that total amount of DLG cover on any outstanding portfolio which is specified upfront shall not exceed five per cent of the amount of that loan portfolio.",
+   "id": "rbi-n12514:section:0005#2",
+   "chunk_id": "rbi-n12514:section:0005"
+  },
+  {
+   "text": "In case of implicit guarantee arrangements, the DLG Provider shall not bear performance risk of more than the equivalent amount of five per cent of the underlying loan portfolio.",
+   "applies_to": "DLG Provider",
+   "deadline": null,
+   "paragraph": "6",
+   "quote": "In case of implicit guarantee arrangements, the DLG Provider shall not bear performance risk of more than the equivalent amount of five per cent of the underlying loan portfolio.",
+   "id": "rbi-n12514:section:0005#3",
+   "chunk_id": "rbi-n12514:section:0005"
+  },
+  {
+   "text": "Recognition of individual loan assets as NPA and consequent provisioning shall be the responsibility of the RE as per extant asset classification and provisioning norms, irrespective of any DLG cover available at the portfolio level.",
+   "applies_to": "RE",
+   "deadline": null,
+   "paragraph": "7",
+   "quote": "Recognition of individual loan assets in the portfolio as NPA and consequent provisioning shall be the responsibility of the RE as per the extant asset classification and provisioning norms irrespective of any DLG cover available",
+   "id": "rbi-n12514:section:0005#4",
+   "chunk_id": "rbi-n12514:section:0005"
+  },
+  {
+   "text": "The amount of DLG invoked shall not be set off against the underlying individual loans.",
+   "applies_to": "RE",
+   "deadline": null,
+   "paragraph": "7",
+   "quote": "The amount of DLG invoked shall not be set off against the underlying individual loans.",
+   "id": "rbi-n12514:section:0005#5",
+   "chunk_id": "rbi-n12514:section:0005"
+  },
+  {
+   "text": "The RE shall invoke DLG within a maximum overdue period of 120 days, unless the overdue is made good by the borrower before that.",
+   "applies_to": "RE",
+   "deadline": "Maximum overdue period of 120 days",
+   "paragraph": "9",
+   "quote": "The RE shall invoke DLG within a maximum overdue period of 120 days, unless made good by the borrower before that.",
+   "id": "rbi-n12514:section:0006#1",
+   "chunk_id": "rbi-n12514:section:0006"
+  },
+  {
+   "text": "The period for which the DLG agreement remains in force shall not be less than the longest tenor of the loan in the underlying loan portfolio.",
+   "applies_to": "DLG agreement (RE)",
+   "deadline": null,
+   "paragraph": "10",
+   "quote": "The period for which the DLG agreement will remain in force shall not be less than the longest tenor of the loan in the underlying loan portfolio.",
+   "id": "rbi-n12514:section:0006#2",
+   "chunk_id": "rbi-n12514:section:0006"
+  },
+  {
+   "text": "The RE shall put in place a mechanism to ensure that LSPs with whom it has a DLG arrangement publish on their website the total number of portfolios and the respective amount of each portfolio on which DLG has been offered.",
+   "applies_to": "REs (Regulated Entities) with DLG arrangements; LSPs with whom they have a DLG arrangement",
+   "deadline": null,
+   "paragraph": "11",
+   "quote": "The RE shall put in place a mechanism to ensure that LSPs with whom they have a DLG arrangement shall publish on their website the total number of portfolios and the respective amount of each portfolio on which DLG has been offered.",
+   "id": "rbi-n12514:section:0007#1",
+   "chunk_id": "rbi-n12514:section:0007"
+  },
+  {
+   "text": "REs shall put in place a Board approved policy before entering into any DLG arrangement, including at minimum the eligibility criteria for DLG provider, nature and extent of DLG cover, process of monitoring and reviewing the DLG arrangement, and details of fees, if any, payable to the DLG provider.",
+   "applies_to": "REs",
+   "deadline": "Before entering into any DLG arrangement",
+   "paragraph": "12.1",
+   "quote": "REs shall put in place a Board approved policy before entering into any DLG arrangement. Such policy shall include, at the minimum, the eligibility criteria for DLG provider, nature and extent of DLG cover",
+   "id": "rbi-n12514:section:0007#2",
+   "chunk_id": "rbi-n12514:section:0007"
+  },
+  {
+   "text": "Robust credit underwriting standards need to be put in place irrespective of DLG cover; any DLG arrangement shall not act as a substitute for credit appraisal requirements.",
+   "applies_to": "REs",
+   "deadline": null,
+   "paragraph": "12.2",
+   "quote": "any DLG arrangement shall not act as a substitute for credit appraisal requirements and robust credit underwriting standards need to be put in place irrespective of DLG cover.",
+   "id": "rbi-n12514:section:0007#3",
+   "chunk_id": "rbi-n12514:section:0007"
+  },
+  {
+   "text": "Every time an RE enters into or renews a DLG arrangement, it must obtain adequate information to satisfy itself that the entity extending DLG would be able to honour it.",
+   "applies_to": "Regulated Entity (RE)",
+   "deadline": null,
+   "paragraph": "12.3",
+   "quote": "Every time an RE enters into or renews a DLG arrangement, it shall obtain adequate information to satisfy itself that the entity extending DLG would be able to honour it.",
+   "id": "rbi-n12514:section:0008#1",
+   "chunk_id": "rbi-n12514:section:0008"
+  },
+  {
+   "text": "The information obtained by the RE must, at a minimum, include a declaration from the DLG provider, certified by the statutory auditor, on the aggregate DLG amount outstanding, the number of REs and the respective number of portfolios against which DLG has been provided.",
+   "applies_to": "Regulated Entity (RE)",
+   "deadline": null,
+   "paragraph": "12.3",
+   "quote": "Such information shall, at a minimum, include a declaration from the DLG provider, certified by the statutory auditor, on the aggregate DLG amount outstanding, the number of REs and the respective number of portfolios against which DLG has been provided.",
+   "id": "rbi-n12514:section:0008#2",
+   "chunk_id": "rbi-n12514:section:0008"
+  },
+  {
+   "text": "The declaration from the DLG provider must also contain past default rates on similar portfolios.",
+   "applies_to": "DLG provider",
+   "deadline": null,
+   "paragraph": "12.3",
+   "quote": "The declaration shall also contain past default rates on similar portfolios.",
+   "id": "rbi-n12514:section:0008#3",
+   "chunk_id": "rbi-n12514:section:0008"
+  }
+ ],
+ "ratings": [
+  {
+   "obligation": "rbi-n12514:section:0004#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FC-13 \u00a71.1",
+    "FC-13 \u00a76.1"
+   ],
+   "policy_quote": "FlexiPay is its only Lending Service Provider (LSP), and the FlexiPay app is the Digital Lending App (DLA).",
+   "finding": "The policy names FlexiPay as the only LSP and the DLG provider, but no paragraph states that the LSP relationship is an outsourcing arrangement as the rule requires.",
+   "severity": "low",
+   "action": "Document in the Digital Lending Policy that the FlexiPay LSP relationship is a formal outsourcing arrangement under which the DLG is provided."
+  },
+  {
+   "obligation": "rbi-n12514:section:0004#2",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph shown states that FlexiPay, as the DLG provider, is incorporated as a company under the Companies Act, 2013.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12514:section:0004#3",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FC-13 \u00a76.1"
+   ],
+   "policy_quote": "FlexiPay provides FlexiCredit a default loss guarantee (DLG) of 8% of the amount disbursed in each quarterly portfolio",
+   "finding": "The policy describes the DLG terms but does not require a written, explicit and legally enforceable contract between FlexiCredit and FlexiPay.",
+   "severity": "medium",
+   "action": "Add a requirement that every DLG arrangement is backed by a written, legally enforceable contract between FlexiCredit and FlexiPay before disbursement."
+  },
+  {
+   "obligation": "rbi-n12514:section:0004#4",
+   "applies": true,
+   "status": "met",
+   "policy_refs": [
+    "FC-13 \u00a76.1"
+   ],
+   "policy_quote": "FlexiPay provides FlexiCredit a default loss guarantee (DLG) of 8% of the amount disbursed in each quarterly portfolio",
+   "finding": "The policy states the extent of DLG cover as 8% of the amount disbursed in each quarterly portfolio.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12514:section:0004#5",
+   "applies": true,
+   "status": "met",
+   "policy_refs": [
+    "FC-13 \u00a76.1"
+   ],
+   "policy_quote": "as a fixed deposit with a lien in FlexiCredit's favour",
+   "finding": "The policy specifies that the DLG is maintained as a fixed deposit with a lien in FlexiCredit's favour.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12514:section:0004#6",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph sets a timeline for DLG invocation.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12514:section:0004#7",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph sets out the DLG disclosure requirements referred to in Para 11 of the guidelines.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12514:section:0004#8",
+   "applies": true,
+   "status": "met",
+   "policy_refs": [
+    "FC-13 \u00a71.1"
+   ],
+   "policy_quote": "FlexiCredit is the lender. FlexiPay is its only Lending Service Provider (LSP), and the FlexiPay app is the Digital Lending App (DLA).",
+   "finding": "The policy makes FlexiCredit the lender of the loans, which implies the underlying exposure stays on FlexiCredit's books and is not transferred to FlexiPay.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12514:section:0005#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FC-13 \u00a76.1"
+   ],
+   "policy_quote": "FlexiPay provides FlexiCredit a default loss guarantee (DLG) of 8% of the amount disbursed in each quarterly portfolio, as a fixed deposit with a lien in FlexiCredit's favour.",
+   "finding": "The policy uses a fixed deposit with a lien in FlexiCredit's favour, which is a permitted form, but it does not state that the deposit is maintained with a Scheduled Commercial Bank as the rule requires.",
+   "severity": "low",
+   "action": "Amend FC-13 \u00a76.1 to state that the fixed deposit is maintained with a Scheduled Commercial Bank with a lien in FlexiCredit's favour."
+  },
+  {
+   "obligation": "rbi-n12514:section:0005#2",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FC-13 \u00a76.1"
+   ],
+   "policy_quote": "FlexiPay provides FlexiCredit a default loss guarantee (DLG) of 8% of the amount disbursed in each quarterly portfolio, as a fixed deposit with a lien in FlexiCredit's favour.",
+   "finding": "The policy sets the DLG at 8% of the amount disbursed in each quarterly portfolio, which exceeds the 5% ceiling on upfront-specified DLG cover.",
+   "severity": "high",
+   "action": "Reduce the DLG cover in FC-13 \u00a76.1 to no more than 5% of the loan portfolio amount."
+  },
+  {
+   "obligation": "rbi-n12514:section:0005#3",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The 5% limit applies only to implicit guarantee arrangements, and the FlexiPay DLG is an explicit fixed-deposit guarantee.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12514:section:0005#4",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown addresses FlexiCredit recognising individual loan NPAs and provisioning irrespective of DLG cover.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12514:section:0005#5",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown prohibits setting off invoked DLG amounts against underlying individual loans.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12514:section:0006#1",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown sets a maximum overdue period of 120 days for FlexiCredit to invoke the DLG; FC-13 \u00a76.1 only states the 8% guarantee amount and lien.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12514:section:0006#2",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown requires the DLG agreement to remain in force for at least the longest tenor of the underlying loan portfolio; FC-13 \u00a76.1 is silent on duration.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12514:section:0007#1",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy shown requires LSPs with a DLG arrangement to publish the number and amount of portfolios on which DLG is offered, and FC-13 \u00a76.1 only describes the 8% guarantee.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12514:section:0007#2",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FC-13 \u00a76.1"
+   ],
+   "policy_quote": "FlexiPay provides FlexiCredit a default loss guarantee (DLG) of 8% of the amount disbursed in each quarterly portfolio",
+   "finding": "FC-13 \u00a76.1 sets the nature and extent of the DLG cover (8% of disbursed amount per quarterly portfolio), but no paragraph shows Board approval before entering the arrangement or covers eligibility criteria for the DLG provider, monitoring and review, or fees payable.",
+   "severity": "medium",
+   "action": "Add a Board-approved DLG policy, adopted before any DLG arrangement, that sets out provider eligibility criteria, monitoring and review process, and fees payable to FlexiPay."
+  },
+  {
+   "obligation": "rbi-n12514:section:0007#3",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown requires robust credit underwriting standards independent of DLG cover or states that the DLG cannot substitute for credit appraisal.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12514:section:0008#1",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No shown paragraph requires FlexiCredit, as the RE receiving FlexiPay's 8% DLG under FC-13 \u00a76.1, to obtain information satisfying itself that FlexiPay can honour the guarantee when it enters or renews the arrangement.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12514:section:0008#2",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No shown paragraph requires a statutory-auditor-certified DLG provider declaration on aggregate DLG outstanding, number of REs and portfolios covered, as the minimum information FlexiCredit must hold.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12514:section:0008#3",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No shown paragraph requires FlexiPay, as DLG provider, to include past default rates on similar portfolios in its declaration to FlexiCredit.",
+   "severity": "none",
+   "action": null
+  }
+ ],
+ "actions": [
+  {
+   "obligation": "rbi-n12514:section:0005#2",
+   "action": "Reduce the DLG cover in FC-13 \u00a76.1 to no more than 5% of the loan portfolio amount.",
+   "owner": "CEO, FlexiCredit",
+   "priority": "P1",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FC-13 \u00a76.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12514:section:0004#3",
+   "action": "Add a requirement that every DLG arrangement is backed by a written, legally enforceable contract between FlexiCredit and FlexiPay before disbursement.",
+   "owner": "CEO, FlexiCredit",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FC-13 \u00a76.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12514:section:0007#2",
+   "action": "Add a Board-approved DLG policy, adopted before any DLG arrangement, that sets out provider eligibility criteria, monitoring and review process, and fees payable to FlexiPay.",
+   "owner": "CEO, FlexiCredit",
+   "priority": "P2",
+   "deadline": "Before entering into any DLG arrangement",
+   "policy_refs": [
+    "FC-13 \u00a76.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12514:section:0004#1",
+   "action": "Document in the Digital Lending Policy that the FlexiPay LSP relationship is a formal outsourcing arrangement under which the DLG is provided.",
+   "owner": "CEO, FlexiCredit",
+   "priority": "P3",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FC-13 \u00a71.1",
+    "FC-13 \u00a76.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12514:section:0005#1",
+   "action": "Amend FC-13 \u00a76.1 to state that the fixed deposit is maintained with a Scheduled Commercial Bank with a lien in FlexiCredit's favour.",
+   "owner": "CEO, FlexiCredit",
+   "priority": "P3",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FC-13 \u00a76.1"
+   ]
+  }
+ ],
+ "review": []
+}

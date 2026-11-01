@@ -1,0 +1,3135 @@
+{
+ "doc_id": "rbi-n12896",
+ "title": "Master Direction on Regulation of Payment Aggregator (PA)",
+ "model": "claude-haiku-5-5",
+ "verdict": "action needed",
+ "problems": [],
+ "counts": {
+  "obligations": 137,
+  "actions": 38,
+  "not_applicable": 30,
+  "met": 11,
+  "not_covered": 58,
+  "gap": 9,
+  "partial": 29,
+  "review": 0
+ },
+ "obligations": [
+  {
+   "text": "A non-bank entity authorised as AD Category-II that facilitates current account transactions not prohibited under FEMA (other than purchase or sale of goods or service) shall not fall within the purview of PA-CB business.",
+   "applies_to": "Non-bank entity authorised as AD Category-II facilitating current account transactions not prohibited under FEMA",
+   "deadline": null,
+   "paragraph": "4(ii)",
+   "quote": "A non-bank entity authorised as AD Category-II, and facilitating current account transactions not prohibited under FEMA (other than purchase or sale of goods or service), shall not fall within the purview of PA \u2013 CB business.",
+   "id": "rbi-n12896:section:0008#1",
+   "chunk_id": "rbi-n12896:section:0008"
+  },
+  {
+   "text": "A non-bank entity shall seek authorisation for operating as a PA by submitting an application through RBI's online portal.",
+   "applies_to": "non-bank entity",
+   "deadline": null,
+   "paragraph": "5(b)",
+   "quote": "A non-bank entity shall seek authorisation for operating as a PA by submitting an application through RBI\u2019s online portal .",
+   "id": "rbi-n12896:section:0009#1",
+   "chunk_id": "rbi-n12896:section:0009"
+  },
+  {
+   "text": "An entity regulated by any financial sector regulator shall apply for PA authorisation along with a No Objection Certificate from such regulator(s), within 45 days of obtaining the NOC.",
+   "applies_to": "entity regulated by any financial sector regulator",
+   "deadline": "within 45 days of obtaining the NOC",
+   "paragraph": "5(b)",
+   "quote": "An entity, regulated by any of the financial sector regulator(s), shall apply along with a \u2018No Objection Certificate\u2019 (NOC) from such regulator(s), within 45 days of obtaining the NOC.",
+   "id": "rbi-n12896:section:0009#2",
+   "chunk_id": "rbi-n12896:section:0009"
+  },
+  {
+   "text": "A non-bank PA shall be a company incorporated in India under the Companies Act, 2013.",
+   "applies_to": "non-bank PA",
+   "deadline": null,
+   "paragraph": "5(c)",
+   "quote": "A non-bank PA shall be a company incorporated in India under the Companies Act, 2013.",
+   "id": "rbi-n12896:section:0009#3",
+   "chunk_id": "rbi-n12896:section:0009"
+  },
+  {
+   "text": "The Memorandum of Association of the applicant entity should cover the proposed activity of operating as a PA.",
+   "applies_to": "applicant entity",
+   "deadline": null,
+   "paragraph": "5(c)",
+   "quote": "The Memorandum of Association of the applicant entity should cover the proposed activity of operating as a PA.",
+   "id": "rbi-n12896:section:0009#4",
+   "chunk_id": "rbi-n12896:section:0009"
+  },
+  {
+   "text": "A PA holding a CoA and already carrying on business as a PA-P, desirous of commencing business in another PA category, shall intimate RBI at least 30 days prior to commencing the new business.",
+   "applies_to": "PA holding a Certificate of Authorisation already carrying on PA-P business",
+   "deadline": "at least 30 days prior to commencing the new business",
+   "paragraph": "5(d)(i)",
+   "quote": "desirous of commencing business in another PA category \u2013 shall intimate RBI at least 30 days prior to commencing the new business.",
+   "id": "rbi-n12896:section:0009#5",
+   "chunk_id": "rbi-n12896:section:0009"
+  },
+  {
+   "text": "An entity whose application for PA-O or PA-CB CoA is under consideration of RBI shall intimate RBI about its existing PA-P business, if any, through the online portal.",
+   "applies_to": "entity whose application for CoA for PA-O or PA-CB is under consideration of RBI",
+   "deadline": "by December 31, 2025",
+   "paragraph": "5(d)(ii)",
+   "quote": "shall intimate the Reserve Bank about its existing PA-P business, if any, through the online portal, by December 31, 2025.",
+   "id": "rbi-n12896:section:0009#6",
+   "chunk_id": "rbi-n12896:section:0009"
+  },
+  {
+   "text": "An entity carrying on only PA-P business shall apply for authorisation as prescribed in 5(b) by December 31, 2025.",
+   "applies_to": "entity carrying on only PA-P business",
+   "deadline": "by December 31, 2025",
+   "paragraph": "5(d)(iii)",
+   "quote": "An entity carrying on only PA-P business shall apply for authorisation as prescribed in 5 (b) above, by December 31, 2025.",
+   "id": "rbi-n12896:section:0009#7",
+   "chunk_id": "rbi-n12896:section:0009"
+  },
+  {
+   "text": "An entity carrying on only PA-P business that fails to apply by the due date shall intimate its banker(s) forthwith.",
+   "applies_to": "entity carrying on only PA-P business that fails to apply by due date",
+   "deadline": "forthwith after failing to apply by December 31, 2025",
+   "paragraph": "5(d)(iii)",
+   "quote": "An entity which fails to apply by the due date shall intimate its banker(s) forthwith and wind up its business by February 28, 2026.",
+   "id": "rbi-n12896:section:0009#8",
+   "chunk_id": "rbi-n12896:section:0009"
+  },
+  {
+   "text": "An entity carrying on only PA-P business that fails to apply by the due date shall wind up its business.",
+   "applies_to": "entity carrying on only PA-P business that fails to apply by due date",
+   "deadline": "by February 28, 2026",
+   "paragraph": "5(d)(iii)",
+   "quote": "An entity which fails to apply by the due date shall intimate its banker(s) forthwith and wind up its business by February 28, 2026.",
+   "id": "rbi-n12896:section:0009#9",
+   "chunk_id": "rbi-n12896:section:0009"
+  },
+  {
+   "text": "An entity seeking authorisation to commence or carry on PA business shall have a minimum net-worth of \u20b915 crore at the time of tendering application for authorisation.",
+   "applies_to": "An entity seeking authorisation to commence or carry on PA business",
+   "deadline": "At the time of tendering application for authorisation",
+   "paragraph": "6(a)",
+   "quote": "An entity seeking authorisation to commence or carry on PA business shall have a minimum net-worth of \u20b915 crore at the time of tendering application for authorisation",
+   "id": "rbi-n12896:section:0010#1",
+   "chunk_id": "rbi-n12896:section:0010"
+  },
+  {
+   "text": "An entity seeking authorisation to commence or carry on PA business shall attain a minimum net-worth of \u20b925 crore by the end of the third financial year of grant of authorisation.",
+   "applies_to": "An entity seeking authorisation to commence or carry on PA business",
+   "deadline": "By the end of third financial year of grant of authorisation",
+   "paragraph": "6(a)",
+   "quote": "shall attain a minimum net-worth of \u20b925 crore by the end of third financial year of grant of authorisation",
+   "id": "rbi-n12896:section:0010#2",
+   "chunk_id": "rbi-n12896:section:0010"
+  },
+  {
+   "text": "The minimum net-worth, as applicable, shall be maintained by a PA on an ongoing basis.",
+   "applies_to": "PA (payment aggregator)",
+   "deadline": "On an ongoing basis",
+   "paragraph": "6(b)",
+   "quote": "The minimum networth, as applicable, shall be maintained by a PA on an ongoing basis.",
+   "id": "rbi-n12896:section:0010#3",
+   "chunk_id": "rbi-n12896:section:0010"
+  },
+  {
+   "text": "Deferred Tax Assets included in any component of net worth shall be deducted while arriving at the net-worth value.",
+   "applies_to": "PA (payment aggregator)",
+   "deadline": null,
+   "paragraph": "6(c)",
+   "quote": "if Deferred Tax Assets have been included in any of the components, the same shall be deducted while arriving at the net-worth value.",
+   "id": "rbi-n12896:section:0010#4",
+   "chunk_id": "rbi-n12896:section:0010"
+  },
+  {
+   "text": "Compulsorily convertible preference shares shall be compulsorily convertible into equity shares and the shareholder agreements shall specifically prohibit any withdrawal of this preference share capital at any time.",
+   "applies_to": "Entity whose net worth includes compulsorily convertible preference shares (shareholder agreements)",
+   "deadline": null,
+   "paragraph": "6(c)",
+   "quote": "they should be compulsorily convertible into equity shares and the shareholder agreements should specifically prohibit any withdrawal of this preference share capital at any time",
+   "id": "rbi-n12896:section:0010#5",
+   "chunk_id": "rbi-n12896:section:0010"
+  },
+  {
+   "text": "An entity seeking PA authorisation shall submit a certificate in the enclosed format (Annexure 2.1) from its statutory auditor evidencing compliance with the applicable net-worth requirement while submitting the application for authorisation.",
+   "applies_to": "An entity seeking PA authorisation",
+   "deadline": "While submitting the application for authorisation",
+   "paragraph": "6(e)",
+   "quote": "An entity seeking PA authorisation shall submit a certificate in the enclosed format ( Annexure 2.1 ) from their statutory auditor evidencing compliance with the applicable net-worth requirement while submitting the application for authorisation.",
+   "id": "rbi-n12896:section:0010#6",
+   "chunk_id": "rbi-n12896:section:0010"
+  },
+  {
+   "text": "A newly incorporated non-bank entity without an audited statement of financial accounts shall submit a certificate from its statutory auditor regarding current networth along with a provisional balance sheet as of recent date.",
+   "applies_to": "A newly incorporated non-bank entity which may not have an audited statement of financial accounts",
+   "deadline": "As of recent date",
+   "paragraph": "6(e)",
+   "quote": "A newly incorporated non-bank entity which may not have an audited statement of financial accounts shall submit a certificate in the enclosed format from their statutory auditor regarding current networth",
+   "id": "rbi-n12896:section:0010#7",
+   "chunk_id": "rbi-n12896:section:0010"
+  },
+  {
+   "text": "A PA shall be professionally managed.",
+   "applies_to": "PA",
+   "deadline": null,
+   "paragraph": "7(a)",
+   "quote": "A PA shall be professionally managed. The promoters and directors of the entity shall satisfy the fit and proper criteria as below:",
+   "id": "rbi-n12896:section:0011#1",
+   "chunk_id": "rbi-n12896:section:0011"
+  },
+  {
+   "text": "The promoters and directors of the PA shall satisfy the fit and proper criteria, including having a record of fairness and integrity (financial integrity, good reputation and character, and honesty).",
+   "applies_to": "Promoters and directors of the PA",
+   "deadline": null,
+   "paragraph": "7(a)(i)",
+   "quote": "The promoters and directors of the entity shall satisfy the fit and proper criteria as below: i. The person has a record of fairness and integrity, including but not limited to:",
+   "id": "rbi-n12896:section:0011#2",
+   "chunk_id": "rbi-n12896:section:0011"
+  },
+  {
+   "text": "The promoters and directors of the PA must not have incurred any of the listed disqualifications, including conviction for moral turpitude, economic or RBI-law offences, being an undischarged insolvent, being subject to a subsisting financial-system debarment order, being found of unsound mind, or being financially unsound.",
+   "applies_to": "Promoters and directors of the PA",
+   "deadline": null,
+   "paragraph": "7(a)(ii)",
+   "quote": "Such person has not incurred any of the following disqualifications: Convicted by a court for any offence involving moral turpitude or any economic offence",
+   "id": "rbi-n12896:section:0011#3",
+   "chunk_id": "rbi-n12896:section:0011"
+  },
+  {
+   "text": "Any takeover, acquisition of control, or change in management of a non-bank PA shall adhere to RBI circular CO.DPSS.POLC.No.S-590/02-14-006/2022-23 dated July 4, 2022, as amended from time to time.",
+   "applies_to": "Non-bank PA (including entities whose PA authorisation application is pending with RBI)",
+   "deadline": null,
+   "paragraph": "7(c)",
+   "quote": "Any takeover or acquisition of control or change in the management of a non-bank PA shall adhere to RBI circular CO.DPSS.POLC.No.S-590/02-14-006/2022-23 dated July 4, 2022",
+   "id": "rbi-n12896:section:0011#4",
+   "chunk_id": "rbi-n12896:section:0011"
+  },
+  {
+   "text": "A PA shall have a dispute resolution mechanism to handle payment related disputes in transactions facilitated by it.",
+   "applies_to": "PA",
+   "deadline": null,
+   "paragraph": "8(a)",
+   "quote": "A PA shall have a dispute resolution mechanism to handle payment related disputes in transactions facilitated by it.",
+   "id": "rbi-n12896:section:0012#1",
+   "chunk_id": "rbi-n12896:section:0012"
+  },
+  {
+   "text": "The PA's dispute management policy shall ensure adherence to RBI instructions, including on Turn Around Time (TAT) for resolution of failed transactions issued vide DPSS.CO.PD No.629/02.01.014/2019-20 dated September 20, 2019 (as amended from time to time).",
+   "applies_to": "PA",
+   "deadline": null,
+   "paragraph": "8(a)",
+   "quote": "The policy shall ensure adherence to the instructions issued by RBI including on Turn Around Time (TAT) for resolution of failed transactions",
+   "id": "rbi-n12896:section:0012#2",
+   "chunk_id": "rbi-n12896:section:0012"
+  },
+  {
+   "text": "Agreements between a PA, its merchants, its acquiring banks and all other stakeholders shall clearly delineate the roles and responsibilities of the involved parties, including manner of refunds, treatment of failed transactions, return policy, grievance redressal and reconciliation.",
+   "applies_to": "PA; its merchants; its acquiring banks; all other stakeholders",
+   "deadline": null,
+   "paragraph": "8(b)",
+   "quote": "Agreements between a PA, its merchants, its acquiring banks, and all other stakeholders shall clearly delineate the roles and responsibilities of the involved parties",
+   "id": "rbi-n12896:section:0012#3",
+   "chunk_id": "rbi-n12896:section:0012"
+  },
+  {
+   "text": "The PA shall disclose comprehensive information regarding its merchant policies, privacy policy and other terms and conditions on its website and/or its mobile application.",
+   "applies_to": "PA",
+   "deadline": null,
+   "paragraph": "8(c)",
+   "quote": "The PA shall disclose comprehensive information regarding its merchant policies, privacy policy and other terms and conditions on its website and / or its mobile application.",
+   "id": "rbi-n12896:section:0012#4",
+   "chunk_id": "rbi-n12896:section:0012"
+  },
+  {
+   "text": "The PA shall appoint an officer responsible for responding to issues raised by its merchants, along with an escalation matrix for grievance redressal.",
+   "applies_to": "PA",
+   "deadline": null,
+   "paragraph": "8(d)",
+   "quote": "The PA shall appoint an officer responsible for responding to issues raised by its merchants along with an escalation matrix for grievance redressal.",
+   "id": "rbi-n12896:section:0012#5",
+   "chunk_id": "rbi-n12896:section:0012"
+  },
+  {
+   "text": "Details of the officer and escalation matrix shall be prominently displayed on the PA's website.",
+   "applies_to": "PA",
+   "deadline": null,
+   "paragraph": "8(d)",
+   "quote": "Details of the officer and escalation matrix shall be prominently displayed on its website.",
+   "id": "rbi-n12896:section:0012#6",
+   "chunk_id": "rbi-n12896:section:0012"
+  },
+  {
+   "text": "PA must put in place adequate Information and Data Security infrastructure and systems for detection and prevention of frauds.",
+   "applies_to": "PA",
+   "deadline": null,
+   "paragraph": "9(a)",
+   "quote": "PA shall put in place adequate Information and Data Security infrastructure and systems for detection and prevention of frauds.",
+   "id": "rbi-n12896:section:0013#1",
+   "chunk_id": "rbi-n12896:section:0013"
+  },
+  {
+   "text": "PA must ensure that the infrastructure of the merchants is compliant with security standards like PCI-DSS and PCI-SSF, as may be applicable.",
+   "applies_to": "PA",
+   "deadline": null,
+   "paragraph": "9(a)",
+   "quote": "PA shall ensure that infrastructure of the merchants is compliant with security standards like PCI-DSS and PCI-SSF, as may be applicable.",
+   "id": "rbi-n12896:section:0013#2",
+   "chunk_id": "rbi-n12896:section:0013"
+  },
+  {
+   "text": "PA must put in place a Board approved Information Security Policy for safety and security of the payment systems it operates, and implement security measures in accordance with that policy to mitigate identified as well as emerging risks.",
+   "applies_to": "PA",
+   "deadline": null,
+   "paragraph": "9(b)",
+   "quote": "PA shall put in place a Board approved Information Security Policy for safety and security of the payment systems operated by it and implement security measures in accordance with the said policy",
+   "id": "rbi-n12896:section:0013#3",
+   "chunk_id": "rbi-n12896:section:0013"
+  },
+  {
+   "text": "PA must ensure adherence to the baseline technology-related recommendations provided in Annexure 1.",
+   "applies_to": "PA",
+   "deadline": null,
+   "paragraph": "9(b)",
+   "quote": "PA shall ensure adherence to baseline technology-related recommendations as provided in Annexure 1 .",
+   "id": "rbi-n12896:section:0013#4",
+   "chunk_id": "rbi-n12896:section:0013"
+  },
+  {
+   "text": "PA must comply with the data storage requirements applicable to Payment System Operators as laid out in RBI circular DPSS.CO.OD No.2785/06.08.005/2017-2018 dated April 6, 2018, as amended from time to time.",
+   "applies_to": "PA",
+   "deadline": null,
+   "paragraph": "9(c)",
+   "quote": "PA shall comply with data storage requirements as applicable to Payment System Operators (PSOs) as laid out in RBI circular DPSS.CO.OD No.2785/06.08.005/2017-2018 dated April 6, 2018",
+   "id": "rbi-n12896:section:0013#5",
+   "chunk_id": "rbi-n12896:section:0013"
+  },
+  {
+   "text": "PA must have an annual system audit, including cyber security audit, conducted by CERT-In empanelled auditors, and submit the report to the respective Regional Office of DPSS, RBI.",
+   "applies_to": "PA",
+   "deadline": "within such timelines as may be prescribed by RBI",
+   "paragraph": "9(d)",
+   "quote": "An annual system audit, including cyber security audit, conducted by CERT-In empanelled auditors shall be carried out and report thereof shall be submitted to the respective Regional Office of DPSS, RBI within such timelines as may be prescribed by RBI.",
+   "id": "rbi-n12896:section:0013#6",
+   "chunk_id": "rbi-n12896:section:0013"
+  },
+  {
+   "text": "A PA shall aggregate funds only for the merchant with whom it has a contractual relationship.",
+   "applies_to": "A PA",
+   "deadline": null,
+   "paragraph": "10(a)",
+   "quote": "A PA shall aggregate funds only for the merchant with whom it has a contractual relationship.",
+   "id": "rbi-n12896:section:0014#1",
+   "chunk_id": "rbi-n12896:section:0014"
+  },
+  {
+   "text": "A PA business shall not carry out marketplace business.",
+   "applies_to": "A PA business",
+   "deadline": null,
+   "paragraph": "10(b)",
+   "quote": "A PA business shall not carry out marketplace business.",
+   "id": "rbi-n12896:section:0014#2",
+   "chunk_id": "rbi-n12896:section:0014"
+  },
+  {
+   "text": "A PA shall ensure that the extant instructions with regard to Merchant Discount Rate (MDR) are followed.",
+   "applies_to": "A PA",
+   "deadline": null,
+   "paragraph": "10(c)",
+   "quote": "A PA shall ensure that the extant instructions with regard to Merchant Discount Rate (MDR) are followed.",
+   "id": "rbi-n12896:section:0014#3",
+   "chunk_id": "rbi-n12896:section:0014"
+  },
+  {
+   "text": "A PA shall ensure that any charges, other than the price of goods / service / investment amount, charged by a merchant, are distinctly displayed to the payer prior to the transaction.",
+   "applies_to": "A PA",
+   "deadline": null,
+   "paragraph": "10(c)",
+   "quote": "A PA shall also ensure that any charges, other than the price of goods / service / investment amount, charged by a merchant, are distinctly displayed to the payer prior to the transaction.",
+   "id": "rbi-n12896:section:0014#4",
+   "chunk_id": "rbi-n12896:section:0014"
+  },
+  {
+   "text": "A PA shall not place limits on transaction amount for a particular payment mode.",
+   "applies_to": "A PA",
+   "deadline": null,
+   "paragraph": "10(d)",
+   "quote": "A PA shall not place limits on transaction amount for a particular payment mode.",
+   "id": "rbi-n12896:section:0014#5",
+   "chunk_id": "rbi-n12896:section:0014"
+  },
+  {
+   "text": "A PA shall not give an option for ATM PIN as a factor of authentication for card-not-present transactions.",
+   "applies_to": "A PA",
+   "deadline": null,
+   "paragraph": "10(e)",
+   "quote": "A PA shall not give an option for ATM PIN as a factor of authentication for card-not-present transactions.",
+   "id": "rbi-n12896:section:0014#6",
+   "chunk_id": "rbi-n12896:section:0014"
+  },
+  {
+   "text": "All refunds shall be made to the original method of payment, unless specifically instructed by the payer to credit the refund to an alternate mode belonging to the same payer.",
+   "applies_to": "A PA (refunds)",
+   "deadline": null,
+   "paragraph": "10(f)",
+   "quote": "All refunds shall be made to the original method of payment, unless specifically instructed by the payer to credit the refund to an alternate mode belonging to the same payer.",
+   "id": "rbi-n12896:section:0014#7",
+   "chunk_id": "rbi-n12896:section:0014"
+  },
+  {
+   "text": "A PA-CB shall keep funds related to inward and outward transactions separate, and no co-mingling of funds or netting off between outward and inward transactions is permitted under any circumstance.",
+   "applies_to": "PA-CB",
+   "deadline": null,
+   "paragraph": "11(a)",
+   "quote": "Funds related to inward and outward transactions as carried out by a PA-CB shall be kept separate. No co-mingling of funds or netting off for outward and inward transactions is permitted under any circumstance.",
+   "id": "rbi-n12896:section:0015#1",
+   "chunk_id": "rbi-n12896:section:0015"
+  },
+  {
+   "text": "A PA-CB shall not purchase foreign currency from, or sell foreign currency to, any entity other than an Authorised Dealer (AD).",
+   "applies_to": "PA-CB",
+   "deadline": null,
+   "paragraph": "11(d)",
+   "quote": "A PA-CB shall not purchase foreign currency from, or sell it to, any entity other than an Authorised Dealer (AD).",
+   "id": "rbi-n12896:section:0015#2",
+   "chunk_id": "rbi-n12896:section:0015"
+  },
+  {
+   "text": "The maximum value per transaction for inward or outward transactions processed by a PA-CB shall be \u20b925 lakh.",
+   "applies_to": "PA-CB",
+   "deadline": null,
+   "paragraph": "11(d)",
+   "quote": "In respect of inward or outward transactions processed by a PA - CB, the maximum value per transaction shall be \u20b925 lakh.",
+   "id": "rbi-n12896:section:0015#3",
+   "chunk_id": "rbi-n12896:section:0015"
+  },
+  {
+   "text": "AD-I banks maintaining InCAs / OCAs shall ensure that all requirements under FEMA are adhered to.",
+   "applies_to": "AD-I banks maintaining Inward Collection Accounts (InCAs) / Outward Collection Accounts (OCAs)",
+   "deadline": null,
+   "paragraph": "11(e)",
+   "quote": "AD-I banks maintaining Inward Collection Accounts (InCAs) / Outward Collection Accounts (OCAs), as defined in paragraph 16a. below of this MD, shall ensure that all requirements under FEMA are adhered to.",
+   "id": "rbi-n12896:section:0015#4",
+   "chunk_id": "rbi-n12896:section:0015"
+  },
+  {
+   "text": "AD-I Bank shall have automated processes to fetch the requisite information from a PA-CB.",
+   "applies_to": "AD-I Bank",
+   "deadline": null,
+   "paragraph": "11(f)",
+   "quote": "AD-I Bank shall have automated processes to fetch the requisite information from a PA \u2013 CB.",
+   "id": "rbi-n12896:section:0015#5",
+   "chunk_id": "rbi-n12896:section:0015"
+  },
+  {
+   "text": "The payment transaction (outward or inward) shall be identified as a cross-border transaction to establish its bonafides, and the Payment System Provider shall make provisions for this from such timelines as specified by RBI.",
+   "applies_to": "Payment System Provider",
+   "deadline": "From such timelines as specified by RBI",
+   "paragraph": "11(g)",
+   "quote": "A Payment System Provider shall make provisions for implementation of the same from such timelines as specified by RBI.",
+   "id": "rbi-n12896:section:0015#6",
+   "chunk_id": "rbi-n12896:section:0015"
+  },
+  {
+   "text": "A PA-CB shall provide the documents / information required by the exporter / importer to the AD bank of the exporter / importer for closure of their corresponding EDPMS / IDPMS entry, wherever applicable, in compliance with the extant directions.",
+   "applies_to": "PA-CB",
+   "deadline": null,
+   "paragraph": "11(h)",
+   "quote": "PA \u2013 CB shall provide the documents / information required by the exporter / importer to the AD bank of the exporter / importer, for closure of their corresponding entry in Export Data Processing",
+   "id": "rbi-n12896:section:0015#7",
+   "chunk_id": "rbi-n12896:section:0015"
+  },
+  {
+   "text": "Settlement in non-INR currencies shall be permitted only for Indian exporters directly onboarded by the PA-CB facilitating inward transactions.",
+   "applies_to": "PA-CB",
+   "deadline": null,
+   "paragraph": "11(i)",
+   "quote": "Settlement in non-INR currencies shall be permitted only for those merchants (Indian exporters) which have been directly onboarded by the PA \u2013 CB facilitating inward transactions.",
+   "id": "rbi-n12896:section:0015#8",
+   "chunk_id": "rbi-n12896:section:0015"
+  },
+  {
+   "text": "An authorised PA shall submit reports as listed in Annexure 2 of the MD.",
+   "applies_to": "Authorised PA",
+   "deadline": null,
+   "paragraph": "12",
+   "quote": "An authorised PA shall submit reports as listed in Annexure 2 of this MD.",
+   "id": "rbi-n12896:section:0016#1",
+   "chunk_id": "rbi-n12896:section:0016"
+  },
+  {
+   "text": "A PA shall undertake customer due diligence (CDD) of its merchants in accordance with the MD on KYC.",
+   "applies_to": "PA",
+   "deadline": null,
+   "paragraph": "13(a)",
+   "quote": "A PA shall undertake customer due diligence (CDD) of its merchants in accordance with MD on KYC.",
+   "id": "rbi-n12896:section:0016#2",
+   "chunk_id": "rbi-n12896:section:0016"
+  },
+  {
+   "text": "While onboarding, the PA shall, with the merchant's consent, retrieve the merchant's KYC record from CKYCR.",
+   "applies_to": "PA",
+   "deadline": null,
+   "paragraph": "13(a)",
+   "quote": "While onboarding, the PA shall, with the merchant\u2019s consent, retrieve the merchant\u2019s KYC record from CKYCR.",
+   "id": "rbi-n12896:section:0016#3",
+   "chunk_id": "rbi-n12896:section:0016"
+  },
+  {
+   "text": "Where a merchant's record is not available in CKYCR, or the PA cannot access CKYCR, the PA shall carry out CDD through other mechanisms outlined in the MD on KYC.",
+   "applies_to": "PA",
+   "deadline": null,
+   "paragraph": "13(b)",
+   "quote": "Where a merchant\u2019s record is not available in CKYCR, or a PA cannot access CKYCR as its application for authorisation is pending with the Reserve Bank, CDD of the merchant could be carried out through other mechanisms outlined in MD on KYC.",
+   "id": "rbi-n12896:section:0016#4",
+   "chunk_id": "rbi-n12896:section:0016"
+  },
+  {
+   "text": "A PA shall undertake background and antecedent check of the merchant.",
+   "applies_to": "PA",
+   "deadline": null,
+   "paragraph": "13(c)",
+   "quote": "A PA shall undertake background and antecedent check of the merchant.",
+   "id": "rbi-n12896:section:0016#5",
+   "chunk_id": "rbi-n12896:section:0016"
+  },
+  {
+   "text": "A PA shall ensure that a marketplace onboarded by it does not accept payments for a seller not onboarded on to the marketplace's platform.",
+   "applies_to": "PA",
+   "deadline": null,
+   "paragraph": "13(f)",
+   "quote": "A PA shall ensure that a marketplace onboarded by it does not accept payments for a seller not onboarded on to the marketplace\u2019s platform.",
+   "id": "rbi-n12896:section:0016#6",
+   "chunk_id": "rbi-n12896:section:0016"
+  },
+  {
+   "text": "PA shall facilitate allotment of appropriate Merchant Category Code and Merchant ID / Terminal ID to its merchants, including those onboarded through an overseas PA.",
+   "applies_to": "PA",
+   "deadline": null,
+   "paragraph": "13(e)",
+   "quote": "PA shall facilitate allotment of appropriate Merchant Category Code and Merchant ID / Terminal ID to its merchants including those onboarded through an overseas PA.",
+   "id": "rbi-n12896:section:0016#7",
+   "chunk_id": "rbi-n12896:section:0016"
+  },
+  {
+   "text": "PA shall ensure that the name of the merchant is captured appropriately for all transactions processed for it.",
+   "applies_to": "PA",
+   "deadline": null,
+   "paragraph": "13(e)",
+   "quote": "PA shall ensure that name of the merchant is captured appropriately for all transactions processed for it.",
+   "id": "rbi-n12896:section:0016#8",
+   "chunk_id": "rbi-n12896:section:0016"
+  },
+  {
+   "text": "A payment aggregator must put in place necessary validation mechanisms to ensure that funds due to a merchant are credited only in the merchant's bank account.",
+   "applies_to": "PA",
+   "deadline": null,
+   "paragraph": "g",
+   "quote": "Necessary validation mechanisms shall be put in place by a PA to ensure that funds due to a merchant are credited in the merchant\u2019s bank account only.",
+   "id": "rbi-n12896:section:0017#1",
+   "chunk_id": "rbi-n12896:section:0017"
+  },
+  {
+   "text": "A PA must monitor transactions subsequently undertaken by merchants to ensure they are in line with the merchant's business profile and must ensure adherence to other aspects of the MD on KYC while conducting its operations.",
+   "applies_to": "PA",
+   "deadline": null,
+   "paragraph": "h",
+   "quote": "The PA must also monitor transactions subsequently undertaken by the merchants to ensure that these transactions are in line with latter\u2019s business profile and ensure adherence to other aspects of MD on KYC",
+   "id": "rbi-n12896:section:0017#2",
+   "chunk_id": "rbi-n12896:section:0017"
+  },
+  {
+   "text": "A non-bank PA shall register itself with the Financial Intelligence Unit-India (FIU-IND) in compliance with the MD on KYC and meet the reporting requirements listed therein.",
+   "applies_to": "Non-bank PA",
+   "deadline": null,
+   "paragraph": "i",
+   "quote": "Non-bank PA shall register itself with the Financial Intelligence Unit-India (FIU-IND) in compliance with MD on KYC and meet the reporting requirements listed therein.",
+   "id": "rbi-n12896:section:0017#3",
+   "chunk_id": "rbi-n12896:section:0017"
+  },
+  {
+   "text": "A PA, including an existing PA whose application is pending with RBI for authorisation, shall ensure that merchants onboarded till December 31, 2025 comply with the above due diligence requirements.",
+   "applies_to": "PA, including an existing PA whose application is pending with Reserve Bank of India for authorisation",
+   "deadline": "Within one year from the date of this MD",
+   "paragraph": "j",
+   "quote": "shall ensure that merchants onboarded till December 31, 2025, comply with the above due diligence requirements within one year from the date of this MD.",
+   "id": "rbi-n12896:section:0017#4",
+   "chunk_id": "rbi-n12896:section:0017"
+  },
+  {
+   "text": "From January 1, 2026, merchants should be onboarded in accordance with the due diligence requirements prescribed in this MD.",
+   "applies_to": "PA (merchant onboarding)",
+   "deadline": "From January 1, 2026",
+   "paragraph": "j",
+   "quote": "From January 1, 2026, merchants should be onboarded in accordance with due diligence requirements prescribed in this MD.",
+   "id": "rbi-n12896:section:0017#5",
+   "chunk_id": "rbi-n12896:section:0017"
+  },
+  {
+   "text": "Acquiring bank shall have a policy for processing payments for merchants acquired through an authorised non-bank PA.",
+   "applies_to": "Acquiring bank",
+   "deadline": null,
+   "paragraph": "14(a)",
+   "quote": "Acquiring bank shall have a policy for processing payments for merchants acquired through an authorised non-bank PA.",
+   "id": "rbi-n12896:section:0018#1",
+   "chunk_id": "rbi-n12896:section:0018"
+  },
+  {
+   "text": "Acquiring Bank of a non-bank PA shall ensure that merchants onboarded by the PA are in compliance with the acquiring bank's policy for merchant acquiring.",
+   "applies_to": "Acquiring Bank of a non-bank PA",
+   "deadline": null,
+   "paragraph": "14(c)",
+   "quote": "Acquiring Bank of a non-bank PA shall ensure that merchants onboarded by the PA are in compliance with acquiring bank\u2019s policy for merchant acquiring.",
+   "id": "rbi-n12896:section:0018#2",
+   "chunk_id": "rbi-n12896:section:0018"
+  },
+  {
+   "text": "Where agents are employed to assist merchants, the PA shall maintain the details of the agent assisting the merchant.",
+   "applies_to": "PA (non-bank PA)",
+   "deadline": null,
+   "paragraph": "15(a)",
+   "quote": "PA shall maintain the details of the agent assisting the merchant, where services of such agents are employed.",
+   "id": "rbi-n12896:section:0018#3",
+   "chunk_id": "rbi-n12896:section:0018"
+  },
+  {
+   "text": "The non-bank PA shall carry out due diligence of the persons appointed as authorised / designated agents.",
+   "applies_to": "Non-bank PA",
+   "deadline": null,
+   "paragraph": "15(b)",
+   "quote": "The non-bank PA shall carry out due diligence of the persons appointed as authorised / designated agents.",
+   "id": "rbi-n12896:section:0018#4",
+   "chunk_id": "rbi-n12896:section:0018"
+  },
+  {
+   "text": "The ultimate responsibility of due diligence shall lie on the PA, and agents can be used only for the limited purposes prescribed.",
+   "applies_to": "PA",
+   "deadline": null,
+   "paragraph": "15(c)",
+   "quote": "The ultimate responsibility of due diligence shall lie on PA and agents can only be used for limited purposes as prescribed above.",
+   "id": "rbi-n12896:section:0018#5",
+   "chunk_id": "rbi-n12896:section:0018"
+  },
+  {
+   "text": "A non-bank PA shall maintain the funds collected on behalf of its merchants in a separate escrow account with any Scheduled Commercial Bank (SCB) in India.",
+   "applies_to": "non-bank PA",
+   "deadline": null,
+   "paragraph": "16(a)",
+   "quote": "A non-bank PA shall maintain the funds collected on behalf of its merchants in a separate escrow account with any Scheduled Commercial Bank (SCB) in India.",
+   "id": "rbi-n12896:section:0019#1",
+   "chunk_id": "rbi-n12896:section:0019"
+  },
+  {
+   "text": "The instructions in Table 1 on operations in escrow accounts must be adhered to.",
+   "applies_to": "non-bank PA",
+   "deadline": "December 31, 2025",
+   "paragraph": "16(a)",
+   "quote": "Details of operations in escrow accounts are incorporated in Table 1 below and the instructions mentioned therein must be adhered to by December 31, 2025.",
+   "id": "rbi-n12896:section:0019#2",
+   "chunk_id": "rbi-n12896:section:0019"
+  },
+  {
+   "text": "Escrow accounts shall only be utilised for authorised PA business and not for any other business.",
+   "applies_to": "non-bank PA",
+   "deadline": null,
+   "paragraph": "16(a)",
+   "quote": "Such escrow accounts shall only be utilised for authorised PA business and not for any other business.",
+   "id": "rbi-n12896:section:0019#3",
+   "chunk_id": "rbi-n12896:section:0019"
+  },
+  {
+   "text": "Inter-escrow account transfers must be supported by an auditor's certificate.",
+   "applies_to": "PA (Escrow Account Domestic)",
+   "deadline": null,
+   "paragraph": "16(a)",
+   "quote": "Inter-escrow A/c transfer Auditor\u2019s certificate needed for such transactions. Not permitted.",
+   "id": "rbi-n12896:section:0019#4",
+   "chunk_id": "rbi-n12896:section:0019"
+  },
+  {
+   "text": "A permitted debit must not be used to transfer funds from an entity acting as a BBPOU, as defined in the Master Direction on BBPS, to its BBPS escrow account, except where the entity acts as a PA to an Agent Institution and on its behalf transfers funds to the BBPS escrow account of the BBPOU.",
+   "applies_to": "Payment Aggregator (PA) operating the promotional/incentive/cash-back payment received account",
+   "deadline": null,
+   "paragraph": "16(v)",
+   "quote": "This permitted debit shall not be used to transfer funds from an entity acting as a BBPOU, as defined in Master Direction on BBPS to its BBPS escrow account",
+   "id": "rbi-n12896:section:0020#1",
+   "chunk_id": "rbi-n12896:section:0020"
+  },
+  {
+   "text": "Maintain day-end balance in the escrow account not less than the amount realised in escrow towards funds payable to merchants but not yet settled to them.",
+   "applies_to": "Payment Aggregator (PA)",
+   "deadline": null,
+   "paragraph": "v)",
+   "quote": "Maintenance of day end balance in escrow account Shall not be less than the amount realised in escrow towards funds payable to the merchants, but not settled to them.",
+   "id": "rbi-n12896:section:0021#1",
+   "chunk_id": "rbi-n12896:section:0021"
+  },
+  {
+   "text": "No interest shall be payable on balances maintained in the escrow account, except on the core portion amount of the domestic escrow account, subject to the conditions in paragraph 17.",
+   "applies_to": "Payment Aggregator (PA)",
+   "deadline": null,
+   "paragraph": "v)",
+   "quote": "No interest shall be payable on the balances maintained in the escrow account(s) except on the core portion amount of the domestic escrow account, subject to the conditions prescribed in paragraph 17 below.",
+   "id": "rbi-n12896:section:0021#2",
+   "chunk_id": "rbi-n12896:section:0021"
+  },
+  {
+   "text": "Existing PA must migrate funds to an escrow account within two months from the date of authorisation by the Reserve Bank of India.",
+   "applies_to": "Existing Payment Aggregator (PA)",
+   "deadline": "Within two months from the date of authorisation by the Reserve Bank of India",
+   "paragraph": "v)",
+   "quote": "Escrow a/c by existing PA Within two months from the date of authorisation by the Reserve Bank of India.",
+   "id": "rbi-n12896:section:0021#3",
+   "chunk_id": "rbi-n12896:section:0021"
+  },
+  {
+   "text": "Credit funds to the merchant's account as per the agreement between the PA and the merchant, which must be fair, equitable and transparently mention the settlement timelines.",
+   "applies_to": "Payment Aggregator (PA)",
+   "deadline": "As per the agreement between the PA and the merchant",
+   "paragraph": "v)",
+   "quote": "Such an agreement should be fair, equitable and must transparently mention the settlement timelines.",
+   "id": "rbi-n12896:section:0021#4",
+   "chunk_id": "rbi-n12896:section:0021"
+  },
+  {
+   "text": "An entity authorised to carry out PA-O and PA-P businesses shall use the same escrow account for both business activities.",
+   "applies_to": "Entity authorised to carry out PA-O and PA-P businesses",
+   "deadline": null,
+   "paragraph": "Note (a)",
+   "quote": "An entity authorised to carry out PA-O and PA-P businesses shall use the same escrow account for both the business activities.",
+   "id": "rbi-n12896:section:0021#5",
+   "chunk_id": "rbi-n12896:section:0021"
+  },
+  {
+   "text": "The core portion of the escrow account shall continue to be maintained within the escrow account maintained for PA activity.",
+   "applies_to": "Payment aggregators / banks maintaining escrow accounts for PA activity",
+   "deadline": null,
+   "paragraph": "17(a)",
+   "quote": "The core portion of escrow account shall continue to be maintained within the escrow account maintained for PA activity.",
+   "id": "rbi-n12896:section:0022#1",
+   "chunk_id": "rbi-n12896:section:0022"
+  },
+  {
+   "text": "Banks shall not issue any receipt for core portion deposits which may entitle the PA to the funds available in the core portion, and shall not mark any lien on the amount held in such deposits.",
+   "applies_to": "Banks",
+   "deadline": null,
+   "paragraph": "17(c)",
+   "quote": "Banks shall not issue any receipt for such deposits which may entitle PA to the funds available in the core portion or mark any lien on the amount held in such form of deposits.",
+   "id": "rbi-n12896:section:0022#2",
+   "chunk_id": "rbi-n12896:section:0022"
+  },
+  {
+   "text": "The core portion shall be calculated separately for each escrow account.",
+   "applies_to": "Payment aggregators / banks maintaining escrow accounts",
+   "deadline": null,
+   "paragraph": "17(d)",
+   "quote": "The core portion shall be calculated separately for each escrow account.",
+   "id": "rbi-n12896:section:0022#3",
+   "chunk_id": "rbi-n12896:section:0022"
+  },
+  {
+   "text": "The escrow balance maintained shall be clearly disclosed in the auditor's certificates to be submitted to RBI on quarterly and annual basis.",
+   "applies_to": "Auditors / payment aggregators submitting auditor's certificates",
+   "deadline": "Quarterly and annual basis",
+   "paragraph": "17(d)",
+   "quote": "The escrow balance maintained shall be clearly disclosed in the auditor\u2019s certificates to be submitted to RBI on quarterly and annual basis.",
+   "id": "rbi-n12896:section:0022#4",
+   "chunk_id": "rbi-n12896:section:0022"
+  },
+  {
+   "text": "PA shall submit the list of merchants onboarded by it to the bank where it maintains the escrow account, and update the list prior to initiating settlement to these merchants.",
+   "applies_to": "PA",
+   "deadline": "Prior to initiating settlement to merchants (list to be updated before each settlement)",
+   "paragraph": "18(a)",
+   "quote": "PA shall submit the list of merchants onboarded by it to the bank where it is maintaining the escrow account and update the list prior to initiating settlement to these merchants.",
+   "id": "rbi-n12896:section:0023#1",
+   "chunk_id": "rbi-n12896:section:0023"
+  },
+  {
+   "text": "The bank shall ensure that payments are made only to eligible merchants and for permissible debits or credits as defined under this MD.",
+   "applies_to": "bank maintaining the escrow account",
+   "deadline": null,
+   "paragraph": "18(a)",
+   "quote": "The bank shall ensure that payments are made only to eligible merchants and for permissible debits or credits as defined under this MD.",
+   "id": "rbi-n12896:section:0023#2",
+   "chunk_id": "rbi-n12896:section:0023"
+  },
+  {
+   "text": "There shall be an exclusive clause in the agreement between the PA and the bank maintaining the escrow account restricting usage of escrow balance only to permissible debits or credits in Table 1.",
+   "applies_to": "PA and bank maintaining escrow account",
+   "deadline": null,
+   "paragraph": "18(a)",
+   "quote": "There shall be an exclusive clause in the agreement signed between the PA and the bank maintaining escrow account towards usage of balance in escrow account only as per the permissible debits or credits as mentioned in Table 1 above.",
+   "id": "rbi-n12896:section:0023#3",
+   "chunk_id": "rbi-n12896:section:0023"
+  },
+  {
+   "text": "The escrow account shall not be operated for 'Cash-on-Delivery' transactions.",
+   "applies_to": "PA (escrow account operations)",
+   "deadline": null,
+   "paragraph": "18(b)",
+   "quote": "The escrow account shall not be operated for \u2018Cash-on-Delivery\u2019 transactions.",
+   "id": "rbi-n12896:section:0023#4",
+   "chunk_id": "rbi-n12896:section:0023"
+  },
+  {
+   "text": "Onward transfer of outward transaction funds to foreign merchants shall be carried out only by debit to the OCA.",
+   "applies_to": "PA - CB",
+   "deadline": null,
+   "paragraph": "18(c)",
+   "quote": "Onward transfer to the foreign merchants shall be carried out only by debit to the OCA.",
+   "id": "rbi-n12896:section:0023#5",
+   "chunk_id": "rbi-n12896:section:0023"
+  },
+  {
+   "text": "For a PA-CB also engaged in domestic PA activity, InCA and OCA shall be kept separate from the escrow account(s) opened for domestic PA activity.",
+   "applies_to": "PA-CB engaged in domestic PA activity",
+   "deadline": null,
+   "paragraph": "18(d)",
+   "quote": "In case a PA-CB also engages in domestic PA activity, InCA and OCA shall be kept separate from the escrow account(s) opened for such domestic PA activity.",
+   "id": "rbi-n12896:section:0023#6",
+   "chunk_id": "rbi-n12896:section:0023"
+  },
+  {
+   "text": "Authorised entities shall submit a certificate, signed by the statutory auditor(s), to the respective Regional Office of DPSS, RBI where the registered office of PA is situated, certifying compliance with escrow account balance maintenance instructions, at the periodicity prescribed in Annexure 2.",
+   "applies_to": "authorised entities (PA)",
+   "deadline": "As per periodicity prescribed in Annexure 2",
+   "paragraph": "18(e)",
+   "quote": "A certificate, signed by the statutory auditor(s), shall be submitted by the authorised entities to the respective Regional Office of DPSS, RBI, where registered office of PA is situated",
+   "id": "rbi-n12896:section:0023#7",
+   "chunk_id": "rbi-n12896:section:0023"
+  },
+  {
+   "text": "Where an additional escrow account is maintained, balances in both accounts shall be considered for the certification and separately mentioned in the certificate.",
+   "applies_to": "authorised entities (PA) maintaining an additional escrow account",
+   "deadline": null,
+   "paragraph": "18(e)",
+   "quote": "In case an additional escrow account is being maintained, it shall be ensured that balances in both accounts are considered for the above certification and that these are separately mentioned in the certificate.",
+   "id": "rbi-n12896:section:0023#8",
+   "chunk_id": "rbi-n12896:section:0023"
+  },
+  {
+   "text": "Certificates shall be submitted separately for domestic activity (PA-O/P) and cross border activity (PA-CB).",
+   "applies_to": "authorised entities (PA)",
+   "deadline": null,
+   "paragraph": "18(e)",
+   "quote": "The certificates shall be submitted separately for domestic activity, i.e. PA \u2013 O / P and cross border activity, i.e. PA \u2013 CB.",
+   "id": "rbi-n12896:section:0023#9",
+   "chunk_id": "rbi-n12896:section:0023"
+  },
+  {
+   "text": "When there is a need to shift the escrow account from one bank to another, the shift shall be effected in a time-bound manner without impacting the payment cycle to merchants, under advice to RBI.",
+   "applies_to": "Payment Aggregators",
+   "deadline": null,
+   "paragraph": "f",
+   "quote": "In case there is a need to shift the escrow account from one bank to another, the same shall be effected in a time-bound manner without impacting the payment cycle to merchants, under advice to RBI.",
+   "id": "rbi-n12896:section:0024#1",
+   "chunk_id": "rbi-n12896:section:0024"
+  },
+  {
+   "text": "For maintenance of reserve requirements, the outstanding balance in the escrow account shall be part of net demand and time liabilities (NDTL), computed on the basis of balances appearing in the books of the bank as on the date of reporting.",
+   "applies_to": "Banks maintaining escrow accounts for payment aggregators",
+   "deadline": null,
+   "paragraph": "g",
+   "quote": "For banks, the outstanding balance in the escrow account shall be part of the \u2018net demand and time liabilities\u2019 (NDTL) for the purposes of maintenance of reserve requirements.",
+   "id": "rbi-n12896:section:0024#2",
+   "chunk_id": "rbi-n12896:section:0024"
+  },
+  {
+   "text": "Credits towards reversed transactions and refund transactions shall be routed back through the escrow account, unless the refund is directly managed by the merchant and the payer has been made aware of the same as per the PA-merchant contract.",
+   "applies_to": "Payment Aggregators",
+   "deadline": null,
+   "paragraph": "h",
+   "quote": "Credits towards reversed transactions (where funds are received by PA) and refund transactions shall be routed back through the escrow account unless the refund is directly managed by the merchant",
+   "id": "rbi-n12896:section:0024#3",
+   "chunk_id": "rbi-n12896:section:0024"
+  },
+  {
+   "text": "The chargeback rights of customers, as applicable, shall remain unaffected.",
+   "applies_to": "Payment Aggregators",
+   "deadline": null,
+   "paragraph": "h",
+   "quote": "The chargeback rights of customers, as applicable, shall remain unaffected.",
+   "id": "rbi-n12896:section:0024#4",
+   "chunk_id": "rbi-n12896:section:0024"
+  },
+  {
+   "text": "The entities shall at a minimum carry out a comprehensive security risk assessment of their people, IT, business process environment, etc., to identify risk exposures with remedial measures and residual risks.",
+   "applies_to": "entities (PAs and PGs)",
+   "deadline": null,
+   "paragraph": "1.1",
+   "quote": "The entities at a minimum shall carry out comprehensive security risk assessment of their people, IT, business process environment, etc., to identify risk exposures with remedial measures and residual risks.",
+   "id": "rbi-n12896:section:0027#1",
+   "chunk_id": "rbi-n12896:section:0027"
+  },
+  {
+   "text": "Reports on risk assessment, security compliance posture, security audit reports and security incidents shall be presented to the Board.",
+   "applies_to": "entities (PAs and PGs)",
+   "deadline": null,
+   "paragraph": "1.1",
+   "quote": "Reports on risk assessment, security compliance posture, security audit reports and security incidents shall be presented to the Board.",
+   "id": "rbi-n12896:section:0027#2",
+   "chunk_id": "rbi-n12896:section:0027"
+  },
+  {
+   "text": "Data security standards and best practices like PCI-DSS, PCI-SSF, latest encryption standards, transport channel security, etc., shall be implemented.",
+   "applies_to": "entities (PAs and PGs)",
+   "deadline": null,
+   "paragraph": "1.2",
+   "quote": "Data security standards and best practices like PCI-DSS, PCI-SSF, latest encryption standards, transport channel security, etc., shall be implemented.",
+   "id": "rbi-n12896:section:0027#3",
+   "chunk_id": "rbi-n12896:section:0027"
+  },
+  {
+   "text": "The entities shall report security incidents and card holder data breaches to RBI within the stipulated timeframe.",
+   "applies_to": "entities (PAs and PGs)",
+   "deadline": "within the stipulated timeframe",
+   "paragraph": "1.3",
+   "quote": "The entities shall report security incidents / card holder data breaches to RBI within the stipulated timeframe to RBI.",
+   "id": "rbi-n12896:section:0027#4",
+   "chunk_id": "rbi-n12896:section:0027"
+  },
+  {
+   "text": "Monthly cyber security incident reports with root cause analysis and preventive actions undertaken shall be submitted to RBI.",
+   "applies_to": "entities (PAs and PGs)",
+   "deadline": "monthly",
+   "paragraph": "1.3",
+   "quote": "Monthly cyber security incident reports with root cause analysis and preventive actions undertaken shall be submitted to RBI.",
+   "id": "rbi-n12896:section:0027#5",
+   "chunk_id": "rbi-n12896:section:0027"
+  },
+  {
+   "text": "The entities shall undertake a comprehensive security assessment during the merchant onboarding process to ensure minimal baseline security controls are adhered to by merchants.",
+   "applies_to": "entities (PAs and PGs)",
+   "deadline": null,
+   "paragraph": "1.4",
+   "quote": "The entities shall undertake comprehensive security assessment during merchant onboarding process to ensure these minimal baseline security controls are adhered to by the merchants.",
+   "id": "rbi-n12896:section:0027#6",
+   "chunk_id": "rbi-n12896:section:0027"
+  },
+  {
+   "text": "The entities shall carry out and submit to the IT Committee quarterly internal and annual external audit reports.",
+   "applies_to": "entities (payment aggregators)",
+   "deadline": "quarterly and annual",
+   "paragraph": "1.5",
+   "quote": "The entities shall carry out and submit to the IT Committee quarterly internal and annual external audit reports; bi-annual Vulnerability Assessment / Penetration Test (VAPT) reports",
+   "id": "rbi-n12896:section:0028#1",
+   "chunk_id": "rbi-n12896:section:0028"
+  },
+  {
+   "text": "The entities shall carry out and submit to the IT Committee bi-annual Vulnerability Assessment / Penetration Test (VAPT) reports.",
+   "applies_to": "entities (payment aggregators)",
+   "deadline": "bi-annual",
+   "paragraph": "1.5",
+   "quote": "bi-annual Vulnerability Assessment / Penetration Test (VAPT) reports; PCI-DSS including Attestation of Compliance (AOC) and Report of Compliance (ROC) compliance report",
+   "id": "rbi-n12896:section:0028#2",
+   "chunk_id": "rbi-n12896:section:0028"
+  },
+  {
+   "text": "The entities shall carry out and submit to the IT Committee PCI-DSS compliance reports including Attestation of Compliance (AOC) and Report of Compliance (ROC), with observations and planned corrective/preventive actions with action closure dates.",
+   "applies_to": "entities (payment aggregators)",
+   "deadline": null,
+   "paragraph": "1.5",
+   "quote": "PCI-DSS including Attestation of Compliance (AOC) and Report of Compliance (ROC) compliance report with observations noted if any including corrective / preventive actions planned with action closure date",
+   "id": "rbi-n12896:section:0028#3",
+   "chunk_id": "rbi-n12896:section:0028"
+  },
+  {
+   "text": "The entities shall carry out and submit to the IT Committee an inventory of applications which store, process or transmit customer sensitive data.",
+   "applies_to": "entities (payment aggregators)",
+   "deadline": null,
+   "paragraph": "1.5",
+   "quote": "inventory of applications which store or process or transmit customer sensitive data; PCI-SSF compliance status of payment applications",
+   "id": "rbi-n12896:section:0028#4",
+   "chunk_id": "rbi-n12896:section:0028"
+  },
+  {
+   "text": "The entities shall carry out and submit to the IT Committee the PCI-SSF compliance status of payment applications which store or process card holder data.",
+   "applies_to": "entities (payment aggregators)",
+   "deadline": null,
+   "paragraph": "1.5",
+   "quote": "PCI-SSF compliance status of payment applications which stores or processes card holder data.",
+   "id": "rbi-n12896:section:0028#5",
+   "chunk_id": "rbi-n12896:section:0028"
+  },
+  {
+   "text": "The Board approved information security policy shall be reviewed at least annually.",
+   "applies_to": "entities (payment aggregators)",
+   "deadline": "annually",
+   "paragraph": "1.6",
+   "quote": "Board approved information security policy shall be reviewed atleast annually. The policy shall consider aspects like",
+   "id": "rbi-n12896:section:0028#6",
+   "chunk_id": "rbi-n12896:section:0028"
+  },
+  {
+   "text": "The information security policy shall consider the listed aspects, including business alignment, roles and responsibilities, asset inventory, data classification, training and penal measures for non-compliance.",
+   "applies_to": "entities (payment aggregators)",
+   "deadline": null,
+   "paragraph": "1.6",
+   "quote": "The policy shall consider aspects like: alignment with business objectives; the objectives, scope, ownership and responsibility for the policy",
+   "id": "rbi-n12896:section:0028#7",
+   "chunk_id": "rbi-n12896:section:0028"
+  },
+  {
+   "text": "An IT policy shall be framed for regular management of IT functions, ensuring detailed documentation of procedures and guidelines exists and is implemented.",
+   "applies_to": "entities (payment aggregators)",
+   "deadline": null,
+   "paragraph": "1.7",
+   "quote": "An IT policy shall be framed for regular management of IT functions and ensure that detailed documentation in terms of procedures and guidelines exists and are implemented.",
+   "id": "rbi-n12896:section:0028#8",
+   "chunk_id": "rbi-n12896:section:0028"
+  },
+  {
+   "text": "The strategic plan and IT policy shall be reviewed annually.",
+   "applies_to": "entities (payment aggregators)",
+   "deadline": "annually",
+   "paragraph": "1.7",
+   "quote": "The strategic plan and policy shall be reviewed annually. The Board level IT Governance framework shall have-",
+   "id": "rbi-n12896:section:0028#9",
+   "chunk_id": "rbi-n12896:section:0028"
+  },
+  {
+   "text": "The Board / Top Management shall approve information security policies, establish necessary organisational processes and functions for information security, and provide necessary resources.",
+   "applies_to": "Board / Top Management",
+   "deadline": null,
+   "paragraph": "1.7.1",
+   "quote": "The major role of the Board / Top Management shall involve approving information security policies, establishing necessary organisational processes / functions for information security and providing necessary resources.",
+   "id": "rbi-n12896:section:0029#1",
+   "chunk_id": "rbi-n12896:section:0029"
+  },
+  {
+   "text": "An IT Steering Committee shall be created with representations from various business functions as appropriate, to assist Executive Management in implementing the Board-approved IT strategy, with well-defined objectives and actions.",
+   "applies_to": "entities",
+   "deadline": null,
+   "paragraph": "1.7.2",
+   "quote": "An IT Steering Committee shall be created with representations from various business functions as appropriate. The Committee shall assist the Executive Management in implementation of the IT strategy approved by the Board.",
+   "id": "rbi-n12896:section:0029#2",
+   "chunk_id": "rbi-n12896:section:0029"
+  },
+  {
+   "text": "Entities shall establish and maintain an enterprise information model, consistent with the Board-approved IT strategy, that enables optimal creation, use and sharing of information, maintains integrity, and is flexible, functional, timely, secure and resilient to failure.",
+   "applies_to": "entities",
+   "deadline": null,
+   "paragraph": "1.7.3",
+   "quote": "The entities shall establish and maintain an enterprise information model to enable applications development and decision-supporting activities, consistent with board approved IT strategy.",
+   "id": "rbi-n12896:section:0029#3",
+   "chunk_id": "rbi-n12896:section:0029"
+  },
+  {
+   "text": "Entities shall prepare a comprehensive Cyber Crisis Management Plan, approved by the IT strategic committee, including components such as Detection, Containment, Response and Recovery.",
+   "applies_to": "entities",
+   "deadline": null,
+   "paragraph": "1.7.4",
+   "quote": "The entities shall prepare a comprehensive Cyber Crisis Management Plan approved by the IT strategic committee and shall include components such as Detection, Containment, Response and Recovery.",
+   "id": "rbi-n12896:section:0029#4",
+   "chunk_id": "rbi-n12896:section:0029"
+  },
+  {
+   "text": "Entities shall maintain an enterprise data dictionary incorporating the organisation's data syntax rules, to enable data sharing across applications and systems and prevent creation of incompatible data elements.",
+   "applies_to": "entities",
+   "deadline": null,
+   "paragraph": "1.8",
+   "quote": "The entities shall maintain an \u201centerprise data dictionary\u201d incorporating the organisation\u2019s data syntax rules.",
+   "id": "rbi-n12896:section:0029#5",
+   "chunk_id": "rbi-n12896:section:0029"
+  },
+  {
+   "text": "The risk assessment must, for each asset within its scope, identify the threat/vulnerability combinations and the likelihood of impact on confidentiality, availability or integrity of that asset, from a business, compliance and/or contractual perspective.",
+   "applies_to": "Risk assessment (regulated entity)",
+   "deadline": null,
+   "paragraph": "1.9",
+   "quote": "The risk assessment shall, for each asset within its scope, identify the threat / vulnerability combinations and likelihood of impact on confidentiality, availability or integrity of that asset",
+   "id": "rbi-n12896:section:0030#1",
+   "chunk_id": "rbi-n12896:section:0030"
+  },
+  {
+   "text": "There must be documented standards/procedures for administering an application system, which are approved by the application owner and kept up-to-date.",
+   "applies_to": "Entities administering application systems",
+   "deadline": null,
+   "paragraph": "1.10",
+   "quote": "There shall be documented standards / procedures for administering an application system, which are approved by the application owner and kept up-to-date.",
+   "id": "rbi-n12896:section:0030#2",
+   "chunk_id": "rbi-n12896:section:0030"
+  },
+  {
+   "text": "Access to the application must be based on the principle of least privilege and 'need to know' commensurate with the job responsibilities.",
+   "applies_to": "Entities providing access to application systems",
+   "deadline": null,
+   "paragraph": "1.10",
+   "quote": "Access to the application shall be based on the principle of least privilege and \u201cneed to know\u201d commensurate with the job responsibilities.",
+   "id": "rbi-n12896:section:0030#3",
+   "chunk_id": "rbi-n12896:section:0030"
+  },
+  {
+   "text": "Requirements for trained resources with requisite skill sets for the IT function must be understood and assessed appropriately, with a periodic assessment of the training requirements for human resources.",
+   "applies_to": "IT function",
+   "deadline": null,
+   "paragraph": "1.11",
+   "quote": "Requirements for trained resources with requisite skill sets for the IT function need to be understood and assessed appropriately with a periodic assessment of the training requirements for human resources.",
+   "id": "rbi-n12896:section:0030#4",
+   "chunk_id": "rbi-n12896:section:0030"
+  },
+  {
+   "text": "The Service Level Agreements for technology support, including BCP-DR and data management, must categorically include clauses permitting regulatory access to these set-ups.",
+   "applies_to": "Service Level Agreements for technology support (BCP-DR and data management)",
+   "deadline": null,
+   "paragraph": "1.12",
+   "quote": "The Service Level Agreements (SLAs) for technology support, including BCP-DR and data management shall categorically include clauses permitting regulatory access to these set-ups.",
+   "id": "rbi-n12896:section:0030#5",
+   "chunk_id": "rbi-n12896:section:0030"
+  },
+  {
+   "text": "Entities shall consider assessing their IT maturity level against well-known international standards, design an action plan and implement the plan to reach the target maturity level.",
+   "applies_to": "Entities (IT maturity)",
+   "deadline": null,
+   "paragraph": "1.13",
+   "quote": "The entities shall consider assessing their IT maturity level, based on well-known international standards, design an action plan and implement the plan to reach the target maturity level.",
+   "id": "rbi-n12896:section:0030#6",
+   "chunk_id": "rbi-n12896:section:0030"
+  },
+  {
+   "text": "The entities shall select encryption algorithms that are well established international standards and have been subjected to rigorous scrutiny by an international community of cryptographers or approved by authoritative professional bodies, reputable security vendors or government agencies.",
+   "applies_to": "The entities",
+   "deadline": null,
+   "paragraph": "1.14",
+   "quote": "The entities shall select encryption algorithms which are well established international standards and which have been subjected to rigorous scrutiny",
+   "id": "rbi-n12896:section:0031#1",
+   "chunk_id": "rbi-n12896:section:0031"
+  },
+  {
+   "text": "All security events from the entities' infrastructure, including application, servers, middleware, endpoint, network, authentication, database, web services, cryptographic events and log files, shall be collected, investigated and analysed for proactive identification of security alerts.",
+   "applies_to": "The entities",
+   "deadline": null,
+   "paragraph": "1.15",
+   "quote": "All security events from the entities infrastructure including but not limited to application, servers, middleware, endpoint, network, authentication events",
+   "id": "rbi-n12896:section:0031#2",
+   "chunk_id": "rbi-n12896:section:0031"
+  },
+  {
+   "text": "The entities shall take preventive measures to ensure data is stored in infrastructure that does not belong to external jurisdictions.",
+   "applies_to": "The entities",
+   "deadline": null,
+   "paragraph": "1.16",
+   "quote": "The entities shall take preventive measures to ensure storing data in infrastructure that do not belong to external jurisdictions.",
+   "id": "rbi-n12896:section:0031#3",
+   "chunk_id": "rbi-n12896:section:0031"
+  },
+  {
+   "text": "Appropriate controls shall be considered to prevent unauthorised access to the data.",
+   "applies_to": "The entities",
+   "deadline": null,
+   "paragraph": "1.16",
+   "quote": "Appropriate controls shall be considered to prevent unauthorised access to the data.",
+   "id": "rbi-n12896:section:0031#4",
+   "chunk_id": "rbi-n12896:section:0031"
+  },
+  {
+   "text": "There shall be an outsourcing agreement providing a 'right to audit' clause enabling the entities, their appointed agencies and regulators to conduct security audits; alternatively, third parties shall submit annual independent security audit reports to the entities.",
+   "applies_to": "The entities; third parties engaged in outsourcing",
+   "deadline": null,
+   "paragraph": "1.17",
+   "quote": "There shall be an outsourcing agreement providing \u2018right to audit\u2019 clause to enable the entities / their appointed agencies and regulators to conduct security audits.",
+   "id": "rbi-n12896:section:0031#5",
+   "chunk_id": "rbi-n12896:section:0031"
+  },
+  {
+   "text": "Payment applications shall be developed as per PCI-SSF guidelines and complied with as required.",
+   "applies_to": "The entities (payment applications)",
+   "deadline": null,
+   "paragraph": "1.18",
+   "quote": "Payment applications shall be developed as per PCI-SSF guidelines and complied with as required.",
+   "id": "rbi-n12896:section:0031#6",
+   "chunk_id": "rbi-n12896:section:0031"
+  },
+  {
+   "text": "The entities shall review PCI-DSS compliance status of merchants as part of the merchant onboarding process.",
+   "applies_to": "The entities",
+   "deadline": null,
+   "paragraph": "1.18",
+   "quote": "The entities shall review PCI-DSS compliance status as part of merchant onboarding process.",
+   "id": "rbi-n12896:section:0031#7",
+   "chunk_id": "rbi-n12896:section:0031"
+  },
+  {
+   "text": "The customer card credentials shall not be stored within the database or the server accessed by the merchant.",
+   "applies_to": "Payment aggregators and merchants (merchant database or server accessed by the merchant)",
+   "deadline": null,
+   "paragraph": "2.1",
+   "quote": "The customer card credentials shall not be stored within the database or the server accessed by the merchant.",
+   "id": "rbi-n12896:section:0032#1",
+   "chunk_id": "rbi-n12896:section:0032"
+  },
+  {
+   "text": "Option for ATM PIN as a factor of authentication for card not present transactions shall not be given.",
+   "applies_to": "Payment aggregators (as the section's recipients of the recommendation)",
+   "deadline": null,
+   "paragraph": "2.2",
+   "quote": "Option for ATM PIN as a factor of authentication for card not present transactions shall not be given.",
+   "id": "rbi-n12896:section:0032#2",
+   "chunk_id": "rbi-n12896:section:0032"
+  },
+  {
+   "text": "Instructions on storage of payment system data, as applicable to PSOs, shall apply.",
+   "applies_to": "Payment System Operators (PSOs) and payment aggregators",
+   "deadline": null,
+   "paragraph": "2.3",
+   "quote": "Instructions on storage of payment system data, as applicable to PSOs, shall apply.",
+   "id": "rbi-n12896:section:0032#3",
+   "chunk_id": "rbi-n12896:section:0032"
+  },
+  {
+   "text": "All refunds shall be made to the original method of payment unless the customer specifically agrees to credit an alternate mode.",
+   "applies_to": "Payment aggregators",
+   "deadline": null,
+   "paragraph": "2.4",
+   "quote": "All refunds shall be made to original method of payment unless specifically agreed by the customer to credit an alternate mode.",
+   "id": "rbi-n12896:section:0032#4",
+   "chunk_id": "rbi-n12896:section:0032"
+  },
+  {
+   "text": "Authorised Payment Aggregators must submit an audited annual report with a statutory auditor certificate on Net-worth by September 30.",
+   "applies_to": "Authorised Payment Aggregators",
+   "deadline": "September 30",
+   "paragraph": "1",
+   "quote": "Net-worth Certificate - Audited Annual report with statutory auditor certificate on Net-worth \u2013 by September 30th",
+   "id": "rbi-n12896:section:0033#1",
+   "chunk_id": "rbi-n12896:section:0033"
+  },
+  {
+   "text": "Authorised Payment Aggregators must submit an IS Audit Report and Cyber Security Audit Report, externally audited as prescribed by RBI, with observations noted and corrective or preventive action planned with closure date; the audit scope shall encompass all relevant areas of information system processes and applications.",
+   "applies_to": "Authorised Payment Aggregators",
+   "deadline": null,
+   "paragraph": "2",
+   "quote": "IS Audit Report and Cyber Security Audit Report with observations noted, if any, including corrective / preventive action planned with closure date \u2013 Externally Audited \u2013 as prescribed by RBI.",
+   "id": "rbi-n12896:section:0033#2",
+   "chunk_id": "rbi-n12896:section:0033"
+  },
+  {
+   "text": "Authorised Payment Aggregators must submit an Auditor's Certificate on Maintenance of Balance in Escrow Account by the 15th of the month following quarter end.",
+   "applies_to": "Authorised Payment Aggregators",
+   "deadline": "15th of the month following the quarter end",
+   "paragraph": "Quarterly 1",
+   "quote": "Auditor\u2019s Certificate on Maintenance of Balance in Escrow Account \u2013 by 15th of the month following the quarter end.",
+   "id": "rbi-n12896:section:0033#3",
+   "chunk_id": "rbi-n12896:section:0033"
+  },
+  {
+   "text": "Payment Aggregators of type PA-O and PA-P must submit an internally audited Bankers' Certificate on Escrow Account Debits and Credits by the 15th of the month following quarter end.",
+   "applies_to": "PA - O and PA - P",
+   "deadline": "15th of the month following the quarter end",
+   "paragraph": "Quarterly 2",
+   "quote": "Bankers\u2019 Certificate on Escrow Account Debits and Credits \u2013 Internally Audited \u2013 by 15th of the month following the quarter end in case of PA \u2013 O and PA \u2013 P.",
+   "id": "rbi-n12896:section:0033#4",
+   "chunk_id": "rbi-n12896:section:0033"
+  },
+  {
+   "text": "Payment Aggregators of type PA-CB must submit an internally audited Bankers' Certificate on InCA / OCA Debits and Credits by the 15th of the month following quarter end.",
+   "applies_to": "PA - CB",
+   "deadline": "15th of the month following the quarter end",
+   "paragraph": "Quarterly 3",
+   "quote": "Bankers\u2019 Certificate on InCA / OCA Debits and Credits \u2013 Internally Audited \u2013 by 15th of the month following the quarter end in case of PA - CB.",
+   "id": "rbi-n12896:section:0033#5",
+   "chunk_id": "rbi-n12896:section:0033"
+  },
+  {
+   "text": "Authorised Payment Aggregators must submit monthly Statistics of Transactions Handled by the 7th of the next month.",
+   "applies_to": "Authorised Payment Aggregators",
+   "deadline": "7th of next month",
+   "paragraph": "Monthly 1",
+   "quote": "Statistics of Transactions Handled \u2013 by 7th of next month ( Annexure 2.4 ).",
+   "id": "rbi-n12896:section:0033#6",
+   "chunk_id": "rbi-n12896:section:0033"
+  },
+  {
+   "text": "Authorised Payment Aggregators must submit a Declaration and Undertaking by the Director on changes in Board of Directors as and when such changes happen.",
+   "applies_to": "Authorised Payment Aggregators",
+   "deadline": "as and when changes happen",
+   "paragraph": "Non-periodic 1",
+   "quote": "Declaration and Undertaking by the Director - Changes in Board of Directors \u2013 as and when happens.",
+   "id": "rbi-n12896:section:0033#7",
+   "chunk_id": "rbi-n12896:section:0033"
+  }
+ ],
+ "ratings": [
+  {
+   "obligation": "rbi-n12896:section:0008#1",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "FlexiPay is authorised as an online Payment Aggregator (PA-O) and FlexiCredit is an NBFC-ICC, and neither is described as an AD Category-II authorised entity facilitating current account transactions, so the restriction on PA-CB business does not apply to them.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0009#1",
+   "applies": true,
+   "status": "met",
+   "policy_refs": [
+    "FP-00 \u00a72.1"
+   ],
+   "policy_quote": "FlexiPay is authorised by the RBI under the Payment and Settlement Systems Act, 2007 as an online Payment Aggregator (PA-O).",
+   "finding": "The policy records that FlexiPay, a non-bank, holds RBI authorisation as a PA-O, granted March 2023, so the authorisation step is covered, though the portal submission process itself is not described.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0009#2",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No profile material shows FlexiPay or FlexiCredit being regulated by another financial sector regulator, and FlexiPay's PA authorisation has already been granted, so the NOC-based application timeline does not apply.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0009#3",
+   "applies": true,
+   "status": "met",
+   "policy_refs": [
+    "FP-00 \u00a71.1"
+   ],
+   "policy_quote": "FlexiPay India Private Limited (\"FlexiPay\") is a payments company incorporated in 2019 and headquartered in Bengaluru.",
+   "finding": "FlexiPay is a Private Limited company incorporated in 2019, which is consistent with a company incorporated under the Companies Act, 2013, although the policy does not name the Act.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0009#4",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph addresses whether FlexiPay's Memorandum of Association covers the operation of a payment aggregator.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0009#5",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "FlexiPay holds PA-O authorisation, not a PA-P Certificate of Authorisation, so the 30-day intimation rule does not apply.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0009#6",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "FlexiPay's PA-O authorisation was granted in March 2023 and no pending PA-O or PA-CB application is shown, so this intimation rule does not apply.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0009#7",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "FlexiPay is not an entity carrying on only PA-P business, since it is an authorised PA-O, so this rule does not apply.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0009#8",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "FlexiPay is not an entity carrying on only PA-P business, so the banker-intimation rule for failure to apply does not apply.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0009#9",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "FlexiPay is not an entity carrying on only PA-P business, so the wind-up requirement for failure to apply does not apply.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0010#1",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The rule covers entities seeking PA authorisation at application, but FlexiPay was already authorised in March 2023, so it does not apply.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0010#2",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FP-00 \u00a73.4",
+    "FP-12 \u00a76.1"
+   ],
+   "policy_quote": "FlexiPay's net worth was \u20b916 crore on 31 March 2026, the end of the third full financial year since it was authorised as a PA.",
+   "finding": "The policy records net worth of \u20b916 crore at the end of the third financial year after authorisation, which is below the required \u20b925 crore, and no policy paragraph sets or tracks the \u20b925 crore target.",
+   "severity": "high",
+   "action": "Raise FlexiPay's net worth to at least \u20b925 crore immediately, and add a policy paragraph stating the \u20b925 crore requirement and the steps taken to meet it."
+  },
+  {
+   "obligation": "rbi-n12896:section:0010#3",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FP-12 \u00a76.1"
+   ],
+   "policy_quote": "Finance tracks FlexiPay's net worth every quarter and reports it to the Board.",
+   "finding": "The policy only requires quarterly tracking and Board reporting, with no obligation to maintain the minimum, and net worth of \u20b916 crore is below the applicable \u20b925 crore minimum.",
+   "severity": "high",
+   "action": "Add a requirement to maintain the applicable minimum net worth on an ongoing basis, with escalation to the Board and a remediation plan whenever net worth falls below it."
+  },
+  {
+   "obligation": "rbi-n12896:section:0010#4",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph deals with deducting deferred tax assets from net worth.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0010#5",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The company profile does not show that FlexiPay's net worth includes compulsorily convertible preference shares, so the rule does not apply.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0010#6",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The auditor certificate is required when applying for authorisation, and FlexiPay was already authorised in March 2023, so the rule does not apply.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0010#7",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "FlexiPay was incorporated in 2019 and has audited financial statements, so the rule for newly incorporated entities without audited accounts does not apply.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0011#1",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown addresses professional management of the PA; the governance paragraphs cover fraud oversight and compliance review only.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0011#2",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown sets fit and proper criteria for promoters and directors, including fairness and integrity.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0011#3",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown screens promoters and directors for the listed disqualifications.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0011#4",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown addresses takeover, acquisition of control, or change in management of FlexiPay, which is a non-bank PA, or adherence to the July 2022 RBI circular.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0012#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-09 \u00a72.2",
+    "FP-09 \u00a73.1"
+   ],
+   "policy_quote": "If a complaint is rejected in full or in part, or not resolved within 30 days, the reply tells the customer they may complain to the RBI",
+   "finding": "FP-09 sets complaint handling and timelines for customers, but no paragraph sets a dispute resolution mechanism for payment disputes raised by merchants or other parties to PA transactions.",
+   "severity": "medium",
+   "action": "Extend the grievance policy or add a dispute procedure that covers merchant and payment disputes on PA transactions, with steps and timelines."
+  },
+  {
+   "obligation": "rbi-n12896:section:0012#2",
+   "applies": true,
+   "status": "met",
+   "policy_refs": [
+    "FP-09 \u00a73.2",
+    "FP-09 \u00a73.1"
+   ],
+   "policy_quote": "A failed FlexiPay Checkout payment where the customer was debited is refunded to the source within T+5 days.",
+   "finding": "FP-09 sets refunds for failed Checkout payments within T+5 days and reversal of failed UPI or wallet debits by T+1 day, which meets the RBI failed-transaction TAT.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0012#3",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-12 \u00a71.2",
+    "FP-12 \u00a73.1"
+   ],
+   "policy_quote": "Permitted credits: payments from customers, refunds and reversals from merchants, and pre-funding by FlexiPay.",
+   "finding": "FP-12 sets escrow credits, debits and daily reconciliation, but no paragraph shows that merchant and acquiring bank agreements delineate refunds, failed transactions, return policy and grievance redressal responsibilities.",
+   "severity": "medium",
+   "action": "Write the roles for refunds, failed transactions, return policy, grievance redressal and reconciliation into the merchant and acquiring bank agreements."
+  },
+  {
+   "obligation": "rbi-n12896:section:0012#4",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph shows disclosure of merchant policies, privacy policy or terms and conditions on the website or mobile app.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0012#5",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph appoints an officer for merchant issues or sets an escrow-style escalation matrix for merchant grievances; the Principal Nodal Officer named in the profile is for grievances without a merchant scope.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0012#6",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph requires the officer and escalation matrix to be displayed prominently on the PA website.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0013#1",
+   "applies": true,
+   "status": "met",
+   "policy_refs": [
+    "FP-04 \u00a73.1",
+    "FP-04 \u00a73.2",
+    "FP-04 \u00a73.3"
+   ],
+   "policy_quote": "A rules engine screens every transaction in real time for velocity, amount, device and location anomalies.",
+   "finding": "FP-04 requires real-time transaction screening, alert review within 4 hours around the clock, and holds on mule-account indicators, which together provide fraud detection and prevention infrastructure.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0013#2",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph shown requires merchant infrastructure to comply with PCI-DSS or PCI-SSF.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0013#3",
+   "applies": true,
+   "status": "met",
+   "policy_refs": [
+    "FP-05 \u00a71.1",
+    "FP-05 \u00a74.2",
+    "FP-05 \u00a74.3"
+   ],
+   "policy_quote": "The Board approves this policy.",
+   "finding": "FP-05 is Board-approved and sets implemented security measures, including encryption, monthly vulnerability scans, annual penetration testing and patch deadlines, covering the payment systems.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0013#4",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph shown adopts or addresses the baseline technology recommendations in Annexure 1.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0013#5",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph shown addresses the data storage requirements for Payment System Operators under the referenced DPSS circular.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0013#6",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a74.2"
+   ],
+   "policy_quote": "An external firm performs a penetration test of the FlexiPay app and Checkout once a year.",
+   "finding": "FP-05 provides for an annual external penetration test, but does not require a full annual system audit by CERT-In empanelled auditors or submission of the report to the RBI Regional Office of DPSS.",
+   "severity": "medium",
+   "action": "Extend the annual audit requirement to a full system and cyber security audit by CERT-In empanelled auditors, with the report submitted to the RBI Regional Office of DPSS within the prescribed timelines."
+  },
+  {
+   "obligation": "rbi-n12896:section:0014#1",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph states that funds are aggregated only for the merchant with whom FlexiPay has a contractual relationship; FP-12 \u00a71.1 and \u00a71.2 cover escrow crediting and permitted debits only.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0014#2",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph addresses whether FlexiPay carries on marketplace business, and none prohibits it.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0014#3",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph refers to the extant MDR instructions or requires FlexiPay to follow them.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0014#4",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph requires merchant charges other than the goods or service price to be distinctly displayed to the payer before the transaction.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0014#5",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph places or prohibits transaction amount limits by payment mode, so the prohibition is not addressed.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0014#6",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph addresses ATM PIN as an authentication option for card-not-present transactions; FP-20 is indexed but its content is not provided.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0014#7",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph states that refunds must go to the original payment method unless the payer instructs otherwise; FP-12 \u00a71.2 mentions refunds from merchants and to customers without this rule.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0015#1",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The rule applies only to PA-CB (cross-border payment aggregators); FlexiPay is authorised as an online PA-O, so it does not carry on cross-border PA-CB activity under this rule.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0015#2",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The rule applies only to PA-CB entities buying or selling foreign currency; FlexiPay is a PA-O and does not deal in foreign currency under this authorisation.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0015#3",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The \u20b925 lakh per-transaction cap applies to PA-CB inward and outward transactions; FlexiPay is a PA-O and no cross-border cap is set in its policies, which is outside this rule's scope.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0015#4",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The rule applies to AD-I banks maintaining InCAs or OCAs; FlexiPay is a payments company, not an AD-I bank.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0015#5",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The rule applies to AD-I banks fetching information from a PA-CB; FlexiPay is neither an AD-I bank nor a PA-CB.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0015#6",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FP-20 \u00a74.1"
+   ],
+   "policy_quote": "Card transactions from abroad are authenticated as the card issuer requires; no extra checks are applied by FlexiPay.",
+   "finding": "The rule requires cross-border payment transactions to be identified to establish their bonafides, but FP-20 \u00a74.1 applies no extra checks to international card transactions accepted for 210 merchants and does not identify them as cross-border; the RBI timeline for this is not stated in the text provided.",
+   "severity": "medium",
+   "action": "Add a step to FP-20 \u00a74.1 that flags every cross-border transaction at FlexiPay Checkout so it can be identified, and set the implementation date to the timeline RBI specifies."
+  },
+  {
+   "obligation": "rbi-n12896:section:0015#7",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The rule applies to PA-CB entities providing exporter or importer documents for EDPMS or IDPMS closure; FlexiPay is a PA-O and does not facilitate such cross-border trade transactions under this authorisation.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0015#8",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The rule on non-INR settlement applies only to PA-CB entities facilitating inward transactions; FlexiPay is a PA-O and this restriction does not apply to it.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0016#1",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The policies reviewed contain no paragraph on submitting the Annexure 2 reports required of an authorised PA.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0016#2",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-03 \u00a72.1"
+   ],
+   "policy_quote": "Every merchant completes KYC as a legal entity (PAN, certificate of incorporation or registration, GST certificate where applicable, and KYC of the beneficial owners and authorised signatories).",
+   "finding": "FP-03 \u00a72.1 sets out legal-entity KYC documents and beneficial owner checks, but it does not tie merchant CDD to the MD on KYC.",
+   "severity": "low",
+   "action": "Amend FP-03 \u00a72.1 to state that merchant CDD is carried out in accordance with the RBI Master Direction on KYC."
+  },
+  {
+   "obligation": "rbi-n12896:section:0016#3",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph requires retrieving merchant KYC records from CKYCR with the merchant's consent during onboarding.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0016#4",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph provides for alternative merchant CDD where a CKYCR record is unavailable or CKYCR cannot be accessed.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0016#5",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph requires a background and antecedent check of merchants; FP-03 covers only KYC documents and website review.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0016#6",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The company profile describes no marketplace onboarding activity, so the marketplace seller rule does not apply.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0016#7",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph covers allotting Merchant Category Codes or Merchant ID / Terminal IDs to merchants.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0016#8",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph requires the merchant name to be captured for transactions processed for merchants.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0017#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-12 \u00a71.1",
+    "FP-12 \u00a71.2"
+   ],
+   "policy_quote": "All amounts collected from customers for merchants are credited to FlexiPay's escrow account with Coastal Commercial Bank.",
+   "finding": "The policy routes merchant funds through an escrow account and permits debits to merchants, but it does not describe any validation mechanism that ensures funds due to a merchant are credited only to the merchant's own bank account.",
+   "severity": "medium",
+   "action": "Add a documented validation step in FP-12 that checks each merchant payout against the merchant's registered bank account before crediting."
+  },
+  {
+   "obligation": "rbi-n12896:section:0017#2",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-03 \u00a73.2",
+    "FP-02 \u00a74.1"
+   ],
+   "policy_quote": "Transaction monitoring flags spikes in volume, refunds above 10% and chargebacks above 1% of transactions for review within 2 working days.",
+   "finding": "Merchant transactions are monitored for volume, refunds and chargebacks and against CCO-approved scenarios, but no paragraph requires checking that transactions match the merchant's business profile or aligns monitoring with the KYC MD.",
+   "severity": "medium",
+   "action": "Add a monitoring check in FP-03 that compares each merchant's transactions against its declared business profile and records adherence to the KYC MD."
+  },
+  {
+   "obligation": "rbi-n12896:section:0017#3",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-02 \u00a74.1"
+   ],
+   "policy_quote": "Suspicious Transaction Reports (STRs) are filed with FIU-IND within 7 days of arriving at the conclusion that a transaction is suspicious.",
+   "finding": "The policy provides for filing STRs with FIU-IND but does not state that FlexiPay, as a non-bank PA, registers itself with FIU-IND.",
+   "severity": "medium",
+   "action": "Add to FP-02 a requirement that FlexiPay registers with FIU-IND as a non-bank PA and meets the reporting requirements of the KYC MD."
+  },
+  {
+   "obligation": "rbi-n12896:section:0017#4",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph requires FlexiPay to bring merchants onboarded before 31 December 2025 into compliance with the due diligence requirements.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0017#5",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "FP-01 says merchants are onboarded under FP-03, but no shown paragraph sets out the due diligence requirements that merchants onboarded from 1 January 2026 must meet.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0018#1",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "This obligation applies to acquiring banks, and FlexiPay is a non-bank PA, not a bank.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0018#2",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "This obligation applies to the acquiring bank of a non-bank PA, and FlexiPay is the PA rather than a bank.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0018#3",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph shown requires FlexiPay to record the details of agents who assist merchants, and none of the cited paragraphs mention agents.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0018#4",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph shown requires due diligence on persons appointed as authorised or designated agents, and FP-03 covers only merchant onboarding.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0018#5",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph shown places ultimate due diligence responsibility on FlexiPay for agents or limits agent use to prescribed purposes.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0019#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-12 \u00a71.1",
+    "FP-01 \u00a73.2"
+   ],
+   "policy_quote": "All amounts collected from customers for merchants are credited to FlexiPay's escrow account with Coastal Commercial Bank.",
+   "finding": "The policy keeps merchant funds in a separate escrow account with Coastal Commercial Bank, but it does not state that this bank is a Scheduled Commercial Bank, which the rule requires.",
+   "severity": "low",
+   "action": "Document that Coastal Commercial Bank is a Scheduled Commercial Bank in FP-12 \u00a71.1, or move the escrow account to an SCB."
+  },
+  {
+   "obligation": "rbi-n12896:section:0019#2",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FP-12 \u00a71.2",
+    "FP-12 \u00a74.1"
+   ],
+   "policy_quote": "Permitted credits: payments from customers, refunds and reversals from merchants, and pre-funding by FlexiPay.",
+   "finding": "The permitted credits and debits in FP-12 \u00a71.2 do not include interest, yet FP-12 \u00a74.1 credits interest on 15% of the average escrow balance to FlexiPay's own account, which breaks the escrow operating rules; Table 1 itself is not shown in the policy set.",
+   "severity": "high",
+   "action": "Remove the crediting of escrow interest to FlexiPay's own account in FP-12 \u00a74.1 and align all escrow credits and debits with the Table 1 instructions."
+  },
+  {
+   "obligation": "rbi-n12896:section:0019#3",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FP-11 \u00a75.1",
+    "FP-12 \u00a71.1"
+   ],
+   "policy_quote": "Wallet balances are held in an escrow account with Coastal Commercial Bank.",
+   "finding": "FP-11 \u00a75.1 holds PPI wallet balances in the same escrow account with Coastal Commercial Bank that FP-12 \u00a71.1 uses for PA merchant funds, so the PA escrow account is used for a business other than authorised PA business.",
+   "severity": "high",
+   "action": "Hold FlexiWallet balances in a separate account and keep the PA escrow account limited to merchant collections and settlements."
+  },
+  {
+   "obligation": "rbi-n12896:section:0019#4",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-12 \u00a75.1"
+   ],
+   "policy_quote": "A chartered accountant certifies every quarter that the escrow account was operated as these rules require",
+   "finding": "The quarterly chartered accountant certificate in FP-12 \u00a75.1 covers general escrow operation but says nothing about inter-escrow account transfers, which need their own auditor's certificate.",
+   "severity": "medium",
+   "action": "Add a requirement in FP-12 \u00a75.1 that every inter-escrow account transfer is supported by an auditor's certificate."
+  },
+  {
+   "obligation": "rbi-n12896:section:0020#1",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The obligation concerns a BBPOU's BBPS escrow account and a PA operating a promotional, incentive or cash-back payment received account, but the company profile shows FlexiPay as a PA-O, UPI TPAP and PPI issuer with no BBPOU role or promotional/cash-back account, so no policy paragraph is needed.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0021#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-12 \u00a73.1"
+   ],
+   "policy_quote": "The escrow balance is reconciled with merchant payables every day by 10 am the next working day.",
+   "finding": "The policy reconciles escrow balances to merchant payables daily but does not require FlexiPay to maintain the balance at or above the amount payable to merchants, and it tolerates differences up to \u20b910,000.",
+   "severity": "medium",
+   "action": "Require that the day-end escrow balance is never less than the realised amount payable to merchants, and remove the \u20b910,000 tolerance for shortfalls."
+  },
+  {
+   "obligation": "rbi-n12896:section:0021#2",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FP-12 \u00a74.1"
+   ],
+   "policy_quote": "FlexiPay receives interest on 15% of the average escrow balance each month, credited to FlexiPay's own account.",
+   "finding": "The policy has FlexiPay earning interest on 15% of the average escrow balance, but the rule allows interest only on the core portion of the domestic escrow account.",
+   "severity": "high",
+   "action": "Stop receiving interest on escrow balances outside the permitted core portion of the domestic escrow account and amend the Coastal Commercial Bank arrangement accordingly."
+  },
+  {
+   "obligation": "rbi-n12896:section:0021#3",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph in the policy set deals with migrating existing merchant funds to an escrow account within two months of RBI authorisation.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0021#4",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph in the policy set requires merchant settlement to follow fair, equitable agreement terms with transparently stated settlement timelines; FP-12 \u00a72.2 only covers holding settlement for fraud investigation.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0021#5",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "FlexiPay is authorised only for PA-O, not for both PA-O and PA-P, so the single shared escrow account requirement does not apply.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0022#1",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph addresses maintaining a core portion within the PA escrow account; FP-12 describes the escrow account only in terms of credits, debits and reconciliation.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0022#2",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "This rule applies only to banks, and FlexiPay is a payment aggregator, not a bank.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0022#3",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph states that the core portion is calculated separately for each escrow account.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0022#4",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-12 \u00a75.1"
+   ],
+   "policy_quote": "A chartered accountant certifies every quarter that the escrow account was operated as these rules require",
+   "finding": "FP-12 \u00a75.1 requires a quarterly chartered accountant certificate but does not require the escrow balance to be disclosed in it, and no annual certificate is provided for.",
+   "severity": "medium",
+   "action": "Amend FP-12 \u00a75.1 so the quarterly certificate discloses the escrow balance and add a requirement for an annual auditor's certificate with the same disclosure."
+  },
+  {
+   "obligation": "rbi-n12896:section:0023#1",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The policy paragraphs shown say nothing about submitting the onboarded merchant list to the escrow bank or updating it before each settlement.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0023#2",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "This obligation falls on the bank maintaining the escrow account, not on FlexiPay as the PA.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0023#3",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-12 \u00a71.2",
+    "FP-12 \u00a74.1"
+   ],
+   "policy_quote": "Permitted debits: payments to merchants, refunds to customers and FlexiPay's commission at the agreed rate.",
+   "finding": "The policy lists permitted escrow debits and credits, but no exclusive clause in the bank agreement restricts escrow use to them, and \u00a74.1 credits interest on the escrow balance to FlexiPay's own account, which is not a listed permitted debit.",
+   "severity": "medium",
+   "action": "Add an exclusive clause to the escrow agreement with Coastal Commercial Bank limiting escrow usage to the Table 1 permissible debits and credits, and remove or justify the interest credit to FlexiPay's own account."
+  },
+  {
+   "obligation": "rbi-n12896:section:0023#4",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph addresses whether the escrow account may be used for Cash-on-Delivery transactions.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0023#5",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "FlexiPay is an online PA (PA-O) and does not carry on cross-border PA activity, so the PA-CB outward transfer rule does not apply.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0023#6",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "FlexiPay is a PA-O and not a PA-CB, so this rule for PA-CBs engaged in domestic activity does not apply.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0023#7",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FP-12 \u00a75.1"
+   ],
+   "policy_quote": "A chartered accountant certifies every quarter that the escrow account was operated as these rules require, and the certificate is sent to the bank.",
+   "finding": "The policy has a chartered accountant certify quarterly and send the certificate to the bank, whereas the rule requires a statutory auditor's certificate submitted to the RBI DPSS Regional Office at the Annexure 2 periodicity.",
+   "severity": "medium",
+   "action": "Have the statutory auditor sign the escrow compliance certificate and submit it to the DPSS Regional Office of RBI where FlexiPay's registered office is situated, at the periodicity in Annexure 2."
+  },
+  {
+   "obligation": "rbi-n12896:section:0023#8",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "FP-11 \u00a75.1 describes a separate escrow account for wallet balances, but no policy paragraph requires both escrow balances to be certified and separately stated.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0023#9",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "FlexiPay carries on only domestic PA activity, so a separate cross-border PA-CB certificate does not arise.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0024#1",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph describes how the escrow account is shifted from one bank to another, or the time-bound process and advice to RBI that the rule requires.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0024#2",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "This reserve requirement applies to banks maintaining escrow accounts for payment aggregators, and FlexiPay is a payment aggregator, not a bank.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0024#3",
+   "applies": true,
+   "status": "met",
+   "policy_refs": [
+    "FP-12 \u00a71.2",
+    "FP-12 \u00a71.1"
+   ],
+   "policy_quote": "Permitted credits: payments from customers, refunds and reversals from merchants, and pre-funding by FlexiPay.",
+   "finding": "FP-12 routes customer payments, merchant refunds and reversals, and customer refunds through the escrow account, which meets the requirement to route reversal and refund credits back through escrow.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0024#4",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph states that customers' chargeback rights remain unaffected; FP-03 \u00a75.1 only lists chargebacks as a merchant agreement term.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0027#1",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown requires a comprehensive security risk assessment covering people, IT, and business processes with remedial measures and residual risks.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0027#2",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a71.1"
+   ],
+   "policy_quote": "The CISO reports to the CEO and presents the information security posture to the IT Strategy Committee.",
+   "finding": "The policy sends the security posture to the IT Strategy Committee, but it does not require risk assessments, compliance posture, audit reports and security incidents to be presented to the Board.",
+   "severity": "medium",
+   "action": "Require the CISO to present risk assessments, security compliance posture, security audit reports and security incidents to the Board, not only to the IT Strategy Committee."
+  },
+  {
+   "obligation": "rbi-n12896:section:0027#3",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a74.1"
+   ],
+   "policy_quote": "AES-256 encryption at rest; TLS 1.2 or higher in transit.",
+   "finding": "The policy covers encryption at rest and transport channel security but does not mention PCI-DSS or PCI-SSF data security standards.",
+   "severity": "medium",
+   "action": "Add a requirement to implement PCI-DSS and PCI-SSF data security standards alongside the existing encryption and transport controls."
+  },
+  {
+   "obligation": "rbi-n12896:section:0027#4",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown requires reporting security incidents and card holder data breaches to RBI within the stipulated timeframe.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0027#5",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown requires monthly cyber security incident reports with root cause analysis and preventive actions to be submitted to RBI.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0027#6",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown requires a security assessment of merchants during onboarding to check minimum baseline security controls.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0028#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-18 \u00a74.1"
+   ],
+   "policy_quote": "Internal audit is outsourced to a chartered accountant firm and reports to the Audit Committee.",
+   "finding": "The policy outsources internal audit to a CA firm reporting to the Audit Committee, but it sets no quarterly internal or annual external audit reports and no submission to the IT Committee.",
+   "severity": "medium",
+   "action": "Require quarterly internal and annual external audit reports covering IT, submitted to the IT Committee."
+  },
+  {
+   "obligation": "rbi-n12896:section:0028#2",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FP-05 \u00a74.2"
+   ],
+   "policy_quote": "An external firm performs a penetration test of the FlexiPay app and Checkout once a year.",
+   "finding": "The policy requires an external penetration test once a year, while the rule requires bi-annual VAPT reports submitted to the IT Committee.",
+   "severity": "high",
+   "action": "Increase external VAPT to twice a year and submit the reports to the IT Committee."
+  },
+  {
+   "obligation": "rbi-n12896:section:0028#3",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown covers PCI-DSS AOC and ROC reports, observations, or corrective action closure dates submitted to the IT Committee.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0028#4",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a72.1"
+   ],
+   "policy_quote": "Every information asset has a named owner and a classification (public, internal, confidential, restricted).",
+   "finding": "The policy requires an asset owner and classification for information assets but does not require an inventory of applications storing customer sensitive data or its submission to the IT Committee.",
+   "severity": "medium",
+   "action": "Maintain an inventory of applications that store, process or transmit customer sensitive data and submit it to the IT Committee."
+  },
+  {
+   "obligation": "rbi-n12896:section:0028#5",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown covers PCI-SSF compliance status for payment applications that store or process cardholder data.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0028#6",
+   "applies": true,
+   "status": "met",
+   "policy_refs": [
+    "FP-18 \u00a75.1"
+   ],
+   "policy_quote": "A policy is reviewed at least once a year, and earlier when a regulation it implements changes.",
+   "finding": "The policy requires every policy, including information security, to be reviewed at least annually, though Board approval is not stated.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0028#7",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a72.1"
+   ],
+   "policy_quote": "Every information asset has a named owner and a classification (public, internal, confidential, restricted).",
+   "finding": "The information security policy covers asset ownership and data classification but does not address business alignment, roles and responsibilities, training, or penal measures for non-compliance.",
+   "severity": "low",
+   "action": "Add business alignment, roles and responsibilities, training and penal measures for non-compliance to the information security policy."
+  },
+  {
+   "obligation": "rbi-n12896:section:0028#8",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown requires a framed IT policy with documented and implemented procedures for regular IT function management.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0028#9",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-18 \u00a75.1"
+   ],
+   "policy_quote": "A policy is reviewed at least once a year, and earlier when a regulation it implements changes.",
+   "finding": "The policy requires annual review of every policy, but it does not name the strategic plan, and the IT policy is only covered by the general rule.",
+   "severity": "low",
+   "action": "State explicitly that the strategic plan and IT policy are reviewed annually."
+  },
+  {
+   "obligation": "rbi-n12896:section:0029#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a71.1"
+   ],
+   "policy_quote": "The Board approves this policy. The CISO reports to the CEO and presents the information security posture to the IT Strategy Committee.",
+   "finding": "The policy shows the Board approving the information security policy, but nothing shows the Board establishing the necessary organisational processes and functions for information security or providing the necessary resources.",
+   "severity": "medium",
+   "action": "Add a provision in FP-05 or FP-18 stating that the Board establishes the information security processes and functions and provides the resources needed for them."
+  },
+  {
+   "obligation": "rbi-n12896:section:0029#2",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FP-05 \u00a71.2",
+    "FP-18 \u00a72.3"
+   ],
+   "policy_quote": "The IT Strategy Committee meets once a year.",
+   "finding": "The policy has an IT Strategy Committee that meets only once a year, with no business-function representation and no role in assisting Executive Management to implement IT strategy, so it falls short of an IT Steering Committee with well-defined objectives and actions.",
+   "severity": "medium",
+   "action": "Establish an IT Steering Committee with representatives from business functions that meets regularly and has defined objectives and actions to assist Executive Management in implementing the IT strategy."
+  },
+  {
+   "obligation": "rbi-n12896:section:0029#3",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph shown deals with an enterprise information model.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0029#4",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-06 \u00a72.2"
+   ],
+   "policy_quote": "Contain, preserve evidence, eradicate, recover, then review.",
+   "finding": "The incident response procedure covers containment, eradication and recovery but has no detection component and does not say the crisis management plan is approved by the IT strategic committee.",
+   "severity": "medium",
+   "action": "Add a Cyber Crisis Management Plan to FP-06 with Detection, Containment, Response and Recovery components, approved by the IT Strategy Committee."
+  },
+  {
+   "obligation": "rbi-n12896:section:0029#5",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph shown deals with an enterprise data dictionary or data syntax rules.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0030#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a72.1"
+   ],
+   "policy_quote": "Every information asset has a named owner and a classification (public, internal, confidential, restricted).",
+   "finding": "The policy assigns owners and classifications to information assets but does not require identifying threat/vulnerability combinations or assessing the likelihood of impact on confidentiality, availability or integrity.",
+   "severity": "medium",
+   "action": "Add a risk assessment step to FP-05 that, for each in-scope asset, records threat/vulnerability combinations and likelihood of impact on confidentiality, availability and integrity from business, compliance and contractual perspectives."
+  },
+  {
+   "obligation": "rbi-n12896:section:0030#2",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown sets documented standards or procedures for administering application systems that are approved by the application owner and kept up to date.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0030#3",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a73.1",
+    "FP-05 \u00a73.2"
+   ],
+   "policy_quote": "Production systems are reached only through a bastion host with multi-factor authentication. Privileged access is granted for a fixed time and every session is logged.",
+   "finding": "The policy controls production access through a bastion host, time-limited privileged access and six-monthly reviews, but never states the least-privilege and need-to-know principle tied to job responsibilities.",
+   "severity": "medium",
+   "action": "Amend FP-05 access control to state that access is granted on least privilege and need to know commensurate with each job role."
+  },
+  {
+   "obligation": "rbi-n12896:section:0030#4",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown requires assessing skill-set requirements for IT staff or periodically reviewing their training needs.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0030#5",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown requires technology support SLAs covering BCP-DR and data management to include clauses permitting regulatory access; the vendor review in FP-07 covers monitoring only.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0030#6",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown considers assessing IT maturity against international standards or maintaining an action plan to reach a target maturity level.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0031#1",
+   "applies": true,
+   "status": "met",
+   "policy_refs": [
+    "FP-05 \u00a74.1"
+   ],
+   "policy_quote": "AES-256 encryption at rest; TLS 1.2 or higher in transit.",
+   "finding": "The policy specifies AES-256 at rest and TLS 1.2 or higher in transit, which are well-established international standards.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0031#2",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a75.1"
+   ],
+   "policy_quote": "Logs from production systems go to a SIEM watched by an outsourced Security Operations Centre, 24 hours a day.",
+   "finding": "The policy sends logs from production systems to a 24x7 SIEM, but does not cover security events from endpoint, network, middleware, database, web services, cryptographic events or other infrastructure sources, nor state that they are investigated and analysed.",
+   "severity": "medium",
+   "action": "Extend the SIEM collection scope in FP-05 to all listed event sources (application, endpoint, network, middleware, database, web services, cryptographic events) and require investigation and analysis of them."
+  },
+  {
+   "obligation": "rbi-n12896:section:0031#3",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown requires data to be stored in infrastructure outside external jurisdictions.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0031#4",
+   "applies": true,
+   "status": "met",
+   "policy_refs": [
+    "FP-05 \u00a73.1"
+   ],
+   "policy_quote": "Production systems are reached only through a bastion host with multi-factor authentication.",
+   "finding": "The policy restricts production access through an MFA-protected bastion host with time-limited, logged privileged access, which controls unauthorised access to data.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0031#5",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown sets outsourcing agreement right-to-audit clauses or annual independent security audit reports from third parties; FP-07 is indexed but its text is not provided.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0031#6",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown requires payment applications to be developed per PCI-SSF guidelines.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0031#7",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-03 \u00a74.1"
+   ],
+   "policy_quote": "Merchants are contractually barred from storing card data.",
+   "finding": "The policy bars merchants from storing card data, but does not require reviewing merchants' PCI-DSS compliance status during onboarding.",
+   "severity": "medium",
+   "action": "Add a PCI-DSS compliance status review step to the merchant onboarding procedure in FP-03."
+  },
+  {
+   "obligation": "rbi-n12896:section:0032#1",
+   "applies": true,
+   "status": "met",
+   "policy_refs": [
+    "FP-03 \u00a74.1"
+   ],
+   "policy_quote": "FlexiPay Checkout does not store card numbers.",
+   "finding": "The policy states that Checkout does not store card numbers and that merchants are contractually barred from storing card data, which matches the rule against storing card credentials in merchant-accessed databases or servers.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0032#2",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph states whether an ATM PIN is accepted as a factor for card-not-present transactions; the cited authentication paragraphs list only the card issuer's SMS OTP and the card network's additional factor.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0032#3",
+   "applies": true,
+   "status": "met",
+   "policy_refs": [
+    "FP-08 \u00a71.1"
+   ],
+   "policy_quote": "All payment system data (customer details, payment credentials and transaction records) is stored only on servers in India",
+   "finding": "The policy requires all payment system data to be stored only on servers in India, with disaster-recovery copies also in India, which satisfies the storage instruction.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0032#4",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-09 \u00a73.2"
+   ],
+   "policy_quote": "is refunded to the source within T+5 days.",
+   "finding": "The policy refunds failed Checkout payments to the source, which is the original payment method, but it does not cover refunds generally or state that any alternate mode requires the customer's specific agreement.",
+   "severity": "medium",
+   "action": "Extend the refund paragraph to all refunds, stating that they go to the original payment method unless the customer specifically agrees to an alternate mode."
+  },
+  {
+   "obligation": "rbi-n12896:section:0033#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-12 \u00a76.1"
+   ],
+   "policy_quote": "Finance tracks FlexiPay's net worth every quarter and reports it to the Board.",
+   "finding": "The policy has quarterly net-worth tracking reported to the Board, but it does not provide for an annual audited report with a statutory auditor certificate on net-worth submitted to RBI by September 30.",
+   "severity": "medium",
+   "action": "Add an annual step to submit the audited report with statutory auditor certificate on net-worth to RBI by September 30."
+  },
+  {
+   "obligation": "rbi-n12896:section:0033#2",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a74.2",
+    "FP-18 \u00a74.1"
+   ],
+   "policy_quote": "Vulnerability scans run monthly on internet-facing systems. An external firm performs a penetration test of the FlexiPay app and Checkout once a year.",
+   "finding": "The policy has an annual external penetration test and internal audit by a chartered accountant firm, but it has no externally audited IS Audit Report or Cyber Security Audit Report, no recorded observations with corrective action and closure dates, and no scope covering all information system areas.",
+   "severity": "medium",
+   "action": "Require an externally audited IS Audit and Cyber Security Audit covering all information system processes and applications, with observations, corrective actions and closure dates, and its submission to RBI as prescribed."
+  },
+  {
+   "obligation": "rbi-n12896:section:0033#3",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-12 \u00a75.1"
+   ],
+   "policy_quote": "A chartered accountant certifies every quarter that the escrow account was operated as these rules require, and the certificate is sent to the bank.",
+   "finding": "The policy requires a quarterly chartered accountant certificate on escrow operation, but it is sent to the bank and sets no deadline of the 15th of the month following quarter end, and it does not specify a certificate on maintenance of balance in escrow account for RBI.",
+   "severity": "medium",
+   "action": "Specify that the auditor's certificate on maintenance of balance in the escrow account is submitted to RBI by the 15th of the month following each quarter end."
+  },
+  {
+   "obligation": "rbi-n12896:section:0033#4",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-12 \u00a75.1"
+   ],
+   "policy_quote": "A chartered accountant certifies every quarter that the escrow account was operated as these rules require, and the certificate is sent to the bank.",
+   "finding": "The policy has a quarterly chartered accountant certificate on escrow operation, but it is not an internally audited Bankers' Certificate on escrow debits and credits and sets no 15th-of-month submission deadline.",
+   "severity": "medium",
+   "action": "Add an internally audited Bankers' Certificate on escrow account debits and credits, submitted to RBI by the 15th of the month following each quarter end."
+  },
+  {
+   "obligation": "rbi-n12896:section:0033#5",
+   "applies": false,
+   "status": "not_applicable",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "FlexiPay is a PA-O, so the PA-CB certificate on InCA/OCA debits and credits does not apply.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0033#6",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph deals with the monthly Statistics of Transactions Handled submission due by the 7th of the next month.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12896:section:0033#7",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No policy paragraph deals with a Director's declaration and undertaking on changes in the Board of Directors when they happen.",
+   "severity": "none",
+   "action": null
+  }
+ ],
+ "actions": [
+  {
+   "obligation": "rbi-n12896:section:0010#2",
+   "action": "Raise FlexiPay's net worth to at least \u20b925 crore immediately, and add a policy paragraph stating the \u20b925 crore requirement and the steps taken to meet it.",
+   "owner": "Company Secretary",
+   "priority": "P1",
+   "deadline": "By the end of third financial year of grant of authorisation",
+   "policy_refs": [
+    "FP-00 \u00a73.4",
+    "FP-12 \u00a76.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12896:section:0010#3",
+   "action": "Add a requirement to maintain the applicable minimum net worth on an ongoing basis, with escalation to the Board and a remediation plan whenever net worth falls below it.",
+   "owner": "Head of Finance Operations",
+   "priority": "P1",
+   "deadline": "On an ongoing basis",
+   "policy_refs": [
+    "FP-12 \u00a76.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12896:section:0019#2",
+   "action": "Remove the crediting of escrow interest to FlexiPay's own account in FP-12 \u00a74.1 and align all escrow credits and debits with the Table 1 instructions.",
+   "owner": "Head of Finance Operations",
+   "priority": "P1",
+   "deadline": "December 31, 2025",
+   "policy_refs": [
+    "FP-12 \u00a71.2",
+    "FP-12 \u00a74.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12896:section:0019#3",
+   "action": "Hold FlexiWallet balances in a separate account and keep the PA escrow account limited to merchant collections and settlements.",
+   "owner": "Head of Wallet Products",
+   "priority": "P1",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FP-11 \u00a75.1",
+    "FP-12 \u00a71.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12896:section:0021#2",
+   "action": "Stop receiving interest on escrow balances outside the permitted core portion of the domestic escrow account and amend the Coastal Commercial Bank arrangement accordingly.",
+   "owner": "Head of Finance Operations",
+   "priority": "P1",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FP-12 \u00a74.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12896:section:0028#2",
+   "action": "Increase external VAPT to twice a year and submit the reports to the IT Committee.",
+   "owner": "Chief Information Security Officer",
+   "priority": "P1",
+   "deadline": "bi-annual",
+   "policy_refs": [
+    "FP-05 \u00a74.2"
+   ]
+  },
+  {
+   "obligation": "rbi-n12896:section:0012#1",
+   "action": "Extend the grievance policy or add a dispute procedure that covers merchant and payment disputes on PA transactions, with steps and timelines.",
+   "owner": "Principal Nodal Officer",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FP-09 \u00a72.2",
+    "FP-09 \u00a73.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12896:section:0012#3",
+   "action": "Write the roles for refunds, failed transactions, return policy, grievance redressal and reconciliation into the merchant and acquiring bank agreements.",
+   "owner": "Head of Finance Operations",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FP-12 \u00a71.2",
+    "FP-12 \u00a73.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12896:section:0013#6",
+   "action": "Extend the annual audit requirement to a full system and cyber security audit by CERT-In empanelled auditors, with the report submitted to the RBI Regional Office of DPSS within the prescribed timelines.",
+   "owner": "Chief Information Security Officer",
+   "priority": "P2",
+   "deadline": "within such timelines as may be prescribed by RBI",
+   "policy_refs": [
+    "FP-05 \u00a74.2"
+   ]
+  },
+  {
+   "obligation": "rbi-n12896:section:0015#6",
+   "action": "Add a step to FP-20 \u00a74.1 that flags every cross-border transaction at FlexiPay Checkout so it can be identified, and set the implementation date to the timeline RBI specifies.",
+   "owner": "Chief Information Security Officer",
+   "priority": "P2",
+   "deadline": "From such timelines as specified by RBI",
+   "policy_refs": [
+    "FP-20 \u00a74.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12896:section:0017#1",
+   "action": "Add a documented validation step in FP-12 that checks each merchant payout against the merchant's registered bank account before crediting.",
+   "owner": "Head of Finance Operations",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FP-12 \u00a71.1",
+    "FP-12 \u00a71.2"
+   ]
+  },
+  {
+   "obligation": "rbi-n12896:section:0017#2",
+   "action": "Add a monitoring check in FP-03 that compares each merchant's transactions against its declared business profile and records adherence to the KYC MD.",
+   "owner": "Head of Merchant Risk",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FP-03 \u00a73.2",
+    "FP-02 \u00a74.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12896:section:0017#3",
+   "action": "Add to FP-02 a requirement that FlexiPay registers with FIU-IND as a non-bank PA and meets the reporting requirements of the KYC MD.",
+   "owner": "Chief Compliance Officer",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FP-02 \u00a74.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12896:section:0019#4",
+   "action": "Add a requirement in FP-12 \u00a75.1 that every inter-escrow account transfer is supported by an auditor's certificate.",
+   "owner": "Head of Finance Operations",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FP-12 \u00a75.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12896:section:0021#1",
+   "action": "Require that the day-end escrow balance is never less than the realised amount payable to merchants, and remove the \u20b910,000 tolerance for shortfalls.",
+   "owner": "Head of Finance Operations",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FP-12 \u00a73.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12896:section:0022#4",
+   "action": "Amend FP-12 \u00a75.1 so the quarterly certificate discloses the escrow balance and add a requirement for an annual auditor's certificate with the same disclosure.",
+   "owner": "Head of Finance Operations",
+   "priority": "P2",
+   "deadline": "Quarterly and annual basis",
+   "policy_refs": [
+    "FP-12 \u00a75.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12896:section:0023#3",
+   "action": "Add an exclusive clause to the escrow agreement with Coastal Commercial Bank limiting escrow usage to the Table 1 permissible debits and credits, and remove or justify the interest credit to FlexiPay's own account.",
+   "owner": "Head of Finance Operations",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FP-12 \u00a71.2",
+    "FP-12 \u00a74.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12896:section:0023#7",
+   "action": "Have the statutory auditor sign the escrow compliance certificate and submit it to the DPSS Regional Office of RBI where FlexiPay's registered office is situated, at the periodicity in Annexure 2.",
+   "owner": "Head of Finance Operations",
+   "priority": "P2",
+   "deadline": "As per periodicity prescribed in Annexure 2",
+   "policy_refs": [
+    "FP-12 \u00a75.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12896:section:0027#2",
+   "action": "Require the CISO to present risk assessments, security compliance posture, security audit reports and security incidents to the Board, not only to the IT Strategy Committee.",
+   "owner": "Chief Information Security Officer",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FP-05 \u00a71.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12896:section:0027#3",
+   "action": "Add a requirement to implement PCI-DSS and PCI-SSF data security standards alongside the existing encryption and transport controls.",
+   "owner": "Chief Information Security Officer",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FP-05 \u00a74.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12896:section:0028#1",
+   "action": "Require quarterly internal and annual external audit reports covering IT, submitted to the IT Committee.",
+   "owner": "Company Secretary",
+   "priority": "P2",
+   "deadline": "quarterly and annual",
+   "policy_refs": [
+    "FP-18 \u00a74.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12896:section:0028#4",
+   "action": "Maintain an inventory of applications that store, process or transmit customer sensitive data and submit it to the IT Committee.",
+   "owner": "Chief Information Security Officer",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FP-05 \u00a72.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12896:section:0029#1",
+   "action": "Add a provision in FP-05 or FP-18 stating that the Board establishes the information security processes and functions and provides the resources needed for them.",
+   "owner": "Chief Information Security Officer",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FP-05 \u00a71.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12896:section:0029#2",
+   "action": "Establish an IT Steering Committee with representatives from business functions that meets regularly and has defined objectives and actions to assist Executive Management in implementing the IT strategy.",
+   "owner": "Chief Information Security Officer",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FP-05 \u00a71.2",
+    "FP-18 \u00a72.3"
+   ]
+  },
+  {
+   "obligation": "rbi-n12896:section:0029#4",
+   "action": "Add a Cyber Crisis Management Plan to FP-06 with Detection, Containment, Response and Recovery components, approved by the IT Strategy Committee.",
+   "owner": "Chief Information Security Officer",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FP-06 \u00a72.2"
+   ]
+  },
+  {
+   "obligation": "rbi-n12896:section:0030#1",
+   "action": "Add a risk assessment step to FP-05 that, for each in-scope asset, records threat/vulnerability combinations and likelihood of impact on confidentiality, availability and integrity from business, compliance and contractual perspectives.",
+   "owner": "Chief Information Security Officer",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FP-05 \u00a72.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12896:section:0030#3",
+   "action": "Amend FP-05 access control to state that access is granted on least privilege and need to know commensurate with each job role.",
+   "owner": "Chief Information Security Officer",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FP-05 \u00a73.1",
+    "FP-05 \u00a73.2"
+   ]
+  },
+  {
+   "obligation": "rbi-n12896:section:0031#2",
+   "action": "Extend the SIEM collection scope in FP-05 to all listed event sources (application, endpoint, network, middleware, database, web services, cryptographic events) and require investigation and analysis of them.",
+   "owner": "Chief Information Security Officer",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FP-05 \u00a75.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12896:section:0031#7",
+   "action": "Add a PCI-DSS compliance status review step to the merchant onboarding procedure in FP-03.",
+   "owner": "Head of Merchant Risk",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FP-03 \u00a74.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12896:section:0032#4",
+   "action": "Extend the refund paragraph to all refunds, stating that they go to the original payment method unless the customer specifically agrees to an alternate mode.",
+   "owner": "Principal Nodal Officer",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FP-09 \u00a73.2"
+   ]
+  },
+  {
+   "obligation": "rbi-n12896:section:0033#1",
+   "action": "Add an annual step to submit the audited report with statutory auditor certificate on net-worth to RBI by September 30.",
+   "owner": "Head of Finance Operations",
+   "priority": "P2",
+   "deadline": "September 30",
+   "policy_refs": [
+    "FP-12 \u00a76.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12896:section:0033#2",
+   "action": "Require an externally audited IS Audit and Cyber Security Audit covering all information system processes and applications, with observations, corrective actions and closure dates, and its submission to RBI as prescribed.",
+   "owner": "Chief Information Security Officer",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FP-05 \u00a74.2",
+    "FP-18 \u00a74.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12896:section:0033#3",
+   "action": "Specify that the auditor's certificate on maintenance of balance in the escrow account is submitted to RBI by the 15th of the month following each quarter end.",
+   "owner": "Head of Finance Operations",
+   "priority": "P2",
+   "deadline": "15th of the month following the quarter end",
+   "policy_refs": [
+    "FP-12 \u00a75.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12896:section:0033#4",
+   "action": "Add an internally audited Bankers' Certificate on escrow account debits and credits, submitted to RBI by the 15th of the month following each quarter end.",
+   "owner": "Head of Finance Operations",
+   "priority": "P2",
+   "deadline": "15th of the month following the quarter end",
+   "policy_refs": [
+    "FP-12 \u00a75.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12896:section:0016#2",
+   "action": "Amend FP-03 \u00a72.1 to state that merchant CDD is carried out in accordance with the RBI Master Direction on KYC.",
+   "owner": "Head of Merchant Risk",
+   "priority": "P3",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FP-03 \u00a72.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12896:section:0019#1",
+   "action": "Document that Coastal Commercial Bank is a Scheduled Commercial Bank in FP-12 \u00a71.1, or move the escrow account to an SCB.",
+   "owner": "Head of Finance Operations",
+   "priority": "P3",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FP-12 \u00a71.1",
+    "FP-01 \u00a73.2"
+   ]
+  },
+  {
+   "obligation": "rbi-n12896:section:0028#7",
+   "action": "Add business alignment, roles and responsibilities, training and penal measures for non-compliance to the information security policy.",
+   "owner": "Chief Information Security Officer",
+   "priority": "P3",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FP-05 \u00a72.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12896:section:0028#9",
+   "action": "State explicitly that the strategic plan and IT policy are reviewed annually.",
+   "owner": "Company Secretary",
+   "priority": "P3",
+   "deadline": "annually",
+   "policy_refs": [
+    "FP-18 \u00a75.1"
+   ]
+  }
+ ],
+ "review": []
+}

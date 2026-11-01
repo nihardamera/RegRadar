@@ -387,3 +387,38 @@ and the resume claim says human labels.
 **Next**
 1. Citation precision in the CI gate.
 2. M3 explain-back gate; golden-set review sample.
+
+## 2026-11-02 (Mon): M4 impact pipeline measured; M5 and M6 built
+
+**Done**
+- Explain-back gates moved to interview prep (Nihar's call); project first.
+- CI gate also covers citation precision (77.6) and re-runs the citation checks
+  on stored answers (100% still accepted).
+- `regradar/impact.py`: obligations quoted from each section (quote checked),
+  gap matching against 197 policy paragraphs (hybrid search; citations and
+  quotes checked; v1's contradiction checks ported and extended), plan built by
+  code, review queue for whatever fails twice. `regradar/api.py`: FastAPI
+  `/health /circulars /search /ask /impact`.
+- Gap-key evaluation (`eval/results/IMPACT.md`), Haiku 5.5, 12 circulars, $0.65:
+  planted gaps found 11/12 strict (the flag states the rule's key fact; G6 says
+  "heard before classification" but not the 21 days) and 12/12 lenient; traps
+  taken 2/3 (N1: applied the IT Governance MD to a Base Layer NBFC; N3: read the
+  permissive risk-based rule as a gap). 328 gap/partial flags over 1,123
+  applicable obligations (29%), 234 of them unkeyed: precision is not measured,
+  and recall alone flatters a pipeline that flags a lot.
+- Scorer bug found and fixed before reporting: the key parser took the first
+  circular named in a row, so N1 was scored against rbi-n12715 and rbi-n12562
+  was never run. Now read from the Circular column; rbi-n12562 run.
+- The authentication circular (rbi-n12898) was piloted before the full run and
+  its report seen; no prompt was changed after that, and the gap key was never
+  used for tuning.
+- v1 retired from the branch (tag `finscout-v1` keeps it). v1 tests mapped to v2:
+  scraping/PDF -> corpus fetch and PDF tests; "applies: No" with High impact,
+  "no changes needed" with actions, empty or unrated assessments, and the model
+  overruling code -> `tests/test_impact.py` rating and report checks.
+- `examples/v1_vs_v2.md`; `docs/CUSTOMER_PACK.md` (draft).
+- Built, not yet run: `regradar/optimize.py` (DSPy 3.4 engine over the capped
+  client; judge-free metric with feedback; baseline / MIPROv2 / GEPA) and
+  `regradar/demo.py` (Gradio on an embedded Qdrant file, $1 cap, rate limits).
+
+**Next**: M5 run (approved, capped at $2); README; demo publish (ask first).

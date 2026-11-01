@@ -1,0 +1,3283 @@
+{
+ "model": "claude-haiku-5-5",
+ "gaps_found": "12/12",
+ "gaps_found_strict": "11/12",
+ "gap_recall": [
+  1.0,
+  1.0,
+  1.0
+ ],
+ "traps_flagged": "2/3",
+ "traps_flagged_strict": "2/3",
+ "per_row": {
+  "G1": true,
+  "G2": true,
+  "G3": true,
+  "G4": true,
+  "G5": true,
+  "G6": true,
+  "G7": true,
+  "G8": true,
+  "G9": true,
+  "G10": true,
+  "G11": true,
+  "G12": true,
+  "N1": true,
+  "N2": false,
+  "N3": true
+ },
+ "per_row_strict": {
+  "G1": true,
+  "G2": true,
+  "G3": true,
+  "G4": true,
+  "G5": true,
+  "G6": false,
+  "G7": true,
+  "G8": true,
+  "G9": true,
+  "G10": true,
+  "G11": true,
+  "G12": true,
+  "N1": true,
+  "N2": false,
+  "N3": true
+ },
+ "flags": 328,
+ "unkeyed_flags": 234,
+ "check_problems": {},
+ "counts": {
+  "rbi-md361": {
+   "obligations": 502,
+   "actions": 75,
+   "partial": 62,
+   "not_applicable": 150,
+   "met": 32,
+   "not_covered": 234,
+   "gap": 13,
+   "review": 16
+  },
+  "rbi-md362": {
+   "obligations": 221,
+   "actions": 37,
+   "met": 6,
+   "partial": 24,
+   "not_covered": 91,
+   "gap": 13,
+   "not_applicable": 84,
+   "review": 4
+  },
+  "rbi-n12514": {
+   "obligations": 21,
+   "actions": 5,
+   "partial": 4,
+   "not_covered": 12,
+   "met": 3,
+   "gap": 1,
+   "not_applicable": 1,
+   "review": 0
+  },
+  "rbi-n12527": {
+   "obligations": 92,
+   "actions": 14,
+   "not_covered": 34,
+   "partial": 9,
+   "gap": 5,
+   "met": 2,
+   "not_applicable": 19,
+   "review": 26
+  },
+  "rbi-n12562": {
+   "obligations": 167,
+   "actions": 71,
+   "not_applicable": 7,
+   "partial": 66,
+   "met": 9,
+   "not_covered": 77,
+   "gap": 5,
+   "review": 5
+  },
+  "rbi-n12663": {
+   "obligations": 19,
+   "actions": 7,
+   "gap": 6,
+   "not_covered": 10,
+   "partial": 1,
+   "met": 1,
+   "review": 2
+  },
+  "rbi-n12704": {
+   "obligations": 77,
+   "actions": 7,
+   "not_applicable": 50,
+   "met": 2,
+   "not_covered": 18,
+   "partial": 3,
+   "gap": 4,
+   "review": 2
+  },
+  "rbi-n12715": {
+   "obligations": 121,
+   "actions": 39,
+   "partial": 34,
+   "not_applicable": 10,
+   "not_covered": 63,
+   "gap": 5,
+   "met": 9,
+   "review": 14
+  },
+  "rbi-n12718": {
+   "obligations": 6,
+   "actions": 2,
+   "met": 1,
+   "gap": 2,
+   "not_applicable": 2,
+   "not_covered": 1,
+   "review": 0
+  },
+  "rbi-n12848": {
+   "obligations": 115,
+   "actions": 27,
+   "not_covered": 59,
+   "met": 15,
+   "partial": 19,
+   "not_applicable": 13,
+   "gap": 8,
+   "review": 3
+  },
+  "rbi-n12896": {
+   "obligations": 137,
+   "actions": 38,
+   "not_applicable": 30,
+   "met": 11,
+   "not_covered": 58,
+   "gap": 9,
+   "partial": 29,
+   "review": 0
+  },
+  "rbi-n12898": {
+   "obligations": 14,
+   "actions": 6,
+   "met": 2,
+   "not_covered": 3,
+   "partial": 3,
+   "gap": 3,
+   "not_applicable": 3,
+   "review": 0
+  }
+ },
+ "unkeyed": [
+  {
+   "doc_id": "rbi-md361",
+   "obligation": "rbi-md361:section:0005#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-02 \u00a76.1"
+   ],
+   "policy_quote": "The CCO is the Principal Officer and the Designated Director is the CEO.",
+   "finding": "FP-02 \u00a76.1 designates the CEO as Designated Director for FlexiCredit, but does not confirm that the CEO is the Managing Director or a whole-time Director duly authorised by the Board, as the rule requires.",
+   "severity": "low",
+   "action": "Record in the FlexiCredit Board resolution that the CEO is its Managing Director or a whole-time Director authorised by the Board to act as Designated Director, and update FP-02 \u00a76.1 to say so."
+  },
+  {
+   "doc_id": "rbi-md361",
+   "obligation": "rbi-md361:section:0008#3",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FP-02 \u00a71.2"
+   ],
+   "policy_quote": "NRIs, PIOs and foreign nationals are declined at the eligibility step.",
+   "finding": "The policy declines foreign nationals before any document stage, so it never states that a foreign national's OVD lacking address details must be accepted with foreign government documents or an embassy letter as proof of address.",
+   "severity": "medium",
+   "action": "Add to FP-02 a rule accepting foreign government documents and Foreign Embassy or Mission letters as address proof where a foreign national's OVD lacks address details, or have the board formally document the exclusion of foreign nationals."
+  },
+  {
+   "doc_id": "rbi-md361",
+   "obligation": "rbi-md361:section:0019#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-02 \u00a73.1"
+   ],
+   "policy_quote": "Customers are rated low, medium or high risk at onboarding using occupation, income, product and geography.",
+   "finding": "FP-02 risk-rates customers at onboarding but does not show an overall risk-based approach to ML/TF risks identified on the entity's own or through the national risk assessment.",
+   "severity": "medium",
+   "action": "Add to the KYC and AML Policy a documented risk-based approach that identifies ML/TF risks, including those from the national risk assessment, and sets controls proportionate to them."
+  },
+  {
+   "doc_id": "rbi-md361",
+   "obligation": "rbi-md361:section:0019#3",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-02 \u00a73.1"
+   ],
+   "policy_quote": "Customers are rated low, medium or high risk at onboarding using occupation, income, product and geography.",
+   "finding": "FP-02 sets customer risk rating at onboarding and enhanced handling for PEPs, but does not show a CDD programme scaled to identified ML/TF risks and business size, and its periodic updation is not described.",
+   "severity": "medium",
+   "action": "Document a CDD programme that links due diligence depth and periodic updation to the identified ML/TF risks and the size of the business."
+  },
+  {
+   "doc_id": "rbi-md361",
+   "obligation": "rbi-md361:section:0019#6",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-18 \u00a75.1"
+   ],
+   "policy_quote": "Every policy has an owner and a review date.",
+   "finding": "FP-18 assigns an owner to every policy, but the KYC and AML Policy does not allocate responsibility for effective implementation of its procedures.",
+   "severity": "low",
+   "action": "State in the KYC and AML Policy who is responsible for implementing each KYC and AML procedure."
+  },
+  {
+   "doc_id": "rbi-md361",
+   "obligation": "rbi-md361:section:0019#9",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FP-04 \u00a72.1"
+   ],
+   "policy_quote": "The Risk Management Committee of the Board oversees fraud risk and reviews fraud data every quarter.",
+   "finding": "The policy sends quarterly fraud data to the Risk Management Committee, but nothing shows quarterly KYC/AML audit notes and compliance reports going to the Audit Committee.",
+   "severity": "medium",
+   "action": "Add a requirement for quarterly KYC/AML audit notes and compliance reports to be submitted to the Audit Committee."
+  },
+  {
+   "doc_id": "rbi-md361",
+   "obligation": "rbi-md361:section:0020#2",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-02 \u00a76.1"
+   ],
+   "policy_quote": "The CCO is the Principal Officer and the Designated Director is the CEO.",
+   "finding": "The policy names the CEO as Designated Director but does not require communicating that person's name, designation, address and contact details to FIU-IND and RBI.",
+   "severity": "medium",
+   "action": "Add a step requiring the Designated Director's name, designation, address and contact details to be communicated to FIU-IND and RBI, and record the filing."
+  },
+  {
+   "doc_id": "rbi-md361",
+   "obligation": "rbi-md361:section:0020#4",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-02 \u00a76.1"
+   ],
+   "policy_quote": "The CCO is the Principal Officer and the Designated Director is the CEO.",
+   "finding": "The policy names the CCO as Principal Officer but does not require communicating that officer's name, designation, address and contact details to FIU-IND and RBI.",
+   "severity": "medium",
+   "action": "Add a step requiring the Principal Officer's name, designation, address and contact details to be communicated to FIU-IND and RBI, and record the filing."
+  },
+  {
+   "doc_id": "rbi-md361",
+   "obligation": "rbi-md361:section:0023#4",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-02 \u00a74.1"
+   ],
+   "policy_quote": "Suspicious Transaction Reports (STRs) are filed with FIU-IND within 7 days of arriving at the conclusion that a transaction is suspicious.",
+   "finding": "FP-02 \u00a74.1 covers STR filing with FIU-IND but says nothing about stopping the CDD process and filing an STR directly where CDD would tip off the customer.",
+   "severity": "medium",
+   "action": "Add a step to FP-02 stating that where money laundering or terrorist financing is suspected and CDD would tip off the customer, CDD is not pursued and an STR is filed with FIU-IND."
+  },
+  {
+   "doc_id": "rbi-md361",
+   "obligation": "rbi-md361:section:0024#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-02 \u00a73.1"
+   ],
+   "policy_quote": "Customers are rated low, medium or high risk at onboarding using occupation, income, product and geography.",
+   "finding": "The policy rates customers by risk at onboarding, but no paragraph states an overall risk-based approach to risk management, and the FP-20 \u00a73.1 rule of identical checks for every transaction runs against a risk-based approach.",
+   "severity": "medium",
+   "action": "Adopt and document a written risk-based approach to risk management for FlexiCredit, and align FP-20 \u00a73.1 so that authentication strength varies with transaction risk."
+  },
+  {
+   "doc_id": "rbi-md361",
+   "obligation": "rbi-md361:section:0024#3",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-02 \u00a73.1"
+   ],
+   "policy_quote": "Customers are rated low, medium or high risk at onboarding using occupation, income, product and geography.",
+   "finding": "The policy uses occupation, income, product and geography, but does not use customer identity, social status, nature of business, delivery channel, or transaction types such as cash, cheque, wire transfers and forex.",
+   "severity": "medium",
+   "action": "Extend the FP-02 \u00a73.1 risk categorisation parameters to include customer identity, social/financial status, business nature, delivery channel and transaction types including cash, wire transfers and forex."
+  },
+  {
+   "doc_id": "rbi-md361",
+   "obligation": "rbi-md361:section:0030#2",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-18 \u00a74.1"
+   ],
+   "policy_quote": "Internal audit is outsourced to a chartered accountant firm and reports to the Audit Committee.",
+   "finding": "The policy has an outsourced internal audit that reports to the Audit Committee, but its annual plan does not name the exception database and no paragraph makes that database available for supervisory review.",
+   "severity": "medium",
+   "action": "Add the centralised exception database to the annual internal audit plan and require it to be made available for supervisory review."
+  },
+  {
+   "doc_id": "rbi-md361",
+   "obligation": "rbi-md361:section:0031#3",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a73.1"
+   ],
+   "policy_quote": "Production systems are reached only through a bastion host with multi-factor authentication.",
+   "finding": "FP-05 \u00a73.1 restricts access to production systems via a bastion host with MFA, but does not name the digital KYC application or state that unauthorised persons are prevented from using it.",
+   "severity": "medium",
+   "action": "Extend the access control in FP-05 \u00a73.1 expressly to the digital KYC application and add a control ensuring unauthorised persons cannot use it."
+  },
+  {
+   "doc_id": "rbi-md361",
+   "obligation": "rbi-md361:section:0031#4",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a73.1"
+   ],
+   "policy_quote": "Production systems are reached only through a bastion host with multi-factor authentication.",
+   "finding": "FP-05 \u00a73.1 requires MFA for production systems, which is close to the login-id/password or OTP mechanism required, but it does not state that authorised officials use this mechanism to access the KYC application.",
+   "severity": "low",
+   "action": "State in the policy that authorised officials access the digital KYC application only through a login-id and password or Live/Time OTP mechanism provided by FlexiCredit."
+  },
+  {
+   "doc_id": "rbi-md361",
+   "obligation": "rbi-md361:section:0039#2",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a74.3"
+   ],
+   "policy_quote": "Critical vulnerabilities are fixed within 15 days and high ones within 30 days.",
+   "finding": "The policy sets vulnerability-fixing timelines but does not state compliance with the RBI minimum baseline cyber security and resilience framework for NBFCs or other general IT risk guidelines.",
+   "severity": "medium",
+   "action": "Add an explicit commitment in the Information Security Policy to comply with the RBI minimum baseline cyber security and resilience framework for NBFCs, as updated, and with general IT risk guidelines."
+  },
+  {
+   "doc_id": "rbi-md361",
+   "obligation": "rbi-md361:section:0039#5",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-07 \u00a71.1",
+    "FP-07 \u00a73.1"
+   ],
+   "policy_quote": "Every arrangement in which a vendor runs IT services for FlexiPay or FlexiCredit: cloud hosting (AWS Mumbai), the outsourced SOC, the V-CIP vendor",
+   "finding": "The policy brings the V-CIP vendor within outsourcing scope and sets due diligence criteria, but does not require the V-CIP technology outsourcing to comply with relevant RBI guidelines.",
+   "severity": "low",
+   "action": "Add a requirement in the IT Outsourcing and Vendor Risk Policy that V-CIP technology outsourcing complies with relevant RBI guidelines."
+  },
+  {
+   "doc_id": "rbi-md361",
+   "obligation": "rbi-md361:section:0040#9",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a74.2"
+   ],
+   "policy_quote": "Vulnerability scans run monthly on internet-facing systems. An external firm performs a penetration test of the FlexiPay app and Checkout once a year.",
+   "finding": "The policy provides monthly vulnerability scans and an annual penetration test of the app and Checkout, but does not cover the V-CIP infrastructure specifically or require a security audit.",
+   "severity": "medium",
+   "action": "Amend FP-05 \u00a74.2 to include the V-CIP infrastructure in penetration testing and add an annual security audit covering its robustness and end-to-end encryption."
+  },
+  {
+   "doc_id": "rbi-md361",
+   "obligation": "rbi-md361:section:0041#3",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a74.2"
+   ],
+   "policy_quote": "Vulnerability scans run monthly on internet-facing systems. An external firm performs a penetration test of the FlexiPay app and Checkout once a year.",
+   "finding": "The policy sets periodic security scans and an annual penetration test, but does not provide for periodic functional or performance tests of the V-CIP software in line with guidelines.",
+   "severity": "medium",
+   "action": "Add a periodic functional and performance test schedule for the V-CIP application software, aligned with internal and regulatory guidelines."
+  },
+  {
+   "doc_id": "rbi-md361",
+   "obligation": "rbi-md361:section:0047#3",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-03 \u00a72.1"
+   ],
+   "policy_quote": "Every merchant completes KYC as a legal entity (PAN, certificate of incorporation or registration, GST certificate where applicable, and KYC of the beneficial owners and authorised signatories).",
+   "finding": "FP-03 \u00a72.1 requires PAN and certificate of incorporation but only for merchants, not FlexiCredit company borrowers, and it omits the Memorandum and Articles of Association and the other listed documents.",
+   "severity": "medium",
+   "action": "Extend company-account KYC for FlexiCredit borrowers to require certified copies of the certificate of incorporation, Memorandum and Articles of Association, PAN, and the other listed documents or e-equivalents."
+  },
+  {
+   "doc_id": "rbi-md361",
+   "obligation": "rbi-md361:section:0047#5",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-03 \u00a72.1"
+   ],
+   "policy_quote": "Every merchant completes KYC as a legal entity (PAN, certificate of incorporation or registration, GST certificate where applicable, and KYC of the beneficial owners and authorised signatories).",
+   "finding": "FP-03 \u00a72.1 covers KYC of beneficial owners and authorised signatories for merchants only, without the specified documents and not for FlexiCredit company borrowers.",
+   "severity": "medium",
+   "action": "Require the paragraph 23 documents for beneficial owners and attorney holders on FlexiCredit company accounts, not only for merchants."
+  },
+  {
+   "doc_id": "rbi-md361",
+   "obligation": "rbi-md361:section:0050#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-03 \u00a72.1"
+   ],
+   "policy_quote": "Every merchant completes KYC as a legal entity (PAN, certificate of incorporation or registration, GST certificate where applicable, and KYC of the beneficial owners and authorised signatories).",
+   "finding": "FP-03 \u00a72.1 requires legal-entity KYC for merchants, including incorporation proof and KYC of authorised signatories, which covers the legal-existence and authorised-person elements, but it does not require the document naming the authorised person, the attorney documents under paragraph 23, or certified copies for non-merchant juridical persons such as societies, universities and panchayats.",
+   "severity": "medium",
+   "action": "Extend the juridical-person KYC in FP-03 and FC-13 to require certified copies of the authorised-person name document, the attorney documents under paragraph 23 of the RBI KYC Directions, and legal-existence documents for all juridical-person customers, including those acting through an attorney."
+  },
+  {
+   "doc_id": "rbi-md361",
+   "obligation": "rbi-md361:section:0052#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-02 \u00a74.1"
+   ],
+   "policy_quote": "Transactions are monitored against scenarios approved by the CCO.",
+   "finding": "FP-02 \u00a74.1 provides for monitoring transactions against CCO-approved scenarios, but no policy paragraph requires periodic refresh of FlexiCredit borrowers' knowledge of their business, risk profile and source of funds or wealth.",
+   "severity": "medium",
+   "action": "Add a periodic customer due diligence refresh for FlexiCredit borrowers that checks transactions against their declared business, risk profile and source of funds or wealth."
+  },
+  {
+   "doc_id": "rbi-md361",
+   "obligation": "rbi-md361:section:0052#2",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-02 \u00a74.1",
+    "FP-03 \u00a73.2"
+   ],
+   "policy_quote": "Transactions are monitored against scenarios approved by the CCO.",
+   "finding": "FP-02 \u00a74.1 and FP-03 \u00a73.2 cover general transaction monitoring, volume spikes, refunds and chargebacks, but do not name large or complex transactions, RTGS transactions, or unusual patterns lacking economic rationale.",
+   "severity": "medium",
+   "action": "Add scenarios to FP-02 for large and complex transactions, RTGS transactions, and unusual patterns with no apparent economic rationale, applied to FlexiCredit accounts."
+  },
+  {
+   "doc_id": "rbi-md361",
+   "obligation": "rbi-md361:section:0053#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-02 \u00a73.1",
+    "FP-02 \u00a74.1"
+   ],
+   "policy_quote": "Customers are rated low, medium or high risk at onboarding using occupation, income, product and geography.",
+   "finding": "Customers are risk-rated at onboarding, but the transaction monitoring scenarios in FP-02 \u00a74.1 are not tied to risk category, so monitoring intensity is not aligned with that rating.",
+   "severity": "medium",
+   "action": "Link the CCO-approved monitoring scenarios to each customer's risk category so that higher-risk customers receive more intensive monitoring."
+  },
+  {
+   "doc_id": "rbi-md361",
+   "obligation": "rbi-md361:section:0053#2",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FP-02 \u00a73.2",
+    "FP-03 \u00a73.1"
+   ],
+   "policy_quote": "KYC is updated at least once every 2 years for high-risk customers, every 8 years for medium-risk and every 10 years for low-risk customers.",
+   "finding": "The policy sets no periodic review of customer risk categorisation at least every six months; it refreshes high-risk customer KYC only every 2 years, and the six-monthly review in FP-03 \u00a73.1 covers merchants only.",
+   "severity": "high",
+   "action": "Add a review of risk categorisation for all customer accounts at least once every six months, and shorten the high-risk KYC refresh cycle to match."
+  },
+  {
+   "doc_id": "rbi-md361",
+   "obligation": "rbi-md361:section:0053#3",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-03 \u00a73.2"
+   ],
+   "policy_quote": "Transaction monitoring flags spikes in volume, refunds above 10% and chargebacks above 1% of transactions for review within 2 working days.",
+   "finding": "Merchant transaction monitoring flags volume spikes, refunds and chargebacks, but no paragraph singles out marketing firms or Multi-level Marketing companies for close monitoring.",
+   "severity": "medium",
+   "action": "Add a specific close-monitoring requirement for marketing firms and MLM company accounts, with defined triggers and review steps."
+  },
+  {
+   "doc_id": "rbi-md361",
+   "obligation": "rbi-md361:section:0053#4",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-03 \u00a73.1",
+    "FP-02 \u00a74.1"
+   ],
+   "policy_quote": "High-risk merchants are reviewed every 6 months.",
+   "finding": "High-risk merchants are reviewed every six months, but the policy does not require intensified monitoring of high-risk accounts, and FP-02 \u00a74.1 applies the same CCO-approved scenarios to all customers.",
+   "severity": "medium",
+   "action": "Require more intensified transaction monitoring for all high-risk accounts, including customers, rather than only a six-monthly review of high-risk merchants."
+  },
+  {
+   "doc_id": "rbi-md361",
+   "obligation": "rbi-md361:section:0055#2",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-02 \u00a73.2"
+   ],
+   "policy_quote": "KYC is updated at least once every 2 years for high-risk customers, every 8 years for medium-risk and every 10 years for low-risk customers.",
+   "finding": "The policy gives the 2, 8 and 10 year cycles correctly but does not say the cycle is counted from account opening or last KYC updation.",
+   "severity": "low",
+   "action": "Add to FP-02 \u00a73.2 that the updation cycle runs from the date of account opening or the last KYC updation, whichever applies."
+  },
+  {
+   "doc_id": "rbi-md361",
+   "obligation": "rbi-md361:section:0065#4",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-02 \u00a75.1"
+   ],
+   "policy_quote": "Identification records and transaction records are kept for at least 5 years after the business relationship ends",
+   "finding": "The policy sets retention periods for records but does not describe a system for maintaining transaction records prescribed under PML Rule 3.",
+   "severity": "medium",
+   "action": "Add a documented record-maintenance system for PML Rule 3 transactions, covering how these records are created, kept and indexed."
+  },
+  {
+   "doc_id": "rbi-md361",
+   "obligation": "rbi-md361:section:0067#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-02 \u00a74.1"
+   ],
+   "policy_quote": "Suspicious Transaction Reports (STRs) are filed with FIU-IND within 7 days of arriving at the conclusion that a transaction is suspicious.",
+   "finding": "FP-02 \u00a74.1 covers filing STRs with FIU-IND within 7 days, but the obligation to furnish all information referred to in Rule 3 of the PML Rules is broader, and no cited paragraph addresses the other Rule 3 information.",
+   "severity": "medium",
+   "action": "Extend FP-02 \u00a74.1 to cover every category of information under Rule 3 of the PML (Maintenance of Records) Rules, 2005, and set its furnishing timeline to match Rule 7, for FlexiCredit as the NBFC."
+  },
+  {
+   "doc_id": "rbi-md361",
+   "obligation": "rbi-md361:section:0069#2",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-04 \u00a73.2",
+    "FP-20 \u00a73.1",
+    "FP-02 \u00a73.2"
+   ],
+   "policy_quote": "Alerts are reviewed by fraud operations within 4 hours, 24 hours a day.",
+   "finding": "FP-02 \u00a73.2 sets customer risk categories and KYC updation, and FP-04 \u00a73.2 reviews fraud alerts within 4 hours, but FP-20 \u00a73.1 says risk scoring is used only for post-transaction fraud alerts, so no alert is shown that flags transactions inconsistent with a customer's risk categorisation and updated profile.",
+   "severity": "medium",
+   "action": "Add a rule that generates alerts when a transaction is inconsistent with the customer's risk category and updated profile, and document it in FP-04 or FP-20."
+  },
+  {
+   "doc_id": "rbi-md361",
+   "obligation": "rbi-md361:section:0070#2",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FP-02 \u00a74.3"
+   ],
+   "policy_quote": "Customer names are screened against the UN Security Council sanctions lists and the lists under section 51A of the UAPA at onboarding and whenever the lists change.",
+   "finding": "The policy screens only against the UNSC and section 51A UAPA lists and does not refer to the lists in the Schedules to the 2007 Order.",
+   "severity": "medium",
+   "action": "Add the Schedules to the Prevention and Suppression of Terrorism (Implementation of Security Council Resolutions) Order, 2007, as amended, to the screened lists in FP-02 \u00a74.3."
+  },
+  {
+   "doc_id": "rbi-md361",
+   "obligation": "rbi-md361:section:0070#3",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FP-02 \u00a74.3"
+   ],
+   "policy_quote": "Customer names are screened against the UN Security Council sanctions lists and the lists under section 51A of the UAPA at onboarding and whenever the lists change.",
+   "finding": "The policy requires screening at onboarding and when lists change, but does not require daily verification of the UNSC and 2007 Order lists, including additions, deletions and modifications.",
+   "severity": "high",
+   "action": "Require daily verification of the UNSC Sanctions Lists and the 2007 Order Schedules, taking into account all additions, deletions and modifications, in FP-02 \u00a74.3."
+  },
+  {
+   "doc_id": "rbi-md361",
+   "obligation": "rbi-md361:section:0071#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-02 \u00a74.3"
+   ],
+   "policy_quote": "Customer names are screened against the UN Security Council sanctions lists and the lists under section 51A of the UAPA at onboarding and whenever the lists change.",
+   "finding": "FP-02 \u00a74.3 requires screening against the section 51A UAPA lists at onboarding and on list changes, but it sets no procedure for freezing assets as the UAPA Order of February 2, 2021 requires.",
+   "severity": "medium",
+   "action": "Add a freezing procedure to FP-02 that follows the UAPA Order dated February 2, 2021 (Annex I) for freezing assets under section 51A, applied to FlexiCredit's customers."
+  },
+  {
+   "doc_id": "rbi-md361",
+   "obligation": "rbi-md361:section:0071#2",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-02 \u00a74.3"
+   ],
+   "policy_quote": "Customer names are screened against the UN Security Council sanctions lists and the lists under section 51A of the UAPA at onboarding and whenever the lists change.",
+   "finding": "FP-02 \u00a74.3 covers only name screening, and no paragraph shows how the government's section 51A freezing order is carried out in full.",
+   "severity": "medium",
+   "action": "Extend FP-02 to set out the full steps for complying with the government's section 51A freezing order, covering both screening and the freezing actions, for FlexiCredit."
+  },
+  {
+   "doc_id": "rbi-md361",
+   "obligation": "rbi-md361:section:0072#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-02 \u00a74.3"
+   ],
+   "policy_quote": "Customer names are screened against the UN Security Council sanctions lists and the lists under section 51A of the UAPA at onboarding and whenever the lists change.",
+   "finding": "The policy screens against UN and UAPA section 51A lists but never refers to the Section 12A WMD Act implementation procedure in Annex II, so compliance with that procedure is not evidenced.",
+   "severity": "medium",
+   "action": "Add the Section 12A WMD Act implementation procedure to the KYC and AML Policy and state how the group complies with each of its steps."
+  },
+  {
+   "doc_id": "rbi-md361",
+   "obligation": "rbi-md361:section:0072#2",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-02 \u00a74.3"
+   ],
+   "policy_quote": "Customer names are screened against the UN Security Council sanctions lists and the lists under section 51A of the UAPA at onboarding and whenever the lists change.",
+   "finding": "The policy requires screening of customer names but does not prohibit carrying out transactions where particulars match a designated list.",
+   "severity": "medium",
+   "action": "Add an explicit rule in the KYC and AML Policy that no transaction is processed where a party's particulars match a designated list, with a hold procedure for matches."
+  },
+  {
+   "doc_id": "rbi-md361",
+   "obligation": "rbi-md361:section:0072#3",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-02 \u00a74.3"
+   ],
+   "policy_quote": "Customer names are screened against the UN Security Council sanctions lists and the lists under section 51A of the UAPA at onboarding and whenever the lists change.",
+   "finding": "Screening happens at onboarding and when lists change, but there is no periodic check of existing customer accounts to verify whether designated persons hold funds or financial assets.",
+   "severity": "medium",
+   "action": "Add a periodic screening of all existing NBFC account holders against the designated list, with a stated frequency and a check for funds or assets held."
+  },
+  {
+   "doc_id": "rbi-md361",
+   "obligation": "rbi-md361:section:0074#1",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FP-02 \u00a74.3"
+   ],
+   "policy_quote": "Customer names are screened against the UN Security Council sanctions lists and the lists under section 51A of the UAPA at onboarding and whenever the lists change.",
+   "finding": "The policy screens customers at onboarding and when lists change, but does not require a daily verification of the UNSCR 1718 list as the rule requires.",
+   "severity": "high",
+   "action": "Amend FP-02 \u00a74.3 to require daily verification of the UNSCR 1718 list against customer records, in addition to screening at onboarding and on list changes."
+  },
+  {
+   "doc_id": "rbi-md361",
+   "obligation": "rbi-md361:section:0074#2",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-02 \u00a74.3"
+   ],
+   "policy_quote": "Customer names are screened against the UN Security Council sanctions lists and the lists under section 51A of the UAPA at onboarding and whenever the lists change.",
+   "finding": "The policy screens against UN Security Council lists, which broadly covers the DPRK sanctions, but it never refers to the DPRK Order, 2017 or its amendments.",
+   "severity": "low",
+   "action": "Add a reference in FP-02 \u00a74.3 to the Implementation of Security Council Resolution on DPRK Order, 2017, as amended from time to time."
+  },
+  {
+   "doc_id": "rbi-md361",
+   "obligation": "rbi-md361:section:0074#4",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-02 \u00a74.3"
+   ],
+   "policy_quote": "Customer names are screened against the UN Security Council sanctions lists and the lists under section 51A of the UAPA at onboarding and whenever the lists change.",
+   "finding": "The policy covers lists under section 51A of the UAPA but does not mention the first and fourth schedules of UAPA or section 12A of the WMD Act.",
+   "severity": "medium",
+   "action": "Extend FP-02 \u00a74.3 to name the first and fourth schedule lists of UAPA and the section 12A WMD Act lists, with their amendments."
+  },
+  {
+   "doc_id": "rbi-md361",
+   "obligation": "rbi-md361:section:0076#4",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-08 \u00a73.1"
+   ],
+   "policy_quote": "Customer data is shared with third parties only with explicit consent or where the law requires it.",
+   "finding": "The policy allows sharing where the law requires it but does not require the NBFC to check that a government or agency request does not violate secrecy laws.",
+   "severity": "medium",
+   "action": "Add a step requiring legal or compliance review of each government or agency data request to confirm it does not breach laws relating to secrecy before disclosure."
+  },
+  {
+   "doc_id": "rbi-md361",
+   "obligation": "rbi-md361:section:0077#2",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-18 \u00a73.3"
+   ],
+   "policy_quote": "Every new RBI circular is read by the compliance team within 5 working days of issue.",
+   "finding": "FP-18 \u00a73.3 requires new RBI circulars to be read within 5 working days and assigned an owner and deadline, but no paragraph commits the NBFC to meticulously comply with RBI instructions issued on advice from the Ministry of Home Affairs.",
+   "severity": "medium",
+   "action": "Add a commitment in FP-18 that RBI instructions issued on Ministry of Home Affairs advice are complied with meticulously, with tracking of each such instruction in the compliance register."
+  },
+  {
+   "doc_id": "rbi-md361",
+   "obligation": "rbi-md361:section:0079#6",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-02 \u00a73.2"
+   ],
+   "policy_quote": "KYC is updated at least once every 2 years for high-risk customers, every 8 years for medium-risk and every 10 years for low-risk customers.",
+   "finding": "The policy sets periodic KYC updation cycles by risk category but says nothing about uploading or updating the pre-existing account KYC data to CKYCR at periodic updation or earlier when updated information is obtained.",
+   "severity": "medium",
+   "action": "Add a step requiring that KYC data for pre-existing accounts be uploaded or updated on CKYCR at each periodic updation, and earlier when updated information is obtained."
+  },
+  {
+   "doc_id": "rbi-md361",
+   "obligation": "rbi-md361:section:0083#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-04 \u00a73.3",
+    "FP-02 \u00a74.1"
+   ],
+   "policy_quote": "Mule-account indicators (many inbound credits from unrelated payers, immediate outward transfers, new devices) put a wallet on hold until a customer call confirms the activity.",
+   "finding": "The policies cover mule-indicator monitoring and scenario-based transaction monitoring, but no paragraph requires strict adherence to RBI instructions on opening accounts, and FP-11 \u00a71.1 covers only FlexiWallet opening, not FlexiCredit accounts.",
+   "severity": "medium",
+   "action": "Add an explicit requirement that FlexiCredit account opening and transaction monitoring strictly follow the RBI instructions on opening of accounts and minimising money mules."
+  },
+  {
+   "doc_id": "rbi-md361",
+   "obligation": "rbi-md361:section:0084#3",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-02 \u00a73.1",
+    "FP-03 \u00a73.2"
+   ],
+   "policy_quote": "Customers are rated low, medium or high risk at onboarding using occupation, income, product and geography.",
+   "finding": "The policy risk-rates customers at onboarding and flags transactions for monitoring, but it does not set out enhanced due diligence measures for high-risk customers beyond PEP CCO approval, and the risk-based approach is not extended to ML/TF controls for new products.",
+   "severity": "medium",
+   "action": "Add explicit EDD steps for high-risk customers and link transaction monitoring thresholds to the customer risk rating in FP-02 and FP-03."
+  },
+  {
+   "doc_id": "rbi-md361",
+   "obligation": "rbi-md361:section:0123#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-02 \u00a74.3"
+   ],
+   "policy_quote": "Customer names are screened against the UN Security Council sanctions lists and the lists under section 51A of the UAPA at onboarding and whenever the lists change.",
+   "finding": "The policy screens customer names against UN Security Council and UAPA section 51A lists at onboarding and on list changes, but it does not address screening of merchants or other counterparties, nor the WMD Act or orders under it, and it does not bar financing of WMD-related activity.",
+   "severity": "medium",
+   "action": "Extend screening to merchants, borrowers and transaction counterparties, cover the Weapons of Mass Destruction Act, 2005 and orders under it, and add an explicit prohibition on financing WMD-related activity."
+  },
+  {
+   "doc_id": "rbi-md361",
+   "obligation": "rbi-md361:section:0127#5",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-02 \u00a74.3"
+   ],
+   "policy_quote": "Customer names are screened against the UN Security Council sanctions lists and the lists under section 51A of the UAPA at onboarding and whenever the lists change.",
+   "finding": "The policy screens customers at onboarding and whenever the lists change, but it does not state that the designated list is maintained or updated without delay when changes are made.",
+   "severity": "low",
+   "action": "Add to FP-02 \u00a74.3 a requirement that the designated list held by FlexiPay and FlexiCredit is maintained and updated without delay whenever the UN or section 51A lists change."
+  },
+  {
+   "doc_id": "rbi-md362",
+   "obligation": "rbi-md362:section:0007#2",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FC-14 \u00a71.1"
+   ],
+   "policy_quote": "Loan application screens are in English and Hindi.",
+   "finding": "The policy makes application screens available in English and Hindi, but it does not say the Fair Practices Code itself is provided in the vernacular or in a language the borrower understands.",
+   "severity": "low",
+   "action": "Add to FC-14 that the Fair Practices Code is provided in the vernacular or in a language the borrower understands, and not only the application screens."
+  },
+  {
+   "doc_id": "rbi-md362",
+   "obligation": "rbi-md362:section:0007#4",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FC-14 \u00a74.1"
+   ],
+   "policy_quote": "Any change to charges is told to borrowers at least 30 days in advance, by SMS and in the app.",
+   "finding": "The policy requires 30 days' advance notice of charge changes, but it does not require the Fair Practices Code's transparency guidelines to be considered when setting interest rates and processing, penal and other charges.",
+   "severity": "medium",
+   "action": "Add a clause to FC-14 requiring that interest rates and processing, penal and other charges be set in line with the Code's transparency guidelines on loan terms."
+  },
+  {
+   "doc_id": "rbi-md362",
+   "obligation": "rbi-md362:section:0008#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FC-14 \u00a77.1",
+    "FP-09 \u00a75.1"
+   ],
+   "policy_quote": "The Board reviews compliance with this code every year.",
+   "finding": "FC-14 requires the Board to review Fair Practices Code compliance annually, but no paragraph has the Board review the functioning of the grievance redressal mechanism at various management levels; FP-09 assigns grievance review to the Customer Service Committee, not the Board.",
+   "severity": "medium",
+   "action": "Amend FC-14 \u00a77.1 so the Board's periodic review also covers the functioning of the grievance redressal mechanism at each level of management, not only Fair Practices Code compliance."
+  },
+  {
+   "doc_id": "rbi-md362",
+   "obligation": "rbi-md362:section:0008#2",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FP-09 \u00a75.1",
+    "FC-14 \u00a77.1"
+   ],
+   "policy_quote": "The Customer Service Committee reviews complaint volumes, root causes and turnaround times every quarter.",
+   "finding": "FP-09 has the Customer Service Committee review grievances quarterly and FC-14 has the Board review compliance annually, but neither requires a consolidated report of these reviews to be submitted to the Board at regular intervals.",
+   "severity": "medium",
+   "action": "Add a requirement that the Customer Service Committee's quarterly grievance reviews and the annual Fair Practices Code review are consolidated into a report submitted to the Board at regular intervals."
+  },
+  {
+   "doc_id": "rbi-md362",
+   "obligation": "rbi-md362:section:0009#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FC-14 \u00a71.1"
+   ],
+   "policy_quote": "Loan application screens are in English and Hindi.",
+   "finding": "The policy makes application screens available in English and Hindi, but does not require all borrower communications to be in a vernacular language or one the borrower understands.",
+   "severity": "medium",
+   "action": "Extend the policy so that all borrower communications are in the borrower's vernacular language or a language the borrower understands, not only application screens in English and Hindi."
+  },
+  {
+   "doc_id": "rbi-md362",
+   "obligation": "rbi-md362:section:0009#2",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FC-13 \u00a73.1"
+   ],
+   "policy_quote": "A Key Fact Statement (KFS), in the standard format, is shown before the loan agreement is signed.",
+   "finding": "The KFS shows the APR, but it is shown only before the agreement is signed, and no policy paragraph requires the application form itself to carry the information needed for comparison with other lenders.",
+   "severity": "medium",
+   "action": "Require the loan application form to show the APR and other terms affecting the borrower so that a meaningful comparison with other lenders is possible, not only the KFS shown before signing."
+  },
+  {
+   "doc_id": "rbi-md362",
+   "obligation": "rbi-md362:section:0010#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FC-14 \u00a71.1"
+   ],
+   "policy_quote": "Applicants are told within 2 working days whether the loan is sanctioned.",
+   "finding": "FC-14 \u00a71.1 provides English and Hindi application screens, a sanction notice within 2 working days and written reasons for rejection, but nothing requires a written sanction letter stating the sanctioned amount, the full terms and the annualised rate of interest in the borrower's understood language.",
+   "severity": "medium",
+   "action": "Add to FC-14 \u00a71.1 a requirement that every sanction is conveyed in writing, in the borrower's understood vernacular language, stating the sanctioned amount, all terms and the annualised interest rate and its method of application."
+  },
+  {
+   "doc_id": "rbi-md362",
+   "obligation": "rbi-md362:section:0010#3",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FC-14 \u00a73.1"
+   ],
+   "policy_quote": "If an EMI is not paid on its due date, **penal interest** of 2% a month is added to the loan's interest rate on the overdue amount until it is paid.",
+   "finding": "FC-14 \u00a73.1 sets the late-payment penal interest of 2% a month, but does not require the penalty to be shown in bold in the loan agreement.",
+   "severity": "medium",
+   "action": "Amend FC-14 \u00a73.1 and the loan agreement template so that the late-repayment penalty is printed in bold in the loan agreement."
+  },
+  {
+   "doc_id": "rbi-md362",
+   "obligation": "rbi-md362:section:0011#2",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FC-14 \u00a74.1"
+   ],
+   "policy_quote": "Any change to charges is told to borrowers at least 30 days in advance, by SMS and in the app.",
+   "finding": "FC-14 \u00a74.1 requires advance notice of charge changes by SMS and in the app, but does not cover changes to interest rates, disbursement schedule or prepayment charges, and does not require notice in the vernacular or a language the borrower understands.",
+   "severity": "medium",
+   "action": "Extend the advance notice to all changes in terms, including interest rates, disbursement schedule, service charges and prepayment charges, and give it in the vernacular or a language the borrower understands."
+  },
+  {
+   "doc_id": "rbi-md362",
+   "obligation": "rbi-md362:section:0011#3",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FC-14 \u00a72.1",
+    "FC-14 \u00a74.1"
+   ],
+   "policy_quote": "Interest rates are fixed for the life of the loan and set by the Board-approved interest rate model",
+   "finding": "FC-14 \u00a72.1 fixes interest rates for the life of the loan, which leaves no mid-loan rate change, but FC-14 \u00a74.1 allows charge changes on 30 days' notice without stating that they take effect only prospectively.",
+   "severity": "medium",
+   "action": "State in FC-14 \u00a74.1 that any change to interest rates or charges takes effect only prospectively, for loans sanctioned or disbursed after the change, and never for existing loans."
+  },
+  {
+   "doc_id": "rbi-md362",
+   "obligation": "rbi-md362:section:0017#1",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FC-13 \u00a73.1",
+    "FC-13 \u00a73.2"
+   ],
+   "policy_quote": "A Key Fact Statement (KFS), in the standard format, is shown before the loan agreement is signed.",
+   "finding": "FC-13 \u00a73.1 requires the standard KFS before signing, but FC-13 \u00a73.2 replaces the KFS with a one-screen summary for loans of \u20b910,000 or less, so those borrowers do not all receive a KFS.",
+   "severity": "medium",
+   "action": "Remove the \u20b910,000 exemption in FC-13 \u00a73.2 so that every prospective borrower receives the standard Annex I KFS, keeping the one-screen summary only as an addition."
+  },
+  {
+   "doc_id": "rbi-md362",
+   "obligation": "rbi-md362:section:0017#2",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FC-14 \u00a71.1"
+   ],
+   "policy_quote": "Loan application screens are in English and Hindi.",
+   "finding": "FC-14 \u00a71.1 makes application screens available in English and Hindi, but no paragraph requires the KFS to be explained to the borrower or an acknowledgement of understanding to be obtained.",
+   "severity": "medium",
+   "action": "Add to FC-13 \u00a73.1 a step requiring the KFS to be explained in a language the borrower understands and a recorded borrower acknowledgement of understanding before signing."
+  },
+  {
+   "doc_id": "rbi-md362",
+   "obligation": "rbi-md362:section:0017#5",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FC-13 \u00a73.1"
+   ],
+   "policy_quote": "It shows the annual percentage rate (APR), the recovery mechanism, the grievance officer and the cooling-off terms.",
+   "finding": "FC-13 \u00a73.1 says the KFS shows the APR, but it does not require a computation sheet, an amortisation schedule, or an APR that includes all charges.",
+   "severity": "medium",
+   "action": "Amend FC-13 \u00a73.1 to require an APR computation sheet and the full amortisation schedule over the loan tenor, with APR computed on all charges levied by FlexiCredit."
+  },
+  {
+   "doc_id": "rbi-md362",
+   "obligation": "rbi-md362:section:0022#3",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FC-14 \u00a73.2",
+    "FC-14 \u00a74.1"
+   ],
+   "policy_quote": "A bounce charge of \u20b9500 applies to each failed auto-debit.",
+   "finding": "The policy sets a bounce charge and requires 30 days' notice of changes to charges, but does not require that every charge be listed in the KFS or obtain the borrower's explicit consent before an unlisted charge is levied.",
+   "severity": "medium",
+   "action": "Add a rule that no charge outside the KFS may be levied during the loan term without the borrower's explicit consent, and that the bounce charge is listed in the KFS."
+  },
+  {
+   "doc_id": "rbi-md362",
+   "obligation": "rbi-md362:section:0022#4",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FC-13 \u00a73.1",
+    "FC-13 \u00a73.2"
+   ],
+   "policy_quote": "A Key Fact Statement (KFS), in the standard format, is shown before the loan agreement is signed.",
+   "finding": "The policy shows the KFS before signing but does not say it is exhibited as a summary box part of the loan agreement, and it exempts loans of \u20b910,000 or less from the KFS entirely.",
+   "severity": "high",
+   "action": "Require the KFS, as a summary box forming part of the loan agreement, for all loans, and remove the one-screen substitute for loans of \u20b910,000 or less."
+  },
+  {
+   "doc_id": "rbi-md362",
+   "obligation": "rbi-md362:section:0023#1",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FC-14 \u00a73.1"
+   ],
+   "policy_quote": "of 2% a month is added to the loan's interest rate on the overdue amount until it is paid.",
+   "finding": "The policy levies penal interest of 2% a month on overdue EMIs, whereas the rule requires penal charges under the Board-approved penal charge framework and forbids penal interest on advances.",
+   "severity": "high",
+   "action": "Replace the 2% a month penal interest in FC-14 \u00a73.1 with a Board-approved penal charge on the amount under default, levied as a charge and not as interest."
+  },
+  {
+   "doc_id": "rbi-md362",
+   "obligation": "rbi-md362:section:0023#2",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FC-14 \u00a73.1"
+   ],
+   "policy_quote": "of 2% a month is added to the loan's interest rate on the overdue amount until it is paid.",
+   "finding": "The policy imposes non-compliance penalties as penal interest added to the rate of interest, which the rule prohibits.",
+   "severity": "high",
+   "action": "Amend FC-14 \u00a73.1 so that any penalty for breach of loan terms is recorded as a penal charge and never added to the interest rate."
+  },
+  {
+   "doc_id": "rbi-md362",
+   "obligation": "rbi-md362:section:0023#4",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FC-14 \u00a73.1"
+   ],
+   "policy_quote": "of 2% a month is added to the loan's interest rate on the overdue amount until it is paid.",
+   "finding": "The policy charges a 2% monthly penal interest on overdue amounts, whereas the rule requires interest on unpaid interest and EMI to be charged at the contracted rate until remediation.",
+   "severity": "high",
+   "action": "Revise FC-14 \u00a73.1 to charge interest on unpaid interest and unpaid EMI at the contracted rate until remediation, not at a penal rate."
+  },
+  {
+   "doc_id": "rbi-md362",
+   "obligation": "rbi-md362:section:0023#5",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FC-14 \u00a73.1"
+   ],
+   "policy_quote": "of 2% a month is added to the loan's interest rate on the overdue amount until it is paid.",
+   "finding": "The policy levies default penalties as penal interest on the overdue amount rather than as reasonable penal charges on the amount in default under a Board-approved, non-discriminatory policy.",
+   "severity": "high",
+   "action": "Restate FC-14 \u00a73.1 so default penalties are reasonable penal charges on the defaulted amount, applied non-discriminatorily under a Board-approved policy, and not as penal interest."
+  },
+  {
+   "doc_id": "rbi-md362",
+   "obligation": "rbi-md362:section:0024#3",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FC-14 \u00a77.1",
+    "FC-14 \u00a73.1"
+   ],
+   "policy_quote": "The Board reviews compliance with this code every year.",
+   "finding": "The Fair Practices Code sets penal charges, but no paragraph shows that the Board approves a penal charges policy; the Board only reviews compliance annually.",
+   "severity": "medium",
+   "action": "State in FC-14 that the Board approves the penal charges policy, separately from the annual compliance review."
+  },
+  {
+   "doc_id": "rbi-md362",
+   "obligation": "rbi-md362:section:0025#2",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FC-13 \u00a73.1",
+    "FC-14 \u00a73.1"
+   ],
+   "policy_quote": "A Key Fact Statement (KFS), in the standard format, is shown before the loan agreement is signed.",
+   "finding": "The KFS is required to show APR, recovery mechanism, grievance officer and cooling-off terms, but not the penal charges and their reason, and no paragraph requires the quantum and reason to be disclosed upfront in the agreement or on the website.",
+   "severity": "medium",
+   "action": "Add the penal charge quantum and reason to the loan agreement and the KFS, and display the penal charge schedule under Interest rates and Service Charges on the FlexiCredit website."
+  },
+  {
+   "doc_id": "rbi-md362",
+   "obligation": "rbi-md362:section:0025#5",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FC-14 \u00a73.1"
+   ],
+   "policy_quote": "If an EMI is not paid on its due date, **penal interest** of 2% a month is added to the loan's interest rate on the overdue amount until it is paid.",
+   "finding": "FC-14 \u00a73.1 adds penal interest automatically on overdue amounts but does not require the levy or its reason to be communicated to the borrower.",
+   "severity": "medium",
+   "action": "Require FlexiCredit to notify the borrower of each levy of penal interest and the reason for it, via SMS and in the app."
+  },
+  {
+   "doc_id": "rbi-md362",
+   "obligation": "rbi-md362:section:0026#4",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FC-13 \u00a74.1"
+   ],
+   "policy_quote": "A prepayment fee of 3% of the principal applies during the first 30 days.",
+   "finding": "The policy charges a 3% prepayment fee in the first 30 days and says nothing on part prepayment, so it does not give borrowers an unrestricted choice to prepay in part or full at any point in the tenor.",
+   "severity": "medium",
+   "action": "Confirm that part and full prepayment are allowed at any point in the tenor and either remove the 3% fee or limit it to what the Board has approved under RBI rules."
+  },
+  {
+   "doc_id": "rbi-md362",
+   "obligation": "rbi-md362:section:0027#2",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FC-14 \u00a72.1",
+    "FC-14 \u00a74.1"
+   ],
+   "policy_quote": "Interest rates are fixed for the life of the loan and set by the Board-approved interest rate model",
+   "finding": "The policy has Board approval for the interest rate model and notice of charge changes by SMS and app, but it does not say that charges are Board-approved or displayed on the website.",
+   "severity": "medium",
+   "action": "Require Board approval of the applicable charges and display of those approved charges on the FlexiCredit website."
+  },
+  {
+   "doc_id": "rbi-md362",
+   "obligation": "rbi-md362:section:0038#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FC-14 \u00a71.1"
+   ],
+   "policy_quote": "Loan application screens are in English and Hindi.",
+   "finding": "The policy only sets English and Hindi for application screens, while the rule requires all borrower communication, especially loan terms, to be in the regional language or the borrower's chosen language.",
+   "severity": "medium",
+   "action": "Extend FC-14 to cover all borrower communication, including loan terms and important notices, in the regional language or the language the borrower chooses."
+  },
+  {
+   "doc_id": "rbi-md362",
+   "obligation": "rbi-md362:section:0048#8",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FC-17 \u00a74.1"
+   ],
+   "policy_quote": "A complaint about a recovery agent is handled under FP-09.",
+   "finding": "Complaints about recovery agents are routed to the general customer grievance policy FP-09 rather than a dedicated recovery grievance mechanism.",
+   "severity": "medium",
+   "action": "Create a dedicated recovery grievance redressal mechanism in FC-17 \u00a74.1 instead of routing complaints to the general FP-09 process."
+  },
+  {
+   "doc_id": "rbi-md362",
+   "obligation": "rbi-md362:section:0049#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FC-17 \u00a72.1"
+   ],
+   "policy_quote": "Agencies are checked before empanelment, and their agents' police verification is done by the agency.",
+   "finding": "The policy checks recovery agencies before empanelment but sets no due diligence process covering the individuals who carry out recovery.",
+   "severity": "medium",
+   "action": "Add a due diligence step in FC-17 that covers each individual recovery agent, not only the agency, before they are deployed on FlexiCredit accounts."
+  },
+  {
+   "doc_id": "rbi-md362",
+   "obligation": "rbi-md362:section:0049#2",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FC-17 \u00a72.1"
+   ],
+   "policy_quote": "Agencies are checked before empanelment, and their agents' police verification is done by the agency.",
+   "finding": "The policy requires the agency to do police verification of agents but does not require verification of the antecedents of agents' employees beyond police verification.",
+   "severity": "medium",
+   "action": "Require in FC-17 that recovery agents verify the antecedents of their employees, including police verification, and that FlexiCredit confirms this is done."
+  },
+  {
+   "doc_id": "rbi-md362",
+   "obligation": "rbi-md362:section:0050#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FC-17 \u00a72.3"
+   ],
+   "policy_quote": "The borrower is told the name and contact details of the agency when the account is passed to it, in the app and by SMS.",
+   "finding": "The policy gives the borrower the recovery agency's contact details by app and SMS, but it does not require the NBFC's contact details or their inclusion in the notice and authorisation letter.",
+   "severity": "medium",
+   "action": "Add the NBFC's contact details to the notice and authorisation letter, alongside the recovery agency's contact details."
+  },
+  {
+   "doc_id": "rbi-n12527",
+   "obligation": "rbi-n12527:section:0003#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-18 \u00a73.3",
+    "FP-18 \u00a75.1"
+   ],
+   "policy_quote": "The CCO decides whether it applies, and assigns an owner and a deadline for any change.",
+   "finding": "FP-18 \u00a73.3 requires the CCO to review each new RBI circular and assign owners and deadlines for changes, and FP-18 \u00a75.1 requires policies to be reviewed when a regulation changes, but no paragraph explicitly requires the relevant Master Directions or internal policies to be updated once the circular is applied.",
+   "severity": "low",
+   "action": "Add a step to FP-18 \u00a73.3 requiring the compliance team to record when the affected Master Direction or internal policy has been updated to reflect each circular."
+  },
+  {
+   "doc_id": "rbi-n12527",
+   "obligation": "rbi-n12527:section:0005#1",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FC-14 \u00a71.1",
+    "FC-14 \u00a72.1"
+   ],
+   "policy_quote": "Loan application screens are in English and Hindi. Applicants are told within 2 working days whether the loan is sanctioned.",
+   "finding": "FC-14 covers English and Hindi screens and a sanction notice within 2 working days, but does not require written communication of the sanctioned amount, full terms, annualised interest rate and method of application in the borrower's vernacular language.",
+   "severity": "medium",
+   "action": "Add a step requiring written communication to each borrower, in the vernacular they understand, of the sanctioned amount, all terms and conditions, the annualised interest rate and how it is applied."
+  },
+  {
+   "doc_id": "rbi-n12527",
+   "obligation": "rbi-n12527:section:0006#5",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FC-14 \u00a77.1"
+   ],
+   "policy_quote": "The Board reviews compliance with this code every year.",
+   "finding": "The policy has an annual Board review of compliance with the Fair Practices Code, but no paragraph shows that the Board approves a policy on penal charges.",
+   "severity": "medium",
+   "action": "Add a requirement that the Board approves a dedicated policy on penal charges and similar charges on loans."
+  },
+  {
+   "doc_id": "rbi-n12527",
+   "obligation": "rbi-n12527:section:0007#3",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FC-13 \u00a73.1"
+   ],
+   "policy_quote": "It shows the annual percentage rate (APR), the recovery mechanism, the grievance officer and the cooling-off terms.",
+   "finding": "FC-13 \u00a73.1 lists what the Key Fact Statement shows but omits penal charges, and no paragraph requires penal charges to be displayed on the website under Interest rates and Service Charges.",
+   "severity": "medium",
+   "action": "Add penal charges to the Key Fact Statement and display them on the website under Interest rates and Service Charges."
+  },
+  {
+   "doc_id": "rbi-n12527",
+   "obligation": "rbi-n12527:section:0008#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FC-14 \u00a71.1",
+    "FC-14 \u00a72.1"
+   ],
+   "policy_quote": "Applicants are told within 2 working days whether the loan is sanctioned. A rejected applicant is told the main reasons in writing.",
+   "finding": "FC-14 requires applicants to be told of sanction within 2 working days and in English and Hindi screens, but does not require the sanctioned amount, full terms, annualised rate and method of application to be conveyed in writing in the borrower's language.",
+   "severity": "medium",
+   "action": "Amend FC-14 \u00a71.1 to require written communication of the sanctioned amount, full terms, annualised interest rate and its method of application, in the vernacular language understood by each borrower."
+  },
+  {
+   "doc_id": "rbi-n12527",
+   "obligation": "rbi-n12527:section:0009#4",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FC-14 \u00a77.1"
+   ],
+   "policy_quote": "The Board reviews compliance with this code every year.",
+   "finding": "FC-14 \u00a77.1 provides for annual Board review of compliance with the code, but no paragraph says the Board approves a policy on penal charges.",
+   "severity": "medium",
+   "action": "Add a requirement that the Board approves a policy on penal and similar charges on loans, in addition to its annual review."
+  },
+  {
+   "doc_id": "rbi-n12527",
+   "obligation": "rbi-n12527:section:0014#4",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FC-14 \u00a77.1"
+   ],
+   "policy_quote": "The Board reviews compliance with this code every year.",
+   "finding": "The policy has an annual Board review of compliance with the Fair Practices Code but does not show a Board-approved policy on penal charges or similar charges.",
+   "severity": "medium",
+   "action": "Have the Board formally approve a penal charges policy covering all penal and similar loan charges, and reference it in FC-14."
+  },
+  {
+   "doc_id": "rbi-n12527",
+   "obligation": "rbi-n12527:section:0015#2",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FC-13 \u00a73.1"
+   ],
+   "policy_quote": "It shows the annual percentage rate (APR), the recovery mechanism, the grievance officer and the cooling-off terms.",
+   "finding": "The KFS under FC-13 \u00a73.1 does not require the quantum and reason for penal charges, and no paragraph requires disclosure of them in the loan agreement or on the website.",
+   "severity": "medium",
+   "action": "Add the quantum and reason for penal charges to the loan agreement, the KFS and the website's Interest rates and Service Charges section."
+  },
+  {
+   "doc_id": "rbi-n12527",
+   "obligation": "rbi-n12527:section:0018#4",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FC-14 \u00a77.1"
+   ],
+   "policy_quote": "The Board reviews compliance with this code every year.",
+   "finding": "FC-14 \u00a77.1 provides for annual Board review of the code, but no paragraph shows a Board-approved policy on penal charges.",
+   "severity": "medium",
+   "action": "Adopt a Board-approved policy on penal charges or similar charges on loans, by whatever name called, and reference it in FC-14."
+  },
+  {
+   "doc_id": "rbi-n12562",
+   "obligation": "rbi-n12562:section:0009#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-19 \u00a77.1"
+   ],
+   "policy_quote": "The plan is reviewed every year, and after every real fail-over.",
+   "finding": "FP-19 \u00a77.1 requires the BCP and DR plan to be reviewed every year, which meets the annual cadence, but no paragraph shows the RE Board itself reviewing the adequacy and effectiveness of BCP and DR management.",
+   "severity": "medium",
+   "action": "Amend FP-19 \u00a77.1 or FP-18 so that the Board of FlexiPay and FlexiCredit expressly reviews the adequacy and effectiveness of BCP and DR at least annually."
+  },
+  {
+   "doc_id": "rbi-n12562",
+   "obligation": "rbi-n12562:section:0011#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-00 \u00a74.1"
+   ],
+   "policy_quote": "Chief Executive Officer; Chief Compliance Officer (CCO); Chief Risk Officer (CRO); Chief Information Security Officer (CISO); Chief Technology Officer",
+   "finding": "The policy lists a Chief Technology Officer and a CISO but does not designate any Head of IT Function, nor state that the role is sufficiently senior, technically competent and experienced.",
+   "severity": "medium",
+   "action": "Designate a named senior officer as Head of IT Function in the governance policy, with stated seniority and technical competence requirements."
+  },
+  {
+   "doc_id": "rbi-n12562",
+   "obligation": "rbi-n12562:section:0011#4",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-19 \u00a73.1",
+    "FP-19 \u00a77.1"
+   ],
+   "policy_quote": "Disaster recovery: AWS Hyderabad (ap-south-2), in warm standby with continuous database replication.",
+   "finding": "The BCP/DR plan sets a warm-standby DR site and yearly review, but does not assign responsibility for it to the Head of IT Function.",
+   "severity": "low",
+   "action": "Name the Head of IT Function as the accountable owner of the disaster recovery setup and business continuity plan in FP-19."
+  },
+  {
+   "doc_id": "rbi-n12562",
+   "obligation": "rbi-n12562:section:0012#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-19 \u00a73.1"
+   ],
+   "policy_quote": "Primary: AWS Mumbai (ap-south-1). Disaster recovery: AWS Hyderabad (ap-south-2), in warm standby with continuous database replication.",
+   "finding": "FP-19 covers DR sites and recovery objectives for operational resilience, but no paragraph sets up an IT Service Management Framework for the wider IT environment.",
+   "severity": "medium",
+   "action": "Adopt a documented IT Service Management Framework covering the whole IT environment, including DR sites, and reference it in FP-19."
+  },
+  {
+   "doc_id": "rbi-n12562",
+   "obligation": "rbi-n12562:section:0012#2",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-07 \u00a75.1"
+   ],
+   "policy_quote": "Material vendors are reviewed every two years against their service levels and an information security questionnaire.",
+   "finding": "FP-07 reviews material vendors against service levels every two years, but no paragraph sets up a Service Level Management process for internal IT operations or addresses segregation of duties.",
+   "severity": "medium",
+   "action": "Create a Service Level Management process for internal IT operations, with defined segregation of duties, and set review intervals for it."
+  },
+  {
+   "doc_id": "rbi-n12562",
+   "obligation": "rbi-n12562:section:0012#3",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a72.1"
+   ],
+   "policy_quote": "Every information asset has a named owner and a classification (public, internal, confidential, restricted).",
+   "finding": "FP-05 classifies assets by a single sensitivity scale (public, internal, confidential, restricted) and does not map Confidentiality, Integrity and Availability levels based on criticality to operations.",
+   "severity": "medium",
+   "action": "Extend the asset classification in FP-05 to rate each asset for Confidentiality, Integrity and Availability based on its criticality to operations."
+  },
+  {
+   "doc_id": "rbi-n12562",
+   "obligation": "rbi-n12562:section:0013#2",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-07 \u00a76.1"
+   ],
+   "policy_quote": "Each material vendor has a documented exit plan. Cloud exit is tested by restoring a backup to a second provider once every three years.",
+   "finding": "The policy requires exit plans for material vendors, which partly addresses concentration and single point of failure, but it says nothing about identifying or eliminating conflicts of interest.",
+   "severity": "medium",
+   "action": "Add a conflict-of-interest assessment for vendor selection and a single-point-of-failure review for each critical vendor, alongside the exit plans."
+  },
+  {
+   "doc_id": "rbi-n12562",
+   "obligation": "rbi-n12562:section:0013#3",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-07 \u00a74.1",
+    "FP-08 \u00a73.1"
+   ],
+   "policy_quote": "Every contract gives FlexiPay and the RBI the right to audit and inspect the vendor, requires data to be kept confidential and returned on exit, and sets service levels.",
+   "finding": "Contracts require confidentiality and data return and customer data is shared only with consent or where law requires, but no paragraph requires vendors to comply with applicable legal and regulatory data protection standards.",
+   "severity": "medium",
+   "action": "Add a contract clause requiring vendors to comply with all applicable legal, regulatory and data protection standards for customer data."
+  },
+  {
+   "doc_id": "rbi-n12562",
+   "obligation": "rbi-n12562:section:0013#4",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-07 \u00a74.1",
+    "FP-19 \u00a71.1"
+   ],
+   "policy_quote": "Every contract gives FlexiPay and the RBI the right to audit and inspect the vendor, requires data to be kept confidential and returned on exit, and sets service levels.",
+   "finding": "Contracts set service levels and the continuity plan names critical services, but no paragraph requires vendors to provide high availability for uninterrupted customer service.",
+   "severity": "medium",
+   "action": "Require in vendor contracts for critical services a stated high-availability standard with uptime targets and failover commitments."
+  },
+  {
+   "doc_id": "rbi-n12562",
+   "obligation": "rbi-n12562:section:0013#5",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-07 \u00a73.1"
+   ],
+   "policy_quote": "Financial standing, security certifications (ISO 27001 or SOC 2), data location, sub-contractors, and the vendor's business continuity plan.",
+   "finding": "Due diligence checks vendor sub-contractors before contract, but the policy has no ongoing process to manage supply chain risks effectively after contract.",
+   "severity": "low",
+   "action": "Add a requirement to monitor vendor sub-contractors and their risks throughout the contract term, not only at onboarding."
+  },
+  {
+   "doc_id": "rbi-n12562",
+   "obligation": "rbi-n12562:section:0013#6",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-19 \u00a71.1"
+   ],
+   "policy_quote": "FlexiUPI, FlexiWallet, FlexiPay Checkout and loan repayment collection.",
+   "finding": "The continuity plan identifies the critical service delivery channels, but no paragraph requires information systems to support business functions or to ensure availability of all channels.",
+   "severity": "medium",
+   "action": "Add a requirement that information systems and infrastructure are sized and monitored to keep all service delivery channels available."
+  },
+  {
+   "doc_id": "rbi-n12562",
+   "obligation": "rbi-n12562:section:0015#2",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a74.3"
+   ],
+   "policy_quote": "Critical vulnerabilities are fixed within 15 days and high ones within 30 days.",
+   "finding": "The policy sets fix deadlines for critical and high vulnerabilities but does not require patches or changes to be approved or reviewed in a secure manner.",
+   "severity": "medium",
+   "action": "Extend the Information Security Policy so every patch and change needs documented approval before deployment and a review after it is applied."
+  },
+  {
+   "doc_id": "rbi-n12562",
+   "obligation": "rbi-n12562:section:0016#3",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a75.1",
+    "FP-05 \u00a73.1"
+   ],
+   "policy_quote": "Logs from production systems go to a SIEM watched by an outsourced Security Operations Centre, 24 hours a day.",
+   "finding": "The policy keeps logs for 180 days and logs privileged sessions, but it does not require audit trails to be detailed enough for audit, forensic evidence, dispute resolution or non-repudiation.",
+   "severity": "low",
+   "action": "Add a requirement that audit trails capture the detail needed for audits, forensic evidence, dispute resolution and non-repudiation."
+  },
+  {
+   "doc_id": "rbi-n12562",
+   "obligation": "rbi-n12562:section:0018#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a73.2",
+    "FP-05 \u00a73.1"
+   ],
+   "policy_quote": "Access rights are reviewed every 6 months.",
+   "finding": "The policy reviews access rights every 6 months and grants privileged access for a fixed time, but nowhere states that access is allowed only where a valid business need exists.",
+   "severity": "medium",
+   "action": "Add a rule to FP-05 that access to information assets is granted only where a valid business need exists and is documented."
+  },
+  {
+   "doc_id": "rbi-n12562",
+   "obligation": "rbi-n12562:section:0018#2",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a73.2",
+    "FP-05 \u00a73.1"
+   ],
+   "policy_quote": "Access rights are reviewed every 6 months.",
+   "finding": "The access control section sets a review cycle but does not show documented need-based access procedures approved by the ITSC and kept up to date.",
+   "severity": "medium",
+   "action": "Have the ITSC approve a need-based access administration procedure and set a review cycle for keeping it current."
+  },
+  {
+   "doc_id": "rbi-n12562",
+   "obligation": "rbi-n12562:section:0018#3",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a73.1",
+    "FP-05 \u00a75.1"
+   ],
+   "policy_quote": "Privileged access is granted for a fixed time and every session is logged.",
+   "finding": "Privileged sessions are logged and logs go to a 24-hour SIEM, but the policy does not require periodic review of privileged users' logged activities or close supervision of them.",
+   "severity": "medium",
+   "action": "Add a periodic review of all logged activity of privileged users, with named reviewers and a set frequency."
+  },
+  {
+   "doc_id": "rbi-n12562",
+   "obligation": "rbi-n12562:section:0018#6",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a73.1"
+   ],
+   "policy_quote": "Production systems are reached only through a bastion host with multi-factor authentication.",
+   "finding": "MFA is required for production access through the bastion host, but the policy does not extend MFA to enterprise logical access to critical systems from teleworking locations.",
+   "severity": "medium",
+   "action": "Extend the MFA requirement to all enterprise logical access to critical systems made from teleworking locations."
+  },
+  {
+   "doc_id": "rbi-n12562",
+   "obligation": "rbi-n12562:section:0020#2",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-18 \u00a75.1",
+    "FP-04 \u00a76.1"
+   ],
+   "policy_quote": "A policy is reviewed at least once a year, and earlier when a regulation it implements changes.",
+   "finding": "The policy is reviewed at least yearly, but no paragraph requires the RMCB to conduct the review in consultation with the IT Strategy Committee (ITSC).",
+   "severity": "medium",
+   "action": "Require the RMCB to review the risk management policy annually in consultation with the ITSC."
+  },
+  {
+   "doc_id": "rbi-n12562",
+   "obligation": "rbi-n12562:section:0020#7",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-04 \u00a72.2"
+   ],
+   "policy_quote": "The fraud risk function reports to the CRO and is independent of the business teams.",
+   "finding": "Fraud risk independence is stated, but no paragraph identifies role conflicts from the shared CCO, CRO and CISO under the group services agreement.",
+   "severity": "medium",
+   "action": "Identify role conflicts and accountability gaps arising from the shared CCO, CRO and CISO and document how they are eliminated or managed."
+  },
+  {
+   "doc_id": "rbi-n12562",
+   "obligation": "rbi-n12562:section:0020#8",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a74.3"
+   ],
+   "policy_quote": "Critical vulnerabilities are fixed within 15 days and high ones within 30 days.",
+   "finding": "Vulnerability fix timelines exist, but no paragraph requires identifying critical information systems or fortifying their security environment.",
+   "severity": "medium",
+   "action": "Require the company to identify its critical information systems and set specific hardening controls for them."
+  },
+  {
+   "doc_id": "rbi-n12562",
+   "obligation": "rbi-n12562:section:0021#2",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-06 \u00a72.2"
+   ],
+   "policy_quote": "Contain, preserve evidence, eradicate, recover, then review.",
+   "finding": "FP-06 gives incident response steps only; no Cyber Security Policy or Cyber Crisis Management Plan (CCMP) is shown.",
+   "severity": "medium",
+   "action": "Adopt a Cyber Security Policy and a Cyber Crisis Management Plan (CCMP) and cross-refer them from the incident response procedure."
+  },
+  {
+   "doc_id": "rbi-n12562",
+   "obligation": "rbi-n12562:section:0022#3",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-06 \u00a72.1"
+   ],
+   "policy_quote": "For Severity 1 the CISO opens a bridge with the CTO, CRO and CCO within 30 minutes.",
+   "finding": "FP-06 \u00a72.1 shows the CISO coordinating Severity 1 incidents internally, but no paragraph shows the CISO enforcing information asset protection policies or coordinating with external agencies.",
+   "severity": "medium",
+   "action": "Assign the CISO explicit responsibility for enforcing information security policies and for coordinating with external agencies such as CERT-In and regulators."
+  },
+  {
+   "doc_id": "rbi-n12562",
+   "obligation": "rbi-n12562:section:0022#5",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a75.1"
+   ],
+   "policy_quote": "Logs from production systems go to a SIEM watched by an outsourced Security Operations Centre, 24 hours a day.",
+   "finding": "FP-05 \u00a75.1 describes a 24-hour outsourced SOC, but it does not say the CISO's Office manages and monitors the SOC or drives cyber security projects.",
+   "severity": "medium",
+   "action": "State that the CISO's Office manages and monitors the SOC, including the outsourced provider, and drives cyber security projects."
+  },
+  {
+   "doc_id": "rbi-n12562",
+   "obligation": "rbi-n12562:section:0023#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a72.1"
+   ],
+   "policy_quote": "Every information asset has a named owner and a classification (public, internal, confidential, restricted).",
+   "finding": "The policy assigns owners and classifications to information assets, but it does not require the risk assessment of each asset to be guided by a recognised security standard or IT control framework.",
+   "severity": "medium",
+   "action": "Add a requirement that the risk assessment of each information asset in scope is guided by a named security standard or IT control framework."
+  },
+  {
+   "doc_id": "rbi-n12562",
+   "obligation": "rbi-n12562:section:0023#3",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-18 \u00a75.1"
+   ],
+   "policy_quote": "A policy is reviewed at least once a year, and earlier when a regulation it implements changes.",
+   "finding": "The policy requires annual review of policies, but it does not require an annual review of the security infrastructure itself, nor factoring in the company's own experience and emerging threats.",
+   "severity": "medium",
+   "action": "Add an annual review of the security infrastructure that considers the company's own incident experience and emerging threats and risks."
+  },
+  {
+   "doc_id": "rbi-n12562",
+   "obligation": "rbi-n12562:section:0024#2",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a74.2"
+   ],
+   "policy_quote": "An external firm performs a penetration test of the FlexiPay app and Checkout once a year.",
+   "finding": "The policy requires an annual penetration test only of the FlexiPay app and Checkout, while the rule requires PT at least every 12 months for all critical systems and DMZ systems with customer interface, so other such systems are not covered.",
+   "severity": "medium",
+   "action": "Extend the annual penetration test in FP-05 \u00a74.2 to every critical information system and every DMZ system with customer interface, not only the app and Checkout."
+  },
+  {
+   "doc_id": "rbi-n12562",
+   "obligation": "rbi-n12562:section:0024#5",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a74.2"
+   ],
+   "policy_quote": "An external firm performs a penetration test of the FlexiPay app and Checkout once a year.",
+   "finding": "The policy uses an external firm, which supports independence, for penetration testing only, and does not state that vulnerability scans are run by appropriately trained and independent experts.",
+   "severity": "low",
+   "action": "State in FP-05 that all VA and PT are conducted by appropriately trained and independent information security experts or auditors."
+  },
+  {
+   "doc_id": "rbi-n12562",
+   "obligation": "rbi-n12562:section:0024#9",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a74.2",
+    "FP-05 \u00a74.3"
+   ],
+   "policy_quote": "Vulnerability scans run monthly on internet-facing systems.",
+   "finding": "The policy sets scan frequency, PT frequency and remediation deadlines, but does not document a VA/PT approach covering scope, coverage and a vulnerability scoring mechanism such as CVSS.",
+   "severity": "medium",
+   "action": "Add a documented VA/PT approach to FP-05 that defines scope, coverage and the vulnerability scoring mechanism (for example CVSS)."
+  },
+  {
+   "doc_id": "rbi-n12562",
+   "obligation": "rbi-n12562:section:0025#2",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-06 \u00a74.1",
+    "FP-06 \u00a71.1"
+   ],
+   "policy_quote": "A root-cause analysis is written within 15 days of closure and goes to the IT Strategy Committee at its next meeting.",
+   "finding": "FP-06 requires a root-cause analysis within 15 days and grades severity, but it does not require analysis of impact or forensic analysis where necessary.",
+   "severity": "low",
+   "action": "Add impact analysis and a trigger for forensic analysis to the post-incident review in FP-06."
+  },
+  {
+   "doc_id": "rbi-n12562",
+   "obligation": "rbi-n12562:section:0025#3",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-06 \u00a72.2",
+    "FP-06 \u00a74.1"
+   ],
+   "policy_quote": "Contain, preserve evidence, eradicate, recover, then review.",
+   "finding": "FP-06 has a review step and a root-cause analysis, but it does not require corrective and preventive measures to be decided and tracked.",
+   "severity": "medium",
+   "action": "Require FP-06 post-incident reviews to record and track corrective and preventive measures until closed."
+  },
+  {
+   "doc_id": "rbi-n12562",
+   "obligation": "rbi-n12562:section:0025#4",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-06 \u00a72.1"
+   ],
+   "policy_quote": "The SOC raises an incident and pages the on-call security engineer.",
+   "finding": "FP-06 names key internal roles such as the SOC, on-call engineer, CISO, CTO, CRO and CCO, but it does not identify the roles of outsourced staff who handle incidents.",
+   "severity": "low",
+   "action": "Add the roles of outsourced staff handling incidents to the FP-06 response section."
+  },
+  {
+   "doc_id": "rbi-n12562",
+   "obligation": "rbi-n12562:section:0025#5",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-06 \u00a72.1"
+   ],
+   "policy_quote": "For Severity 1 the CISO opens a bridge with the CTO, CRO and CCO within 30 minutes.",
+   "finding": "FP-06 sets an internal escalation bridge for Severity 1 incidents, but it has no reporting path to the Board or Senior Management and no plan for informing customers.",
+   "severity": "medium",
+   "action": "Add escalation and reporting to the Board and Senior Management, and a customer communication plan, to FP-06."
+  },
+  {
+   "doc_id": "rbi-n12562",
+   "obligation": "rbi-n12562:section:0025#7",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-06 \u00a74.1"
+   ],
+   "policy_quote": "A root-cause analysis is written within 15 days of closure and goes to the IT Strategy Committee at its next meeting.",
+   "finding": "FP-06 feeds root-cause findings to the IT Strategy Committee, but it does not require lessons from tests and drills to improve response capability.",
+   "severity": "low",
+   "action": "Require lessons from tests and drills to be fed into FP-06 updates and capability improvements."
+  },
+  {
+   "doc_id": "rbi-n12562",
+   "obligation": "rbi-n12562:section:0026#2",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-19 \u00a77.1"
+   ],
+   "policy_quote": "The plan is reviewed every year, and after every real fail-over.",
+   "finding": "FP-19 requires review annually and after real fail-overs, but does not require updating the plan on major developments or risk assessment outcomes.",
+   "severity": "medium",
+   "action": "Add to FP-19 a requirement to update the plan promptly after major developments or risk assessments, in addition to the annual review."
+  },
+  {
+   "doc_id": "rbi-n12562",
+   "obligation": "rbi-n12562:section:0026#3",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-19 \u00a72.1",
+    "FP-19 \u00a73.1",
+    "FP-06 \u00a72.2"
+   ],
+   "policy_quote": "Recovery time objective (RTO): 2 hours for critical services. Recovery point objective (RPO): 15 minutes.",
+   "finding": "FP-19 sets RTO of 2 hours and RPO of 15 minutes with warm-standby DR sites, and FP-06 covers containment and recovery, but no paragraph requires that security controls be restored and operational before resuming critical operations after a cyber-attack.",
+   "severity": "medium",
+   "action": "Amend FP-19 to require that security controls are verified and restored before critical operations resume after a cyber-attack or other incident."
+  },
+  {
+   "doc_id": "rbi-n12562",
+   "obligation": "rbi-n12562:section:0027#2",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-19 \u00a74.1"
+   ],
+   "policy_quote": "A full switch-over to the disaster-recovery site is tested once a year.",
+   "finding": "The policy tests a full switch-over annually but does not require it to run for at least a full working day covering Beginning of Day to End of Day operations.",
+   "severity": "medium",
+   "action": "Require the annual DR switch-over test to run as primary site for at least one full working day covering Beginning of Day to End of Day operations."
+  },
+  {
+   "doc_id": "rbi-n12562",
+   "obligation": "rbi-n12562:section:0027#3",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-19 \u00a74.1"
+   ],
+   "policy_quote": "A full switch-over to the disaster-recovery site is tested once a year.",
+   "finding": "The policy runs a yearly full switch-over test and quarterly component fail-over tests, but does not require testing under different contingency scenarios.",
+   "severity": "medium",
+   "action": "Add a requirement to test the BCP/DR regularly under different contingency scenarios and keep it up to date."
+  },
+  {
+   "doc_id": "rbi-n12562",
+   "obligation": "rbi-n12562:section:0027#7",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-19 \u00a73.1"
+   ],
+   "policy_quote": "Disaster recovery: AWS Hyderabad (ap-south-2), in warm standby with continuous database replication.",
+   "finding": "The policy covers continuous data replication to the DR site but does not require identical system configurations and security patches at the DC and DR.",
+   "severity": "medium",
+   "action": "Require that system configurations and deployed security patches at the primary and DR sites be kept identical and verified."
+  },
+  {
+   "doc_id": "rbi-n12562",
+   "obligation": "rbi-n12562:section:0027#9",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-19 \u00a74.1"
+   ],
+   "policy_quote": "A full switch-over to the disaster-recovery site is tested once a year.",
+   "finding": "The policy tests FlexiPay's own switch-over annually but has no collaborative or co-ordinated resilience testing with partners that is checked against the RTO.",
+   "severity": "medium",
+   "action": "Add coordinated resilience testing with critical vendors and partners that demonstrates recovery within the 2-hour RTO."
+  },
+  {
+   "doc_id": "rbi-n12562",
+   "obligation": "rbi-n12562:section:0028#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-18 \u00a74.1"
+   ],
+   "policy_quote": "Internal audit is outsourced to a chartered accountant firm and reports to the Audit Committee.",
+   "finding": "The policy has internal audit reporting to the Audit Committee, but nowhere states that the ACB exercises oversight of IS audit specifically.",
+   "severity": "medium",
+   "action": "Add to the Audit Committee terms that the ACB is responsible for overseeing the IS audit of FlexiPay and FlexiCredit."
+  },
+  {
+   "doc_id": "rbi-n12562",
+   "obligation": "rbi-n12562:section:0028#6",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-18 \u00a74.1"
+   ],
+   "policy_quote": "Internal audit is outsourced to a chartered accountant firm and reports to the Audit Committee.",
+   "finding": "Internal audit is outsourced to a chartered accountant firm, but the policy does not show a separate IS audit function or confirm that the resources have the required IS audit skills.",
+   "severity": "medium",
+   "action": "Specify a separate IS audit function or named resources with documented IS audit skills within the internal audit arrangement."
+  },
+  {
+   "doc_id": "rbi-n12562",
+   "obligation": "rbi-n12562:section:0028#7",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-18 \u00a74.1"
+   ],
+   "policy_quote": "Internal audit is outsourced to a chartered accountant firm and reports to the Audit Committee.",
+   "finding": "The policy outsources internal audit to a chartered accountant firm but does not say that responsibility and accountability for external IS audits stay with the competent authority in the Internal Audit function.",
+   "severity": "medium",
+   "action": "State that accountability for externally performed IS audits remains with the competent authority within the Internal Audit function."
+  },
+  {
+   "doc_id": "rbi-n12562",
+   "obligation": "rbi-n12562:section:0028#8",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-18 \u00a74.1"
+   ],
+   "policy_quote": "The annual plan covers payments, wallets, lending, KYC and IT.",
+   "finding": "The annual audit plan covers the relevant areas, but the policy does not state that IS audit planning uses a risk-based approach.",
+   "severity": "low",
+   "action": "State in the audit plan procedure that IS audit planning follows a risk-based audit approach."
+  },
+  {
+   "doc_id": "rbi-n12562",
+   "obligation": "rbi-n12562:section:0032#2",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-18 \u00a73.2",
+    "FP-18 \u00a73.3"
+   ],
+   "policy_quote": "The CCO keeps a register of every RBI direction that applies to the group, with the internal policy that implements it and its owner.",
+   "finding": "The policy requires a register of applicable RBI directions and a review of new circulars, but no paragraph states that this Master Direction replaces the earlier circulars or requires adherence to it in their place.",
+   "severity": "low",
+   "action": "Record in the compliance register that this Master Direction supersedes the listed circulars, and name the internal policies and owners that implement it."
+  },
+  {
+   "doc_id": "rbi-n12663",
+   "obligation": "rbi-n12663:section:0004#3",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FC-14 \u00a74.1",
+    "FC-14 \u00a73.2"
+   ],
+   "policy_quote": "Any change to charges is told to borrowers at least 30 days in advance, by SMS and in the app.",
+   "finding": "The policy lets charges change after 30 days' notice to borrowers, with no requirement for explicit borrower consent to fees not in the KFS, which the obligation prohibits.",
+   "severity": "high",
+   "action": "Require the borrower's explicit consent before any fee or charge not mentioned in the KFS is levied at any stage of the loan term."
+  },
+  {
+   "doc_id": "rbi-n12663",
+   "obligation": "rbi-n12663:section:0010#2",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FP-09 \u00a72.1",
+    "FP-09 \u00a71.2",
+    "FP-09 \u00a71.1"
+   ],
+   "policy_quote": "Complaints are resolved within 30 days.",
+   "finding": "FP-09 accepts complaints by generic email (support@flexipay.example) but sets no response time of 1 working day; it allows 30 days for resolution and only a reference number by SMS within 1 hour.",
+   "severity": "high",
+   "action": "Amend FP-09 so that a response to any complaint sent to the generic nodal email is given within 1 working day, separately from the 30-day resolution timeline."
+  },
+  {
+   "doc_id": "rbi-n12704",
+   "obligation": "rbi-n12704:section:0014#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FC-16 \u00a71.1"
+   ],
+   "policy_quote": "Loan accounts are watched for early warning signals: first-EMI default, identity documents linked to other defaulted loans, and many applications from one device.",
+   "finding": "FC-16 \u00a71.1 watches FlexiCredit loan accounts for early warning signals, but no paragraph requires examining each generated alert for a potential fraud angle.",
+   "severity": "medium",
+   "action": "Add a step to FC-16 requiring every early warning alert or trigger to be examined for whether the account needs a fraud investigation, with the outcome recorded."
+  },
+  {
+   "doc_id": "rbi-n12704",
+   "obligation": "rbi-n12704:section:0024#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FC-16 \u00a73.1"
+   ],
+   "policy_quote": "Frauds are reported to the RBI within 21 days of detection.",
+   "finding": "FC-16 \u00a73.1 sets a timing rule for reporting frauds to the RBI but says nothing about choosing the most appropriate category when filing Fraud Monitoring Returns on the online portal.",
+   "severity": "medium",
+   "action": "Add a step to FC-16 requiring FlexiCredit staff to select the most appropriate fraud category from the listed categories when filing FMRs on the RBI portal."
+  },
+  {
+   "doc_id": "rbi-n12704",
+   "obligation": "rbi-n12704:section:0025#1",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FC-16 \u00a73.1"
+   ],
+   "policy_quote": "Frauds are reported to the RBI within 21 days of detection.",
+   "finding": "The policy allows 21 days from detection to report frauds to RBI, while the rule requires the fraud monitoring report to be furnished immediately and not later than 14 days from classification as fraud.",
+   "severity": "high",
+   "action": "Change FC-16 \u00a73.1 to require the fraud monitoring report to RBI within 14 days of classifying an incident or account as fraud, regardless of amount."
+  },
+  {
+   "doc_id": "rbi-n12704",
+   "obligation": "rbi-n12704:section:0028#4",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FC-16 \u00a73.1"
+   ],
+   "policy_quote": "Frauds are reported to the RBI within 21 days of detection.",
+   "finding": "The policy requires reporting to the RBI within 21 days of detection but does not require the report to precede any sale of the account to lenders or ARCs, so an account could be sold before reporting.",
+   "severity": "medium",
+   "action": "Add a rule that the RBI/NHB fraud report must be filed before any fraud account is sold to another lender or ARC."
+  },
+  {
+   "doc_id": "rbi-n12715",
+   "obligation": "rbi-n12715:section:0001#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-20 \u00a75.1",
+    "FP-05 \u00a74.3"
+   ],
+   "policy_quote": "This standard is reviewed every two years.",
+   "finding": "The policies set a two-yearly review of the authentication standard and 15- or 30-day fixing deadlines for vulnerabilities, but none commits FlexiPay to migrating to the latest security standards.",
+   "severity": "low",
+   "action": "Add a commitment in FP-05 or FP-20 to endeavour to migrate systems to the latest security standards, with a named owner and review point."
+  },
+  {
+   "doc_id": "rbi-n12715",
+   "obligation": "rbi-n12715:section:0006#2",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a71.1"
+   ],
+   "policy_quote": "The Board approves this policy. The CISO reports to the CEO and presents the information security posture to the IT Strategy Committee.",
+   "finding": "FP-05 shows a Board-approved information security policy, but no shown paragraph addresses cyber and technology risks arising from linkages with unregulated entities in the digital payments ecosystem.",
+   "severity": "medium",
+   "action": "Extend the Board-approved IT Outsourcing and Vendor Risk Policy (FP-07) to expressly cover cyber and technology risks from linkages with unregulated payment gateways, third-party providers and vendors."
+  },
+  {
+   "doc_id": "rbi-n12715",
+   "obligation": "rbi-n12715:section:0008#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a71.1"
+   ],
+   "policy_quote": "The Board approves this policy. The CISO reports to the CEO and presents the information security posture to the IT Strategy Committee.",
+   "finding": "The policy has the CISO, a senior information security executive, presenting posture to the IT Strategy Committee, but it does not show the Board entrusting the CISO with responsibility and accountability for implementing the IS policy and cyber resilience framework and continuously assessing IS posture.",
+   "severity": "low",
+   "action": "Add an explicit Board resolution entrusting the CISO with responsibility and accountability for implementing the IS policy and cyber resilience framework and for continuous assessment of IS posture."
+  },
+  {
+   "doc_id": "rbi-n12715",
+   "obligation": "rbi-n12715:section:0008#4",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FP-05 \u00a71.2",
+    "FP-18 \u00a72.2"
+   ],
+   "policy_quote": "The IT Strategy Committee meets once a year.",
+   "finding": "The policy requires IT assessment reports such as audit and VA/PT reports to be placed before the IT oversight sub-committee at its next meeting, but the IT Strategy Committee meets only once a year, so reports may wait up to a year.",
+   "severity": "high",
+   "action": "Require IT assessment reports to be tabled at the next IT oversight committee meeting after they become available, and increase that committee's meeting frequency or add ad hoc meetings for this purpose."
+  },
+  {
+   "doc_id": "rbi-n12715",
+   "obligation": "rbi-n12715:section:0009#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a72.1"
+   ],
+   "policy_quote": "Every information asset has a named owner and a classification (public, internal, confidential, restricted).",
+   "finding": "The policy requires only a named owner and a classification for each asset, while the rule also requires an identifier, network address, asset location and End of Life Support (EoLS) date, and none of these are recorded.",
+   "severity": "medium",
+   "action": "Extend the asset inventory in FP-05 to record each asset's identifier, network address, location and End of Life Support date alongside the owner."
+  },
+  {
+   "doc_id": "rbi-n12715",
+   "obligation": "rbi-n12715:section:0010#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a73.1",
+    "FP-05 \u00a73.2"
+   ],
+   "policy_quote": "Production systems are reached only through a bastion host with multi-factor authentication. Privileged access is granted for a fixed time and every session is logged.",
+   "finding": "The policy sets out access controls for production systems, including bastion host with MFA, time-limited privileged access, session logging and six-monthly access reviews, but it does not cover the administration of access rights for non-production systems or the approval and revocation process for access rights.",
+   "severity": "low",
+   "action": "Extend FP-05 \u00a73.2 to define how access rights are granted, approved, modified and revoked, and cover non-production systems as well as production."
+  },
+  {
+   "doc_id": "rbi-n12715",
+   "obligation": "rbi-n12715:section:0011#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a73.1",
+    "FP-05 \u00a73.2"
+   ],
+   "policy_quote": "Production systems are reached only through a bastion host with multi-factor authentication.",
+   "finding": "The policy controls access through a bastion host with MFA, logged privileged sessions and six-monthly access reviews, but it never requires every individual with IT environment access to be assigned a digital identity or states that identities are maintained and monitored until termination.",
+   "severity": "medium",
+   "action": "Add a clause requiring a unique digital identity for every individual with access to the IT environment, maintained and monitored until that individual's access is terminated."
+  },
+  {
+   "doc_id": "rbi-n12715",
+   "obligation": "rbi-n12715:section:0012#2",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a73.1",
+    "FP-05 \u00a73.2"
+   ],
+   "policy_quote": "Privileged access is granted for a fixed time and every session is logged.",
+   "finding": "The policy sets time-limited, logged privileged access and six-monthly access reviews, but does not state need-to-have, need-to-know or least privilege as the basis for access to each environment.",
+   "severity": "medium",
+   "action": "Add a need-to-have, need-to-know and least-privilege rule that governs access to development, test and production environments."
+  },
+  {
+   "doc_id": "rbi-n12715",
+   "obligation": "rbi-n12715:section:0012#4",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a73.1"
+   ],
+   "policy_quote": "Production systems are reached only through a bastion host with multi-factor authentication.",
+   "finding": "MFA is required for access to production systems through the bastion host, but the policy has no general precautions for remote or work-from-home access beyond that path.",
+   "severity": "medium",
+   "action": "Extend the policy to set out precautions, including MFA, for all remote and work-from-home access to systems and not only production access via the bastion host."
+  },
+  {
+   "doc_id": "rbi-n12715",
+   "obligation": "rbi-n12715:section:0014#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a73.1",
+    "FP-05 \u00a75.1"
+   ],
+   "policy_quote": "Production systems are reached only through a bastion host with multi-factor authentication.",
+   "finding": "The policy uses a bastion host for production access and a SIEM for log monitoring, but it describes no multi-layered boundary defences that filter network traffic into and out of the organisation.",
+   "severity": "medium",
+   "action": "Add a documented multi-layered boundary defence (for example firewalls and traffic filtering at perimeter and internal layers) covering traffic in and out of FlexiPay and FlexiCredit systems."
+  },
+  {
+   "doc_id": "rbi-n12715",
+   "obligation": "rbi-n12715:section:0015#4",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-07 \u00a73.1"
+   ],
+   "policy_quote": "Financial standing, security certifications (ISO 27001 or SOC 2), data location, sub-contractors, and the vendor's business continuity plan.",
+   "finding": "FP-07 \u00a73.1 checks vendor security certifications before contract, but it does not state that the secure application lifecycle guidelines apply to procured products and services.",
+   "severity": "medium",
+   "action": "Amend FP-07 \u00a73.1 so that procured products and services must also meet the application security life cycle guidelines before contract."
+  },
+  {
+   "doc_id": "rbi-n12715",
+   "obligation": "rbi-n12715:section:0016#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a74.2"
+   ],
+   "policy_quote": "Vulnerability scans run monthly on internet-facing systems. An external firm performs a penetration test of the FlexiPay app and Checkout once a year.",
+   "finding": "The policy sets monthly vulnerability scans and an annual external pen test of the FlexiPay app and Checkout, but it does not mention source code review, authenticated-mode testing, or annual security testing of all applications by qualified professionals.",
+   "severity": "medium",
+   "action": "Extend the policy to cover all applications with annual source code review, VA and PT in authenticated mode by qualified professionals."
+  },
+  {
+   "doc_id": "rbi-n12715",
+   "obligation": "rbi-n12715:section:0016#5",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a71.1"
+   ],
+   "policy_quote": "The CISO reports to the CEO and presents the information security posture to the IT Strategy Committee.",
+   "finding": "The policy has the CISO present overall security posture to the IT Strategy Committee, but it does not require recurring security testing observations to be reported to the IT oversight sub-committee with recurrence analysis and resolution detail.",
+   "severity": "medium",
+   "action": "Require recurring security testing observations to be reported to the Board sub-committee for IT oversight with detailed recurrence and resolution analysis."
+  },
+  {
+   "doc_id": "rbi-n12715",
+   "obligation": "rbi-n12715:section:0017#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a73.1",
+    "FP-07 \u00a74.1"
+   ],
+   "policy_quote": "Production systems are reached only through a bastion host with multi-factor authentication.",
+   "finding": "The policy controls access to production systems through a bastion host with MFA, but says nothing about controls preventing infiltration into FlexiPay's network from vendor environments, and FP-07 \u00a74.1 covers only audit, confidentiality and service levels.",
+   "severity": "medium",
+   "action": "Add network-level controls, such as segregated vendor access paths and monitoring of vendor connections, that prevent infiltration from vendor environments."
+  },
+  {
+   "doc_id": "rbi-n12715",
+   "obligation": "rbi-n12715:section:0017#2",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-07 \u00a73.1",
+    "FP-07 \u00a74.1"
+   ],
+   "policy_quote": "Financial standing, security certifications (ISO 27001 or SOC 2), data location, sub-contractors, and the vendor's business continuity plan.",
+   "finding": "The policy checks data location only during pre-contract due diligence and requires no ongoing compliance with geographical location laws for data or processing, nor any obligation that vendors comply with those laws.",
+   "severity": "medium",
+   "action": "Require every vendor contract to mandate compliance with applicable data localisation and processing-location rules, with vendors certifying compliance and FlexiPay monitoring it after onboarding."
+  },
+  {
+   "doc_id": "rbi-n12715",
+   "obligation": "rbi-n12715:section:0017#3",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-07 \u00a73.1",
+    "FP-07 \u00a75.1"
+   ],
+   "policy_quote": "Financial standing, security certifications (ISO 27001 or SOC 2), data location, sub-contractors, and the vendor's business continuity plan.",
+   "finding": "The policy requires security certifications at onboarding and questionnaire-based reviews of material vendors, but does not require certified assurance from an independent auditor on the cyber resilience of vendors in critical processes.",
+   "severity": "medium",
+   "action": "Require critical vendors to provide certified assurance on cyber resilience from an independent auditor before contract and at regular intervals thereafter."
+  },
+  {
+   "doc_id": "rbi-n12715",
+   "obligation": "rbi-n12715:section:0018#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a72.1",
+    "FP-08 \u00a73.1"
+   ],
+   "policy_quote": "Every information asset has a named owner and a classification (public, internal, confidential, restricted).",
+   "finding": "The policies classify assets and restrict customer data sharing to consent or legal requirement, but no data leak prevention policy covers data in transit and at rest or at vendor-managed facilities.",
+   "severity": "medium",
+   "action": "Adopt a data leak prevention policy covering data in transit, at rest and at vendor-managed facilities, scaled to information criticality and sensitivity."
+  },
+  {
+   "doc_id": "rbi-n12715",
+   "obligation": "rbi-n12715:section:0018#2",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a72.1"
+   ],
+   "policy_quote": "Every information asset has a named owner and a classification (public, internal, confidential, restricted).",
+   "finding": "Named owners and classifications give some visibility of data assets, but no mechanism for tracing data flows or movement is described.",
+   "severity": "low",
+   "action": "Document a mechanism to trace data assets and their flows across systems and vendors, such as an asset inventory with data lineage."
+  },
+  {
+   "doc_id": "rbi-n12715",
+   "obligation": "rbi-n12715:section:0019#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a74.3"
+   ],
+   "policy_quote": "Critical vulnerabilities are fixed within 15 days and high ones within 30 days.",
+   "finding": "The policy sets fix timelines for critical and high vulnerabilities but has no documented process for identifying and implementing patches released by OEMs or other vendors.",
+   "severity": "medium",
+   "action": "Add a documented policy and process for identifying, assessing and implementing patches to technology and software assets released by OEMs and others."
+  },
+  {
+   "doc_id": "rbi-n12715",
+   "obligation": "rbi-n12715:section:0019#3",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FP-05 \u00a74.3"
+   ],
+   "policy_quote": "Critical vulnerabilities are fixed within 15 days and high ones within 30 days.",
+   "finding": "The policy allows 15 days for critical fixes, whereas critical patches for well-known or reported attacks must be applied immediately, and no mechanism for immediate application is shown.",
+   "severity": "high",
+   "action": "Add a mechanism to apply critical patches for well-known or reported attacks immediately, separate from the 15-day critical fix window."
+  },
+  {
+   "doc_id": "rbi-n12715",
+   "obligation": "rbi-n12715:section:0020#2",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-06 \u00a72.2"
+   ],
+   "policy_quote": "Contain, preserve evidence, eradicate, recover, then review.",
+   "finding": "The policy gives a containment and recovery sequence but does not address readiness for different incident scenarios based on situational awareness and impact, or consistent communication and co-ordination with stakeholders.",
+   "severity": "medium",
+   "action": "Add scenario-based response readiness tied to impact assessment and a stakeholder communication and co-ordination step to the response procedure."
+  },
+  {
+   "doc_id": "rbi-n12715",
+   "obligation": "rbi-n12715:section:0020#3",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-06 \u00a74.1"
+   ],
+   "policy_quote": "A root-cause analysis is written within 15 days of closure and goes to the IT Strategy Committee at its next meeting.",
+   "finding": "The policy requires a root-cause analysis within 15 days but does not require forensic analysis where necessary or an assessment of incident impact.",
+   "severity": "medium",
+   "action": "Require forensic analysis where necessary and a documented impact assessment as part of post-incident analysis."
+  },
+  {
+   "doc_id": "rbi-n12715",
+   "obligation": "rbi-n12715:section:0020#4",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-06 \u00a74.1"
+   ],
+   "policy_quote": "A root-cause analysis is written within 15 days of closure and goes to the IT Strategy Committee at its next meeting.",
+   "finding": "The policy sends the root-cause analysis to the IT Strategy Committee but does not require corrective measures to avoid recurrence or track their implementation.",
+   "severity": "medium",
+   "action": "Require documented corrective and preventive actions to avoid recurrence, with owners and tracking, arising from each root-cause analysis."
+  },
+  {
+   "doc_id": "rbi-n12715",
+   "obligation": "rbi-n12715:section:0021#3",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-06 \u00a72.2"
+   ],
+   "policy_quote": "Contain, preserve evidence, eradicate, recover, then review.",
+   "finding": "FP-06 \u00a72.2 sets out a cyber incident response sequence of contain, preserve, eradicate, recover and review, but it does not cover a resumption plan or sit within a BCP framework.",
+   "severity": "medium",
+   "action": "Add a comprehensive cyber incident response, resumption and recovery plan to the BCP in FP-19, linking it to the FP-06 response steps."
+  },
+  {
+   "doc_id": "rbi-n12715",
+   "obligation": "rbi-n12715:section:0022#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a74.4"
+   ],
+   "policy_quote": "Mobile apps check for rooted or jail-broken devices, use certificate pinning and are obfuscated.",
+   "finding": "FP-05 \u00a74.4 covers app-side hardening such as root detection, certificate pinning and obfuscation, but says nothing about authenticating and authorising the communicating applications that call APIs.",
+   "severity": "medium",
+   "action": "Add a policy requirement that every API client application is authenticated and authorised (for example via mutual TLS or signed tokens with scoped access) before it can call any API."
+  },
+  {
+   "doc_id": "rbi-n12715",
+   "obligation": "rbi-n12715:section:0022#2",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a74.4"
+   ],
+   "policy_quote": "Mobile apps check for rooted or jail-broken devices, use certificate pinning and are obfuscated.",
+   "finding": "Certificate pinning in FP-05 \u00a74.4 helps protect app-to-server traffic, but the policy does not require message-level integrity or confidentiality controls for API payloads.",
+   "severity": "medium",
+   "action": "Require encryption and message-level integrity protection (such as signed and encrypted payloads) for all API communications, in addition to certificate pinning."
+  },
+  {
+   "doc_id": "rbi-n12715",
+   "obligation": "rbi-n12715:section:0022#4",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-19 \u00a76.1",
+    "FP-04 \u00a73.3"
+   ],
+   "policy_quote": "For an outage of a critical service longer than 30 minutes, customers see an in-app banner, and the sponsor bank and NPCI are informed.",
+   "finding": "FP-19 \u00a76.1 only covers outage communication, and FP-04 \u00a73.3 covers mule-account indicators on wallets, so neither ensures API availability or detects anomalous API activity.",
+   "severity": "medium",
+   "action": "Add API availability monitoring and anomaly detection on API traffic, with defined mitigation steps such as throttling or blocking of suspicious callers."
+  },
+  {
+   "doc_id": "rbi-n12715",
+   "obligation": "rbi-n12715:section:0023#2",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a73.1",
+    "FP-05 \u00a72.1"
+   ],
+   "policy_quote": "Production systems are reached only through a bastion host with multi-factor authentication. Privileged access is granted for a fixed time and every session is logged.",
+   "finding": "The policy has strong access controls (bastion host, MFA, time-bound privileged access, session logging) and restricts customer and payment data, but it does not require PSO data to be segregated from other data.",
+   "severity": "medium",
+   "action": "Add a requirement that PSO data is logically or physically segregated from other data in the systems and cloud environments, alongside the existing access controls."
+  },
+  {
+   "doc_id": "rbi-n12715",
+   "obligation": "rbi-n12715:section:0023#4",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-07 \u00a74.1"
+   ],
+   "policy_quote": "Every contract gives FlexiPay and the RBI the right to audit and inspect the vendor, requires data to be kept confidential and returned on exit, and sets service levels.",
+   "finding": "The contracts give audit and inspection rights, but no paragraph requires an at-least-annual independent information and cyber security audit of the CSP.",
+   "severity": "medium",
+   "action": "Require in vendor contracts that the CSP undergoes independent information and cyber security audits at least annually and that the reports are provided to FlexiPay."
+  },
+  {
+   "doc_id": "rbi-n12715",
+   "obligation": "rbi-n12715:section:0023#5",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a71.1"
+   ],
+   "policy_quote": "The CISO reports to the CEO and presents the information security posture to the IT Strategy Committee.",
+   "finding": "The IT Strategy Committee receives a security posture presentation, but no paragraph requires an annual Board sub-committee review of CSP audit reports, performance, and cyber resilience.",
+   "severity": "medium",
+   "action": "Add a annual review by the IT Strategy Committee of CSP audit reports, performance, and cyber resilience capabilities."
+  },
+  {
+   "doc_id": "rbi-n12715",
+   "obligation": "rbi-n12715:section:0024#2",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FP-20 \u00a73.1"
+   ],
+   "policy_quote": "There is no risk-based step-up authentication: every transaction gets the same two factors whatever its risk.",
+   "finding": "The rule requires robust authentication and server security against spoofed transactions, but FP-20 applies the same two factors to every transaction with no risk-based step-up.",
+   "severity": "medium",
+   "action": "Add risk-based step-up authentication in FP-20 so that higher-risk transactions receive additional authentication factors, and document the server security measures that prevent spoofed transactions."
+  },
+  {
+   "doc_id": "rbi-n12715",
+   "obligation": "rbi-n12715:section:0024#4",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-04 \u00a73.2"
+   ],
+   "policy_quote": "Alerts are reviewed by fraud operations within 4 hours, 24 hours a day.",
+   "finding": "FP-04 provides round-the-clock review of fraud alerts, but no paragraph shows a 24x7x365 facility for resolving customer-reported unauthorised transactions or responding to Law Enforcement Agencies.",
+   "severity": "medium",
+   "action": "Extend the policy to require a manned 24x7x365 facility for customer-reported unauthorised transaction resolution and for prompt responses to Law Enforcement Agencies."
+  },
+  {
+   "doc_id": "rbi-n12715",
+   "obligation": "rbi-n12715:section:0024#8",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a71.1"
+   ],
+   "policy_quote": "The CISO reports to the CEO and presents the information security posture to the IT Strategy Committee.",
+   "finding": "FP-05 gives the IT Strategy Committee oversight of security posture, but nothing requires the payment architecture to be robust, scalable and sized to transaction volumes, or reviewed by a Board sub-committee.",
+   "severity": "medium",
+   "action": "Add a requirement that the payment architecture's robustness and scalability against transaction volumes is reviewed by the Board sub-committee at set intervals."
+  },
+  {
+   "doc_id": "rbi-n12715",
+   "obligation": "rbi-n12715:section:0028#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-20 \u00a71.1",
+    "FP-05 \u00a74.4"
+   ],
+   "policy_quote": "The FlexiPay app is bound to the customer's SIM and device.",
+   "finding": "The policy covers device binding, SIM binding, and rooted-device checks, but shows no measures for the session, inactivity, failed-login, remote-access, or reversal controls that this section requires.",
+   "severity": "medium",
+   "action": "Add policy coverage for every measure in this section, including session encryption, inactivity timeout, failed-login blocking, remote-access control, and transaction reversal on interference."
+  },
+  {
+   "doc_id": "rbi-n12715",
+   "obligation": "rbi-n12715:section:0028#3",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a74.4"
+   ],
+   "policy_quote": "Mobile apps check for rooted or jail-broken devices, use certificate pinning and are obfuscated.",
+   "finding": "The policy checks for rooted devices and applies obfuscation, but says nothing about a mechanism that ensures the app has no anomalies or behaviour it was not programmed to have.",
+   "severity": "medium",
+   "action": "Add a control such as code-integrity checks and pre-release testing that confirms the app has no unprogrammed behaviour."
+  },
+  {
+   "doc_id": "rbi-n12715",
+   "obligation": "rbi-n12715:section:0028#4",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a74.4"
+   ],
+   "policy_quote": "Mobile apps check for rooted or jail-broken devices, use certificate pinning and are obfuscated.",
+   "finding": "Certificate pinning supports encryption, but the policy does not require the authenticated session and its encryption to remain intact throughout the customer interaction.",
+   "severity": "medium",
+   "action": "Add a requirement that the authenticated session and its encryption protocol are validated and maintained for the whole customer interaction."
+  },
+  {
+   "doc_id": "rbi-n12715",
+   "obligation": "rbi-n12715:section:0028#13",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FP-20 \u00a71.1"
+   ],
+   "policy_quote": "A device change needs a fresh SMS verification and is followed by a 24-hour cooling period with a limit of \u20b95,000.",
+   "finding": "The 24-hour cooling period meets the 12-hour minimum, but it permits payments up to \u20b95,000 during the cooling period, which the rule prohibits, and it does not cover changes to the registered email ID.",
+   "severity": "high",
+   "action": "Remove the \u20b95,000 payment allowance during the cooling period and extend the cooling period to changes of the registered email ID as well as the mobile number."
+  },
+  {
+   "doc_id": "rbi-n12848",
+   "obligation": "rbi-n12848:section:0004#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FC-13 \u00a71.1"
+   ],
+   "policy_quote": "FlexiCredit is the lender. FlexiPay is its only Lending Service Provider (LSP), and the FlexiPay app is the Digital Lending App (DLA).",
+   "finding": "FC-13 \u00a71.1 names the parties and their roles as lender, LSP and DLA, but no paragraph shows a written contractual agreement setting out each party's rights and obligations.",
+   "severity": "medium",
+   "action": "Document a written FlexiCredit-FlexiPay agreement that defines each party's rights, obligations and responsibilities, and reference it in FC-13."
+  },
+  {
+   "doc_id": "rbi-n12848",
+   "obligation": "rbi-n12848:section:0005#6",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FC-13 \u00a73.1",
+    "FC-13 \u00a73.2"
+   ],
+   "policy_quote": "A Key Fact Statement (KFS), in the standard format, is shown before the loan agreement is signed.",
+   "finding": "The policy requires the KFS to be shown before signing but does not require a link to the KFS in the digital view, and it replaces the KFS with a one-screen summary for loans of \u20b910,000 or less.",
+   "severity": "medium",
+   "action": "Add a requirement that the digital view of each RE's offers includes a link to that RE's KFS, and apply it to loans of \u20b910,000 or less as well."
+  },
+  {
+   "doc_id": "rbi-n12848",
+   "obligation": "rbi-n12848:section:0008#1",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FC-13 \u00a73.1",
+    "FC-13 \u00a73.2"
+   ],
+   "policy_quote": "A Key Fact Statement (KFS), in the standard format, is shown before the loan agreement is signed.",
+   "finding": "FC-13 \u00a73.1 shows a standard-format KFS before signing, but FC-13 \u00a73.2 replaces the KFS with a one-screen summary for loans of \u20b910,000 or less, so the KFS is not provided for all loans.",
+   "severity": "high",
+   "action": "Remove the \u20b910,000 exemption in FC-13 \u00a73.2 so that a full KFS in the standard format is provided for every loan, including small loans."
+  },
+  {
+   "doc_id": "rbi-n12848",
+   "obligation": "rbi-n12848:section:0009#4",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FC-13 \u00a72.1"
+   ],
+   "policy_quote": "No money passes through a FlexiPay pool account.",
+   "finding": "FC-13 \u00a72.1 excludes a FlexiPay pool account but does not state that third parties including the LSP do not directly or indirectly control the flow of funds between borrower and RE accounts.",
+   "severity": "medium",
+   "action": "Add a clause to FC-13 \u00a72.1 stating that no third party, including FlexiPay as LSP, may control either directly or indirectly the flow of funds between borrower and FlexiCredit accounts."
+  },
+  {
+   "doc_id": "rbi-n12848",
+   "obligation": "rbi-n12848:section:0011#3",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FC-13 \u00a73.1",
+    "FC-13 \u00a73.2"
+   ],
+   "policy_quote": "It shows the annual percentage rate (APR), the recovery mechanism, the grievance officer and the cooling-off terms.",
+   "finding": "FC-13 \u00a73.1 requires the KFS to show the cooling-off terms but does not require any retained one-time processing fee to be disclosed upfront, and FC-13 \u00a73.2 replaces the KFS with a one-screen summary for loans of \u20b910,000 or less that shows no fee or cooling-off terms.",
+   "severity": "medium",
+   "action": "Require the KFS, including the one-screen summary for loans of \u20b910,000 or less, to disclose upfront any one-time processing fee retained on exit during the cooling-off period, where applicable."
+  },
+  {
+   "doc_id": "rbi-n12848",
+   "obligation": "rbi-n12848:section:0012#2",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-09 \u00a74.1"
+   ],
+   "policy_quote": "The name and contact details of the Principal Nodal Officer and the grievance officer for FlexiCredit are shown in the app and on the website.",
+   "finding": "The policy shows nodal officer contact details in the app and website but does not say they appear in the Key Facts Statement given to borrowers.",
+   "severity": "medium",
+   "action": "Add the nodal grievance officers' contact details to the Key Facts Statement, and make clear they are displayed prominently on the website, the app and the LSP site."
+  },
+  {
+   "doc_id": "rbi-n12848",
+   "obligation": "rbi-n12848:section:0013#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FC-13 \u00a77.1",
+    "FP-08 \u00a72.1"
+   ],
+   "policy_quote": "Data is collected with explicit consent and stored in India, as set out in FP-08.",
+   "finding": "The policy requires explicit consent at onboarding and per-purpose use, but it does not limit collection to what is need-based or require an audit trail of consent.",
+   "severity": "medium",
+   "action": "Add a need-based collection limit for the DLA and its LSP, and require an audit trail of each prior explicit consent."
+  },
+  {
+   "doc_id": "rbi-n12848",
+   "obligation": "rbi-n12848:section:0013#3",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-08 \u00a72.2"
+   ],
+   "policy_quote": "For lending it asks for one-time access to the camera and location during KYC",
+   "finding": "The policy limits camera and location access to one-time use during KYC, but it does not state that this access requires the borrower's explicit consent.",
+   "severity": "low",
+   "action": "State in the policy that one-time camera and location access during KYC is taken only with the borrower's explicit consent."
+  },
+  {
+   "doc_id": "rbi-n12848",
+   "obligation": "rbi-n12848:section:0013#4",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-08 \u00a75.1"
+   ],
+   "policy_quote": "Customers can see, correct and ask for deletion of their data in the app or by email",
+   "finding": "The policy gives customers rights to see, correct and delete data, but it does not provide options to grant or deny consent for specific data, restrict third-party disclosure, control retention, or revoke consent.",
+   "severity": "medium",
+   "action": "Add controls that let borrowers consent to or deny specific data uses, restrict third-party disclosure and retention, and revoke consent."
+  },
+  {
+   "doc_id": "rbi-n12848",
+   "obligation": "rbi-n12848:section:0013#5",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-08 \u00a72.1"
+   ],
+   "policy_quote": "Consent is taken at onboarding, in plain language and per purpose.",
+   "finding": "The policy discloses the purpose of consent only at onboarding, while the requirement is to disclose it at each stage of interface with borrowers.",
+   "severity": "medium",
+   "action": "Require the purpose of consent to be shown at every point where borrower data is collected, not only at onboarding."
+  },
+  {
+   "doc_id": "rbi-n12848",
+   "obligation": "rbi-n12848:section:0014#3",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-08 \u00a71.1",
+    "FP-08 \u00a72.1",
+    "FP-06 \u00a73.4"
+   ],
+   "policy_quote": "All payment system data (customer details, payment credentials and transaction records) is stored only on servers in India",
+   "finding": "The policies cover storage location, purpose and breach notice to customers within 72 hours, but state no retention length, data destruction protocol or type-of-data statement, and show no prominent disclosure on the website and DLA.",
+   "severity": "medium",
+   "action": "Add retention periods, data destruction protocol and breach handling standards to the data storage policy and publish the full guidelines prominently on the FlexiPay and FlexiCredit websites and in the DLA at all times."
+  },
+  {
+   "doc_id": "rbi-n12848",
+   "obligation": "rbi-n12848:section:0014#6",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-08 \u00a71.1"
+   ],
+   "policy_quote": "All payment system data (customer details, payment credentials and transaction records) is stored only on servers in India",
+   "finding": "The policy bars storing data abroad but has no rule for data processed outside India, requiring its deletion from overseas servers and return to India within 24 hours.",
+   "severity": "low",
+   "action": "Add a clause prohibiting offshore processing or requiring any offshore-processed data to be deleted from overseas servers and brought back to India within 24 hours of processing."
+  },
+  {
+   "doc_id": "rbi-n12848",
+   "obligation": "rbi-n12848:section:0015#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-08 \u00a73.1",
+    "FC-13 \u00a77.1"
+   ],
+   "policy_quote": "Customer data is shared with third parties only with explicit consent or where the law requires it.",
+   "finding": "The policy has data-handling paragraphs on sharing, consent and storage, but no comprehensive privacy policy compliant with applicable laws and RBI guidelines is shown for FlexiCredit or for FlexiPay as LSP.",
+   "severity": "low",
+   "action": "Confirm that FP-08 is a comprehensive privacy policy covering FlexiCredit and FlexiPay as LSP, and align it expressly with applicable laws and RBI guidelines."
+  },
+  {
+   "doc_id": "rbi-n12848",
+   "obligation": "rbi-n12848:section:0018#2",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-09 \u00a72.1"
+   ],
+   "policy_quote": "Complaints are resolved within 30 days. An unresolved complaint is escalated to the Principal Nodal Officer after 15 days.",
+   "finding": "FP-09 sets a 30-day resolution timeline and escalation for all complaints, but does not expressly state that customer issues and grievances concerning DLAs are addressed directly by the RE.",
+   "severity": "low",
+   "action": "Add an explicit statement to FP-09 that customer issues and grievances concerning DLAs are addressed directly by FlexiCredit and FlexiPay."
+  },
+  {
+   "doc_id": "rbi-n12848",
+   "obligation": "rbi-n12848:section:0020#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FC-13 \u00a76.1"
+   ],
+   "policy_quote": "FlexiPay provides FlexiCredit a default loss guarantee (DLG) of 8% of the amount disbursed in each quarterly portfolio, as a fixed deposit with a lien in FlexiCredit's favour.",
+   "finding": "The Digital Lending Policy sets out the DLG terms, but no paragraph shows that a Board approved DLG policy exists before the arrangement was entered into.",
+   "severity": "medium",
+   "action": "Obtain and document Board approval of a DLG policy covering the arrangement, and confirm the approval predates the DLG."
+  },
+  {
+   "doc_id": "rbi-n12848",
+   "obligation": "rbi-n12848:section:0020#2",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FC-13 \u00a76.1"
+   ],
+   "policy_quote": "FlexiPay provides FlexiCredit a default loss guarantee (DLG) of 8% of the amount disbursed in each quarterly portfolio, as a fixed deposit with a lien in FlexiCredit's favour.",
+   "finding": "The policy states the nature and extent of the DLG cover (8% of disbursed amount per quarterly portfolio) but says nothing on eligibility criteria for the DLG provider, monitoring and review of the arrangement, or fees.",
+   "severity": "medium",
+   "action": "Add to the DLG policy the eligibility criteria for the DLG provider, the process for monitoring and reviewing the arrangement, and the fees payable or receivable."
+  },
+  {
+   "doc_id": "rbi-n12848",
+   "obligation": "rbi-n12848:section:0021#1",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FC-13 \u00a76.1",
+    "FP-01 \u00a74.2"
+   ],
+   "policy_quote": "FlexiPay provides FlexiCredit a default loss guarantee (DLG) of 8% of the amount disbursed in each quarterly portfolio",
+   "finding": "FC-13 \u00a76.1 gives an 8% DLG on each quarterly portfolio with no carve-out, while FP-01 \u00a74.2 shows PayLater, a revolving credit line offered through the digital lending app, is part of that lending, so the DLG may cover a prohibited revolving facility.",
+   "severity": "high",
+   "action": "Exclude revolving credit facilities such as FlexiCredit PayLater from the DLG cover in FC-13 \u00a76.1."
+  },
+  {
+   "doc_id": "rbi-n12848",
+   "obligation": "rbi-n12848:section:0021#2",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FC-13 \u00a76.1"
+   ],
+   "policy_quote": "FlexiPay provides FlexiCredit a default loss guarantee (DLG) of 8% of the amount disbursed in each quarterly portfolio",
+   "finding": "The DLG applies to each quarterly portfolio with no exclusion for loans covered by credit guarantee schemes, so CGS-backed loans could fall within a prohibited DLG arrangement.",
+   "severity": "high",
+   "action": "Add an express exclusion so that loans covered by credit guarantee schemes are outside the DLG cover in FC-13 \u00a76.1."
+  },
+  {
+   "doc_id": "rbi-n12848",
+   "obligation": "rbi-n12848:section:0021#4",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FC-13 \u00a76.1"
+   ],
+   "policy_quote": "FlexiPay provides FlexiCredit a default loss guarantee (DLG) of 8% of the amount disbursed in each quarterly portfolio",
+   "finding": "FC-13 \u00a76.1 sets out the DLG amount and a fixed deposit with lien as security, but does not require the arrangement to be backed by an explicit and legally enforceable contract.",
+   "severity": "medium",
+   "action": "Require a written, legally enforceable DLG contract between FlexiCredit and FlexiPay before any DLG arrangement takes effect."
+  },
+  {
+   "doc_id": "rbi-n12848",
+   "obligation": "rbi-n12848:section:0021#5",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FC-13 \u00a76.1"
+   ],
+   "policy_quote": "FlexiPay provides FlexiCredit a default loss guarantee (DLG) of 8% of the amount disbursed in each quarterly portfolio",
+   "finding": "FC-13 \u00a76.1 covers the extent of DLG cover (8%) and the form of maintenance (fixed deposit with lien), but says nothing on the timeline for DLG invocation or the para 27 disclosure requirements.",
+   "severity": "medium",
+   "action": "Add a DLG invocation timeline and the para 27 disclosure requirements to the DLG contract terms."
+  },
+  {
+   "doc_id": "rbi-n12848",
+   "obligation": "rbi-n12848:section:0022#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FC-13 \u00a76.1"
+   ],
+   "policy_quote": "as a fixed deposit with a lien in FlexiCredit's favour",
+   "finding": "The policy uses a fixed deposit with a lien in FlexiCredit's favour, which is a permitted form, but it does not state that the fixed deposit is maintained with a Scheduled Commercial Bank.",
+   "severity": "low",
+   "action": "Amend FC-13 \u00a76.1 to state that the fixed deposit securing the DLG is maintained with a Scheduled Commercial Bank."
+  },
+  {
+   "doc_id": "rbi-n12848",
+   "obligation": "rbi-n12848:section:0022#2",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FC-13 \u00a76.1"
+   ],
+   "policy_quote": "8% of the amount disbursed in each quarterly portfolio",
+   "finding": "The policy sets the DLG cover at 8% of the amount disbursed, which exceeds the 5% ceiling on total DLG cover over the disbursed portfolio.",
+   "severity": "high",
+   "action": "Reduce the DLG cover in FC-13 \u00a76.1 to no more than 5% of the total amount disbursed out of each loan portfolio."
+  },
+  {
+   "doc_id": "rbi-n12848",
+   "obligation": "rbi-n12848:section:0030#1",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FC-13 \u00a71.2",
+    "FC-13 \u00a71.1"
+   ],
+   "policy_quote": "The FlexiPay app and website name FlexiCredit as the lender on every loan screen and link to FlexiCredit's website.",
+   "finding": "FC-13 \u00a71.2 requires the FlexiPay app and website to link to FlexiCredit's website, but it does not provide a link to the DLA (the FlexiPay app) on the app store, which the obligation requires where the DLA is an app hosted on an app store.",
+   "severity": "medium",
+   "action": "Add a link to the FlexiPay app's listing on the app store on every FlexiCredit loan screen, alongside the existing link to FlexiCredit's website, and amend FC-13 \u00a71.2 to say so."
+  },
+  {
+   "doc_id": "rbi-n12848",
+   "obligation": "rbi-n12848:section:0031#2",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FC-13 \u00a76.1"
+   ],
+   "policy_quote": "FlexiPay provides FlexiCredit a default loss guarantee (DLG) of 8% of the amount disbursed in each quarterly portfolio",
+   "finding": "The policy sets DLG cover at 8% of the amount disbursed per quarterly portfolio, while the rule caps the ceiling at 5% of the earmarked portfolio amount, activated proportionately as loans are disbursed.",
+   "severity": "high",
+   "action": "Reduce the DLG ceiling to 5% of the earmarked portfolio amount and state that cover is activated proportionately as each loan is disbursed."
+  },
+  {
+   "doc_id": "rbi-n12896",
+   "obligation": "rbi-n12896:section:0012#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-09 \u00a72.2",
+    "FP-09 \u00a73.1"
+   ],
+   "policy_quote": "If a complaint is rejected in full or in part, or not resolved within 30 days, the reply tells the customer they may complain to the RBI",
+   "finding": "FP-09 sets complaint handling and timelines for customers, but no paragraph sets a dispute resolution mechanism for payment disputes raised by merchants or other parties to PA transactions.",
+   "severity": "medium",
+   "action": "Extend the grievance policy or add a dispute procedure that covers merchant and payment disputes on PA transactions, with steps and timelines."
+  },
+  {
+   "doc_id": "rbi-n12896",
+   "obligation": "rbi-n12896:section:0012#3",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-12 \u00a71.2",
+    "FP-12 \u00a73.1"
+   ],
+   "policy_quote": "Permitted credits: payments from customers, refunds and reversals from merchants, and pre-funding by FlexiPay.",
+   "finding": "FP-12 sets escrow credits, debits and daily reconciliation, but no paragraph shows that merchant and acquiring bank agreements delineate refunds, failed transactions, return policy and grievance redressal responsibilities.",
+   "severity": "medium",
+   "action": "Write the roles for refunds, failed transactions, return policy, grievance redressal and reconciliation into the merchant and acquiring bank agreements."
+  },
+  {
+   "doc_id": "rbi-n12896",
+   "obligation": "rbi-n12896:section:0013#6",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a74.2"
+   ],
+   "policy_quote": "An external firm performs a penetration test of the FlexiPay app and Checkout once a year.",
+   "finding": "FP-05 provides for an annual external penetration test, but does not require a full annual system audit by CERT-In empanelled auditors or submission of the report to the RBI Regional Office of DPSS.",
+   "severity": "medium",
+   "action": "Extend the annual audit requirement to a full system and cyber security audit by CERT-In empanelled auditors, with the report submitted to the RBI Regional Office of DPSS within the prescribed timelines."
+  },
+  {
+   "doc_id": "rbi-n12896",
+   "obligation": "rbi-n12896:section:0015#6",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FP-20 \u00a74.1"
+   ],
+   "policy_quote": "Card transactions from abroad are authenticated as the card issuer requires; no extra checks are applied by FlexiPay.",
+   "finding": "The rule requires cross-border payment transactions to be identified to establish their bonafides, but FP-20 \u00a74.1 applies no extra checks to international card transactions accepted for 210 merchants and does not identify them as cross-border; the RBI timeline for this is not stated in the text provided.",
+   "severity": "medium",
+   "action": "Add a step to FP-20 \u00a74.1 that flags every cross-border transaction at FlexiPay Checkout so it can be identified, and set the implementation date to the timeline RBI specifies."
+  },
+  {
+   "doc_id": "rbi-n12896",
+   "obligation": "rbi-n12896:section:0016#2",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-03 \u00a72.1"
+   ],
+   "policy_quote": "Every merchant completes KYC as a legal entity (PAN, certificate of incorporation or registration, GST certificate where applicable, and KYC of the beneficial owners and authorised signatories).",
+   "finding": "FP-03 \u00a72.1 sets out legal-entity KYC documents and beneficial owner checks, but it does not tie merchant CDD to the MD on KYC.",
+   "severity": "low",
+   "action": "Amend FP-03 \u00a72.1 to state that merchant CDD is carried out in accordance with the RBI Master Direction on KYC."
+  },
+  {
+   "doc_id": "rbi-n12896",
+   "obligation": "rbi-n12896:section:0017#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-12 \u00a71.1",
+    "FP-12 \u00a71.2"
+   ],
+   "policy_quote": "All amounts collected from customers for merchants are credited to FlexiPay's escrow account with Coastal Commercial Bank.",
+   "finding": "The policy routes merchant funds through an escrow account and permits debits to merchants, but it does not describe any validation mechanism that ensures funds due to a merchant are credited only to the merchant's own bank account.",
+   "severity": "medium",
+   "action": "Add a documented validation step in FP-12 that checks each merchant payout against the merchant's registered bank account before crediting."
+  },
+  {
+   "doc_id": "rbi-n12896",
+   "obligation": "rbi-n12896:section:0017#2",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-03 \u00a73.2",
+    "FP-02 \u00a74.1"
+   ],
+   "policy_quote": "Transaction monitoring flags spikes in volume, refunds above 10% and chargebacks above 1% of transactions for review within 2 working days.",
+   "finding": "Merchant transactions are monitored for volume, refunds and chargebacks and against CCO-approved scenarios, but no paragraph requires checking that transactions match the merchant's business profile or aligns monitoring with the KYC MD.",
+   "severity": "medium",
+   "action": "Add a monitoring check in FP-03 that compares each merchant's transactions against its declared business profile and records adherence to the KYC MD."
+  },
+  {
+   "doc_id": "rbi-n12896",
+   "obligation": "rbi-n12896:section:0017#3",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-02 \u00a74.1"
+   ],
+   "policy_quote": "Suspicious Transaction Reports (STRs) are filed with FIU-IND within 7 days of arriving at the conclusion that a transaction is suspicious.",
+   "finding": "The policy provides for filing STRs with FIU-IND but does not state that FlexiPay, as a non-bank PA, registers itself with FIU-IND.",
+   "severity": "medium",
+   "action": "Add to FP-02 a requirement that FlexiPay registers with FIU-IND as a non-bank PA and meets the reporting requirements of the KYC MD."
+  },
+  {
+   "doc_id": "rbi-n12896",
+   "obligation": "rbi-n12896:section:0019#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-12 \u00a71.1",
+    "FP-01 \u00a73.2"
+   ],
+   "policy_quote": "All amounts collected from customers for merchants are credited to FlexiPay's escrow account with Coastal Commercial Bank.",
+   "finding": "The policy keeps merchant funds in a separate escrow account with Coastal Commercial Bank, but it does not state that this bank is a Scheduled Commercial Bank, which the rule requires.",
+   "severity": "low",
+   "action": "Document that Coastal Commercial Bank is a Scheduled Commercial Bank in FP-12 \u00a71.1, or move the escrow account to an SCB."
+  },
+  {
+   "doc_id": "rbi-n12896",
+   "obligation": "rbi-n12896:section:0019#3",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FP-11 \u00a75.1",
+    "FP-12 \u00a71.1"
+   ],
+   "policy_quote": "Wallet balances are held in an escrow account with Coastal Commercial Bank.",
+   "finding": "FP-11 \u00a75.1 holds PPI wallet balances in the same escrow account with Coastal Commercial Bank that FP-12 \u00a71.1 uses for PA merchant funds, so the PA escrow account is used for a business other than authorised PA business.",
+   "severity": "high",
+   "action": "Hold FlexiWallet balances in a separate account and keep the PA escrow account limited to merchant collections and settlements."
+  },
+  {
+   "doc_id": "rbi-n12896",
+   "obligation": "rbi-n12896:section:0019#4",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-12 \u00a75.1"
+   ],
+   "policy_quote": "A chartered accountant certifies every quarter that the escrow account was operated as these rules require",
+   "finding": "The quarterly chartered accountant certificate in FP-12 \u00a75.1 covers general escrow operation but says nothing about inter-escrow account transfers, which need their own auditor's certificate.",
+   "severity": "medium",
+   "action": "Add a requirement in FP-12 \u00a75.1 that every inter-escrow account transfer is supported by an auditor's certificate."
+  },
+  {
+   "doc_id": "rbi-n12896",
+   "obligation": "rbi-n12896:section:0021#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-12 \u00a73.1"
+   ],
+   "policy_quote": "The escrow balance is reconciled with merchant payables every day by 10 am the next working day.",
+   "finding": "The policy reconciles escrow balances to merchant payables daily but does not require FlexiPay to maintain the balance at or above the amount payable to merchants, and it tolerates differences up to \u20b910,000.",
+   "severity": "medium",
+   "action": "Require that the day-end escrow balance is never less than the realised amount payable to merchants, and remove the \u20b910,000 tolerance for shortfalls."
+  },
+  {
+   "doc_id": "rbi-n12896",
+   "obligation": "rbi-n12896:section:0022#4",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-12 \u00a75.1"
+   ],
+   "policy_quote": "A chartered accountant certifies every quarter that the escrow account was operated as these rules require",
+   "finding": "FP-12 \u00a75.1 requires a quarterly chartered accountant certificate but does not require the escrow balance to be disclosed in it, and no annual certificate is provided for.",
+   "severity": "medium",
+   "action": "Amend FP-12 \u00a75.1 so the quarterly certificate discloses the escrow balance and add a requirement for an annual auditor's certificate with the same disclosure."
+  },
+  {
+   "doc_id": "rbi-n12896",
+   "obligation": "rbi-n12896:section:0023#7",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FP-12 \u00a75.1"
+   ],
+   "policy_quote": "A chartered accountant certifies every quarter that the escrow account was operated as these rules require, and the certificate is sent to the bank.",
+   "finding": "The policy has a chartered accountant certify quarterly and send the certificate to the bank, whereas the rule requires a statutory auditor's certificate submitted to the RBI DPSS Regional Office at the Annexure 2 periodicity.",
+   "severity": "medium",
+   "action": "Have the statutory auditor sign the escrow compliance certificate and submit it to the DPSS Regional Office of RBI where FlexiPay's registered office is situated, at the periodicity in Annexure 2."
+  },
+  {
+   "doc_id": "rbi-n12896",
+   "obligation": "rbi-n12896:section:0027#2",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a71.1"
+   ],
+   "policy_quote": "The CISO reports to the CEO and presents the information security posture to the IT Strategy Committee.",
+   "finding": "The policy sends the security posture to the IT Strategy Committee, but it does not require risk assessments, compliance posture, audit reports and security incidents to be presented to the Board.",
+   "severity": "medium",
+   "action": "Require the CISO to present risk assessments, security compliance posture, security audit reports and security incidents to the Board, not only to the IT Strategy Committee."
+  },
+  {
+   "doc_id": "rbi-n12896",
+   "obligation": "rbi-n12896:section:0027#3",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a74.1"
+   ],
+   "policy_quote": "AES-256 encryption at rest; TLS 1.2 or higher in transit.",
+   "finding": "The policy covers encryption at rest and transport channel security but does not mention PCI-DSS or PCI-SSF data security standards.",
+   "severity": "medium",
+   "action": "Add a requirement to implement PCI-DSS and PCI-SSF data security standards alongside the existing encryption and transport controls."
+  },
+  {
+   "doc_id": "rbi-n12896",
+   "obligation": "rbi-n12896:section:0028#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-18 \u00a74.1"
+   ],
+   "policy_quote": "Internal audit is outsourced to a chartered accountant firm and reports to the Audit Committee.",
+   "finding": "The policy outsources internal audit to a CA firm reporting to the Audit Committee, but it sets no quarterly internal or annual external audit reports and no submission to the IT Committee.",
+   "severity": "medium",
+   "action": "Require quarterly internal and annual external audit reports covering IT, submitted to the IT Committee."
+  },
+  {
+   "doc_id": "rbi-n12896",
+   "obligation": "rbi-n12896:section:0028#2",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FP-05 \u00a74.2"
+   ],
+   "policy_quote": "An external firm performs a penetration test of the FlexiPay app and Checkout once a year.",
+   "finding": "The policy requires an external penetration test once a year, while the rule requires bi-annual VAPT reports submitted to the IT Committee.",
+   "severity": "high",
+   "action": "Increase external VAPT to twice a year and submit the reports to the IT Committee."
+  },
+  {
+   "doc_id": "rbi-n12896",
+   "obligation": "rbi-n12896:section:0028#4",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a72.1"
+   ],
+   "policy_quote": "Every information asset has a named owner and a classification (public, internal, confidential, restricted).",
+   "finding": "The policy requires an asset owner and classification for information assets but does not require an inventory of applications storing customer sensitive data or its submission to the IT Committee.",
+   "severity": "medium",
+   "action": "Maintain an inventory of applications that store, process or transmit customer sensitive data and submit it to the IT Committee."
+  },
+  {
+   "doc_id": "rbi-n12896",
+   "obligation": "rbi-n12896:section:0028#7",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a72.1"
+   ],
+   "policy_quote": "Every information asset has a named owner and a classification (public, internal, confidential, restricted).",
+   "finding": "The information security policy covers asset ownership and data classification but does not address business alignment, roles and responsibilities, training, or penal measures for non-compliance.",
+   "severity": "low",
+   "action": "Add business alignment, roles and responsibilities, training and penal measures for non-compliance to the information security policy."
+  },
+  {
+   "doc_id": "rbi-n12896",
+   "obligation": "rbi-n12896:section:0028#9",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-18 \u00a75.1"
+   ],
+   "policy_quote": "A policy is reviewed at least once a year, and earlier when a regulation it implements changes.",
+   "finding": "The policy requires annual review of every policy, but it does not name the strategic plan, and the IT policy is only covered by the general rule.",
+   "severity": "low",
+   "action": "State explicitly that the strategic plan and IT policy are reviewed annually."
+  },
+  {
+   "doc_id": "rbi-n12896",
+   "obligation": "rbi-n12896:section:0029#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a71.1"
+   ],
+   "policy_quote": "The Board approves this policy. The CISO reports to the CEO and presents the information security posture to the IT Strategy Committee.",
+   "finding": "The policy shows the Board approving the information security policy, but nothing shows the Board establishing the necessary organisational processes and functions for information security or providing the necessary resources.",
+   "severity": "medium",
+   "action": "Add a provision in FP-05 or FP-18 stating that the Board establishes the information security processes and functions and provides the resources needed for them."
+  },
+  {
+   "doc_id": "rbi-n12896",
+   "obligation": "rbi-n12896:section:0029#2",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FP-05 \u00a71.2",
+    "FP-18 \u00a72.3"
+   ],
+   "policy_quote": "The IT Strategy Committee meets once a year.",
+   "finding": "The policy has an IT Strategy Committee that meets only once a year, with no business-function representation and no role in assisting Executive Management to implement IT strategy, so it falls short of an IT Steering Committee with well-defined objectives and actions.",
+   "severity": "medium",
+   "action": "Establish an IT Steering Committee with representatives from business functions that meets regularly and has defined objectives and actions to assist Executive Management in implementing the IT strategy."
+  },
+  {
+   "doc_id": "rbi-n12896",
+   "obligation": "rbi-n12896:section:0029#4",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-06 \u00a72.2"
+   ],
+   "policy_quote": "Contain, preserve evidence, eradicate, recover, then review.",
+   "finding": "The incident response procedure covers containment, eradication and recovery but has no detection component and does not say the crisis management plan is approved by the IT strategic committee.",
+   "severity": "medium",
+   "action": "Add a Cyber Crisis Management Plan to FP-06 with Detection, Containment, Response and Recovery components, approved by the IT Strategy Committee."
+  },
+  {
+   "doc_id": "rbi-n12896",
+   "obligation": "rbi-n12896:section:0030#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a72.1"
+   ],
+   "policy_quote": "Every information asset has a named owner and a classification (public, internal, confidential, restricted).",
+   "finding": "The policy assigns owners and classifications to information assets but does not require identifying threat/vulnerability combinations or assessing the likelihood of impact on confidentiality, availability or integrity.",
+   "severity": "medium",
+   "action": "Add a risk assessment step to FP-05 that, for each in-scope asset, records threat/vulnerability combinations and likelihood of impact on confidentiality, availability and integrity from business, compliance and contractual perspectives."
+  },
+  {
+   "doc_id": "rbi-n12896",
+   "obligation": "rbi-n12896:section:0030#3",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a73.1",
+    "FP-05 \u00a73.2"
+   ],
+   "policy_quote": "Production systems are reached only through a bastion host with multi-factor authentication. Privileged access is granted for a fixed time and every session is logged.",
+   "finding": "The policy controls production access through a bastion host, time-limited privileged access and six-monthly reviews, but never states the least-privilege and need-to-know principle tied to job responsibilities.",
+   "severity": "medium",
+   "action": "Amend FP-05 access control to state that access is granted on least privilege and need to know commensurate with each job role."
+  },
+  {
+   "doc_id": "rbi-n12896",
+   "obligation": "rbi-n12896:section:0031#2",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a75.1"
+   ],
+   "policy_quote": "Logs from production systems go to a SIEM watched by an outsourced Security Operations Centre, 24 hours a day.",
+   "finding": "The policy sends logs from production systems to a 24x7 SIEM, but does not cover security events from endpoint, network, middleware, database, web services, cryptographic events or other infrastructure sources, nor state that they are investigated and analysed.",
+   "severity": "medium",
+   "action": "Extend the SIEM collection scope in FP-05 to all listed event sources (application, endpoint, network, middleware, database, web services, cryptographic events) and require investigation and analysis of them."
+  },
+  {
+   "doc_id": "rbi-n12896",
+   "obligation": "rbi-n12896:section:0031#7",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-03 \u00a74.1"
+   ],
+   "policy_quote": "Merchants are contractually barred from storing card data.",
+   "finding": "The policy bars merchants from storing card data, but does not require reviewing merchants' PCI-DSS compliance status during onboarding.",
+   "severity": "medium",
+   "action": "Add a PCI-DSS compliance status review step to the merchant onboarding procedure in FP-03."
+  },
+  {
+   "doc_id": "rbi-n12896",
+   "obligation": "rbi-n12896:section:0032#4",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-09 \u00a73.2"
+   ],
+   "policy_quote": "is refunded to the source within T+5 days.",
+   "finding": "The policy refunds failed Checkout payments to the source, which is the original payment method, but it does not cover refunds generally or state that any alternate mode requires the customer's specific agreement.",
+   "severity": "medium",
+   "action": "Extend the refund paragraph to all refunds, stating that they go to the original payment method unless the customer specifically agrees to an alternate mode."
+  },
+  {
+   "doc_id": "rbi-n12896",
+   "obligation": "rbi-n12896:section:0033#2",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-05 \u00a74.2",
+    "FP-18 \u00a74.1"
+   ],
+   "policy_quote": "Vulnerability scans run monthly on internet-facing systems. An external firm performs a penetration test of the FlexiPay app and Checkout once a year.",
+   "finding": "The policy has an annual external penetration test and internal audit by a chartered accountant firm, but it has no externally audited IS Audit Report or Cyber Security Audit Report, no recorded observations with corrective action and closure dates, and no scope covering all information system areas.",
+   "severity": "medium",
+   "action": "Require an externally audited IS Audit and Cyber Security Audit covering all information system processes and applications, with observations, corrective actions and closure dates, and its submission to RBI as prescribed."
+  },
+  {
+   "doc_id": "rbi-n12896",
+   "obligation": "rbi-n12896:section:0033#3",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-12 \u00a75.1"
+   ],
+   "policy_quote": "A chartered accountant certifies every quarter that the escrow account was operated as these rules require, and the certificate is sent to the bank.",
+   "finding": "The policy requires a quarterly chartered accountant certificate on escrow operation, but it is sent to the bank and sets no deadline of the 15th of the month following quarter end, and it does not specify a certificate on maintenance of balance in escrow account for RBI.",
+   "severity": "medium",
+   "action": "Specify that the auditor's certificate on maintenance of balance in the escrow account is submitted to RBI by the 15th of the month following each quarter end."
+  },
+  {
+   "doc_id": "rbi-n12896",
+   "obligation": "rbi-n12896:section:0033#4",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-12 \u00a75.1"
+   ],
+   "policy_quote": "A chartered accountant certifies every quarter that the escrow account was operated as these rules require, and the certificate is sent to the bank.",
+   "finding": "The policy has a quarterly chartered accountant certificate on escrow operation, but it is not an internally audited Bankers' Certificate on escrow debits and credits and sets no 15th-of-month submission deadline.",
+   "severity": "medium",
+   "action": "Add an internally audited Bankers' Certificate on escrow account debits and credits, submitted to RBI by the 15th of the month following each quarter end."
+  },
+  {
+   "doc_id": "rbi-n12898",
+   "obligation": "rbi-n12898:section:0001#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-18 \u00a73.2"
+   ],
+   "policy_quote": "The CCO keeps a register of every RBI direction that applies to the group, with the internal policy that implements it and its owner.",
+   "finding": "The policy has no statement that the group will ensure compliance with these directions by April 1, 2026; FP-18 \u00a73.2 only requires a register of applicable RBI directions, with the implementing policy and owner, which supports but does not meet the deadline commitment.",
+   "severity": "medium",
+   "action": "Add a statement to FP-18 that FlexiPay and FlexiCredit will ensure compliance with applicable RBI payment and lending directions by April 1, 2026, and that the CCO register tracks each direction's compliance status against that date."
+  },
+  {
+   "doc_id": "rbi-n12898",
+   "obligation": "rbi-n12898:section:0003#3",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FP-20 \u00a72.1"
+   ],
+   "policy_quote": "Every payment from FlexiWallet uses two factors: the bound device (possession) and the app PIN (knowledge).",
+   "finding": "For ordinary payments the policy relies on a bound device and a static app PIN or UPI PIN, with no factor shown as dynamically created or unique to each transaction, although dynamic OTP is used only for card wallet loads.",
+   "severity": "medium",
+   "action": "Require at least one dynamically generated, transaction-unique factor (such as a per-transaction OTP or cryptogram) for non-card-present payments in FP-20."
+  },
+  {
+   "doc_id": "rbi-n12898",
+   "obligation": "rbi-n12898:section:0005#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-20 \u00a72.1",
+    "FP-20 \u00a72.2"
+   ],
+   "policy_quote": "Every payment from FlexiWallet uses two factors: the bound device (possession) and the app PIN (knowledge).",
+   "finding": "The policy describes the authentication factors in use but says nothing about testing the robustness and integrity of the authentication mechanism before deployment.",
+   "severity": "medium",
+   "action": "Add a pre-deployment requirement to test the robustness and integrity of each authentication mechanism, and record sign-off, before it goes live."
+  },
+  {
+   "doc_id": "rbi-n12898",
+   "obligation": "rbi-n12898:section:0005#2",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FP-10 \u00a72.4"
+   ],
+   "policy_quote": "the customer bears the whole loss until they report it",
+   "finding": "The policy makes the customer bear the whole loss after 7 days or where negligence is alleged, whereas the rule requires full compensation without demur for losses from non-compliant transactions.",
+   "severity": "high",
+   "action": "Remove the 7-day cut-off and the negligence exclusion for losses arising from transactions not compliant with the directions, and compensate the customer in full without demur."
+  },
+  {
+   "doc_id": "rbi-n12898",
+   "obligation": "rbi-n12898:section:0005#3",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FP-08 \u00a76.1"
+   ],
+   "policy_quote": "The Data Protection Officer reports to the CCO and is the contact for the Data Protection Board of India.",
+   "finding": "The policy sets up a Data Protection Officer reporting to the CCO but does not commit the company to adhere to the DPDP Act, 2023 in its processing and storage practices.",
+   "severity": "medium",
+   "action": "Add an explicit commitment that all personal data handling complies with the Digital Personal Data Protection Act, 2023, and map the policy obligations to that Act."
+  }
+ ]
+}

@@ -225,6 +225,9 @@ def test_the_gap_key_parses_and_scoring_matches_on_policy_and_heading() -> None:
     g6 = next(r for r in rows if r.id == "G6")
     assert g6.refs == (("FC-16", "2"),) and g6.doc_id == "rbi-n12704"
     assert next(r for r in rows if r.id == "G9").refs == (("FP-00", "3"), ("FP-12", "6"))
+    # N1's explanation names rbi-n12715; its circular column is rbi-n12562.
+    assert next(r for r in rows if r.id == "N1").doc_id == "rbi-n12562"
+    assert len({r.doc_id for r in rows}) == 12
 
     def report(*ratings: dict) -> dict:
         return {"ratings": list(ratings), "problems": [], "counts": {}}
@@ -240,3 +243,10 @@ def test_the_gap_key_parses_and_scoring_matches_on_policy_and_heading() -> None:
     assert result["per_row"]["G6"] and not result["per_row"]["G1"]
     assert result["traps_flagged"] == "1/3" and result["gaps_found"] == "1/12"
     assert result["unkeyed_flags"] == 1  # the stray partial; the trap counts as trapped
+
+
+def test_the_wilson_interval_does_not_collapse_at_twelve_of_twelve() -> None:
+    from regradar.evaluate_impact import wilson
+
+    low, high = wilson(12, 12)
+    assert high == 1.0 and 0.75 < low < 0.76

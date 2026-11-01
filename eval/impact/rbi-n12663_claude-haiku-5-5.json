@@ -1,0 +1,497 @@
+{
+ "doc_id": "rbi-n12663",
+ "title": "Key Facts Statement (KFS) for Loans & Advances",
+ "model": "claude-haiku-5-5",
+ "verdict": "action needed",
+ "problems": [],
+ "counts": {
+  "obligations": 19,
+  "actions": 7,
+  "gap": 6,
+  "not_covered": 10,
+  "partial": 1,
+  "met": 1,
+  "review": 2
+ },
+ "obligations": [
+  {
+   "text": "The harmonised KFS and APR instructions shall be applicable in cases of all retail and MSME term loan products extended by all regulated entities (REs).",
+   "applies_to": "all regulated entities (REs)",
+   "deadline": null,
+   "paragraph": "2",
+   "quote": "The harmonised instructions shall be applicable in cases of all retail and MSME term loan products extended by all regulated entities (REs).",
+   "id": "rbi-n12663:section:0000#1",
+   "chunk_id": "rbi-n12663:section:0000"
+  },
+  {
+   "text": "REs shall provide a KFS to all prospective borrowers to help them take an informed view before executing the loan contract, as per the standardised format given in Annex A.",
+   "applies_to": "REs",
+   "deadline": null,
+   "paragraph": "4",
+   "quote": "REs shall provide a KFS to all prospective borrowers to help them take an informed view before executing the loan contract, as per the standardised format given in the Annex A.",
+   "id": "rbi-n12663:section:0002#1",
+   "chunk_id": "rbi-n12663:section:0002"
+  },
+  {
+   "text": "The KFS shall be written in a language understood by the borrowers.",
+   "applies_to": "REs",
+   "deadline": null,
+   "paragraph": "4",
+   "quote": "The KFS shall be written in a language understood by such borrowers.",
+   "id": "rbi-n12663:section:0002#2",
+   "chunk_id": "rbi-n12663:section:0002"
+  },
+  {
+   "text": "REs shall explain the contents of the KFS to the borrower and obtain an acknowledgement that the borrower has understood the same.",
+   "applies_to": "REs",
+   "deadline": null,
+   "paragraph": "4",
+   "quote": "Contents of KFS shall be explained to the borrower and an acknowledgement shall be obtained that he/she has understood the same.",
+   "id": "rbi-n12663:section:0002#3",
+   "chunk_id": "rbi-n12663:section:0002"
+  },
+  {
+   "text": "The KFS shall be provided with a unique proposal number.",
+   "applies_to": "REs",
+   "deadline": null,
+   "paragraph": "5",
+   "quote": "Further, the KFS shall be provided with a unique proposal number and shall have a validity period of at least three working days for loans having tenor of seven days or more",
+   "id": "rbi-n12663:section:0002#4",
+   "chunk_id": "rbi-n12663:section:0002"
+  },
+  {
+   "text": "The KFS shall have a validity period of at least three working days for loans having tenor of seven days or more.",
+   "applies_to": "REs",
+   "deadline": "three working days",
+   "paragraph": "5",
+   "quote": "shall have a validity period of at least three working days for loans having tenor of seven days or more, and a validity period of one working day for loans having tenor of less than seven days.",
+   "id": "rbi-n12663:section:0002#5",
+   "chunk_id": "rbi-n12663:section:0002"
+  },
+  {
+   "text": "The KFS shall have a validity period of one working day for loans having tenor of less than seven days.",
+   "applies_to": "REs",
+   "deadline": "one working day",
+   "paragraph": "5",
+   "quote": "and a validity period of one working day for loans having tenor of less than seven days.",
+   "id": "rbi-n12663:section:0002#6",
+   "chunk_id": "rbi-n12663:section:0002"
+  },
+  {
+   "text": "The RE shall be bound by the terms of the loan indicated in the KFS if agreed to by the borrower during the validity period.",
+   "applies_to": "REs",
+   "deadline": null,
+   "paragraph": "Explanation",
+   "quote": "The RE shall be bound by the terms of the loan indicated in the KFS, if agreed to by the borrower during the validity period.",
+   "id": "rbi-n12663:section:0002#7",
+   "chunk_id": "rbi-n12663:section:0002"
+  },
+  {
+   "text": "The KFS shall include a computation sheet of annual percentage rate (APR) and the amortisation schedule of the loan over the loan tenor.",
+   "applies_to": "Regulated entities providing loans (KFS preparers)",
+   "deadline": null,
+   "paragraph": "6",
+   "quote": "The KFS shall also include a computation sheet of annual percentage rate (APR), and the amortisation schedule of the loan over the loan tenor.",
+   "id": "rbi-n12663:section:0003#1",
+   "chunk_id": "rbi-n12663:section:0003"
+  },
+  {
+   "text": "Charges recovered from borrowers by REs on behalf of third-party service providers on actual basis, such as insurance and legal charges, must form part of the APR and be disclosed separately.",
+   "applies_to": "REs",
+   "deadline": null,
+   "paragraph": "7",
+   "quote": "Charges recovered from the borrowers by the REs on behalf of third-party service providers on actual basis, such as insurance charges, legal charges etc., shall also form part of the APR and shall be disclosed separately.",
+   "id": "rbi-n12663:section:0004#1",
+   "chunk_id": "rbi-n12663:section:0004"
+  },
+  {
+   "text": "Wherever the RE is involved in recovering such third-party charges, it must provide receipts and related documents to the borrower for each payment within a reasonable time.",
+   "applies_to": "REs",
+   "deadline": "within a reasonable time",
+   "paragraph": "7",
+   "quote": "In all cases wherever the RE is involved in recovering such charges, the receipts and related documents shall be provided to the borrower for each payment, within a reasonable time.",
+   "id": "rbi-n12663:section:0004#2",
+   "chunk_id": "rbi-n12663:section:0004"
+  },
+  {
+   "text": "REs must not charge any fees or charges not mentioned in the KFS to the borrower at any stage during the loan term without the borrower's explicit consent.",
+   "applies_to": "REs",
+   "deadline": null,
+   "paragraph": "8",
+   "quote": "Any fees, charges, etc. which are not mentioned in the KFS, cannot be charged by the REs to the borrower at any stage during the term of the loan, without explicit consent of the borrower.",
+   "id": "rbi-n12663:section:0004#3",
+   "chunk_id": "rbi-n12663:section:0004"
+  },
+  {
+   "text": "The KFS must be included as a summary box exhibited as part of the loan agreement.",
+   "applies_to": "REs",
+   "deadline": null,
+   "paragraph": "9",
+   "quote": "The KFS shall also be included as a summary box to be exhibited as part of the loan agreement.",
+   "id": "rbi-n12663:section:0004#4",
+   "chunk_id": "rbi-n12663:section:0004"
+  },
+  {
+   "text": "REs shall put in place the necessary systems and processes to implement the above guidelines at the earliest.",
+   "applies_to": "REs",
+   "deadline": "at the earliest",
+   "paragraph": "11",
+   "quote": "REs shall put in place the necessary systems and processes to implement the above guidelines at the earliest.",
+   "id": "rbi-n12663:section:0005#1",
+   "chunk_id": "rbi-n12663:section:0005"
+  },
+  {
+   "text": "All new retail and MSME term loans sanctioned on or after October 1, 2024, including fresh loans to existing customers, shall comply with the above guidelines in letter and spirit without any exception.",
+   "applies_to": "REs (in respect of new retail and MSME term loans)",
+   "deadline": "on or after October 1, 2024",
+   "paragraph": "11",
+   "quote": "all new retail and MSME term loans sanctioned on or after October 1, 2024, including fresh loans to existing customers, shall comply with the above guidelines in letter and spirit without any exception.",
+   "id": "rbi-n12663:section:0005#2",
+   "chunk_id": "rbi-n12663:section:0005"
+  },
+  {
+   "text": "REs must disclose the amount of a loan net of any taxes such as GST, where they choose to do so, and must mention the frequency of any recurring charge where it is recurring.",
+   "applies_to": "REs",
+   "deadline": null,
+   "paragraph": "4",
+   "quote": "REs may disclose the amount net of any taxes such as GST",
+   "id": "rbi-n12663:section:0010#1",
+   "chunk_id": "rbi-n12663:section:0010"
+  },
+  {
+   "text": "A generic email id furnished as the nodal grievance redressal officer contact must provide a response within 1 working day.",
+   "applies_to": "REs",
+   "deadline": "1 working day",
+   "paragraph": "7",
+   "quote": "RE may furnish generic email id, provided a response is made within 1 working day",
+   "id": "rbi-n12663:section:0010#2",
+   "chunk_id": "rbi-n12663:section:0010"
+  },
+  {
+   "text": "The KFS must provide a detailed schedule of disbursement as per the terms and conditions.",
+   "applies_to": "Lenders issuing the Key Facts Statement for loans and advances",
+   "deadline": null,
+   "paragraph": "10",
+   "quote": "Schedule of disbursement as per terms and conditions | Detailed schedule to be provided",
+   "id": "rbi-n12663:section:0012#1",
+   "chunk_id": "rbi-n12663:section:0012"
+  },
+  {
+   "text": "Where charges under the KFS cannot be determined prior to sanction, REs may indicate an upper ceiling; this permissive provision is not itself a mandatory rule.",
+   "applies_to": "REs",
+   "deadline": null,
+   "paragraph": "8",
+   "quote": "Where such charges cannot be determined prior to sanction, REs may indicate an upper ceiling",
+   "id": "rbi-n12663:section:0013#1",
+   "chunk_id": "rbi-n12663:section:0013"
+  }
+ ],
+ "ratings": [
+  {
+   "obligation": "rbi-n12663:section:0000#1",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FC-13 \u00a73.1",
+    "FC-13 \u00a73.2"
+   ],
+   "policy_quote": "A Key Fact Statement (KFS), in the standard format, is shown before the loan agreement is signed.",
+   "finding": "FC-13 \u00a73.1 requires the standard KFS with APR before signing, but \u00a73.2 replaces the KFS with a one-screen summary for loans of \u20b910,000 or less, which falls short of the harmonised KFS requirement for all retail and MSME term loans.",
+   "severity": "medium",
+   "action": "Remove the \u20b910,000 exemption in FC-13 \u00a73.2 so that the harmonised standard-format KFS with APR is shown before signing for every retail and MSME term loan."
+  },
+  {
+   "obligation": "rbi-n12663:section:0002#1",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FC-13 \u00a73.1",
+    "FC-13 \u00a73.2"
+   ],
+   "policy_quote": "A Key Fact Statement (KFS), in the standard format, is shown before the loan agreement is signed.",
+   "finding": "FC-13 \u00a73.1 provides a standard-format KFS before signing, but FC-13 \u00a73.2 replaces the KFS with a one-screen summary for loans of \u20b910,000 or less, whereas the rule requires a KFS in the Annex A format for all prospective borrowers.",
+   "severity": "high",
+   "action": "Remove the \u20b910,000 exemption in FC-13 \u00a73.2 so that every prospective borrower receives the standard-format KFS from Annex A before executing the loan contract."
+  },
+  {
+   "obligation": "rbi-n12663:section:0002#2",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown requires the KFS to be written in a language understood by the borrower.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12663:section:0002#3",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown requires the KFS contents to be explained to the borrower or an acknowledgement of understanding to be obtained.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12663:section:0002#4",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown requires a unique proposal number on the KFS.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12663:section:0002#5",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown sets a KFS validity period of at least three working days for loans of seven days or more.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12663:section:0002#6",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown sets a one-working-day KFS validity period for loans of less than seven days.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12663:section:0002#7",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown binds FlexiCredit to the KFS loan terms when the borrower agrees during the validity period.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12663:section:0003#1",
+   "applies": true,
+   "status": "partial",
+   "policy_refs": [
+    "FC-13 \u00a73.1",
+    "FC-13 \u00a73.2"
+   ],
+   "policy_quote": "A Key Fact Statement (KFS), in the standard format, is shown before the loan agreement is signed.",
+   "finding": "FC-13 \u00a73.1 requires the KFS to show the APR, but no paragraph requires a computation sheet or an amortisation schedule over the loan tenor, and the \u00a73.2 one-screen summary for loans of \u20b910,000 or less includes neither.",
+   "severity": "medium",
+   "action": "Amend FC-13 \u00a73.1 so the KFS includes an APR computation sheet and the full amortisation schedule over the loan tenor, and state whether the \u00a73.2 one-screen summary for small loans must also carry them."
+  },
+  {
+   "obligation": "rbi-n12663:section:0004#1",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown says that third-party charges recovered on an actual basis, such as insurance and legal charges, form part of the APR or are disclosed separately.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12663:section:0004#2",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No paragraph shown requires receipts and related documents to be given to borrowers for each third-party charge payment that FlexiCredit helps recover.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12663:section:0004#3",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FC-14 \u00a74.1",
+    "FC-14 \u00a73.2"
+   ],
+   "policy_quote": "Any change to charges is told to borrowers at least 30 days in advance, by SMS and in the app.",
+   "finding": "The policy lets charges change after 30 days' notice to borrowers, with no requirement for explicit borrower consent to fees not in the KFS, which the obligation prohibits.",
+   "severity": "high",
+   "action": "Require the borrower's explicit consent before any fee or charge not mentioned in the KFS is levied at any stage of the loan term."
+  },
+  {
+   "obligation": "rbi-n12663:section:0004#4",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FC-13 \u00a73.1",
+    "FC-13 \u00a73.2"
+   ],
+   "policy_quote": "A Key Fact Statement (KFS), in the standard format, is shown before the loan agreement is signed.",
+   "finding": "The policy shows the KFS before signing rather than as a summary box exhibited as part of the loan agreement, and for loans of \u20b910,000 or less it replaces the KFS with a one-screen summary.",
+   "severity": "high",
+   "action": "Exhibit the standard-format KFS as a summary box forming part of every loan agreement, including loans of \u20b910,000 or less."
+  },
+  {
+   "obligation": "rbi-n12663:section:0005#1",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "The shown policy paragraphs do not describe systems or processes to implement the RBI digital lending guidelines, and the index lists FC-13 Digital Lending Policy without any paragraph of it being cited.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12663:section:0005#2",
+   "applies": true,
+   "status": "not_covered",
+   "policy_refs": [],
+   "policy_quote": "",
+   "finding": "No shown paragraph states that new retail and MSME term loans sanctioned on or after October 1, 2024, including fresh loans to existing customers, must comply with the digital lending guidelines without exception.",
+   "severity": "none",
+   "action": null
+  },
+  {
+   "obligation": "rbi-n12663:section:0010#2",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FP-09 \u00a72.1",
+    "FP-09 \u00a71.2",
+    "FP-09 \u00a71.1"
+   ],
+   "policy_quote": "Complaints are resolved within 30 days.",
+   "finding": "FP-09 accepts complaints by generic email (support@flexipay.example) but sets no response time of 1 working day; it allows 30 days for resolution and only a reference number by SMS within 1 hour.",
+   "severity": "high",
+   "action": "Amend FP-09 so that a response to any complaint sent to the generic nodal email is given within 1 working day, separately from the 30-day resolution timeline."
+  },
+  {
+   "obligation": "rbi-n12663:section:0012#1",
+   "applies": true,
+   "status": "gap",
+   "policy_refs": [
+    "FC-13 \u00a73.1",
+    "FC-13 \u00a73.2"
+   ],
+   "policy_quote": "A Key Fact Statement (KFS), in the standard format, is shown before the loan agreement is signed.",
+   "finding": "The policy requires a KFS showing APR, recovery mechanism, grievance officer and cooling-off terms but does not mention a detailed schedule of disbursement, and for loans of \u20b910,000 or less it replaces the KFS with a one-screen summary of amount, EMI and due dates.",
+   "severity": "medium",
+   "action": "Add a detailed disbursement schedule to the KFS for all loans and remove the replacement of the KFS for loans of \u20b910,000 or less."
+  },
+  {
+   "obligation": "rbi-n12663:section:0013#1",
+   "applies": true,
+   "status": "met",
+   "policy_refs": [
+    "FC-14 \u00a72.2"
+   ],
+   "policy_quote": "Interest is charged from the date of disbursal, not from the date of sanction or agreement.",
+   "finding": "The obligation is permissive only: REs may indicate an upper ceiling where KFS charges cannot be determined before sanction, and the policy does not prohibit this, so no mandatory requirement is breached.",
+   "severity": "none",
+   "action": null
+  }
+ ],
+ "actions": [
+  {
+   "obligation": "rbi-n12663:section:0002#1",
+   "action": "Remove the \u20b910,000 exemption in FC-13 \u00a73.2 so that every prospective borrower receives the standard-format KFS from Annex A before executing the loan contract.",
+   "owner": "CEO, FlexiCredit",
+   "priority": "P1",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FC-13 \u00a73.1",
+    "FC-13 \u00a73.2"
+   ]
+  },
+  {
+   "obligation": "rbi-n12663:section:0004#3",
+   "action": "Require the borrower's explicit consent before any fee or charge not mentioned in the KFS is levied at any stage of the loan term.",
+   "owner": "CEO, FlexiCredit",
+   "priority": "P1",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FC-14 \u00a74.1",
+    "FC-14 \u00a73.2"
+   ]
+  },
+  {
+   "obligation": "rbi-n12663:section:0004#4",
+   "action": "Exhibit the standard-format KFS as a summary box forming part of every loan agreement, including loans of \u20b910,000 or less.",
+   "owner": "CEO, FlexiCredit",
+   "priority": "P1",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FC-13 \u00a73.1",
+    "FC-13 \u00a73.2"
+   ]
+  },
+  {
+   "obligation": "rbi-n12663:section:0010#2",
+   "action": "Amend FP-09 so that a response to any complaint sent to the generic nodal email is given within 1 working day, separately from the 30-day resolution timeline.",
+   "owner": "Principal Nodal Officer",
+   "priority": "P1",
+   "deadline": "1 working day",
+   "policy_refs": [
+    "FP-09 \u00a72.1",
+    "FP-09 \u00a71.2",
+    "FP-09 \u00a71.1"
+   ]
+  },
+  {
+   "obligation": "rbi-n12663:section:0000#1",
+   "action": "Remove the \u20b910,000 exemption in FC-13 \u00a73.2 so that the harmonised standard-format KFS with APR is shown before signing for every retail and MSME term loan.",
+   "owner": "CEO, FlexiCredit",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FC-13 \u00a73.1",
+    "FC-13 \u00a73.2"
+   ]
+  },
+  {
+   "obligation": "rbi-n12663:section:0003#1",
+   "action": "Amend FC-13 \u00a73.1 so the KFS includes an APR computation sheet and the full amortisation schedule over the loan tenor, and state whether the \u00a73.2 one-screen summary for small loans must also carry them.",
+   "owner": "CEO, FlexiCredit",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FC-13 \u00a73.1",
+    "FC-13 \u00a73.2"
+   ]
+  },
+  {
+   "obligation": "rbi-n12663:section:0012#1",
+   "action": "Add a detailed disbursement schedule to the KFS for all loans and remove the replacement of the KFS for loans of \u20b910,000 or less.",
+   "owner": "CEO, FlexiCredit",
+   "priority": "P2",
+   "deadline": "not stated in the circular",
+   "policy_refs": [
+    "FC-13 \u00a73.1",
+    "FC-13 \u00a73.2"
+   ]
+  }
+ ],
+ "review": [
+  {
+   "kind": "dropped obligation",
+   "text": "The APR shall include all charges which are levied by the RE.",
+   "applies_to": "Regulated entities (REs) providing loans",
+   "deadline": null,
+   "paragraph": "6",
+   "quote": "APR will include all charges which are levied by the RE.",
+   "id": "",
+   "chunk_id": "",
+   "problems": [
+    "the quote is not in the section"
+   ]
+  },
+  {
+   "kind": "unrated obligation",
+   "obligation": "rbi-n12663:section:0010#1",
+   "problems": [
+    "the quote is not in FC-14 \u00a73.1"
+   ]
+  }
+ ]
+}
