@@ -309,3 +309,29 @@ resume line changes from "hand-built".
 2. Then: answers on dev and test; 100 answers for Nihar to label (judge
    calibration, Cohen's kappa); the judge; citation precision in the gate.
 3. Review a sample of the golden set (`regradar.golden review --sample 30`).
+
+## 2026-11-01 (Sun): answers run; hybrid fusion made repeatable
+
+**Done**
+- Hybrid fusion moved from Qdrant to code (`regradar/index.py: rrf`): Qdrant's
+  server-side RRF broke ties differently per call (9 of 40 queries changed
+  their top 5 on repeat); now 0 of 150. Every hybrid row re-run. Recall held;
+  section / hybrid test MRR 71.1 -> 68.3, and the test MRR gain over dense is
+  now +7.7 [-0.7, +16.2], which includes zero (dev: +14.0 [+7.6, +20.9]).
+  hit@10 +5.7 [+1.4, +11.4] holds. ABLATION.md and RESUME_CLAIMS.md corrected;
+  gate baseline re-recorded at 90.0 / 76.94.
+- Answers, Haiku 5.5 on all 150 questions (first paid run, approved): test
+  answered 91.4 [84.3, 97.1], rejected 4.3, citation precision 70.4, recall
+  84.3, unanswerable declined 95.0. Spend so far $0.1111.
+- The number check rejected numbers the question itself gave and mangled long
+  identifiers; fixed after seeing test results (answered 87.1 -> 91.4), so the
+  test answer numbers are not a clean held-out result.
+  `answers_before_number_fix.json` keeps the first run.
+- 100 answers sampled for Nihar's labels (40 dev, 60 held out, seed
+  20261101); labelling started.
+
+**Next**
+1. Nihar finishes labelling; the judge is tuned on the 40 dev labels and
+   scored once on the 60 held out (`--final`); report kappa.
+2. Citation precision in the CI gate.
+3. Golden-set review sample; M3 explain-back gate.
