@@ -4,8 +4,11 @@
     REGRADAR_MODEL=claude-haiku-5-5 REGRADAR_SPEND=1 uv run python -m regradar.demo serve
 
 Built for a free CPU Space: retrieval runs on an embedded Qdrant file (no
-server) with the same models and fusion as the evaluation. Only /ask-style
-questions call the model, and they are fenced in three ways:
+server) with the same models and fusion as the evaluation. Without a model
+(the default), the demo offers search, the cited answers the evaluation
+produced for the 150 golden questions, the impact reports and the results.
+With `REGRADAR_SPEND=1` and an API key it also answers live questions,
+fenced in three ways:
 
     - a spend cap (`DEMO_BUDGET_USD`, default $1) on a ledger of its own;
     - a rate limit per visitor (5 questions in 10 minutes) and per day (200);
@@ -19,6 +22,7 @@ synthetic.
 from __future__ import annotations
 
 import argparse
+import json
 import os
 import sys
 import threading
@@ -99,13 +103,47 @@ def render_answer(result: Any, hits: list[Any]) -> str:
     return "\n".join(lines)
 
 
+def source_label(meta: dict[str, Any], section: str | None = None) -> str:
+    label = meta.get("title") or meta.get("doc_id", "?")
+    if section:
+        label += f", {section}"
+    return f"[{label}]({meta['page_url']})" if meta.get("page_url") else label
+
+
+def stored_answers(results: Path = ROOT / "eval" / "results") -> dict[str, dict[str, Any]]:
+    """The evaluation's answers to the golden questions, by question ID."""
+    out: dict[str, dict[str, Any]] = {}
+    for path in sorted(results.glob("answers_*_claude-*_section_hybrid.json")):
+        for row in json.loads(path.read_text(encoding="utf-8"))["questions"]:
+            out[row["question_id"]] = row
+    return out
+
+
+def render_stored(row: dict[str, Any], reference: str, metadata: dict[str, Any]) -> str:
+    if row["status"] == "not_found":
+        body = "**Not found in the corpus.**"
+    elif row["status"] == "rejected":
+        body = "**Withheld:** the citations did not hold after one retry: " + "; ".join(
+            row["problems"]
+        )
+    else:
+        lines = []
+        for claim in row["claims"]:
+            refs = [source_label(metadata.get(cid.split(":")[0], {})) for cid in claim["citations"]]
+            lines.append(f"- {claim['text']}  \n  <sub>Source: {'; '.join(refs)}</sub>")
+        body = "\n".join(lines)
+    return f"{body}\n\n**Reference answer (golden set):** {reference}"
+
+
 def app() -> Any:
     import gradio as gr
     from qdrant_client import QdrantClient
 
-    from regradar.index import QueryEncoders, Retriever
+    from regradar.golden import load
+    from regradar.index import QueryEncoders, Retriever, metadata
     from regradar.llm import ANSWER_SCHEMA, BudgetExceeded, Claude, DryRun
 
+    live = os.environ.get("REGRADAR_SPEND") == "1" and bool(os.environ.get("ANTHROPIC_API_KEY"))
     model = os.environ.get("REGRADAR_MODEL", "claude-haiku-5-5")
     budget = float(os.environ.get("DEMO_BUDGET_USD", "1.00"))
     claude = Claude(
@@ -142,6 +180,30 @@ def app() -> Any:
             )
         return render_answer(result, hits)
 
+    meta = metadata()
+
+    def search(query: str) -> str:
+        query = (query or "").strip()
+        if not 3 <= len(query) <= 300:
+            return "Search for 3 to 300 characters."
+        lines = []
+        for n, h in enumerate(retriever.search(query, mode="hybrid", k=5), 1):
+            p = h.payload
+            snippet = " ".join(p["text"].split())[:500]
+            lines.append(f"**{n}. {source_label(p | meta.get(h.doc_id, {}), p.get('section'))}**")
+            lines.append(f"{(p.get('date') or '')[:10]}  \n{snippet}…\n")
+        return "\n".join(lines)
+
+    golden = {q.id: q for q in load()}
+    answers = stored_answers()
+    choices = [f"{qid}: {golden[qid].question}" for qid in sorted(answers)]
+
+    def example(choice: str) -> str:
+        qid = (choice or "").split(":")[0]
+        if qid not in answers:
+            return ""
+        return render_stored(answers[qid], golden[qid].answer, meta)
+
     reports = sorted((ROOT / "eval" / "impact").glob("*.md"))
     names = [p.stem for p in reports]
 
@@ -151,21 +213,42 @@ def app() -> Any:
 
     evaluation = "\n\n".join(
         p.read_text(encoding="utf-8")
-        for p in (ROOT / "eval" / "results" / "ABLATION.md", ROOT / "eval" / "judge" / "SUMMARY.md")
+        for p in (
+            ROOT / "eval" / "results" / "ABLATION.md",
+            ROOT / "eval" / "judge" / "SUMMARY.md",
+            ROOT / "eval" / "results" / "IMPACT.md",
+            ROOT / "eval" / "results" / "DSPY.md",
+        )
         if p.exists()
     )
     with gr.Blocks(title="RegRadar") as blocks:
         gr.Markdown(
-            "# RegRadar\nCited answers over ~290 RBI circulars and Master Directions. Every claim "
+            "# RegRadar\nCited answers over 290 RBI circulars and Master Directions. Every claim "
             "cites the circular text it rests on, and code checks the citations before an answer "
-            "is shown. A research demo, not legal advice."
+            "is shown. A research demo, not legal advice. "
+            "[Code and evaluation](https://github.com/nihardamera/RegRadar)."
         )
-        with gr.Tab("Ask"):
-            box = gr.Textbox(label="Question", placeholder=EXAMPLES[0])
-            out = gr.Markdown()
-            gr.Examples(EXAMPLES, inputs=box)
-            box.submit(ask, inputs=box, outputs=out)
-            gr.Button("Ask").click(ask, inputs=box, outputs=out)
+        if live:
+            with gr.Tab("Ask"):
+                box = gr.Textbox(label="Question", placeholder=EXAMPLES[0])
+                out = gr.Markdown()
+                gr.Examples(EXAMPLES, inputs=box)
+                box.submit(ask, inputs=box, outputs=out)
+                gr.Button("Ask").click(ask, inputs=box, outputs=out)
+        with gr.Tab("Example answers"):
+            gr.Markdown(
+                "Answers Haiku 5.5 gave to the 150 golden questions in the evaluation, with "
+                "their citations, beside the golden set's reference answer. Includes the "
+                "questions the corpus cannot answer."
+            )
+            pick_q = gr.Dropdown(choices, value=choices[0] if choices else None, label="Question")
+            shown = gr.Markdown(example(choices[0]) if choices else "")
+            pick_q.change(example, inputs=pick_q, outputs=shown)
+        with gr.Tab("Search"):
+            query = gr.Textbox(label="Search the circulars", placeholder="penal charges on loans")
+            hits_md = gr.Markdown()
+            query.submit(search, inputs=query, outputs=hits_md)
+            gr.Button("Search").click(search, inputs=query, outputs=hits_md)
         with gr.Tab("Impact reports"):
             gr.Markdown(
                 "Obligations from a circular, matched against the policies of **FlexiPay India, "

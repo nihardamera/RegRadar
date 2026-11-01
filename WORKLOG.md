@@ -432,3 +432,12 @@ missing optuna extra, GEPA $0.50, scoring $0.24). Metric bug fixed before the
 run: declining when retrieval missed the answer now scores 1. Not re-run with a
 bigger budget: more GEPA calls on 28 validation questions would fit them harder.
 Project API spend to date: $2.25.
+
+**M6**: static demo published at https://huggingface.co/spaces/nihar-damera/RegRadar
+(Nihar chose no API key; Hugging Face now needs PRO for Gradio Spaces, so the page is
+static: golden questions with stored cited answers, impact reports, evaluation;
+`regradar/site.py`). Checked in headless Chrome at desktop and narrow widths, then on
+the live URL. The Gradio app (`regradar/demo.py`) is verified locally; its embedded
+index matches the server's retrieval (identical gate scores; 29/30 identical top 10).
+Next: merge v2 into main; Nihar writes "Design decisions" and, optionally, reviews a
+golden-set sample.

@@ -8,6 +8,11 @@ policies with citations, and builds an action plan.
 
 Every number below comes from a committed evaluation file, with a 95% interval.
 
+**Demo:** [huggingface.co/spaces/nihar-damera/RegRadar](https://huggingface.co/spaces/nihar-damera/RegRadar):
+the 150 golden questions with the cited answers RegRadar gave, the 12 impact reports
+and the evaluation. It is a static page of committed results (Hugging Face charges for
+Gradio hosting); live search and answers run locally with `regradar.demo`.
+
 ## Results
 
 **Retrieval** (70 held-out questions; `eval/results/ABLATION.md`)
@@ -100,6 +105,17 @@ REGRADAR_MODEL=claude-haiku-5-5 REGRADAR_SPEND=1 uv run uvicorn regradar.api:app
 
 Without `REGRADAR_SPEND=1` the model runs dry: only cached requests are answered.
 Every paid call is written to a ledger and refused past a $5 budget.
+
+The interactive demo (search, example answers, impact reports, and live answers
+when a key is set, behind a $1 cap and per-visitor rate limits) runs on an embedded
+Qdrant file, no server needed:
+
+```bash
+uv sync --extra demo
+uv run python -m regradar.demo build-index   # from cached vectors
+uv run python -m regradar.demo serve         # http://localhost:7860
+uv run python -m regradar.site build         # the static page published to the Space
+```
 
 ## How it was built
 

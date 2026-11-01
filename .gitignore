@@ -36,3 +36,5 @@ data
 
 # The demo's embedded Qdrant index, rebuilt from cached vectors (regradar.demo build-index)
 demo_index/
+# The static demo page, rebuilt by regradar.site build
+site/

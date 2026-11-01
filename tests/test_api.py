@@ -130,3 +130,13 @@ def test_the_demo_rate_limit_is_per_visitor_and_per_day() -> None:
     assert "limit reached" in (limits.allow("a", now=2) or "")
     assert limits.allow("a", now=700) is None  # the window has passed
     assert "daily" in (limits.allow("b", now=701) or "")
+
+
+def test_the_static_site_points_relative_links_at_github() -> None:
+    from regradar.site import ROOT, absolute_links
+
+    text = "see [the data](dspy_test.json), [key](../../company/GAP_KEY.md), [web](https://x.org)"
+    out = absolute_links(text, ROOT / "eval" / "results" / "DSPY.md")
+    assert "(https://github.com/nihardamera/RegRadar/blob/main/eval/results/dspy_test.json)" in out
+    assert "(https://github.com/nihardamera/RegRadar/blob/main/company/GAP_KEY.md)" in out
+    assert "(https://x.org)" in out
