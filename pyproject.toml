@@ -35,7 +35,7 @@ llm = [
     "anthropic==2.3.0",
 ]
 dspy = [
-    "dspy==3.4.1",
+    "dspy[optuna]==3.4.1",
 ]
 demo = [
     "gradio==6.31.0",
