@@ -13,7 +13,12 @@ No question, answer or span came from RegRadar's retriever: answers were
 located with plain keyword search, and retrieval was not run until the set was
 complete.
 
-**Status.** v1: 150 questions, complete; human review pending.
+**Status.** v1: 150 questions, complete. Human review: a random sample of 30
+(`review --sample 30 --seed 1`) reviewed by Nihar Damera on 2 Nov 2026: 28
+approved, 2 flagged. Both flags were resolved without changing the set: q098 is
+unanswerable by design ("not found" is the expected answer), and q127 asks only
+about low-risk customers, so the high-risk timeline is out of scope. The flags and
+resolutions are in each record's `notes`. The other 120 are unreviewed drafts.
 
 ## How v1 was drafted
 
@@ -120,4 +125,4 @@ results state which version they used.
 
 | Version | Date | Questions | Change |
 | --- | --- | --- | --- |
-| v1 | 2026-10-31 | 150 | complete: 50 single-hop, 25 multi-hop, 30 number/date, 15 identifier, 30 unanswerable; 60 dev, 90 test; drafted by Claude Code, review pending |
+| v1 | 2026-10-31 | 150 | complete: 50 single-hop, 25 multi-hop, 30 number/date, 15 identifier, 30 unanswerable; 60 dev, 90 test; drafted by Claude Code; random 30 reviewed by Nihar Damera (28 approved, 2 flags resolved) |

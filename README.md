@@ -131,7 +131,7 @@ uv run python -m regradar.site build         # the static page published to the 
    multi-hop, 30 number/date, 15 identifier, 30 unanswerable), each with the exact
    gold text, split dev/test by a hash of the ID. Drafted by Claude Code from a
    stratified random sample of documents, located by keyword search, never by
-   RegRadar's retriever; human review is pending.
+   RegRadar's retriever; a random sample of 30 reviewed by Nihar Damera (28 approved; 2 flagged, both resolved without change).
 5. **Answers** (`regradar/answer.py`): JSON claims with citations; code checks that
    every cited chunk was given, that every number appears in the cited text, and
    that the claim shares its words with what it cites; one retry, then withheld.
@@ -258,8 +258,8 @@ nothing. The whole project's API spend is in the ledger there.
 - One synthetic company, whose policies and gap key were written by one author
   (Claude Code), far shorter and cleaner than a real policy library.
 - The golden set and the gap key were drafted by Claude Code, a different model
-  from the ones evaluated but still a model; human review of the golden set is
-  pending.
+  from the ones evaluated but still a model; a person reviewed a random 30 of
+  the 150 golden questions, not all of them.
 - 30 held-out human labels give a wide interval on κ.
 - The impact pipeline's precision is not measured.
 - Strike-through amendments in PDFs extract as both old and new text.

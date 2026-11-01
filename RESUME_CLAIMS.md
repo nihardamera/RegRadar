@@ -12,7 +12,7 @@ committed file that proves it. Rates are reported with 95% bootstrap CIs.
 | 21 synthetic policy documents, each labelled synthetic; 12 planted gaps verified against the circulars' text, plus 3 deliberate non-gaps | `company/`, `company/GAP_KEY.md`; `tests/test_company.py` | M1, verified |
 | Hybrid BM25 + dense retrieval in Qdrant; 18-configuration ablation (3 chunkings x 4 retrievers + reranking) with bootstrap CIs and paired differences | `eval/results/ABLATION.md`, `retrieval_{dev,test}.json` | measured (M3) |
 | Cross-encoder reranking tested and left off: helped on dev, not on test, at 1.6-5 s a query | `eval/results/ABLATION.md`, `eval/retrieval_latency.json` | measured; say "tested", not "uses" |
-| 150-question golden set (50 single-hop, 25 multi-hop, 30 number/date, 15 identifier, 30 unanswerable), answers as text ranges with restated-rule alternatives | `eval/golden/questions.jsonl`, `eval/golden/CARD.md`; `tests/test_golden.py` | v1 complete. **Drafted by Claude Code, not hand-written**: say "drafted with Claude Code and reviewed by me" only once `check` shows the review done |
+| 150-question golden set (50 single-hop, 25 multi-hop, 30 number/date, 15 identifier, 30 unanswerable), answers as text ranges with restated-rule alternatives | `eval/golden/questions.jsonl`, `eval/golden/CARD.md`; `tests/test_golden.py` | v1 complete. **Drafted by Claude Code, not hand-written**; a random 30 reviewed by me on 2026-11-02 (28 approved, 2 flags resolved without change; `golden check`: reviewed 28). Say "drafted with Claude Code; I reviewed a random sample", not "reviewed by me" for the whole set |
 | recall@10 (hit@10) dense-only 87.1% → hybrid 92.9% on held-out test, paired +5.7 pts [+1.4, +11.4] (n = 70) | `eval/results/ABLATION.md`, `paired_differences.txt` | measured (M3). Do not claim an MRR gain on test: +7.7 [−0.7, +16.2] (clear on dev only). The default's choice used test (ABLATION.md) |
 | Citation-enforced answers; LLM judge calibrated against my 55 human labels: held-out Cohen's κ = 0.76 [0.32, 1.00] on correctness (n = 30, 93% agreement); catches 15/18 planted faithfulness errors (83% [67, 100]) | `eval/judge/SUMMARY.md`, `eval/human/judge_labels.jsonl` | measured (M3). Faithfulness κ is not defined: every held-out answer was labelled faithful, so faithfulness rests on the planted-error rate (scored by script). Wide intervals: say "κ ≈ 0.76 on 30 held-out labels", not a precise figure |
 | CI gate: hit@10, MRR and citation precision on a fixed 30-question subset, plus a re-run of the citation checks, from committed results (no model or Qdrant in CI) | `regradar/gate.py`, `eval/ci/`, `.github/workflows/ci.yml` | built, green |
@@ -34,7 +34,7 @@ Every figure is a row above.
 > and kept the hand-written prompt (no significant gain; GEPA overfit); FastAPI
 > service; demo.
 
-Wording rules: "golden set", not "hand-built" (drafted with Claude Code; say "and
-reviewed by me" only after the review is recorded). "Demo", not "live demo" (static
-page). Do not quote 11/12 without being ready to give the trap result (2/3 taken)
-and that precision is not measured.
+Wording rules: "golden set", not "hand-built" (drafted with Claude Code; I reviewed a
+random 30 of the 150, so never "reviewed by me" for the whole set). "Demo", not "live
+demo" (static page). Do not quote 11/12 without being ready to give the trap result
+(2/3 taken) and that precision is not measured.
