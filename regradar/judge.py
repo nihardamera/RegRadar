@@ -7,8 +7,10 @@ The judge sees what the human labeller saw (the claims, the full text each
 cites, the reference answer) and gives the same two labels: faithful (every
 claim supported by what it cites) and correct (it answers the question).
 Agreement with the human labels is reported as Cohen's kappa, which corrects
-for agreement by chance. The held-out labels are scored once: `--final`
-writes a lock, and the held-out split cannot be run again without deleting it.
+for agreement by chance, over all labelled cases and separately over the
+natural sample (real answers as they come) and the hard cases. The held-out
+labels are scored once: `--final` writes a lock, and the held-out split
+cannot be run again without deleting it.
 """
 
 from __future__ import annotations
@@ -23,7 +25,7 @@ from typing import Any
 from pydantic import BaseModel
 
 from regradar.golden import load
-from regradar.label import LABELS, SAMPLE, _read
+from regradar.label import EXTRA, LABELS, SAMPLE, _read, case_id, label_key
 from regradar.llm import Claude
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -116,10 +118,8 @@ def cmd_calibrate(args: argparse.Namespace) -> int:
         if not args.final:
             print("the held-out split is scored once: pass --final when the prompt is settled")
             return 1
-    sample = {r["question_id"]: r for r in _read(SAMPLE)}
-    labels = [
-        lab for lab in _read(LABELS) if sample[lab["question_id"]]["judge_split"] == args.split
-    ]
+    cases = {case_id(r): r for r in _read(SAMPLE) + _read(EXTRA)}
+    labels = [lab for lab in _read(LABELS) if cases[label_key(lab)]["judge_split"] == args.split]
     if not labels:
         print(f"no human labels in the {args.split} split yet")
         return 1
@@ -130,23 +130,34 @@ def cmd_calibrate(args: argparse.Namespace) -> int:
     verdicts = []
     for label in labels:
         q = questions[label["question_id"]]
-        verdicts.append(judge(sample[q.id], q.answer, q.question, llm))
-    out = {
-        "model": args.model,
-        "effort": args.effort,
-        "split": args.split,
-        "faithful": agreement([lab["faithful"] for lab in labels], [v.faithful for v in verdicts]),
-        "correct": agreement([lab["correct"] for lab in labels], [v.correct for v in verdicts]),
-        "disagreements": [
-            {
-                "question_id": lab["question_id"],
-                "human": {"faithful": lab["faithful"], "correct": lab["correct"]},
-                "judge": v.model_dump(),
-            }
-            for lab, v in zip(labels, verdicts, strict=True)
-            if (lab["faithful"], lab["correct"]) != (v.faithful, v.correct)
-        ],
+        verdicts.append(judge(cases[label_key(label)], q.answer, q.question, llm))
+    groups: dict[str, Callable[[dict[str, Any]], bool]] = {
+        "all": lambda r: True,
+        "natural": lambda r: "source" not in r,
+        "hard": lambda r: "source" in r,
     }
+    out: dict[str, Any] = {"model": args.model, "effort": args.effort, "split": args.split}
+    for group, member in groups.items():
+        pairs = [
+            (lab, v)
+            for lab, v in zip(labels, verdicts, strict=True)
+            if member(cases[label_key(lab)])
+        ]
+        if pairs:
+            out[group] = {
+                key: agreement([lab[key] for lab, _ in pairs], [getattr(v, key) for _, v in pairs])
+                for key in ("faithful", "correct")
+            }
+    out["disagreements"] = [
+        {
+            "case_id": label_key(lab),
+            "source": cases[label_key(lab)].get("source", "natural"),
+            "human": {"faithful": lab["faithful"], "correct": lab["correct"]},
+            "judge": v.model_dump(),
+        }
+        for lab, v in zip(labels, verdicts, strict=True)
+        if (lab["faithful"], lab["correct"]) != (v.faithful, v.correct)
+    ]
     JUDGE_DIR.mkdir(parents=True, exist_ok=True)
     (JUDGE_DIR / f"calibration_{args.split}.json").write_text(
         json.dumps(out, indent=1) + "\n", encoding="utf-8"
@@ -155,7 +166,7 @@ def cmd_calibrate(args: argparse.Namespace) -> int:
         LOCK.write_text(
             json.dumps({"model": args.model, "effort": args.effort}) + "\n", encoding="utf-8"
         )
-    print(json.dumps({k: out[k] for k in ("faithful", "correct")}, indent=1))
+    print(json.dumps({k: out[k] for k in groups if k in out}, indent=1))
     return 0
 
 

@@ -335,3 +335,17 @@ resume line changes from "hand-built".
    scored once on the 60 held out (`--final`); report kappa.
 2. Citation precision in the CI gate.
 3. Golden-set review sample; M3 explain-back gate.
+
+**Later: hard cases added to the labels.** After 15 labels every answer was
+faithful and correct, as citation enforcement predicts, and kappa means little
+with almost no "no" labels (a judge that always says yes scores kappa 0 at 95%
+agreement). Added 39 hard cases before any judge ran (`regradar/plant.py`,
+`eval/human/judge_extra.jsonl`): the 8 rejected answers, the 1 answer to an
+unanswerable question, and 30 answers with one planted error (6 each: number,
+negation, entity, dropped condition, wrong-chunk citation). Rules that gave
+themselves away were fixed on a preview ("Shall 5, 2021", "March 62",
+"Reserve Non-bank of India"). Shuffled into the queue, split 16 dev / 23 held
+out; the labeller is not told which are planted. Kappa will be reported on
+all cases, the natural sample, and the hard cases separately. The labelling
+screen also showed cited chunks cut at 1,500 characters (87 of 297); it now
+shows them in full, as the judge sees them.
