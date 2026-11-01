@@ -422,3 +422,13 @@ and the resume claim says human labels.
   `regradar/demo.py` (Gradio on an embedded Qdrant file, $1 cap, rate limits).
 
 **Next**: M5 run (approved, capped at $2); README; demo publish (ask first).
+
+**M5 measured** (`eval/results/DSPY.md`): DSPy 3.4 program over the capped client
+(custom engine), judge-free metric with feedback; 32 train / 28 val / 90 test.
+Test: baseline 0.80, MIPROv2 0.84 (+3.7 [−2.5, +9.8]), GEPA 0.77 (−3.7
+[−10.1, +2.6]); GEPA overfit validation (0.71 → 0.83) and its prompt quotes
+training misses. $1.43 (MIPROv2 $0.69 incl. a first attempt that stopped on the
+missing optuna extra, GEPA $0.50, scoring $0.24). Metric bug fixed before the
+run: declining when retrieval missed the answer now scores 1. Not re-run with a
+bigger budget: more GEPA calls on 28 validation questions would fit them harder.
+Project API spend to date: $2.25.

@@ -43,8 +43,9 @@ Every output is a **draft for a named reviewer**, never a filing.
 | --- | --- | --- |
 | Retrieval: the answer text is in the top 10 | Golden questions written from the customer's own circulars | 92.9% [85.7, 98.6] on 70 held-out questions (`eval/results/ABLATION.md`) |
 | Answers withheld rather than wrong | Share of answers rejected by the citation checks | 4.3% rejected; 95% of out-of-corpus questions declined (`eval/results/answers_test_*.json`) |
-| Planted policy gaps found | A gap key written by the compliance team before the pilot | see `eval/results/IMPACT.md` |
-| Traps avoided (not applicable, superseded, "may" rules) | Same key | see `eval/results/IMPACT.md` |
+| Planted policy gaps found | A gap key written by the compliance team before the pilot | 11 of 12 across 12 circulars (`eval/results/IMPACT.md`) |
+| Traps avoided (not applicable, superseded, "may" rules) | Same key | 1 of 3 avoided: it applied a Middle-Layer rule to a Base-Layer NBFC and read a "may" rule as a gap |
+| Share of obligations flagged (the reviewer's workload) | Flags ÷ applicable obligations | 29%; precision not yet measured, which a pilot must do |
 | Analyst time per circular | Timed, before and after | to measure in the pilot |
 
 ## ROI model
@@ -96,7 +97,7 @@ labels that re-calibrate the checks and the judge.
   then withheld.
 - **It reads a "may" rule as a "must", or misjudges applicability:** code cannot
   catch this. In this repository's evaluation the pipeline did take such traps
-  (see `eval/results/IMPACT.md`), which is why every gap is a draft with the rule
+  (2 of 3 traps, `eval/results/IMPACT.md`), which is why every gap is a draft with the rule
   and the policy quoted side by side for the reviewer.
 - **It misses an obligation entirely:** the coverage check catches obligations
   that were extracted but not rated, not ones never extracted. Mitigation: the

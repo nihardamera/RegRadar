@@ -50,7 +50,11 @@ instead the judge was scored on 18 planted errors and caught 15 (83% [67, 100]).
 The pipeline flags 29% of applicable obligations, most of them outside the key,
 and precision is not measured: read the recall with that in mind.
 
-<!-- M5 -->
+**DSPy prompt optimisation** (cited-answer step, 90 held-out questions;
+`eval/results/DSPY.md`): neither optimiser beat the hand-written prompt by more
+than the noise. MIPROv2 +3.7 points [−2.5, +9.8]; GEPA −3.7 [−10.1, +2.6], after
+fitting its 28 validation questions (its rewritten prompt quotes their misses).
+Optimising and scoring cost $1.43.
 
 ## What the evaluation caught
 
@@ -69,6 +73,8 @@ Measuring each step changed the system more than any idea did:
 - **Human labels alone could not calibrate faithfulness**: citation enforcement
   leaves almost no unfaithful answers, and κ needs both kinds. Planted errors,
   scored by script, filled the gap.
+- **GEPA overfit**: validation rose from 0.71 to 0.83 and test fell. The result is
+  reported as measured, not as the validation number.
 - **The gap-key scorer read the wrong circular for one row**, so one trap was
   scored against the wrong report and one circular was never run. Fixed before
   reporting.
