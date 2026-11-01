@@ -45,3 +45,23 @@ def test_a_verdict_is_parsed_from_the_reply() -> None:
     reply = json.dumps({"faithful": True, "correct": False, "reason": "Misses the CERT-In part."})
     verdict = judge(RECORD, "Within 6 hours.", "How soon?", lambda s, u: f"```json\n{reply}\n```")
     assert verdict.faithful and not verdict.correct
+
+
+def test_planted_errors_are_scored_on_what_the_judge_flags() -> None:
+    from regradar.judge import Verdict, planted_score
+
+    cases = [
+        {"case_id": "q001~number", "planted": {"kind": "number"}},
+        {"case_id": "q002~number", "planted": {"kind": "number"}},
+        {"case_id": "q003~entity", "planted": {"kind": "entity"}},
+    ]
+    verdicts = [Verdict(faithful=False, correct=False), Verdict(faithful=True, correct=True)]
+    verdicts.append(Verdict(faithful=False, correct=True))
+    out = planted_score(cases, verdicts)
+    assert out == {
+        "n": 3,
+        "caught": 2,
+        "catch_rate": 0.667,
+        "by_kind": {"entity": "1/1", "number": "1/2"},
+        "missed": ["q002~number"],
+    }

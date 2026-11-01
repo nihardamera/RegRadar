@@ -349,3 +349,12 @@ out; the labeller is not told which are planted. Kappa will be reported on
 all cases, the natural sample, and the hard cases separately. The labelling
 screen also showed cited chunks cut at 1,500 characters (87 of 297); it now
 shows them in full, as the judge sees them.
+
+**Later still: planted errors scored by script.** To cut labelling time, the
+30 planted errors left Nihar's queue (none had been labelled). The script
+records each change, so the judge is scored on the share it marks unfaithful
+(a floor: some planted edits may be harmless). Human labels now cover 109
+cases (100 sampled + 9 real failures); kappa is computed on those only.
+Nihar asked for Claude to write the remaining labels instead; declined,
+since kappa against Claude-written labels would measure Claude against Claude
+and the resume claim says human labels.

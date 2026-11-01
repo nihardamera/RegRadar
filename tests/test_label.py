@@ -60,3 +60,14 @@ def test_hard_cases_get_their_own_ids_and_a_fixed_split() -> None:
     assert label_key({"case_id": "q001~rejected", "question_id": "q001"}) == "q001~rejected"
     todo = queue([{"question_id": "q001"}, *cases], done={"q001"})
     assert len(todo) == len(cases) and todo == queue(list(reversed(cases)), done={"q001"})
+
+
+def test_planted_errors_are_left_out_of_the_labelling_queue() -> None:
+    from regradar.label import to_label
+
+    sample = [{"question_id": "q001"}]
+    extra = [
+        {"question_id": "q002", "case_id": "q002~rejected", "source": "rejected"},
+        {"question_id": "q003", "case_id": "q003~number", "source": "planted"},
+    ]
+    assert [r["question_id"] for r in to_label(sample, extra)] == ["q001", "q002"]

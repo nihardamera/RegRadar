@@ -16,11 +16,11 @@ The 100 answers are a fixed random sample of the answered questions; about 40
 are dev (for tuning the judge's prompt) and 60 held out (scored once, at the
 end). Both are fixed before any judge runs.
 
-Citation enforcement leaves few wrong answers, so the queue also holds hard
-cases (`regradar/plant.py`): answers the code rejected, an answer to an
-unanswerable question, and answers with one planted error. They are shuffled
-in with the rest and split 40 / 60 the same way; the labeller is not told
-which they are.
+Citation enforcement leaves few wrong answers, so there are also hard cases
+(`regradar/plant.py`), split 40 / 60 the same way. The real failures (answers
+the code rejected, an answer to an unanswerable question) are shuffled into
+the labelling queue. The planted errors are not labelled: the script records
+what it changed, and `regradar.judge` scores whether the judge catches them.
 """
 
 from __future__ import annotations
@@ -165,8 +165,13 @@ def cmd_extra(_args: argparse.Namespace) -> int:
     return 0
 
 
+def to_label(sample: list[dict[str, Any]], extra: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """The sample and the real failures; planted errors are scored by script, not labelled."""
+    return sample + [r for r in extra if r["source"] != "planted"]
+
+
 def cmd_label(_args: argparse.Namespace) -> int:
-    records = _read(SAMPLE) + _read(EXTRA)
+    records = to_label(_read(SAMPLE), _read(EXTRA))
     if not records:
         print("no sample yet: run `python -m regradar.label sample` first")
         return 1

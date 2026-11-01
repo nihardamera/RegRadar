@@ -8,7 +8,10 @@ cites, the reference answer) and gives the same two labels: faithful (every
 claim supported by what it cites) and correct (it answers the question).
 Agreement with the human labels is reported as Cohen's kappa, which corrects
 for agreement by chance, over all labelled cases and separately over the
-natural sample (real answers as they come) and the hard cases. The held-out
+natural sample (real answers as they come) and the real failures. Planted
+errors (`regradar/plant.py`) have no human label: the script knows what it
+changed, so the judge is scored on the share it marks unfaithful. A planted
+edit is not always a real error, so that share is a floor, not an exact rate. The held-out
 labels are scored once: `--final` writes a lock, and the held-out split
 cannot be run again without deleting it.
 """
@@ -110,6 +113,25 @@ def agreement(human: Sequence[bool], model: Sequence[bool]) -> dict[str, float]:
     }
 
 
+def planted_score(cases: Sequence[dict[str, Any]], verdicts: Sequence[Verdict]) -> dict[str, Any]:
+    """Share of planted errors the judge marks unfaithful, overall and by kind."""
+    by_kind: dict[str, list[bool]] = {}
+    for case, verdict in zip(cases, verdicts, strict=True):
+        by_kind.setdefault(case["planted"]["kind"], []).append(not verdict.faithful)
+    caught = [c for flags in by_kind.values() for c in flags]
+    return {
+        "n": len(caught),
+        "caught": sum(caught),
+        "catch_rate": round(sum(caught) / len(caught), 3),
+        "by_kind": {kind: f"{sum(flags)}/{len(flags)}" for kind, flags in sorted(by_kind.items())},
+        "missed": [
+            case["case_id"]
+            for case, verdict in zip(cases, verdicts, strict=True)
+            if verdict.faithful
+        ],
+    }
+
+
 def cmd_calibrate(args: argparse.Namespace) -> int:
     if args.split == "heldout":
         if LOCK.exists():
@@ -120,6 +142,9 @@ def cmd_calibrate(args: argparse.Namespace) -> int:
             return 1
     cases = {case_id(r): r for r in _read(SAMPLE) + _read(EXTRA)}
     labels = [lab for lab in _read(LABELS) if cases[label_key(lab)]["judge_split"] == args.split]
+    planted = [
+        r for r in cases.values() if r.get("source") == "planted" and r["judge_split"] == args.split
+    ]
     if not labels:
         print(f"no human labels in the {args.split} split yet")
         return 1
@@ -127,14 +152,17 @@ def cmd_calibrate(args: argparse.Namespace) -> int:
     llm = Claude(
         args.model, f"judge-{args.split}", spend=args.spend, schema=SCHEMA, effort=args.effort
     )
-    verdicts = []
-    for label in labels:
-        q = questions[label["question_id"]]
-        verdicts.append(judge(cases[label_key(label)], q.answer, q.question, llm))
+
+    def run(record: dict[str, Any]) -> Verdict:
+        q = questions[record["question_id"]]
+        return judge(record, q.answer, q.question, llm)
+
+    verdicts = [run(cases[label_key(label)]) for label in labels]
+    planted_verdicts = [run(record) for record in planted]
     groups: dict[str, Callable[[dict[str, Any]], bool]] = {
         "all": lambda r: True,
         "natural": lambda r: "source" not in r,
-        "hard": lambda r: "source" in r,
+        "failures": lambda r: "source" in r,
     }
     out: dict[str, Any] = {"model": args.model, "effort": args.effort, "split": args.split}
     for group, member in groups.items():
@@ -148,6 +176,8 @@ def cmd_calibrate(args: argparse.Namespace) -> int:
                 key: agreement([lab[key] for lab, _ in pairs], [getattr(v, key) for _, v in pairs])
                 for key in ("faithful", "correct")
             }
+    if planted:
+        out["planted"] = planted_score(planted, planted_verdicts)
     out["disagreements"] = [
         {
             "case_id": label_key(lab),
@@ -166,7 +196,7 @@ def cmd_calibrate(args: argparse.Namespace) -> int:
         LOCK.write_text(
             json.dumps({"model": args.model, "effort": args.effort}) + "\n", encoding="utf-8"
         )
-    print(json.dumps({k: out[k] for k in groups if k in out}, indent=1))
+    print(json.dumps({k: out[k] for k in [*groups, "planted"] if k in out}, indent=1))
     return 0
 
 
