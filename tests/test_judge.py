@@ -41,10 +41,23 @@ def test_the_judge_sees_the_cited_text_and_the_reference() -> None:
     assert "within 6 hours of detection" in text and "Reference answer: Within 6 hours." in text
 
 
+def _reply(*supported: bool, correct: bool = True) -> str:
+    claims = [{"claim": i, "supported": v, "why": ""} for i, v in enumerate(supported, 1)]
+    return json.dumps({"claims": claims, "correct": correct, "reason": "r"})
+
+
 def test_a_verdict_is_parsed_from_the_reply() -> None:
-    reply = json.dumps({"faithful": True, "correct": False, "reason": "Misses the CERT-In part."})
+    reply = _reply(True, correct=False)
     verdict = judge(RECORD, "Within 6 hours.", "How soon?", lambda s, u: f"```json\n{reply}\n```")
     assert verdict.faithful and not verdict.correct
+
+
+def test_faithful_is_decided_by_code_from_the_per_claim_verdicts() -> None:
+    two = {**RECORD, "claims": RECORD["claims"] * 2}
+    assert not judge(two, "x", "q", lambda s, u: _reply(True, False)).faithful
+    assert judge(two, "x", "q", lambda s, u: _reply(True, True)).faithful
+    # A claim the judge skipped counts against faithfulness.
+    assert not judge(two, "x", "q", lambda s, u: _reply(True)).faithful
 
 
 def test_planted_errors_are_scored_on_what_the_judge_flags() -> None:
@@ -65,3 +78,13 @@ def test_planted_errors_are_scored_on_what_the_judge_flags() -> None:
         "by_kind": {"entity": "1/1", "number": "1/2"},
         "missed": ["q002~number"],
     }
+
+
+def test_kappa_interval_is_reported_only_when_humans_said_both_yes_and_no() -> None:
+    from regradar.judge import kappa_ci
+
+    assert kappa_ci([True] * 10, [True] * 9 + [False]) is None
+    human = [True] * 6 + [False] * 4
+    model = [True] * 4 + [False] * 2 + [True] + [False] * 3
+    k, low, high = kappa_ci(human, model, resamples=500)  # type: ignore[misc]
+    assert k == pytest.approx(0.4) and low < k < high

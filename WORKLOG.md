@@ -358,3 +358,32 @@ cases (100 sampled + 9 real failures); kappa is computed on those only.
 Nihar asked for Claude to write the remaining labels instead; declined,
 since kappa against Claude-written labels would measure Claude against Claude
 and the resume claim says human labels.
+
+## 2026-11-01 (Sun), night: judge calibrated
+
+**Done**
+- Nihar stopped labelling at 55 of 109 (25 dev, 30 held out); the rest stays
+  unlabelled. No labels were written by Claude.
+- Judge: Haiku 5.5, effort low. Dev, three prompts (all kept in `eval/judge/`):
+  1. one verdict per answer: correct κ 0.75, but 6/12 planted errors caught;
+     it wrote "claim 2 is not supported" and still returned faithful.
+  2. a verdict per claim, faithful = all supported (decided in code): 8/12,
+     every wrong-chunk citation caught; correct κ 0.65.
+  3. stricter on dropped conditions: 6/12, and three disagreements with
+     Nihar's faithful labels. Rejected by a rule set before the run (keep only
+     if catches rise and agreement with the human labels does not fall).
+- Held out, prompt 2, scored once (`eval/judge/SUMMARY.md`): correct κ 0.76
+  [0.32, 1.00], n = 30, 93% agreement; planted errors caught 15/18 (83%).
+  Faithful κ is not defined: Nihar labelled all 30 held-out answers faithful,
+  and the judge called 5 of them unfaithful (two were answers the code check
+  had rejected for low word overlap).
+- Limits: Haiku judging Haiku answers (a same-family bias is possible); one of
+  the planted dev errors ("shall" -> "may" in "no application ... may be
+  rejected") does not change the meaning, so the planted rate is a floor;
+  dropped conditions are the judge's weak spot (1/3 held out, 0/3 dev), and
+  Nihar's labels also treat omitted qualifiers as faithful. Total API spend so
+  far $0.167.
+
+**Next**
+1. Citation precision in the CI gate.
+2. M3 explain-back gate; golden-set review sample.

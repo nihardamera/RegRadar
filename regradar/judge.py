@@ -2,6 +2,7 @@
 
     uv run python -m regradar.judge calibrate --model M --split dev  # tune on dev labels
     uv run python -m regradar.judge calibrate --model M --split heldout --final  # once
+    uv run python -m regradar.judge summary  # held-out results with 95% intervals
 
 The judge sees what the human labeller saw (the claims, the full text each
 cites, the reference answer) and gives the same two labels: faithful (every
@@ -25,8 +26,10 @@ from collections.abc import Callable, Sequence
 from pathlib import Path
 from typing import Any
 
+import numpy as np
 from pydantic import BaseModel
 
+from regradar.evaluate import BOOTSTRAP, SEED, bootstrap_ci
 from regradar.golden import load
 from regradar.label import EXTRA, LABELS, SAMPLE, _read, case_id, label_key
 from regradar.llm import Claude
@@ -35,37 +38,71 @@ ROOT = Path(__file__).resolve().parent.parent
 JUDGE_DIR = ROOT / "eval" / "judge"
 LOCK = JUDGE_DIR / "heldout.lock"
 
+# Prompt 2. Prompt 1 gave one faithful verdict for the whole answer; on dev it
+# wrote "claim 2 is not supported" and still returned faithful, pooled chunks
+# across claims, and passed dropped conditions and "shall" -> "may" (6 of 12
+# planted errors missed; eval/judge/calibration_dev_prompt1.json). Now each
+# claim gets its own verdict and code takes faithful = every claim supported.
 SYSTEM = """You check answers to questions about Reserve Bank of India circulars.
 You are given the question, the answer's claims with the full text of the chunks
 each claim cites, and a reference answer written by a person.
 
-Judge two things:
-- faithful: true only if every claim is supported by the text of the chunks it
-  cites. Numbers, limits, dates and the entity a rule applies to must match.
-  Ignore whether the claim is also true elsewhere; only the cited text counts.
-- correct: true only if the claims, taken together, answer the question the way
-  the reference answer does. Extra true detail is fine; a missing or different
-  key fact (an amount, a period, a yes/no) makes it incorrect.
+1. For each claim, in order, decide whether it is supported by the chunks THAT
+   CLAIM cites. Use only those chunks: text cited by another claim does not count,
+   and neither does what you know or what the reference says. A claim is NOT
+   supported if, compared with its cited text, it:
+   - changes a number, amount, limit, date or period;
+   - changes the force of a rule (shall / must / may / shall not), or drops a "not";
+   - applies the rule to a different entity (banks vs non-banks, debit vs credit);
+   - drops a condition, exception or qualifier the text attaches to the rule
+     ("unless", "subject to", "provided", "except", "only if"), so it says more
+     than the text does;
+   - states something the cited text does not say at all.
+   Wording may differ; meaning may not.
+2. correct: true only if the claims, taken together, answer the question the way
+   the reference answer does. Extra true detail is fine; a missing or different
+   key fact (an amount, a period, a yes/no) makes it incorrect.
 
-Reply with JSON only: {"faithful": true|false, "correct": true|false, "reason": "<one sentence>"}
+Reply with JSON only:
+{"claims": [{"claim": 1, "supported": true|false, "why": "<short>"}, ...],
+ "correct": true|false, "reason": "<one sentence>"}
 """
 
 SCHEMA: dict[str, Any] = {
     "type": "object",
     "properties": {
-        "faithful": {"type": "boolean"},
+        "claims": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "claim": {"type": "integer"},
+                    "supported": {"type": "boolean"},
+                    "why": {"type": "string"},
+                },
+                "required": ["claim", "supported", "why"],
+                "additionalProperties": False,
+            },
+        },
         "correct": {"type": "boolean"},
         "reason": {"type": "string"},
     },
-    "required": ["faithful", "correct", "reason"],
+    "required": ["claims", "correct", "reason"],
     "additionalProperties": False,
 }
+
+
+class ClaimVerdict(BaseModel):
+    claim: int
+    supported: bool
+    why: str = ""
 
 
 class Verdict(BaseModel):
     faithful: bool
     correct: bool
     reason: str = ""
+    claims: list[ClaimVerdict] = []
 
 
 def prompt(
@@ -88,7 +125,14 @@ def judge(
 ) -> Verdict:
     text = generate(SYSTEM, prompt(question, reference, record["claims"], record["context"]))
     start, end = text.find("{"), text.rfind("}")
-    return Verdict.model_validate(json.loads(text[start : end + 1]))
+    data = json.loads(text[start : end + 1])
+    claims = [ClaimVerdict.model_validate(c) for c in data.get("claims", [])]
+    # Faithful is decided here, not by the model: every claim needs a verdict,
+    # and every verdict must be "supported".
+    faithful = len(claims) == len(record["claims"]) and all(c.supported for c in claims)
+    return Verdict(
+        faithful=faithful, correct=data["correct"], reason=data.get("reason", ""), claims=claims
+    )
 
 
 def cohen_kappa(a: Sequence[bool], b: Sequence[bool]) -> float:
@@ -111,6 +155,26 @@ def agreement(human: Sequence[bool], model: Sequence[bool]) -> dict[str, float]:
         "human_yes": round(sum(human) / n, 3),
         "judge_yes": round(sum(model) / n, 3),
     }
+
+
+def kappa_ci(
+    human: Sequence[bool], model: Sequence[bool], resamples: int = BOOTSTRAP, seed: int = SEED
+) -> tuple[float, float, float] | None:
+    """Kappa and its 95% percentile-bootstrap interval, resampling cases.
+
+    None when the human labels are all one value: kappa then has nothing to
+    measure (any judge scores 0 or is undefined), so no number is reported.
+    """
+    if len(set(human)) < 2:
+        return None
+    h, m = np.asarray(human), np.asarray(model)
+    rng = np.random.default_rng(seed)
+    values = []
+    for idx in rng.integers(0, len(h), size=(resamples, len(h))):
+        if len(set(h[idx])) > 1:
+            values.append(cohen_kappa(list(h[idx]), list(m[idx])))
+    low, high = np.percentile(values, [2.5, 97.5])
+    return (cohen_kappa(human, model), float(low), float(high))
 
 
 def planted_score(cases: Sequence[dict[str, Any]], verdicts: Sequence[Verdict]) -> dict[str, Any]:
@@ -200,6 +264,73 @@ def cmd_calibrate(args: argparse.Namespace) -> int:
     return 0
 
 
+def heldout_pairs() -> tuple[list[dict[str, Any]], dict[str, Any]]:
+    """Each held-out human label with the judge's verdict, rebuilt from the
+    calibration file (which lists the disagreements; the rest agreed)."""
+    result = json.loads((JUDGE_DIR / "calibration_heldout.json").read_text(encoding="utf-8"))
+    cases = {case_id(r): r for r in _read(SAMPLE) + _read(EXTRA)}
+    differ = {d["case_id"]: d["judge"] for d in result["disagreements"]}
+    pairs = []
+    for lab in _read(LABELS):
+        key = label_key(lab)
+        if cases[key]["judge_split"] != "heldout":
+            continue
+        judged = differ.get(key, {"faithful": lab["faithful"], "correct": lab["correct"]})
+        pairs.append(
+            {"case": cases[key], "human": lab, "judge": judged, "source": cases[key].get("source")}
+        )
+    return pairs, result
+
+
+def _fmt(ci: tuple[float, float, float] | None) -> str:
+    if ci is None:
+        return "not defined (no human 'no' labels)"
+    return f"{ci[0]:.2f} [{ci[1]:.2f}, {ci[2]:.2f}]"
+
+
+def cmd_summary(_args: argparse.Namespace) -> int:
+    pairs, result = heldout_pairs()
+    lines = [
+        "# Judge calibration: held-out results",
+        "",
+        f"Judge: `{result['model']}`, effort {result['effort']}, prompt 2 (`regradar/judge.py`).",
+        "Scored once (`eval/judge/heldout.lock`). Written by `python -m regradar.judge summary`",
+        "from `calibration_heldout.json` and `eval/human/judge_labels.jsonl`.",
+        "",
+        "| Cases | n | Label | Agreement | Cohen's kappa [95% CI] | Human yes | Judge yes |",
+        "| --- | --- | --- | --- | --- | --- | --- |",
+    ]
+    groups: list[tuple[str, Callable[[dict[str, Any]], bool]]] = [
+        ("all labelled", lambda p: True),
+        ("natural sample", lambda p: p["source"] is None),
+    ]
+    for group, member in groups:
+        chosen = [p for p in pairs if member(p)]
+        for key in ("correct", "faithful"):
+            h = [bool(p["human"][key]) for p in chosen]
+            m = [bool(p["judge"][key]) for p in chosen]
+            agree = bootstrap_ci([float(x == y) for x, y in zip(h, m, strict=True)])
+            lines.append(
+                f"| {group} | {len(chosen)} | {key} | {100 * agree[0]:.1f} "
+                f"[{100 * agree[1]:.1f}, {100 * agree[2]:.1f}] | {_fmt(kappa_ci(h, m))} "
+                f"| {100 * sum(h) / len(h):.0f}% | {100 * sum(m) / len(m):.0f}% |"
+            )
+    planted = result.get("planted")
+    if planted:
+        flags = [1.0] * planted["caught"] + [0.0] * (planted["n"] - planted["caught"])
+        rate = bootstrap_ci(flags)
+        lines += [
+            "",
+            f"Planted errors marked unfaithful: {planted['caught']}/{planted['n']} = "
+            f"{100 * rate[0]:.1f}% [{100 * rate[1]:.1f}, {100 * rate[2]:.1f}]; by kind "
+            + ", ".join(f"{k} {v}" for k, v in planted["by_kind"].items())
+            + f". Missed: {', '.join(planted['missed'])}.",
+        ]
+    (JUDGE_DIR / "SUMMARY.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    print("\n".join(lines))
+    return 0
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(
         description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
@@ -212,6 +343,9 @@ def main(argv: list[str] | None = None) -> int:
     cal.add_argument("--effort", default="low")
     cal.add_argument("--spend", action="store_true")
     cal.set_defaults(run=cmd_calibrate)
+    steps.add_parser("summary", help="held-out results with intervals").set_defaults(
+        run=cmd_summary
+    )
     args = parser.parse_args(argv)
     result: int = args.run(args)
     return result

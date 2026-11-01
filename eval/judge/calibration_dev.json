@@ -1,0 +1,202 @@
+{
+ "model": "claude-haiku-5-5",
+ "effort": "low",
+ "split": "dev",
+ "all": {
+  "faithful": {
+   "n": 25,
+   "agreement": 0.96,
+   "kappa": 0.648,
+   "human_yes": 0.96,
+   "judge_yes": 0.92
+  },
+  "correct": {
+   "n": 25,
+   "agreement": 0.88,
+   "kappa": 0.651,
+   "human_yes": 0.8,
+   "judge_yes": 0.76
+  }
+ },
+ "natural": {
+  "faithful": {
+   "n": 22,
+   "agreement": 0.955,
+   "kappa": 0.0,
+   "human_yes": 1.0,
+   "judge_yes": 0.955
+  },
+  "correct": {
+   "n": 22,
+   "agreement": 0.955,
+   "kappa": 0.831,
+   "human_yes": 0.864,
+   "judge_yes": 0.818
+  }
+ },
+ "failures": {
+  "faithful": {
+   "n": 3,
+   "agreement": 1.0,
+   "kappa": 1.0,
+   "human_yes": 0.667,
+   "judge_yes": 0.667
+  },
+  "correct": {
+   "n": 3,
+   "agreement": 0.333,
+   "kappa": -0.5,
+   "human_yes": 0.333,
+   "judge_yes": 0.333
+  }
+ },
+ "planted": {
+  "n": 12,
+  "caught": 8,
+  "catch_rate": 0.667,
+  "by_kind": {
+   "condition": "0/3",
+   "negation": "0/1",
+   "number": "3/3",
+   "wrong_chunk": "5/5"
+  },
+  "missed": [
+   "q021~negation",
+   "q040~condition",
+   "q043~condition",
+   "q061~condition"
+  ]
+ },
+ "disagreements": [
+  {
+   "case_id": "q091~unanswerable",
+   "source": "unanswerable",
+   "human": {
+    "faithful": true,
+    "correct": true
+   },
+   "judge": {
+    "faithful": true,
+    "correct": false,
+    "reason": "The reference says the corpus has no answer, while the claims correctly state that no specific biometric card issuance rules exist and give related general authentication and card security rules, so the answer does not match the reference's key fact.",
+    "claims": [
+     {
+      "claim": 1,
+      "supported": true,
+      "why": "The cited definitions list fingerprint as a factor of authentication under 'something the user is', with biometrics device native or Aadhaar based; the chunk contains no specific issuance rules for biometric cards, which the claim acknowledges."
+     },
+     {
+      "claim": 2,
+      "supported": true,
+      "why": "Chunk states REs should implement, except where explicitly permitted/relaxed, multi-factor authentication for electronic payments and fund transfers."
+     },
+     {
+      "claim": 3,
+      "supported": true,
+      "why": "Chunk says at least one authentication methodology should be generally dynamic or non-replicable, and lists biometric/PKI/hardware tokens as examples."
+     },
+     {
+      "claim": 4,
+      "supported": true,
+      "why": "Chapter V applies to REs offering/intending to issue credit/debit/prepaid cards (physical or virtual), and REs shall follow PCI standards including PCI-PTS for protecting cardholder data at POI devices."
+     }
+    ]
+   }
+  },
+  {
+   "case_id": "q144~rejected",
+   "source": "rejected",
+   "human": {
+    "faithful": false,
+    "correct": false
+   },
+   "judge": {
+    "faithful": false,
+    "correct": true,
+    "reason": "The reference answer's key fact (60 percent of total assets net of intangibles, on an ongoing basis) matches Claim 1, though neither claim is supported by its cited chunk, which is missing.",
+    "claims": [
+     {
+      "claim": 1,
+      "supported": false,
+      "why": "The cited chunk rbi-md371:section:0007 is missing, so the 60 percent figure and ongoing-basis wording cannot be verified from the cited text."
+     },
+     {
+      "claim": 2,
+      "supported": false,
+      "why": "The cited chunk rbi-md371:section:0007 is missing, so the four-quarter period and remediation plan requirement cannot be verified from the cited text."
+     }
+    ]
+   }
+  },
+  {
+   "case_id": "q091",
+   "source": "natural",
+   "human": {
+    "faithful": true,
+    "correct": true
+   },
+   "judge": {
+    "faithful": true,
+    "correct": false,
+    "reason": "The reference says the corpus has no answer, while the claims correctly state that no specific biometric card issuance rules exist and give related general authentication and card security rules, so the answer does not match the reference's key fact.",
+    "claims": [
+     {
+      "claim": 1,
+      "supported": true,
+      "why": "The cited definitions list fingerprint as a factor of authentication under 'something the user is', with biometrics device native or Aadhaar based; the chunk contains no specific issuance rules for biometric cards, which the claim acknowledges."
+     },
+     {
+      "claim": 2,
+      "supported": true,
+      "why": "Chunk states REs should implement, except where explicitly permitted/relaxed, multi-factor authentication for electronic payments and fund transfers."
+     },
+     {
+      "claim": 3,
+      "supported": true,
+      "why": "Chunk says at least one authentication methodology should be generally dynamic or non-replicable, and lists biometric/PKI/hardware tokens as examples."
+     },
+     {
+      "claim": 4,
+      "supported": true,
+      "why": "Chapter V applies to REs offering/intending to issue credit/debit/prepaid cards (physical or virtual), and REs shall follow PCI standards including PCI-PTS for protecting cardholder data at POI devices."
+     }
+    ]
+   }
+  },
+  {
+   "case_id": "q122",
+   "source": "natural",
+   "human": {
+    "faithful": true,
+    "correct": true
+   },
+   "judge": {
+    "faithful": false,
+    "correct": true,
+    "reason": "The claims give the 80 per cent LTV for loans above \u20b92.5 lakh up to \u20b95 lakh and identify jewellery, ornaments or coins of gold or silver as eligible collateral, matching the reference.",
+    "claims": [
+     {
+      "claim": 1,
+      "supported": true,
+      "why": "The table in the cited chunk gives 80 per cent for >\u20b92.5 lakh and \u2264\u20b95 lakh, matching the claim."
+     },
+     {
+      "claim": 2,
+      "supported": true,
+      "why": "Section 32 defines eligible collateral as collateral of jewellery, ornaments or coins made of gold or silver."
+     },
+     {
+      "claim": 3,
+      "supported": true,
+      "why": "Paragraph 42 states only intrinsic value of gold or silver is reckoned and no cost elements such as precious stones or gems are added."
+     },
+     {
+      "claim": 4,
+      "supported": false,
+      "why": "The chunk says detailed credit assessment is required above \u20b92.5 lakh, but the claim's 'must' is drawn from text that frames it as mandatory only for the total loan amount above the threshold; the cited text supports it, but the claim is not about the question asked, so it is treated as supported on the merits. Given the cited text uses 'shall be undertaken', the claim is in fact supported."
+     }
+    ]
+   }
+  }
+ ]
+}

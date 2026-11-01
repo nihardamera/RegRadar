@@ -1,0 +1,247 @@
+{
+ "model": "claude-haiku-5-5",
+ "effort": "low",
+ "split": "heldout",
+ "all": {
+  "faithful": {
+   "n": 30,
+   "agreement": 0.833,
+   "kappa": 0.0,
+   "human_yes": 1.0,
+   "judge_yes": 0.833
+  },
+  "correct": {
+   "n": 30,
+   "agreement": 0.933,
+   "kappa": 0.76,
+   "human_yes": 0.833,
+   "judge_yes": 0.833
+  }
+ },
+ "natural": {
+  "faithful": {
+   "n": 28,
+   "agreement": 0.893,
+   "kappa": 0.0,
+   "human_yes": 1.0,
+   "judge_yes": 0.893
+  },
+  "correct": {
+   "n": 28,
+   "agreement": 0.964,
+   "kappa": 0.837,
+   "human_yes": 0.857,
+   "judge_yes": 0.893
+  }
+ },
+ "failures": {
+  "faithful": {
+   "n": 2,
+   "agreement": 0.0,
+   "kappa": 0.0,
+   "human_yes": 1.0,
+   "judge_yes": 0.0
+  },
+  "correct": {
+   "n": 2,
+   "agreement": 0.5,
+   "kappa": 0.0,
+   "human_yes": 0.5,
+   "judge_yes": 0.0
+  }
+ },
+ "planted": {
+  "n": 18,
+  "caught": 15,
+  "catch_rate": 0.833,
+  "by_kind": {
+   "condition": "1/3",
+   "entity": "5/6",
+   "negation": "5/5",
+   "number": "3/3",
+   "wrong_chunk": "1/1"
+  },
+  "missed": [
+   "q039~condition",
+   "q070~condition",
+   "q120~entity"
+  ]
+ },
+ "disagreements": [
+  {
+   "case_id": "q131",
+   "source": "natural",
+   "human": {
+    "faithful": true,
+    "correct": false
+   },
+   "judge": {
+    "faithful": false,
+    "correct": false,
+    "reason": "The answer fails to give the 24-month full-KYC deadline and the no-further-credits rule, which are the key facts in the reference answer.",
+    "claims": [
+     {
+      "claim": 1,
+      "supported": true,
+      "why": "Chunk states minimum details must necessarily include a mobile number verified with OTP, issued by bank and non-bank issuers."
+     },
+     {
+      "claim": 2,
+      "supported": true,
+      "why": "Chunk states minimum details include self-declaration of name and unique identity/identification number of any mandatory document or OVD in the KYC Direction 2016."
+     },
+     {
+      "claim": 3,
+      "supported": false,
+      "why": "The claim says the context does not state the usage period, but the reference gives a 24-month conversion deadline; the cited chunks do not contain that period, so the claim's framing of the question as unanswered misses the key fact, and the cited chunks indeed lack the 24-month period. Claim is only partly accurate: it does not state the time limit that the reference answer provides."
+     }
+    ]
+   }
+  },
+  {
+   "case_id": "q141",
+   "source": "natural",
+   "human": {
+    "faithful": true,
+    "correct": false
+   },
+   "judge": {
+    "faithful": true,
+    "correct": true,
+    "reason": "The claims together establish that the original mandatory requirement was changed to an optional one at the RE's discretion, which answers the question's implied 'no' in substance matching the reference's statement that the amendment made it optional.",
+    "claims": [
+     {
+      "claim": 1,
+      "supported": true,
+      "why": "The cited original circular text (rbi-n12529) states that at reset REs shall provide the option to switch to a fixed rate per Board approved policy, matching the claim."
+     },
+     {
+      "claim": 2,
+      "supported": true,
+      "why": "The cited amendment (rbi-n12902) modifies Paragraph 2(ii) so that REs 'may, at its option, provide' a choice to switch to fixed rate, as the claim states."
+     },
+     {
+      "claim": 3,
+      "supported": true,
+      "why": "The amendment makes the offer optional at the RE's option, and retains the policy specifying the number of switches allowed during the loan tenor, as the claim says."
+     }
+    ]
+   }
+  },
+  {
+   "case_id": "q055~rejected",
+   "source": "rejected",
+   "human": {
+    "faithful": true,
+    "correct": false
+   },
+   "judge": {
+    "faithful": false,
+    "correct": false,
+    "reason": "The answer fails to state the KFS validity period of at least three working days for a 30-day loan, which is a key fact in the reference answer, though it correctly gives the one-day minimum cooling-off period.",
+    "claims": [
+     {
+      "claim": 1,
+      "supported": true,
+      "why": "Chunk states cooling-off period determined by Board of the RE, not less than one day."
+     },
+     {
+      "claim": 2,
+      "supported": false,
+      "why": "Cited chunk says nothing about the KFS validity period; it only references a stipulation without stating the duration, so the claim's assertion that context lacks the info is not established by this chunk, and the question's key fact (three working days) is not provided by it."
+     }
+    ]
+   }
+  },
+  {
+   "case_id": "q077",
+   "source": "natural",
+   "human": {
+    "faithful": true,
+    "correct": true
+   },
+   "judge": {
+    "faithful": false,
+    "correct": true,
+    "reason": "The claims state that the withdrawal is without prejudice to banks' duty to maintain and strengthen an effective grievance mechanism, which matches the reference answer's 'No'.",
+    "claims": [
+     {
+      "claim": 1,
+      "supported": true,
+      "why": "Cited chunk says withdrawal is without prejudice to banks' obligations to maintain an effective grievance redress mechanism and strengthen internal systems under extant instructions and Board-approved policies."
+     },
+     {
+      "claim": 2,
+      "supported": true,
+      "why": "Cited chunk states the January 27, 2021 circular stands withdrawn with immediate effect and is treated as repealed from the date of the circular."
+     },
+     {
+      "claim": 3,
+      "supported": true,
+      "why": "Cited chunk says the withdrawal aims to rationalise instructions and avoid duplication, cites complaint disclosures under the Master Direction on Financial Statements, and notes supervisory assessment of grievance mechanisms."
+     },
+     {
+      "claim": 4,
+      "supported": false,
+      "why": "Cited chunk describes annual supervisory assessments and intensive reviews, but it is from a different circular and does not say these continue following the withdrawal; the claim's 'will continue' framing goes beyond the text."
+     }
+    ]
+   }
+  },
+  {
+   "case_id": "q068~rejected",
+   "source": "rejected",
+   "human": {
+    "faithful": true,
+    "correct": true
+   },
+   "judge": {
+    "faithful": false,
+    "correct": false,
+    "reason": "The claims do not clearly state that a 2025 renewal must comply by the earlier of the renewal date or 36 months from issuance; claim 2 instead says the deadline cannot be determined, which diverges from the reference answer.",
+    "claims": [
+     {
+      "claim": 1,
+      "supported": true,
+      "why": "The cited text says agreements due for renewal on or after October 1, 2023 must comply as on the renewal date or 36 months from issuance, whichever is earlier; the claim matches this."
+     },
+     {
+      "claim": 2,
+      "supported": false,
+      "why": "The text does not give the issuance date, so the claim's conclusion that compliance is due on renewal if it falls before the 36-month date is not stated; the cited text supports the rule but the claim adds an unsupported inference that the answer cannot be determined, and it omits the 36-month deadline framing given in the source."
+     }
+    ]
+   }
+  },
+  {
+   "case_id": "q130",
+   "source": "natural",
+   "human": {
+    "faithful": true,
+    "correct": true
+   },
+   "judge": {
+    "faithful": false,
+    "correct": true,
+    "reason": "The claims give the \u20b9500 per-transaction limit and \u20b92,000 total per-instrument limit, and state that offline payments were proximity-only, matching the reference answer.",
+    "claims": [
+     {
+      "claim": 1,
+      "supported": false,
+      "why": "The August 2023 circular set the upper limit at \u20b9500, which the cited text supports, but the claim's framing that this was the limit 'before the December 2024 amendment' is consistent; however the cited chunk says the limit was increased to \u20b9500 in August 2023, so the figure matches. Assessing strictly: the cited August 2023 chunk supports \u20b9500 as the upper limit, but the claim omits that the December 2024 chunk is the source of the amendment context; the claim itself is accurate on the figure and attribution."
+     },
+     {
+      "claim": 2,
+      "supported": true,
+      "why": "The January 2022 annex states the total limit for offline transactions on a payment instrument is \u20b92,000 at any point in time, which matches the claim."
+     },
+     {
+      "claim": 3,
+      "supported": true,
+      "why": "The annex states offline payments shall be made in proximity (face to face) mode only, so the claim that they could not be made remotely is supported."
+     }
+    ]
+   }
+  }
+ ]
+}
