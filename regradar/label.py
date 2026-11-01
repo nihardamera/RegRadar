@@ -103,7 +103,8 @@ def cmd_label(_args: argparse.Namespace) -> int:
             print(f"\n  Claim {i}: {claim['text']}")
             for cid in claim["citations"]:
                 chunk = record["context"].get(cid, "(chunk text not recorded)")
-                print(f"    cites {cid}:\n      {' '.join(chunk.split())[:1500]}")
+                # In full: the judge sees the whole chunk, so the labeller must too.
+                print(f"    cites {cid}:\n      {' '.join(chunk.split())}")
         print(f"\n  Reference answer: {q.answer}")
         faithful = _ask(
             "  Faithful (every claim supported by what it cites)? y/n/q ", ("y", "n", "q")
