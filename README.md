@@ -13,6 +13,8 @@ the 150 golden questions with the cited answers RegRadar gave, the 12 impact rep
 and the evaluation. It is a static page of committed results (Hugging Face charges for
 Gradio hosting); live search and answers run locally with `regradar.demo`.
 
+[![The demo page: cited answers to golden questions, an impact report and the evaluation](docs/demo/demo.gif)](https://huggingface.co/spaces/nihar-damera/RegRadar)
+
 ## Results
 
 **Retrieval** (70 held-out questions; `eval/results/ABLATION.md`)
